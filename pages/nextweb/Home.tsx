@@ -64,7 +64,7 @@ let newcards: ImageContainProps[] = [
     paragraph2: "⚙️ Playground for Testing and Evaluating AI Models",
     paragraph3:
       "Test and evaluate AI models in real-time with our intuitive playground. Fine-tune models easily and ensure optimal performance across multiple use cases.",
-      img320:  require("../../public/assets/Ai_Studio.webp"),
+      img320:  require("../../public/assets/AI_Studio.webp"),
   },
 ];
 
