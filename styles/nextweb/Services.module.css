@@ -1,0 +1,457 @@
+.CardContainerNew {
+  padding: 15px 0px 10px 0px;
+  width: 100%;
+  max-width: 2300px;
+  margin: 0 auto;
+}
+
+.CardAlignNew {
+  /* border: 1px solid green; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.ResponsiveFooterDetails {
+  /* border: 1px solid darkblue; */
+  padding: 30px 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ResponsiveFooterDetails1 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin-bottom: 5px;
+}
+.ResponsiveFooterDetails2 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.ResponsiveFooterDetails2 > p::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+.ResponsiveFooterDetails2 > p:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+.ResponsiveFooterDetails2 > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.FooterDetails1 {
+  /* border: 1px solid brown; */
+  width: 30%;
+}
+.ResponsiveFooterDetails2 {
+  display: flex;
+  align-items: center;
+}
+.FooterDetails2 {
+  /* border: 1px solid green; */
+  width: 30%;
+  padding: 15px;
+}
+.LangSelect {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--darkgreen);
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+}
+.ArrowIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.Cardfooteritems > p:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: -1%;
+  top: 15px;
+  /* background: var(--badge-color); */
+  transition: width 0.2s ease 0s, left 0.1s ease 0s;
+  width: 0;
+}
+.Cardfooteritems > p:hover {
+  color: var(--darkgreen);
+}
+/* .Cardfooteritems.card1 > p:hover:after {
+    width: 29%;
+    left: -1px;
+    top: 15px;
+    border: 1px solid var(--lightgreen);
+  } */
+.Cardfooteritems.card2 > p:hover:after {
+  width: 41%;
+  left: -1px;
+  top: 15px;
+  border: 1px solid var(--lightgreen);
+}
+.Cardfooteritems.card3 > p:hover:after {
+  width: 32%;
+  left: -1px;
+  top: 15px;
+  border: 1px solid var(--lightgreen);
+}
+.Cardfooteritems.card4 > p:hover:after {
+  width: 40%;
+  left: -1px;
+  top: 15px;
+  border: 1px solid var(--lightgreen);
+}
+.Cardfooteritems.card5 > p:hover:after {
+  width: 46%;
+  left: -1px;
+  top: 15px;
+  border: 1px solid var(--lightgreen);
+}
+.ReResourcesCards {
+  /* border: 1px solid red; */
+  padding: 50px 10px;
+  display: none;
+}
+.ReDropdownContainer > details {
+  margin-top: 20px !important;
+  /* border: 1px solid blue; */
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+.ReDropdownContainer > details > summary {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.ReDropdownContainer > details > a {
+  /* border: 1px solid black; */
+  margin-top: 10px !important;
+}
+.imgReresponsiveChange {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.SummaryHeading {
+  font-size: small;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+.Summaryoptions {
+  /* border: 1px solid red; */
+  color: var(--darkgreen);
+  /* padding: 0px 0px 10px 0px; */
+  margin-top: 5% !important;
+}
+.ResourcesHubBtncontainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 13px 10px 13px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.ResourcesHubBtncontainer > button {
+  font-size: medium;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* border: 1px solid red; */
+  width: 30%;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+.ResourcesHubBtncontainer > button:hover {
+  box-shadow: inset 380px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+.ResourcesHubBtncontainer > a {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 40%;
+  /* border: 1px solid red; */
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+}
+.ResourcesHubBtncontainer > a::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+.ResourcesHubBtncontainer > a:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+.SummaryHeadingHub {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1130px) {
+  .ResoucesBtncontainer {
+    width: 47%;
+  }
+  .ResoucesBtncontainer > button {
+    font-size: large;
+    font-weight: 700;
+    padding: 10px 30px;
+    width: 40%;
+  }
+  .ResoucesBtncontainer > a {
+    font-size: large;
+    font-weight: 700;
+    padding: 10px 30px;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1056px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    width: 25%;
+  }
+  .ResourcesHubBtncontainer > a {
+    font-size: large;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1108px) {
+  .ResoucesHubBtncontainer {
+    width: 47%;
+  }
+  .ResoucesHubBtncontainer > button {
+    font-size: medium;
+  }
+  .ResoucesHubBtncontainer > a {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 994px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: medium;
+    width: 30%;
+  }
+  .ResourcesHubBtncontainer > a {
+    font-size: large;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 888px) {
+  .ResoucesHubBtncontainer {
+    width: 57%;
+  }
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    width: 30%;
+  }
+  .ResourcesHubBtncontainer > a {
+    font-size: small;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 832px) {
+  .ResoucesHubBtncontainer {
+    width: 57%;
+  }
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    width: 30%;
+  }
+  .ResourcesHubBtncontainer > a {
+    font-size: small;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ResourceHubHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 58px 18px 18px 18px;
+  }
+  .ResourceHUbHeader > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .ResoucesHubBtncontainer {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ResoucesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 25%;
+  }
+  .ResoucesHubBtncontainer > a {
+    font-size: small;
+    font-weight: 500;
+    padding: 8px 0px;
+    width: 35%;
+  }
+  .ResourcesCards {
+    display: none;
+  }
+  .ReResourcesCards {
+    display: inherit;
+  }
+  .ResourcesHubbanner {
+    padding: 60px 20px;
+  }
+  .ResourcesHubbanner > h2 {
+    font-size: larger;
+    font-weight: 700;
+  }
+  .ResourcesHubbanner > h3 {
+    font-size: medium;
+    font-weight: 500;
+    width: 95%;
+    color: var(--darkgreen);
+  }
+  .ResourcesSubContainer {
+    padding: 80px 20px 28px 20px;
+  }
+  .ResourcesSubContainer > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .ResourcesSubContainer > p {
+    font-size: large;
+    font-weight: 400;
+  }
+  .ResourcesFooterCards {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+  }
+  .imgresponsiveChange {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2px !important;
+  }
+  .Cardfooteritems {
+    padding: 10px;
+  }
+  .Cardfooteritems > p {
+    font-size: large;
+    font-weight: 600;
+    color: var(--darkgreen);
+    cursor: pointer;
+  }
+  .ResponsiveFooterDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ResponsiveFooterDetails1 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+  .ResponsiveFooterDetails2 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+  .FooterDetails1 {
+    width: 100%;
+  }
+  .ResponsiveFooterDetails2 > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .FooterDetails2 {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .ArrowIcon {
+    width: 10% !important;
+    height: 100% !important;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 674px) {
+  .ResourcesHubBtncontainer > button {
+    width: 30%;
+    padding: 8px;
+  }
+  .ResourcesHubBtncontainer > a {
+    width: 30%;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 584px) {
+  .ResourcesHubBtncontainer > a {
+    width: 40%;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ResoucesHubBtncontainer > button {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .CardContainerNew {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .ResoucesHubBtncontainer > button {
+    width: 55%;
+  }
+  .ResoucesHubBtncontainer > a {
+    width: 70%;
+  }
+}
+/* 
+@media screen and (max-width: 714px) {
+  .CardContainerNew {
+    padding: 15px 45px;
+  }
+} */

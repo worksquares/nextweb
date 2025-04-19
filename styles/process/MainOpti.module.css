@@ -1,0 +1,1017 @@
+.MainContainer {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 1700px; */
+  padding: 5px;
+  margin-top: 40px;
+}
+.Mainheader {
+  /* border: 1px solid pink; */
+  height: auto;
+  padding: 80px 40px;
+  display: flex;
+  background-color: var(--lightgreen);
+  flex-direction: column;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+.Mainheader > h2 {
+  width: 75%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.NavbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 13px 13px -16px var(--grey);
+  background-color: #ffffff;
+  position: sticky;
+  /* top: 12%; */
+  top: 0%;
+  left: 0;
+  /* border: 1px solid red; */
+  z-index: 2 !important;
+}
+
+.NavbarSideHeading {
+  margin: 0px;
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  padding: 13px;
+  background-color: var(--darkgreen);
+  color: #ffffff;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavbarHubNav {
+  /* border: 1px solid red; */
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto !important;
+  overflow-y: auto;
+  /* overflow-x: hidden !important; */
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* box-shadow: inset -10px 0px 21px 0px #e5e5e5, inset 10px 0px 21px 0px #e5e5e5; */
+  box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -webkit-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -moz-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+}
+
+.NavbarHubNav::-webkit-scrollbar {
+  display: none;
+}
+
+.NavbarContainer > h2 {
+  margin: 0px;
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  visibility: hidden;
+}
+.NavbarLinks {
+  display: flex;
+  width: 150% !important;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0px !important;
+  list-style-type: none;
+  /* border: 1px solid green; */
+  padding: 13px;
+}
+.Navbarli > a {
+  list-style-type: none;
+  /* color: var(--softgreen); */
+  color: var(--lightgreen) !important;
+  font-weight: 300;
+  font-size: medium;
+  margin: 16px;
+  cursor: pointer;
+  padding-bottom: 10.5px;
+  /* border: 1px solid rgb(0, 72, 255); */
+}
+
+.Navbarli > a:hover {
+  color: var(--darkgreen);
+  border-bottom: 3px solid var(--darkgreen);
+}
+
+.NavbarContainer > h2 {
+  overflow: hidden !important;
+}
+.FixedContainer {
+  width: 10%;
+  /* border: 1px solid red; */
+  padding: 3px;
+  position: fixed;
+  bottom: 9%;
+  right: 0.5%;
+}
+.FixedOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  margin-bottom: 7px;
+  height: 70px !important;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 6px 14px -3px rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .FixedOption {
+    font-size: large;
+    font-weight: 600;
+  }
+  .FixedContainer {
+    width: 15%;
+    /* border: 1px solid red; */
+    padding: 3px;
+    position: fixed;
+    bottom: 9%;
+    right: 0.5%;
+  }
+}
+@media screen and (max-width: 1894px) {
+  .Navbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .Navbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+}
+@media screen and (max-width: 924px) {
+  .NavbarHub-Nav {
+    width: 50%;
+  }
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Mainheader > h2 {
+    width: 75%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Mainheader {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .Mainheader > h2 {
+    width: 95%;
+    font-size: larger;
+    font-weight: 800;
+  }
+  .FixedContainer {
+    visibility: hidden;
+  }
+  .MainContainer {
+    width: 100%;
+    /* border: 1px solid blueviolet; */
+  }
+  .NavbarSideHeading {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 625px) {
+  .NavbarHub-Nav {
+    width: 75%;
+  }
+  .NavbarLinks {
+    width: 140% !important;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: small;
+  }
+}
+@media screen and (max-width: 608px) {
+  .NavbarHub-Nav {
+    width: 75%;
+  }
+  .NavbarLinks {
+    width: 140% !important;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: small;
+  }
+  .NavbarLinks {
+    padding: 10px 8px;
+  }
+  .Navbarli > a {
+    margin: 13px;
+    padding-bottom: 8.5px;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .NavbarLinks {
+    /* border: 1px solid pink; */
+    width: 60%;
+    overflow: scroll;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .NavbarContainer {
+    position: sticky;
+    top: 8.5%;
+    /* top: 14%; */
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .NavbarLinks {
+    width: 60%;
+    overflow: scroll;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .NavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .Navbarli > a {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .NavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .Navbarli > a {
+    font-size: small;
+    /* margin-left: 5px !important; */
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .MainContainer {
+    width: 100% !important;
+    /* border: 1px solid rgb(209, 16, 171); */
+  }
+
+  .NavbarLinks {
+    width: 100% !important;
+  }
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+/* --------------------------------------BENEFITS OPTI CSS----------------------------------------------------- */
+
+/* .BenefitsUIContainer {
+    border: 1px solid red;
+  } */
+
+.BenefitsUIHeading {
+  /* border: 1px solid blueviolet; */
+  padding: 80px 18px 0px 18px;
+}
+
+.BenefitsUIHeading > h1 {
+  width: 100%;
+  font-size: x-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+  border-bottom: 5px solid var(--deeplightgrey);
+  padding-bottom: 18px;
+}
+
+.BenefitsCardContainerCards {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 185px;
+  /* margin: 2px; */
+  padding: 6px;
+}
+
+.BenefitsCardContainerCards > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 100%;
+  height: auto;
+}
+
+.BenefitsCardContainerCards > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.BenefitsUICards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-top: 70px;
+}
+
+.BenefitsUICardInfo {
+  padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .FixedOption {
+    font-size: large;
+    font-weight: 600;
+  }
+  .FixedContainer {
+    width: 15%;
+    /* border: 1px solid red; */
+    padding: 3px;
+    position: fixed;
+    bottom: 9%;
+    right: 0.5%;
+  }
+}
+@media screen and (max-width: 1894px) {
+  .Navbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .Navbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1074px) {
+  .NavbarSideHeading {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Mainheader > h2 {
+    width: 75%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Mainheader {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .Mainheader > h2 {
+    width: 95%;
+    font-size: larger;
+    font-weight: 800;
+  }
+  .FixedContainer {
+    visibility: hidden;
+  }
+  .MainContainer {
+    width: 100%;
+    /* border: 1px solid blueviolet; */
+  }
+  .NavbarSideHeading {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px;
+  }
+  .BenefitsUIHeading {
+    /* border: 1px solid blueviolet; */
+    padding: 40px 18px 0px 18px;
+  }
+
+  .BenefitsUIHeading > h1 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .BenefitsUICards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .NavbarUILinks {
+    width: 130% !important;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red;  */
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .NavbarUILinks {
+    /* border: 1px solid pink; */
+    width: 60%;
+    overflow: scroll;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .NavbarUIContainer {
+    position: sticky;
+    /* top: 11.8%; */
+    top: 11.8%;
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .NavbarUILinks {
+    width: 60%;
+    overflow: scroll;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .Navbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .NavbarUILinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .Navbarli > a {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .NavbarUILinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+    /* border: 1px solid red; */
+  }
+  .Navbarli > a {
+    font-size: small;
+    margin-left: 15px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .MainContainer {
+    width: 100% !important;
+    /* border: 1px solid rgb(209, 16, 171); */
+  }
+  .NavbarUILinks {
+    width: 100% !important;
+  }
+  .Navbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .BenefitsUICards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+  }
+  .BenefitsCardContainerCards {
+    /* border: 1px solid red; */
+    height: 135px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .BenefitsUICards {
+    padding-top: 10px;
+  }
+  .BenefitsUIHeading > h1 {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+  }
+  .BenefitsUIHeading {
+    padding: 40px 18px 0px 18px;
+  }
+  .BenefitsCardContainerCards > h3 {
+    margin: 12px 0px;
+  }
+}
+
+/* ----------------------------------------FEATURES OPTI CSS--------------------------------------------------------- */
+
+.FeaturesUIContainer {
+  /* border: 1px solid green; */
+  padding: 20px;
+}
+
+.FeaturesUIHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 18px 18px 18px;
+  border-bottom: 5px solid var(--deeplightgrey);
+}
+
+.FeaturesUIHeader > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.FeaturesUIBtncontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 47%;
+}
+
+.FeaturesUIBtncontainer > button {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* width: 40%; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.FeaturesUIBtncontainer > button:hover {
+  box-shadow: inset 270px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.FeaturesUIImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ImgContainer {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 48px 20px 48px 40px;
+}
+
+.imgresponsive {
+  width: 100%;
+}
+
+.ReImgContainer {
+  display: none;
+}
+
+.ImgContainer > h2 {
+  width: 100%;
+  font-size: x-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+  margin: 20px 0px 20px 0px;
+}
+.ImgContainer > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1092px) {
+  .ImgContainer > h2 {
+    font-size: x-large;
+  }
+  .ImgContainer > p {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .FeaturesUIHeader {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 18px;
+  }
+  .FeaturesUIBtncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 47%;
+  }
+  .FeaturesUIHeader > h2 {
+    font-size: x-large;
+    font-weight: 700;
+    color: var(--darkgreen);
+  }
+  .FeaturesUIBtncontainer > button {
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px 30px;
+  }
+  .ReImgContainer {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: block;
+    padding: 28px 10px 28px 10px;
+  }
+  .ImgContainer {
+    display: none;
+  }
+  .ReImgContainer > h2 {
+    width: 100%;
+    font-size: x-large;
+    color: var(--darkgreen);
+  }
+  .ReImgContainer > p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .FeaturesUIBtncontainer > button {
+    font-size: medium;
+    font-weight: 600;
+    color: var(--darkgreen);
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 2px solid var(--darkgreen);
+    /* width: 40%; */
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ReImgContainer {
+    padding: 8px 3px;
+  }
+  .ReImgContainer > h2 {
+    width: 100%;
+    font-size: x-large;
+    margin: 8px 0px;
+  }
+  .ReImgContainer > p {
+    font-size: large;
+    margin: 6px 0px;
+  }
+  .FeaturesUIBtncontainer > button {
+    font-size: small;
+    font-weight: 600;
+    padding: 10px 15px;
+  }
+}
+
+/* -----------------------------ADDITIONAL FEATURES OPTI CSS------------------------------------------------------- */
+
+.AdditionalFeatureContainer {
+  /* border: 1px solid red; */
+  padding: 0px 20px;
+}
+
+.AdditionalFeatureHeading {
+  border-bottom: 2px solid var(--deeplightgrey);
+  /* opacity: 0.6; */
+}
+
+.AdditionalFeatureHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+@media screen and (max-width: 770px) {
+  .AdditionalFeatureHeading > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+}
+
+/* -----------------------------------HOW TO BUY OPTI CSS----------------------------------------------------------------------------------*/
+
+.HowToBuyMainContainer {
+  /* border: 1px solid red; */
+  padding: 40px 20px;
+  background-color: #b8d9e2;
+}
+
+.HowToBuyHeading {
+  /* border: 1px solid blue; */
+  padding: 20px;
+}
+
+.HowToBuyHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.HowToBuyHeading > p {
+  font-size: small;
+  font-weight: 500;
+  color: var(--darkgreen);
+}
+
+.HowToBuyCards {
+  padding: 18px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 770px) {
+  .HowToBuyMainContainer {
+    /* border: 1px solid red; */
+    padding: 10px 15px;
+  }
+  .HowToBuyHeading > h2 {
+    font-size: x-large;
+    font-weight: 800;
+  }
+
+  .HowToBuyHeading > p {
+    font-size: small;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .HowToBuyMainContainer {
+    margin-top: 40px;
+  }
+}
+/* -------------------------------RELATED APPS OPTI CSS---------------------------------------------------- */
+
+.RelatedAppsMainContainer {
+  /* border: 1px solid red; */
+  padding: 40px 20px;
+}
+
+.RelatedAppsHeading {
+  border-bottom: 2px solid var(--deeplightgrey);
+  /* opacity: 0.6; */
+}
+
+.RelatedAppsHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.RelatedAppsCards {
+  padding: 18px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DigDeeperContainer {
+  /* border: 1px solid green; */
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.DigDeeperContainer > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.DigDeeperIconCards {
+  /* border: 1px solid red; */
+  /* padding: 20px 20px 20px 20px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DigDeeperbanner {
+  padding: 80px 40px;
+  background-color: var(--litePurpleColor);
+}
+
+.DigDeeperbanner > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.DigDeeperbanner > h3 {
+  font-size: x-large;
+  font-weight: 500;
+  width: 75%;
+  color: var(--darkgreen);
+}
+
+.DigDeeperbanner > h3 > a {
+  border-bottom: 2px solid var(--darkgreen);
+  color: var(--darkgreen);
+}
+
+.DigDeeperBtncontainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 13px 10px 13px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.DigDeeperBtncontainer > button {
+  font-size: medium;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* border: 1px solid red; */
+  width: 20%;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.DigDeeperBtncontainer > button:hover {
+  box-shadow: inset 380px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 770px) {
+  .DigDeeperbanner {
+    padding: 40px 20px;
+    background-color: var(--deeplightgreen);
+  }
+
+  .DigDeeperbanner > h2 {
+    font-size: x-large;
+    font-weight: 700;
+    color: var(--darkgreen);
+  }
+
+  .DigDeeperbanner > h3 {
+    font-size: large;
+    font-weight: 500;
+    width: 100%;
+    color: var(--darkgreen);
+  }
+
+  .DigDeeperbanner > h3 > a {
+    border-bottom: 2px solid var(--darkgreen);
+    color: var(--darkgreen);
+  }
+  .RelatedAppsHeading > h2 {
+    font-size: x-large;
+    font-weight: 800;
+    color: var(--darkgreen);
+  }
+  .DigDeeperContainer {
+    /* border: 1px solid green; */
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  .DigDeeperContainer > h2 {
+    font-size: x-large;
+    font-weight: 800;
+  }
+  .DigDeeperbanner > h2 {
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .DigDeeperBtncontainer > button {
+    font-size: small;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .DigDeeperBtncontainer > button {
+    font-size: medium;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .DigDeeperBtncontainer > button {
+    font-size: small;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .DigDeeperBtncontainer > button {
+    font-size: small;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .DigDeeperBtncontainer > button {
+    width: 30%;
+    padding: 8px;
+  }
+}

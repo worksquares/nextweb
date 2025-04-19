@@ -1,0 +1,192 @@
+.TermsandConditionMainContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+}
+
+.TermsandConditionHeading {
+  padding: 5px 0px 5px 25px;
+}
+.TermsandConditionHeading > h1 {
+  font-size: xx-large;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.TermsandConditionsInfoContainer {
+  /* border: 1px solid green; */
+  display: flex;
+}
+
+.TermsandConditionsLeftContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding: 25px;
+  padding-top: unset;
+}
+.TermsandConditionsRightContainer {
+  /* border: 1px solid rgb(201, 4, 194); */
+  width: 40%;
+  padding: 0px;
+  padding-top: unset;
+}
+
+.TermsandConditionsLinks > ul {
+  padding: 0;
+}
+
+.TermsandConditionsLinks {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.listitem {
+  list-style-type: none;
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  height: 25px;
+}
+
+.statements > h2 {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.statements > p {
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.ParaMarginLeft {
+  margin-left: 40px;
+}
+
+.FixedOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  margin-bottom: 7px;
+  height: 70px !important;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 6px 14px -3px rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+
+.FixedContainer {
+  width: 10%;
+  /* border: 1px solid red; */
+  padding: 3px;
+  position: fixed;
+  bottom: 9%;
+  right: 0.5%;
+}
+
+.TermsandConditionsCardLinks {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.CardLink1,
+.CardLink2 {
+  padding: 80px;
+  width: 50%;
+}
+.CardLink1 > h3,
+.CardLink2 > h3 {
+  margin: 5px 0px 5px 0px;
+}
+
+.CardLink1 {
+  background-color: var(--PinkmixGrey);
+}
+
+.CardLink2 {
+  background-color: var(--semiDarkGrey);
+}
+
+.Carditem {
+  list-style-type: none;
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  /* height: 45px !important; */
+  /* border: 1px solid red; */
+}
+
+.Carditem:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: -1%;
+  /* top: 15px; */
+  /* background: var(--badge-color); */
+  transition: width 0.2s ease 0s, left 0.1s ease 0s;
+  width: 0;
+}
+
+.listalign {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  width: fit-content;
+  /* margin-bottom: 10%; */
+  color: var(--darkgreen);
+  position: relative;
+}
+
+.listalign:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  /* left: 50%; */
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.listalign:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .TermsandConditionsInfoContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .TermsandConditionsLeftContainer {
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 25px;
+  }
+  .TermsandConditionsRightContainer {
+    /* border: 1px solid rgb(201, 4, 194); */
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .FixedContainer {
+    visibility: hidden;
+  }
+  .TermsandConditionsCardLinks {
+    display: flex;
+    flex-direction: column;
+  }
+  .CardLink1,
+  .CardLink2 {
+    padding: 80px 20px;
+    width: 100%;
+  }
+}

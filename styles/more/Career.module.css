@@ -1,0 +1,1443 @@
+.MainContainer {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  width: 100%;
+  /* min-width: 1700px !important; */
+  padding: 5px;
+  /* margin-top: 40px; */
+}
+.Mainheader {
+  /* border: 1px solid pink; */
+  height: auto;
+  padding: 80px 40px;
+  display: flex;
+  background-color: var(--lightgreen);
+  flex-direction: column;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.Mainheader > h2 {
+  width: 75%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.CareerNavbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* box-shadow: 0 13px 13px -16px var(--grey); */
+  background-color: #ffffff;
+  position: sticky;
+  top: 0%;
+  left: 0;
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+
+.NavbarSideHeading {
+  margin: 0px;
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  padding: 13px 0px;
+  background-color: var(--darkgreen);
+  color: #ffffff;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CareerNavbarContainer > h2 {
+  margin: 0px;
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  visibility: hidden;
+}
+
+.CareerNavbarHubNav {
+  /* border: 1px solid red; */
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* box-shadow: inset -10px 0px 21px 0px #e5e5e5, inset 10px 0px 21px 0px #e5e5e5; */
+  box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -webkit-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -moz-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+}
+
+.CareerNavbarHubNav::-webkit-scrollbar {
+  display: none;
+}
+
+.CareerNavbarLinks {
+  display: flex;
+  /* width: 100% !important; */
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0px !important;
+  list-style-type: none;
+  /* border: 1px solid green; */
+  padding: 13px;
+}
+
+.CareerNavbarli > a {
+  list-style-type: none;
+  color: var(--softgreen);
+  color: #314a4c;
+  font-weight: 300;
+  font-size: medium !important;
+  margin: 16px;
+  cursor: pointer;
+  padding-bottom: 10.5px;
+  /* border: 1px solid red; */
+}
+.CareerNavbarli > a:hover {
+  color: var(--darkgreen);
+  border-bottom: 3px solid var(--darkgreen) !important;
+}
+
+.CareerNavbarContainer > h2 {
+  overflow: hidden !important;
+}
+.FixedContainer {
+  width: 10%;
+  /* border: 1px solid red; */
+  padding: 3px;
+  position: fixed;
+  bottom: 9%;
+  right: 0.5%;
+}
+.FixedOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  margin-bottom: 7px;
+  height: 70px !important;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 6px 14px -3px rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .FixedOption {
+    font-size: large;
+    font-weight: 600;
+  }
+  .FixedContainer {
+    width: 15%;
+    /* border: 1px solid red; */
+    padding: 3px;
+    position: fixed;
+    bottom: 9%;
+    right: 0.5%;
+  }
+}
+@media screen and (max-width: 1894px) {
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .CareerNavbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .CareerNavbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .NavbarHubNav {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 924px) {
+  .NavbarHub-Nav {
+    width: 50%;
+  }
+  .NavbarSideHeading {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Mainheader > h2 {
+    width: 75%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .NavbarSideHeading {
+    width: 20%;
+    /* border: 1px solid green; */
+  }
+}
+
+@media screen and (max-width: 804px) {
+  .NavbarSideHeading {
+    width: 16%;
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .NavbarSideHeading {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Mainheader {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .Mainheader > h2 {
+    width: 95%;
+    font-size: larger;
+    font-weight: 800;
+  }
+  .FixedContainer {
+    visibility: hidden;
+  }
+  .MainContainer {
+    width: 100%;
+    /* border: 1px solid blueviolet; */
+  }
+}
+@media screen and (max-width: 762px) {
+  /* .CareerNavbarHubNav {
+    width: 60%;
+  } */
+}
+
+@media screen and (max-width: 742px) {
+  .CareerNavbarContainer {
+    position: sticky;
+    top: 6.7%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .NavbarHub-Nav {
+    width: 75%;
+  }
+  .CareerNavbarLinks {
+    width: 140% !important;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  /* .CareerNavbarHubNav {
+    width: 75%;
+  } */
+  .CareerNavbarLinks {
+    /* border: 1px solid pink; */
+    width: 60%;
+    overflow: scroll;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+    padding: 10.5px 8px;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  /* .CareerNavbarHubNav {
+    width: 77%;
+  } */
+  .CareerNavbarLinks {
+    width: 60%;
+    overflow: scroll;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: medium;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: small;
+    margin-left: 5px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .MainContainer {
+    width: 100% !important;
+    /* border: 1px solid rgb(209, 16, 171); */
+  }
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarLinks {
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 384px) {
+  .CareerNavbarli > a {
+    font-size: small !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 366px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 362px) {
+  /* .CareerNavbarHubNav {
+    width: 100%;
+  } */
+  .CareerNavbarli > a {
+    font-size: small !important;
+  }
+}
+
+/* ---------------------------OUR VALUES CAREER CSS-------------------------------------*/
+
+.OurValuesCareerContainer {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.OurValuesCareerImgContainer {
+  width: 50%;
+  /* border: 1px solid green; */
+  margin: 15px 0px;
+}
+
+.OVCImg {
+  width: 100%;
+}
+
+.OurValuesCareerInfoContainer {
+  padding: 80px 20px;
+  width: 50%;
+  /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.InfoContainerHeading > h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 95%;
+}
+
+.InfoContainerHeading > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  width: 95%;
+}
+
+.InfoContainerHeading > ul > li {
+  color: var(--darkgreen);
+  font-size: large;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.InfoContainerHeading > ul {
+  padding-left: 20px;
+}
+
+.InfoContainerHeading > button {
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  /* cursor: pointer; */
+  border: 2px solid var(--darkgreen);
+  background-color: transparent;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.InfoContainerHeading > button:hover {
+  box-shadow: inset 270px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 770px) {
+  .OurValuesCareerContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .OurValuesCareerImgContainer {
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+
+  .OVCImg {
+    width: 100%;
+  }
+
+  .OurValuesCareerInfoContainer {
+    padding: 40px 0px;
+    width: 100%;
+    /* border: 1px solid rgb(0, 0, 0); */
+  }
+  .InfoContainerHeading > h1 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  .InfoContainerHeading > p {
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .InfoContainerHeading > ul > li {
+    font-size: large;
+    font-weight: 400;
+  }
+  .InfoContainerHeading > button {
+    font-size: small;
+    font-weight: 600;
+    padding: 8px 35px;
+  }
+}
+
+/* ---------------------------EMPLOYEE STORIES CAREER CSS---------------------------------------- */
+
+.EmployeeStoriesFirstContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 600px !important;
+}
+.ReEmployeeStoriesFirstContainer {
+  /* border: 1px solid red; */
+  display: none;
+}
+
+.EmployesStoriesLeftContainer {
+  /* border: 1px solid blue; */
+  width: 45%;
+  background-color: #c8eadd;
+  padding: 30px 20px 0px 40px;
+}
+
+.ReEmployesStoriesLeftContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  background-color: #b0e1ce;
+  padding: 30px 20px 40px 20px;
+}
+
+.EmployeeStoriesContainer {
+  /* border: 1px solid indianred; */
+  height: 85%;
+}
+
+.ReEmployeeStoriesContainer {
+  /* border: 1px solid indianred; */
+  height: 85%;
+}
+
+.ESUnderLine {
+  color: var(--darkgreen) !important;
+  /* background-color: red !important; */
+  width: 8%;
+  float: left;
+  border: 1px solid var(--darkgreen);
+  margin: 0;
+}
+
+.EShrLine {
+  color: var(--darkgreen) !important;
+  /* background-color: red !important; */
+  width: 3%;
+  float: left;
+  border: 1px solid var(--darkgreen);
+  margin: 0;
+}
+
+.ESContainerHeading .SecondContainerInfoHeading {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 0px;
+  /* border-bottom-width: 2px !important; */
+  margin: 0;
+}
+
+.ReESContainerHeading .SecondContainerInfoHeading {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 0px;
+  /* border-bottom-width: 2px !important; */
+  margin: 0;
+}
+
+.EmployeeStoriesContainer > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 95%;
+}
+
+.EmployeeStoriesContainer > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 95%;
+}
+
+.EmployeeStoriesContainer > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  width: 95%;
+}
+
+.ReEmployeeStoriesContainer > h2 {
+  font-size: larger;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 95%;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+.ReEmployeeStoriesContainer > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.ReEmployeeStoriesContainer > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  width: 95%;
+  margin: 10px 0px;
+}
+
+.EmployesStoriesRightContainer {
+  /* border: 1px solid blue; */
+  width: 55%;
+  background-color: #b0e1ce;
+  position: relative;
+}
+
+.ReEmployesStoriesRightContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  background-color: #b0e1ce;
+  position: relative;
+}
+
+.EmployeeStoriesImg {
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  left: -50%;
+}
+
+.ReEmployeeStoriesImg {
+  width: 100%;
+  height: 100%;
+}
+
+.EmployeeStoriesBtn {
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  background-color: transparent;
+  /* width: 40%; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.EmployeeStoriesBtn:hover {
+  box-shadow: inset 270px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.ReEmployeeStoriesBtn {
+  font-size: medium;
+  font-weight: 600;
+  color: var(--darkgreen);
+  padding: 8px 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid var(--darkgreen);
+  background-color: transparent;
+  /* width: 40%; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.ReEmployeeStoriesBtn:hover {
+  box-shadow: inset 270px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.EmployeeStoriesSecondContainer {
+  padding: 80px 0px;
+  /* border: 1px solid red; */
+}
+
+.SecondContainerInfo > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.SecondContainerInfo > h2 {
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.ImageHoverContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(353px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 10px;
+  padding: 40px 10px 80px 10px;
+  /* border: 1px solid red; */
+}
+
+.ImageBox {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* cursor: pointer; */
+  padding: 10px 0px;
+  position: relative;
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+  height: 100%;
+  /* border: 1px solid green; */
+  /* border-radius: 50% !important; */
+}
+
+.ImageHoverCards {
+  position: relative;
+  /* border: 1px solid green; */
+}
+
+.ImageHoverImg {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+  /* max-width: unset !important; */
+  /* max-height: unset !important; */
+  transition: all 0.3s;
+  /* display: block; */
+  transform: scale(0.9);
+  border-radius: 50% !important;
+  /* border: 1px solid red !important; */
+}
+
+.ImageBox:hover .ImageHoverImg {
+  transform: scale(1);
+}
+
+.ImageBox:hover .LinkAnimate:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.LinkAnimate {
+  padding: 20px 0px 5px 0px;
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  position: relative;
+  width: fit-content;
+}
+
+.LinkAnimate:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  /* left: 50%; */
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  /* cursor: alias; */
+}
+
+@media screen and (max-width: 915px) {
+  .ImageBox {
+    width: 40%;
+    padding: 8px 0px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .EmployeeStoriesFirstContainer {
+    display: none;
+  }
+  .ReEmployeeStoriesFirstContainer {
+    display: block;
+  }
+  .EmployeeStoriesSecondContainer {
+    padding: 40px 0px;
+    /* border: 1px solid red; */
+  }
+
+  .SecondContainerInfo > h3 {
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  .EShrLine {
+    color: var(--darkgreen) !important;
+    /* background-color: red !important; */
+    width: 3%;
+    float: left;
+    border: 1px solid var(--darkgreen);
+    margin: 0;
+  }
+
+  .SecondContainerInfo > h2 {
+    font-size: large;
+    font-weight: 600;
+    width: 95%;
+  }
+
+  .ImageHoverContainer {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px 10px 20px 10px;
+  }
+  .ImageBox {
+    width: 70%;
+    padding: 8px 0px;
+  }
+
+  .ImageHoverImg {
+    width: 120px;
+    transition: all 0.3s;
+    display: block;
+    transform: scale(1);
+  }
+  .LinkAnimate {
+    padding: 10px 0px 5px 0px;
+    font-size: medium;
+    font-weight: 600;
+  }
+}
+
+/* --------------------------------BENEFITS CAREER CSS-------------------------------------------------------- */
+
+.BenefitsMainContainer {
+  /* border: 1px solid red; */
+  padding: 40px 0px 80px 0px;
+}
+
+.BenefitsContainerInfo {
+  /* border: 1px solid blue; */
+  padding: 0px 0px 40px 0px;
+}
+
+.BenefitsContainerInfo > h3 {
+  color: var(--lightgrey);
+}
+
+.BenefitsContainerInfo > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.BenefitsContainerInfo > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.BenefitsIconListContainer {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.IconListBoxes {
+  /* border: 1px solid rgb(255, 0, 191); */
+  display: flex;
+  width: 35%;
+  padding-bottom: 40px;
+}
+
+.BenefitsInfoImg {
+  width: 50px;
+}
+
+.BenefitsIconInfo > p {
+  font-size: large;
+  font-weight: 500;
+  color: var(--darkgreen);
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  .BenefitsContainerInfo {
+    /* border: 1px solid blue; */
+    padding: 0px 0px 30px 0px;
+  }
+
+  .BenefitsContainerInfo > h3 {
+    font-size: small;
+    font-weight: 700;
+    margin: 5px 0px;
+  }
+
+  .BenefitsContainerInfo > h2 {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 8px 0px;
+  }
+
+  .BenefitsContainerInfo > p {
+    font-size: large;
+    font-weight: 400;
+  }
+  .IconListBoxes {
+    /* border: 1px solid rgb(255, 0, 191); */
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .BenefitsInfoImg {
+    width: 40px;
+  }
+  .BenefitsIconInfo > p {
+    font-size: medium;
+    font-weight: 500;
+    color: var(--darkgreen);
+    padding-left: 12px;
+    margin: 12px;
+  }
+}
+
+/* -----------------------------FEATURED ROLES CAREER CSS------------------------------------------------------------ */
+
+.FeaturedRolesMainContainer {
+  /* border: 1px solid red; */
+  padding: 40px 0px;
+}
+
+.FeaturedRolesInfoContainer {
+  /* border: 1px solid green; */
+  margin-bottom: 40px;
+}
+
+.FeaturedRolesHeadings > h4 {
+  font-size: medium;
+  font-weight: 700;
+  color: var(--lightgrey);
+  margin: 0px;
+}
+.FeaturedRolesHeadings > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+.FeaturedRolesHeadings > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.FeaturedRolesSearchContainer {
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.FeaturedRolesSearchContainer > form {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.FeaturedRolesSearchContainer > form > input {
+  padding: 30px 20px;
+  font-size: large;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-right: 3px solid var(--semiDarkGrey);
+}
+
+.FeaturedRolesSearchContainer > form > select {
+  padding: 30px 20px;
+  font-size: large;
+  font-weight: 400;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.FeaturedRolesSearchContainer > form > button {
+  padding: 30px 20px;
+  font-size: large;
+  font-weight: 500;
+  width: 16%;
+  background-color: var(--darkgreen);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.LinkContainer {
+  /* padding: 40px 0px; */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.LinkContainer > a {
+  font-size: large;
+  font-weight: 500;
+  color: var(--darkgreen);
+  padding-bottom: 18px;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.FeaturedRolesLinkContainer > h2 {
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  border-bottom: 1px solid var(--semiDarkGrey);
+  margin: 0px;
+  padding: 18px 0px;
+  /* cursor: pointer; */
+}
+
+.FeaturedRolesLinkContainerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.FeaturedRolesLinkContainerBtn > button {
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  /* cursor: pointer; */
+  border: 2px solid var(--darkgreen);
+  background-color: transparent;
+  margin-top: 40px;
+  /* width: 40%; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  /* border: 1px solid red; */
+}
+
+.FeaturedRolesLinkContainerBtn > button:hover {
+  box-shadow: inset 290px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 742px) {
+  .MainContainer {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .FeaturedRolesMainContainer {
+    /* border: 1px solid red; */
+    padding: 20px 0px;
+  }
+  .FeaturedRolesInfoContainer {
+    /* border: 1px solid green; */
+    margin-bottom: 40px;
+  }
+
+  .FeaturedRolesHeadings > h4 {
+    font-size: small;
+    font-weight: 700;
+    margin: 0px;
+  }
+  .FeaturedRolesHeadings > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .FeaturedRolesHeadings > p {
+    font-size: large;
+    font-weight: 400;
+  }
+  .FeaturedRolesSearchContainer > form {
+    display: flex;
+    flex-direction: column;
+  }
+  .FeaturedRolesSearchContainer {
+    /* border: 1px solid red; */
+    box-shadow: none;
+  }
+  .FeaturedRolesSearchContainer > form > input {
+    padding: 20px 20px;
+    font-size: small;
+    font-weight: 400;
+    border-bottom: 2px solid var(--semiDarkGrey);
+    border-right: none;
+  }
+
+  .FeaturedRolesSearchContainer > form > select {
+    padding: 20px 20px;
+    font-size: small;
+    font-weight: 400;
+  }
+  .FeaturedRolesSearchContainer > form > button {
+    padding: 20px 20px;
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+  }
+  .FeaturedRolesLinkContainer {
+    padding: 20px 0px;
+    /* border: 1px solid red; */
+  }
+
+  .LinkContainer > a {
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .FeaturedRolesLinkContainer > h2 {
+    font-size: large;
+  }
+
+  .FeaturedRolesLinkContainerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .FeaturedRolesLinkContainerBtn > button {
+    font-size: large;
+    font-weight: 600;
+    color: var(--darkgreen);
+    padding: 10px 40px;
+    /* cursor: pointer; */
+    border: 2px solid var(--darkgreen);
+    background-color: transparent;
+    margin-top: 40px;
+    /* width: 40%; */
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    /* border: 1px solid red; */
+  }
+}
+
+/* --------------------------------TALENT COMMUNITY CAREER CSS----------------------------------------------------------- */
+
+/* .TalentCommunityMainContainer {
+  border: 1px solid red;
+} */
+
+.TalentCommunityStayConnected {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: var(--BluemixWhite);
+}
+
+.SatyConnectedInfo {
+  width: 50%;
+}
+
+.SatyConnectedInfo > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.SatyConnectedInfo > p {
+  font-size: x-large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.FeaturedRolesLinkContainerBtn > button {
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  /* cursor: pointer; */
+  border: 2px solid var(--darkgreen);
+  background-color: transparent;
+  margin-top: 40px;
+  /* width: 40%; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  /* border: 1px solid red; */
+}
+
+.FeaturedRolesLinkContainerBtn > button:hover {
+  box-shadow: inset 290px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.SatyConnectedImg {
+  width: 50%;
+}
+
+.SatyConnectedInfoImg {
+  width: 100%;
+}
+
+.TalentCommunityExploreMore {
+  /* border: 1px solid red; */
+  padding: 40px 0px;
+}
+
+.TalentCommunityExploreMore > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.ExploreMoreIconsContainer {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+}
+
+.ExploreMoreIconBoxes {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px 0px;
+}
+
+.ExploreMoreIcon {
+  width: 50px;
+}
+
+.ExploreMoreLink {
+  padding: 15px 0px;
+  font-size: large;
+  font-weight: 500;
+  color: var(--darkgreen);
+}
+
+.ExploreMorePara {
+  /* border: 1px solid red; */
+  padding: 25px 0px;
+}
+
+.ExploreMorePara > p {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.ResponsiveFooterDetails {
+  /* border: 1px solid darkblue; */
+  padding: 30px 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ResponsiveFooterDetails1 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin-bottom: 5px;
+}
+
+.ResponsiveFooterDetails2 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ResponsiveFooterDetails2 > p::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+
+.ResponsiveFooterDetails2 > p:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.ResponsiveFooterDetails2 > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.FooterDetails1 {
+  /* border: 1px solid brown; */
+  width: 30%;
+}
+
+.ResponsiveFooterDetails2 {
+  display: flex;
+  align-items: center;
+}
+
+.FooterDetails2 {
+  /* border: 1px solid green; */
+  width: 30%;
+  padding: 15px;
+}
+
+.LangSelect {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--darkgreen);
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+}
+
+.ExploreMoreLink {
+  padding: 20px 0px 5px 0px;
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  position: relative;
+  width: fit-content;
+}
+
+.ExploreMoreLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.ExploreMoreLink:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .TalentCommunityStayConnected {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .SatyConnectedInfo {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .SatyConnectedInfo > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  .SatyConnectedInfo > p {
+    font-size: medium;
+    font-weight: 400;
+  }
+  .FeaturedRolesLinkContainerBtn > button {
+    font-size: small;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+  .SatyConnectedImg {
+    width: 100%;
+  }
+  .TalentCommunityExploreMore {
+    padding: 0px;
+  }
+
+  .TalentCommunityExploreMore > h2 {
+    font-size: larger;
+  }
+  .ExploreMoreIconsContainer {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .ExploreMoreIconBoxes {
+    /* border: 1px solid blue; */
+    width: 45%;
+    padding: 20px 0px;
+  }
+  .ExploreMoreLink {
+    padding: 20px 0px 5px 0px;
+    font-size: medium;
+    font-weight: 600;
+  }
+  .ExploreMoreIcon {
+    width: 30px;
+  }
+  .ResponsiveFooterDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .ResponsiveFooterDetails1 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .ResponsiveFooterDetails2 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .FooterDetails1 {
+    width: 100%;
+  }
+
+  .ResponsiveFooterDetails2 > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .FooterDetails2 {
+    width: 100%;
+    padding: 15px 0px;
+  }
+
+  .ArrowIcon {
+    width: 10% !important;
+    height: 100% !important;
+    margin-left: 5px;
+  }
+}

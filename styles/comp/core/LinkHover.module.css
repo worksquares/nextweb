@@ -1,0 +1,171 @@
+.ResourcesCards {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: auto;
+  /* padding: 15px; */
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  margin: 30px 0px 15px 0px;
+  /* justify-content: space-between; */
+}
+
+.Carditems {
+  width: 100%;
+  max-height: 300px;
+  margin: 6px;
+  /* padding: 6px; */
+  /* border: 1px solid green; */
+}
+
+.CardimgHeading > h5 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  margin-left: 15px;
+}
+
+.CardimgHeading {
+  display: flex;
+  align-items: center;
+}
+.imgresponsiveChange {
+  width: 50px;
+  height: 50px;
+}
+
+.ResourceLinkContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ResourceLinkContainer > a {
+  margin: 10px 0px 10px 0px;
+}
+
+.LineAnimate {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  width: fit-content;
+  /* margin-bottom: 10%; */
+  color: var(--darkgreen);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  margin: 0px;
+  cursor: value;
+  /* z-index: 0; */
+  cursor: default;
+}
+
+.LineAnimate:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.LineAnimate:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* 
+.CardBoxHighlight {
+  border: 1px solid blue;
+} */
+
+/* .CardHighlight {
+  border: 1px solid red;
+} */
+
+.ReResourcesCards {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* padding: 50px 10px; */
+}
+
+.ReDropdownContainer {
+  display: none;
+}
+
+.ReDropdownContainer > details {
+  margin-top: 20px !important;
+  /* border: 1px solid blue; */
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.ReDropdownContainer > details > summary {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.SummaryHeading {
+  font-size: small;
+  font-weight: 700;
+  color: var(--darkgreen);
+  display: flex;
+  align-items: center;
+}
+
+.imgReresponsiveChange {
+  margin-right: 10px;
+  width: 35px;
+}
+
+.SelectOptionsFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.Summaryoptions {
+  /* border: 1px solid red; */
+  color: var(--darkgreen);
+  padding: 0px 0px 10px 0px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1058px) {
+  .CardBoxHighlight {
+    /* border: 1px solid tomato; */
+    margin-bottom: 115px !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .ResourcesCards {
+    /* border: 1px solid red; */
+    width: 90%;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+  .ReDropdownContainer > details {
+    margin-top: 0px !important;
+  }
+  .Carditems {
+    display: none;
+  }
+  .imgresponsiveChange {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2px !important;
+  }
+  .ReDropdownContainer {
+    display: block;
+  }
+  .Summaryoptions {
+    font-size: small;
+    font-weight: 400;
+  }
+}

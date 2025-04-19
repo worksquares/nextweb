@@ -1,0 +1,125 @@
+.FeaturesUIImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ImgContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 48px 20px 48px 40px;
+}
+
+.imgresponsive {
+  width: 100%;
+}
+
+.ReImgContainer {
+  display: none;
+  /* border: 1px solid blue; */
+}
+
+.ImgContainer > h2 {
+  width: 100%;
+  font-size: x-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+  margin: 20px 0px 20px 0px;
+}
+.ImgContainer > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.ImageGridAlignCards {
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(505px, 1fr));
+  grid-row-gap: 12px;
+  width: 100%;
+}
+
+.FeaturesUIReImageContainer {
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+@media screen and (max-width: 1092px) {
+  .ImgContainer > h2 {
+    font-size: x-large;
+  }
+  .ImgContainer > p {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .ImageGridAlignCards {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(379px, 1fr));
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .ImageGridAlignCards {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(349px, 1fr));
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .ReImgContainer {
+    width: 100%;
+    display: block;
+    padding: 28px 10px 28px 10px;
+  }
+  .ImgContainer {
+    display: none;
+  }
+  .ReImgContainer > h2 {
+    width: 100%;
+    font-size: x-large;
+    color: var(--darkgreen);
+  }
+  .ReImgContainer > p {
+    font-size: medium;
+  }
+  .ImageGridAlignCards {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .FeaturesUIReImageContainer {
+    width: 100%;
+    /* border: 1px solid rgb(21, 192, 50); */
+  }
+  .ImageGridAlignCards {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ReImgContainer {
+    padding: 8px 3px;
+    /* border: 1px solid rgb(2, 2, 2); */
+  }
+  .ReImgContainer > h2 {
+    width: 100%;
+    font-size: x-large;
+    margin: 8px 0px;
+  }
+  .ReImgContainer > p {
+    font-size: large;
+    margin: 6px 0px;
+  }
+}

@@ -1,0 +1,524 @@
+/* .GDPRMainContainer {
+  border: 1px solid red;
+} */
+
+.GDPRBanner {
+  padding: 80px 20px 80px 20px;
+  /* border: 1px solid green; */
+  background-color: #b8d9e2;
+  text-align: center;
+}
+
+.GDPRBanner > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+.GDPRBanner > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.Information1 {
+  width: 70% !important;
+  /* border: 1px solid forestgreen; */
+  padding: 20px 0px 0px 0px;
+  text-align: justify;
+}
+
+.Information1 > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.Information1 > p {
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.Information1 > ul > li {
+  margin-bottom: 25px;
+  color: var(--darkgreen);
+  font-size: large;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* .listTop {
+  margin-top: 15px !important;
+  border: 1px solid red;
+  padding-top: 10px;
+} */
+
+.GDPRInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  /* align-items: center; */
+  padding: 50px 0px;
+
+  /* border: 1px solid blueviolet; */
+}
+
+.ResourcesHubBtncontainer {
+  margin-top: 55px;
+}
+
+.ResourcesHubBtncontainer > button {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* border: 1px solid red; */
+  width: 20%;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  /* background-color: #b8d9e2; */
+  background-color: transparent;
+}
+
+.ResourcesHubBtncontainer > button:hover {
+  box-shadow: inset 380px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.GDPRResources {
+  /* border: 1px solid red; */
+  padding: 0px 20px 0px 20px;
+}
+/* .Heading > h2 {
+  border-bottom: 5px solid var(--deeplightgrey);
+} */
+
+.GDPRResources > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  margin: 20px 0px;
+}
+
+.GDPRCards {
+  padding-top: 40px;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 5px solid var(--deeplightgrey);
+}
+
+.GDPRReResourcesCards {
+  display: none;
+  padding: 60px 10px;
+  border-top: 5px solid var(--deeplightgrey);
+}
+
+.GDPRCarditems {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+
+.GDPRCardimgHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.GDPRimgresponsiveChange {
+  width: 50px;
+  height: 50px;
+}
+
+.GDPRCardimgHeading > h5 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  margin-left: 15px;
+  border: 1px solid red;
+}
+
+/* .GDPRResourcesLink {
+  margin: 12px 0px !important;
+  color: var(--darkgreen);
+  height: 20px;
+} */
+
+.GDPRResourceLinkContainer {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+
+.GDPRResourceLinkContainer > a {
+  height: 120px;
+  margin: 12px 0px;
+}
+
+/* .GDPRResourcesLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: -1%;
+  top: 15px;
+  transition: width 0.2s ease 0s, left 0.1s ease 0s;
+  width: 0;
+}
+
+.GDPRResourcesLink:hover {
+  color: var(--darkgreen);
+} */
+
+.GDPRlink1:hover:after {
+  width: 71%;
+  left: -1px;
+  top: 15px;
+  border-bottom: 2px solid var(--lightgreen);
+}
+.GDPRlink2:hover:after {
+  width: 43%;
+  left: -1px;
+  top: 15px;
+  border-bottom: 2px solid var(--lightgreen);
+}
+.GDPRlink3:hover:after {
+  width: 86%;
+  left: -1px;
+  top: 15px;
+  border-bottom: 2px solid var(--lightgreen);
+}
+.GDPRlink4:hover:after {
+  width: 33%;
+  left: -1px;
+  top: 15px;
+  border-bottom: 2px solid var(--lightgreen);
+}
+.GDPRlink5:hover:after {
+  width: 11%;
+  left: -1px;
+  top: 15px;
+  border-bottom: 2px solid var(--lightgreen);
+}
+
+.GDPRResourcesLink {
+  height: 25px;
+}
+
+/* .TrustContainer {
+  border: 1px solid red;
+} */
+
+.LeftContainerFooter > h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  margin: 20px 0px;
+}
+.LeftContainerFooter > p {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+  margin: 20px 0px;
+}
+
+.TrustContainerFooter {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.LeftContainerFooter,
+.RightContainerFooter {
+  width: 50%;
+}
+
+.RightContainerImg {
+  width: 100%;
+}
+
+.TrustBtncontainer {
+  margin-top: 55px;
+}
+
+.TrustBtncontainer > button {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* border: 1px solid red; */
+  width: 35%;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  /* background-color: #b8d9e2; */
+  background-color: transparent;
+}
+
+.TrustBtncontainer > button:hover {
+  box-shadow: inset 380px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.FixedOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  margin-bottom: 7px;
+  height: 70px !important;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 6px 14px -3px rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+
+.FixedContainer {
+  width: 10%;
+  /* border: 1px solid red; */
+  padding: 3px;
+  position: fixed;
+  bottom: 9%;
+  right: 0.5%;
+}
+
+.GDPRReDropdownContainer > details {
+  margin-top: 20px !important;
+  /* border: 1px solid blue; */
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.GDPRReDropdownContainer > details > summary {
+  display: flex !important;
+  align-items: center;
+  flex-direction: row !important;
+  font-size: medium;
+  font-weight: 700;
+  color: var(--darkgreen);
+}
+
+.GDPRimgReresponsiveChange {
+  margin-right: 5px;
+  width: 35px;
+}
+.GDPRReDropdownContainer > details > a {
+  /* border: 1px solid black; */
+  margin-top: 10px !important;
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+  margin-top: 10px;
+}
+
+.listalign {
+  font-size: medium;
+  font-weight: 400;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  width: fit-content;
+  /* margin-bottom: 10%; */
+  color: var(--darkgreen);
+  position: relative;
+}
+
+.listalign:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  /* left: 50%; */
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.listalign:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 1262px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: medium;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 25%;
+  }
+}
+@media screen and (max-width: 978px) {
+  .TrustBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    width: 43%;
+  }
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 32%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .GDPRBanner > h1 {
+    font-size: xx-large;
+    font-weight: 700;
+  }
+  .GDPRBanner > p {
+    font-size: large;
+    font-weight: 400;
+  }
+  .Information1 > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .Information1 > p {
+    font-size: large;
+    font-weight: 400;
+  }
+  .Information1 > ul > li {
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .FixedContainer {
+    display: none;
+  }
+  .RightContainerFooter {
+    display: none;
+  }
+  .LeftContainerFooter {
+    width: 100%;
+  }
+  .GDPRReResourcesCards {
+    display: block;
+  }
+  .TrustBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    width: 33%;
+  }
+  .ArrowIcon {
+    width: 10% !important;
+    height: 100% !important;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 600;
+    /* border: 1px solid red; */
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .Information1 {
+    width: 100% !important;
+    /* border: 1px solid forestgreen; */
+    padding: 20px 0px 0px 0px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .Information1 {
+    width: 100% !important;
+    /* border: 1px solid forestgreen; */
+    padding: 20px 0px 0px 0px;
+    text-align: justify;
+  }
+  .GDPRInfoContainer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 38%;
+  }
+}
+@media screen and (max-width: 604px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 42%;
+  }
+}
+@media screen and (max-width: 652px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 45%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+}
+@media screen and (max-width: 502px) {
+  .GDPRBanner > h1 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .GDPRBanner > p {
+    font-size: medium;
+    font-weight: 400;
+  }
+  .Information1 > h2 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .Information1 > p {
+    font-size: medium;
+    font-weight: 400;
+  }
+  .Information1 > ul > li {
+    font-size: medium;
+    font-weight: 400;
+  }
+  .TrustBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 454px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 55%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .ResourcesHubBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    width: 55%;
+  }
+  .TrustBtncontainer > button {
+    font-size: small;
+    font-weight: 700;
+    width: 48%;
+  }
+}

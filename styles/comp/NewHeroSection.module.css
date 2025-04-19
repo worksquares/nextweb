@@ -1,0 +1,299 @@
+.sectionhero {
+  background-color: #154965;
+  height: 490px;
+  /* padding: 0px 0px 0px 130px; */
+}
+
+.mainImage {
+  /* Ensure the image is responsive */
+  /* max-width: 100%; */
+  height: 490px !important; 
+  /* width: 650px; */
+  /* border: 1px solid red; */
+}
+
+.agentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+/* Content inside the agent section */
+.content {
+  flex: 1;
+  padding-right: 20px;
+  width: 50%;
+  margin-top: 30px;
+  /* border: 1px solid black; */
+}
+
+.GetStartedButton {
+  border: 1px solid red !important;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.title_new {
+ color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 80px;
+    text-align: center;
+}
+
+.subtitle {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  background-color: #f2cb67 !important;
+  color: #1c274c;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 203.5px;
+  height: 44px;
+}
+
+.ctaButton:hover {
+  background-color: #cfad55;
+}
+
+.GetStartedButton {
+  background-color:#cfad55;
+  color: #1c274c;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 203.5px;
+  height: 44px;
+  padding: 20px;
+}
+
+.ctaButton:hover {
+  background-color: #cfad55;
+}
+
+.GetStartedBtn {
+  text-align: center;
+}
+
+.GetStartedBtn a {
+  line-height: 1.75rem;
+  border-radius: 25px;
+  color: #1D4965;
+  padding: 10px 35px;
+  background-color:  white;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  width: 203.5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.GetStartedBtn a:hover {
+  letter-spacing: 2px;
+  background-color: rgb(24, 191, 220);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 191, 220) 0px 7px 29px 0px;
+}
+
+/* Image container inside the agent section */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button text inside the call to action */
+.buttonText {
+  font-size: 18px;
+  
+}
+
+/* Media query for smaller screens */
+@media (max-width: 442px) {
+  .sectionhero {
+    background-color: #154965;
+    padding: 0px !important;
+    margin-top: 45px !important;
+    height: 600px;
+  }
+  .title {
+    font-size: 2rem !important;
+    margin-top: 20px;
+  }
+  .title_new {
+    font-size: 2rem !important;
+     margin: 100px 50px 0px 40px;
+  }
+  .description {
+    font-size: 1rem !important;
+  }
+  .content {
+    text-align: center;
+  }
+  .centeredMessage {
+    width: 90% !important;
+  }
+  .mainImage{
+     height: 218px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionhero {
+    background-color: #154965;
+    padding: 0px !important;
+    margin-top: 45px !important;
+  }
+  .title {
+    font-size: 2rem !important;
+    margin-top: 20px;
+  }
+  .title_new {
+        font-size: 2rem !important;
+        width: 80%;
+        margin: 100px 50px 0px 40px;
+  }
+  .description {
+    font-size: 1rem !important;
+  }
+  .content {
+    text-align: center;
+    padding: 0px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  .centeredMessage {
+    width: 90% !important;
+  }
+  .agentSection {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .imageContainer {
+    /* border: 1px solid red; */
+    width: 80% !important;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* .content {
+    text-align: center;
+  } */
+  .sectionhero {
+    background-color: #154965;
+    padding: 0px !important;
+    margin-top: 45px !important;
+  }
+}
+
+/* New CSS for hiding the agentSection and centering content */
+.centeredContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #154965;
+  text-align: center;
+}
+
+.centeredMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.centeredMessage h2 {
+  color: #00e9ff;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.centeredMessage p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.centeredMessage .ctaButton {
+  background-color: #f2cb67;
+  color: #1c274c;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 203.5px;
+  height: 44px;
+}
+
+.centeredMessage .ctaButton:hover {
+  background-color: #00c8e0;
+}
+
+.centeredMessage .buttonText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 1600px) {
+  .title {
+    font-size: 55px;
+  }
+  .title_new {
+    font-size: 120px;
+     margin: 100px 50px 0px 40px;
+  }
+}
+
+@media (max-width: 1174px) {
+  .title {
+    font-size: 45px;
+  }
+  .title_new {
+    font-size: 45px;
+  }
+  .imageContainer {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+}
+
+@media (max-width: 890px) {
+  .title {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  .title_new {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .imageContainer {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+  .description {
+    font-size: 18px;
+  }
+}

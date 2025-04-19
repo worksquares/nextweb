@@ -1,0 +1,193 @@
+.JobSelectionContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 20px 30px;
+  color: #5e595e;
+}
+
+.JobSelectionContainer p {
+  font-size: small;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 10px 0px;
+}
+
+.JobSelectionContainer a {
+  color: var(--SeaBlue);
+}
+
+.JobSelectionContainer ul > li {
+  font-size: small;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 10px 0px;
+}
+
+.JobSelectionContainer1 {
+  /* border: 1px solid green; */
+  width: 55%;
+  padding: 8px 15px;
+}
+
+.JobTitle {
+  font-size: 25px !important;
+  font-weight: 500;
+  color: black !important;
+  padding: 5px 0px;
+  line-height: 20px !important;
+}
+
+.JobHeading > button {
+  display: none;
+}
+
+.SubTitle {
+  font-size: 16px !important;
+  font-weight: 600;
+  color: #444545 !important;
+  margin: 10px 0px;
+  /* border: 1px solid red; */
+}
+
+.JobHeading > p {
+  font-size: medium;
+  font-weight: 500;
+  /* color: var(--darkgreen); */
+  margin: 6px 0px;
+}
+
+.CompDescription,
+.JobDescription,
+.JobQualifications,
+.JobAdditionalInfo {
+  /* border: 1px solid red; */
+  padding: 10px 0px;
+}
+
+.JobIntrestedBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.JobIntrested {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.Intrested {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 8px 0px;
+  color: black;
+  background-color: #81b5a1;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.JobIntrested > a {
+  padding: 3px 0px;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+.JobSelectionContainer2 {
+  /* border: 1px solid purple; */
+  width: 45%;
+  padding: 8px 15px;
+}
+
+.JobIntrestedContainer {
+  /* border: 1px solid green; */
+  width: 75%;
+}
+
+.JobIntrestedBtn > button {
+  width: 100%;
+  margin: 5px 0px !important;
+  padding: 8px 0px;
+  color: black;
+  background-color: #81b5a1;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px !important;
+  font-weight: 400;
+}
+
+.ReferFriend {
+  background-color: white !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+}
+
+.JobShare {
+  margin: 30px 0px;
+}
+
+.JobShareIcons > span > img {
+  width: 30px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.jobLists {
+  margin: 10px 0px;
+  /* border: 1px solid goldenrod; */
+}
+
+.jobtype {
+  /* border: 1px solid hotpink; */
+  font-size: small;
+  font-weight: 500;
+  color: #5e595e !important;
+}
+
+.OtherJobsService > div > p {
+  margin: 5px 0px;
+  font-size: small;
+  font-weight: 500;
+}
+
+.jobtype:hover {
+  color: var(--SeaBlue) !important;
+  border-bottom: 1px solid var(--SeaBlue);
+}
+
+@media screen and (max-width: 770px) {
+  .JobSelectionContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: #5e595e;
+  }
+  .JobHeading > button {
+    display: block;
+  }
+  .JobIntrested > button {
+    display: none;
+  }
+  .JobSelectionContainer1 {
+    /* border: 1px solid green; */
+    width: 100%;
+    padding: 5px;
+  }
+  .JobSelectionContainer2 {
+    width: 100%;
+    padding: 5px;
+  }
+  .JobIntrestedBox {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-top: none;
+  }
+  .JobIntrestedContainer {
+    width: 100%;
+  }
+}

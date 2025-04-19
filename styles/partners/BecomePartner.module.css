@@ -1,0 +1,135 @@
+.PartnerHeaderMain {
+  /* border: 1px solid red; */
+  padding: 70px 0px;
+  background-color: #154965;
+  color: white;
+  height: 490px;
+}
+
+.PartnerBannerMain {
+  /* border: 1px solid red; */
+  padding: 70px 0px;
+  background-color: #f7f7f7;
+  /* color: white; */
+  margin-bottom: 30px;
+}
+
+.PartnerHeaderComp {
+  /* width: 1600px; */
+  margin-top: 100px;
+  /* border: 1px solid green; */
+}
+
+.PartnerBannerComp {
+  /* width: 1600px; */
+  margin: 0 auto !important;
+  /* border: 1px solid green; */
+}
+
+.PartnerHeaderComp > h1 {
+  font-size: 40px;
+  font-weight: bold;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.PartnerHeaderComp > p {
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.PartnerBannerComp > h1 {
+  font-size: 40px;
+  font-weight: bold;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.PartnerBannerComp > p {
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.PartnerBannerComp > button {
+  margin-top: 15px;
+  border: 2px solid #154965;
+  padding: 10px 20px;
+  color: #154965;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.PartnerBannerComp > button:hover {
+  box-shadow: inset 300px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+@media (max-width: 1600px) {
+  .PartnerHeaderComp > h1 {
+    width: 80%;
+  }
+
+  .PartnerHeaderComp > p {
+    width: 80%;
+  }
+
+  .PartnerBannerComp > h1 {
+    width: 80%;
+  }
+
+  .PartnerBannerComp > p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .PartnerHeaderMain {
+    /* border: 1px solid red; */
+    padding: 70px 0px 30px 0px;
+    background-color: #154965;
+    color: white;
+  }
+  .PartnerHeaderComp > h1 {
+    font-size: 32px;
+    width: 90%;
+  }
+
+  .PartnerHeaderComp > p {
+    width: 90%;
+    font-size: 18px;
+  }
+  .PartnerBannerComp > h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+  .PartnerBannerComp > p {
+    width: 90%;
+    font-size: 18px;
+  }
+  .PartnerBannerMain {
+    padding: 30px 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .PartnerHeaderComp > h1 {
+    width: 100%;
+  }
+  .PartnerHeaderComp > p {
+    width: 100%;
+  }
+  .PartnerBannerComp > h1 {
+    width: 100%;
+  }
+  .PartnerBannerComp > p {
+    width: 100%;
+  }
+  .PartnerBannerMain {
+    padding: 30px 0px;
+    margin-bottom: 0px;
+  }
+}

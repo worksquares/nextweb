@@ -1,0 +1,422 @@
+.BlogContain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* border: 1px solid orange; */
+  align-items: center;
+}
+
+.Blogs {
+  /* display: grid; */
+  /* grid-auto-flow: column; */
+  display: flex;
+  justify-content: space-between !important;
+  justify-content: left;
+  margin-top: 0px;
+  /* margin-bottom: 20px; */
+  /* margin-left: -38px; */
+  /* margin-right: 50px; */
+  /* background-color: var(--badge-color); */
+  text-align: center;
+  /* border: 1px solid yellow; */
+  margin: 0px 18px;
+}
+
+.Blogsitems a {
+  color: var(--tcolor);
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+  /* padding-left: 20px;
+    padding-right: 20px; */
+  font-family: "Adobe Clean", sans-serif;
+  font-weight: 600;
+}
+
+.Blogsitems {
+  border-right: 1px solid var(--tcolor);
+  padding: 18px 18px 18px 0px;
+  /* border: 1px solid red; */
+}
+
+.Blogs input[type="text"] {
+  width: 100px;
+  border-radius: 50%;
+  /* -webkit-transition: width .35s ease-in-out; */
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  box-shadow: 0 2px 1px rgb(0 0 0 / 60%) inset, 0 1px 0 rgb(255 255 255 / 20%);
+  border-radius: 12px 12px 12px 12px;
+  overflow: hidden;
+}
+
+.Blogs input[type="text"]:focus {
+  width: 250px;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+}
+
+.BlogSearch {
+  margin-right: -1000px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.searchbar input,
+.searchbtn,
+.searchbtn:before,
+.searchbtn:after {
+  transition: all 0.25s ease-out;
+}
+
+.searchbar input,
+.searchbtn {
+  width: 3em;
+  height: 3em;
+}
+
+.searchbar input:invalid:not(:focus),
+.searchbtn {
+  cursor: pointer;
+}
+
+.searchbar,
+.searchbar input:focus,
+.searchbar input:valid {
+  width: 50%;
+}
+
+.searchbar input:focus,
+.searchbar input:not(:focus) + .searchbtn:focus {
+  outline: transparent;
+}
+
+.searchbar {
+  /* margin: auto; */
+  /* padding: 1.5em; */
+  /* justify-content: center; */
+  /* max-width: 15em; */
+  /* margin-left: 800px; */
+  /* text-align: center !important; */
+  float: right !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  /* border: 1px solid blue; */
+}
+
+.searchbar input {
+  background: transparent;
+  border-radius: 1.5em;
+  box-shadow: 0 0 0 0.4em #171717 inset;
+  /* padding: 0.75em; */
+  transform: translate(0.5em, 0.5em) scale(0.5);
+  transform-origin: 100% 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.searchbar input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.searchbar input:focus,
+.searchbar input:valid {
+  background: #fff;
+  border-radius: 0.375em 0 0 0.375em;
+  box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+  transform: scale(1);
+}
+
+.searchbtn {
+  background: #171717;
+  border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+  padding: 0.75em;
+  position: relative;
+  transform: translate(0.25em, 0.25em) rotate(45deg) scale(0.25, 0.125);
+  transform-origin: 0 50%;
+}
+
+.searchbtn:before,
+.searchbtn:after {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+}
+
+.searchbtn:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+  top: 0.75em;
+  left: 0.75em;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.searchbtn:after {
+  background: #f1f1f1;
+  border-radius: 0 0.25em 0.25em 0;
+  top: 51%;
+  left: 51%;
+  width: 0.75em;
+  height: 0.25em;
+  transform: translate(0.2em, 0) rotate(45deg);
+  transform-origin: 0 50%;
+}
+
+.searchbtn span {
+  display: inline-block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+/* Active state */
+.searchbar input:focus + .searchbtn,
+.searchbar input:valid + .searchbtn {
+  background: var(--lightgreen);
+  border-radius: 0 0.375em 0.375em 0;
+  transform: scale(1);
+}
+
+.searchbar input:focus + .searchbtn:before,
+.searchbar input:focus + .searchbtn:after,
+.searchbar input:valid + .searchbtn:before,
+.searchbar input:valid + .searchbtn:after {
+  opacity: 1;
+}
+
+.searchbar input:focus + .searchbtn:hover,
+.searchbar input:valid + .searchbtn:hover,
+.searchbar input:valid:not(:focus) + .searchbtn:focus {
+  background: #0c48db;
+}
+
+.searchbar input:focus + .searchbtn:active,
+.searchbar input:valid + .searchbtn:active {
+  transform: translateY(1px);
+}
+
+.tapnews {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.BlogtapRight {
+  /* border: 1px solid blue; */
+  width: 30%;
+}
+
+.Maintab {
+  /* border: 1px solid green; */
+  width: 70%;
+  margin-bottom: 60px !important;
+}
+
+/*------------------------------------------------*/
+/* @media screen and (max-width: 2000px) {
+  .Maintab {
+    border: 1px solid black;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .searchbar {
+    display: none;
+  }
+  .tapnews {
+    display: grid;
+    grid-auto-flow: row;
+    /* border: 1px solid red; */
+  }
+  .BlogContain {
+    margin-left: 20px;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+  }
+  .Blogs {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+  .Maintab {
+    margin-bottom: 25px !important;
+    width: 100%;
+  }
+  .BlogtapRight {
+    /* border: 1px solid blue; */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .tapnews {
+    display: grid;
+    grid-auto-flow: row;
+    /* padding-left: 20px; */
+  }
+
+  .BlogContain {
+    margin-left: unset;
+    margin-right: unset;
+    /* width: 100%; */
+    justify-content: center;
+  }
+
+  .Blogs {
+    margin-right: unset;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .tapnews {
+    display: grid;
+    grid-auto-flow: row;
+    padding-left: -20px !important;
+    /* border: 1px solid green; */
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .Blogs {
+    margin-right: unset;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .BlogContain {
+    margin-left: 20px;
+    /* border: 1px solid green; */
+    margin-top: 0px;
+  }
+  .Blogsitems {
+    padding: 18px 18px 10px 0px;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .BlogContain {
+    width: 100%;
+  }
+
+  .Blogs {
+    display: none;
+  }
+
+  .BlogContain {
+    /* margin: unset; */
+    margin-left: 0px;
+    /* border: 1px solid green; */
+    margin-top: -50px;
+  }
+
+  /* a {
+        text-decoration: none;
+        color: #000000;
+      }
+      a:hover {
+        color: #222222
+      }
+       */
+  /* Dropdown */
+  .dropdown {
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: 50px;
+
+    /* margin-top: 100px; */
+  }
+
+  .ddbutton {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: var(--badge-color);
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--tcolor);
+    border-radius: 0.5rem;
+  }
+
+  .ddbutton:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--tcolor);
+  }
+
+  .ddbutton:hover {
+    background-color: var(--badge-color);
+  }
+
+  .ddinput {
+    display: none;
+  }
+
+  .ddmenu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--badge-color);
+    list-style-type: none;
+    color: var(--tcolor);
+  }
+
+  .ddinput + .ddmenu {
+    display: none;
+  }
+
+  .ddinput:checked + .ddmenu {
+    display: block;
+  }
+
+  .ddmenu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .ddmenu li:hover {
+    background-color: #111111;
+  }
+
+  .ddmenu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+    border-bottom: 0.1rem solid #f7f7f7;
+  }
+
+  .ddmenu li.divider {
+    padding: 0;
+    border-bottom: 0.1rem solid #f7f7f7;
+  }
+
+  .tapnews {
+    display: grid;
+    grid-auto-flow: row;
+    padding-left: unset;
+    padding-right: unset;
+    margin-top: 100px;
+  }
+
+  .tapRight {
+    width: 100%;
+  }
+}

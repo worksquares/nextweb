@@ -1,0 +1,114 @@
+.ResponsiveFooterDetails {
+  /* border: 1px solid darkblue; */
+  padding: 30px 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ResponsiveFooterDetails1 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin-bottom: 5px;
+}
+
+.ResponsiveFooterDetails2 > p {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+  margin: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ResponsiveFooterDetails2 > p::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+
+.ResponsiveFooterDetails2 > p:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.ResponsiveFooterDetails2 > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.FooterDetails1 {
+  /* border: 1px solid brown; */
+  width: 30%;
+}
+
+.ResponsiveFooterDetails2 {
+  display: flex;
+  align-items: center;
+}
+
+.FooterDetails2 {
+  /* border: 1px solid green; */
+  width: 30%;
+  padding: 15px;
+}
+
+.LangSelect {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--darkgreen);
+  color: white;
+  font-size: medium;
+  /* font-weight: 600; */
+  /* letter-spacing: 1px; */
+  padding: 13px 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 770px) {
+  .ResponsiveFooterDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .ResponsiveFooterDetails1 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .ResponsiveFooterDetails2 > p {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .FooterDetails1 {
+    width: 100%;
+  }
+
+  .ResponsiveFooterDetails2 > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .FooterDetails2 {
+    width: 100%;
+    padding: 15px 0px;
+  }
+}

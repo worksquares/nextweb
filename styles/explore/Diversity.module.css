@@ -1,0 +1,46 @@
+/* .DiversityMain {
+  border: 1px solid red;
+} */
+
+.Diversityheader {
+  /* border: 1px solid pink; */
+  height: auto;
+  padding: 80px 40px;
+  display: flex;
+  background-color: var(--lightgreen);
+  flex-direction: column;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.Diversityheader > h1 {
+  width: 55%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.DiversityImageCards {
+  margin-top: 40px;
+  /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 950px) {
+  .Diversityheader > h1 {
+    width: 75%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Diversityheader {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .Diversityheader > h1 {
+    width: 95%;
+    font-size: 25px;
+    font-weight: 800;
+  }
+}

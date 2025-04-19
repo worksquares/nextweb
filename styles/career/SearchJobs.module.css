@@ -1,0 +1,310 @@
+.SearchJobsMainContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* padding: 0px 30px; */
+  /* position: relative; */
+}
+
+.TopContainer {
+  /* border: 1px solid rgb(255, 0, 212); */
+  height: 450px;
+  background-image: url("/assets/SearchJobBGImage.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TopContainerInfo {
+  /* border: 1px solid green; */
+  text-align: center;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+  color: #313131;
+  /* z-index: -2; */
+}
+
+.TopContainerInfo > h2 {
+  font-size: x-large;
+  font-weight: 700;
+  margin: 2px;
+}
+
+.TopContainerInfo > p {
+  height: auto;
+  font-size: large;
+  font-weight: 400;
+  margin: 4px;
+}
+
+.SearchBar {
+  width: 100%;
+  /* padding: 25px; */
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.SearchBar > img {
+  color: #ffffff !important;
+  width: 30px;
+}
+
+.SearchBar > input {
+  /* border: 1px solid red; */
+  padding: 24px;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  color: #ffffff;
+  font-size: large;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.SearchBar > input::placeholder {
+  color: #ffffff;
+  text-align: left;
+  color: var(--lightgrey);
+}
+
+.SearchBar > input:focus {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+
+.VideoInfoContainer {
+  /* border: 1px solid green; */
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VideoInfo {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+
+.Video {
+  /* border: 1px solid pink; */
+  width: 45%;
+}
+
+.Video > img {
+  width: 80%;
+}
+
+.VideoInfo > p {
+  /* border: 1px solid purple; */
+  font-size: large;
+  font-weight: 500;
+  color: var(--darkgreen);
+  line-height: 1.5rem;
+}
+
+.smallInfo {
+  font-size: 10px !important;
+  font-weight: 500;
+  color: var(--darkgreen);
+}
+
+.JobsContainer {
+  padding: 30px 50px;
+  /* border: 1px solid purple; */
+}
+
+.JobsHeading > h2 {
+  margin: 15px 0px;
+}
+
+.JobsHeading > span > label {
+  cursor: pointer;
+}
+
+.JobsHeading > span > label > input {
+  cursor: pointer;
+}
+
+.JobsHeading {
+  /* border: 1px solid firebrick; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DepartmentLink {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.DepartmentLink > p {
+  margin: 6px 0px;
+}
+
+.DepartmentHighlight {
+  padding: 4px 0px;
+  border-bottom: 4px solid var(--darkgreen);
+  cursor: pointer;
+}
+
+.SearchJobContainer {
+  /* border: 1px solid red; */
+  padding: 30px 0px;
+}
+
+.SearchJobContainer > p {
+  /* border: 1px solid purple; */
+  font-size: medium;
+  font-weight: 500;
+  color: var(--darkgreen);
+}
+
+.JobsLinksContainer {
+  /* border: 1px solid black; */
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.Links {
+  margin: 15px 0px;
+  /* border: 1px solid green; */
+}
+
+.LinksBox1 {
+  /* border: 1px solid saddlebrown; */
+  width: 45%;
+}
+
+.LinksBox2 {
+  /* border: 1px solid saddlebrown; */
+  width: 45%;
+}
+
+.Links > a {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.Links > a:hover {
+  color: var(--SeaBlue);
+  border-bottom: 1px solid var(--SeaBlue);
+}
+
+.Links > p {
+  font-size: 14px !important;
+  font-weight: 400;
+  margin: 5px 0px;
+  color: var(--lightgrey);
+}
+
+.showMoreJobs {
+  color: var(--SeaBlue);
+}
+
+@media screen and (max-width: 770px) {
+  .SearchBar {
+    position: relative !important;
+    /* top: none; */
+  }
+
+  .SearchBar > input:focus {
+    width: 80%;
+    /* border: 1px solid green; */
+  }
+
+  .VideoInfoContainer {
+    /* border: 1px solid green; */
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .VideoInfo {
+    /* border: 1px solid red; */
+    width: 96%;
+  }
+
+  .Video {
+    /* border: 1px solid pink; */
+    width: 96%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Video > img {
+    width: 80%;
+  }
+
+  .JobsContainer {
+    padding: 10px;
+    /* border: 1px solid purple; */
+  }
+
+  .JobsHeading {
+    /* border: 1px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+  }
+
+  .JobsHeading > h2 {
+    margin: 15px 0px;
+    font-size: 20px !important;
+    font-weight: 600;
+    margin: 15px 0px;
+  }
+
+  .SearchJobContainer {
+    /* border: 1px solid red; */
+    padding: 10px 0px;
+  }
+
+  .SearchJobContainer > p {
+    /* border: 1px solid purple; */
+    font-size: large;
+    font-weight: 500;
+    margin: 10px 0px;
+  }
+
+  .JobsLinksContainer {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
+  .Links {
+    margin: 10px 0px;
+    /* border: 1px solid green; */
+  }
+
+  .LinksBox1 {
+    /* border: 1px solid saddlebrown; */
+    width: 95%;
+  }
+
+  .LinksBox2 {
+    /* border: 1px solid saddlebrown; */
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .SearchBar > input {
+    width: 250px;
+  }
+
+  .SearchBar > input:focus {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.MainEbookContainer {
+  /* border: 1px solid pink; */
+  height: 350px;
+  padding: 40px;
+  display: flex;
+  background-color: var(--lightgreen);
+  flex-direction: column;
+  width: 100%;
+  /* justify-content: end; */
+  background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20150729211514-man-reading-book-hipster.jpeg");
+  background-size: cover;
+  background-position: 0 -215px;
+  background-repeat: no-repeat !important;
+}
+
+.MainEbookContainer h1 {
+  width: 80%;
+  font-size: xx-large;
+  font-weight: 800;
+  margin: 10px 0px;
+  color: #fff;
+}
+
+.EbooksCard {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 50px 0px;
+}
+
+@media screen and (max-width: 854px) {
+  .MainEbookContainer {
+    /* border: 1px solid pink; */
+    height: 200px !important;
+    width: 100%;
+    background-position: 0 -55px;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .MainEbookContainer {
+    /* border: 1px solid pink; */
+    height: 200px !important;
+    width: 100%;
+    background-position: 0 -15px;
+  }
+}

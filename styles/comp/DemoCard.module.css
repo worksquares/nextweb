@@ -1,0 +1,242 @@
+.section {
+  padding: 50px 0px;
+  text-align: center;
+  background-color: #FFFFFF;
+  /* border: 1px solid red; */
+  /* width: 1600px; */
+  /* margin: 0 auto; */
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2b547e;
+  margin-bottom: 40px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex-wrap: wrap;
+  text-align: left;
+  border-radius: 13px;
+  border: 2px solid #52799873;
+  background-color: #FFFFFF;
+ box-shadow: 0.5px 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardContent h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  height: 100px;
+  color: #666;
+  height: auto;
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.demoButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #00bfff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  color: #1d4965;
+  height:35px;
+  text-decoration: none;
+  /* font-size: 0.9rem; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.demoButton:hover {
+  background-color: #00bfff;
+  color: white;
+}
+
+.playIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.learnMoreButton {
+  display: inline-flex;
+  align-items: center;
+  color: #1d4965;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.arrowIcon {
+  margin-left: 6px;
+  width: 15px;
+  transition: margin-left 0.3s ease;
+}
+
+.learnMoreButton:hover .arrowIcon {
+  margin-left: 12px;
+}
+
+@media (max-width: 442px) {
+  .section {
+    padding: 40px 0px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .card {
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+  }
+  .cardButtons {
+    gap: 15px;
+  }
+  .learnMoreButton {
+    display: inline-flex;
+    align-items: center;
+    color: #1d4965;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .demoButton {
+    padding: 8px 15px;
+    /* font-size: 13px; */
+  }
+  .learnMoreButton {
+    font-size: 13px;
+  }
+  .arrowIcon {
+    margin-left: 10px;
+    width: 15px;
+  }
+  .playIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .card {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .demoButton {
+    padding: 4px 10px;
+    /* font-size: 13px; */
+  }
+  .learnMoreButton {
+    font-size: 13px;
+  }
+  .arrowIcon {
+    margin-left: 10px;
+    width: 15px;
+  }
+  .playIcon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  .demoButton {
+    padding: 4px 6px;
+    /* font-size: 12px; */
+  }
+  .learnMoreButton {
+    font-size: 12px;
+  }
+  .arrowIcon {
+    margin-left: 2px;
+    width: 13px;
+  }
+  .playIcon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 848px) {
+  .cardButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .demoButton {
+    padding: 4px 6px;
+    /* font-size: 12px; */
+  }
+  .learnMoreButton {
+    font-size: 15px;
+    /* margin-top: 12px; */
+  }
+  .arrowIcon {
+    margin-left: 2px;
+    width: 13px;
+  }
+  .playIcon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .cardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+  .cardContent h3 {
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+  }
+}

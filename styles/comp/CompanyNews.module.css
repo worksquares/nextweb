@@ -1,0 +1,13 @@
+.Companynews{
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+}
+.newsright{
+    display: grid;
+    grid-auto-flow: row;
+    width: 100%;
+}
+.newspage{
+    width: 130%;
+}

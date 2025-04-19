@@ -1,0 +1,610 @@
+/* .JobApplyMainContainer {
+  border: 1px solid red;
+} */
+
+.JobApplyHeader {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: sticky; */
+  /* bottom: 0; */
+  right: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 13px 13px -16px var(--grey);
+  /* z-index: 5 !important; */
+}
+
+.JobApplyInfoHeading {
+  text-align: center;
+}
+
+.PersonalInfoContainer {
+  /* border: 1px solid blue; */
+  margin: 40px;
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--BorderGrey);
+}
+
+.PersonalInfoFields {
+  /* border: 1px solid red; */
+  width: 45%;
+  margin: 15px 0px;
+}
+
+.PersonalInfoBox > form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PersonalInfoFields > input {
+  height: 30px;
+  outline: none;
+  border-radius: 0px !important;
+  border: 1px solid var(--BorderGrey);
+  color: var(--LiteBrownFont);
+  width: 100%;
+}
+
+.PersonalInfoFields > label {
+  padding: 8px 0px !important;
+  font-size: small;
+  font-weight: 500;
+  color: var(--BorderGrey);
+}
+
+.ExperienceContainer {
+  /* border: 1px solid indianred; */
+  margin: 40px;
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--BorderGrey);
+}
+
+.ExperienceHeading {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row; */
+}
+
+.ExperienceHeading > h3 {
+  margin: 8px 0px;
+}
+
+.ExperienceHeading > button {
+  border: 2px solid green;
+  width: 12%;
+  /* padding: 10px; */
+  border-radius: 20px;
+  color: green;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  /* padding: 50px !important; */
+}
+
+.ExperienceInfoFields {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px 40px;
+}
+
+.ExImgInfo {
+  width: 10%;
+}
+
+.ExInputFields {
+  width: 90%;
+  border: 1px solid var(--BorderGrey);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+}
+
+.ExImgInfo > img {
+  border: 1px solid var(--BorderGrey);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.InfoFluxFields {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FieldLng {
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.FieldLng > input {
+  height: 30px;
+  outline: none;
+  border-radius: 0px !important;
+  border: 1px solid var(--BorderGrey);
+  color: var(--LiteBrownFont);
+  width: 100%;
+}
+
+.FieldLng > label {
+  padding: 5px 0px;
+  font-size: medium;
+  font-weight: 500;
+  color: var(--LiteBrownFont);
+}
+
+.CheckboxAlign {
+  max-width: 100%;
+  min-width: 100%;
+  height: 70px;
+  /* width: 100%; */
+  resize: vertical;
+  border: 1px solid var(--BorderGrey);
+}
+
+.CancelOkBtnContainer {
+  /* border: 1px solid red; */
+  margin: 15px 0px;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+.CancelOkBtns {
+  /* border: 1px solid green; */
+  width: 20%;
+}
+
+.CancelOkBtns > button {
+  width: 45%;
+  padding: 8px 0px;
+  margin: 0px 3px;
+}
+
+.CancelBtn {
+  color: var(--LiteGreen);
+  font-size: medium;
+  font-weight: 600;
+  border: 2px solid var(--LiteGreen);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.OkBtn {
+  /* color: green; */
+  font-size: medium;
+  font-weight: 600;
+  border: 2px solid var(--LiteGreen);
+  border-radius: 3px;
+  background-color: var(--LiteGreen);
+  cursor: pointer;
+}
+
+.OnTheWebContainer {
+  border-bottom: 1px solid var(--BorderGrey);
+  margin: 40px;
+  padding: 25px 0px;
+}
+
+.OnTheWebFields {
+  display: flex;
+  /* border: 1px solid green; */
+  justify-content: space-between;
+}
+
+.OnTheWebInfoFields {
+  width: 45%;
+  margin: 15px 0px;
+}
+
+.OnTheWebInfoFields > input {
+  height: 30px;
+  outline: none;
+  border-radius: 0px !important;
+  border: 1px solid var(--BorderGrey);
+  color: var(--LiteBrownFont);
+  width: 100%;
+}
+
+.OnTheWebInfoFields > label {
+  padding: 5px 0px;
+  font-size: medium;
+  font-weight: 500;
+  color: var(--LiteBrownFont);
+}
+
+.ResumeMainContainer {
+  margin: 40px;
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--BorderGrey);
+}
+
+.ResumeDrop {
+  text-align: center;
+  border: 3px dotted var(--BorderGrey);
+}
+
+.HiringManagerMainContainer {
+  margin: 40px;
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--BorderGrey);
+}
+
+.HMCheckboxAlign {
+  max-width: 100%;
+  min-width: 100%;
+  height: 220px;
+  /* width: 100%; */
+  resize: vertical;
+  border: 1px solid var(--BorderGrey);
+}
+
+.NextBtnContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 40px;
+  padding: 25px 0px;
+}
+
+.NextBtn {
+  width: 10%;
+  /* border: 1px solid red; */
+}
+
+.NextBtn > button {
+  width: 100%;
+  padding: 8px;
+  font-size: medium;
+  font-weight: 600;
+  background-color: var(--LiteGreen);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.EasyApplyContainer {
+  /* border: 1px solid red; */
+  margin: 40px;
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--BorderGrey);
+}
+
+.DropandLinks {
+  /* border: 1px solid green; */
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.DropBox {
+  border: 3px dotted var(--BorderGrey);
+  width: 79%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.DropBox > p {
+  margin: 2px;
+  cursor: pointer;
+}
+
+.LinksBoxes {
+  /* border: 1px solid black; */
+  width: 20%;
+}
+
+.LinksBoxes > p {
+  font-size: medium;
+  font-weight: 500;
+  padding: 0px 10px;
+  text-align: center;
+  margin: 6px;
+}
+
+.LinksBoxes > button {
+  width: 100%;
+  padding: 15px 0px;
+  margin: 8px 0px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.LinkedInBtn {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  background-color: var(--linkedInColor);
+}
+
+.SmartrProfileBtn {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  background-color: var(--SmartrProfile);
+}
+
+.IndeedBtn {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  background-color: var(--indeedColor);
+}
+
+@media screen and (max-width: 1020px) {
+  .LinksBoxes > button {
+    padding: 10px 0px;
+  }
+
+  .LinkedInBtn {
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .SmartrProfileBtn {
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .IndeedBtn {
+    font-size: small;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .ExperienceHeading > button {
+    width: 16%;
+    font-size: medium;
+    font-weight: 600;
+  }
+  .ExImgInfo {
+    width: 10%;
+  }
+
+  .ExImgInfo > img {
+    padding: 10px;
+  }
+  .CancelOkBtns {
+    /* border: 1px solid green; */
+    width: 26%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .DropandLinks {
+    /* border: 1px solid green; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .DropBox {
+    border: 3px dotted var(--BorderGrey);
+    width: 100%;
+    padding: 25px 0px;
+  }
+
+  .LinksBoxes {
+    width: 40%;
+  }
+
+  .LinksBoxes > p {
+    font-size: medium;
+    font-weight: 500;
+    padding: 6px 10px;
+    text-align: center;
+    margin: 6px;
+    /* border: 1px solid black; */
+  }
+
+  .LinksBoxes > button {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .LinkedInBtn {
+    font-size: small;
+  }
+
+  .SmartrProfileBtn {
+    font-size: small;
+  }
+
+  .IndeedBtn {
+    font-size: small;
+  }
+
+  .EasyApplyInfoBox > h1 {
+    font-size: medium !important;
+    font-weight: 600 !important;
+  }
+
+  .ExperienceInfoFields {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 40px;
+  }
+
+  .ExImgInfo {
+    width: 15%;
+  }
+
+  .ExInputFields {
+    width: 80%;
+    border: 1px solid var(--BorderGrey);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fbfbfb;
+  }
+  .CancelOkBtnContainer {
+    /* border: 1px solid red; */
+    margin: 15px 0px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
+  .CancelOkBtns {
+    /* border: 1px solid green; */
+    width: 40%;
+  }
+
+  .CancelOkBtns > button {
+    width: 40%;
+    padding: 8px 0px;
+    margin: 0px 3px;
+  }
+
+  .CancelBtn {
+    color: var(--LiteGreen);
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .OkBtn {
+    /* color: green; */
+    font-size: small;
+    font-weight: 600;
+  }
+  .JobApplyInfoHeading {
+    text-align: right;
+    /* border: 1px solid red; */
+    width: 70%;
+  }
+  .JobApplyLogo {
+    /* border: 1px solid red; */
+    width: 20%;
+  }
+  .JobApplyLogo > h2 {
+    width: 20%;
+    font-size: large;
+    font-weight: 600;
+  }
+  .JobApplyInfoHeading > h3 {
+    font-size: small;
+    font-weight: 600;
+  }
+  .JobApplyInfoHeading > p {
+    font-size: small;
+    font-weight: 400;
+    /* width: 90%; */
+    /* margin: 0px; */
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .PersonalInfoContainer {
+    /* border: 1px solid blue; */
+    margin: 15px;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--BorderGrey);
+  }
+  .PersonalInfoFields {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .PersonalInfoBox > form {
+    display: flex;
+    flex-direction: column;
+  }
+  .ExperienceHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ExperienceContainer {
+    /* border: 1px solid indianred; */
+    margin: 15px;
+    padding: 15px 0px;
+  }
+  .ExperienceHeading > button {
+    width: 25%;
+    padding: 8px 20px;
+    font-size: small;
+    font-weight: 600;
+  }
+  .ExImgInfo {
+    display: none;
+  }
+  .ExInputFields {
+    width: 100%;
+    padding: 15px;
+  }
+  .InfoFluxFields {
+    /* border: 1px solid green;` */
+    display: flex;
+    flex-direction: column;
+  }
+  .PersonalInfoFields {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .OnTheWebContainer {
+    border-bottom: 1px solid var(--BorderGrey);
+    margin: 15px;
+    padding: 15px 0px;
+  }
+  .OnTheWebFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .OnTheWebInfoFields {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .NextBtn {
+    width: 20%;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .JobApplyInfoHeading {
+    text-align: right;
+    /* border: 1px solid red; */
+    width: 70%;
+  }
+  .JobApplyLogo {
+    /* border: 1px solid red; */
+    width: 20%;
+  }
+  .JobApplyLogo > h2 {
+    width: 20%;
+    font-size: large;
+    font-weight: 600;
+  }
+  .JobApplyInfoHeading > h3 {
+    font-size: small;
+    font-weight: 600;
+  }
+  .JobApplyInfoHeading > p {
+    font-size: small;
+    font-weight: 400;
+  }
+  .CancelOkBtns {
+    /* border: 1px solid green; */
+    width: 60%;
+  }
+}

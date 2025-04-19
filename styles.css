@@ -1,0 +1,175 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  
+ /*  * {
+    @apply border-bottom;
+  } 
+        
+  body {
+    @apply bg-background text-foreground;
+  }
+  */
+}
+
+.ant-collapse-header {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.ant-collapse-content {
+  background-color: #004f73; 
+}
+
+.ant-collapse-content-box {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 300;
+  text-align: start;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-left: 20px;
+  text-align: start;
+  color: white;
+}
+
+.ant-collapse-borderless>.ant-collapse-item {
+  border: none;
+}
+
+.ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text{
+  width: 90%;
+}
+
+.ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon{
+  display: block !important;
+  height: 60px;
+  width: 60px;
+}
+
+
+.ant-collapse-borderless>.ant-collapse-item:last-child .ant-collapse-header {
+  border-radius: 10px !important;
+}
+
+.ant-collapse-borderless>.ant-collapse-item:last-child {
+  border-radius: 10px !important;
+}
+.ant-tabs-top >.ant-tabs-nav {
+  margin: 0;
+}
+.ant-tabs-card.ant-tabs-top >.ant-tabs-nav .ant-tabs-tab{
+  border: 1px solid #889EB4;
+  border-bottom: none;
+  width: 20%;
+  justify-content: center;
+
+}
+.ant-tabs-card >.ant-tabs-nav .ant-tabs-tab-active{  
+  background-color: #193D6A;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white;
+}
+
+.ant-tabs-nav-list {
+  width: 90%;
+    border-bottom: 1px solid #889EB4;
+}
+.ant-tabs .ant-tabs-content{
+  display: flex;
+  justify-content: center;
+}
+.ant-tabs .ant-tabs-tabpane{
+  width: 90%;
+}
+.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+  justify-content: center;
+}
+.ant-tabs .ant-tabs-tab-btn{
+  font-size: 16px;
+  font-weight: 500;
+}
+.ant-tabs-top >.ant-tabs-nav::before{
+  border-bottom: 0px solid #f0f0f0 !important;
+}
+@media (max-width: 442px) {
+  .ant-tabs .ant-tabs-tab-btn{
+    font-size: .6em;
+  }
+  .ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text{
+    font-size: 1rem;
+  }
+
+  .ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon{
+    display: flex !important;
+    height: 60px;
+    width: 60px;
+  }
+
+}

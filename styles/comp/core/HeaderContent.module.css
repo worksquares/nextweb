@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+.podcastHeaderText {
+  position: absolute;
+  bottom: 20%;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10rem;
+  line-height: 1.2;
+  margin-bottom: 5%;
+  color: #ffff;
+  width: 80%;
+}
+.HeaderContentOuter {
+  background-position: bottom;
+}
+.Anotherimage {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-right: 38px;
+  margin-top: 50px;
+}
+
+.Anotherleft .Rightanother {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.newImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  height: 490px;
+  /* border: 1px solid red; */
+}
+
+.Anotherimage h2 {
+  font-weight: bold;
+  font-family: var(--ffamily);
+  color: var(--badge-color);
+  font-size: xx-large;
+  line-height: 45px;
+}
+
+.Anothercontain {
+  /* padding: 80px 20px 80px 40px; */
+  padding: 0px 50px 0px 0px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Anothercontain p {
+  font-size: 20px;
+  padding-bottom: 25px;
+  color: #ffff;
+  margin: 0px;
+  line-height: 30px;
+}
+
+.Anothercontain > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffff;
+  margin: 0px;
+}
+.Anothercontain > h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: #ffff;
+  margin: 4px 0px 16px 0px;
+}
+
+.Anothercontain a {
+  color: #ffff;
+  border: 2px solid var(--badge-color);
+  font-weight: bold;
+  padding: 13px 34px;
+  background-color: none;
+  display: inline-block;
+  font-family: var(--ffamily);
+  font-size: large;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+
+.Anothercontain a:hover {
+  box-shadow: inset 305px 0 0 0 var(--badge-color);
+  color: var(--tcolor);
+}
+
+.Anothercontain span a {
+  color: var(--badge-color);
+  border: unset;
+  font-weight: 600;
+  padding: 13px 34px;
+  background-color: none;
+  display: inline-block;
+  font-family: var(--ffamily);
+  font-size: large;
+  cursor: pointer;
+}
+
+.Anothercontain span a::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+
+.Anothercontain span a:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.Anothercontain span a:hover {
+  box-shadow: unset;
+  color: var(--badge-color);
+}
+
+.Rightanother img {
+  height: 440px !important;
+  width: 100% !important;
+  border-radius: 10px;
+  
+  /* margin-right: 5px; */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IndustryHeroImg {
+  /* border: 1px solid red; */
+  /* height: 550px !important;
+  object-fit: cover; */
+  min-height: 150px;
+  max-height: 550px;
+  object-fit: contain;
+  margin: 0px;
+}
+
+/*-------------------------------------------*/
+
+@media screen and (max-width: 1232px) {
+  .Anothercontain > h1 {
+    font-size: 2.7rem;
+  }
+  .Anothercontain {
+    padding: 50px 20px 40px 0px;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .Rightanother {
+    width: 95%;
+  }
+  .Anothercontain > h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Anothercontain > h1 {
+    font-size: 2.1rem;
+  }
+  .Anothercontain {
+    padding: 0px;
+  }
+  .newImages {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .Anothercontain > h1 {
+    font-size: 2.1rem;
+  }
+  .Anothercontain {
+    padding: 0px;
+  }
+  .Anothercontain > h3 {
+    font-size: 1.6rem;
+  }
+
+  .Anothercontain p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .Anothercontain {
+    padding: 0px !important;
+    /* border: 1px solid red; */
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Anotherimage {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    padding-right: unset;
+  }
+
+  .newImages {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Rightanother {
+    padding: 0px;
+    /* border: 1px solid red; */
+    width: 70%;
+    height: auto;
+  }
+
+  .Rightanother img {
+    height: auto;
+    width: 100% !important;
+  }
+
+  .Anothercontain p {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+
+  .Anothercontain > h3 {
+    font-size: 1.8rem;
+  }
+
+  .Anothercontain > h1 {
+    font-size: 2.1rem;
+  }
+  .Anothercontain {
+    padding: 0px;
+  }
+  .newImages {
+    margin-top: 50px;
+  }
+  .podcastHeaderText {
+    font-size: 7rem;
+    bottom: 2%;
+  }
+  .IndustryHeroImg {
+    min-height: 150px;
+    max-height: 350px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Anothercontain {
+    padding: 0px;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Anothercontain p {
+    font-size: 18px;
+    /* padding-bottom: 18px; */
+  }
+
+  .Anothercontain > h3 {
+    font-size: 1.5rem;
+  }
+
+  .Anothercontain > h1 {
+    font-size: 2rem;
+  }
+  .Anothercontain {
+    padding: 0px !important;
+    /* border: 1px solid green; */
+  }
+  .Rightanother {
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .IndustryHeroImg {
+    min-height: 150px;
+    max-height: 230px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Anotherimage {
+    width: 100%;
+    padding-right: unset;
+  }
+
+  .Anotherimage h2 {
+    font-weight: bold;
+    font-family: var(--ffamily);
+    color: var(--badge-color);
+    font-size: xx-large;
+    line-height: 45px;
+    /* border: 1px solid red; */
+  }
+
+  .Anotherimage p {
+    font-size: medium;
+  }
+
+  .Rightanother img {
+    width: 100%;
+    /* padding-right: 30px; */
+  }
+
+  .Anothercontain {
+    padding: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .Anothercontain > h1 {
+    font-size: 1.9rem;
+  }
+  .Anothercontain > h3 {
+    font-size: 1.5rem;
+  }
+  .HeaderContentOuter {
+    background-position: left;
+  }
+  .podcastHeaderText {
+    font-size: 5rem;
+    width: 100%;
+    bottom: 5%;
+    left: 3%;
+  }
+  .Anothercontain > h1 {
+    margin: 4px 0px 8px 0px;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .Anothercontain > h1 {
+    font-size: 1.6rem;
+  }
+
+  .Anothercontain {
+    padding: 80px 20px 80px 40px;
+  }
+  .Anothercontain > h3 {
+    font-size: 1.2rem;
+  }
+
+  .Anothercontain p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .podcastHeaderText {
+    right: 2%;
+  }
+}

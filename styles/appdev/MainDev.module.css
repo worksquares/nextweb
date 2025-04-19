@@ -1,0 +1,631 @@
+.MainContainer {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  width: 100%;
+  /* min-width: 1700px !important; */
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.Mainheader {
+  /* border: 1px solid pink; */
+  height: auto;
+  padding: 80px 40px;
+  display: flex;
+  background-color: var(--lightgreen);
+  flex-direction: column;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.Mainheader > h2 {
+  width: 80%;
+  font-size: xx-large;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+
+.Mainheader > h1 {
+  width: 80%;
+  font-size: xx-large;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+
+.CareerNavbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 13px 13px -16px var(--grey);
+  background-color: #ffffff;
+  position: sticky;
+  top: 0%;
+  left: 0;
+  /* border: 1px solid red; */
+  z-index: 2;
+}
+
+.CareerNavbarContainer > h2 {
+  margin: 0px;
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  visibility: hidden;
+}
+
+.CareerNavbarHubNav {
+  /* border: 1px solid red; */
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* box-shadow: inset -10px 0px 21px 0px #e5e5e5, inset 10px 0px 21px 0px #e5e5e5; */
+  /* box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -webkit-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset;
+  -moz-box-shadow: 18px 1px 20px -2px rgba(238, 238, 238, 0.52) inset; */
+}
+
+.CareerNavbarHubNav::-webkit-scrollbar {
+  display: none;
+}
+
+.CareerNavbarLinks {
+  display: flex;
+  /* width: 100% !important; */
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0px !important;
+  list-style-type: none;
+  /* border: 1px solid green; */
+  padding: 13px;
+}
+
+.CareerNavbarli > a {
+  list-style-type: none;
+  color: var(--softgreen);
+  font-weight: 300;
+  font-size: large;
+  margin: 16px;
+  cursor: pointer;
+  padding-bottom: 10.5px;
+  /* border: 1px solid red; */
+}
+.CareerNavbarli > a:hover {
+  color: var(--darkgreen);
+  border-bottom: 3px solid var(--darkgreen) !important;
+}
+
+.CareerNavbarContainer > h2 {
+  overflow: hidden !important;
+}
+.FixedContainer {
+  width: 10%;
+  /* border: 1px solid red; */
+  padding: 3px;
+  position: fixed;
+  bottom: 9%;
+  right: 0.5%;
+}
+.FixedOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  margin-bottom: 7px;
+  height: 70px !important;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 6px 14px -3px rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .FixedOption {
+    font-size: medium !important;
+    font-weight: 600;
+  }
+  .FixedContainer {
+    width: 15%;
+    /* border: 1px solid red; */
+    padding: 3px;
+    position: fixed;
+    bottom: 9%;
+    right: 0.5%;
+  }
+}
+@media screen and (max-width: 1894px) {
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .CareerNavbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .CareerNavbarli > a {
+    /* font-size: medium; */
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .NavbarHubNav {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 924px) {
+  .NavbarHub-Nav {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Mainheader > h2 {
+    width: 75%;
+    font-size: xx-large;
+    font-weight: 800;
+  }
+  .Mainheader > h1 {
+    width: 75%;
+    font-size: xx-large;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  /* .CareerNavbarHubNav {
+      width: 55%;
+    } */
+}
+
+@media screen and (max-width: 770px) {
+  .Mainheader {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .Mainheader > h2 {
+    width: 95%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+  .Mainheader > h1 {
+    width: 95%;
+    font-size: x-large;
+    font-weight: 800;
+  }
+  .FixedContainer {
+    visibility: hidden;
+  }
+  .MainContainer {
+    width: 100%;
+    /* border: 1px solid blueviolet; */
+  }
+}
+@media screen and (max-width: 762px) {
+  /* .CareerNavbarHubNav {
+      width: 60%;
+    } */
+}
+@media screen and (max-width: 675px) {
+  /* .CareerNavbarHubNav {
+      width: 65%;
+    } */
+}
+@media screen and (max-width: 625px) {
+  .NavbarHub-Nav {
+    width: 75%;
+  }
+  .CareerNavbarLinks {
+    width: 140% !important;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  /* .CareerNavbarHubNav {
+      width: 75%;
+    } */
+  .CareerNavbarLinks {
+    /* border: 1px solid pink; */
+    width: 60%;
+    overflow: scroll;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: large;
+    margin-right: 1px !important;
+    padding-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .CareerNavbarContainer {
+    position: sticky;
+    /* top: 11.8%; */
+    top: 8.5%;
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .CareerNavbarContainer {
+    position: sticky;
+    top: 7.8%;
+    /* top: 14%; */
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .CareerNavbarContainer {
+    position: sticky;
+    top: 7%;
+    /* top: 14%; */
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .CareerNavbarContainer {
+    position: sticky;
+    top: 8.5%;
+    /* top: 14%; */
+    left: 0;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 523px) {
+  /* .CareerNavbarHubNav {
+      width: 77%;
+    } */
+  .CareerNavbarLinks {
+    width: 60%;
+    overflow: scroll;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .CareerNavbarli > a {
+    /* border: 1px solid red; */
+    font-size: large;
+    margin-right: 1px !important;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarLinks {
+    padding-left: 0px !important;
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: large;
+    margin-left: 15px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .MainContainer {
+    width: 100% !important;
+    /* border: 1px solid rgb(209, 16, 171); */
+  }
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarLinks {
+    width: 100% !important;
+  }
+  .CareerNavbarli > a {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 384px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 366px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 362px) {
+  /* .CareerNavbarHubNav {
+      width: 100%;
+    } */
+  .CareerNavbarli > a {
+    font-size: small;
+  }
+}
+
+/* --------------------------------WHAT YOU CAN BUILD DEV CSS----------------------------------------------------------- */
+
+.WhatYouBuildMainComponent {
+  /* border: 1px solid red; */
+  padding: 60px 20px;
+  background-color: #d5e3e0;
+}
+
+.WhatYouBuildHeader {
+  /* border: 1px solid green; */
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid var(--softgreen);
+  padding-bottom: 40px !important;
+  /* opacity: 0.1; */
+}
+
+.WhatYouBuildHeading {
+  /* border: 1px solid blue; */
+  width: 50%;
+}
+
+.WhatYouBuildHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.WhatYouBuildHeading > p {
+  font-size: x-large !important;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.WhatYouBuildBtn {
+  /* border: 1px solid blue; */
+  width: 50%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.WhatYouBuildBtn > button {
+  font-size: large;
+  font-weight: 700;
+  color: var(--darkgreen);
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 2px solid var(--darkgreen);
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 50px;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  background-color: transparent;
+}
+
+.WhatYouBuildBtn > button:hover {
+  box-shadow: inset 480px 0 0 0 var(--darkgreen);
+  color: #ffffff;
+}
+
+.WhatYouBuildCardContainer {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.WhatYouBuildCardImg {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+
+.ImageAlignImg {
+  width: 100%;
+}
+
+@media screen and (max-width: 1374px) {
+  .WhatYouBuildBtn > button {
+    font-size: large;
+    font-weight: 700;
+    padding: 10px 40px;
+    width: 60%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1153px) {
+  .WhatYouBuildBtn > button {
+    font-size: large;
+    font-weight: 700;
+    padding: 10px 40px;
+    width: 65%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .WhatYouBuildHeader {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+  }
+  .WhatYouBuildHeading {
+    /* border: 1px solid blue; */
+    width: 100%;
+  }
+  .WhatYouBuildBtn {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .WhatYouBuildCardContainer {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 914px) {
+  .WhatYouBuildBtn > button {
+    font-size: large;
+    font-weight: 700;
+    color: var(--darkgreen);
+    padding: 10px 40px;
+    cursor: pointer;
+    /* border: 2px solid var(--darkgreen); */
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 50px;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+  }
+}
+@media screen and (max-width: 380px) {
+  .WhatYouBuildBtn > button {
+    width: 80%;
+  }
+}
+
+/* ----------------------------CAPABILITIES DEV CSS----------------------------------------------------------- */
+
+.CapabilitiesDevMainContainer {
+  /* border: 1px solid red; */
+  padding: 60px 20px;
+}
+
+.CapabilitiesHeading {
+  /* border: 1px solid green; */
+  /* width: 60%; */
+  border-bottom: 3px solid var(--BorderGrey);
+}
+
+.CapabilitiesHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+  width: 60%;
+}
+
+.CapabilitiesCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .CapabilitiesHeading > h2 {
+    font-size: x-large;
+    font-weight: 800;
+    width: 100%;
+  }
+  .CapabilitiesDevMainContainer {
+    /* border: 1px solid red; */
+    padding: 30px 20px;
+  }
+  .CapabilitiesCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+}
+
+/* -------------------------------------------GET STARTED DEV CSS---------------------------------------------------------------------- */
+
+.GetStartedMainComponent {
+  /* border: 1px solid red; */
+  padding: 20px 20px;
+}
+
+/* .GetStartedHeading {
+  border: 1px solid black;
+} */
+
+.GetStartedHeading > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.GetStartedHeading > p {
+  font-size: large;
+  font-weight: 500;
+  color: var(--darkgreen);
+}
+
+.IconsLinkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 770px) {
+  .IconsLinkContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .GetStartedHeading > h2 {
+    font-size: xx-large;
+    font-weight: 700;
+  }
+  .GetStartedHeading > p {
+    font-size: large;
+    font-weight: 400;
+  }
+}

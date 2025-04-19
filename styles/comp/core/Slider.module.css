@@ -1,0 +1,85 @@
+
+/* .ss label, a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+   */
+  .slider {
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+  }
+  
+  .slider [type="radio"] { display: none; }
+  .slider:hover .controls { opacity: 0.8; }
+  
+  .slider .slide1:checked ~ .slides .inner { margin-left: 0; }
+  .slider .slide2:checked ~ .slides .inner { margin-left: -100%; }
+  .slider .slide3:checked ~ .slides .inner { margin-left: -200%; }
+  .slider .slide4:checked ~ .slides .inner { margin-left: -300%; }
+  .slider .slide5:checked ~ .slides .inner { margin-left: -400%; }
+  
+  .slider .slides {
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  .slider .slides .inner {
+      width: 500%;
+    transition: margin 200ms;
+  }
+  
+  .slider picture {
+      width: 20%;
+      float: left;
+  }
+  
+  .slider picture img {
+      width: 100%;
+  }
+  
+  .slider .controls {
+    width: 100%;
+    position: absolute;
+    top: 40%; /* MELHORA */
+    opacity: 0;
+      transition: opacity 100ms;
+  }
+  
+  .slider .controls label { 
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+  }
+  
+  .slider .slide1:checked ~ .controls label:nth-child(2), 
+  .slider .slide2:checked ~ .controls label:nth-child(3), 
+  .slider .slide3:checked ~ .controls label:nth-child(4), 
+  .slider .slide4:checked ~ .controls label:nth-child(5), 
+  .slider .slide5:checked ~ .controls label:nth-child(1) {
+      background:   url('http://cdn.belezanaweb.com.br/image/upload/v1495082532/spr-carousel-right.webp') no-repeat;
+      right: 10px;
+      position: absolute;
+  }
+  
+  
+  .slider .slide1:checked ~ .controls label:nth-child(5),
+  .slider .slide2:checked ~ .controls label:nth-child(1),
+  .slider .slide3:checked ~ .controls label:nth-child(2),
+  .slider .slide4:checked ~ .controls label:nth-child(3),
+  .slider .slide5:checked ~ .controls label:nth-child(4) {
+      background:  url('http://cdn.belezanaweb.com.br/image/upload/v1495082532/spr-carousel-left.webp') no-repeat;
+      left: 10px;
+      position: absolute;
+  }
+  
+  @media only screen and (max-width: 520px) {
+      .slider .controls {	
+          top: 35%;
+      opacity: 1;
+      }
+      .slider .controls label {	
+          transform: scale(0.7);
+      }
+  }
+  

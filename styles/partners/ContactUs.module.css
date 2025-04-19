@@ -1,0 +1,375 @@
+.ContactUsMain {
+  color: #000000;
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+.ContactUsFormComp {
+  padding: 70px 0px;
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.ContactUsForm {
+  /* border: 1px solid green; */
+  width: 50%;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.ContactUsForm > h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+.ContactUsForm > p {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.ContactUsFormDesc {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 30px;
+}
+
+.ContactUsFormDesc > h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+  color: #ffffff;
+}
+
+.FormComp {
+  /* border: 1px solid violet; */
+  padding: 10px;
+  width: 95% !important;
+  /* position: absolute; */
+  /* left: 10px !important; */
+}
+
+.FormFieldsComp {
+  z-index: 1 !important;
+}
+
+.ContactUsCardsLine {
+  border: 1px solid #e2e4e4;
+  margin: 70px 0px;
+}
+
+.ContactUsCards {
+  /* border: 1px solid black; */
+  padding: 20px 0px;
+}
+
+.ContactUsCards {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ContactUsCardComp {
+  width: 24%;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.ContactUsCardComp:hover {
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.ContactUsCardComp > p {
+  font-size: 18px;
+  font-weight: bold;
+  height: 130px;
+}
+
+.ContactUsLearnMoreButton {
+  display: inline-flex;
+  align-items: center;
+  color: #1d4965;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.ContactUsArrowIcon {
+  margin-left: 3px;
+  width: 13px;
+  transition: margin-left 0.3s ease;
+}
+
+.ContactUsLearnMoreButton:hover .ContactUsArrowIcon {
+  margin-left: 8px;
+}
+
+.ContactInput {
+  padding: 6px;
+}
+
+.ContactSelect {
+  padding: 6px !important;
+}
+
+/* ------------------ Form Card CSS ------------------ */
+
+.CardComp {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+
+.CardComp:hover {
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.CardComp > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+
+.CardIcons {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.CardDesc {
+  /* border: 1px solid red; */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.learnMoreButton {
+  display: inline-flex;
+  align-items: center;
+  color: #1d4965;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.arrowIcon {
+  margin-left: 5px;
+  width: 13px;
+  transition: margin-left 0.3s ease;
+}
+
+.learnMoreButton:hover .arrowIcon {
+  margin-left: 12px;
+}
+
+.SubmitCheckbox {
+  font-size: 16px !important;
+  padding: 6px 0px;
+}
+
+.SubmitBtnComp p {
+  font-size: 15px !important;
+  padding: 6px 0px;
+}
+
+.SubmitButton {
+  margin: 10px 0px;
+  padding: 25px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  /* background-color: #1d4965; */
+  background-color: #42b1ed;
+  color: white;
+  border: none !important;
+  font-weight: 600;
+}
+
+.SubmitButton:hover {
+  /* background-color: #295d7e !important; */
+  background-color: #238cc5 !important;
+  color: white !important;
+  border: none !important;
+}
+
+@media (max-width: 1600px) {
+  .CardComp:nth-child(n + 8) {
+    display: none;
+  }
+}
+
+@media (max-width: 888px) {
+  .CardComp:nth-child(n + 7) {
+    display: none;
+  }
+  .CardComp {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .CardComp:nth-child(n + 6) {
+    display: none;
+  }
+  .CardComp {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------ Media Queries -------------------------------------- */
+
+@media (max-width: 1141px) {
+  .CardDesc {
+    /* border: 1px solid red; */
+    /* height: 110px; */
+    margin-bottom: 10px;
+  }
+  .ContactUsCardComp {
+    width: 49%;
+    /* border: 1px solid red; */
+  }
+  .ContactUsCardComp > p {
+    font-size: 18px;
+    font-weight: bold;
+    height: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .CardComp {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .CardComp > h3 {
+    margin-bottom: 10px;
+    /* height: 56px; */
+  }
+  .CardDesc {
+    /* border: 1px solid red; */
+    /* height: 130px; */
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  .CardComp > h3 {
+    margin-bottom: 10px;
+  }
+  .CardDesc {
+    /* border: 1px solid red; */
+    /* height: 150px; */
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CardComp {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .CardComp > h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    /* height: 40px; */
+  }
+  .CardDesc {
+    /* height: 65px; */
+    margin-bottom: 10px;
+    font-size: 18px !important;
+  }
+  .ContactUsCardComp {
+    width: 100%;
+  }
+  .ContactUsCardComp > p {
+    font-size: 18px;
+    font-weight: bold;
+    height: 80px;
+  }
+
+  .ContactUsFormComp {
+    padding: 70px 0px 30px 0px;
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .ContactUsForm {
+    /* border: 1px solid green; */
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  .ContactUsForm > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .ContactUsForm > p {
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+
+  .ContactUsFormDesc {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .ContactUsFormDesc > h2 {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+  }
+  .ContactUsCardsLine {
+    margin: 60px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 670px) {
+  .CardDesc {
+    /* height: 90px; */
+    margin-bottom: 10px;
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .CardComp > h3 {
+    height: auto;
+  }
+  .CardDesc {
+    /* height: 110px; */
+    margin-bottom: 10px;
+    font-size: 18px !important;
+  }
+  .ContactUsCardComp > p {
+    height: 100px;
+  }
+  .ContactUsCardsLine {
+    margin: 40px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 390px) {
+  .CardComp > h3 {
+    height: auto;
+  }
+  .ContactUsCardComp > p {
+    height: 120px;
+  }
+}

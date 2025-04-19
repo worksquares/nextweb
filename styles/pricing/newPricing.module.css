@@ -1,0 +1,545 @@
+.SubsComp {
+    padding: 20px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SubsComp>h1 {
+    margin: 0px !important;
+    font-size: 16px;
+}
+
+.SubsComp>h2 {
+    margin: 0px !important;
+}
+
+.SubsHeadings {
+    width: 600px;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SubsHeadings>p {
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 18px;
+}
+
+.h2 {
+    margin: 0px !important;
+}
+
+.SubsCloudSelf {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.SubsCloud {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.SubsCloud>p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.SubsSelf {
+    width: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.SubsSelf>p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+
+.SubsPricingComp {
+    margin-top: 25px;
+}
+
+.SubsPricingHeader {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SubsPricingHeader>p {
+    margin: 8px 0px;
+    color: #1d2b36;
+    font-weight: 500;
+}
+
+.SubsPricingHeader>button {
+    font-size: 14px !important;
+    padding: 8px 12px;
+    border: none;
+    background-color: #1D4965;
+    color: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.SubsGetStarted>button:hover {
+    background-color: #1D4965;
+    color: white;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.SubsAmount {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.SubsAmount>h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.SubsAmount>p {
+    font-size: 14px;
+    margin: 0px 0px 0px 5px;
+}
+
+.SubsFeaturesList {
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 8px 0px 16px 0px;
+    /* height: 220px !important; */
+    margin-bottom: 10px;
+}
+
+.SubsFeature {
+    padding: 6px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.SubsFeature>p {
+    margin: 0px 10px;
+    color: #1d2b36;
+    font-weight: 600;
+}
+
+.SubsGetStarted {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SubsGetStarted>button {
+    width: 100%;
+    font-size: 13px !important;
+    padding: 8px 0px;
+    border: none;
+    background-color: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clicked-card {
+    box-shadow: rgb(95, 99, 242) 0px 3px 15px 0px, rgb(95, 99, 242) 0px 0px 0px 1px !important;
+}
+
+.SubsFeaturesComp {
+    margin-top: 25px;
+    width: 98%;
+}
+
+:where(.css-dev-only-do-not-override-1bzssi6).ant-card .ant-card-body {
+    border-radius: 0px;
+}
+
+.SubsFeatures1List {
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 8px 0px 16px 0px;
+    margin-bottom: 10px;
+}
+
+.SubsFeature1 {
+    padding: 16px 17px;
+    display: flex;
+    align-items: center;
+}
+
+.SubsFeature2 {
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Users {
+    font-size: 16px;
+    position: sticky;
+    top: 285px;
+    color: white;
+    z-index: 3;
+    width: 100%;
+    background: black;
+    margin: 0px;
+    padding: 12px 32px;
+    font-weight: 500;
+    line-height: unset;
+}
+
+.FeaturesSubComp {
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+
+.FeaturesTitle {
+    padding: 15px;
+    background-color: #d0e5ed;
+    border: 0.5px solid #A5A5A5;
+    border-left: none;
+    border-right: none;
+    position: sticky;
+    z-index: 1;
+    top: 210px;
+}
+
+.FreeCol>h2,
+.StarterCol>h2,
+.ProfessionalCol>h2,
+.StandardCol>h2,
+.EnterpriseCol>h2,
+.FeaturesCol>h2 {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.your-icon-class {
+    font-Size: 15px !important;
+    color: Black !important;
+    font-Weight: 800
+}
+
+.FeaturesTitle>h3 {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0px;
+    color: #000;
+}
+
+.FeaturesComp {
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+    height:50px;
+}
+
+.FeaturesCol {
+    width: 20% !important;
+}
+
+.EnterpriseCol {
+    border: none !important;
+}
+
+.FeaturesH2>h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.FAQ {
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FAQ>h1 {
+    margin-bottom: 40px !important;
+    width: 100% !important;
+}
+
+.custom_collapse {
+    width: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-1bzssi6).ant-collapse-large>.ant-collapse-item>.ant-collapse-header {
+    padding: 25px 24px;
+    padding-inline-start: 16px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header:hover {
+    background-color: black;
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header:hover .your-icon-class {
+    color: white !important;
+}
+
+.your-icon-class {
+    float: right;
+}
+
+.CompareFeatures {
+    padding: 40px 0px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.CompareFeaturesContainer {
+    position: sticky;
+    top: -20px;
+    background: white;
+    height: 100px;
+    width: 100%;
+}
+
+.CompFeatureSecondh2 {
+    font-size: 20px;
+    color: #000;
+}
+
+.ColStyle {
+    border-right: 1px solid #A5A5A5;
+    padding: 10px;
+    width: 20%;
+    background-color: white;
+}
+
+/* .ColStyle:hover {
+    border-right: 1px solid black;
+    padding: 15px;
+    width: 20%;
+} */
+
+.signUpbtn a {
+  font-size: xx-large;
+  line-height: 1.75rem;
+  border-radius: 100px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 35px;
+  background-color: #f2cb67;
+  margin-left: 10px;
+  display: inline-block;
+  font: 600 1rem/1.3125rem "Nunito Sans", sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.signUpbtn a:hover {
+  background-color: #cfad55;
+}
+
+.signInBtn a {
+    font-size: xx-large;
+    line-height: 1rem;
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    margin: 0;
+    background-color: #245879;
+    display: inline-block;
+    font: 600 1rem/1.3125rem "Nunito Sans", sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+  
+  .signInBtn a:hover {
+    background-color: #2f6c91;
+  }
+
+.CompareFeaturesDivStyle {
+    border-radius: 4px;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    /* padding: 20px; */
+    font-weight: 600;
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.CompareFeaturesDivStyle span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.CompareFeaturesDivStyle span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.CompareFeaturesDivStyle:hover span {
+    padding-right: 25px;
+    color: white;
+}
+
+.CompareFeaturesDivStyle:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.NewPricingCardComp {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: "wrap";
+    justify-content: center;
+}
+.MobCompareFeatures{
+    display: none;
+}
+
+@media (max-width: 567px) {
+    .MobCompareFeatures {
+        width: 90%;
+        display: block;
+        padding: 20px 0px;
+        margin: 20px 0px;
+    }
+    .CompareFeatures{
+        display: none;
+    }
+    .FAQ{
+        width: 85%;
+    } 
+    .FAQ > h1 {
+        font-size: 1.5rem !important;
+    } 
+    
+    .SubsComp{
+        margin-top: 30px;
+    }
+    .NewPricingCardComp {
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .SubsHeaderComp,
+    .SubsHeadings {
+        width: 100%;
+    }
+    .SubsHeadings  > h1 {
+        font-size: 30px !important ;
+    }
+    .head,.SubsCloudSelf{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .SubsCloud,.SubsSelf{
+        width: 50%;
+    }
+    .SubsCloud > p,.SubsSelf > p{
+        font-size: 14px !important;
+    }
+    .custom_collapse_header_span{
+        font-size: .9rem;
+    }
+    .SubsFeaturesList {
+        height: 230px;
+    }
+    .MobCompareFeatures{
+        font-size: 2rem;
+    }
+    .SubsSelf>p {
+        padding: 10px 0px;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width: 1024px) {
+
+    .SubsHeadings {
+        margin-top: 50px;
+    }
+
+    .SubsFeaturesList {
+        height: 250px !important;
+    }
+
+    .NewPricingCardComp {
+        flex-wrap: wrap;
+        justify-content: center;
+       justify-content: space-evenly;
+    }
+    .SubsComp{
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .MobCompareFeatures{
+        font-size: 1.6rem;
+    }
+    .SubsCloud > p,.SubsSelf > p{
+        font-size: 12px !important;
+    }
+    .SubsSelf>p {
+        padding: 10px 0px;
+    }
+   
+}

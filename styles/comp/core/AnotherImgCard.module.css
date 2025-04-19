@@ -1,0 +1,230 @@
+.Anotherimage {
+  height: 100%;
+  /* margin-top: 30px; */
+  /* background-color: rgba(134, 134, 188, 0.4) !important; */
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-right: 38px;
+  /* margin-top: 50px; */
+  /* border: 1px solid red; */
+}
+
+.newImages {
+  /* border: dotted 1px blue; */
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-right: 38px;
+}
+
+.Anotherleft .Rightanother {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.newImages {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Anotherimage h2 {
+  font-weight: bold;
+  font-family: var(--ffamily);
+  color: var(--badge-color);
+  font-size: xx-large;
+  line-height: 45px;
+}
+
+.Anothercontain {
+  padding: 80px 15px;
+  width: 100%;
+}
+
+.Anothercontain p {
+  font-size: large;
+  padding-bottom: 25px;
+  color: var(--badge-color);
+}
+
+.Anothercontain > h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--badge-color);
+}
+
+.Anothercontain a {
+  color: var(--badge-color);
+  border: 2px solid var(--badge-color);
+  font-weight: bold;
+  padding: 13px 34px;
+  background-color: none;
+  display: inline-block;
+  font-family: var(--ffamily);
+  font-size: large;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+
+.Anothercontain a:hover {
+  box-shadow: inset 305px 0 0 0 var(--badge-color);
+  color: var(--tcolor);
+}
+
+.Anothercontain span a {
+  color: var(--badge-color);
+  border: unset;
+  font-weight: 600;
+  padding: 13px 34px 13px 0px;
+  background-color: none;
+  display: inline-block;
+  font-family: var(--ffamily);
+  font-size: large;
+  cursor: pointer;
+}
+
+.Anothercontain span a::after {
+  display: inline-block;
+  width: 60px;
+  font-size: large;
+  padding-left: 1px;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+
+.Anothercontain span a:hover::after {
+  -webkit-transform: translateX(9px);
+  -moz-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  -o-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.Anothercontain span a:hover {
+  box-shadow: unset;
+  color: var(--badge-color);
+}
+
+.Rightanother img {
+  /* height: auto; */
+  /* width: 100% !important; */
+  /* margin-top: 100px; */
+  /* margin-right: 5px; */
+  object-fit: cover !important;
+  /* border: 1px solid red !important; */
+}
+
+/*-------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .Anotherimage {
+    height: 100%;
+    /* margin-top: 30px; */
+    /* background-color: rgba(134, 134, 188, 0.4) !important; */
+    display: grid;
+    grid-auto-flow: row;
+    padding-right: unset;
+  }
+
+  .newImages {
+    display: grid;
+    grid-auto-flow: row;
+    padding-right: unset;
+  }
+
+  .Rightanother {
+    grid-row-start: 1;
+    display: grid;
+    padding: 20px 0px;
+  }
+
+  .Rightanother img {
+    /* height: auto; */
+    width: 100% !important;
+    margin-top: 10px;
+    /* margin-right: 5px; */
+  }
+
+  .Anothercontain {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Anotherimage {
+    width: 100%;
+    padding-right: unset;
+  }
+
+  .Anotherimage h2 {
+    font-weight: bold;
+    font-family: var(--ffamily);
+    color: var(--badge-color);
+    font-size: xx-large;
+    line-height: 45px;
+    /* border: 1px solid red; */
+  }
+
+  .Anotherimage p {
+    font-size: medium;
+  }
+
+  .Rightanother img {
+    width: 100%;
+    /* padding-right: 30px; */
+  }
+
+  .Anothercontain {
+    padding: 20px 0px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .Anothercontain {
+    padding-top: unset !important;
+    margin-top: unset !important;
+  }
+
+  .Anotherimage h2 {
+    font-size: larger;
+    line-height: 30px;
+  }
+
+  .Anotherimage p {
+    line-height: 30px;
+    font-size: medium;
+    width: 100%;
+  }
+
+  .Anothercontain span a {
+    padding-left: unset;
+  }
+
+  .Anothercontain a {
+    padding: 8px 17px;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .Anothercontain a {
+    padding: 8px 17px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .Anothercontain > h2 {
+    font-size: x-large;
+    font-weight: 800;
+    color: var(--badge-color);
+  }
+}

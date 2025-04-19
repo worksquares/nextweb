@@ -1,0 +1,84 @@
+.Cardfooteritems {
+  width: 100%;
+  /* border: 1px solid blue; */
+  padding: 15px;
+  margin: 2px;
+}
+
+.Cardfooteritems > img {
+  /* margin-bottom: 15px; */
+  width: 50px;
+}
+
+.CardfooteritemsNew {
+  /* border: 1px solid green; */
+  width: 30%;
+}
+
+.LineAnimate {
+  font-size: large;
+  font-weight: 600;
+  color: var(--darkgreen);
+  /* border: 1px solid red; */
+  width: fit-content;
+  color: var(--darkgreen);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  cursor: pointer !important;
+  margin: 5px 0px;
+  /* z-index: 0; */
+}
+
+.LineAnimate:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  /* left: 50%; */
+  position: absolute;
+  background: var(--lightgreen);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.LineAnimate:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .CardfooteritemsNew {
+    width: 50%;
+  }
+  .Cardfooteritems {
+    padding: 10px;
+  }
+  .Cardfooteritems {
+    width: 95%;
+    /* border: 1px solid blue; */
+    padding: 15px 8px;
+    margin: 2px;
+  }
+  .Cardfooteritems > img {
+    /* margin-bottom: 15px; */
+    width: 32px;
+  }
+  .LineAnimate {
+    font-size: large;
+    font-weight: 600;
+    padding-top: 10px;
+    /* z-index: -1; */
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .LineAnimate {
+    font-size: small;
+    font-weight: 500;
+    padding-top: 6px;
+    /* z-index: -1; */
+  }
+}

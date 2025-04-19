@@ -1,0 +1,230 @@
+.MainContainer {
+  /* border: 1px solid red; */
+  /* width: 28%; */
+  width: 380px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 20px;
+  margin-top: 60px;
+}
+/* .MainContainer p {
+  margin: 0px;
+} */
+
+.TalentImg {
+  margin: 0 auto;
+}
+
+.JoinTalent {
+  font-size: 20px;
+  /* color: var(--darkgreen); */
+  padding: 15px 0px;
+  margin: 0 auto;
+  color: #464048;
+  /* border: 1px solid blue; */
+}
+
+.JoinTalent > h1 {
+  font-size: 16px;
+  /* color: var(--darkgreen); */
+  padding: 15px 0px;
+  margin: 0 auto;
+  color: #464048;
+  /* border: 1px solid blue; */
+}
+
+.JoinInfo {
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  /* color: var(--darkgreen); */
+  color: #464048;
+  /* border: 1px solid green; */
+  margin: 20px 0px;
+}
+
+.JoinInfo > p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.FloatingBox {
+  position: relative;
+  margin: 10px 0px;
+  width: 100% !important;
+}
+
+.RightInfoInput::placeholder {
+  /* color: #293e40; */
+  font-size: 14px;
+}
+
+/* .RightInfoInput:focus {
+  border: 1.5px solid green;
+} */
+
+.InputBoxContainer {
+  /* border: 1px solid red; */
+  /* width: 370px !important; */
+  width: 100%;
+}
+
+.floatinglabel {
+  font-size: 14px;
+}
+
+.line {
+  width: 100px;
+  height: 25px;
+  /* border-top: 1px solid black; */
+  /* position: absolute; */
+}
+
+.line2 {
+  width: 100px;
+  height: 25px;
+  border-top: 1px solid #0064b3;
+  /* position: absolute; */
+}
+
+/* ============ Input-label Transition Effect ===================== */
+
+.RightInfoInput:focus ~ .floatinglabel,
+.RightInfoInput:not(:focus):valid ~ .floatinglabel {
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.RightInfoInput {
+  font-size: 14px;
+  /* width: 200px; */
+  height: 1rem;
+  position: relative;
+  border: none;
+  padding: 18px !important;
+  width: 100% !important;
+  outline: none;
+  margin: 5px 0px;
+  background: #f2f1f1;
+  border: 1px solid #ccccd8;
+  color: black;
+  border-radius: 3px;
+}
+
+.RightInfoInput:focus {
+  border: 1.5px solid green;
+}
+
+.CheckPrivacy {
+  font-size: 15px;
+  color: #464048;
+}
+
+.CheckPrivacy > p > a {
+  font-size: 15px;
+  color: blue;
+  /* border-bottom: 1px solid blue; */
+}
+
+.CheckboxInfo {
+  display: flex;
+  align-items: normal;
+  color: #464048;
+  line-height: 20px;
+}
+
+.CheckboxInfo > label {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 3px;
+}
+
+.FormButton {
+  padding: 58px 8px;
+}
+
+.FormButton > button {
+  padding: 10px;
+  width: 100% !important;
+  font-weight: 600;
+  background: #86ed78 !important;
+  color: #111 !important;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* .JoinInfoBox {
+  border: 1px solid red;
+} */
+
+.SelectInterest {
+  width: 100%;
+  padding: 10px !important;
+  background: #f2f1f1;
+  border: 1px solid #ccccd8;
+  color: black;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 30px;
+  margin: 10px 0px;
+}
+
+/* .selectinterest > option:focus {
+  width: 250px !important;
+} */
+
+select.selectinterest {
+  width: 250px !important;
+}
+
+.SelectInfo {
+  font-size: 14px;
+  padding: 10px 0px !important;
+}
+
+.IconTitle {
+  font-size: 12px;
+  margin: 5px 0px;
+  color: #0064b3;
+}
+
+.NextIcons {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.IconAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 372px) {
+  .RightInfoInputCheckbox > p {
+    margin: 0px 3px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 0px;
+  }
+  .RightInfoInputCheckbox > p > a {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .RightInfoInputCheckbox {
+    padding: 18px 0px !important;
+  }
+}

@@ -1,0 +1,525 @@
+.H_tag{
+    margin: 0px;
+    font-size: 1rem;
+}
+.CopilotHeadings > h1,.CopilotCompareFeatures > div > h1 , .FAQ > h1{
+    font-size: 2.3rem;
+    color: #000;
+    margin-bottom: 35px;
+}
+.currencySelect {
+    cursor: pointer;
+    padding: 0px 11px;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+    background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: white; /* Ensure background color is set */
+    background-size: 16px 16px; /* Adjust the size of the arrow */
+    position: relative;
+  }
+
+.CopilotMain{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.CopilotHeadings{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.CopilotHeadings > p{
+   color: rgba(0, 0, 0, 0.53);
+   font-size: 18px;
+}
+.h2{
+    margin: 0px !important;
+}
+.SubsCloudSelf{
+    width: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border:1px solid grey;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.SubsCloud{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.SubsCloud > p{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.SubsSelf{
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.SubsSelf > p{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.CopilotPricing{
+    margin-top: 25px;
+    width: 100%;
+
+}
+
+.CopilotPricingHeader{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CopilotPricingHeader > p{
+    margin: 8px 0px;
+    color: #1d2b36;
+    font-weight: 500;
+}
+
+.CopilotPricingHeader > button{
+    font-size: 14px !important;
+    padding: 8px 12px;
+    border: none;
+    background-color: #1D4965 ;
+    color: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.GetStarted >button:hover{
+    background-color: #1D4965 ;
+    color: white;
+    border: 1px solid rgb(201, 201, 201);
+}
+.CopilotAmount{
+    display: flex;
+    align-items: baseline;
+   
+}
+
+.CopilotAmount > h1{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.CopilotAmount > p{
+    font-size: 14px;
+    margin: 0px 0px 0px 5px;
+}
+
+.FeaturesList{
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 8px 0px 16px 0px;
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+.SubFeature{
+    padding: 6px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.SubFeature > p{
+    margin: 0px 10px;
+    color: #1d2b36;
+    font-weight: 600;
+}
+
+.GetStarted{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GetStarted > button{
+    width: 100%;
+    font-size: 13px !important;
+    padding: 8px 0px;
+    border: none;
+    background-color: white ;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+ .clicked-card {
+    box-shadow: rgb(95, 99, 242) 0px 3px 15px 0px, rgb(95, 99, 242) 0px 0px 0px 1px !important;
+  }
+.CopilotSubsFeatures{
+    margin-top: 25px ;
+    width:98%;
+    
+}
+:where(.css-dev-only-do-not-override-1bzssi6).ant-card .ant-card-body{
+    border-radius: 0px;
+}
+
+.SubsFeatures1List{
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 8px 0px 16px 0px;
+    margin-bottom: 10px;
+}
+
+.SubsFeature1{
+    padding: 16px 17px;
+    display: flex;
+    align-items: center;
+}
+.SubsFeature2{
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+}
+.Users{
+    font-size: 16px;
+    position: sticky;
+    top: 285px;
+    color: white;
+    z-index: 3;
+    width: 100%;
+    background: black;
+    margin: 0px;
+    padding: 12px 32px;
+    font-weight: 500;
+    line-height: unset;
+}
+
+
+/* ------------CopilotSubComp---------- */
+
+.CopilotSubComp{
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+    
+}
+
+.CopilotFeaturesTitle {
+    padding: 15px;
+    background-color: #D0E5ED;
+    border:0.5px solid #A5A5A5;
+    border-left: none;
+    border-right: none;
+    position: sticky; 
+    z-index: 1;
+    top: 145px;
+}
+
+
+.your-icon-class{
+    font-Size: 15px !important;
+     color: Black !important;
+     font-Weight: 800 
+}
+
+.CopilotFeaturesTitle > h3{
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0px;
+    color: #000;
+}
+
+.Features{
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+.FeaturesColumn{
+    width: 20% !important;
+}
+
+.Enterprise{
+    border: none !important;
+}
+.CopilotFeaturesH2 > h2{
+  font-size: 20px;
+  color: white;
+}
+/* --------FAQ---------- */
+.FAQ{
+ width: 100%;
+ padding:40px 0px !important;
+ }
+.FAQ >h1{
+    margin-bottom: 40px !important;
+} 
+.custom_collapse {
+    width: 100%;
+  }
+  
+  .custom_collapse_item {
+    border-bottom:.3px solid #f4f3f3;
+    border:.3px solid #d9d9d9;
+    
+  }
+  
+  .custom_collapse_header {
+    padding: 25px 24px;
+    padding-inline-start: 16px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom_collapse_header:hover {
+    background-color: #1D4965 !important;
+    color: white;
+  }
+  
+  .custom_collapse_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    
+  }
+  .custom_collapse_content_inner {
+    padding: 10px 16px;
+    
+  }
+  
+  .custom_collapse_content.active {
+    max-height: 200px; 
+    padding: 10px 16px;
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+  }
+  
+  
+  .your-icon-class {
+    float: right;
+  }
+
+  .CopilotCompareFeatures{
+    padding: 40px 0px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.CompFeatureSecondh2{
+ font-size: 20px;
+ color: #000;
+}
+
+.ColStyle {
+    border-right: 1px solid #A5A5A5;
+    padding: 15px;
+    width: 236px;
+    background-color: white
+  }
+  .ColStyle:hover{
+    border-right: 1px solid black;
+    padding: 15px;
+    width: 236px;
+    background-color: rgb(155, 155, 246)
+  }
+
+.CompareFeaturesDivStyle {
+    border-radius: 4px;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    font-weight: 600;
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .CompareFeaturesDivStyle span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .CompareFeaturesDivStyle span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .CompareFeaturesDivStyle:hover span {
+    padding-right: 25px;
+    color: white;
+  }
+  .CompareFeaturesDivStyle:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .CopilotPricingPara{
+    height: 80px;
+}
+.MobCompareFeatures{
+    display: none;
+}
+
+  @media (max-width: 1050px) {
+    .CopilotCurrencySelectComp{
+        margin-top: 50px !important;
+        padding-right: 6%;
+    }
+    .CopilotPricingCard{
+        width: 40% !important;
+    }
+    .CopilotPricingCardComp{
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly !important;
+    
+    }
+    .CopilotPricingPara{
+        height: 60px;
+    }
+    .FeaturesColumn,.FreeCol,.StarterCol,.ProfessionalCol,.Enterprise{
+        padding: 15px !important;
+        height: 130px !important;
+    }
+    .H_tag{
+        font-size: .9rem;
+    }
+    .CopilotHeadings > h1 ,.CopilotCompareFeatures > div > h1,.FAQ > h1{
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width:565px) and (max-width: 768px) {
+    .H_tag{
+        font-size: .8rem;
+    }
+    .FeaturesColumn,.FreeCol,.StarterCol,.ProfessionalCol,.Enterprise{
+        padding: 10px !important;
+        height: 130px !important;
+    }
+    .CopilotPricingCard{
+        width: 45% !important;
+        margin-bottom: 30px;
+    }
+    .CopilotPricingCardComp{
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly !important;
+    
+    }
+    .CopilotPricingPara{
+        height: 80px;
+    }
+    .FeaturesList{
+        height: 270px;
+    }
+  }
+
+
+  @media (max-width: 560px) {
+    .CopilotHeadings > h1 ,.CopilotCompareFeatures > div > h1,.FAQ > h1, .MobCompareFeatures > div > h1{
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+    .CopilotPricingCard{
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+    .CopilotCompareFeatures{
+        display: none;
+    }
+    .MobCompareFeatures{
+            width: 100%;
+            display: block;
+            padding: 20px 0px;
+    }
+    .FAQ{
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .CopilotPricingCardComp{
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly !important;
+    }
+    .custom_collapse_header{
+        height: 80px !important;
+    }
+  
+  }
+
+  @media (max-width: 560px) {
+    .custom_collapse_header{
+        height: 100px !important;
+    }
+  }
+  @media (min-width :1920px){
+    .FeaturesList{
+        height: 270px;
+    }
+    
+  }
+
+  @media (max-width: 320px) {
+    .CopilotHeadings > h1 ,.CopilotCompareFeatures > div > h1,.FAQ > h1, .MobCompareFeatures > div > h1{
+        font-size: 1.7rem;
+        margin-bottom: 0px;
+    }
+    .MobCompareFeatures{
+        padding: 20px 0px;
+}
+.FAQ{
+    padding: 20px 0px;
+}
+  }

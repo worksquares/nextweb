@@ -1,0 +1,323 @@
+/* .PageContainer {
+  border: 1px solid red;
+} */
+
+.PageHeaderPart {
+  /* border: 1px solid black; */
+  padding: 20px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-image: url(/assets/pagenotfound.webp); */
+  /* object-fit: cover !important; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 0px 0px !important; */
+  /* background-position: right 0px bottom 100px !important; */
+  /* width: 98%; */
+  /* height: 400px; */
+}
+
+.PageErrorImage {
+  /* border: 1px solid red; */
+  width: 70%;
+  height: auto;
+}
+
+.PageHeaderPartImg {
+  /* height: 400px; */
+  object-fit: cover !important;
+  /* float: right !important; */
+  /* position: relative; */
+  /* border: 1px solid red !important; */
+  /* width: 50%; */
+}
+
+.PageHeaderInfo > h2 {
+  width: 90%;
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--darkgreen);
+}
+
+.PageHeaderInfo > p {
+  width: 90%;
+  font-size: large;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.HeadingPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  /* padding: 0px 45px; */
+  margin: 0px 45px;
+  border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.HeadingPart h1 {
+  font-size: var(--h1);
+  font-weight: bold;
+  font-family: var(--ffamily);
+  color: var(--badge-color);
+  font-size: xx-large;
+  line-height: 45px;
+  /* width: 100%; */
+  margin: 50px 0px 20px 0px;
+}
+
+.CardContainerNew {
+  padding: 15px 32px 10px 45px;
+}
+
+@media screen and (min-width: 1367px) {
+  .PageHeaderInfo > h2 {
+    font-size: xxx-large;
+    /* border: 1px solid red; */
+  }
+
+  .PageHeaderInfo > p {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .PageHeaderInfo > h2 {
+    width: 90%;
+    font-size: xx-large;
+    /* border: 1px solid green; */
+  }
+
+  .PageHeaderInfo > p {
+    width: 90%;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .PageHeaderPartImg {
+    height: 380px !important;
+    object-fit: cover;
+    float: right;
+    /* position: relative; */
+    /* border: 1px solid green !important; */
+    width: 60%;
+  }
+
+  .PageHeaderInfo {
+    /* border: 1px solid black; */
+    width: 450px !important;
+  }
+}
+
+@media screen and (max-width: 908px) {
+  .PageHeaderPartImg {
+    height: 300px;
+    /* border: 1px solid red; */
+    width: 60%;
+  }
+
+  .PageHeaderInfo {
+    /* border: 1px solid black; */
+    width: 450px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeadingPart {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    /* padding: 20px 45px; */
+    /* margin: 0px; */
+  }
+  .HeadingPart h1 {
+    font-size: var(--h1);
+    font-weight: bold;
+    font-family: var(--ffamily);
+    color: var(--badge-color);
+    font-size: xx-large;
+    line-height: 45px;
+    /* width: 100%; */
+    margin: 0px 0px 40px 0px;
+  }
+
+  .PageHeaderPart {
+    /* border: 1px solid green; */
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    width: 98%;
+  }
+
+  .PageHeaderPartImg {
+    height: 400px;
+    object-fit: cover;
+    float: right;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .PageHeaderInfo {
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .PageHeaderPartImg {
+    height: 300px;
+    object-fit: cover;
+    float: right;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .PageHeaderInfo {
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 80%;
+  }
+  .PageHeaderInfo > h2 {
+    width: 90%;
+    font-size: x-large;
+    font-weight: 800;
+    color: var(--darkgreen);
+  }
+  .PageHeaderPart {
+    /* border: 1px solid green; */
+    width: 100%;
+  }
+
+  .PageHeaderInfo > p {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--darkgreen);
+  }
+  .PageHeaderInfo {
+    /* border: 1px solid red; */
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .PageHeaderInfo {
+    /* border: 1px solid red; */
+    width: 300px !important;
+  }
+  .PageHeaderInfo > h2 {
+    width: 90%;
+    font-size: large;
+  }
+  .PageHeaderPart {
+    /* border: 1px solid green; */
+    width: 100%;
+  }
+  .PageHeaderInfo > p {
+    width: 90%;
+    font-size: 14px;
+  }
+  .PageHeaderPartImg {
+    height: 250px;
+    object-fit: cover;
+    float: right;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .HeadingPart {
+    /* border: 1px solid red; */
+    /* padding: 20px 15px; */
+    margin: 0px 15px;
+  }
+  .HeadingPart h1 {
+    font-size: 25px !important;
+    margin: 15px 0px !important;
+  }
+  .PageHeaderPart {
+    /* border: 1px solid black; */
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .HeadingPart h1 {
+    font-size: var(--h1);
+    font-weight: bold;
+    font-family: var(--ffamily);
+    color: var(--badge-color);
+    font-size: 20px !important;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .HeadingPart a {
+    color: var(--badge-color);
+    float: left;
+    margin-right: 30px;
+    border: 2px solid var(--badge-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: none;
+    font-family: var(--ffamily);
+    font-size: large;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .HeadingPart h1 {
+    margin-left: 10px;
+    margin-top: 50px;
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .HeadingPart h1 {
+    margin-left: 10px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  .HeadingPart span {
+    text-align: left !important;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+
+  .HeadingPart a {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .CardContainerNew {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .HeadingPart h1 {
+    /* width: 100%; */
+    margin: 20px 0px 10px 0px !important;
+  }
+}

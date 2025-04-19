@@ -1,0 +1,44 @@
+.JobMainContainer {
+  /* border: 1px solid red; */
+  /* padding: 10px 0px; */
+  width: 90%;
+  margin: 0 auto;
+  color: #262626 !important;
+  font-family: 'Adobe Clean', sans-serif;
+}
+
+.JobMainInfo {
+  /* border: 1px solid black; */
+  color: #262626 !important;
+  padding: 15px 0px;
+  border-bottom: 2px solid #b3b3b3;
+}
+
+.JobMainInfo > p {
+  margin: 10px 0px;
+  color: #262626 !important;
+}
+
+.JobMainInfo > p > span {
+  color: grey;
+}
+
+.JobInfo {
+  /* border: 1px solid black; */
+  color: #262626 !important;
+  padding: 15px 0px;
+}
+
+.JobInfo > p {
+  line-height: 1.71428571;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.JobInfo > p > a {
+  color: #4a90e2;
+}
+
+.JobInfo > ul > li {
+  margin: 8px 0px;
+}

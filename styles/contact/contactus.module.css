@@ -1,0 +1,63 @@
+.contactuscontainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.ant-input{
+  width: 50%;
+}
+
+.contactBackground {
+    height: 400px !important;
+    background-image: url(/assets/locationhero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contactBackground h1 {
+    color:white;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .map{
+    object-fit: contain;
+    mix-blend-mode: darken;
+   
+  }
+  .img{
+ 
+    object-fit: contain;
+    mix-blend-mode: darken;
+  }
+  .contactusform{
+    /* border:1px solid red; */
+    /* padding: 20px; */
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 1 rem;
+  }
+  .contactusform h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+  }
+@media (max-width: 470px) {
+  .contactuscontainer{
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contactusform h1{
+   margin-left: 0;
+  }
+.ant-input{
+  width: 100%;
+}
+}
+
+

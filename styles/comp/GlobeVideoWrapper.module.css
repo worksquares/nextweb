@@ -1,0 +1,152 @@
+.videoContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: hidden;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+}
+
+
+.welcomeTextContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.welcomeText {
+  position: absolute;
+  white-space: nowrap;
+  transform: translate(0%, 50%);
+}
+.text1 {
+  top: 10%;
+  left: 14%;
+  color: goldenrod;
+  font-size: 1rem;
+}
+
+.text2 {
+  top: 27%;
+  left: 14%;
+  font-size: 1rem;
+  color: orange;
+
+}
+
+.text3 {
+  top: 42%;
+  left: 14%;
+  font-size: 1rem;
+  color: red;
+
+}
+
+.text4 {
+  top: 55%;
+  left: 14%;
+  font-size: 1rem;
+  color: purple;
+
+}
+
+.text5 {
+  top: 10%;
+  right: 14%;
+  font-size: 1rem;
+  color: green;
+
+}
+
+.text6 {
+  top: 27%;
+  right: 14%;
+  font-size: 1rem;
+  color: blue;
+
+}
+
+.text7 {
+  top: 42%;
+  right: 14%;
+  font-size: 1rem;
+  color: tomato;
+
+}
+
+.text8 {
+  top: 55%;
+  right: 14%;
+  font-size: 1rem;
+  color: teal;
+
+}
+.GlobeVideo {
+  position: relative;
+  top: 45%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .GlobeVideo {
+    top: 80%;
+  }
+}
+@media (min-width: 800px) and (max-width: 879px) {
+  .GlobeVideo {
+    top: 60% !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 799px) {
+  .GlobeVideo {
+    top: 50% !important;
+  }
+}
+@media (min-width: 1601px) and (max-width: 1919px) {
+  .GlobeVideo {
+    top: 80% !important;
+  }
+}
+@media (min-width: 443px) and (max-width: 550px) {
+  .GlobeVideo {
+    top: 5% !important;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .GlobeVideo {
+    top: 27%;
+  }
+}
+
+@media (max-width: 442px) {
+  .GlobeVideo {
+    width: 75%;
+    top: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .text1,.text2,.text3,.text4{
+    left: 10%;
+    font-size: .9rem;
+   }
+   .text5,.text6,.text7,.text8{
+    font-size: .9rem;
+    right: 10%;
+   }
+}
+@media (max-width: 320px) {
+
+  .text1,.text2,.text3,.text4{
+    left: 8%;
+   }
+   .text5,.text6,.text7,.text8{
+    right: 8%;
+   }
+}
+

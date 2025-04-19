@@ -1,0 +1,122 @@
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  height: 50%;
+  margin: 90px 0px;
+}
+
+.imageContainer p {
+  line-height: 1.445em;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: normal;
+  font-weight: 350;
+  color: #5a6072;
+  /* width: 88%; */
+  font-size: 18px !important;
+}
+.imageContainer h2 {
+  font-size: xx-large;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.3;
+  letter-spacing: normal;
+  font-weight: bold;
+  color: var(--badge-color);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.textContainer {
+  width: 100%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.h2 {
+  font-size: xx-large;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.3;
+  letter-spacing: normal;
+  font-weight: bold;
+  color: var(--badge-color);
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.p {
+  font-size: 18px !important;
+  /* line-height: 1.445em; */
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: normal;
+  font-weight: 350;
+  color: #5a6072;
+  width: 100%;
+}
+
+.CardImgBox {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .imageContainer p {
+    font-size: 16px !important;
+  }
+  .imageContainer h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    flex-direction: column;
+    margin: 40px 0px;
+    gap: 0px;
+  }
+  .image {
+    width: 100%;
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .h2 {
+    font-size: large;
+  }
+
+  .p {
+    font-size: 16px !important;
+  }
+
+  .CardImgBox {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 566px) {
+  .image {
+    width: 100%;
+    height: 280px !important;
+  }
+  .imageContainer h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .image {
+    width: 100%;
+    height: 220px !important;
+  }
+}

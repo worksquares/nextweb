@@ -1,0 +1,67 @@
+.Anothercontain {
+  padding: 80px 35px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.Anothercontain p {
+  font-size: 18px;
+  /* padding-bottom: 25px; */
+  color: var(--badge-color);
+  margin: 0px;
+  line-height: 30px;
+}
+
+.Anothercontain > h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--badge-color);
+  margin: 4px 0px 16px 0px;
+}
+
+/*-------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .Anothercontain p {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+
+  .Anothercontain > h1 {
+    font-size: 2.1rem;
+  }
+  .Anothercontain {
+    padding: 20px 40px !important;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Anothercontain p {
+    font-size: 18px;
+    /* padding-bottom: 18px; */
+  }
+
+  .Anothercontain > h1 {
+    font-size: 1.8rem;
+  }
+  .Anothercontain {
+    padding: 20px 20px 10px 20px !important;
+    /* border: 1px solid red; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Anothercontain {
+    padding: 20px;
+    padding-top: 20px;
+  }
+  .Anothercontain > h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,179 @@
+/* VideoSection.module.css */
+.videoSectionhero {
+  background-color: #154965;
+}
+
+.videoSection {
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0px;
+  border-radius: 8px;
+  /* height: 400px; */
+}
+
+.videoRightSection {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0px;
+  border-radius: 8px;
+  /* height: 400px; */
+}
+
+.videoPlaceholder {
+  width: 70%;
+  height: 60vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton {
+  font-size: 32px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.textContent {
+  flex: 1;
+  color: white;
+  padding: 20px;
+}
+
+.textRightContent {
+  flex: 1;
+  color: #154965;
+}
+
+.title {
+    color: #2b547e;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* line-height: 0; */
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 35px;
+  color: #154965;
+  /* line-height: 0.5; */
+}
+
+.learnMoreBtn {
+  background-color: #f2cb67;
+  color: #154965;
+  /* padding: 10px 40px; */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 203.5px;
+  height: 44px;
+}
+
+.learnMoreBtn:hover {
+  background-color: #cfad55;
+}
+
+.buttonText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  color: #154965;
+}
+
+.YoutubeButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 50px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 768px) {
+  .videoSection {
+    display: block;
+    padding: 30px 0px !important;
+    border-radius: 8px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .videoRightSection {
+    display: block;
+    padding: 80px 0px;
+    border-radius: 8px;
+  }
+  .textContent {
+    color: white;
+    padding-left: 50px !important;
+    text-align: center;
+  }
+  .textRightContent {
+    padding-left: 50px !important;
+    text-align: center;
+  }
+  .videoPlaceholder {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 442px) {
+  .videoSection {
+    display: block;
+    padding: 40px 0px;
+    border-radius: 8px;
+  }
+  .videoRightSection {
+    display: block;
+    padding: 80px 0px;
+    border-radius: 8px;
+  }
+  .videoPlaceholder {
+    width: 90%;
+    height: 30vh;
+  }
+  .textContent {
+    color: white;
+    padding: 0px !important;
+  }
+  .textRightContent {
+    padding: 0px !important;
+    text-align: center;
+  }
+  .description {
+    font-size: 1rem !important;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 2rem !important;
+  }
+  .YoutubeButton{
+    width: 45px;
+    height: 40px;
+  }
+}
