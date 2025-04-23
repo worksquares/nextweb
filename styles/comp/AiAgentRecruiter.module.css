@@ -314,3 +314,64 @@
     font-size: 12px;
   }
 }
+@media (max-width: 480px) {
+  .appContainer {
+    height: auto;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .avatarCard {
+    width: 80px;
+    padding: 8px;
+  }
+
+  .avatarImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .inputField {
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .primaryButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .pageTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .selectionRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttonRow {
+    flex-direction: column;
+  }
+
+  .codeInputBox {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .modal {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .modal h2 {
+    font-size: 18px;
+  }
+
+  .modal p {
+    font-size: 12px;
+  }
+}
