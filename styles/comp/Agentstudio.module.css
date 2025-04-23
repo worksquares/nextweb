@@ -319,7 +319,7 @@
   content: "";
   position: absolute;
   top: 50px;
-  left: 680px;
+  /* left: 680px; */
   right: 10px;
   height: 2px;
   width: 30%;

@@ -53,7 +53,7 @@ let newcards: ImageContainProps[] = [
     paragraph2: "⚙️ No-Code Flow Builder for Instant Deployment",
     paragraph3:
       "Design conversational flows without writing code. Deploy your agents across platforms like websites, mobile apps, and WhatsApp—instantly turning conversations into actions.",
-      img320: require("../../public/assets/Agent_Studio.webp")
+      img320: require("../../public/assets/imgagentstudio.webp")
   },
   {
     title: " Train, evaluate, and deploy AI models with minimal effort",
