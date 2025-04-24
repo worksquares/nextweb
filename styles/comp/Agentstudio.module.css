@@ -319,7 +319,7 @@
   content: "";
   position: absolute;
   top: 50px;
-  left: 680px;
+  /* left: 680px; */
   right: 10px;
   height: 2px;
   width: 30%;
@@ -590,13 +590,13 @@
   }
 }
 @media screen and (max-width: 550px) {
-  .wrapper {
+  /* .wrapper {
     padding: 20px 10px;
-  }
+  } */
 
   .content {
     width: 100%;
-    height: 100%;
+    height: 40%;
     padding: 0 10px;
     text-align: center;
   }

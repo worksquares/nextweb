@@ -121,7 +121,7 @@ const AiStudio = () => {
         </p>
         {/* <div className={styles.videoPlaceholder}></div> */}
         {/* Video Implementation */}
-        <div className={styles.videoContainer}>
+        <div className={styles.videoPlaceholder}>
           <video
             className={styles.videoPlayer}
             // controls

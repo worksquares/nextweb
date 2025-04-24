@@ -80,7 +80,7 @@ const AppStudio = () => {
           <div className={styles.imageContainer}>
             <CustomImage
               type="hero"
-              src="/assets/App_Studio.webp"
+              src="/assets/Apphero.webp"
               alt="AI Agents"
               className={styles.mainImages}
               priority={true}
@@ -97,7 +97,7 @@ const AppStudio = () => {
           <p className={styles.subtext}>
             App Studio is the all-in-one platform you need to build, deploy, and manage custom apps for your business. Create smarter, faster, and scalable solutions with just a few clicks.
           </p>
-          <div className={styles.videoContainer}>
+          <div className={styles.videoPlaceholder}>
             <video className={styles.videoPlayer} 
             muted
             autoPlay
