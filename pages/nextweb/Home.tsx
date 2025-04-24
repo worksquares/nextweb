@@ -5,8 +5,7 @@ import MultiAgentSection from "../../components/MultiAgentSection";
 import NewHomeSlider from "../../components/NewHomeSlider";
 import MainFooter from "../../components/MainFooter";
 import ImageLeftRight, { ImageContainProps } from "../../components/ImageLeftRight";
-import ImageLeftRightCard from "../../components/ImageLeftRightCard";
-import Image from "next/image";
+import Screen from "../../comp/Screen";
 
 const studioCardsData = [
   {
@@ -34,8 +33,8 @@ const studioCardsData = [
 
 let newcards: ImageContainProps[] = [
   {
-    title: " Build web and mobile apps quickly and easily",
-    subtitle: "Using Digisquares’ universal Agent Framework – SmartAgents™",
+    title: "Create Web & Mobile Apps Visually",
+    subtitle: "Empower teams with Digisquares’ AppStudio – A Low-Code Platform",
     paragraph: "🛠 Low-Code Platform for Rapid Development",
     paragraph1:
       "AppStudio empowers developers and businesses to build scalable web and mobile applications using a visual interface, reusable components, and built-in logic—eliminating the need for extensive coding.",
@@ -45,8 +44,8 @@ let newcards: ImageContainProps[] = [
       img320: require("../../public/assets/App_Studio.webp"),
   },
   {
-    title: "Develop Multi-Agent Using Agent Studio in Just Minutes",
-    subtitle: "Using Digisquares’ universal Agent Studio for Multi-Agent Development",
+    title: "Build Voice & Chat Agents Instantly",
+    subtitle: "Digisquares’ Agent Studio – Multi-Language, No-Code Agent Builder",
     paragraph: "🛠 Build Multi-Language Voice & Chat Agents",
     paragraph1:
       "Agent Studio enables you to design intelligent voice and text-based agents that support multiple languages and speakers, helping you engage users globally with personalized interactions.",
@@ -56,8 +55,8 @@ let newcards: ImageContainProps[] = [
       img320: require("../../public/assets/Agent_Studio.webp")
   },
   {
-    title: " Train, evaluate, and deploy AI models with minimal effort",
-    subtitle: "Our platform for AI model development and deployment",
+    title: "Fine-Tune & Deploy AI Models Faster",
+    subtitle: "AI Studio by Digisquares – Test, Train, and Optimize Models Easily",
     paragraph: "🛠 Interactive Notebooks for Seamless Model Development",
     paragraph1:
       "AI Studio provides interactive notebooks that simplify the process of developing and testing AI models. With built-in tools for model evaluation and tuning, AI Studio accelerates the development cycle.",
@@ -174,7 +173,7 @@ const Home = () => {
   //  });
 
   return (
-    <>
+    <Screen>
       <Menu />
       <AccelerateSection />
       <StudioSection cardsData={studioCardsData} />
@@ -182,7 +181,7 @@ const Home = () => {
       <MultiAgentSection />
       <NewHomeSlider cards={cards} />
       <MainFooter />
-    </>
+    </Screen>
   );
 };
 export default Home;

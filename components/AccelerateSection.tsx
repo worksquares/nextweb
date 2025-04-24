@@ -2,12 +2,13 @@ import React from "react";
 import styles from '../styles/comp/Accelerate.module.css'
 import Link from "next/link";
 import Image from "next/image";
+import Screen from "../comp/Screen";
 
 const AccelerateSection = () => {
   return (
     <div className={styles.accelerateWrapper}>
+      <Screen>
       <div className={styles.agentSection}>
-        {/* Left Side Text */}
         <div className={styles.content}>
           <h2 className={styles.title_accelerate}>Accelerate</h2>
           <h2 className={styles.title_accelerate}>with AI</h2>
@@ -26,7 +27,6 @@ const AccelerateSection = () => {
           </div>
         </div>
 
-        {/* Right Side Image */}
         
 <div className={styles.imageContainer}>
   <Image
@@ -39,6 +39,7 @@ const AccelerateSection = () => {
   />
 </div>
       </div>
+      </Screen>
     </div>
   );
 };
