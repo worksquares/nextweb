@@ -74,8 +74,6 @@
   width: 80%;
   height: auto; */
   width: 100%;
-    max-width: 720px; /* Maximum size of the image */
-    height: auto; /* Maintains aspect ratio */
     object-fit: cover;
     /* border-radius: 12px; */
 }
@@ -435,11 +433,11 @@
     max-width: 580px;
     font-size: 1.1rem;
   }
-  .mainImages {
+  /* .mainImages {
     max-width: 380px;
     height: auto;
     margin-left: 40px;
-  }
+  } */
 
   .cardGrid {
     grid-template-columns: repeat(3, 1fr);
@@ -452,10 +450,10 @@
   .wrapper {
     padding: 100px 80px;
   }
-  .mainImages {
+  /* .mainImages {
     width: 90%;
     max-width: 500px;  
-  }
+  } */
   .cardGrid, .resourceGrid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -475,11 +473,11 @@
   .wrapper {
     padding: 80px 60px;
   }
-  .mainImages {
+  /* .mainImages {
     width: 80%;
     max-width: 980px !important;
     height: auto;
-  }
+  } */
   .appHeading,
   .resourceTitle,
   .integrationTitle {
@@ -501,11 +499,11 @@
   .wrapper {
     padding: 100px 80px;
   }
-  .mainImages {
+  /* .mainImages {
     width: 100%;
     max-width:  980px !important;
     height: auto;
-  }
+  } */
   .description {
     font-size: 1.2rem;
   }
@@ -550,10 +548,10 @@
     margin-bottom: 20px;
   }
 
-  .mainImages {
+  /* .mainImages {
     max-width: 90%;
     height: auto;
-  }
+  } */
   .cardGrid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -631,9 +629,9 @@
     width: auto;
   }
 
-  .mainImages {
+  /* .mainImages {
     height: auto;
-  }
+  } */
   .cardGrid {
     grid-template-columns: repeat(1, 1fr);
   }

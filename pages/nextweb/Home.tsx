@@ -173,7 +173,7 @@ const Home = () => {
   //  });
 
   return (
-    <Screen>
+    <>
       <Menu />
       <AccelerateSection />
       <StudioSection cardsData={studioCardsData} />
@@ -181,7 +181,7 @@ const Home = () => {
       <MultiAgentSection />
       <NewHomeSlider cards={cards} />
       <MainFooter />
-    </Screen>
+    </>
   );
 };
 export default Home;

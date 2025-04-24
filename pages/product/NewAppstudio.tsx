@@ -80,7 +80,7 @@ const AppStudio = () => {
           <div className={styles.imageContainer}>
             <CustomImage
               type="hero"
-              src="/assets/Apphero.webp"
+              src="/assets/Apphero.svg"
               alt="AI Agents"
               className={styles.mainImages}
               priority={true}
