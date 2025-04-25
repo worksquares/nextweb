@@ -1,6 +1,6 @@
 .wrapper {
   background: linear-gradient(323deg,rgba(252, 179, 9, 1) 25%, rgba(255, 193, 7, 1) 75%);
-  padding: 60px 40px;
+  /* padding: 60px 40px; */
   color: white;
   height: calc(100vh - 70px);
   width:100%;
@@ -17,7 +17,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 .content {

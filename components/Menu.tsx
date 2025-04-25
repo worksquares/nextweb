@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "../styles/comp/Menu.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import Screen from '../comp/Screen';
 
 const Menu = () => {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -154,6 +155,7 @@ const Menu = () => {
     ];
 
     return (
+        <Screen>
         <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 {/* Logo */}
@@ -282,6 +284,7 @@ const Menu = () => {
                 </div>
             </div>
         </header>
+        </Screen>
     );
 };
 

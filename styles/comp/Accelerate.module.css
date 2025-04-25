@@ -4,7 +4,7 @@
 
    .accelerateWrapper {
     background-color: #FF0707;
-    padding: 60px 40px;
+    /* padding: 60px 40px; */
     color: rgb(255, 255, 255);
     height: calc(100vh - 70px);
     width: 100%;
@@ -16,10 +16,10 @@
   .agentSection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
   }
   
   .content {
@@ -71,9 +71,9 @@
   }
   
   .imageContainer {
-    width: 50%;
+    /* width: 50%; */
     max-width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,14 +162,10 @@
   @media screen and (min-width: 769px) {
     .agentSection {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
   
     .content {
-      width: 50%;
-    }
-  
-    .imageContainer {
       width: 50%;
     }
   

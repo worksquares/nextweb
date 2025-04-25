@@ -1,6 +1,6 @@
 .wrapper {
   background: linear-gradient(180deg, #00796b 175%, #26a69a 85%);
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   height: calc(100vh - 70px);
   color: white;
   display: flex;
@@ -12,10 +12,10 @@
 .agentSection {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 .content {
@@ -394,7 +394,7 @@
   }
   .agentSection {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .content {
@@ -567,7 +567,7 @@
   /* Ensure the agentSection stays in row layout */
   .agentSection {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .content {
     width: 500px;

@@ -1,13 +1,12 @@
 .wrapper {
   background: linear-gradient(90deg, #ff7043 125%, #f4511e 150%);
-  padding: 60px 40px;
+  /* padding: 60px 40px; */
   color: white;
   height: calc(100vh - 70px);
   width: 100%;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
-  justify-content: space-around;
   text-align: center;
 }
 
@@ -17,7 +16,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 .content {
