@@ -66,6 +66,7 @@
   margin-top: 20px;
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* Possibility Section */
@@ -426,6 +427,7 @@
     /* width: 50%; */
     max-width: 380px;
     height: auto;
+    border-radius: 10px;
   }
 
   .cardGrid {
@@ -449,6 +451,7 @@
     width: 80%;
     max-width: 580px;
     height: auto;
+    border-radius: 10px;
   }
 
   .aiHeading,
@@ -483,6 +486,7 @@
     width: 100%;
     max-width: 580px;
     height: auto;
+    border-radius: 10px;
   }
 
   .integrationTitle {
@@ -567,7 +571,7 @@
   /* Ensure the agentSection stays in row layout */
   .agentSection {
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
   .content {
     width: 500px;

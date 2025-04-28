@@ -99,7 +99,7 @@ const AiStudio = () => {
         <div>
           <CustomImage
             type="hero"
-            src="/assets/AI_Studio.webp"
+            src="/assets/AI_hero.webp"
             alt="AI Agents"
             className={styles.mainImages}
             priority={true}
