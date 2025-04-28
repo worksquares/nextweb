@@ -1,24 +1,12 @@
-import React from "react";
+import Styles from "../styles/comp/Screen.module.css";
 
-interface Props {
+export interface BoxProps {
   children: React.ReactNode;
-  className?: string;
+  style? : React.CSSProperties;
 }
 
-const Screen: React.FC<Props> = ({ children, className }) => {
-  return (
-    <div
-      className={className}
-      style={{
-        padding: "60px 40px",
-        maxWidth: "1440px",
-        margin: "0 auto",
-        boxSizing: "border-box",
-      }}
-    >
-      {children}
-    </div>
-  );
+const Screen = ({ children, style}: BoxProps) => {
+  return <div style={style} className={Styles.ScreenMain}>{children}</div>;
 };
 
 export default Screen;

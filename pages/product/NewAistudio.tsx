@@ -86,8 +86,8 @@ const AiStudio = () => {
     <>
       <Menu />
       <div className={styles.wrapper}>
+      <Screen>
       <div className={styles.agentSection}>
-
         <div className={styles.content}>
           <h1 className={styles.title}>AI Studio</h1>
           <h4 className={styles.description}>
@@ -96,7 +96,7 @@ const AiStudio = () => {
         Register
       </Link>
         </div>
-        <div>
+        <div className={styles.imageContainer}>
           <CustomImage
             type="hero"
             src="/assets/AI_hero.webp"
@@ -106,6 +106,7 @@ const AiStudio = () => {
           />
         </div>
       </div>
+        </Screen>
       </div>
 <Screen>
       <div className={styles.possibilitySection}>
@@ -119,8 +120,6 @@ const AiStudio = () => {
           managing AI models tailored to your business needs. Build smarter,
           faster, and scalable AI solutions with ease.
         </p>
-        {/* <div className={styles.videoPlaceholder}></div> */}
-        {/* Video Implementation */}
         <div className={styles.videoPlaceholder}>
           <video
             className={styles.videoPlayer}
@@ -244,9 +243,7 @@ const AiStudio = () => {
             </h2>
             <div className={styles.resourceGrid}>
               {resourceItems.map((item, index) => {
-                const words = item.title.trim().split(" ");
-                const firstLine = words.slice(0, 3).join(" ");
-                const secondLine = words.slice(3).join(" ");
+             
 
                 return (
                   <div key={index} className={styles.resourceCard}>
@@ -260,13 +257,7 @@ const AiStudio = () => {
                       />
                     </div>
                     <h3 className={styles.resourceText}>
-                      {firstLine}
-                      {secondLine && (
-                        <>
-                          <br />
-                          {secondLine}
-                        </>
-                      )}
+                      {item.title}
                     </h3>
                   </div>
                 );

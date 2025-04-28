@@ -1,6 +1,5 @@
 .ScreenMain {
-  /* border: 1px solid red; */
-  width: 1700px;
+  width: 1500px;
   margin: 0 auto;
 }
 
@@ -9,8 +8,7 @@
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-    width: 1800px;
-    /* border: 1px solid blue; */
+    width: 1600px;
   }
 }
 
@@ -19,21 +17,18 @@
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-    width: 1350px;
-    /* border: 1px solid rgb(255, 0, 200); */
+    width: 1200px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .ScreenMain {
     width: 100%;
-    /* border: 1px solid rgb(36, 255, 7); */
   }
 }
 
 @media screen and (max-width: 900px) {
   .ScreenMain {
     width: 100%;
-    /* border: 1px solid rgb(36, 255, 7); */
   }
 }
