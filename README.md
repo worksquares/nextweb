@@ -8,7 +8,7 @@ First, run the development server:ssf
 npm run dev
 # or
 yarn dev
-....
+...
 x
 ```
 
