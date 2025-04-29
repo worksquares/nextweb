@@ -6,6 +6,7 @@ import styles from "../styles/comp/HomeSlider.module.css";
 import CustomImage from "../@/components/customImage";
 import redVector from "../public/svg/redvector.svg"
 import Image from "next/image";
+import Screen from "../comp/Screen";
 
 interface Card {
     image: string;
@@ -58,6 +59,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
 
     return (
       <div className={styles.container}>
+        {/* <Screen> */}
         <h2 className={styles.title}>Know more about us</h2>
         <Slider {...settings} className={styles.carousel}>
           {cards.map((card, index) => (
@@ -109,6 +111,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
             </div>
           ))}
         </Slider>
+        {/* </Screen> */}
       </div>
     );
 };

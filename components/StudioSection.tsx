@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/comp/StudioSection.module.css'
+import Screen from '../comp/Screen';
 
 interface StudioCardProps {
   title: string;
@@ -17,7 +18,7 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
     <div className={styles.studioCard} style={{ backgroundColor }}>
       <h1 className={styles.title}>{title}</h1>
       <p style={{fontSize:18}}className={styles.description}>{description}</p>
-      <a href={link} style={{ textDecoration: 'none',marginLeft:"200px" }}>
+      <a href={link} style={{ textDecoration: 'none' }}>
         <button className={styles.learnMoreButton}>Learn more →</button>
       </a>
     </div>
@@ -26,11 +27,13 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
 
 const StudioSection: React.FC<StudioSectionProps> = ({ cardsData }) => {
   return (
+      <Screen>
     <div className={styles.studioSection}>
       {cardsData.map((card, index) => (
         <StudioCard key={index} {...card} />
       ))}
     </div>
+      </Screen>
   );
 };
 
