@@ -67,26 +67,28 @@ const AppStudio = () => {
       <Menu />
 
       <div className={styles.wrapper}>
-        <div className={styles.agentSection}>
-          <div className={styles.content}>
-            <h1 className={styles.title}>App Studio</h1>
-            <h4 className={styles.description}>
-              Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently
-            </h4>
-            <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
-              Register
-            </Link>
-          </div>
-          <div className={styles.imageContainer}>
-            <CustomImage
-              type="hero"
-              src="/assets/Apphero.webp"
-              alt="AI Agents"
-              className={styles.mainImages}
-              priority={true}
-            />
-          </div>
+      <Screen>
+      <div className={styles.agentSection}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>App Studio</h1>
+          <h4 className={styles.description}>
+          Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h4>
+          <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+        Register
+      </Link>
         </div>
+        <div className={styles.imageContainer}>
+          <CustomImage
+            type="hero"
+            src="/assets/Apphero.webp"
+            alt="AI Agents"
+            className={styles.mainImages}
+            priority={true}
+          />
+        </div>
+      </div>
+        </Screen>
+     
       </div>
 
       <Screen>

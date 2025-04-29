@@ -1,11 +1,8 @@
 .wrapper {
   background: linear-gradient(323deg,rgba(252, 179, 9, 1) 25%, rgba(255, 193, 7, 1) 75%);
-  /* padding: 60px 40px; */
-  color: white;
   height: calc(100vh - 70px);
-  width:100%;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   text-align: center;
@@ -13,24 +10,24 @@
 
 .agentSection {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
-  /* max-width: 1400px; */
 }
 
 .content {
   width: 50%;
-  margin-bottom: 2rem;
-
 }
-.title {
-  font-size: 70px;
-  font-weight: 900;
-  margin: 0;
-  line-height: 7rem;
-  color: white;
+
+.imageContainer{
+  width: 100%;
+}
+.mainImages {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .subtitle {
@@ -39,17 +36,24 @@
   font-weight: 600;
 }
 
+.title {
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  color: white;
+}
+
 .description {
+  max-width: 90%;
+  margin-top: 10px;
   color: #f8f8f8;
-  font-size: 18px;
-  margin-bottom: 30px; 
-  max-width: 600px;
-  /* font-weight: normal; */
+  font-size: 1rem;
+
 }
 
 .registerButton {
   margin-top: 20px;
-  font-weight: 700;
   padding: 12px 32px;
   background-color: #ff0000;
   color: #fff;
@@ -57,29 +61,28 @@
   border-radius: 50px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 20px;
   display: inline-block;
-  font-size: 16px;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
 }
-.registerButton:hover {
+.registerButton:hover{
   background-color: #f4f4f4;
   transform: scale(1.05);
   cursor: pointer;
-  color:#000;
+  color:#000
 }
+
 .mainImages {
-  /* margin-top: 20px;
-  width: 80%;
-  height: auto; */
+  margin-top: 20px;
   width: 100%;
-    object-fit: cover;
-    /* border-radius: 12px; */
+  height: auto;
+  border-radius: 10px;
 }
+
 .possibilitySection {
   text-align: center;
-  /* padding: 60px 20px; */
+  /* padding: 30px 10px; */
   background: white;
   color: #111;
 }
@@ -102,45 +105,32 @@
 }
 
 .videoPlaceholder {
-  width: 90%;
-  max-width: 1200px;
-  height: 500px;
-  background-color: #ddd;
-  margin: 0 auto;
+  height: 100vh;
+  /* background-color: #ddd; */
   border-radius: 8px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
-
-/* .videoContainer {
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio *
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-} */
 
 .videoPlayer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100vh; */
   object-fit: cover;
   border-radius: 8px;
 }
+
 .appSection {
   background: #fff;
-  padding: 60px 20px;
+  padding: 40px 10px;
   text-align: center;
 }
 
 .appContent {
-  /* max-width: 100%; */
-  max-width: 90%;
+  max-width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -171,9 +161,9 @@
   border: none;
   padding: 10px 24px;
   border-radius: 20px;
-  margin-top: 30px;
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 30px;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -196,13 +186,11 @@
   margin-bottom: 30px;
 }
 
-
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: 1fr;
   gap: 30px;
   justify-content: center;
-  /* margin-top: 30px; */
 }
 
 .card {
@@ -213,12 +201,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border-radius: 12px;
-  transition: transform 0.3s ease; */
 }
 
 .card:hover {
-  transform: scale(1.05);  /* Slight scaling effect on hover */
+  transform: scale(1.05); 
 }
 
 .cardTitle {
@@ -235,7 +221,7 @@
 
 .cardButton {
   margin-top: 20px;
-  background: #ffc107;
+  background: #26a69a;
   color: black;
   border: none;
   padding: 8px 16px;
@@ -245,10 +231,8 @@
   align-self: flex-end;
 }
 
-
 .integrationSection {
   background-color: #fff;
-  /* padding: 60px 20px; */
   text-align: center;
 }
 
@@ -257,6 +241,7 @@
   font-weight: 400;
   margin-bottom: 30px;
 }
+
 .integrationGrid {
   display: flex;
   flex-direction: column;
@@ -270,8 +255,6 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  flex-shrink: 0;
-  flex-grow: 0;
 }
 
 .integrationCard {
@@ -297,8 +280,8 @@
   height: 40px;
   object-fit: contain;
 }
+
 .resourceSection {
-  padding: 40px 20px;
   background: #fff;
   text-align: center;
   position: relative;
@@ -308,334 +291,261 @@
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
 }
 
 .resourceTitle {
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 40px;
-  margin-top: 50px;
   position: relative;
   display: inline-block;
-  /* padding-bottom: 10px; */
-  padding-left: 50px;
+  padding-bottom: 10px;
 }
+
 .redUnderline {
   content: "";
   position: absolute;
-  top: 50px;  
-  /* left: 680px; */
+  top: 20px;  
   right: 10px;   
   height: 2px;
   width: 30%;  
   background-color: #ff0707;
   margin: 0 auto;  
 }
-
 .resourceGrid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   justify-content: center;
 }
-
 .resourceCard {
-  text-align: left;
+text-align: left;
 }
 
 .resourceImage {
-  width: 90%;
-  height: auto;
-  display:flex;
-  aspect-ratio: 380 / 280;
-  background-color: #eee;
-  border-radius: 4px;
-  border: 10px solid #ffe2e2;
-  align-items: center;
-  justify-content: center;
+width: 100%;
+height: auto;
+display:flex;
+aspect-ratio: 380 / 280;
+background-color: #eee;
+border-radius: 4px;
+border: 10px solid #ffe2e2;
+align-items: center;
+justify-content: center;
 }
 .resourceimg{
-  width: 90%;
-  height: auto;
-  aspect-ratio: 380 / 280;
-  /* background-color: #eee; */
-  border-radius: 4px;
-  /* border: 10px solid #ffe2e2; */
-  align-items: center;
+width: 100%;
+height: auto;
+aspect-ratio: 380 / 280;
+/* background-color: #eee; */
+border-radius: 4px;
+/* border: 10px solid #ffe2e2; */
+align-items: center;
 }
+
 .resourceText {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 16px 0 10px;
+font-size: 16px;
+font-weight: 500;
+margin: 16px 0 10px;
 }
 
 .resourceButton {
-  background-color: red;
-  color: white;
-  padding: 6px 16px;
-  border: none;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
+background-color: red;
+color: white;
+padding: 6px 16px;
+border: none;
+border-radius: 20px;
+font-size: 12px;
+font-weight: bold;
+cursor: pointer;
 }
-@media (min-width: 481px) and (max-width: 768px){
+
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+  } 
+  .content {
+    width: 100%;
+  }
+
+  .agentSection{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap:50px;
+  }
+
+  .title {
+    width: 100%;
+  }
+  .registerButton {
+    margin-top: 20px;
+  }
+  .resourceTitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .description {
+    width: 100%;
+
+  }
+
+  .resourceText{
+    text-align: center;
+  }
+  .redUnderline{
+    top:20px;
+  }
+    .videoPlaceholder {
+      height: 200px; 
+      
+    }
+    .videoPlayer {
+      height: 100%; 
+      width:100%; 
+      object-fit: contain;  
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
-  }
-  
+  }  
   .content {
     width: 100%;
+  }
+  .resourceText{
     text-align: center;
-    padding: 0;
   }
-
-  .mainImage {
-    max-width: 100%;
-    height: 400px;
+  .agentSection{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap:50px;
   }
-
-  .imageContainer {
+  .title {
     width: 100%;
-    padding: 0;
+  }
+  .redUnderline{
+    top:20px;
+  }
+  .resourceTitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  .registerButton {
+    margin-top: 20px;
+  }
+  .videoPlaceholder {
+    width: 100%;  
+    height: 250px;  
+  }
+
+  .videoPlayer {
+    height: 100%; 
+    object-fit: contain;  
   }
 }
-@media (min-width: 768px) {
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .wrapper {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    text-align: left;
-    padding: 60px 40px;
+    /* text-align: left; */
+    /* padding: 60px 40px; */
   }
+  .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
   .agentSection {
     flex-direction: row;
-    justify-content: space-between;
+  }
+  .redUnderline{
+    top:20px;
+  }
+  .registerButton{
+    width:20%
   }
 
-  .content {
-    width: 50%;
-  }
-
-  .imageContainer {
-    width: 50%;
-  }
-
-  .mainImage {
-    height: 550px;
-    width: 550px;
-  }
   .title {
     font-size: 70px;
   }
+
+  .imageContainer{
+    width: 60%;
+  }
+
+  .mainImages {
+    /* margin-left: 40px; */
+    /* width: 60%; */
+    /* max-width: 380px; */
+    height: auto;
+    border-radius: 10px;
+  }
+
   .description {
-    max-width: 580px;
+    /* max-width: 500px; */
     font-size: 1.1rem;
-  }
-  /* .mainImages {
-    max-width: 380px;
-    height: auto;
-    margin-left: 40px;
-  } */
-
-  .cardGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .resourceGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1025px) and (max-width: 1166px) {
-  .wrapper {
-    padding: 100px 80px;
-  }
-  /* .mainImages {
-    width: 90%;
-    max-width: 500px;  
-  } */
-  .cardGrid, .resourceGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .title {
-    font-size: 120px;
-  }
-  
-  .description {
-    font-size: 1.05rem;
-  }
-}
-
-@media (min-width: 1024px)  {
-  .title {
-    font-size: 100px;
-  }
-  .wrapper {
-    padding: 80px 60px;
-  }
-  /* .mainImages {
-    width: 80%;
-    max-width: 980px !important;
-    height: auto;
-  } */
-  .appHeading,
-  .resourceTitle,
-  .integrationTitle {
-    font-size: 3rem;
-  }
-  .cardGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .resourceGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1440px) {
-  .title {
-    font-size: 8rem;
-    line-height: 7rem;
-  }
-  .wrapper {
-    padding: 100px 80px;
-  }
-  /* .mainImages {
-    width: 100%;
-    max-width:  980px !important;
-    height: auto;
-  } */
-  .description {
-    font-size: 1.2rem;
-  }
-  .integrationTitle {
-    font-size: 3rem;
-  }
-  .appHeading {
-    font-size: 4rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .Wrapper {
-    padding: 40px 20px;
-    width: 100%;
-    height:100%;
-
-  }
-
-  .agentSection {
-    flex-direction: column-reverse;
-  }
-
-  .content {
-    width: 100%;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 20px;
-    line-height: 3rem;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
-
-  .description {
-    font-size: 10px;
-  }
-
-  .imageContainer {
-    margin-bottom: 20px;
-  }
-
-  /* .mainImages {
-    max-width: 90%;
-    height: auto;
-  } */
-  .cardGrid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .resourceGrid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .content {
-    /* width: 420px; */
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 50px;
-    line-height: 4rem;
-  }
-  .description {
-    font-size: 18px;
-    width: 100%;
-    /* min-width: 100px; */
-    justify-content: center;
-  }
-
-  .subtitle {
-    font-size: 22px;
   }
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .resourceGrid {
+  .resourceGrid {
     grid-template-columns: repeat(3, 1fr);
-  } */
+  }
 }
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-  /* Ensure the agentSection stays in row layout */
-  .agentSection {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .content {
-    width: 500px;
-  }
 
+@media screen and (min-width: 1441px) {
   .title {
-    font-size: 6em;
-    line-height: 6rem;
-  }
-
-}
-@media screen and (max-width: 550px) {
-  .wrapper {
-    padding: 40px 20px;
-  }
-
-  .content {
-    width: 100%;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 50px;
-    line-height: 55px;
-  }
-
-  .subtitle {
-    font-size: 18px;
+    font-size: 8em;
+    line-height: 7rem;
   }
 
   .description {
-    font-size: 16px;
-    text-align: center;
-    width: auto;
+    font-size: 1.2rem;
   }
 
-  /* .mainImages {
+  .redUnderline{
+    top:20px;
+  }
+
+  .imageContainer{
+    width: 60%;
+  }
+
+  .registerButton{
+    width:20%
+  }
+  .mainImages {
+    /* width: 60%; */
+    /* max-width: 580px; */
     height: auto;
-  } */
+    border-radius: 10px;
+  }
+
+  .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+
   .cardGrid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .resourceGrid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+

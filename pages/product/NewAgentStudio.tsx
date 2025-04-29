@@ -80,17 +80,17 @@ const AgentStudio = () => {
       <Menu />
 
       <div className={styles.wrapper}>
-      <div className={styles.agentsection}>
+      <Screen>
+      <div className={styles.agentSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>Agent Studio</h1>
-          {/* <h1 className={styles.title}>Studio</h1> */}
           <h4 className={styles.description}>
           Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h4>
           <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register
       </Link>
         </div>
-        <div>
+        <div className={styles.imageContainer}>
           <CustomImage
             type="hero"
             src="/assets/AgentHero.webp"
@@ -100,39 +100,36 @@ const AgentStudio = () => {
           />
         </div>
       </div>
+        </Screen>
       </div>
       <Screen>
+
       <div className={styles.possibilitySection}>
+        
         <h2 className={styles.heading}>
           One studio{" "}
           <span className={styles.highlight}>Infinite possibilities</span>
         </h2>
         <p className={styles.subtext}>
-          Agent Studio is the only platform you need to create, deploy, and
-          manage AI agents tailored for your business. Build smarter, faster,
-          and scalable AI solutions in just a few clicks.
+        Agent Studio is the only platform you need to create, deploy, and
+    manage AI agents tailored for your business. Build smarter, faster,
+    and scalable AI solutions in just a few clicks.
         </p>
         <div className={styles.videoPlaceholder}>
-          {/* Video Implementation */}
-          <div className={styles.videoContainer}>
-            <video
-              className={styles.videoPlayer}
-              // controls
+          <video
+            className={styles.videoPlayer}
             autoPlay
             muted
-            // loop
-            // poster="/assets/App studio.webp"
-            >
-              <source src="/assets/video/Agent.mp4" type="video/mp4" />
+          >
+            <source src="/assets/video/Agent.mp4" type="video/mp4" />
 
-            </video>
-          </div>
-          
-          <AiAgentRecruiter />
+          </video>
         </div>
+        <AiAgentRecruiter />
       </div>
 
-      <section className={styles.agentSection}>
+
+      <section className={styles.agentSections}>
         <div className={styles.agentContent}>
           <div className={styles.line1}></div>
           <button className={styles.demoButton}>Book a Demo &gt;</button>
@@ -241,8 +238,6 @@ const AgentStudio = () => {
             <div className={styles.resourceGrid}>
               {resourceItems.map((item, index) => {
                 const words = item.title.trim().split(" ");
-                const firstLine = words.slice(0, 3).join(" ");
-                const secondLine = words.slice(3).join(" ");
 
                 return (
                   <div key={index} className={styles.resourceCard}>
@@ -256,13 +251,7 @@ const AgentStudio = () => {
                       />
                     </div>
                     <h3 className={styles.resourceText}>
-                      {firstLine}
-                      {secondLine && (
-                        <>
-                          <br />
-                          {secondLine}
-                        </>
-                      )}
+                      {item.title}
                     </h3>
                   </div>
                 );
