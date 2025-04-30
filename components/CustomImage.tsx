@@ -65,7 +65,8 @@ const CustomImage: React.FC<CustomImageProps> = ({
       // layout="responsive"
       // style={{width:"400px",height:"200px"}}
       className={className}
-      // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
+
     />
   );
 };

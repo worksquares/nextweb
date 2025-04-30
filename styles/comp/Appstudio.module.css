@@ -373,6 +373,18 @@ cursor: pointer;
     width: 100%;
   }
 
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+
+  .mainImage {
+    height: 250px;
+    width: 250px;
+  }
+
   .agentSection{
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -424,6 +436,17 @@ cursor: pointer;
   }
   .resourceText{
     text-align: center;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .mainImage {
+    height: 250px;
+    width: 250px;
   }
   .agentSection{
     flex-wrap: wrap;

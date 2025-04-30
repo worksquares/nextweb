@@ -370,6 +370,12 @@ cursor: pointer;
     gap:50px;
   }
 
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
   .title {
     width: 100%;
   }
@@ -386,6 +392,11 @@ cursor: pointer;
   .description {
     width: 100%;
 
+  }
+
+  .mainImage {
+    height: 250px;
+    width: 250px;
   }
 
   .resourceText{
@@ -412,6 +423,11 @@ cursor: pointer;
   }  
   .content {
     width: 100%;
+  }
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
   }
   .resourceText{
     text-align: center;
@@ -444,6 +460,11 @@ cursor: pointer;
   .videoPlayer {
     height: 100%; 
     object-fit: contain;  
+  }
+
+  .mainImage {
+    height: 250px;
+    width: 250px;
   }
 }
 
