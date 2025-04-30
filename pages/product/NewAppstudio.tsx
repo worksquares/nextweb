@@ -152,9 +152,7 @@ const AppStudio = () => {
             </h2>
             <div className={styles.resourceGrid}>
               {resourceItems.map((item, index) => {
-                const words = item.title.trim().split(" ");
-                const firstLine = words.slice(0, 3).join(" ");
-                const secondLine = words.slice(3).join(" ");
+
 
                 return (
                   <div key={index} className={styles.resourceCard}>
@@ -168,13 +166,7 @@ const AppStudio = () => {
                       />
                     </div>
                     <h3 className={styles.resourceText}>
-                      {firstLine}
-                      {secondLine && (
-                        <>
-                          <br />
-                          {secondLine}
-                        </>
-                      )}
+                      {item?.title}
                     </h3>
                   </div>
                 );
