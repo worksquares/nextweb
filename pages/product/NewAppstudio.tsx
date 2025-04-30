@@ -6,6 +6,7 @@ import Image from "next/image";
 import CustomImage from "../../components/CustomImage";
 import Link from 'next/link';
 import Screen from "../../components/Screen";
+import Headseo from "../headseo";
 
 const appCards = [
   {
@@ -65,6 +66,14 @@ const AppStudio = () => {
   return (
     <>
       <Menu />
+
+      <Headseo
+        title={` App Studio Development Platform | Digisquares`}
+        heading={`Ideas to Apps`}
+        description={`Digisquares is a low code platform that enables you to develop high quality apps 10X faster.`}
+        url={`/nextweb/Home`}
+        img={`/assets/Apphero.webp`}
+      />
 
       <div className={styles.wrapper}>
       <Screen>

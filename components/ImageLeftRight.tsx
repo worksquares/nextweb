@@ -2,7 +2,6 @@
 import React from "react";
 import ImageLeftRightCard from '../components/ImageLeftRightCard';
 import Styles from '../styles/comp/ImageLeftRight.module.css'; 
-import Screen from '../components/Screen';
 
 
 export interface ImageContainProps {
@@ -31,7 +30,6 @@ const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps)
     <div className={Styles.imageContainer}> 
       {ImageCardPropsList.map((ImageProp, i) => (
         <div
-          // className={i % 2 === 0 ? Styles.imageRight : Styles.imageLeft} 
           key={ImageProp.title}
         >
           <ImageLeftRightCard

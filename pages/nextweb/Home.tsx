@@ -73,10 +73,6 @@ const cards = [
     description:
       "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
     image: "/assets/Blogs/blogSlideImages/ResponsibleAIModels_Slider.webp",
-    // links: [
-    //     { text: "HR Service Delivery", href: "/hr-service" },
-    //     { text: "Workplace Service Delivery", href: "/workplace-service" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/ResponsibleAIModels",
   },
@@ -85,10 +81,6 @@ const cards = [
     description:
       "In an era where customers expect personalized, responsive, and seamless interactions, businesses must go beyond one-size-fits-all solutions to build lasting relationships. By harnessing the power of artificial intelligence, companies can create tailored experiences that resonate with individual customers.",
     image: "/assets/Blogs/blogSlideImages/CustomerSatisfactionwithAgentStudio_Slider.webp",
-    // links: [
-    //     { text: "HR Service Delivery", href: "/hr-service" },
-    //     { text: "Workplace Service Delivery", href: "/workplace-service" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
   },
@@ -97,10 +89,6 @@ const cards = [
     description:
       "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations, consume valuable resources, and limit a company’s ability to focus on high-impact initiatives.",
     image: "/assets/Blogs/blogSlideImages/WorkflowswithAppStudio_Slider.webp",
-    // links: [
-    //     { text: "HR Service Delivery", href: "/hr-service" },
-    //     { text: "Workplace Service Delivery", href: "/workplace-service" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/WorkflowswithAppStudio",
   },
@@ -109,10 +97,6 @@ const cards = [
     description:
       "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
     image: "/assets/Blogs/blogSlideImages/AIinAgentStudio_Slider.webp",
-    // links: [
-    //     { text: "Developer Tools", href: "/developer-tools" },
-    //     { text: "API Services", href: "/api-services" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/AIinAgentStudio",
   },
@@ -121,10 +105,6 @@ const cards = [
     description:
       "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
     image: "/assets/Blogs/blogSlideImages/AppStudioSecurityFeatures_Slider.webp",
-    // links: [
-    //     { text: "Marketing Automation", href: "/marketing-automation" },
-    //     { text: "Customer Insights", href: "/customer-insights" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/AppStudioSecurityFeatures",
   },
@@ -133,10 +113,6 @@ const cards = [
     description:
       "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
     image: "/assets/Blogs/blogSlideImages/AIPoweredAutomation_Slider.webp",
-    // links: [
-    //     { text: "AI for Finance", href: "/ai-finance" },
-    //     { text: "Financial Analytics", href: "/financial-analytics" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/AIPoweredAutomation",
   },
@@ -145,10 +121,6 @@ const cards = [
     description:
       "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
     image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
-    // links: [
-    //     { text: "AI for Finance", href: "/ai-finance" },
-    //     { text: "Financial Analytics", href: "/financial-analytics" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/ImprovingSAASCybersecurity",
   },
@@ -157,20 +129,12 @@ const cards = [
     description:
       "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
     image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
-    // links: [
-    //     { text: "AI for Finance", href: "/ai-finance" },
-    //     { text: "Financial Analytics", href: "/financial-analytics" },
-    // ],
     moreText: "Learn more",
     moreLink: "/blog/AIinServiceManagement",
   },
 ];
 
 const Home = () => {
-  //  const NewHomeSlider = dynamic(() => import("../../components/NewHomeSlider"), {
-  //    loading: () => <p>Loading...</p>,
-  //    ssr: false,
-  //  });
 
   return (
     <>

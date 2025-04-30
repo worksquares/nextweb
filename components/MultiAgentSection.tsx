@@ -11,7 +11,6 @@ const MultiAgentSection: React.FC = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // padding: '90px',
         textAlign: 'center',
         flexDirection: 'column',
         marginLeft:'20px',

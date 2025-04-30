@@ -6,6 +6,7 @@ import CustomImage from "../../components/CustomImage";
 import Image from "next/image";
 import Screen from "../../components/Screen";
 import Link from 'next/link';
+import Headseo from "../headseo";
 
 
 // import {
@@ -85,6 +86,14 @@ const AiStudio = () => {
   return (
     <>
       <Menu />
+      <Headseo
+  title={`AI Studio Development Platform | Digisquares`}
+  heading={`Accelerate with AI`}
+  description={`Leverage AI Studio to build intelligent apps, deploy AI models, and automate workflows—all without writing code.`}
+  url={`/nextweb/ai-studio`}
+  img={`/assets/AI_hero.webp`}
+/>
+
       <div className={styles.wrapper}>
       <Screen>
       <div className={styles.agentSection}>

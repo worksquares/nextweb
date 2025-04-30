@@ -7,6 +7,7 @@ import CustomImage from "../../components/CustomImage";
 import Image from "next/image";
 import Screen from "../../components/Screen";
 import Link from 'next/link';
+import Headseo from "../headseo";
 
 
 
@@ -78,6 +79,13 @@ const AgentStudio = () => {
   return (
     <>
       <Menu />
+      <Headseo
+  title={`Agent Studio Builder | Digisquares`}
+  heading={`Build Autonomous Agents`}
+  description={`Agent Studio empowers you to create and orchestrate powerful AI agents with no-code tools—integrate, automate, and deploy with ease.`}
+  url={`/nextweb/agent-studio`}
+  img={`/assets/AgentHero.webp`}
+/>
 
       <div className={styles.wrapper}>
       <Screen>
