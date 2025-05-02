@@ -156,7 +156,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1440px;
+    max-width: 2000px;
     margin: auto;
     text-align: left;
   }
@@ -215,6 +215,14 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    
+  }
+
+  .imageSection img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: none; /* Remove any max-width limit */
   }
   
   .divider {

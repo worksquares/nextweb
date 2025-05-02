@@ -34,16 +34,18 @@
     color: white;
   }
   
-  .subtitle_accelerate {
+  /* .subtitle_accelerate {
     font-size: 24px;
     margin: 20px 0 10px 0;
     font-weight: 600;
-  }
+  } */
   
   .description_accelerate {
     font-size: 18px;
     margin-bottom: 30px;
     max-width: 400px;
+    color: #ffffff;
+  
   }
   
   .GetStartedBtn {
@@ -90,7 +92,9 @@
     .accelerateWrapper {
       padding: 40px 20px;
       width: 100%;
+     
     }
+    
   
     .agentSection {
       flex-direction: column-reverse;
@@ -112,10 +116,21 @@
     }
   
     .description_accelerate {
-      font-size: 17px;
+      font-size: 18px;
       text-align: center;
       width: 100%;
+      font-weight: 500;
+      color: #ffffff;
+     
     }
+
+    /* .description_accelerate {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 400px;
+      color: #ffffff;
+      font-weight: 500;
+    } */
   
     .imageContainer {
       width: 100%;
@@ -191,6 +206,7 @@
       height: 640px;
       width: 640px;
     }
+    
   }
  
   

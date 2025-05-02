@@ -1,11 +1,14 @@
 import Headseo from "../pages/headseo";
 import styles from '../styles/comp/Accelerate.module.css'
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import Screen from "../comp/Screen";
+
+
 
 const AccelerateSection = () => {
   return (
+    
     <>
       <Headseo
         title={`Low-Code Development Platform | Digisquares`}
@@ -26,11 +29,14 @@ const AccelerateSection = () => {
               </h4>
 
               <div className={styles.GetStartedBtn}>
-                <Link legacyBehavior href="https://app.digisquares.com/register">
+                {/* <Link legacyBehavior href="https://app.digisquares.com/register">
                   <a rel="nofollow">
                     <div className={styles.buttonText}>Register</div>
-                  </a>
-                </Link>
+                  </a> */}
+                {/* </Link> */}
+                  <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.buttonText} rel="nofollow">Register</a>
+                   </Link>
               </div>
             </div>
 
@@ -43,7 +49,7 @@ const AccelerateSection = () => {
                 className={styles.mainImage}
                 width={500}
                 height={500}
-                preload="auto"
+                preload="metadata"
               >
                 <source src="/assets/Hero & cards/HeroSection/Hero2.webm" type="video/webm" />
                 <source src="/assets/Hero & cards/HeroSection/Hero1.mp4" type="video/mp4" />

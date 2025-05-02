@@ -28,7 +28,10 @@ interface ImageContentCardProps {
 const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps) => {
   return (
     <div className={Styles.imageContainer}> 
-      {ImageCardPropsList.map((ImageProp, i) => (
+      {/* {ImageCardPropsList.map((ImageProp, i) => ( */}
+      {ImageCardPropsList
+        .filter((item) => !!item.title && !!item.img320) // ✅ validate required fields
+        .map((ImageProp, i) => (
         <div
           key={ImageProp.title}
         >
