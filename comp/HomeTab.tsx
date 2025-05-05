@@ -40,7 +40,7 @@ const HomeTab = ({ tabData }) => {
                     target="_blank"
                     className={styles.learnMoreButton}
                   >
-                    Learn More{" "}
+                    Learn More
                     <Image
                       src="/svg/arrow.svg"
                       alt="Arrow Icon"
