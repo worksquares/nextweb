@@ -44,7 +44,8 @@
     font-size: 18px;
     margin-bottom: 30px;
     max-width: 400px;
-    color: #ffffff;
+    color: white;
+   
   
   }
   
@@ -92,6 +93,8 @@
     .accelerateWrapper {
       padding: 40px 20px;
       width: 100%;
+      height: calc(900px);
+      
      
     }
     
@@ -120,7 +123,7 @@
       text-align: center;
       width: 100%;
       font-weight: 500;
-      color: #ffffff;
+      color: white;
      
     }
 
@@ -146,14 +149,10 @@
   
   
   
-  @media screen and (min-width: 769px) and (max-width: 1400px) {
-    .agentSection {
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
   
-    .content {
-      width: 50%;
+  @media screen and (min-width: 769px) and (max-width: 1400px) {
+      .content {
+      width: 30%;
     }
   
     .mainImage {
