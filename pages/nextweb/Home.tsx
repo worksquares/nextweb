@@ -117,7 +117,7 @@ const cards = [
     moreLink: "/blog/AIPoweredAutomation",
   },
   {
-    title: "Building a Secure SaaS Ecosystem",
+    title: "Building a Secure SaaS ",
     description:
       "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
     image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
@@ -125,7 +125,7 @@ const cards = [
     moreLink: "/blog/ImprovingSAASCybersecurity",
   },
   {
-    title: "AI in Service Management Platforms",
+    title: "AI in Service Management ",
     description:
       "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
     image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
