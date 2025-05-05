@@ -62,7 +62,7 @@
 //     infinite: true,
 //     speed: 500,
 //     slidesToShow: 3,
-//     centerMode: true, 
+//     centerMode: true,
 //     centerPadding: "20px",
 //     slidesToScroll: 1,
 //     nextArrow: <NextArrow />,
@@ -149,6 +149,7 @@ interface Card {
     links?: { text: string; href: string }[];
     moreText?: string;
     moreLink?: string;
+    link?: string;
 }
 
 interface HomeSliderProps {
@@ -235,9 +236,8 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                           ))}
                         </div>
                       )}
-                      <a href={card.moreLink} className={styles.moreLink}>
-                        {card.moreText || "Learn More"} &rarr;
-                      </a>
+                      <a href={card.moreLink || card.link} onClick={(e) => e.stopPropagation()}className={styles.moreLink}>{card.moreText || "Learn More"} &rarr;</a>
+
                     </div>
                   </div>
                 </div>

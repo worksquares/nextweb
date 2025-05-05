@@ -113,11 +113,11 @@
 
 .BlogCompMain {
   display: flex;
-  flex-wrap: wrap; /* allow wrapping */
-  justify-content: space-between;
+  flex-wrap: nowrap; /* allow wrapping */
+  justify-content: normal;
   gap: 20px; /* add spacing between cards */
   margin-top: 30px;
-  
+
 }
 
 /* ---------------------------------------------------------------- */

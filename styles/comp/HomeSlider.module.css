@@ -39,7 +39,7 @@
   width: 100% !important;
   max-width: 350px;
 }
-  
+
 
 
 .card.active {
@@ -106,7 +106,7 @@
   /* width: 200px; */
   /* white-space: nowrap; */
   overflow: hidden;
-  line-height: 1.6;  
+  line-height: 1.6;
   text-overflow: ellipsis;
   display: -webkit-box;
   /* -webkit-line-clamp: 5; */

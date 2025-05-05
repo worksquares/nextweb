@@ -7,7 +7,7 @@
 .mainImage {
   /* Ensure the image is responsive */
   /* max-width: 100%; */
-  height: 490px !important; 
+  height: 490px !important;
   /* width: 650px; */
   /* border: 1px solid red; */
 }
@@ -39,7 +39,7 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 .title_new {
  color: #ffffff;
@@ -90,7 +90,7 @@
 }
 
 .GetStartedBtn {
-  text-align: center;
+  text-align: left;
 }
 
 .GetStartedBtn a {
@@ -124,7 +124,7 @@
 /* Button text inside the call to action */
 .buttonText {
   font-size: 18px;
-  
+
 }
 
 /* Media query for smaller screens */
@@ -187,7 +187,7 @@
   .agentSection {
     display: flex;
     flex-direction: column;
-    
+
   }
   .imageContainer {
     /* border: 1px solid red; */

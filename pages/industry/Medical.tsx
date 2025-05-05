@@ -190,11 +190,11 @@ const MedicalHeader = () => {
           <TabPanel tabs={tabData} />
 
           <CardComponent cards={cardData} />
-          <Screen>
+          {/* <Screen> */}
             <div className={styles.MoreResources}>
               <HomeSlider cards={ImageRowGridData} />
             </div>
-          </Screen>
+          {/* </Screen> */}
         </div>
       </BaseLayout>
     </>
