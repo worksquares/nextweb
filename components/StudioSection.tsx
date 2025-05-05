@@ -18,7 +18,7 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
     <div className={styles.studioCard} style={{ backgroundColor }}>
       <h1 className={styles.title}>{title}</h1>
       <p style={{fontSize:18}}className={styles.description}>{description}</p>
-      <a href={link} style={{ textDecoration: 'none' }}>
+      <a href={link} style={{ textDecoration: 'none' }} className={styles.learnMoreLink}>
         <button className={styles.learnMoreButton}>Learn more →</button>
       </a>
     </div>

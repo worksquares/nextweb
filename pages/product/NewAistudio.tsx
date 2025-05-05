@@ -7,6 +7,7 @@ import Image from "next/image";
 import Screen from "../../components/Screen";
 import Link from 'next/link';
 import Headseo from "../headseo";
+import AiStudioSlider from "../../components/AiStudioSlider";
 
 
 // import {
@@ -66,19 +67,85 @@ const agentCards = [
     },
 ];
 
-const resourceItems = [
+// const resourceItems = [
+//   {
+//     title: "AI-Driven Healthcare Solutions",
+//     image: "/assets/ai/ai-img1.webp" 
+//   },
+//   {
+//     title: " Revolutionizing Tech with AI ",
+//     image: "/assets/ai/ai-img2.webp" 
+//   },
+//   {
+//     title: "Telecom Innovations through AI",
+//     image: "/assets/ai/ai-img3.webp" 
+//   }
+// ];
+const cards = [
   {
-    title: "AI-Driven Healthcare Solutions",
-    image: "/assets/ai/ai-img1.webp" 
+    title: "Creating Responsible AI Models",
+    description:
+      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
+    image: "/assets/Blogs/blogSlideImages/ResponsibleAIModels_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/ResponsibleAIModels",
   },
   {
-    title: " Revolutionizing Tech with AI ",
-    image: "/assets/ai/ai-img2.webp" 
+    title: "Satisfaction with Agent Studio",
+    description:
+      "In an era where customers expect personalized, responsive, and seamless interactions, businesses must go beyond one-size-fits-all solutions to build lasting relationships. By harnessing the power of artificial intelligence, companies can create tailored experiences that resonate with individual customers.",
+    image: "/assets/Blogs/blogSlideImages/CustomerSatisfactionwithAgentStudio_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
   },
   {
-    title: "Telecom Innovations through AI",
-    image: "/assets/ai/ai-img3.webp" 
-  }
+    title: "Workflows with AppStudio",
+    description:
+      "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations, consume valuable resources, and limit a company’s ability to focus on high-impact initiatives.",
+    image: "/assets/Blogs/blogSlideImages/WorkflowswithAppStudio_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/WorkflowswithAppStudio",
+  },
+  {
+    title: "AI in Agent Studio",
+    description:
+      "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
+    image: "/assets/Blogs/blogSlideImages/AIinAgentStudio_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/AIinAgentStudio",
+  },
+  {
+    title: "AppStudio’s Security Features",
+    description:
+      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
+    image: "/assets/Blogs/blogSlideImages/AppStudioSecurityFeatures_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/AppStudioSecurityFeatures",
+  },
+  {
+    title: "AI-Powered Automation",
+    description:
+      "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
+    image: "/assets/Blogs/blogSlideImages/AIPoweredAutomation_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/AIPoweredAutomation",
+  },
+  {
+    title: "Building a Secure SaaS Ecosystem",
+    description:
+      "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
+    image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/ImprovingSAASCybersecurity",
+  },
+  {
+    title: "AI in Service Management Platforms",
+    description:
+      "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
+    image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/AIinServiceManagement",
+  },
 ];
 
 const AiStudio = () => {
@@ -244,7 +311,7 @@ const AiStudio = () => {
         </div>
       </section>
 
-      <section className={styles.resourceSection}>
+      {/* <section className={styles.resourceSection}>
           <span className={styles.redUnderline}></span>
           <div className={styles.resourceContent}>
             <h2 className={styles.resourceTitle}>
@@ -273,7 +340,11 @@ const AiStudio = () => {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
+        
+      
+
+        <AiStudioSlider cards={cards} />
       </Screen>
       <MainFooter />
     </>

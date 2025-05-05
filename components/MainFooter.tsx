@@ -113,16 +113,16 @@ const MainFooter = () => {
                             </a>
                         </Link>
                     </div> */}
-                    <div className={styles.linkPrivacy}>
+                    {/* <div className={styles.linkPrivacy}> */}
                             {/* <h3>Legal</h3> */}
-                            <ul className={styles.footerLinksPrivacyList}>
+                            {/* <ul className={styles.footerLinksPrivacyList}>
                                 <li><Link href="/legal/Privacy">Privacy</Link></li>
                                 <li><Link href="/legal/Terms">Terms</Link></li>
                                 <li><Link href="/legal/CookiePolicy">Cookie policy</Link></li>
                                 <li><Link href="/legal/GDPR">GDPR</Link></li>
                                 <li><Link href="/legal/RefundPolicy">Refund policy</Link></li>
                             </ul>
-                        </div>
+                        </div> */}
                     <p className={styles.copyright}>© 2025 Digisquares, All rights reserved</p>
                 </div>
             </div>
