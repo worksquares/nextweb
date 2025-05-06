@@ -99,12 +99,12 @@ const CategoryCard = ({ podcast }) => {
       categories[category].push(podcast.name);
     });
 
-    return categories;  
+    return categories;
   }
 
   const categoryJson = getCategories(podcast);
   const uniqueCategories = Object.keys(categoryJson).slice(0, 8);
-  
+
   return (
     <div style={{ margin: "40px auto" }}>
       <Title
@@ -135,13 +135,13 @@ const CategoryCard = ({ podcast }) => {
                 "#DC148C",
                 "#8D67AB",
               ][index % 8],
-              padding: "30px",
+              padding: "50px",
               borderRadius: "8px",
               flex: "1 1 calc(25% - 16px)",
               width: "262px",
               height: "177px",
               display: "flex",
-              alignItems: "flex-end",
+              alignItems: "center",
               cursor: "pointer",
             }}
             onClick={() => handleClick(category)}

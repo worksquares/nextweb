@@ -319,7 +319,7 @@
   }
 
   .card {
-    height: auto;
+    /* height: auto; */
     max-width: 100%;
   }
 
