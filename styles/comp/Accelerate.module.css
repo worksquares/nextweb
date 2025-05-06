@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .agentSection {
     display: flex;
     align-items: center;
@@ -21,12 +21,12 @@
     width: 100%;
     /* max-width: 1400px; */
   }
-  
+
   .content {
     width: 50%;
     /* padding-bottom: 30px; */
   }
-  
+
   .title_accelerate {
     font-size: 98px;
     font-weight: 900;
@@ -34,26 +34,24 @@
     line-height: 6rem;
     color: white;
   }
-  
+
   /* .subtitle_accelerate {
     font-size: 24px;
     margin: 20px 0 10px 0;
     font-weight: 600;
   } */
-  
+
   .description_accelerate {
     font-size: 18px;
     margin-bottom: 30px;
     max-width: 400px;
     color: white;
-   
-  
-  }
-  
+    }
+
   .GetStartedBtn {
     margin-top: 30px;
   }
-  
+
   .buttonText {
     background-color: #F9CB2E;
     color: #000000;
@@ -66,13 +64,13 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .buttonText:hover {
     background-color: #f4f4f4;
     transform: scale(1.05);
     cursor: pointer;
   }
-  
+
   .imageContainer {
     width: 50%;
     /* max-width: 100%; */
@@ -80,7 +78,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .mainImage {
     width: 100%;
     max-width: 100%;
@@ -88,44 +86,41 @@
     object-fit: cover;
     border-radius: 12px;
   }
-  
+
 
   @media only screen and (max-width: 480px) {
     .accelerateWrapper {
       padding: 40px 20px;
       width: 100%;
       height: calc(900px);
-      
-     
     }
-    
-  
+
+
     .agentSection {
       flex-direction: column-reverse;
     }
-  
+
     .content {
       width: 100%;
       text-align: center;
       padding: 0 10px;
     }
-  
+
     .title_accelerate {
       font-size: 40px;
       line-height: 60px;
     }
-  
+
     .subtitle_accelerate {
       font-size: 20px;
     }
-  
+
     .description_accelerate {
       font-size: 18px;
       text-align: center;
       width: 100%;
       font-weight: 500;
       color: white;
-     
     }
 
     /* .description_accelerate {
@@ -135,27 +130,27 @@
       color: #ffffff;
       font-weight: 500;
     } */
-  
+
     .imageContainer {
       width: 100%;
       margin-bottom: 20px;
       padding: 0;
     }
-  
+
     .mainImage {
       height: 350px;
       width: 350px;
     }
   }
-  
-  
-  
-  
+
+
+
+
   @media screen and (min-width: 769px) and (max-width: 1400px) {
       .content {
       width: 30%;
     }
-  
+
     .mainImage {
       height: 550px;
       width: 550px;
@@ -186,7 +181,7 @@
     }
 
   }
-  
+
 
   @media screen and (min-width: 1440px) and (max-width: 1600px) {
     .title_accelerate {
@@ -201,12 +196,10 @@
       max-width: 720px;
       height: auto;
     }
-  
+
     .mainImage {
       height: 640px;
       width: 640px;
     }
-    
+
   }
- 
-  

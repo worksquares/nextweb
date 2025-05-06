@@ -2,62 +2,64 @@
   background: linear-gradient(90deg, #ff7043 125%, #f4511e 150%);
   color: white;
   height: calc(100vh - 70px);
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
 
 .agentSection {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 .content {
   width: 50%;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .imageContainer{
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mainImages {
   margin-top: 20px;
   width: 100%;
   height: auto;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .title {
-  font-size: 70px;
+  font-size: 98px;
   font-weight: 900;
   margin: 0;
-  line-height: 1.1;
+  line-height: 6rem;
   color: white;
 }
 
 .description {
-  max-width: 90%;
-  margin-top: 10px;
+  max-width: 400px;
+  margin-bottom: 30px;
   color: #f8f8f8;
-  font-size: 1rem;
-
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .registerButton {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 12px 32px;
   background-color: #ff0000;
   color: #fff;
-  border: none;
   border-radius: 50px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -223,7 +225,7 @@
   background-color: #fff;
   /* padding: 30px 10px; */
   text-align: center;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
 }
 
 .integrationTitle {
@@ -300,12 +302,12 @@
 .redUnderline {
   content: "";
   position: absolute;
-  top: 20px;  
-  right: 10px;   
+  top: 20px;
+  right: 10px;
   height: 2px;
-  width: 30%;  
+  width: 30%;
   background-color: #ff0707;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 .resourceGrid {
   display: grid;
@@ -360,7 +362,7 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
 
-  } 
+  }
   .content {
     width: 100%;
   }
@@ -389,7 +391,7 @@ cursor: pointer;
     position: relative;
     display: inline-block;
   }
-  
+
   .description {
     width: 100%;
 
@@ -407,13 +409,13 @@ cursor: pointer;
     top:20px;
   }
     .videoPlaceholder {
-      height: 200px; 
-      
+      height: 200px;
+
     }
     .videoPlayer {
-      height: 100%; 
-      width:100%; 
-      object-fit: contain;  
+      height: 100%;
+      width:100%;
+      object-fit: contain;
     }
 }
 
@@ -421,7 +423,7 @@ cursor: pointer;
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
-  }  
+  }
   .content {
     width: 100%;
   }
@@ -454,13 +456,13 @@ cursor: pointer;
     margin-top: 20px;
   }
   .videoPlaceholder {
-    width: 100%;  
-    height: 250px;  
+    width: 100%;
+    height: 250px;
   }
 
   .videoPlayer {
-    height: 100%; 
-    object-fit: contain;  
+    height: 100%;
+    object-fit: contain;
   }
 
   .mainImage {
@@ -480,7 +482,7 @@ cursor: pointer;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20px !important;
+
   }
 
   .agentSection {
@@ -532,19 +534,20 @@ cursor: pointer;
     max-width: 85%;
   }
 
+  .registerButton {
+    width: 30%;
+    text-align: center;
+  }
+
   .content {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20px !important;
-  }
-
-  .registerButton {
-    width: 30%;
+    gap: 20px;
   }
 
   .mainImages {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .cardGrid {
@@ -558,12 +561,13 @@ cursor: pointer;
 
 @media screen and (min-width: 1441px) {
   .title {
-    font-size: 8em;
+    font-size: 7em;
     line-height: 7rem;
-  }
+   }
 
   .description {
     font-size: 1.2rem;
+    max-width: 80%;
   }
 
   .redUnderline{
@@ -571,15 +575,16 @@ cursor: pointer;
   }
 
   .imageContainer{
-    width: 60%;
+    width: 80%;
   }
 
   .registerButton{
-    width:20%
+    width:20%;
+    text-align: center;
   }
   .mainImages {
-    /* width: 60%; */
-    /* max-width: 580px; */
+    /* width: 60%;
+    max-width: 580px; */
     height: auto;
     border-radius: 10px;
   }
@@ -588,7 +593,7 @@ cursor: pointer;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap:20px !important;
+    gap: 20px;
   }
 
 
@@ -599,4 +604,3 @@ cursor: pointer;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
