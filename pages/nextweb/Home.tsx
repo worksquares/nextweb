@@ -12,7 +12,7 @@ const studioCardsData = [
     title: "App Studio",
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
-    backgroundColor: "#FFC107",
+    backgroundColor: "#916C0D",
     link: "product/NewAppstudio/",
   },
   {

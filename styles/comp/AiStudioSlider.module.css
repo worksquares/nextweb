@@ -1,0 +1,350 @@
+/* .container {
+    text-align: center;
+    padding: 10px;
+    background-color: #dadada;
+    /* max-width: 100%; */
+    /* width: 1300px; */
+    /* height: 650px;
+    box-sizing: border-box;
+  }
+   */ 
+
+/* Full width background with centered content */
+.container {
+    text-align: center;
+    padding: 10px 20px 80px 40px;
+    background-color: #dadada; /* Full background color */
+    width: 100vw; /* Ensures it takes full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Offset to ensure full width across */
+    box-sizing: border-box;
+  }
+  
+  /* Keep the max-width for content inside the container */
+  .container > * {
+    max-width: 1300px; /* Cap the content width */
+    margin: 0 auto; /* Center the content */
+    position: relative; /* Ensure content stays on top */
+  }
+  
+  /* Ensure inner section is properly aligned within the container */
+  .carousel {
+    display: flex;
+    justify-content: center; /* Align items in the center horizontally */
+    align-items: center; /* Align items vertically if needed */
+    gap: 30px;
+    width: 100%;
+  }
+  
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  
+  .carousel {
+    /* width: 100%; */
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .cardWrapper {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0.5px 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    height: 500px;
+    width: 100% !important;
+    max-width: 100%; 
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    /* padding: 0px 20px; */
+  }
+  
+  
+  .card.active {
+    border: 2px solid #1d4965;
+  }
+  
+  /* Ribbon in top-right corner */
+  .vectorContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 50px;
+    z-index: 1;
+    margin-top: -8px;
+  }
+  
+  .redVector {
+    width: 100%;
+    height: 230%;
+    object-fit: contain;
+  }
+  
+  .cardContentWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imageContainer {
+    padding: 15px;
+  }
+  
+  .cardImage {
+    max-height: 190px;
+    object-fit: cover;
+    width: 80%;
+  }
+  
+  .textContent {
+    padding: 0 15px 15px;
+    flex: 1;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  .textContent h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .textContent p {
+    height: 115px;
+    /* width: 200px; */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .link {
+    display: block;
+    height: 25px;
+    color: #154965;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .moreLink {
+    color: #1d4965;
+    font-weight: bold;
+    display: flex;
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+  
+  .moreLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: #ccc;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #0066cc;
+  } */
+  /* Proper horizontal dot styling */
+  /* .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    bottom: -30px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  } */
+  
+  /* Remove default dot button styles */
+  /* .slick-dots li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #1d4965;
+  }
+  
+  
+  .slick-dots li button:before {
+    content: "";
+    display: none;
+  } */
+  
+  /* Hide default dot styles */
+  .slick-dots li button:before {
+    display: none;
+  }
+  
+  /* Slick dots wrapper styled like a progress bar */
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  /* Each segment of the bar (per slide) */
+  .slick-dots li {
+    flex: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-dots li button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Active slide indicator (highlighted segment) */
+  .slick-dots li.slick-active button {
+    background-color: #1d4965;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 1920px) {
+    .card {
+      height: 500px;
+      width: 90% ;
+    }
+  
+    .textContent p {
+      height: 100px;
+    }
+  }
+  @media (max-width: 1188px) {
+    .card {
+      height: 500px;
+    }
+  
+    .textContent p {
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 993px) {
+    .card {
+      height: 500px;
+      max-width: 95%;
+    }
+  
+    .textContent p {
+      height: 95px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 10px 60px 10px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    .card {
+      height: 440px;
+      max-width: 100%;
+    }
+  
+    .textContent p {
+      height: 90px;
+    }
+  
+    .vectorContainer {
+      width: 30px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 442px) {
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .card {
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .cardImage {
+      max-height: 160px;
+    }
+  
+    .textContent {
+      padding: 0 10px 10px;
+    }
+  
+    .moreLink,
+    .link {
+      font-size: 0.9rem;
+    }
+  
+    .vectorContainer {
+      width: 25px;
+      height: 35px;
+    }
+  }
+  
+  

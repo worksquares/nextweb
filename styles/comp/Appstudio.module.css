@@ -1,5 +1,5 @@
 .wrapper {
-  background: linear-gradient(323deg,rgba(252, 179, 9, 1) 25%, rgba(255, 193, 7, 1) 75%);
+  background: #916C0D;
   height: calc(100vh - 70px);
   color: white;
   display: flex;
@@ -50,10 +50,11 @@
   margin-top: 10px;
   color: #f8f8f8;
   font-size: 1rem;
+  font-weight: 590;
 
 }
 
-.registerButton {
+/* .registerButton {
   margin-top: 20px;
   padding: 12px 32px;
   background-color: #ff0000;
@@ -66,7 +67,20 @@
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+.registerButton {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .registerButton:hover{
   background-color: #f4f4f4;
   transform: scale(1.05);
@@ -204,9 +218,9 @@
   justify-content: space-between;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05); 
-}
+} */
 
 .cardTitle {
   font-size: 1.25rem;
@@ -235,7 +249,7 @@
 .integrationSection {
   background-color: #fff;
   text-align: center;
-}
+  }
 
 .integrationTitle {
   font-size: 2.5rem;
@@ -500,7 +514,7 @@ cursor: pointer;
     top:20px;
   }
   .registerButton{
-    width:25%
+    width:20%
   }
 
   .title {
