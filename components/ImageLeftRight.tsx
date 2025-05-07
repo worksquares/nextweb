@@ -1,7 +1,6 @@
 // ImageLeftRight.tsx
-import React from "react";
 import ImageLeftRightCard from '../components/ImageLeftRightCard';
-import Styles from '../styles/comp/ImageLeftRight.module.css'; 
+import Styles from '../styles/comp/ImageLeftRight.module.css';
 
 
 export interface ImageContainProps {
@@ -27,10 +26,10 @@ interface ImageContentCardProps {
 
 const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps) => {
   return (
-    <div className={Styles.imageContainer}> 
+    <div className={Styles.imageContainer}>
       {/* {ImageCardPropsList.map((ImageProp, i) => ( */}
       {ImageCardPropsList
-        .filter((item) => !!item.title && !!item.img320) // ✅ validate required fields
+        .filter((item) => !!item.paragraph && !!item.img320) // ✅ validate required fields
         .map((ImageProp, i) => (
         <div
           key={ImageProp.title}
@@ -46,4 +45,3 @@ const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps)
 };
 
 export default ImageLeftRight;
-

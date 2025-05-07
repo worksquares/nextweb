@@ -1,18 +1,18 @@
+import Screen from "../../comp/Screen";
 import AccelerateSection from "../../components/AccelerateSection";
+import ImageLeftRight, { ImageContainProps } from "../../components/ImageLeftRight";
+import MainFooter from "../../components/MainFooter";
 import Menu from "../../components/Menu";
-import StudioSection from "../../components/StudioSection";
 import MultiAgentSection from "../../components/MultiAgentSection";
 import NewHomeSlider from "../../components/NewHomeSlider";
-import MainFooter from "../../components/MainFooter";
-import ImageLeftRight, { ImageContainProps } from "../../components/ImageLeftRight";
-import Screen from "../../comp/Screen";
+import StudioSection from "../../components/StudioSection";
 
 const studioCardsData = [
   {
     title: "App Studio",
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
-    backgroundColor: "#916C0D",
+    backgroundColor: "#FFC300",
     link: "product/NewAppstudio/",
   },
   {
@@ -42,6 +42,8 @@ let newcards: ImageContainProps[] = [
     paragraph3:
       "Leverage AI-assisted features to accelerate your development. From generating forms to setting up workflows, AppStudio makes automation simple and intuitive for teams of all sizes.",
       img320: require("../../public/assets/App_Studio.webp"),
+      button:"Learn more →",
+      link:"product/NewAppstudio/",
   },
   {
     title: "Build Voice & Chat Agents Instantly",
@@ -52,7 +54,11 @@ let newcards: ImageContainProps[] = [
     paragraph2: "⚙️ No-Code Flow Builder for Instant Deployment",
     paragraph3:
       "Design conversational flows without writing code. Deploy your agents across platforms like websites, mobile apps, and WhatsApp—instantly turning conversations into actions.",
-      img320: require("../../public/assets/imgagentstudio.webp")
+      img320: require("../../public/assets/imgagentstudio.webp"),
+      button:"Learn more →",
+      link:"product/NewAppstudio/",
+
+
   },
   {
     title: "Fine-Tune & Deploy AI Models Faster",
@@ -64,6 +70,8 @@ let newcards: ImageContainProps[] = [
     paragraph3:
       "Test and evaluate AI models in real-time with our intuitive playground. Fine-tune models easily and ensure optimal performance across multiple use cases.",
       img320:  require("../../public/assets/AI_Studio.webp"),
+      button:"Learn more →",
+      link:"product/NewAppstudio/",
   },
 ];
 

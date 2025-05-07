@@ -1,4 +1,4 @@
-/* 
+/*
 .container {
   display: flex;
   gap: 60px;
@@ -151,73 +151,118 @@
 
    .container {
     display: flex;
-    gap: 40px; 
-    padding: 40px 20px;
+    gap: 20px;
+    padding: 20px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     max-width: 2000px;
     margin: auto;
     text-align: left;
   }
-  
-  .textSection {
+
+   .cardtitle {
+     /* font-weight: 900;
+    color: #000;
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 15px;*/
     flex: 1;
-    min-width: 300px; 
+    min-width: 600px;
+    margin-top: 5px;
   }
-  
-  .textSection h2 {
-    font-size: 3rem; 
-    line-height: 4rem;
-    font-weight: 700;
-    margin: 10px 0;
-  }
-  
-  .emphasized {
+  /* .emphasized {
     font-weight: 900;
     color: #000;
+    text-align: center;
+  } */
+
+  .cardtitle1{
+    font-size: 3rem;
+    margin-bottom: 10px;
   }
-  
   .subtitle {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #777;
     display: block;
+    /* text-align: left; */
+    margin-top: 5px;
    }
-  
-  .paragraph {
-    font-size: 1rem; 
-    color: #000;
+
+  .textSection {
+    flex: 1;
+    min-width: 300px;
+
   }
-  
+
+  .textSection h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin: 0 0;
+  }
+
+
+
+  .paragraph {
+    font-size: 3rem;
+    color: #000;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
   .paragraphText {
     font-size: 1rem;
     color: #333;
     text-align: justify;
+
+    margin-bottom: 50px;
+
   }
-  
+  .buttonLinkContainer {
+  display: flex;
+  justify-content: flex-end; /* Align button to left */
+  align-items: flex-start; /* Align button to the bottom */
+  width: 100%; /* Fill available space */
+}
   .learnMoreButton {
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     background-color: #111;
     color: #fff;
     border: none;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
-  .learnMoreLink {
-    color: #007bff;
-    font-size: 1rem;
     margin-top: 10px;
-    display: inline-block;
+    cursor: pointer;
+    text-align: center; Ensure text is centered */
+    padding: 10px 20px;
+    background-color: #ff0707;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* margin: 20px 0; */
+    width: 130px;
+    margin-top: 70px;
+
   }
-  
+
+  .learnMoreLink {
+    /* color: #007bff;
+    font-size: 1rem;
+    margin-top: 10px;s
+    display: inline-block; */
+    /* display: flex;
+    justify-content: flex-end; */
+    /* width: 100%; */
+  }
+
   .imageSection {
     flex: 1;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
   }
 
   .imageSection img {
@@ -225,37 +270,38 @@
     height: auto; /* Maintain aspect ratio */
     max-width: none; /* Remove any max-width limit */
   }
-  
+
   .divider {
     background-color: #ff0707;
     height: 2px;
     width: 60%;
-    margin-top: 160px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
-  
-  
+
+
   @media only screen and (max-width: 480px) {
     .container {
       flex-direction: column;
       padding: 15px;
     }
-  
+
     .textSection h2 {
       font-size: 1.5rem;
     }
-  
+
     .textSection .paragraph {
       font-size: 1.2rem;
     }
-  
+
     .textSection .paragraphText {
       font-size: 1rem;
     }
-  
+
     .learnMoreButton {
       margin-left: 0;
     }
-  
+
     .container .divider {
       width: 80%;
     }
@@ -263,32 +309,32 @@
       flex: 0 0 100%;
       margin-top: 20px; /* Image comes below the text */
     }
-  
+
     .imageSection img {
       max-width: 100%; /* Ensures image scales down */
       height: auto;
     }
   }
-  
-  
-  
+
+
+
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     .container {
       flex-direction: row;
     }
-  
+
     .textSection h2 {
       font-size: 2.5rem;
     }
-  
+
     .textSection .paragraph {
       font-size: 1.5rem;
     }
-  
+
     .textSection .paragraphText {
       font-size: 1.2rem;
     }
-  
+
     .container .divider {
       width: 70%;
     }
@@ -296,56 +342,55 @@
       flex: 0 0 100%;
       margin-top: 20px; /* Image comes below the text */
     }
-  
+
     .imageSection img {
       max-width: 100%; /* Ensures image scales down */
       height: auto;
     }
   }
-  
- 
+
+
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
       flex-direction: row;
     }
-  
+
     .textSection h2 {
       font-size: 2.8rem;
     }
-  
+
     .textSection .paragraph {
       font-size: 1.8rem;
     }
-  
+
     .textSection .paragraphText {
       font-size: 1.3rem;
     }
-  
+
     .container .divider {
       width: 75%;
     }
   }
-  
- 
+
+
   @media only screen and (min-width: 1025px) {
     .container {
       flex-direction: row;
     }
-  
+
     .textSection h2 {
       font-size: 3.5rem;
     }
-  
+
     .textSection .paragraph {
       font-size: 2rem;
     }
-  
+
     .textSection .paragraphText {
       font-size: 1.2rem;
     }
-  
+
     .container .divider {
       width: 60%;
     }
   }
-  
