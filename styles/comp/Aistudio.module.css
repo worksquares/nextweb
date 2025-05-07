@@ -17,11 +17,11 @@
 }
 
 .content {
-  width: 50%;
+  width: 40%;
 }
 
 .imageContainer{
-  width: 100%;
+  width: 50%;
    display: flex;
   align-items: center;
   justify-content: center;
@@ -221,6 +221,7 @@
 .integrationSection {
   background-color: #fff;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .integrationTitle {

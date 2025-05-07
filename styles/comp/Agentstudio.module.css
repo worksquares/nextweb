@@ -32,10 +32,15 @@
   margin-top: 20px;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
+.subtitle {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+}
 .title {
   font-size: 98px;
   font-weight: 900;
@@ -53,13 +58,14 @@
 }
 
 .registerButton {
-  /* margin-top: 20px; */
-  padding: 12px 32px;
+
   background-color: #ff0000;
   color: #fff;
-  border-radius: 50px;
   font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 50px;
   font-size: 18px;
+  text-align: center;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

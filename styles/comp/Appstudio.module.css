@@ -1,7 +1,7 @@
 .wrapper {
-  background: #FFC300;
+  background: #7C5F00;
   height: calc(100vh - 70px);
-  color: #1C1C1C;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,13 +52,13 @@
   font-weight: 900;
   margin: 0;
   line-height: 6rem;
-  color: #1C1C1C;
+  color: #ffffff;
 }
 
 .description {
   max-width: 400px;
   margin-bottom: 30px;
-  color: #1C1C1C;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
 
