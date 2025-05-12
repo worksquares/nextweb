@@ -1,13 +1,12 @@
-import React from "react";
-import Menu from "../../components/Menu";
-import styles from "../../styles/comp/Aistudio.module.css";
-import MainFooter from "../../components/MainFooter";
-import CustomImage from "../../components/CustomImage";
 import Image from "next/image";
-import Screen from "../../components/Screen";
 import Link from 'next/link';
+import CustomImage from "../../components/CustomImage";
+import MainFooter from "../../components/MainFooter";
+import Menu from "../../components/Menu";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import Screen from "../../components/Screen";
+import styles from "../../styles/comp/Aistudio.module.css";
 import Headseo from "../headseo";
-import AiStudioSlider from "../../components/AiStudioSlider";
 
 
 // import {
@@ -70,86 +69,47 @@ const agentCards = [
 // const resourceItems = [
 //   {
 //     title: "AI-Driven Healthcare Solutions",
-//     image: "/assets/ai/ai-img1.webp" 
+//     image: "/assets/ai/ai-img1.webp"
 //   },
 //   {
 //     title: " Revolutionizing Tech with AI ",
-//     image: "/assets/ai/ai-img2.webp" 
+//     image: "/assets/ai/ai-img2.webp"
 //   },
 //   {
 //     title: "Telecom Innovations through AI",
-//     image: "/assets/ai/ai-img3.webp" 
+//     image: "/assets/ai/ai-img3.webp"
 //   }
 // ];
 const cards = [
-  {
-    title: "Creating Responsible AI Models",
-    description:
-      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
-    image: "/assets/Blogs/blogSlideImages/ResponsibleAIModels_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/ResponsibleAIModels",
-  },
-  {
-    title: "Satisfaction with Agent Studio",
-    description:
-      "In an era where customers expect personalized, responsive, and seamless interactions, businesses must go beyond one-size-fits-all solutions to build lasting relationships. By harnessing the power of artificial intelligence, companies can create tailored experiences that resonate with individual customers.",
-    image: "/assets/Blogs/blogSlideImages/CustomerSatisfactionwithAgentStudio_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
-  },
-  {
-    title: "Workflows with AppStudio",
-    description:
-      "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations, consume valuable resources, and limit a company’s ability to focus on high-impact initiatives.",
-    image: "/assets/Blogs/blogSlideImages/WorkflowswithAppStudio_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/WorkflowswithAppStudio",
-  },
-  {
-    title: "AI in Agent Studio",
-    description:
-      "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-    image: "/assets/Blogs/blogSlideImages/AIinAgentStudio_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinAgentStudio",
-  },
-  {
-    title: "AppStudio’s Security Features",
-    description:
-      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-    image: "/assets/Blogs/blogSlideImages/AppStudioSecurityFeatures_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AppStudioSecurityFeatures",
-  },
-  {
-    title: "AI-Powered Automation",
-    description:
-      "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-    image: "/assets/Blogs/blogSlideImages/AIPoweredAutomation_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIPoweredAutomation",
-  },
-  {
-    title: "Building a Secure SaaS Ecosystem",
-    description:
-      "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-    image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/ImprovingSAASCybersecurity",
-  },
-  {
-    title: "AI in Service Management Platforms",
-    description:
-      "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
-    image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinServiceManagement",
-  },
-];
+      {
+      title: 'AI-Driven Healthcare Solutions',
+      description: 'AI Studio enables healthcare providers to fine-tune AI models for diagnostics, patient monitoring, and predictive analytics, enhancing healthcare services.',
+      image: '/assets/Hero & cards/cards/Ai-card-1.webp',
+      demoLink: '/demo/medical-ai',
+      MoreLink: '/industry/Medical/',
+      moreText: "Learn more",
+    },
+    {
+      title: 'Revolutionizing Tech with AI',
+      description: 'AI Studio helps tech companies fine-tune AI models for software automation, data processing, and predictive maintenance, driving technological innovation.',
+      image: '/assets/Hero & cards/cards/Ai-card-2.webp',
+      demoLink: '/demo/technology-ai',
+      MoreLink: '/industry/Technologies/',
+      moreText: "Learn more",
+    },
+    {
+      title: 'Telecom Innovations through AI',
+      description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',
+      image: '/assets/Hero & cards/cards/Ai-card-3.webp',
+      demoLink: '/demo/telecom-ai',
+      MoreLink: '/industry/TeleCommunication/',
+      moreText: "Learn more",
+    },
+  ];
+
 
 const AiStudio = () => {
- 
+
   return (
     <>
       <Menu />
@@ -186,7 +146,7 @@ const AiStudio = () => {
       </div>
 <Screen>
       <div className={styles.possibilitySection}>
-        
+
         <h2 className={styles.heading}>
           One studio{" "}
           <span className={styles.highlight}>Infinite possibilities</span>
@@ -234,7 +194,7 @@ const AiStudio = () => {
                 <p className={styles.cardDescription}>{card.description}</p>
                 <Link href={card.link} className={styles.cardButton}>
                     Explore All
-                  </Link>              
+                  </Link>
               </div>
             ))}
           </div>
@@ -319,7 +279,7 @@ const AiStudio = () => {
             </h2>
             <div className={styles.resourceGrid}>
               {resourceItems.map((item, index) => {
-             
+
 
                 return (
                   <div key={index} className={styles.resourceCard}>
@@ -341,11 +301,12 @@ const AiStudio = () => {
             </div>
           </div>
         </section> */}
-        
-      
 
-        <AiStudioSlider cards={cards} />
+
+
+        {/* <AiStudioSlider cards={cards} /> */}
       </Screen>
+      <NewHomeSlider cards={cards} />
       <MainFooter />
     </>
   );

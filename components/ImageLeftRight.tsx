@@ -29,7 +29,7 @@ const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps)
     <div className={Styles.imageContainer}>
       {/* {ImageCardPropsList.map((ImageProp, i) => ( */}
       {ImageCardPropsList
-        .filter((item) => !!item.paragraph && !!item.img320) // ✅ validate required fields
+        .filter((item) => !!item.title && !!item.img320) // ✅ validate required fields
         .map((ImageProp, i) => (
         <div
           key={ImageProp.title}

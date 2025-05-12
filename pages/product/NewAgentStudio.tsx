@@ -1,56 +1,55 @@
-import React from "react";
-import Menu from "../../components/Menu";
-import styles from "../../styles/comp/Agentstudio.module.css";
-import MainFooter from "../../components/MainFooter";
-import AiAgentRecruiter from "../../pages/product/AiAgentRecruiter";
-import CustomImage from "../../components/CustomImage";
 import Image from "next/image";
-import Screen from "../../components/Screen";
 import Link from 'next/link';
+import CustomImage from "../../components/CustomImage";
+import MainFooter from "../../components/MainFooter";
+import Menu from "../../components/Menu";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import Screen from "../../components/Screen";
+import AiAgentRecruiter from "../../pages/product/AiAgentRecruiter";
+import styles from "../../styles/comp/Agentstudio.module.css";
 import Headseo from "../headseo";
-import AgentStudioSlider from "../../components/AgentStudioSlider";
 
 
 
 
 const agentCards = [
   {
-   
+
     title: "Conversational AI",
     description:
       "Create AI chatbots and voice assistants effortlessly with Digisquares Agent Studio. Choose templates and customize using a simple drag-and-drop interface.",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
     },
   {
-    
+
     title: "Interactions",
     description:
       "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
     },
   {
-    
+
     title: "Access Control",
     description:
       "Agent Studio allows role-based team management for secure agent design and deployment, while boosting marketing with AI-powered campaigns, SEO tools, and actionable analytics",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
     },
   {
-    
+
     title: "Manage APIs",
     description:
       "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
 },
   {
-    
+
     title: "Data Management",
     description:
       "Agent Studio enables real-time data access and database management, optimizing conversational agents for 24/7 AI support, ticket handling, sentiment analysis, and instant issue resolution",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
     },
   {
-    
+
     title: "Flowbuilder",
     description:
       "The Flow Builder automates workflows visually, helping users streamline tasks, integrate systems, and improve efficiency",
@@ -61,88 +60,70 @@ const agentCards = [
 // const resourceItems = [
 //   {
 //     title: "Empowering Healthcare Agents",
-//     image: "/assets/agent/agentimg1.webp" 
+//     image: "/assets/agent/agentimg1.webp"
 //   },
 //   {
 //     title: " Revolutionizing Banking Agents ",
-//     image: "/assets/agent/agentimg2.webp" 
+//     image: "/assets/agent/agentimg2.webp"
 //   },
 //   {
 //     title: "AI for Government Services",
-//     image: "/assets/agent/agentimg3.webp" 
+//     image: "/assets/agent/agentimg3.webp"
 //   }
 // ];
 
 const cards = [
   {
-    title: "Creating Responsible AI Models",
+    tabTitle:"Conversational AI",
+    title: "Build Conversational AI Projects",
     description:
-      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
-    image: "/assets/Blogs/blogSlideImages/ResponsibleAIModels_Slider.webp",
+      "Effortlessly create AI-powered conversational projects with Digisquares Agent Studio. Select from chatbot and voice assistant templates, and customize with a drag-and-drop interface.",
+    image: "/assets/Product/agentstudio4.webp",
     moreText: "Learn more",
-    moreLink: "/blog/ResponsibleAIModels",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    title: "Satisfaction with Agent Studio",
+    tabTitle:"Interactions",
+    title: "Manage User Access",
     description:
-      "In an era where customers expect personalized, responsive, and seamless interactions, businesses must go beyond one-size-fits-all solutions to build lasting relationships. By harnessing the power of artificial intelligence, companies can create tailored experiences that resonate with individual customers.",
-    image: "/assets/Blogs/blogSlideImages/CustomerSatisfactionwithAgentStudio_Slider.webp",
+      "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
+    image: "/assets/Product/agentstudio5.webp",
     moreText: "Learn more",
-    moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    title: "Workflows with AppStudio",
+    tabTitle:"Access Control",
+    title: "Role-Based Access Control",
     description:
-      "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations, consume valuable resources, and limit a company’s ability to focus on high-impact initiatives.",
-    image: "/assets/Blogs/blogSlideImages/WorkflowswithAppStudio_Slider.webp",
+      "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
+    image: "/assets/Product/agentstudio6.webp",
     moreText: "Learn more",
-    moreLink: "/blog/WorkflowswithAppStudio",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    title: "AI in Agent Studio",
+    tabTitle:"Manage APIs",
+    title: "Integrate and Manage APIs",
     description:
-      "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-    image: "/assets/Blogs/blogSlideImages/AIinAgentStudio_Slider.webp",
+      "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
+    image: "/assets/Product/agentstudio7.webp",
     moreText: "Learn more",
-    moreLink: "/blog/AIinAgentStudio",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    title: "AppStudio’s Security Features",
+    tabTitle:"Data Management",
+    title: "Manage Agent Data Efficiently",
     description:
-      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-    image: "/assets/Blogs/blogSlideImages/AppStudioSecurityFeatures_Slider.webp",
+      "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",
+    image: "/assets/Product/agentStudio8.webp",
     moreText: "Learn more",
-    moreLink: "/blog/AppStudioSecurityFeatures",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
-  {
-    title: "AI-Powered Automation",
-    description:
-      "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-    image: "/assets/Blogs/blogSlideImages/AIPoweredAutomation_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIPoweredAutomation",
-  },
-  {
-    title: "Building a Secure SaaS Ecosystem",
-    description:
-      "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-    image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/ImprovingSAASCybersecurity",
-  },
-  {
-    title: "AI in Service Management Platforms",
-    description:
-      "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
-    image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinServiceManagement",
-  },
+
 ];
 
 
 const AgentStudio = () => {
-  
+
 
   return (
     <>
@@ -181,7 +162,7 @@ const AgentStudio = () => {
       <Screen>
 
       <div className={styles.possibilitySection}>
-        
+
         <h2 className={styles.heading}>
           One studio{" "}
           <span className={styles.highlight}>Infinite possibilities</span>
@@ -228,7 +209,7 @@ const AgentStudio = () => {
                 <p className={styles.cardDescription}>{card.description}</p>
                 <Link href={card.link} className={styles.cardButton}>
                     Explore All
-                  </Link>              
+                  </Link>
                   </div>
             ))}
           </div>
@@ -335,9 +316,10 @@ const AgentStudio = () => {
             </div>
           </div>
         </section> */}
-        <AgentStudioSlider cards={cards} />
-        
+        {/* <AgentStudioSlider cards={cards} /> */}
+
       </Screen>
+      <NewHomeSlider cards={cards} />
 
       <MainFooter />
     </>

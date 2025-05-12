@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import VideoSection from "../../comp/NewImageLeftRight";
-import NewHeroSection from "../../comp/NewHeroSection";
-import DemoCard from "../../comp/DemoCard";
-import NewMenu from "../../comp/newMenu";
-import NewFooter from "../../comp/newFooter";
-import FAQComponent from "../../comp/FAQComponent";
-import HeroVideo from "../../comp/videoscreen";
-import HomeTab from "../../comp/HomeTab";
 import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
+import DemoCard from "../../comp/DemoCard";
+import FAQComponent from "../../comp/FAQComponent";
+import HomeTab from "../../comp/HomeTab";
+import NewFooter from "../../comp/newFooter";
+import NewHeroSection from "../../comp/NewHeroSection";
+import VideoSection from "../../comp/NewImageLeftRight";
+import NewMenu from "../../comp/newMenu";
+import HeroVideo from "../../comp/videoscreen";
 
 const customTabs = [
   {
@@ -48,7 +48,7 @@ const customTabs = [
   },
   {
     key: "5",
-    tabTitle: " Data Management",
+    tabTitle: "Data Management",
     videoUrl: "/assets/Product/agentStudio8.webp",
     title: "Manage Agent Data Efficiently",
     description:

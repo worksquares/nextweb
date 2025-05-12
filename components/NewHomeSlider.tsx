@@ -1,20 +1,21 @@
+import Image from "next/image";
 import { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "../styles/comp/HomeSlider.module.css";
+import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
-import redVector from "../public/svg/redvector.svg"
-import Image from "next/image";
-import Screen from "../comp/Screen";
+import redVector from "../public/svg/redvector.svg";
+import styles from "../styles/comp/HomeSlider.module.css";
 
 interface Card {
+    tabTitle?: string;
     image: string;
     title?: string;
     description: string;
     links?: { text: string; href: string }[];
     moreText?: string;
     moreLink?: string;
+    demoLink?: string;
 }
 
 interface HomeSliderProps {
@@ -22,6 +23,19 @@ interface HomeSliderProps {
     autoplay?: boolean;
     speed?: number;
 }
+// Custom Previous Arrow
+const PrevArrow = (props: any) => (
+  <div className={styles.prevArrow} onClick={props.onClick}>
+    ←
+  </div>
+);
+
+// Custom Next Arrow
+const NextArrow = (props: any) => (
+  <div className={styles.nextArrow} onClick={props.onClick}>
+     →
+  </div>
+);
 
 const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,7 +46,10 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false,
+        // arrows: false,
+        arrows: true,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         centerMode: true,
         centerPadding: "40px",
         pauseOnHover: true,
@@ -45,6 +62,8 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    arrows: true,
+                    centerMode: false,
                 },
             },
             {
@@ -52,6 +71,8 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: true,
+                    centerMode: false,
                 },
             },
         ],
@@ -70,6 +91,10 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
               }`}
             >
               <div className={styles.card}>
+                <div className={styles.tabTitle}>
+                <h4>{card.tabTitle}</h4>
+                </div>
+
                 <div className={styles.vectorContainer}>
                   <Image
                     src={redVector.src}
@@ -104,6 +129,15 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                       <a href={card.moreLink} className={styles.moreLink}>
                         {card.moreText || "Learn More"} &rarr;
                       </a>
+                      {card.demoLink && (
+
+                        <a href={card.demoLink} className={styles.demoLink}
+                        // target="_blank" rel="noopener noreferrer"
+                        >
+                          Book a Demo
+                        </a>
+                      )}
+
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,8 @@
 
-import React from 'react';
-import RoundedButton from '../components/RoundedButton'
-import VerticalDivider from '../components/VerticalDivider';
 import Link from 'next/link';
+import React from 'react';
+import RoundedButton from '../components/RoundedButton';
+import VerticalDivider from '../components/VerticalDivider';
 
 const MultiAgentSection: React.FC = () => {
   return (
@@ -14,10 +14,10 @@ const MultiAgentSection: React.FC = () => {
         textAlign: 'center',
         flexDirection: 'column',
         marginLeft:'20px',
-        marginBottom:'30px'
+        marginBottom:'100px'
       }}
     >
-    <h1 style={{ fontSize: '45px', fontWeight: 300, marginBottom: '0px', marginRight: "10px" }}> 
+    <h1 style={{ fontSize: '45px', fontWeight: 300, marginBottom: '0px', marginRight: "10px" }}>
   Build{' '}
   <span style={{ fontSize: '45px', fontWeight: 900 }}>
     Apps, Chatbots, and AI Models
@@ -48,7 +48,7 @@ const MultiAgentSection: React.FC = () => {
         <RoundedButton
           text="Login"
           bgColor="#000000"
-          hoverColor="#333333" 
+          hoverColor="#333333"
         />
         </Link>
       </div>
@@ -57,4 +57,3 @@ const MultiAgentSection: React.FC = () => {
 };
 
 export default MultiAgentSection;
-

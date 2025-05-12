@@ -13,6 +13,7 @@
   height: 380px;
   margin: 0 ;
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 .studioCard h1 {
@@ -124,6 +125,7 @@
     max-width: 450px;
     height: 540px;
     margin: 20px;
+    margin-top: 70px;
   }
 
   .studioCard h1 {

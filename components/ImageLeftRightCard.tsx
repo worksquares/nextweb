@@ -69,8 +69,8 @@ const ImageLeftRightCard: React.FC<Props> = ({
   };
 
   return (
-    <div>
-      <div className={Styles.cardHeader}>
+    <div className={Styles.fullcontainer}>
+      {/* <div className={Styles.cardHeader}>
         <h2
           className={Styles.cardtitle1}
           style={{
@@ -94,7 +94,7 @@ const ImageLeftRightCard: React.FC<Props> = ({
             {subtitle}
           </span>
         )}
-      </div>
+      </div> */}
 
       <div
         className={Styles.container}
@@ -102,7 +102,32 @@ const ImageLeftRightCard: React.FC<Props> = ({
           flexDirection: dir === "left" ? "row-reverse" : "row", // Switch content order based on direction
         }}
       >
+        {/* <h2 className={Styles.cardtitle}>
+          {normalFirst}{" "}
+          <span className={Styles.emphasized}>{emphasized}</span> {normalRest}
+        </h2>
+        {subtitle && (
+          <span
+            className={Styles.subtitle}
+          >
+              {subtitle}
+            </span>
+          )} */}
+
+
         <div className={Styles.textSection}>
+
+        <h2>
+          {normalFirst}{" "}
+          <span className={Styles.emphasized}>{emphasized}</span> {normalRest}
+        </h2>
+        {subtitle && (
+          <span
+            className={Styles.subtitle}
+          >
+              {subtitle}
+            </span>
+          )}
           {paragraph && (
             <h4 className={Styles.paragraph}>{renderIconText(paragraph)}</h4>
           )}

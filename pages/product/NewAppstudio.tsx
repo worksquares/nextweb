@@ -1,13 +1,11 @@
-import React from "react";
-import Menu from "../../components/Menu";
-import styles from "../../styles/comp/Appstudio.module.css";
-import MainFooter from "../../components/MainFooter";
-import Image from "next/image";
-import CustomImage from "../../components/CustomImage";
 import Link from 'next/link';
+import CustomImage from "../../components/CustomImage";
+import MainFooter from "../../components/MainFooter";
+import Menu from "../../components/Menu";
+import NewHomeSlider from '../../components/NewHomeSlider';
 import Screen from "../../components/Screen";
+import styles from "../../styles/comp/Appstudio.module.css";
 import Headseo from "../headseo";
-import AppStudioSlider from "../../components/AppStudioSlider";
 
 const appCards = [
   {
@@ -15,6 +13,7 @@ const appCards = [
     description:
       "Effortlessly create and automate workflows with AppStudio. Customize templates and use drag-and-drop tools to design processes and integrate services, no coding required.",
     link: "https://docs.digisquares.com/docs/Workflow/WorkFlow%20Intro"
+
   },
   {
     title: "Pageflow",
@@ -51,82 +50,46 @@ const appCards = [
 // const resourceItems = [
 //   {
 //     title: "Healthcare for Smarter Care",
-//     image: "/assets/app/appimg1.webp" 
+//     image: "/assets/app/appimg1.webp"
 //   },
 //   {
 //     title: "Classroom Apps That Teach",
-//     image: "/assets/app/appimg2.webp" 
+//     image: "/assets/app/appimg2.webp"
 //   },
 //   {
 //     title: "Manufacturing Workflows",
-//     image: "/assets/app/appimg3.webp" 
+//     image: "/assets/app/appimg3.webp"
 //   }
 // ];
 const cards = [
   {
-    title: "Creating Responsible AI Models",
+    title: "Healthcare for Smarter Care",
     description:
-      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
-    image: "/assets/Blogs/blogSlideImages/ResponsibleAIModels_Slider.webp",
+      "App Studio helps healthcare providers develop apps for patient management, telemedicine, and health records, enhancing care delivery.",
+    image: "/assets/Hero & cards/cards/As-card-1.webp",
     moreText: "Learn more",
-    moreLink: "/blog/ResponsibleAIModels",
+    moreLink: "/industry/Medical/",
+    demoLink: "/demo/medical-apps",
   },
   {
-    title: "Satisfaction with Agent Studio",
+    title: "Classroom Apps That Teach",
     description:
-      "In an era where customers expect personalized, responsive, and seamless interactions, businesses must go beyond one-size-fits-all solutions to build lasting relationships. By harnessing the power of artificial intelligence, companies can create tailored experiences that resonate with individual customers.",
-    image: "/assets/Blogs/blogSlideImages/CustomerSatisfactionwithAgentStudio_Slider.webp",
+      "App Studio empowers educators to build e-learning platforms and student management apps, improving the learning experience.",
+    image: "/assets/Hero & cards/cards/As-card-2.webp",
     moreText: "Learn more",
-    moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
+    moreLink: "/industry/Education/",
+    demoLink: "/demo/manufacturing-apps",
   },
   {
-    title: "Workflows with AppStudio",
+    title: "Manufacturing Workflows",
     description:
-      "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations, consume valuable resources, and limit a company’s ability to focus on high-impact initiatives.",
-    image: "/assets/Blogs/blogSlideImages/WorkflowswithAppStudio_Slider.webp",
+      "App Studio enables manufacturers to create apps for workflow, inventory, and quality control, enhancing operational efficiency.",
+    image: "/assets/Hero & cards/cards/As-card-3.webp",
     moreText: "Learn more",
-    moreLink: "/blog/WorkflowswithAppStudio",
+    moreLink: "/industry/Manufacturing/",
+    demoLink: "/demo/manufacturing-apps",
   },
-  {
-    title: "AI in Agent Studio",
-    description:
-      "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-    image: "/assets/Blogs/blogSlideImages/AIinAgentStudio_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinAgentStudio",
-  },
-  {
-    title: "AppStudio’s Security Features",
-    description:
-      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-    image: "/assets/Blogs/blogSlideImages/AppStudioSecurityFeatures_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AppStudioSecurityFeatures",
-  },
-  {
-    title: "AI-Powered Automation",
-    description:
-      "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-    image: "/assets/Blogs/blogSlideImages/AIPoweredAutomation_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIPoweredAutomation",
-  },
-  {
-    title: "Building a Secure SaaS Ecosystem",
-    description:
-      "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-    image: "/assets/Blogs/blogSlideImages/ImprovingSAASCybersecurity_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/ImprovingSAASCybersecurity",
-  },
-  {
-    title: "AI in Service Management Platforms",
-    description:
-      "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, driven by AI and machine learning, have the ability to understand human language, deliver personalized responses, and automate routine tasks.",
-    image: "/assets/Blogs/blogSlideImages/AIinServiceManagement_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinServiceManagement",
-  },
+
 ];
 
 const AppStudio = () => {
@@ -164,7 +127,7 @@ const AppStudio = () => {
         </div>
       </div>
         </Screen>
-     
+
       </div>
 
       <Screen>
@@ -176,7 +139,7 @@ const AppStudio = () => {
             App Studio is the all-in-one platform you need to build, deploy, and manage custom apps for your business. Create smarter, faster, and scalable solutions with just a few clicks.
           </p>
           <div className={styles.videoPlaceholder}>
-            <video className={styles.videoPlayer} 
+            <video className={styles.videoPlayer}
             muted
             autoPlay
             poster="/assets/App studio.webp">
@@ -210,8 +173,8 @@ const AppStudio = () => {
             </div>
           </div>
         </section>
-        
-        
+
+
 
         {/* <section className={styles.resourceSection}>
           <span className={styles.redUnderline}></span>
@@ -243,15 +206,16 @@ const AppStudio = () => {
             </div>
           </div>
         </section> */}
-        
-        
-        <AppStudioSlider cards={cards} />
+
+
+        {/* <AppStudioSlider cards={cards} /> */}
+
       </Screen>
-      
-      
-      
-      
-      
+      <NewHomeSlider cards={cards} />
+
+
+
+
 
       <MainFooter />
     </>

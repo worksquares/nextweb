@@ -149,6 +149,7 @@
    */
 
 
+
    .container {
     display: flex;
     gap: 20px;
@@ -157,37 +158,37 @@
     /* align-items: center; */
     flex-wrap: wrap;
     max-width: 2000px;
-    margin: auto;
+    margin: 50px auto;
     text-align: left;
   }
 
-   .cardtitle {
-     /* font-weight: 900;
+   /* .cardtitle {
+    font-weight: 900;
     color: #000;
     text-align: left;
-    font-size: 3rem;
-    margin-bottom: 15px;*/
+    font-size: 2.5rem;
+    margin-bottom: 1px;
     flex: 1;
     min-width: 600px;
     margin-top: 5px;
-  }
-  /* .emphasized {
+  } */
+  .emphasized {
     font-weight: 900;
     color: #000;
     text-align: center;
-  } */
+  }
 
-  .cardtitle1{
+  /* .cardtitle1{
     font-size: 3rem;
     margin-bottom: 10px;
-  }
-  .subtitle {
+  } */
+  /* .subtitle {
     font-size: 1rem;
     color: #777;
     display: block;
-    /* text-align: left; */
+    text-align: left;
     margin-top: 5px;
-   }
+   } */
 
   .textSection {
     flex: 1;
@@ -196,29 +197,29 @@
   }
 
   .textSection h2 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
     font-weight: 700;
     margin: 0 0;
   }
 
 
-
   .paragraph {
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: #000;
-    margin-top: 70px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   .paragraphText {
-    font-size: 1rem;
+    font-size: 1.17rem;
     color: #333;
     text-align: justify;
 
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
   }
+
   .buttonLinkContainer {
   display: flex;
   justify-content: flex-end; /* Align button to left */
@@ -241,20 +242,20 @@
     border-radius: 20px;
     cursor: pointer;
     /* margin: 20px 0; */
-    width: 130px;
-    margin-top: 70px;
+    width: 140px;
+    margin: 50px 0;
 
   }
 
-  .learnMoreLink {
-    /* color: #007bff;
+  /* .learnMoreLink {
+    color: #007bff;
     font-size: 1rem;
     margin-top: 10px;s
-    display: inline-block; */
-    /* display: flex;
-    justify-content: flex-end; */
-    /* width: 100%; */
-  }
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  } */
 
   .imageSection {
     flex: 1;
@@ -275,7 +276,7 @@
     background-color: #ff0707;
     height: 2px;
     width: 60%;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -373,13 +374,20 @@
   }
 
 
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1025px)
+  and (max-width:1914)
+
+
+   {
     .container {
       flex-direction: row;
     }
 
     .textSection h2 {
       font-size: 3.5rem;
+      /* line-height: 3.5rem;
+      font-weight: 700;
+      margin-top: 40px; */
     }
 
     .textSection .paragraph {
@@ -387,10 +395,63 @@
     }
 
     .textSection .paragraphText {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .container .divider {
       width: 60%;
     }
+  }
+
+  /* @media only screen and (min-width: 1280px) and (max-width: 1600px) {
+    .container {
+      padding: 40px 30px;
+      gap: 30px;
+    }
+
+    .textSection h2 {
+      font-size: 2.5rem;
+    }
+
+    .textSection .paragraph {
+      font-size: 1.6rem;
+    }
+
+    .textSection .paragraphText {
+      font-size: 1rem;
+    }
+  } */
+
+
+  @media only screen and (min-width: 1915px) {
+    .container {
+      flex-direction: row;
+    }
+
+    .textSection h2 {
+      font-size: 3.8rem;
+      /* font-size: 2.5rem; */
+      line-height: 3.5rem;
+      font-weight: 700;
+      margin-top: 40px;
+    }
+
+    .textSection .paragraph {
+      font-size: 2.5rem;
+      /* font-size: 2rem;
+      color: #000; */
+      margin-top: 70px;
+      margin-bottom: 15px;
+    }
+
+    .textSection .paragraphText {
+      font-size: 1rem;
+
+    }
+
+    .container .divider {
+      width: 60%;
+    }
+
+
   }

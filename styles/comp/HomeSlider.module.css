@@ -11,6 +11,8 @@
   font-weight: 700;
   color: #000;
   margin-bottom: 40px;
+  margin-top: 1px;
+  margin-bottom: 10px;
 }
 
 .carousel {
@@ -18,13 +20,17 @@
   max-width: 2000px;
   margin: 0 auto;
   box-sizing: border-box;
+  /* height: 100%; */
+
 }
+
 
 .cardWrapper {
   padding: 10px;
   box-sizing: border-box;
   display: flex !important;
   justify-content: center;
+
 }
 
 .card {
@@ -37,8 +43,9 @@
   border-radius: 8px;
   transition: transform 0.3s ease;
   width: 100% !important;
-  max-width: 350px;
-}
+  height: 100%px !important;
+
+  }
 
 
 
@@ -51,10 +58,10 @@
 /* Ribbon in top-right corner */
 .vectorContainer {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -6px;
+  right: 10px;
   width: 40px;
-  height: 50px;
+  height: 60px;
   z-index: 5;
   /* margin-top: -8px; */
 }
@@ -71,10 +78,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
 }
 
 .imageContainer {
   padding: 15px;
+  width: 320px;
 }
 
 .cardImage {
@@ -83,6 +92,7 @@
   max-height: 190px;
   object-fit: cover;
   width: 80%;
+
 }
 
 .textContent {
@@ -106,7 +116,7 @@
   /* width: 200px; */
   /* white-space: nowrap; */
   overflow: hidden;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   text-overflow: ellipsis;
   display: -webkit-box;
   /* -webkit-line-clamp: 5; */
@@ -118,6 +128,7 @@
 
 .footer {
   margin-top: auto;
+  height: 100%;
 }
 
 .links {
@@ -207,6 +218,7 @@
 
 .slick-list {
   overflow: visible !important;
+
 }
 /* Slick dots wrapper styled like a progress bar */
 .slick-dots {
@@ -214,7 +226,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 4px;
+  height: 100%;
   background: #ddd;
   border-radius: 2px;
   overflow: hidden;
@@ -242,33 +254,170 @@
   background-color: #1d4965;
 }
 
+/*new button prev and next code */
+.sliderWrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.prevArrow,
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #FF0707;
+  color: white;
+  font-size: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Position next to the carousel content */
+.prevArrow {
+  left: -130px; /* Adjust as needed */
+}
+
+.nextArrow {
+  right: -130px; /* Adjust as needed */
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  opacity: 1;
+}
+
+/*over it */
+
+.demoLink{
+
+    display: block;
+    height: 25px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 125px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 5px;
+
+
+
+  .demoLink:hover {
+    text-decoration: underline;
+  }
+}
+
+
 
 
 /* Responsive */
 @media (max-width: 1920px) {
-  /* .card {
-    height: 500px;
+  .card {
+    max-height: 800px;
+    height: 800px;
     width: 90% ;
-  } */
+  }
 
   .carousel {
     max-width: 1500px;
     margin: 0 auto;
+    max-height: 1000px;
+    height: 630px;
 
   }
   .card {
     max-width: 100%;
     /* height: 500px; */
   }
+  .imageContainer {
+    padding: 15px;
+    width: 390px;
+  }
+
 
 
   /* .textContent p {
     height: 100px;
   } */
 }
+/* @media (min-width: 1601px){
+  .imageContainer {
+    width: 390px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1600px) {
+  .imageContainer {
+    width: 320px;
+  }
+} */
+
+
+
+
+@media (max-width: 1360px) {
+  .imageContainer {
+    width: 270px;
+  }
+  .carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+
+  }
+  .prevArrow {
+    left: -90px; /* Adjust as needed */
+  }
+
+  .nextArrow {
+    right: -90px; /* Adjust as needed */
+  }
+
+  .prevArrow,
+.nextArrow {
+  width: 50px;
+}
+
+}
+
+@media (min-width: 1361px) and (max-width: 1440px) {
+  .imageContainer {
+    width: 280px;
+  }
+  .carousel {
+    max-width: 1150px;
+    margin: 0 auto;
+
+  }
+  .prevArrow {
+    left: -100px; /* Adjust as needed */
+  }
+
+  .nextArrow {
+    right: -100px; /* Adjust as needed */
+  }
+  .prevArrow,
+  .nextArrow {
+    width: 50px;
+  }
+
+
+}
+
 @media (max-width: 1188px) {
   .card {
     height: 500px;
+  }
+  .imageContainer {
+    padding: 15px;
+    width: 280px;
   }
 
   .textContent p {
@@ -276,10 +425,14 @@
   }
 }
 
-@media (max-width: 993px) {
+@media (max-width: 1024px) {
   .card {
     height: 500px;
     max-width: 95%;
+  }
+  .imageContainer {
+
+    width: 280px;
   }
 
   .textContent p {
@@ -287,7 +440,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
   .container {
     padding: 30px 10px 60px 10px;
   }
@@ -301,6 +454,10 @@
     height: 440px;
     max-width: 100%;
   }
+  .imageContainer {
+    padding: 15px;
+    width: 270px;
+  }
 
   .textContent p {
     height: 90px;
@@ -310,9 +467,14 @@
     width: 30px;
     height: 40px;
   }
+
+  .prevArrow,
+  .nextArrow {
+    display: none;
+  }
 }
 
-@media (max-width: 442px) {
+@media (max-width: 480px) {
   .title {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -322,6 +484,11 @@
     /* height: auto; */
     max-width: 100%;
   }
+  .imageContainer {
+
+    width: 300px;
+  }
+
 
   .cardImage {
     max-height: 160px;
@@ -334,10 +501,16 @@
   .moreLink,
   .link {
     font-size: 0.9rem;
+
+
   }
 
   .vectorContainer {
     width: 25px;
     height: 35px;
+  }
+  .prevArrow,
+  .nextArrow {
+    display: none;
   }
 }

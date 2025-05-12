@@ -154,6 +154,8 @@ const Home = () => {
       </Screen>
       <MultiAgentSection />
 
+      {/* <HomeSlider cards={cards} /> */}
+
       <NewHomeSlider cards={cards} />
       <MainFooter />
     </>
