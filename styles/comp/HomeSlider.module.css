@@ -16,20 +16,22 @@
 }
 
 .carousel {
-  /* width: 100%; */
+  width: 75%;
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 0;
+  /* max-height: 1500px; */
   box-sizing: border-box;
-  /* height: 100%; */
+  height: 100% !important;
 
 }
 
 
 .cardWrapper {
-  padding: 10px;
-  box-sizing: border-box;
+  padding: 20px;
+  /* box-sizing: border-box; */
   display: flex !important;
   justify-content: center;
+  width: 100px;
 
 }
 
@@ -43,7 +45,7 @@
   border-radius: 8px;
   transition: transform 0.3s ease;
   width: 100% !important;
-  height: 100%px !important;
+  /* height: 100%px !important; */
 
   }
 
@@ -61,19 +63,19 @@
   top: -6px;
   right: 10px;
   width: 40px;
-  height: 60px;
+  height: 80px;
   z-index: 5;
   /* margin-top: -8px; */
 }
 
 .redVector {
   width: 100%;
-  height: 230%;
   object-fit: contain;
+  height: 100%;
 }
 
 .cardContentWrapper {
-  padding: 0 20px 20px;
+  /* padding:20px ; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,21 +84,25 @@
 }
 
 .imageContainer {
-  padding: 15px;
-  width: 320px;
+
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+  margin: 0;
+
 }
 
 .cardImage {
   display: block;
   margin: 0 auto;
-  max-height: 190px;
+  height: 300px;
   object-fit: cover;
-  width: 80%;
+  width: 300px;
 
 }
 
 .textContent {
-  padding: 0 15px 20px;
+  padding: 0 10px 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -151,7 +157,7 @@
 .moreLink {
   color: #1d4965;
   font-weight: bold;
-  /* display: flex; */
+  display: flex;
   margin-top: 15px;
   justify-content: flex-end;
 }
@@ -338,10 +344,6 @@
     max-width: 100%;
     /* height: 500px; */
   }
-  .imageContainer {
-    padding: 15px;
-    width: 390px;
-  }
 
 
 
@@ -365,7 +367,8 @@
 
 @media (max-width: 1360px) {
   .imageContainer {
-    width: 270px;
+    width: 100%;
+    height: 100%;
   }
   .carousel {
     max-width: 1100px;
@@ -389,7 +392,8 @@
 
 @media (min-width: 1361px) and (max-width: 1440px) {
   .imageContainer {
-    width: 280px;
+    width: 100%;
+    height: 100%;
   }
   .carousel {
     max-width: 1150px;
@@ -413,11 +417,12 @@
 
 @media (max-width: 1188px) {
   .card {
-    height: 500px;
+    height: 100%;
   }
   .imageContainer {
-    padding: 15px;
-    width: 280px;
+    /* padding: 15px; */
+    width: 100%;
+    height: 100%;
   }
 
   .textContent p {
@@ -432,7 +437,7 @@
   }
   .imageContainer {
 
-    width: 280px;
+    width: 100%;
   }
 
   .textContent p {
@@ -455,8 +460,8 @@
     max-width: 100%;
   }
   .imageContainer {
-    padding: 15px;
-    width: 270px;
+    /* padding: 15px; */
+    width: 100%;
   }
 
   .textContent p {

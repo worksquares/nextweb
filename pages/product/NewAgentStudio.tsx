@@ -74,7 +74,7 @@ const agentCards = [
 
 const cards = [
   {
-    tabTitle:"Conversational AI",
+    // tabTitle:"Conversational AI",
     title: "Build Conversational AI Projects",
     description:
       "Effortlessly create AI-powered conversational projects with Digisquares Agent Studio. Select from chatbot and voice assistant templates, and customize with a drag-and-drop interface.",
@@ -83,7 +83,7 @@ const cards = [
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    tabTitle:"Interactions",
+    // tabTitle:"Interactions",
     title: "Manage User Access",
     description:
       "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
@@ -92,7 +92,7 @@ const cards = [
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    tabTitle:"Access Control",
+    // tabTitle:"Access Control",
     title: "Role-Based Access Control",
     description:
       "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
@@ -101,7 +101,7 @@ const cards = [
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    tabTitle:"Manage APIs",
+    // tabTitle:"Manage APIs",
     title: "Integrate and Manage APIs",
     description:
       "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
@@ -110,7 +110,7 @@ const cards = [
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    tabTitle:"Data Management",
+    // tabTitle:"Data Management",
     title: "Manage Agent Data Efficiently",
     description:
       "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",

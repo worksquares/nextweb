@@ -69,7 +69,7 @@ const cards = [
     image: "/assets/Hero & cards/cards/As-card-1.webp",
     moreText: "Learn more",
     moreLink: "/industry/Medical/",
-    demoLink: "/demo/medical-apps",
+    // demoLink: "/demo/medical-apps",
   },
   {
     title: "Classroom Apps That Teach",
@@ -78,7 +78,7 @@ const cards = [
     image: "/assets/Hero & cards/cards/As-card-2.webp",
     moreText: "Learn more",
     moreLink: "/industry/Education/",
-    demoLink: "/demo/manufacturing-apps",
+    // demoLink: "/demo/manufacturing-apps",
   },
   {
     title: "Manufacturing Workflows",
@@ -87,7 +87,7 @@ const cards = [
     image: "/assets/Hero & cards/cards/As-card-3.webp",
     moreText: "Learn more",
     moreLink: "/industry/Manufacturing/",
-    demoLink: "/demo/manufacturing-apps",
+    // demoLink: "/demo/manufacturing-apps",
   },
 
 ];

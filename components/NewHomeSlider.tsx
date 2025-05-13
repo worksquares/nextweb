@@ -8,14 +8,14 @@ import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
 
 interface Card {
-    tabTitle?: string;
+    // tabTitle?: string;
     image: string;
     title?: string;
     description: string;
     links?: { text: string; href: string }[];
     moreText?: string;
     moreLink?: string;
-    demoLink?: string;
+    // demoLink?: string;
 }
 
 interface HomeSliderProps {
@@ -91,9 +91,9 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
               }`}
             >
               <div className={styles.card}>
-                <div className={styles.tabTitle}>
+                {/* <div className={styles.tabTitle}>
                 <h4>{card.tabTitle}</h4>
-                </div>
+                </div> */}
 
                 <div className={styles.vectorContainer}>
                   <Image
@@ -129,14 +129,14 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                       <a href={card.moreLink} className={styles.moreLink}>
                         {card.moreText || "Learn More"} &rarr;
                       </a>
-                      {card.demoLink && (
+                      {/* {card.demoLink && (
 
                         <a href={card.demoLink} className={styles.demoLink}
                         // target="_blank" rel="noopener noreferrer"
                         >
                           Book a Demo
                         </a>
-                      )}
+                      )} */}
 
                     </div>
                   </div>
