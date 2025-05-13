@@ -31,8 +31,9 @@
     font-size: 98px;
     font-weight: 900;
     margin: 0;
-    line-height: 6rem;
+    line-height: 1rem;
     color: white;
+
   }
 
   /* .subtitle_accelerate {
@@ -44,8 +45,11 @@
   .description_accelerate {
     font-size: 18px;
     margin-bottom: 30px;
-    max-width: 400px;
+    /* max-width: 600px; */
     color: white;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    padding: 10px 0;
     }
 
   .GetStartedBtn {
@@ -108,7 +112,7 @@
 
     .title_accelerate {
       font-size: 40px;
-      line-height: 60px;
+      line-height: 40px;
     }
 
     .subtitle_accelerate {
@@ -148,19 +152,23 @@
 
   @media screen and (min-width: 769px) and (max-width: 1400px) {
       .content {
-      width: 30%;
+      width: 40%;
+    }
+    .title_accelerate{
+      font-size: 7.6rem;
+      line-height: 6.5rem;
     }
 
     .mainImage {
-      height: 550px;
-      width: 550px;
+      height: 500px;
+      width: 500px;
     }
   }
 
   @media screen and (min-width: 1430px) and (max-width: 1440px){
     .title_accelerate {
       font-size: 8rem;
-      line-height: 8rem;
+      line-height: 7rem;
     }
     .agentSection {
       flex-direction: row;
@@ -186,7 +194,7 @@
   @media screen and (min-width: 1440px) and (max-width: 1600px) {
     .title_accelerate {
       font-size: 8em;
-      line-height: 8rem;
+      line-height: 7rem;
     }
     .content {
       width: 50%;
@@ -207,7 +215,7 @@
    @media screen and (min-width: 1920px)  {
     .title_accelerate {
       font-size: 10.8rem;
-      line-height: 10rem;
+      line-height: 9.5rem;
       max-width: 80%;
     }
     .content {

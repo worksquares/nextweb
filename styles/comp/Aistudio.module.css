@@ -190,9 +190,9 @@
   justify-content: space-between;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-}
+} */
 
 .cardTitle {
   font-size: 1.25rem;
@@ -485,7 +485,7 @@ cursor: pointer;
     top:20px;
   }
   .registerButton{
-    width:25%
+    width:26%
   }
 
   .title {
@@ -537,7 +537,7 @@ cursor: pointer;
 
 
     .registerButton {
-      width: 30%;
+      width: 26%;
       text-align: center;
     }
 
@@ -576,7 +576,7 @@ cursor: pointer;
   }
 
   .registerButton{
-    width:20%;
+    width:26%;
     text-align: center;
   }
   .mainImages {
