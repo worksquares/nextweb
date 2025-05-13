@@ -283,6 +283,28 @@ const AgentStudio = () => {
               </div>
             ))}
           </div>
+          {/* <div className={styles.integrationRow}>
+            {[
+              { name: "DynamoDB", file: "OracleDB.svg" },
+              { name: "PostgreSQL", file: "Jira.svg" },
+              { name: "CouchDB", file: "Twilio.svg" },
+              { name: "Amazon Redshift", file: "SMTP.svg" },
+              { name: "AuthO", file: "SMTP.svg" },
+              { name: "Firebase", file: "SMTP.svg" },
+            ].map((integration, index) => (
+              <div key={`row4-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div> */}
+
         </div>
       </section>
 
