@@ -32,7 +32,7 @@
   display: flex !important;
   justify-content: center;
   width: 100px;
-
+  height: 100%;
 }
 
 .card {
@@ -342,7 +342,7 @@
     width: 83%;
     margin: 0 auto;
     max-height: 1000px;
-    height: 500px !important;
+    height: 550px !important;
 
   }
   /* .card {
@@ -355,7 +355,7 @@
     max-width: 450px;
     width: 100%;
     /* overflow: hidden; */
-    max-height: 200px;
+    max-height: 300px;
     height: 230px;
     /* margin: 0; */
 
@@ -364,7 +364,7 @@
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 230px;
+    height: 250px;
     object-fit: cover;
     width: 300px;
 
@@ -372,6 +372,15 @@
   .textContent p {
     height: 110px;
 
+  }
+
+  .cardWrapper {
+    padding: 20px;
+    /* box-sizing: border-box; */
+    display: flex !important;
+    justify-content: center;
+    width: 100px;
+    height: 650px;
   }
 
 
@@ -404,8 +413,11 @@
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 500px !important;
+    height: 450px !important;
 
+  }
+  .cardWrapper{
+    height: 100%;
   }
   .prevArrow {
     left: -90px; /* Adjust as needed */
@@ -433,8 +445,11 @@
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 500px !important;
+    height: 450px !important;
 
+  }
+  .cardWrapper{
+    height: 100%;
   }
   .prevArrow {
     left: -100px; /* Adjust as needed */
