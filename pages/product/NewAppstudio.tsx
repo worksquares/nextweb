@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import CustomImage from "../../components/CustomImage";
 import MainFooter from "../../components/MainFooter";
@@ -209,7 +210,94 @@ const AppStudio = () => {
 
 
         {/* <AppStudioSlider cards={cards} /> */}
+        <section className={styles.integrationSection}>
+        <h2 className={styles.integrationTitle}>
+          Enterprise – <strong>ready integrations</strong>
+        </h2>
 
+        <div className={styles.integrationGrid}>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Azure", file: "Azure.svg" },
+              { name: "Basecamp", file: "Basecamp.svg" },
+              { name: "BigID", file: "BigID.svg" },
+              { name: "BigQuery", file: "BigQuery.svg" },
+              { name: "Box", file: "Box.svg" },
+            ].map((integration, index) => (
+              <div key={`row1-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Braintree", file: "Braintree.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
+              { name: "Cassandra", file: "Cassandra.svg" },
+              { name: "CircleCI", file: "CircleCI.svg" },
+            ].map((integration, index) => (
+              <div key={`row2-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Close", file: "Close.svg" },
+              { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              { name: "CosmosDB", file: "CosmosDB.svg" },
+              { name: "CouchDB", file: "CouchDB.svg" },
+              { name: "Denodo", file: "Denodo.svg" },
+            ].map((integration, index) => (
+              <div key={`row3-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Docusign", file: "Docusign.svg" },
+              { name: "DynamoDB", file: "DynamoDB.svg" },
+              { name: "Dynatrace", file: "Dynatrace.svg" },
+              { name: "ElasticSearch", file: "ElasticSearch.svg" },
+              // { name: "Eventbrite", file: "Eventbrite.svg" },
+            ].map((integration, index) => (
+              <div key={`row4-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+          </div></section>
       </Screen>
       <NewHomeSlider cards={cards} />
 

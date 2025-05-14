@@ -268,6 +268,27 @@ const AiStudio = () => {
               </div>
             ))}
           </div>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "AppDynamics", file: "AppDynamics.svg" },
+              { name: "Asana", file: "Asana.svg" },
+              { name: "Auth0", file: "Auth0.svg" },
+              { name: "Authorize.Net", file: "Authorize.Net.svg" },
+              // { name: "AuthO", file: "SMTP.svg" },
+              // { name: "Firebase", file: "SMTP.svg" },
+            ].map((integration, index) => (
+              <div key={`row4-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

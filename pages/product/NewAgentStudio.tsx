@@ -283,14 +283,14 @@ const AgentStudio = () => {
               </div>
             ))}
           </div>
-          {/* <div className={styles.integrationRow}>
+          <div className={styles.integrationRow}>
             {[
-              { name: "DynamoDB", file: "OracleDB.svg" },
-              { name: "PostgreSQL", file: "Jira.svg" },
-              { name: "CouchDB", file: "Twilio.svg" },
-              { name: "Amazon Redshift", file: "SMTP.svg" },
-              { name: "AuthO", file: "SMTP.svg" },
-              { name: "Firebase", file: "SMTP.svg" },
+              { name: "Adyen", file: "Adyen.svg" },
+              { name: "Amazon Athena", file: "AmazonAthena.svg" },
+              { name: "Amazon Redshift", file: "AmazonRedshift.svg" },
+              { name: "Amazon S3", file: "AmazonS3.svg" },
+              // { name: "AuthO", file: "SMTP.svg" },
+              // { name: "Firebase", file: "SMTP.svg" },
             ].map((integration, index) => (
               <div key={`row4-${index}`} className={styles.integrationCard}>
                 <Image
@@ -303,7 +303,7 @@ const AgentStudio = () => {
                 <span>{integration.name}</span>
               </div>
             ))}
-          </div> */}
+          </div>
 
         </div>
       </section>

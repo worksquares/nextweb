@@ -45,7 +45,7 @@
   border-radius: 8px;
   transition: transform 0.3s ease;
   width: 100% !important;
-  /* height: 100%px !important; */
+  height: 100% !important;
 
   }
 
@@ -97,7 +97,7 @@
 .cardImage {
   display: block;
   margin: 0 auto;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   width: 300px;
 
@@ -115,12 +115,13 @@
 .textContent h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   color: #333;
+  margin: 8px 0;
 }
 
 .textContent p {
-  height: 115px;
+  height: 108px;
   /* width: 200px; */
   /* white-space: nowrap; */
   overflow: hidden;
@@ -130,7 +131,7 @@
   /* -webkit-line-clamp: 5; */
   -webkit-box-orient: vertical;
   line-height: 1.4;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
 }
 
@@ -330,22 +331,50 @@
 /* Responsive */
 @media (max-width: 1920px) {
   .card {
-    max-height: 800px;
-    height: 800px;
-    width: 90% ;
+    /* max-height: 1000px; */
+    /* height: 500px !important;
+    width: 90% ; */
+    height: 100%;
+    width: 100%;
   }
 
   .carousel {
     width: 83%;
     margin: 0 auto;
     max-height: 1000px;
-    height: 630px;
+    height: 600px !important;
 
   }
-  .card {
+  /* .card {
     max-width: 100%;
-    /* height: 500px; */
+    height: 500px;
+    height: auto;
+  } */
+  .imageContainer {
+
+    max-width: 450px;
+    width: 100%;
+    /* overflow: hidden; */
+    max-height: 250px;
+    height: 230px;
+    /* margin: 0; */
+
   }
+
+  .cardImage {
+    display: block;
+    margin: 0 auto;
+    height: 230px;
+    object-fit: cover;
+    width: 300px;
+
+  }
+  .textContent p {
+    height: 100px;
+
+  }
+
+
 
 
 
@@ -405,6 +434,9 @@
   .prevArrow {
     left: -100px; /* Adjust as needed */
   }
+  .card{
+    height: 100%;
+  }
 
   .nextArrow {
     right: -100px; /* Adjust as needed */
@@ -434,8 +466,9 @@
 
 @media (max-width: 1024px) {
   .card {
-    height: 500px;
+    /* height: 500px; */
     max-width: 95%;
+    height: 100%;
   }
   .imageContainer {
 
