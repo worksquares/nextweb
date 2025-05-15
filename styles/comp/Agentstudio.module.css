@@ -573,7 +573,7 @@ cursor: pointer;
 
   .description {
     font-size: 1.2rem;
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .redUnderline{
@@ -581,7 +581,7 @@ cursor: pointer;
   }
 
   .imageContainer{
-    width: 80%;
+    width: 70%;
   }
 
   .registerButton{
