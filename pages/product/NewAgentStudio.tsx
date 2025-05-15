@@ -229,6 +229,8 @@ const AgentStudio = () => {
               { name: "Pinecone", file: "pinecone.svg" },
               { name: "Google", file: "Google.svg" },
               { name: "Telegram", file: "Telegram.svg" },
+              { name: "Microsoft SQL", file: "MicrosoftSQL.svg" },
+              { name: "SAP Hana", file: "SAPHana.svg" },
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -249,6 +251,8 @@ const AgentStudio = () => {
               { name: "Jira", file: "Jira.svg" },
               { name: "Twilio", file: "Twilio.svg" },
               { name: "SMTP", file: "SMTP.svg" },
+              { name: "Netsuite", file: "Netsuite.svg" },
+              { name: "Presto", file: "Presto.svg" },
             ].map((integration, index) => (
               <div key={`row2-${index}`} className={styles.integrationCard}>
                 <Image
@@ -270,6 +274,8 @@ const AgentStudio = () => {
               { name: "Tableau", file: "Tableau.svg" },
               { name: "Datadog", file: "Datadog.svg" },
               { name: "MongoDBAtlas", file: "MongoDB Atlas.svg" },
+              { name: "Vertica", file: "Vertica.svg" },
+              { name: "Vimeo", file: "Vimeo.svg" },
             ].map((integration, index) => (
               <div key={`row3-${index}`} className={styles.integrationCard}>
                 <Image
@@ -289,8 +295,8 @@ const AgentStudio = () => {
               { name: "Amazon Athena", file: "AmazonAthena.svg" },
               { name: "Amazon Redshift", file: "AmazonRedshift.svg" },
               { name: "Amazon S3", file: "AmazonS3.svg" },
-              // { name: "AuthO", file: "SMTP.svg" },
-              // { name: "Firebase", file: "SMTP.svg" },
+              { name: "Eventbrite", file: "Eventbrite.svg" },
+              { name: "Evernote", file: "Evernote.svg" },
             ].map((integration, index) => (
               <div key={`row4-${index}`} className={styles.integrationCard}>
                 <Image

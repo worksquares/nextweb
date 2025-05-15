@@ -214,6 +214,8 @@ const AiStudio = () => {
               { name: "Vertex AI", file: "Vertex AI.svg" },
               { name: "Cohere AI", file: "Cohere AI.svg" },
               { name: "Stability AI", file: "Stability AI.svg" },
+              { name: "BigQuery", file: "BigQuery.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -234,6 +236,8 @@ const AiStudio = () => {
               { name: "Pinecone", file: "pinecone.svg" },
               { name: "Weaviate Dynamics", file: "Weaviate Dynamics.svg" },
               { name: "MongoDB Atlas", file: "MongoDB Atlas.svg" },
+              { name: "Google Analytics API", file: "Google Analytics API.svg" },
+              { name: "BigID", file: "BigID.svg" },
             ].map((integration, index) => (
               <div key={`row2-${index}`} className={styles.integrationCard}>
                 <Image
@@ -255,6 +259,8 @@ const AiStudio = () => {
               { name: "WhatsApp", file: "WhatsApp.svg" },
               { name: "Front", file: "Front.svg" },
               { name: "SendGrid", file: "SendGrid.svg" },
+              { name: "GraphQL", file: "GraphQL.svg" },
+              { name: "AppDynamics", file: "AppDynamics.svg" },
             ].map((integration, index) => (
               <div key={`row3-${index}`} className={styles.integrationCard}>
                 <Image
@@ -274,8 +280,8 @@ const AiStudio = () => {
               { name: "Asana", file: "Asana.svg" },
               { name: "Auth0", file: "Auth0.svg" },
               { name: "Authorize.Net", file: "Authorize.Net.svg" },
-              // { name: "AuthO", file: "SMTP.svg" },
-              // { name: "Firebase", file: "SMTP.svg" },
+              { name: "Cloud Data Store", file: "CloudDataStore.svg" },
+              { name: "Intercom", file: "Intercom.svg" },
             ].map((integration, index) => (
               <div key={`row4-${index}`} className={styles.integrationCard}>
                 <Image

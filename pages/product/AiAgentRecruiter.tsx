@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { Input, Typography } from "antd";
+import React, { useState } from "react";
 import styles from "../../styles/comp/AiAgentRecruiter.module.css";
 
 const { Title } = Typography;
@@ -101,7 +101,7 @@ const AiAgentRecruiter: React.FC = () => {
                     setSelectedName("Adam");
                   }}
                 >
-                  Chat
+                 <span>Chat</span>
                 </button>
                 <button
                   className={`${styles.radioButton} ${gender === "Female" ? styles.activeRadio : ""}`}
@@ -110,7 +110,7 @@ const AiAgentRecruiter: React.FC = () => {
                     setSelectedName("Sophia");
                   }}
                 >
-                  Voice
+                 <span>Voice</span>
                 </button>
               </div>
             </div>
@@ -145,13 +145,13 @@ const AiAgentRecruiter: React.FC = () => {
                   className={styles.primaryButton}
                   onClick={handleSendOtp}
                 >
-                  Send OTP
+                  <span className="sp">Send OTP</span>
                 </button>
                 <button
                   className={styles.primaryButton}
                   onClick={() => alert("AI Call Triggered")}
                 >
-                  Test AI Call
+                  <span className="sp">Test AI Call</span>
                 </button>
               </div>
             </div>

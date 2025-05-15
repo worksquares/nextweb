@@ -223,6 +223,8 @@ const AppStudio = () => {
               { name: "BigID", file: "BigID.svg" },
               { name: "BigQuery", file: "BigQuery.svg" },
               { name: "Box", file: "Box.svg" },
+              { name: "Monday", file: "Monday.svg" },
+              { name: "Razorpay", file: "Razorpay.svg" },
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -243,6 +245,8 @@ const AppStudio = () => {
               { name: "Freshdesk", file: "Freshdesk.svg" },
               { name: "Cassandra", file: "Cassandra.svg" },
               { name: "CircleCI", file: "CircleCI.svg" },
+              { name: "Intercom", file: "Intercom.svg" },
+              { name: "Zoho CRM", file: "ZohoCRM.svg" },
             ].map((integration, index) => (
               <div key={`row2-${index}`} className={styles.integrationCard}>
                 <Image
@@ -260,10 +264,13 @@ const AppStudio = () => {
           <div className={styles.integrationRow}>
             {[
               { name: "Close", file: "Close.svg" },
-              { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              { name: "Dynatrace", file: "Dynatrace.svg" },
               { name: "CosmosDB", file: "CosmosDB.svg" },
               { name: "CouchDB", file: "CouchDB.svg" },
               { name: "Denodo", file: "Denodo.svg" },
+              { name: "Salesforce", file: "Salesforce.svg" },
+              { name: "Stripe", file: "Stripe.svg" },
+
             ].map((integration, index) => (
               <div key={`row3-${index}`} className={styles.integrationCard}>
                 <Image
@@ -281,9 +288,10 @@ const AppStudio = () => {
             {[
               { name: "Docusign", file: "Docusign.svg" },
               { name: "DynamoDB", file: "DynamoDB.svg" },
-              { name: "Dynatrace", file: "Dynatrace.svg" },
+              { name: "CloudDatastore", file: "CloudDatastore.svg" },
               { name: "ElasticSearch", file: "ElasticSearch.svg" },
-              // { name: "Eventbrite", file: "Eventbrite.svg" },
+              { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
             ].map((integration, index) => (
               <div key={`row4-${index}`} className={styles.integrationCard}>
                 <Image

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,6 +40,8 @@ const NextArrow = (props: any) => (
 
 const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const router=useRouter();
+    const showRibbon=router.pathname ==="/";
 
     const settings = {
         dots: true,
@@ -51,7 +54,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         centerMode: true,
-        centerPadding: "40px",
+        centerPadding: "0px",
         pauseOnHover: true,
         // autoplay: autoplay,
         // autoplaySpeed: speed,
@@ -95,6 +98,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                 <h4>{card.tabTitle}</h4>
                 </div> */}
 
+              {showRibbon && (
                 <div className={styles.vectorContainer}>
                   <Image
                     src={redVector.src}
@@ -104,6 +108,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                     height={20}
                   />
                 </div>
+              )}
                 <div className={styles.cardContentWrapper}>
                   <div className={styles.imageContainer}>
                     <CustomImage
