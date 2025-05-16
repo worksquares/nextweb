@@ -484,7 +484,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1439px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -509,11 +509,11 @@ cursor: pointer;
   }
 
   .title {
-    font-size: 70px;
+    font-size: 6.3rem;
   }
 
   .imageContainer{
-    width: 70%;
+    width: 50%;
   }
 
   .mainImages {
@@ -526,7 +526,7 @@ cursor: pointer;
 
   .description {
     /* max-width: 500px; */
-    font-size: 1.1rem;
+    font-size: 18px;
     max-width: 95%;
   }
   .cardGrid {
@@ -536,8 +536,8 @@ cursor: pointer;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* @media screen and (min-width: 1400px) and (max-width: 1440px) {
+/*
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
   .title {
     font-size: 4rem;
     line-height: 1.2;
@@ -575,12 +575,12 @@ cursor: pointer;
 
 @media screen and (min-width: 1441px) {
   .title {
-    font-size: 7em;
+    font-size: 8.7rem;
     line-height: 7rem;
    }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 18px;
     max-width: 95%;
   }
 
@@ -589,7 +589,7 @@ cursor: pointer;
   }
 
   .imageContainer{
-    width: 70%;
+    width: 50%;
   }
 
   .registerButton{

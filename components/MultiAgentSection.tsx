@@ -24,7 +24,7 @@ const MultiAgentSection: React.FC = () => {
   </span>{' '}
   Effortlessly with No Code Required
 </h1>
-<p style={{ fontSize: '16px', color: '#606060', marginBottom: '20px' }}>
+<p style={{ fontSize: '16px', color: '#606060', marginTop:'0px', marginBottom: '20px' }}>
   Leverage Digisquares’ all-in-one platform for quick app development, chatbot creation, and AI model deployment.
 </p>
 
