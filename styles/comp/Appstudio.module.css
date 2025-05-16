@@ -147,7 +147,7 @@
   background-color: #f4f4f4;
   transform: scale(1.05);
   cursor: pointer;
-  color:#000
+  color:#000;
 }
 
 
@@ -534,6 +534,15 @@ cursor: pointer;
   .title {
     width: 100%;
   }
+
+  .description{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   .redUnderline{
     top:20px;
   }
@@ -578,7 +587,7 @@ cursor: pointer;
     top:20px;
   }
   .registerButton{
-    width:25%
+    width:30%
   }
 
   .title {
@@ -599,7 +608,8 @@ cursor: pointer;
 
   .description {
     /* max-width: 500px; */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    max-width: 95%;
   }
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -609,7 +619,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1440px) {
+/* @media screen and (min-width: 1400px) and (max-width: 1440px) {
   .title {
     font-size: 4rem;
     line-height: 1.2;
@@ -625,7 +635,7 @@ cursor: pointer;
   }
 
   .mainImages {
-    /* max-width: 80%; */
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
   }
@@ -637,7 +647,7 @@ cursor: pointer;
   .resourceGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 @media screen and (min-width: 1441px) {
   .title {
@@ -647,7 +657,7 @@ cursor: pointer;
 
   .description {
     font-size: 1.2rem;
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .redUnderline{

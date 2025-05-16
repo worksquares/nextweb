@@ -410,7 +410,7 @@
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 450px !important;
+    height: 480px !important;
 
   }
   .cardWrapper{
@@ -442,7 +442,7 @@
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 450px !important;
+    height: 490px !important;
 
   }
   .cardWrapper{
@@ -508,12 +508,15 @@
     height: 100%;
   }
   .imageContainer {
-
+    height: 100%;
     width: 100%;
+  }
+  .textContent h3{
+    height: 50px;
   }
 
   .textContent p {
-    height: 95px;
+    height: 90px;
   }
 }
 

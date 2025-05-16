@@ -484,7 +484,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1400px) {
+@media screen and (min-width: 769px) and (max-width: 1439px) {
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -513,7 +513,7 @@ cursor: pointer;
   }
 
   .imageContainer{
-    width: 60%;
+    width: 70%;
   }
 
   .mainImages {
@@ -527,6 +527,7 @@ cursor: pointer;
   .description {
     /* max-width: 500px; */
     font-size: 1.1rem;
+    max-width: 95%;
   }
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -536,7 +537,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1440px) {
+/* @media screen and (min-width: 1400px) and (max-width: 1440px) {
   .title {
     font-size: 4rem;
     line-height: 1.2;
@@ -570,7 +571,7 @@ cursor: pointer;
   .resourceGrid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 
 @media screen and (min-width: 1441px) {
   .title {
