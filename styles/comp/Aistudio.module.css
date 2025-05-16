@@ -1,6 +1,7 @@
 .wrapper {
   background: linear-gradient(180deg, #00796b 175%, #26a69a 85%);
   height: calc(100vh - 70px);
+  width: 100%;
   color: white;
   display: flex;
   align-items: center;
@@ -353,7 +354,10 @@ cursor: pointer;
 @media screen and (max-width: 480px) {
   .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    height: calc(900px);
+    padding: 40px 20px;
+    width: 100%;
 
   }
   .content {
@@ -378,6 +382,10 @@ cursor: pointer;
 
   .title {
     width: 100%;
+  }
+  .description{
+    font-size: 18px;
+    font-weight: 500;
   }
   .registerButton {
     margin-top: 20px;

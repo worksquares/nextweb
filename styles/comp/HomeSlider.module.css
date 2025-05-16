@@ -574,6 +574,12 @@
   .textContent {
     padding: 0 10px 10px;
   }
+  .textContent h3{
+    height: 40px;
+  }
+  /* .textContent p {
+  height: 90px;
+  } */
 
   .moreLink,
   .link {

@@ -366,7 +366,11 @@ cursor: pointer;
 @media screen and (max-width: 480px) {
   .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    height: calc(900px);
+    padding: 40px 20px;
+    width: 100%;
+
 
   }
   .content {
@@ -387,6 +391,9 @@ cursor: pointer;
 
   .title {
     width: 100%;
+  }
+  .description{
+    font-weight: 500;
   }
   .registerButton {
     margin-top: 20px;
