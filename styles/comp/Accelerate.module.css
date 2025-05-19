@@ -27,14 +27,14 @@
     /* padding-bottom: 30px; */
   }
 
-  .title_accelerate {
+  /* .title_accelerate {
     font-size: 98px;
     font-weight: 900;
     margin: 0;
     line-height: 1rem;
     color: white;
 
-  }
+  } */
 
   /* .subtitle_accelerate {
     font-size: 24px;
@@ -43,10 +43,10 @@
   } */
 
   .description_accelerate {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-bottom: 30px;
-    /* max-width: 600px; */
-    color: white;
+    max-width: 740px;
+    /* color: white; */
     /* margin-top: 30px;
     margin-bottom: 30px; */
     padding: 10px 0;
@@ -110,21 +110,21 @@
       padding: 0 10px;
     }
 
-    .title_accelerate {
+    /* .title_accelerate {
       font-size: 40px;
       line-height: 40px;
-    }
+    } */
 
     .subtitle_accelerate {
       font-size: 20px;
     }
 
     .description_accelerate {
-      font-size: 18px;
+      /* font-size: 18px; */
       text-align: center;
       width: 100%;
-      font-weight: 500;
-      color: white;
+      /* font-weight: 500; */
+      /* color: white; */
     }
 
     /* .description_accelerate {
@@ -155,10 +155,10 @@
       .content {
       width: 40%;
     }
-    .title_accelerate{
+    /* .title_accelerate{
       font-size: 7.6rem;
       line-height: 6.5rem;
-    }
+    } */
 
     .mainImage {
       height: 500px;
@@ -167,10 +167,10 @@
   }
 
   @media screen and (min-width: 1430px) and (max-width: 1440px){
-    .title_accelerate {
+    /* .title_accelerate {
       font-size: 8rem;
       line-height: 7rem;
-    }
+    } */
     .agentSection {
       flex-direction: row;
       justify-content: space-evenly;
@@ -188,15 +188,18 @@
       max-width: 720px;
       height: auto;
     }
+    .description_accelerate{
+      width: 90%;
+    }
 
   }
 
 
   @media screen and (min-width: 1440px) and (max-width: 1600px) {
-    .title_accelerate {
+    /* .title_accelerate {
       font-size: 8em;
       line-height: 7rem;
-    }
+    } */
     .content {
       width: 50%;
     }
@@ -214,11 +217,11 @@
   }
 
    @media screen and (min-width: 1920px)  {
-    .title_accelerate {
+    /* .title_accelerate {
       font-size: 10.8rem;
       line-height: 9.5rem;
       max-width: 80%;
-    }
+    } */
     .content {
       width: 50%;
     }

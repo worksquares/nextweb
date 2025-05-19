@@ -152,7 +152,7 @@
 
    .container {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
     justify-content: center;
     /* align-items: center; */
@@ -174,6 +174,7 @@
   } */
   .emphasized {
     font-weight: 900;
+    font-size: 2.8rem;
     color: #000;
     text-align: center;
   }
@@ -182,38 +183,42 @@
     font-size: 3rem;
     margin-bottom: 10px;
   } */
-  /* .subtitle {
+  .subtitle {
     font-size: 1rem;
     color: #777;
     display: block;
     text-align: left;
     margin-top: 5px;
-   } */
+   }
 
   .textSection {
     flex: 1;
     min-width: 300px;
+    width: 100px;
+
+
 
   }
 
   .textSection h2 {
-    font-size: 2.8rem;
+    /* font-size: 2.8rem;
     line-height: 3rem;
-    font-weight: 700;
+    font-weight: 700; */
     margin: 0 0;
+    color: #000;
     /* margin-top: 25px; */
   }
 
 
   .paragraph {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     color: #000;
-    margin :0;
+    margin-bottom:10px;
     padding-top: 50px;
   }
 
   .paragraphText {
-    font-size: 1.17rem;
+    /* font-size: 1.17rem; */
     color: #333;
     text-align: justify;
     padding-top: 5px;
@@ -240,14 +245,13 @@
     padding: 10px 20px;
     background-color: #ff0707;
     color: #ffffff;
-    font-weight: bold;
-    border: none;
+    /* font-weight: bold;
+    border: none; */
     border-radius: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
     /* margin: 20px 0; */
-    width: 140px;
+    /* width: 140px; */
     margin: 50px 0;
-
   }
 
   /* .learnMoreLink {
@@ -278,7 +282,7 @@
   .divider {
     background-color: #ff0707;
     height: 2px;
-    width: 60%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -290,17 +294,17 @@
       padding: 15px;
     }
 
-    .textSection h2 {
+    /* .textSection h2 {
       font-size: 1.5rem;
-    }
+    } */
 
     .textSection .paragraph {
       font-size: 1.2rem;
     }
 
-    .textSection .paragraphText {
+    /* .textSection .paragraphText {
       font-size: 1rem;
-    }
+    } */
 
     .learnMoreButton {
       margin-left: 0;
@@ -327,13 +331,13 @@
       flex-direction: row;
     }
 
-    .textSection h2 {
+    /* .textSection h2 {
       font-size: 2.5rem;
-    }
+    } */
 
-    .textSection .paragraph {
+    /* .textSection .paragraph {
       font-size: 1.5rem;
-    }
+    } */
 
     .textSection .paragraphText {
       font-size: 1.2rem;
@@ -359,13 +363,13 @@
       flex-direction: row;
     }
 
-    .textSection h2 {
+    /* .textSection h2 {
       font-size: 2.8rem;
-    }
+    } */
 
-    .textSection .paragraph {
+    /* .textSection .paragraph {
       font-size: 1.8rem;
-    }
+    } */
 
     .textSection .paragraphText {
       font-size: 1.3rem;
@@ -386,16 +390,16 @@
       flex-direction: row;
     }
 
-    .textSection h2 {
+    /* .textSection h2 {
       font-size: 3.5rem;
-      /* line-height: 3.5rem;
+      line-height: 3.5rem;
       font-weight: 700;
-      margin-top: 40px; */
-    }
+      margin-top: 40px;
+    } */
 
-    .textSection .paragraph {
+    /* .textSection .paragraph {
       font-size: 2rem;
-    }
+    } */
 
     .textSection .paragraphText {
       font-size: 1rem;
@@ -432,7 +436,7 @@
     }
 
     .textSection h2 {
-      font-size: 3.8rem;
+      /* font-size: 3.8rem; */
       /* font-size: 2.5rem; */
       line-height: 3.5rem;
       font-weight: 700;
@@ -440,7 +444,7 @@
     }
 
     .textSection .paragraph {
-      font-size: 2.5rem;
+      /* font-size: 2.5rem; */
       /* font-size: 2rem;
       color: #000; */
       /* margin-top: 20px;
@@ -453,8 +457,9 @@
 
     }
 
+
     .container .divider {
-      width: 60%;
+      width: 100%;
     }
 
 

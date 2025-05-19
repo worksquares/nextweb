@@ -41,26 +41,26 @@
   object-fit: cover;
 }
 
-.subtitle {
+/* .subtitle {
   font-size: 24px;
   margin: 20px 0 10px 0;
   font-weight: 600;
-}
+} */
 
 .title {
-  font-size: 98px;
-  font-weight: 900;
+  /* font-size: 98px;
+  font-weight: 900; */
   margin: 0;
-  line-height: 6rem;
+  /* line-height: 6rem; */
   color: #ffffff;
-}
+  }
 
 .description {
   max-width: 400px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
+  /* font-size: 18px;
+  font-weight: 700; */
 }
 
 .integrationSection {
@@ -71,8 +71,8 @@
 }
 
 .integrationTitle {
-  font-size: 2.5rem;
-  font-weight: 400;
+  /* font-size: 2.5rem;
+  font-weight: 400; */
   margin-bottom: 30px;
 }
 
@@ -130,6 +130,10 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 } */
+
+.GetStartedBtn {
+  margin-top: 30px;
+}
 .registerButton {
   background-color: #ff0000;
   color: #fff;
@@ -160,7 +164,7 @@
 }
 
 .heading {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -233,10 +237,10 @@
   border: none;
   padding: 10px 24px;
   border-radius: 20px;
-  font-size: 1rem;
-  font-weight: bold;
+  /* font-size: 1rem;
+  font-weight: bold; */
   margin-top: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   white-space: nowrap;
 }
 
@@ -467,7 +471,7 @@ cursor: pointer;
 
   .title {
     width: 100%;
-    line-height: 7rem;
+    /* line-height: 7rem; */
   }
   .description{
     font-weight: 500;
@@ -547,7 +551,7 @@ cursor: pointer;
     top:20px;
   }
   .resourceTitle {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -586,14 +590,9 @@ cursor: pointer;
   .redUnderline{
     top:20px;
   }
-  .registerButton{
-    width:30%
-  }
 
-  .title {
-    font-size: 6.3rem;
-    /* line-height: 5rem; */
-  }
+
+
 
   .imageContainer{
     width: 50%;
@@ -609,8 +608,9 @@ cursor: pointer;
 
   .description {
     /* max-width: 500px; */
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 95%;
+    margin: 30px 0;
   }
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -651,14 +651,15 @@ cursor: pointer;
 } */
 
 @media screen and (min-width: 1441px) {
-  .title {
+  /* .title {
     font-size: 8.7rem;
     line-height: 7rem;
-  }
+  } */
 
   .description {
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 95%;
+    margin: 50px 0;
   }
 
   .redUnderline{
@@ -669,9 +670,7 @@ cursor: pointer;
     width: 50%;
   }
 
-  .registerButton{
-    width:20%
-  }
+
   .mainImages {
     /* width: 60%; */
     /* max-width: 580px; */

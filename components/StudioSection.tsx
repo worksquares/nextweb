@@ -16,7 +16,7 @@ interface StudioSectionProps {
 const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundColor, link }) => {
   return (
     <div className={styles.studioCard} style={{ backgroundColor }}>
-      <h1 className={styles.title}>{title}</h1>
+      <h3 className={styles.title}>{title}</h3>
       <p style={{fontSize:18}}className={styles.description}>{description}</p>
       <a href={link} style={{ textDecoration: 'none' }} className={styles.learnMoreLink}>
         <button className={styles.learnMoreButton}>Learn more →</button>
@@ -38,4 +38,3 @@ const StudioSection: React.FC<StudioSectionProps> = ({ cardsData }) => {
 };
 
 export default StudioSection;
-

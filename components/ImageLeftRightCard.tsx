@@ -156,10 +156,10 @@ const ImageLeftRightCard: React.FC<Props> = ({
           <div
             className={Styles.buttonLinkContainer}
             style={{
-               justifyContent: dir === "right" ? "flex-end" : "flex-start", // Align button to the left or right based on image direction
+               justifyContent: dir === "right" ? "flex-end" : "flex-end", // Align button to the left or right based on image direction
               display: "flex", // Ensure the div behaves like a flex container
               flexDirection: "column", // Stack the button on top if needed
-              alignItems: dir === "right" ? "flex-end" : "flex-start", // Align items (button) to the start or end of the container
+              alignItems: dir === "right" ? "flex-end" : "flex-end", // Align items (button) to the start or end of the container
               width: "100%", // Ensure the container takes up the full width of the image section
               marginTop: "auto", // Push button to the bottom if needed
             }}

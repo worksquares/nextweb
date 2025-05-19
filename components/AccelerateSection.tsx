@@ -1,6 +1,6 @@
-import Headseo from "../pages/headseo";
-import styles from '../styles/comp/Accelerate.module.css'
 import Link from "next/link";
+import Headseo from "../pages/headseo";
+import styles from '../styles/comp/Accelerate.module.css';
 // import Image from "next/image";
 import Screen from "../comp/Screen";
 
@@ -8,7 +8,7 @@ import Screen from "../comp/Screen";
 
 const AccelerateSection = () => {
   return (
-    
+
     <>
       <Headseo
         title={`Low-Code Development Platform | Digisquares`}
@@ -22,8 +22,8 @@ const AccelerateSection = () => {
         <Screen>
           <div className={styles.agentSection}>
             <div className={styles.content}>
-              <h2 className={styles.title_accelerate}>Accelerate</h2>
-              <h2 className={styles.title_accelerate}>with AI</h2>
+              <h1 className={styles.title_accelerate}>Accelerate</h1>
+              <h1 className={styles.title_accelerate}>with AI</h1>
               <h4 className={styles.description_accelerate}>
                 Build apps, create chatbots, and deploy AI models effortlessly - no code required.
               </h4>
@@ -100,10 +100,10 @@ export default AccelerateSection;
 //           </div>
 //         </div>
 
-        
+
 // <div className={styles.imageContainer}>
 //   <Image
-//     src="/assets/Hero & cards/HeroSection/Hero.gif" 
+//     src="/assets/Hero & cards/HeroSection/Hero.gif"
 //     alt="AI Box"
 //     className={styles.mainImage}
 //     width={50}
@@ -118,5 +118,3 @@ export default AccelerateSection;
 
 //   );
 // };
-
-

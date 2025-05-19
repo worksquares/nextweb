@@ -16,17 +16,18 @@
   margin-top: 50px;
 }
 
-.studioCard h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.studioCard h3 {
+  /* font-size: 3rem;
+  font-weight: bold; */
   margin: 0;
   text-align: center;
 }
 
 .studioCard p {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   text-align: left;
   margin: 20px 0;
+  height: 200px;
 }
 .learnMoreLink {
   display: flex;
@@ -67,13 +68,13 @@
     padding: 15px;
   }
 
-  .studioCard h1 {
+  /* .studioCard h3 {
     font-size: 3rem;
-  }
+  } */
 
-  .studioCard p {
+  /* .studioCard p {
     font-size: 1.2rem;
-  }
+  } */
 
   .studioSection {
     padding: 15px;
@@ -100,13 +101,13 @@
     height: 400px;
   }
 
-  .studioCard h1 {
+  /* .studioCard h3 {
     font-size: 3rem;
-  }
+  } */
 
-  .studioCard p {
+  /* .studioCard p {
     font-size: 1.2rem;
-  }
+  } */
   .learnMoreLink {
     justify-content: center;
   }
@@ -128,15 +129,15 @@
     margin-top: 70px;
   }
 
-  .studioCard h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
+  .studioCard h3 {
+    /* font-size: 4.5rem;
+    font-weight: bold; */
     margin: 0;
     text-align: center;
   }
 
   .studioCard p {
-    font-size: 25px !important;
+    /* font-size: 25px !important; */
     text-align: left;
     margin: 40px 5px ;
     /* font-weight: 550; */

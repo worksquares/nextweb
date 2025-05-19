@@ -113,9 +113,17 @@ const AppStudio = () => {
           <h1 className={styles.title}>App Studio</h1>
           <h4 className={styles.description}>
           Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h4>
-          <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+
+          <div className={styles.GetStartedBtn}>
+          <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.registerButton} rel="nofollow">Register</a>
+                   </Link>
+
+      </div>
+
+          {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register
-      </Link>
+      </Link> */}
         </div>
         <div className={styles.imageContainer}>
           <CustomImage

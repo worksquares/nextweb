@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .agentSection {
@@ -37,10 +37,10 @@
 }
 
 .title {
-  font-size: 98px;
-  font-weight: 900;
+  /* font-size: 98px;
+  font-weight: 900; */
   margin: 0;
-  line-height: 6rem;
+  /* line-height: 6rem; */
   color: white;
 }
 
@@ -48,32 +48,35 @@
   max-width: 400px;
   margin-top: 23px;
   color: #f8f8f8;
-  font-size: 18px;
-  font-weight: 700;
+  /* font-size: 18px;
+  font-weight: 700; */
 
 }
+/* .GetStartedBtn {
+  margin-top: 30px;
+} */
 
 .registerButton {
-  /* margin-top: 20px; */
-  padding: 12px 32px;
   background-color: #ff0000;
   color: #fff;
-  /* border: none; */
-  border-radius: 50px;
-  /* cursor: pointer; */
   font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 50px;
   font-size: 18px;
   text-align: center;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
+
 .registerButton:hover{
   background-color: #f4f4f4;
   transform: scale(1.05);
   cursor: pointer;
-  color:#000
 }
+
+
 
 .possibilitySection {
   text-align: center;
@@ -83,7 +86,7 @@
 }
 
 .heading {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -93,7 +96,7 @@
 }
 
 .subtext {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   max-width: 700px;
   margin: 0 auto 40px;
   color: #555;
@@ -383,15 +386,15 @@ cursor: pointer;
   .title {
     width: 100%;
   }
-  .description{
+  /* .description{
     font-size: 18px;
     font-weight: 500;
-  }
+  } */
   .registerButton {
     margin-top: 20px;
   }
   .resourceTitle {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -453,7 +456,7 @@ cursor: pointer;
     top:20px;
   }
   .resourceTitle {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -492,13 +495,8 @@ cursor: pointer;
   .redUnderline{
     top:20px;
   }
-  .registerButton{
-    width:26%
-  }
 
-  .title {
-    font-size: 6.3rem;
-  }
+
 
   .imageContainer{
     width: 50%;
@@ -514,8 +512,9 @@ cursor: pointer;
 
   .description {
     /* max-width: 500px; */
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 95%;
+    margin: 30px 0;
   }
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -577,14 +576,15 @@ cursor: pointer;
   } */
 
 @media screen and (min-width: 1431px) {
-  .title {
+  /* .title {
     font-size: 8.7rem;
     line-height: 7rem;
-  }
+  } */
 
   .description {
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 95%;
+    margin: 50px 0;
   }
 
   .redUnderline{
@@ -597,7 +597,7 @@ cursor: pointer;
   }
 
   .registerButton{
-    width:23%;
+    /* width:23%; */
     text-align: center;
   }
   .mainImages {

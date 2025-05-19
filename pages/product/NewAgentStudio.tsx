@@ -143,9 +143,16 @@ const AgentStudio = () => {
           <h1 className={styles.title}>Agent Studio</h1>
           <h4 className={styles.description}>
           Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h4>
-          <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+
+          <div className={styles.GetStartedBtn}>
+          <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.registerButton} rel="nofollow">Register</a>
+                   </Link>
+
+      </div>
+          {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register
-      </Link>
+      </Link> */}
         </div>
         <div className={styles.imageContainer}>
           <CustomImage
@@ -207,6 +214,8 @@ const AgentStudio = () => {
                 {/* <div className={styles.cardIcon}>{card.icon}</div> */}
                 <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={styles.cardDescription}>{card.description}</p>
+
+
                 <Link href={card.link} className={styles.cardButton}>
                     Explore All
                   </Link>

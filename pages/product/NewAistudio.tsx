@@ -128,9 +128,15 @@ const AiStudio = () => {
           <h1 className={styles.title}>AI Studio</h1>
           <h4 className={styles.description}>
           Seamlessly create, train, and deploy AI models with ease. Scale your solutions quickly while maintaining high performance </h4>
-          <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+
+          <div className={styles.GetStartedBtn}>
+          <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.registerButton} rel="nofollow">Register</a>
+                   </Link>
+                   {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register
-      </Link>
+      </Link> */}
+      </div>
         </div>
         <div className={styles.imageContainer}>
           <CustomImage
