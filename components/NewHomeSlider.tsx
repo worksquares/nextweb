@@ -84,7 +84,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
     return (
       <div className={styles.container}>
         {/* <Screen> */}
-        <h2 className={styles.title}>Know more about us</h2>
+        <h3 className={styles.title}>Know more about us</h3>
         <Slider {...settings} className={styles.carousel}>
           {cards.map((card, index) => (
             <div
@@ -119,7 +119,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                     />
                   </div>
                   <div className={styles.textContent}>
-                    <h3>{card.title}</h3>
+                    <h4>{card.title}</h4>
                     <p>{card.description}</p>
                     <div className={styles.footer}>
                       {card.links && (

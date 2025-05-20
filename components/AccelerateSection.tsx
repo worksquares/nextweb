@@ -24,9 +24,9 @@ const AccelerateSection = () => {
             <div className={styles.content}>
               <h1 className={styles.title_accelerate}>Accelerate</h1>
               <h1 className={styles.title_accelerate}>with AI</h1>
-              <h4 className={styles.description_accelerate}>
+              <h5 className={styles.description_accelerate}>
                 Build apps, create chatbots, and deploy AI models effortlessly - no code required.
-              </h4>
+              </h5>
 
               <div className={styles.GetStartedBtn}>
                 {/* <Link legacyBehavior href="https://app.digisquares.com/register">

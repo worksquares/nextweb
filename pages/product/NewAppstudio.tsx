@@ -111,8 +111,8 @@ const AppStudio = () => {
       <div className={styles.agentSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>App Studio</h1>
-          <h4 className={styles.description}>
-          Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h4>
+          <h5 className={styles.description}>
+          Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h5>
 
           <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
@@ -229,10 +229,31 @@ const AppStudio = () => {
               { name: "Azure", file: "Azure.svg" },
               { name: "Basecamp", file: "Basecamp.svg" },
               { name: "BigID", file: "BigID.svg" },
-              { name: "BigQuery", file: "BigQuery.svg" },
-              { name: "Box", file: "Box.svg" },
+              { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              { name: "ElasticSearch", file: "ElasticSearch.svg" },
               { name: "Monday", file: "Monday.svg" },
               { name: "Razorpay", file: "Razorpay.svg" },
+              { name: "Braintree", file: "Braintree.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
+              { name: "Cassandra", file: "Cassandra.svg" },
+              { name: "CircleCI", file: "CircleCI.svg" },
+              { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
+              { name: "Intercom", file: "Intercom.svg" },
+              { name: "Zoho CRM", file: "ZohoCRM.svg" },
+              { name: "BigQuery", file: "BigQuery.svg" },
+              { name: "Dynatrace", file: "Dynatrace.svg" },
+              { name: "CosmosDB", file: "CosmosDB.svg" },
+              { name: "CouchDB", file: "CouchDB.svg" },
+              { name: "Denodo", file: "Denodo.svg" },
+              { name: "Salesforce", file: "Salesforce.svg" },
+              { name: "Stripe", file: "Stripe.svg" },
+              { name: "Docusign", file: "Docusign.svg" },
+              { name: "DynamoDB", file: "DynamoDB.svg" },
+              // { name: "Close", file: "Close.svg" },
+              // { name: "Box", file: "Box.svg" },
+
+
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -246,7 +267,7 @@ const AppStudio = () => {
               </div>
             ))}
           </div>
-
+{/*
           <div className={styles.integrationRow}>
             {[
               { name: "Braintree", file: "Braintree.svg" },
@@ -312,7 +333,7 @@ const AppStudio = () => {
                 <span>{integration.name}</span>
               </div>
             ))}
-          </div>
+          </div> */}
           </div></section>
       </Screen>
       <NewHomeSlider cards={cards} />

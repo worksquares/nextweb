@@ -129,11 +129,11 @@ const ImageLeftRightCard: React.FC<Props> = ({
             </span>
           )}
           {paragraph && (
-            <h4 className={Styles.paragraph}>{renderIconText(paragraph)}</h4>
+            <h3 className={Styles.paragraph}>{renderIconText(paragraph)}</h3>
           )}
           {paragraph1 && <p className={Styles.paragraphText}>{paragraph1}</p>}
           {paragraph2 && (
-            <h4 className={Styles.paragraph}>{renderIconText(paragraph2)}</h4>
+            <h3 className={Styles.paragraph}>{renderIconText(paragraph2)}</h3>
           )}
           {paragraph3 && <p className={Styles.paragraphText}>{paragraph3}</p>}
 

@@ -1,14 +1,11 @@
-import React from "react";
-import styles from "../../styles/industries/Industry.module.css";
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import HeaderCard from "../../comp/HeaderChange";
-import Images from "../../comp/base/Images";
-import Screen from "../../comp/Screen";
 import BaseLayout from "../../comp/BaseLayout";
-import TabPanel from "../../comp/TabPanel";
-import HomeSlider from "../../comp/HomeSlider";
 import CardComponent from "../../comp/CardPage";
+import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
+import TabPanel from "../../comp/TabPanel";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import styles from "../../styles/industries/Industry.module.css";
 import Headseo from "../headseo";
 
 const MedicalHeader = () => {
@@ -192,7 +189,8 @@ const MedicalHeader = () => {
           <CardComponent cards={cardData} />
           {/* <Screen> */}
             <div className={styles.MoreResources}>
-              <HomeSlider cards={ImageRowGridData} />
+              {/* <HomeSlider cards={ImageRowGridData} /> */}
+              <NewHomeSlider cards={ImageRowGridData} />
             </div>
           {/* </Screen> */}
         </div>

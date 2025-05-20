@@ -44,7 +44,7 @@
   border-radius: 20px;
   cursor: pointer;
   margin: 15px 0;
-  width: 130px;
+  /* width: 130px; */
   align-items: right;
 
 }
@@ -124,7 +124,7 @@
   .studioCard {
     /* width: 100%; */
     max-width: 450px;
-    height: 500px;
+    height: 450px;
     /* margin: 20px; */
     margin-top: 70px;
   }

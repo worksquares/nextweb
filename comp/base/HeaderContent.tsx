@@ -1,9 +1,7 @@
 import React from "react";
-import Styles from "../../styles/comp/core/HeaderContent.module.css";
-import Screen from "../../comp/Screen";
-import { podcast } from "../PodcastData";
-import PodcastSearchBar from "../podcastSearchBar";
 import CustomImage from "../../@/components/customImage";
+import Screen from "../../comp/Screen";
+import Styles from "../../styles/comp/core/HeaderContent.module.css";
 export interface HeaderContentProps {
   title: string;
   paragraph: string;
@@ -71,8 +69,8 @@ const HeaderContent: React.FC<HeaderContentProps> = ({
           className={dir === "left" ? Styles.Anotherimage : Styles.newImages}
         >
           <div className={Styles.Anothercontain}>
-            <h1 style={{ lineHeight: 1 }}>Digisquares for</h1>
-            <h1 style={{ lineHeight: 1 }}>{title}</h1>
+            <h2 style={{ lineHeight: 1 }}>Digisquares for</h2>
+            <h2 style={{ lineHeight: 1 }}>{title}</h2>
             <p>{paragraph}</p>
             {link && <a href={link}>Learn More</a>}
           </div>

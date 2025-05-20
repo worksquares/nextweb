@@ -2,11 +2,11 @@
 .podcastHeaderText {
   position: absolute;
   bottom: 20%;
-  font-family: "Great Vibes", cursive;
+  /* font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 10rem;
-  line-height: 1.2;
+  line-height: 1.2; */
   margin-bottom: 5%;
   color: #ffff;
   width: 80%;
@@ -38,11 +38,12 @@
 }
 
 .Anotherimage h2 {
-  font-weight: bold;
-  font-family: var(--ffamily);
-  color: var(--badge-color);
-  font-size: xx-large;
-  line-height: 45px;
+  /* font-weight: bold;
+  font-family: var(--ffamily); */
+  /* color: var(--badge-color); */
+  color: white;
+  /* font-size: xx-large;
+  line-height: 45px; */
 }
 
 .Anothercontain {
@@ -56,22 +57,22 @@
 }
 
 .Anothercontain p {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-bottom: 25px;
   color: #ffff;
-  margin: 0px;
-  line-height: 30px;
+  margin: 20px 0;
+  /* line-height: 30px; */
 }
 
-.Anothercontain > h3 {
-  font-size: 2rem;
-  font-weight: 600;
+.Anothercontain > h2 {
+  /* font-size: 2rem;
+  font-weight: 600; */
   color: #ffff;
-  margin: 0px;
+  margin: 10px 0;
 }
 .Anothercontain > h1 {
-  font-size: 3.3rem;
-  font-weight: 800;
+  /* font-size: 3.3rem;
+  font-weight: 800; */
   color: #ffff;
   margin: 4px 0px 16px 0px;
 }
@@ -82,9 +83,9 @@
   font-weight: bold;
   padding: 13px 34px;
   background-color: none;
-  display: inline-block;
+  /* display: inline-block;
   font-family: var(--ffamily);
-  font-size: large;
+  font-size: large; */
   cursor: pointer;
   -webkit-transition: ease-out 0.1s;
   -moz-transition: ease-out 0.1s;
@@ -99,19 +100,19 @@
 .Anothercontain span a {
   color: var(--badge-color);
   border: unset;
-  font-weight: 600;
+  /* font-weight: 600; */
   padding: 13px 34px;
   background-color: none;
   display: inline-block;
-  font-family: var(--ffamily);
-  font-size: large;
+  /* font-family: var(--ffamily);
+  font-size: large; */
   cursor: pointer;
 }
 
 .Anothercontain span a::after {
   display: inline-block;
   width: 60px;
-  font-size: large;
+  /* font-size: large; */
   padding-left: 1px;
   -webkit-transition: transform 0.5s ease-out;
   -moz-transition: transform 0.5s ease-out;
@@ -139,7 +140,7 @@
   height: 440px !important;
   width: 100% !important;
   border-radius: 10px;
-  
+
   /* margin-right: 5px; */
 }
 
@@ -162,9 +163,9 @@
 /*-------------------------------------------*/
 
 @media screen and (max-width: 1232px) {
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2.7rem;
-  }
+  } */
   .Anothercontain {
     padding: 50px 20px 40px 0px;
   }
@@ -174,15 +175,15 @@
   .Rightanother {
     width: 95%;
   }
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2.2rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2.1rem;
-  }
+  } */
   .Anothercontain {
     padding: 0px;
   }
@@ -192,19 +193,19 @@
 }
 
 @media screen and (max-width: 958px) {
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2.1rem;
-  }
+  } */
   .Anothercontain {
     padding: 0px;
   }
-  .Anothercontain > h3 {
+  /* .Anothercontain > h3 {
     font-size: 1.6rem;
   }
 
   .Anothercontain p {
     font-size: 18px;
-  }
+  } */
 }
 
 @media screen and (max-width: 644px) {
@@ -244,17 +245,17 @@
   }
 
   .Anothercontain p {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding-bottom: 18px;
   }
 
-  .Anothercontain > h3 {
+  /* .Anothercontain > h3 {
     font-size: 1.8rem;
-  }
+  } */
 
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2.1rem;
-  }
+  } */
   .Anothercontain {
     padding: 0px;
   }
@@ -262,7 +263,7 @@
     margin-top: 50px;
   }
   .podcastHeaderText {
-    font-size: 7rem;
+    /* font-size: 7rem; */
     bottom: 2%;
   }
   .IndustryHeroImg {
@@ -280,18 +281,18 @@
 }
 
 @media screen and (max-width: 560px) {
-  .Anothercontain p {
+  /* .Anothercontain p {
     font-size: 18px;
-    /* padding-bottom: 18px; */
-  }
+    padding-bottom: 18px;
+  } */
 
-  .Anothercontain > h3 {
+  /* .Anothercontain > h3 {
     font-size: 1.5rem;
-  }
+  } */
 
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 2rem;
-  }
+  } */
   .Anothercontain {
     padding: 0px !important;
     /* border: 1px solid green; */
@@ -319,17 +320,18 @@
   }
 
   .Anotherimage h2 {
-    font-weight: bold;
-    font-family: var(--ffamily);
-    color: var(--badge-color);
-    font-size: xx-large;
-    line-height: 45px;
+    /* font-weight: bold;
+    font-family: var(--ffamily); */
+    /* color: var(--badge-color); */
+    color: #ffff;
+    /* font-size: xx-large;
+    line-height: 45px; */
     /* border: 1px solid red; */
   }
 
-  .Anotherimage p {
+  /* .Anotherimage p {
     font-size: medium;
-  }
+  } */
 
   .Rightanother img {
     width: 100%;
@@ -343,41 +345,41 @@
 }
 
 @media screen and (max-width: 466px) {
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 1.9rem;
-  }
-  .Anothercontain > h3 {
+  } */
+  /* .Anothercontain > h3 {
     font-size: 1.5rem;
-  }
+  } */
   .HeaderContentOuter {
     background-position: left;
   }
   .podcastHeaderText {
-    font-size: 5rem;
+    /* font-size: 5rem; */
     width: 100%;
     bottom: 5%;
     left: 3%;
   }
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     margin: 4px 0px 8px 0px;
-  }
+  } */
 }
 
 @media screen and (max-width: 362px) {
-  .Anothercontain > h1 {
+  /* .Anothercontain > h1 {
     font-size: 1.6rem;
-  }
+  } */
 
   .Anothercontain {
     padding: 80px 20px 80px 40px;
   }
-  .Anothercontain > h3 {
+  /* .Anothercontain > h3 {
     font-size: 1.2rem;
-  }
+  } */
 
-  .Anothercontain p {
+  /* .Anothercontain p {
     font-size: 17px;
-  }
+  } */
 }
 @media screen and (min-width: 1920px) {
   .podcastHeaderText {

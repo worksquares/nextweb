@@ -1,11 +1,11 @@
-import React from "react";
-import NewHeroSection from "../../comp/NewHeroSection";
-import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
-import TabPanel from "../../comp/TabPanel";
-import CardsandBlog from "../../comp/CardsandBlog";
 import { ImageContainProps } from "../../comp/base/ImageLeftRightCard";
+import BaseLayout from "../../comp/BaseLayout";
+import CardsandBlog from "../../comp/CardsandBlog";
 import ImageContentCard from "../../comp/ImageLeftRight";
+import NewHeroSection from "../../comp/NewHeroSection";
+import TabPanel from "../../comp/TabPanel";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import Headseo from "../headseo";
 
 const PartnerProgram = () => {
   const tabData = [
@@ -221,8 +221,9 @@ const PartnerProgram = () => {
           CardHeader={CardHeaderInfo}
           CardBlogHeader={CardBlogHeaderInfo}
           CardInformation={CardInformationData}
-          myCustomCards={myCustomCardsData}
+          // myCustomCards={myCustomCardsData}
         />
+        <NewHomeSlider cards={myCustomCardsData} />
         <div style={{ margin: "65px 0px" }}>
           <ImageContentCard ImageCardPropsList={ImageCardListData} />
         </div>

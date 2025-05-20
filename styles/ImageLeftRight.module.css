@@ -1,12 +1,12 @@
 .HomePageCardHeader {
-    font-size: 40px;
-  font-weight: 700;
+    /* font-size: 40px;
+  font-weight: 700; */
   color: #2b547e;
   margin-bottom: 40px;
   /* text-align: center; */
 }
   @media (max-width: 442px) {
-    .HomePageCardHeader{
+    /* .HomePageCardHeader{
         font-size: 1.5rem;
-    }
+    } */
   }

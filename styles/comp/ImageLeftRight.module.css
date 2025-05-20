@@ -158,7 +158,7 @@
     /* align-items: center; */
     flex-wrap: wrap;
     max-width: 2000px;
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: left;
   }
 
@@ -172,19 +172,19 @@
     min-width: 600px;
     margin-top: 5px;
   } */
-  .emphasized {
-    font-weight: 900;
-    font-size: 2.8rem;
+  /* .emphasized {
+    font-weight: bold;
+    font-size: 3.5rem;
     color: #000;
     text-align: center;
-  }
+  } */
 
   /* .cardtitle1{
     font-size: 3rem;
     margin-bottom: 10px;
   } */
   .subtitle {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: #777;
     display: block;
     text-align: left;
@@ -214,7 +214,7 @@
     /* font-size: 1.8rem; */
     color: #000;
     margin-bottom:10px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .paragraphText {
@@ -298,9 +298,9 @@
       font-size: 1.5rem;
     } */
 
-    .textSection .paragraph {
+    /* .textSection .paragraph {
       font-size: 1.2rem;
-    }
+    } */
 
     /* .textSection .paragraphText {
       font-size: 1rem;
@@ -311,7 +311,7 @@
     }
 
     .container .divider {
-      width: 80%;
+      width: 100%;
     }
     .imageSection {
       flex: 0 0 100%;
@@ -339,9 +339,9 @@
       font-size: 1.5rem;
     } */
 
-    .textSection .paragraphText {
+    /* .textSection .paragraphText {
       font-size: 1.2rem;
-    }
+    } */
 
     .container .divider {
       width: 70%;
@@ -371,12 +371,15 @@
       font-size: 1.8rem;
     } */
 
-    .textSection .paragraphText {
+    /* .textSection .paragraphText {
       font-size: 1.3rem;
-    }
+    } */
 
     .container .divider {
       width: 75%;
+    }
+    .textSection .paragraph {
+       padding-top: 20px;
     }
   }
 
@@ -401,9 +404,9 @@
       font-size: 2rem;
     } */
 
-    .textSection .paragraphText {
+    /* .textSection .paragraphText {
       font-size: 1rem;
-    }
+    } */
 
     .container .divider {
       width: 60%;
@@ -449,13 +452,13 @@
       color: #000; */
       /* margin-top: 20px;
       margin-bottom: 15px; */
-      padding-top: 60px;
+      padding-top: 20px;
     }
 
-    .textSection .paragraphText {
+    /* .textSection .paragraphText {
       font-size: 1.2rem;
 
-    }
+    } */
 
 
     .container .divider {

@@ -17,14 +17,21 @@ const MultiAgentSection: React.FC = () => {
         marginBottom:'100px'
       }}
     >
-    <h1 style={{ fontSize: '45px', fontWeight: 300, marginBottom: '0px', marginRight: "10px" }}>
+    <h3 style={{
+      // fontSize: '45px',
+      fontWeight: 300,
+      marginBottom: '0px', marginRight: "10px" }}>
   Build{' '}
-  <span style={{ fontSize: '45px', fontWeight: 900 }}>
+  <span style={{
+    // fontSize: '45px',
+    fontWeight: 900 }}>
     Apps, Chatbots, and AI Models
   </span>{' '}
   Effortlessly with No Code Required
-</h1>
-<p style={{ fontSize: '16px', color: '#606060', marginTop:'0px', marginBottom: '20px' }}>
+</h3>
+<p style={{
+  // fontSize: '16px',
+  color: '#606060', marginTop:'0px', marginBottom: '20px' }}>
   Leverage Digisquares’ all-in-one platform for quick app development, chatbot creation, and AI model deployment.
 </p>
 

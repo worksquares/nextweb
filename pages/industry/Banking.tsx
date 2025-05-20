@@ -1,14 +1,12 @@
-import React from "react";
-import styles from "../../styles/industries/Industry.module.css";
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import HeaderCard from "../../comp/HeaderChange";
 import { SingleRowProps } from "../../comp/base/ImageSingleRow";
-import Screen from "../../comp/Screen";
 import BaseLayout from "../../comp/BaseLayout";
-import TabPanel from "../../comp/TabPanel";
 import CardComponent from "../../comp/CardPage";
-import HomeSlider from "../../comp/HomeSlider";
+import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
+import TabPanel from "../../comp/TabPanel";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import styles from "../../styles/industries/Industry.module.css";
 
 const Banking = () => {
   let AnotherimgListData: HeaderContentProps[] = [
@@ -184,7 +182,7 @@ const Banking = () => {
 
           {/* <Screen> */}
             <div className={styles.MoreResources}>
-              <HomeSlider cards={ImageRowGridData} />
+              <NewHomeSlider cards={ImageRowGridData} />
             </div>
           {/* </Screen> */}
         </div>

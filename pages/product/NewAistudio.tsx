@@ -126,8 +126,8 @@ const AiStudio = () => {
       <div className={styles.agentSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>AI Studio</h1>
-          <h4 className={styles.description}>
-          Seamlessly create, train, and deploy AI models with ease. Scale your solutions quickly while maintaining high performance </h4>
+          <h5 className={styles.description}>
+          Seamlessly create, train, and deploy AI models with ease. Scale your solutions quickly while maintaining high performance </h5>
 
           <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
@@ -222,6 +222,25 @@ const AiStudio = () => {
               { name: "Stability AI", file: "Stability AI.svg" },
               { name: "BigQuery", file: "BigQuery.svg" },
               { name: "Freshdesk", file: "Freshdesk.svg" },
+              { name: "Anthropic AI", file: "Anthropic AI.svg" },
+              { name: "Pinecone", file: "pinecone.svg" },
+              { name: "Weaviate Dynamics", file: "Weaviate Dynamics.svg" },
+              { name: "MongoDB Atlas", file: "MongoDB Atlas.svg" },
+              { name: "Google Analytics API", file: "Google Analytics API.svg" },
+              { name: "BigID", file: "BigID.svg" },
+              { name: "Qdrant", file: "Qdrant.svg" },
+              { name: "DataStax", file: "DataStax.svg" },
+              { name: "WhatsApp", file: "WhatsApp.svg" },
+              { name: "Front", file: "Front.svg" },
+              { name: "SendGrid", file: "SendGrid.svg" },
+              { name: "GraphQL", file: "GraphQL.svg" },
+              { name: "AppDynamics", file: "AppDynamics.svg" },
+              { name: "AppDynamics", file: "AppDynamics.svg" },
+              { name: "Asana", file: "Asana.svg" },
+              { name: "Auth0", file: "Auth0.svg" },
+              // { name: "Authorize.Net", file: "Authorize.Net.svg" },
+              // { name: "Cloud Data Store", file: "CloudDataStore.svg" },
+              // { name: "Intercom", file: "Intercom.svg" },
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -236,7 +255,7 @@ const AiStudio = () => {
             ))}
           </div>
 
-          <div className={styles.integrationRow}>
+          {/* <div className={styles.integrationRow}>
             {[
               { name: "Anthropic AI", file: "Anthropic AI.svg" },
               { name: "Pinecone", file: "pinecone.svg" },
@@ -300,7 +319,7 @@ const AiStudio = () => {
                 <span>{integration.name}</span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

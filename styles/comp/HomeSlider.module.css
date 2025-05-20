@@ -7,8 +7,8 @@
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  /* font-size: 2.5rem;
+  font-weight: 700; */
   color: #000;
   margin-bottom: 40px;
   margin-top: 1px;
@@ -112,9 +112,9 @@
   text-align: center;        /* center paragraph text */
 }
 
-.textContent h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
+.textContent h4 {
+  /* font-size: 1.25rem; */
+  /* font-weight: bold; */
   /* margin-bottom: 10px; */
   color: #333;
   margin: 8px 0;
@@ -130,11 +130,11 @@
   display: -webkit-box;
   /* -webkit-line-clamp: 5; */
   -webkit-box-orient: vertical;
-  line-height: 1.4;
+  /* line-height: 1.4; */
   /* text-align: justify; */
   margin-bottom: 10px;
   color: #000;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .footer {
@@ -407,22 +407,26 @@
 @media (max-width: 1360px) {
   .imageContainer {
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 480px !important;
+    height: 500px !important;
 
   }
   .cardWrapper{
-    height: 100%;
+    height: 480px;
   }
   .prevArrow {
     left: -90px; /* Adjust as needed */
   }
+  .textContent h4{
+    height: 50px;
+  }
   .textContent p {
-    height: 110px;
+    height: 90px;
+
   }
 
   .nextArrow {
@@ -439,7 +443,7 @@
 @media (min-width: 1361px) and (max-width: 1440px) {
   .imageContainer {
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
   .carousel {
     max-width: 83%;
@@ -455,6 +459,9 @@
   }
   .textContent p {
     height: 110px;
+  }
+  .textContent h4{
+    height: 50px;
   }
   .card{
     height: 100%;
@@ -558,19 +565,21 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 15px;
   }
 
   .card {
-    /* height: auto; */
+    /* height: 100px; */
     max-width: 100%;
   }
-  .imageContainer {
 
+  .cardWrapper{
+    height: 450px;
+  }
+  .imageContainer {
     width: 100%
   }
-
 
   .cardImage {
     max-height: 160px;
@@ -579,18 +588,16 @@
   .textContent {
     padding: 0 10px 10px;
   }
-  .textContent h3{
-    height: 40px;
+  .textContent h4{
+    height: 70px;
   }
-  /* .textContent p {
+  .textContent p {
   height: 90px;
-  } */
+  }
 
   .moreLink,
   .link {
     font-size: 0.9rem;
-
-
   }
 
   .vectorContainer {

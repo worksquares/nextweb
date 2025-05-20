@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "../styles/comp/MainFooter.module.css";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/comp/MainFooter.module.css";
 
 const MainFooter = () => {
     return (
@@ -43,7 +42,7 @@ const MainFooter = () => {
                     {/* Right columns with links */}
                     <div className={styles.footerLinksColumns}>
                         <div className={styles.linkColumn}>
-                            <h3>Product</h3>
+                            <h4>Product</h4>
                             <ul className={styles.footerLinksList}>
                                 <li><Link href="/product/NewAppstudio/">App Studio</Link></li>
                                 <li><Link href="/product/NewAgentStudio/">Agent Studio</Link></li>
@@ -52,7 +51,7 @@ const MainFooter = () => {
                         </div>
 
                         <div className={styles.linkColumn}>
-                            <h3>Solutions</h3>
+                            <h4>Solutions</h4>
                             <ul className={styles.footerLinksList}>
                                 <li><Link href="/solutions/ProcessAutomation/">Process Automation</Link></li>
                                 <li><Link href="/solutions/LegacyModernization/">Legacy Modernization</Link></li>
@@ -62,7 +61,7 @@ const MainFooter = () => {
                         </div>
 
                         <div className={styles.linkColumn}>
-                            <h3>Industry</h3>
+                            <h4>Industry</h4>
                             <ul className={styles.footerLinksList}>
                                 <li><Link href="/industry/Medical/">Medical</Link></li>
                                 <li><Link href="/industry/Education/">Education</Link></li>
@@ -84,7 +83,7 @@ const MainFooter = () => {
                             </ul>
                         </div> */}
                         <div className={styles.linkColumn}>
-                            <h3>Legal</h3>
+                            <h4>Legal</h4>
                             <ul className={styles.footerLinksList}>
                                 <li><Link href="/legal/Privacy">Privacy</Link></li>
                                 <li><Link href="/legal/Terms">Terms</Link></li>

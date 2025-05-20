@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "../styles/comp/HomePanel.module.css";
 import Image from "next/image";
 import Screen from "../comp/Screen";
+import styles from "../styles/comp/HomePanel.module.css";
 
 const HomePanel = ({ imageUrl, title, description }) => {
   return (

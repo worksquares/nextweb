@@ -141,8 +141,8 @@ const AgentStudio = () => {
       <div className={styles.agentSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>Agent Studio</h1>
-          <h4 className={styles.description}>
-          Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h4>
+          <h5 className={styles.description}>
+          Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h5>
 
           <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
@@ -240,6 +240,25 @@ const AgentStudio = () => {
               { name: "Telegram", file: "Telegram.svg" },
               { name: "Microsoft SQL", file: "MicrosoftSQL.svg" },
               { name: "SAP Hana", file: "SAPHana.svg" },
+              { name: "OracleDB", file: "OracleDB.svg" },
+              { name: "Jira", file: "Jira.svg" },
+              { name: "Twilio", file: "Twilio.svg" },
+              { name: "SMTP", file: "SMTP.svg" },
+              { name: "Netsuite", file: "Netsuite.svg" },
+              { name: "Presto", file: "Presto.svg" },
+              { name: "Slack", file: "Slack.svg" },
+              { name: "ZohoMail", file: "ZohoMail.svg" },
+              { name: "Tableau", file: "Tableau.svg" },
+              { name: "Datadog", file: "Datadog.svg" },
+              { name: "MongoDBAtlas", file: "MongoDB Atlas.svg" },
+              { name: "Vertica", file: "Vertica.svg" },
+              { name: "Vimeo", file: "Vimeo.svg" },
+              { name: "Adyen", file: "Adyen.svg" },
+              { name: "Amazon Athena", file: "AmazonAthena.svg" },
+              { name: "Amazon Redshift", file: "AmazonRedshift.svg" },
+              { name: "Amazon S3", file: "AmazonS3.svg" },
+              { name: "Eventbrite", file: "Eventbrite.svg" },
+              // { name: "Evernote", file: "Evernote.svg" },
             ].map((integration, index) => (
               <div key={`row1-${index}`} className={styles.integrationCard}>
                 <Image
@@ -254,7 +273,7 @@ const AgentStudio = () => {
             ))}
           </div>
 
-          <div className={styles.integrationRow}>
+          {/* <div className={styles.integrationRow}>
             {[
               { name: "OracleDB", file: "OracleDB.svg" },
               { name: "Jira", file: "Jira.svg" },
@@ -318,7 +337,7 @@ const AgentStudio = () => {
                 <span>{integration.name}</span>
               </div>
             ))}
-          </div>
+          </div> */}
 
         </div>
       </section>

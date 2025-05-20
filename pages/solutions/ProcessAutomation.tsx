@@ -1,15 +1,13 @@
-import React from "react";
-import styles from "../../styles/solutions/MainHub.module.css";
 import { useState } from "react";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
-import Screen from "../../comp/Screen";
-import BaseLayout from "../../comp/BaseLayout";
-import HeaderCard from "../../comp/HeaderChange";
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import TabPanel from "../../comp/TabPanel";
+import { SingleRowProps } from "../../comp/base/ImageSingleRow";
+import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
-import HomeSlider from "../../comp/HomeSlider";
+import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
+import TabPanel from "../../comp/TabPanel";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import styles from "../../styles/solutions/MainHub.module.css";
 import Headseo from "../headseo";
 
 const ProcessAutomation = () => {
@@ -256,9 +254,10 @@ const ProcessAutomation = () => {
           />
           <TabPanel tabs={tabData} />
           <CardComponent cards={cardData} />
-          {/* <Screen> */}  
+          {/* <Screen> */}
             <div className={styles.MoreResources}>
-              <HomeSlider cards={ImageRowGridData} />
+              {/* <HomeSlider cards={ImageRowGridData} /> */}
+              <NewHomeSlider cards={ImageRowGridData} />
             </div>
           {/* </Screen> */}
         </div>

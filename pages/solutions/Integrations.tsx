@@ -1,15 +1,12 @@
-import React from "react";
-import HeaderCard from "../../comp/HeaderChange";
-import styles from "../../styles/solutions/MainHub.module.css";
-import { useState } from "react";
-import { LinkHoverProps } from "../../comp/base/LinkHover";
+import { HeaderContentProps } from "../../comp/base/HeaderContent";
 import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
-import TabPanel from "../../comp/TabPanel";
-import HomeSlider from "../../comp/HomeSlider";
-import { HeaderContentProps } from "../../comp/base/HeaderContent";
 import CardComponent from "../../comp/CardPage";
+import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
+import TabPanel from "../../comp/TabPanel";
+import NewHomeSlider from "../../components/NewHomeSlider";
+import styles from "../../styles/solutions/MainHub.module.css";
 
 const Integrations = () => {
   const tabData = [
@@ -192,7 +189,8 @@ const Integrations = () => {
           <CardComponent cards={cardData} />
 
           <div className={styles.MoreResources}>
-            <HomeSlider cards={ImageRowGridData} />
+            {/* <HomeSlider cards={ImageRowGridData} /> */}
+            <NewHomeSlider cards={ImageRowGridData} />
           </div>
         </div>
       </BaseLayout>
