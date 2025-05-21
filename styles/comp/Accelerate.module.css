@@ -113,7 +113,8 @@
     .title_accelerate {
       /* font-size: 40px;
       line-height: 40px; */
-      margin: 0;
+      margin: 0 0px;
+      text-align: center;
     }
 
 
