@@ -123,7 +123,7 @@ const FinancialServices = () => {
     {
       image: "/assets/Blogs/blogheaders/AIinAgentStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI in Agent Studio",
+      title: "AI in Agent Studio",
       description:
         "They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
       link: "/blog/AIinAgentStudio",
@@ -131,7 +131,7 @@ const FinancialServices = () => {
     {
       image: "/assets/Blogs/blogheaders/AgentStudioAISolutions_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Agent Studio’s AI Solutions",
+      title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
       link: "/blog/AgentStudioAISolutions",
@@ -140,7 +140,7 @@ const FinancialServices = () => {
       image:
         "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "Customer Satisfaction with Agent Studio",
+      title: "Customer Satisfaction with Agent Studio",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
       link: "/blog/CustomerSatisfactionwithAgentStudio",
@@ -148,7 +148,7 @@ const FinancialServices = () => {
     {
       image: "/assets/Blogs/blogheaders/AIStudioData_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "AI Studio’s Synthetic Data",
+      title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
       link: "/blog/AIStudioSyntheticData",
@@ -156,7 +156,7 @@ const FinancialServices = () => {
     {
       image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
-      heading: "Personalize AI Models",
+      title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
       link: "/blog/PersonalizeAIModels",

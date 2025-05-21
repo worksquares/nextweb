@@ -123,7 +123,7 @@ const TeleCommunication = () => {
     {
       image: "/assets/Blogs/blogheaders/AIPoweredAutomation_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI-Powered Automation",
+      title: "AI-Powered Automation",
       description:
         "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
       link: "/blog/AIPoweredAutomation",
@@ -131,7 +131,7 @@ const TeleCommunication = () => {
     {
       image: "/assets/Blogs/blogheaders/ImprovingSAASCybersecurity_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "Building a Secure SaaS Ecosystem",
+      title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
       link: "/blog/ImprovingSAASCybersecurity",
@@ -139,7 +139,7 @@ const TeleCommunication = () => {
     {
       image: "/assets/Blogs/blogheaders/AIStudioData_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "AI Studio’s Synthetic Data",
+      title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
       link: "/blog/AIStudioSyntheticData",
@@ -147,7 +147,7 @@ const TeleCommunication = () => {
     {
       image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
-      heading: "Personalize AI Models",
+      title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
       link: "/blog/PersonalizeAIModels",
@@ -155,7 +155,7 @@ const TeleCommunication = () => {
     {
       image: "/assets/Blogs/blogheaders/AgentStudioAISolutions_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Agent Studio’s AI Solutions",
+      title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
       link: "/blog/AgentStudioAISolutions",

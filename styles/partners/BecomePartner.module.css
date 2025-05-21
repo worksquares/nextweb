@@ -26,28 +26,29 @@
   /* border: 1px solid green; */
 }
 
-.PartnerHeaderComp > h1 {
-  font-size: 40px;
-  font-weight: bold;
+.PartnerHeaderComp > h2 {
+  /* font-size: 40px;
+  font-weight: bold; */
+
   width: 50%;
   margin-bottom: 10px;
 }
 
 .PartnerHeaderComp > p {
-  font-size: 20px;
+  /* font-size: 20px; */
   width: 50%;
   margin-bottom: 10px;
 }
 
-.PartnerBannerComp > h1 {
-  font-size: 40px;
-  font-weight: bold;
+.PartnerBannerComp > h2 {
+  /* font-size: 40px; */
+  /* font-weight: bold; */
   width: 50%;
   margin-bottom: 10px;
 }
 
 .PartnerBannerComp > p {
-  font-size: 20px;
+  /* font-size: 20px; */
   width: 50%;
   margin-bottom: 10px;
 }
@@ -92,22 +93,22 @@
     background-color: #154965;
     color: white;
   }
-  .PartnerHeaderComp > h1 {
-    font-size: 32px;
+  .PartnerHeaderComp > h2 {
+    /* font-size: 32px; */
     width: 90%;
   }
 
   .PartnerHeaderComp > p {
     width: 90%;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
-  .PartnerBannerComp > h1 {
-    font-size: 30px;
+  .PartnerBannerComp > h2 {
+    /* font-size: 30px; */
     width: 90%;
   }
   .PartnerBannerComp > p {
     width: 90%;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   .PartnerBannerMain {
     padding: 30px 0px;

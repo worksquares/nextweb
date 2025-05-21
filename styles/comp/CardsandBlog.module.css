@@ -12,20 +12,20 @@
 }
 
 .CardsTitleComp > h2 {
-  font-size: 35px;
+  /* font-size: 35px; */
   color: var(--badge-color);
   margin-bottom: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .CardsTitleComp > p {
-  line-height: 1.445em;
+  /* line-height: 1.445em;
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: normal;
-  font-weight: 350;
+  font-weight: 350; */
   color: #5a6072;
   /* width: 88%; */
-  font-size: 18px !important;
+  /* font-size: 18px !important; */
 }
 
 .CardsMainComp {
@@ -43,6 +43,7 @@
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
+  height: 350px;
 }
 
 .CardComp:hover {
@@ -54,19 +55,19 @@
 .CardIcons {
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.CardComp > h3 {
-  font-size: 20px;
-  font-weight: bold;
+.CardComp > h6 {
+  /* font-size: 20px;
+  font-weight: bold; */
   margin-bottom: 15px;
   /* border: 1px solid red; */
 }
 
 .CardDesc {
   /* border: 1px solid red; */
-  height: 80px;
+  height: 120px;
   margin-bottom: 10px;
 }
 
@@ -74,7 +75,7 @@
   display: inline-flex;
   align-items: center;
   /* color: #1d4965; */
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-decoration: none;
 }
 
@@ -95,20 +96,20 @@
 }
 
 .CardsBlogComp > h2 {
-  font-size: 35px;
+  /* font-size: 35px; */
   color: var(--badge-color);
   margin-bottom: 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .CardsBlogComp > p {
-  line-height: 1.445em;
+  /* line-height: 1.445em;
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: normal;
-  font-weight: 350;
+  font-weight: 350; */
   color: #5a6072;
   /* width: 88%; */
-  font-size: 18px !important;
+  /* font-size: 18px !important; */
 }
 
 .BlogCompMain {
@@ -152,14 +153,14 @@
 }
 
 .cardContent h3 {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   margin-bottom: 15px;
   color: #333;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .cardContent p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin-bottom: 20px;
   /* height: 100px; */
   color: #666;
@@ -199,7 +200,7 @@
 
 @media (max-width: 1600px) {
   .cardContent p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-bottom: 20px;
     height: auto !important;
     color: #666;
@@ -212,7 +213,7 @@
     margin-right: 15px;
     /* border: 1px solid red !important; */
   }
-  .CardComp > h3 {
+  .CardComp > h6 {
     height: 50px;
   }
 }
@@ -226,7 +227,7 @@
 
 @media (max-width: 1141px) {
   .cardContent p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-bottom: 20px;
     height: 100px;
     color: #666;
@@ -283,7 +284,7 @@
     width: 90%;
     margin: 40px 0px 20px 0px;
   }
-  .CardComp > h3 {
+  .CardComp > h6 {
     margin-bottom: 10px;
     height: 56px;
   }
@@ -345,7 +346,7 @@
   }
 
   .CardsBlogComp > h2 {
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-bottom: 10px;
   }
 
@@ -353,8 +354,8 @@
     margin: 20px 0px;
     padding: 10px 0px;
   }
-  .CardComp > h3 {
-    font-size: 22px;
+  .CardComp > h6 {
+    /* font-size: 22px; */
     margin-bottom: 10px;
     /* height: 40px; */
     height: auto;
@@ -365,12 +366,12 @@
   }
 
   .cardContent h3 {
-    font-size: 22px;
+    /* font-size: 22px; */
     margin-bottom: 10px;
   }
 
   .cardContent p {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-bottom: 15px;
     height: auto !important;
   }
@@ -380,24 +381,24 @@
   }
 
   .CardsTitleComp > h2 {
-    font-size: 25px;
+    /* font-size: 25px; */
     margin-bottom: 10px;
   }
 
-  .CardsTitleComp > p {
+  /* .CardsTitleComp > p {
     font-size: 18px !important;
-  }
+  } */
 }
 
 @media (max-width: 670px) {
   .CardDesc {
     height: 90px;
     margin-bottom: 10px;
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
   }
 
   .cardContent p {
-    font-size: 18px;
+    /* font-size: 18px; */
     /* margin-bottom: 10px; */
     height: 90px;
   }
@@ -407,19 +408,19 @@
   .CardDesc {
     height: 110px;
     margin-bottom: 10px;
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
   }
   .cardContent p {
-    font-size: 18px;
+    /* font-size: 18px; */
     height: 120px;
   }
   .CardComp > h3 {
     height: auto;
   }
 
-  .CardsBlogComp > h2 {
+  /* .CardsBlogComp > h2 {
     font-size: 22px;
-  }
+  } */
 }
 
 @media (max-width: 390px) {

@@ -11,14 +11,14 @@
     opacity: 1;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-  
+
   .imageWrapper {
     width: 30%;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
   }
-  
+
   .content {
     padding: 10px;
     width: 70%;
@@ -27,24 +27,24 @@
     flex-direction: column;
     gap: 8%;
   }
-  
+
   .title {
     font-weight: bold;
     font-size: 1rem;
     color: #000;
   }
-  
+
   .description {
     margin-top: 8px;
     font-size: 0.7rem;
     color: #000;
   }
-  
+
   .gridContainer {
     padding: 24px;
     margin: 40px auto;
   }
-  
+
   .gridTitle {
     font-weight: 700 !important;
     font-size: 30px !important;
@@ -52,7 +52,7 @@
     color: #154965 !important;
     text-align: center;
   }
-  
+
   .gridContent {
     display: flex;
     width: 100%;
@@ -83,36 +83,36 @@
 
   @media (max-width: 768px) {
     .podcastContainer {
-      width: 90%; 
+      width: 90%;
       height: auto;
       flex-direction: column;
       padding: 15px;
     }
-  
+
     .imageWrapper {
-      width: 100%; 
+      width: 100%;
       height: 150px;
       margin-bottom: 10px;
     }
-  
+
     .content {
-      width: 100%; 
+      width: 100%;
       gap: 5%;
     }
-  
+
     .title {
-      font-size: 0.9rem; 
+      font-size: 0.9rem;
     }
-  
+
     .description {
-      font-size: 0.6rem; 
+      font-size: 0.6rem;
     }
-  
+
     .gridTitle {
-      font-size: 24px !important; 
+      font-size: 24px !important;
     }
   }
-  
+
   @media (max-width: 442px) {
     .podcastContainer {
       height: auto;
@@ -120,56 +120,55 @@
       padding: 10px;
       margin-bottom: 10px;
     }
-  
+
     .imageWrapper {
       width: 100%;
-      height: 120px; 
+      height: 120px;
     }
-  
+
     .content {
       width: 100%;
       gap: 4%;
     }
-  
+
     .title {
-      font-size: 0.8rem; 
+      font-size: 0.8rem;
     }
-  
+
     .description {
-      font-size: 0.5rem; 
+      font-size: 0.5rem;
     }
-  
+
     .gridTitle {
-      font-size: 22px !important; 
+      font-size: 22px !important;
     }
   }
-  
+
   @media (min-width: 1920px) {
     .podcastContainer {
-      width: 45%; 
-      height: 250px; 
+      width: 45%;
+      height: 250px;
     }
-  
+
     .imageWrapper {
       width: 35%;
       height: 100%;
     }
-  
+
     .content {
       width: 65%;
       gap: 10%;
     }
-  
+
     .title {
-      font-size: 1.2rem; 
+      font-size: 1.2rem;
     }
-  
+
     .description {
-      font-size: 0.9rem; 
+      font-size: 0.9rem;
     }
-  
+
     .gridTitle {
-      font-size: 36px !important; 
+      font-size: 36px !important;
     }
   }
-  

@@ -93,7 +93,7 @@ const LegacyModernization = () => {
       image:
         "/assets/Blogs/blogheaders/MachineLearningBasicswithAI_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "Machine Learning Basics with AI Studio",
+      title: "Machine Learning Basics with AI Studio",
       description:
         "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
       link: "/blog/MachineLearningBasicswithAI",
@@ -101,7 +101,7 @@ const LegacyModernization = () => {
     {
       image: "/assets/Blogs/blogheaders/ResponsibleAIModels_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Creating Responsible AI Models",
+      title: "Creating Responsible AI Models",
       description:
         "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency, and compliance continues to grow.",
       link: "/blog/ResponsibleAIModels",
@@ -109,7 +109,7 @@ const LegacyModernization = () => {
     {
       image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Workflows with AppStudio",
+      title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
       link: "/blog/WorkflowswithAppStudio",
@@ -117,7 +117,7 @@ const LegacyModernization = () => {
     {
       image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
-      heading: "Security Privacy of Blockchain",
+      title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
       link: "/blog/BusinesswithAppStudio",
@@ -125,7 +125,7 @@ const LegacyModernization = () => {
     {
       image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "AppStudio’s Security Features",
+      title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
       link: "/blog/AppStudioSecurityFeatures",
@@ -133,7 +133,7 @@ const LegacyModernization = () => {
     {
       image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "From Idea to App",
+      title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
       link: "/blog/FromIdeatoApp",

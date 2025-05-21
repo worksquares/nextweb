@@ -61,7 +61,7 @@ const ProcessAutomation = () => {
       image:
         "/assets/Blogs/blogheaders/TeamCollaborationwithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Team Collaboration with AppStudio",
+      title: "Team Collaboration with AppStudio",
       description:
         "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
       link: "/blog/TeamCollaborationwithAppStudio",
@@ -69,7 +69,7 @@ const ProcessAutomation = () => {
     {
       image: "/assets/Blogs/blogheaders/FutureofAppDevelopment_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Future of App Development",
+      title: "Future of App Development",
       description:
         "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
       link: "/blog/FutureofAppDevelopment",
@@ -77,7 +77,7 @@ const ProcessAutomation = () => {
     {
       image: "/assets/Blogs/blogheaders/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI Agents in AppStudio",
+      title: "AI Agents in AppStudio",
       description:
         "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
       link: "/blog/AIAgentsinAppStudio",
@@ -85,7 +85,7 @@ const ProcessAutomation = () => {
     {
       image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
-      heading: "Security Privacy of Blockchain",
+      title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
       link: "/blog/BusinesswithAppStudio",
@@ -93,7 +93,7 @@ const ProcessAutomation = () => {
     {
       image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
-      heading: "Personalize AI Models",
+      title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
       link: "/blog/PersonalizeAIModels",
@@ -102,7 +102,7 @@ const ProcessAutomation = () => {
       image:
         "/assets/Blogs/blogheaders/MachineLearningBasicswithAI_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "Machine Learning Basics with AI Studio",
+      title: "Machine Learning Basics with AI Studio",
       description:
         "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
       link: "/blog/MachineLearningBasicswithAI",

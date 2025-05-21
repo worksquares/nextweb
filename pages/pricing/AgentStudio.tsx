@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import styles from "../../styles/pricing/CopilotPricing.module.css";
-import Image from "next/image";
-import BaseLayout from "../../comp/BaseLayout";
-import { Collapse, Select } from "antd";
 import { CaretRightOutlined, CheckOutlined } from "@ant-design/icons";
+import { Collapse, Select } from "antd";
+import Image from "next/image";
+import router from "next/router";
+import { useEffect, useState } from "react";
+import BaseLayout from "../../comp/BaseLayout";
+import styles from "../../styles/pricing/CopilotPricing.module.css";
 const { Option } = Select;
 const { Panel } = Collapse;
-import router from "next/router";
 
 const CopilotPricing = () => {
   const TokenRowStyle = {
@@ -854,10 +854,10 @@ const CopilotPricing = () => {
       <div className={styles.CopilotMain}>
 
         <div className={styles.CopilotHeadings}>
-          <h1
+          <h2
           >
             Choose Your AI Agent!
-          </h1>
+          </h2>
 
           <span
             className={styles.CopilotCurrencySelectComp}
@@ -869,10 +869,10 @@ const CopilotPricing = () => {
               marginTop: 5,
             }}
           >
-            <h3
+            <h6
               style={{
-                fontSize: "18px",
-                lineHeight: "30px",
+                // fontSize: "18px",
+                // lineHeight: "30px",
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
@@ -893,7 +893,7 @@ const CopilotPricing = () => {
                   </Option>
                 ))}
               </Select>
-            </h3>
+            </h6>
           </span>
         </div>
 
@@ -1111,9 +1111,9 @@ const CopilotPricing = () => {
                     top: selectedPlan === "Premium" ? "" : "-20px",
                   }}
                 >
-                  <h1 className={styles.H_tag}>
+                  <h4 className={styles.H_tag}>
                     {getAmount(content, currency)}
-                  </h1>
+                  </h4>
                   <p>{content.isSwitchOn ? content.yearly : content.month}</p>
                 </div>
                 <div
@@ -1193,10 +1193,10 @@ const CopilotPricing = () => {
               width: '100%'
             }}
           >
-            <h1
+            <h2
             >
               Compare features
-            </h1>
+            </h2>
           </div>
           <div
             className={styles.CopilotSubsFeatures}
@@ -1277,7 +1277,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.FeaturesColumn}
                       >
-                        <h2 className={styles.H_tag}>{fData.feature}</h2>
+                        <h4 className={styles.H_tag}>{fData.feature}</h4>
                       </div>
                       <div
                         style={
@@ -1289,7 +1289,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.FreeCol}
                       >
-                        <h2 className={styles.H_tag}>{fData.basic}</h2>
+                        <h5 className={styles.H_tag}>{fData.basic}</h5>
                       </div>
                       <div
                         style={
@@ -1301,7 +1301,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.StarterCol}
                       >
-                        <h2 className={styles.H_tag}>{fData.standard}</h2>
+                        <h5 className={styles.H_tag}>{fData.standard}</h5>
                       </div>
                       <div
                         style={
@@ -1313,7 +1313,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.ProfessionalCol}
                       >
-                        <h2 className={styles.H_tag}>{fData.premium}</h2>
+                        <h5 className={styles.H_tag}>{fData.premium}</h5>
                       </div>
                       <div
                         style={
@@ -1325,7 +1325,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.Enterprise}
                       >
-                        <h2 className={styles.H_tag}>{fData.enterprise}</h2>
+                        <h5 className={styles.H_tag}>{fData.enterprise}</h5>
                       </div>
                     </div>
                   ))}
@@ -1341,9 +1341,9 @@ const CopilotPricing = () => {
               width: '100%'
             }}
           >
-            <h1>
+            <h2>
               Compare features
-            </h1>
+            </h2>
           </div>
           <div style={{ width: "100%", display: 'flex', alignItems: "baseline", justifyContent: 'space-between' }}>
             <h2 style={{ width: '30%' }}>Price Plans:</h2>
@@ -1389,10 +1389,10 @@ const CopilotPricing = () => {
         </div>
 
         <div className={styles.FAQ}>
-          <h1
+          <h2
           >
             Frequently Asked Questions
-          </h1>
+          </h2>
           <div className={styles.custom_collapse}>
             {items.map((item, index) => (
               <div

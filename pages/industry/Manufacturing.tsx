@@ -123,7 +123,7 @@ const Manufacturing = () => {
     {
       image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "AppStudio’s Security Features",
+      title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
       link: "/blog/AppStudioSecurityFeatures",
@@ -132,7 +132,7 @@ const Manufacturing = () => {
       image:
         "/assets/Blogs/blogheaders/InnovationTrendsforBusiness_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Innovation Trends for Business",
+      title: "Innovation Trends for Business",
       description:
         "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
       link: "/blog/InnovationTrendsforBusiness",
@@ -140,7 +140,7 @@ const Manufacturing = () => {
     {
       image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
-      heading: "Security Privacy of Blockchain",
+      title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
       link: "/blog/BusinesswithAppStudio",
@@ -148,7 +148,7 @@ const Manufacturing = () => {
     {
       image: "/assets/Blogs/blogheaders/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI Agents in AppStudio",
+      title: "AI Agents in AppStudio",
       description:
         "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
       link: "/blog/AIAgentsinAppStudio",
@@ -156,7 +156,7 @@ const Manufacturing = () => {
     {
       image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Workflows with AppStudio",
+      title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
       link: "/blog/WorkflowswithAppStudio",

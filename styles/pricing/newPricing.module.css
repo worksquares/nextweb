@@ -7,14 +7,14 @@
     align-items: center;
 }
 
-.SubsComp>h1 {
-    margin: 0px !important;
-    font-size: 16px;
-}
-
 .SubsComp>h2 {
     margin: 0px !important;
+    /* font-size: 16px; */
 }
+
+/* .SubsComp>h2 {
+    margin: 0px !important;
+} */
 
 .SubsHeadings {
     width: 600px;
@@ -30,7 +30,7 @@
 
 .SubsHeadings>p {
     color: rgba(0, 0, 0, 0.53);
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .h2 {
@@ -60,8 +60,8 @@
 
 .SubsCloud>p {
     margin: 0px;
-    font-size: 16px;
-    font-weight: 600;
+    /* font-size: 16px;
+    font-weight: 600; */
     padding: 10px;
 }
 
@@ -77,8 +77,8 @@
 
 .SubsSelf>p {
     margin: 0px;
-    font-size: 16px;
-    font-weight: 600;
+    /* font-size: 16px;
+    font-weight: 600; */
     padding: 10px;
 
 }
@@ -98,11 +98,11 @@
 .SubsPricingHeader>p {
     margin: 8px 0px;
     color: #1d2b36;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .SubsPricingHeader>button {
-    font-size: 14px !important;
+    /* font-size: 14px !important; */
     padding: 8px 12px;
     border: none;
     background-color: #1D4965;
@@ -110,7 +110,7 @@
     border: 1px solid rgb(201, 201, 201);
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .SubsGetStarted>button:hover {
@@ -125,14 +125,14 @@
     height: 60px;
 }
 
-.SubsAmount>h1 {
-    font-size: 26px;
-    font-weight: 700;
+.SubsAmount>h4 {
+    /* font-size: 26px;
+    font-weight: 700; */
     margin: 0px;
 }
 
 .SubsAmount>p {
-    font-size: 14px;
+    /* font-size: 14px; */
     margin: 0px 0px 0px 5px;
 }
 
@@ -153,7 +153,7 @@
 .SubsFeature>p {
     margin: 0px 10px;
     color: #1d2b36;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .SubsGetStarted {
@@ -165,14 +165,14 @@
 
 .SubsGetStarted>button {
     width: 100%;
-    font-size: 13px !important;
+    /* font-size: 13px !important; */
     padding: 8px 0px;
     border: none;
     background-color: white;
     border: 1px solid rgb(201, 201, 201);
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .clicked-card {
@@ -208,7 +208,7 @@
 }
 
 .Users {
-    font-size: 16px;
+    /* font-size: 16px; */
     position: sticky;
     top: 285px;
     color: white;
@@ -217,8 +217,8 @@
     background: black;
     margin: 0px;
     padding: 12px 32px;
-    font-weight: 500;
-    line-height: unset;
+    /* font-weight: 500; */
+    /* line-height: unset; */
 }
 
 .FeaturesSubComp {
@@ -240,14 +240,14 @@
     top: 210px;
 }
 
-.FreeCol>h2,
-.StarterCol>h2,
-.ProfessionalCol>h2,
-.StandardCol>h2,
-.EnterpriseCol>h2,
-.FeaturesCol>h2 {
+.FreeCol>h4,
+.StarterCol>h5,
+.ProfessionalCol>h4,
+.StandardCol>h4,
+.EnterpriseCol>h4,
+.FeaturesCol>h4 {
     margin: 0px;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 .your-icon-class {
@@ -278,8 +278,8 @@
     border: none !important;
 }
 
-.FeaturesH2>h2 {
-    font-size: 20px;
+.FeaturesH5>h5 {
+    /* font-size: 20px; */
     color: white;
 }
 
@@ -291,7 +291,7 @@
     flex-direction: column;
 }
 
-.FAQ>h1 {
+.FAQ>h2 {
     margin-bottom: 40px !important;
     width: 100% !important;
 }
@@ -340,7 +340,7 @@
 }
 
 .CompFeatureSecondh2 {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #000;
 }
 
@@ -394,7 +394,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
   }
-  
+
   .signInBtn a:hover {
     background-color: #2f6c91;
   }
@@ -464,11 +464,11 @@
     }
     .FAQ{
         width: 85%;
-    } 
-    .FAQ > h1 {
+    }
+    /* .FAQ > h1 {
         font-size: 1.5rem !important;
-    } 
-    
+    } */
+
     .SubsComp{
         margin-top: 30px;
     }
@@ -481,9 +481,9 @@
     .SubsHeadings {
         width: 100%;
     }
-    .SubsHeadings  > h1 {
+    /* .SubsHeadings  > h1 {
         font-size: 30px !important ;
-    }
+    } */
     .head,.SubsCloudSelf{
         width: 100%;
         display: flex;
@@ -492,18 +492,18 @@
     .SubsCloud,.SubsSelf{
         width: 50%;
     }
-    .SubsCloud > p,.SubsSelf > p{
+    /* .SubsCloud > p,.SubsSelf > p{
         font-size: 14px !important;
     }
     .custom_collapse_header_span{
         font-size: .9rem;
-    }
+    } */
     .SubsFeaturesList {
         height: 230px;
     }
-    .MobCompareFeatures{
+    /* .MobCompareFeatures{
         font-size: 2rem;
-    }
+    } */
     .SubsSelf>p {
         padding: 10px 0px;
     }
@@ -541,5 +541,5 @@
     .SubsSelf>p {
         padding: 10px 0px;
     }
-   
+
 }

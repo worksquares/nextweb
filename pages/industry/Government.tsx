@@ -124,7 +124,7 @@ const Government = () => {
       image:
         "/assets/Blogs/blogheaders/TeamCollaborationwithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Team Collaboration with AppStudio",
+      title: "Team Collaboration with AppStudio",
       description:
         "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
       link: "/blog/TeamCollaborationwithAppStudio",
@@ -132,7 +132,7 @@ const Government = () => {
     {
       image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "Fine-Tuning with AI Studio",
+      title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
       link: "/blog/FineTuningwithAIStudio",
@@ -140,7 +140,7 @@ const Government = () => {
     {
       image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "From Idea to App",
+      title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
       link: "/blog/FromIdeatoApp",
@@ -148,7 +148,7 @@ const Government = () => {
     {
       image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "AppStudio’s Security Features",
+      title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
       link: "/blog/AppStudioSecurityFeatures",
@@ -157,7 +157,7 @@ const Government = () => {
       image:
         "/assets/Blogs/blogheaders/InnovationTrendsforBusiness_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Innovation Trends for Business",
+      title: "Innovation Trends for Business",
       description:
         "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
       link: "/blog/InnovationTrendsforBusiness",

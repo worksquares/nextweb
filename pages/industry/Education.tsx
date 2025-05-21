@@ -123,7 +123,7 @@ const Education = () => {
     {
       image: "/assets/Blogs/blogheaders/AgentStudioAISolutions_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Agent Studio’s AI Solutions",
+      title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
       link: "/blog/AgentStudioAISolutions",
@@ -132,7 +132,7 @@ const Education = () => {
       image:
         "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "Customer Satisfaction with Agent Studio",
+      title: "Customer Satisfaction with Agent Studio",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
       link: "/blog/CustomerSatisfactionwithAgentStudio",
@@ -140,7 +140,7 @@ const Education = () => {
     {
       image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "Fine-Tuning with AI Studio",
+      title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
       link: "/blog/FineTuningwithAIStudio",
@@ -148,7 +148,7 @@ const Education = () => {
     {
       image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Workflows with AppStudio",
+      title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
       link: "/blog/WorkflowswithAppStudio",
@@ -156,7 +156,7 @@ const Education = () => {
     {
       image: "/assets/Blogs/blogheaders/ImprovingSAASCybersecurity_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "Building a Secure SaaS Ecosystem",
+      title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
       link: "/blog/ImprovingSAASCybersecurity",

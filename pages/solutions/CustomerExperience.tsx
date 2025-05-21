@@ -92,7 +92,7 @@ const CustomerExperience = () => {
     {
       image: "/assets/Blogs/blogheaders/FutureofAppDevelopment_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Future of App Development",
+      title: "Future of App Development",
       description:
         "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
       link: "/blog/FutureofAppDevelopment",
@@ -100,7 +100,7 @@ const CustomerExperience = () => {
     {
       image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "From Idea to App",
+      title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
       link: "/blog/FromIdeatoApp",
@@ -108,7 +108,7 @@ const CustomerExperience = () => {
     {
       image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "AppStudio’s Security Features",
+      title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
       link: "/blog/AppStudioSecurityFeatures",
@@ -116,7 +116,7 @@ const CustomerExperience = () => {
     {
       image: "/assets/Blogs/blogheaders/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI Agents in AppStudio",
+      title: "AI Agents in AppStudio",
       description:
         "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
       link: "/blog/AIAgentsinAppStudio",
@@ -125,7 +125,7 @@ const CustomerExperience = () => {
       image:
         "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "Customer Satisfaction with Agent Studio",
+      title: "Customer Satisfaction with Agent Studio",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
       link: "/blog/CustomerSatisfactionwithAgentStudio",
@@ -133,7 +133,7 @@ const CustomerExperience = () => {
     {
       image: "/assets/Blogs/blogheaders/AIinServiceManagement_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "AI in Service Management Platforms",
+      title: "AI in Service Management Platforms",
       description:
         "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, deliver personalized responses and automate routine tasks.",
       link: "/blog/AIinServiceManagement",

@@ -1,13 +1,10 @@
-import React from "react";
-import NewHeroSection from "../../comp/NewHeroSection";
-import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
-import TabPanel from "../../comp/TabPanel";
-import CardsandBlog from "../../comp/CardsandBlog";
 import { ImageContainProps } from "../../comp/base/ImageLeftRightCard";
+import BaseLayout from "../../comp/BaseLayout";
+import CardsandBlog from "../../comp/CardsandBlog";
 import ImageContentCard from "../../comp/ImageLeftRight";
-import styles from "../../styles/partners/BecomePartner.module.css";
 import Screen from "../../comp/Screen";
+import styles from "../../styles/partners/BecomePartner.module.css";
+import Headseo from "../headseo";
 
 const BecomePartner = () => {
   const CardInformationData = [
@@ -99,7 +96,7 @@ const BecomePartner = () => {
         <div className={styles.PartnerHeaderMain}>
           <Screen>
             <div className={styles.PartnerHeaderComp}>
-              <h1>It’s both a partnership and a relationship</h1>
+              <h2>It’s both a partnership and a relationship</h2>
               <p>
                 Digisquares’ redesigned partner program is built on mutual
                 trust, offering both a partnership and a relationship. It
@@ -119,7 +116,7 @@ const BecomePartner = () => {
         <div className={styles.PartnerBannerMain}>
           <Screen>
             <div className={styles.PartnerBannerComp}>
-              <h1>Explore the all new partner program</h1>
+              <h2>Explore the all new partner program</h2>
               <p>
                 A unique business relationship and a powerful partnership. This
                 program is designed to deepen our collaboration and drive mutual

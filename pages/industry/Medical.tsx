@@ -123,7 +123,7 @@ const MedicalHeader = () => {
     {
       image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "Workflows with AppStudio",
+      title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
       link: "/blog/WorkflowswithAppStudio",
@@ -131,7 +131,7 @@ const MedicalHeader = () => {
     {
       image: "/assets/Blogs/blogheaders/AIinAgentStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI in Agent Studio",
+      title: "AI in Agent Studio",
       description:
         "They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
       link: "/blog/AIinAgentStudio",
@@ -140,7 +140,7 @@ const MedicalHeader = () => {
       image:
         "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
-      heading: "Customer Satisfaction with Agent Studio",
+      title: "Customer Satisfaction with Agent Studio",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
       link: "/blog/CustomerSatisfactionwithAgentStudio",
@@ -148,7 +148,7 @@ const MedicalHeader = () => {
     {
       image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "Fine-Tuning with AI Studio",
+      title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
       link: "/blog/FineTuningwithAIStudio",
@@ -156,7 +156,7 @@ const MedicalHeader = () => {
     {
       image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
-      heading: "Personalize AI Models",
+      title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
       link: "/blog/PersonalizeAIModels",

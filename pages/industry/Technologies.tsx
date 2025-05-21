@@ -123,7 +123,7 @@ const Technologies = () => {
     {
       image: "/assets/Blogs/blogheaders/ResponsibleAIModels_Header.webp",
       category: "DIGITAL TRANSFORMATION",
-      heading: "Creating Responsible AI Models",
+      title: "Creating Responsible AI Models",
       description:
         "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency, and compliance continues to grow.",
       link: "/blog/ResponsibleAIModels",
@@ -131,7 +131,7 @@ const Technologies = () => {
     {
       image: "/assets/Blogs/blogheaders/AIPoweredAutomation_Header.webp",
       category: "AI AND AUTOMATION",
-      heading: "AI-Powered Automation",
+      title: "AI-Powered Automation",
       description:
         "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
       link: "/blog/AIPoweredAutomation",
@@ -139,7 +139,7 @@ const Technologies = () => {
     {
       image: "/assets/Blogs/blogheaders/ImprovingSAASCybersecurity_Header.webp",
       category: "CYBERSECURITY AND RISK",
-      heading: "Building a Secure SaaS Ecosystem",
+      title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
       link: "/blog/ImprovingSAASCybersecurity",
@@ -147,7 +147,7 @@ const Technologies = () => {
     {
       image: "/assets/Blogs/blogheaders/AIinServiceManagement_Header.webp",
       category: "DIGISQUARES PLATFORM",
-      heading: "AI in Service Management Platforms",
+      title: "AI in Service Management Platforms",
       description:
         "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, deliver personalized responses and automate routine tasks.",
       link: "/blog/AIinServiceManagement",
@@ -155,7 +155,7 @@ const Technologies = () => {
     {
       image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
-      heading: "Personalize AI Models",
+      title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
       link: "/blog/PersonalizeAIModels",

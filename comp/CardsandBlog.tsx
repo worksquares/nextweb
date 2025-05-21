@@ -1,7 +1,5 @@
-import React from "react";
-import Screen from "./Screen";
 import styles from "../styles/comp/CardsandBlog.module.css";
-import DemoCard from "./DemoCard";
+import Screen from "./Screen";
 
 const CardsandBlog = ({
   CardHeader,
@@ -29,7 +27,7 @@ const CardsandBlog = ({
                         className={styles.CardIcons}
                       />
                     )}
-                    <h3>{data.heading}</h3>
+                    <h6>{data.heading}</h6>
                     <p className={styles.CardDesc}>{data.description}</p>
                     <a href={data.linkUrl} className={styles.learnMoreButton}>
                       {data.linkName}

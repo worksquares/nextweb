@@ -24,13 +24,13 @@
 
 .Blogsitems a {
   color: var(--tcolor);
-  font-size: large;
+  /* font-size: large; */
   text-decoration: none;
   text-align: center;
   /* padding-left: 20px;
     padding-right: 20px; */
-  font-family: "Adobe Clean", sans-serif;
-  font-weight: 600;
+  /* font-family: "Adobe Clean", sans-serif;
+  font-weight: 600; */
 }
 
 .Blogsitems {

@@ -131,19 +131,19 @@
 // export default HomeSlider;
 
 
+import Image from "next/image";
 import { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "../styles/comp/HomeSlider.module.css";
+import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
-import redVector from "../public/svg/redvector.svg"
-import Image from "next/image";
-import Screen from "../comp/Screen";
+import redVector from "../public/svg/redvector.svg";
+import styles from "../styles/comp/HomeSlider.module.css";
 
 interface Card {
     image: string;
     title?: string;
+    heading?:string;
     description: string;
     category?: string;
     links?: { text: string; href: string }[];
@@ -225,6 +225,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                   </div>
                   <div className={styles.textContent}>
                   <h3>{card.title || card?.category}</h3>
+                  <h3>{card.heading}</h3>
                     <p>{card.description}</p>
                     <div className={styles.footer}>
                       {card.links && (

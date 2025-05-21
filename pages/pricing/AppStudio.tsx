@@ -1,11 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
-import styles from "../../styles/pricing/newPricing.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import BaseLayout from "../../comp/BaseLayout";
-import { Button, Collapse, Select } from "antd";
 import { CaretRightOutlined, CheckOutlined } from "@ant-design/icons";
+import { Collapse, Select } from "antd";
+import Image from "next/image";
+import Link from "next/link";
 import router from "next/router";
+import React, { useEffect, useState } from "react";
+import BaseLayout from "../../comp/BaseLayout";
+import styles from "../../styles/pricing/newPricing.module.css";
 const { Option } = Select;
 const { Panel } = Collapse;
 const FeatureColStyle = {
@@ -1165,7 +1165,7 @@ const NewPricing = () => {
       ],
     },
   ];
-  
+
 
   const [contents1, setContents1] = useState(contents);
   const [getScheme, SetGetScheme] = useState("");
@@ -1784,7 +1784,7 @@ const NewPricing = () => {
         <div className={styles.SubsComp}>
           <div className={styles.SubsHeaderComp} style={{ padding: "20px" }}>
             <div className={styles.SubsHeadings}>
-              <h1
+              <h2
                 style={{
                   fontSize: "37px",
                   lineHeight: "48px",
@@ -1792,7 +1792,7 @@ const NewPricing = () => {
                 }}
               >
                 Choose your right plan!
-              </h1>
+              </h2>
               <div className={styles.head}>
                 <div
                   className={styles.SubsCloudSelf}
@@ -1828,10 +1828,10 @@ const NewPricing = () => {
     marginRight: "10px",
   }}
 >
-<h3
+<p
             style={{
-              fontSize: "18px",
-              lineHeight: "30px",
+              // fontSize: "18px",
+              // lineHeight: "30px",
               display: "flex",
               alignItems: "center",
               width: "100%",
@@ -1840,7 +1840,7 @@ const NewPricing = () => {
               margin: 0,
             }}
           >
-            Pick your currency
+            <h4>Pick your currency</h4>
   <Select
     defaultValue={currency}
     style={{ width: "100px", position: "relative" }}
@@ -1867,7 +1867,7 @@ const NewPricing = () => {
     <Option value="PHP">PHP</Option>
     <Option value="RUB">RUB</Option>
   </Select>
-  </h3>
+  </p>
 </div>
             </div>
           </div>
@@ -2101,7 +2101,7 @@ const NewPricing = () => {
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
-                    <h1>{getCurrencyAmount(content, content.isSwitchOn)}</h1>
+                    <h4>{getCurrencyAmount(content, content.isSwitchOn)}</h4>
                     <p>{content.isSwitchOn ? content.yearly : content.month}</p>
                   </div>
                   <div
@@ -2185,14 +2185,14 @@ const NewPricing = () => {
 
           <div className={styles.CompareFeatures}>
             <div className={styles.CompareFeaturesContainer}>
-              <h1
+              <h2
                 style={{
-                  fontSize: "50px",
+                  // fontSize: "50px",
                   color: "black",
                 }}
               >
                 Compare features
-              </h1>
+              </h2>
             </div>
 
             <div
@@ -2220,24 +2220,24 @@ const NewPricing = () => {
                 className={styles.Featurehead}
               >
                 <div style={FeatureColStyle1}>
-                  <h2 style={{ fontSize: "20px", color: "white" }}>Features</h2>
+                  <h5 style={{color: "white" }}>Features</h5>
                 </div>
                 {/* {cloudOrSelf === "Cloud" && (
                   <div style={FreeColStyle}>
                     <h2 style={{ fontSize: "20px", color: "white" }}>Free</h2>
                   </div>
                 )} */}
-                <div style={StarterColStyle} className={styles.FeaturesH2}>
-                  <h2>Starter</h2>
+                <div style={StarterColStyle} className={styles.FeaturesH5}>
+                  <h5>Starter</h5>
                 </div>
-                <div style={StandardColStyle} className={styles.FeaturesH2}>
-                  <h2>Standard</h2>
+                <div style={StandardColStyle} className={styles.FeaturesH5}>
+                  <h5>Standard</h5>
                 </div>
-                <div style={ProfessionalColStyle} className={styles.FeaturesH2}>
-                  <h2>Premium</h2>
+                <div style={ProfessionalColStyle} className={styles.FeaturesH5}>
+                  <h5>Premium</h5>
                 </div>
-                <div style={EnterpriseColStyle} className={styles.FeaturesH2}>
-                  <h2>Enterprise</h2>
+                <div style={EnterpriseColStyle} className={styles.FeaturesH5}>
+                  <h5>Enterprise</h5>
                 </div>
               </div>
 
@@ -2336,53 +2336,53 @@ const NewPricing = () => {
                           style={FeatureColStyle}
                           className={styles.FeaturesCol}
                         >
-                          <h4>{fData.feature}</h4>
+                          <h6>{fData.feature}</h6>
                         </div>
                         <div
                           style={FeatureColStyle}
                           className={styles.StarterCol}
                         >
-                          <h4>
+                          <h5>
                             {fData.starter?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.starter?.value}
-                          </h4>
+                          </h5>
                         </div>
 
                         <div
                           style={FeatureColStyle}
                           className={styles.StandardCol}
                         >
-                          <h4>
+                          <h5>
                             {fData.standard?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.standard?.value}
-                          </h4>
+                          </h5>
                         </div>
 
                         <div
                           style={FeatureColStyle}
                           className={styles.ProfessionalCol}
                         >
-                          <h4>
+                          <h5>
                             {fData.Premium?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.Premium?.value}
-                          </h4>
+                          </h5>
                         </div>
                         <div
                           style={FeatureColStyle}
                           className={styles.EnterpriseCol}
                         >
-                          <h4>
+                          <h5>
                             {fData.enterprise?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.enterprise?.value}
-                          </h4>
+                          </h5>
                         </div>
                       </div>
                     ))}
@@ -2399,7 +2399,7 @@ const NewPricing = () => {
                 width: "100%",
               }}
             >
-              <h1 className={styles.MobCompareFeaturesH1}>Compare features</h1>
+              <h2 className={styles.MobCompareFeaturesH2}>Compare features</h2>
             </div>
             <div
               style={{
@@ -2409,7 +2409,7 @@ const NewPricing = () => {
                 display: "flex",
               }}
             >
-              <h2 style={{ width: "32%", fontSize: "1rem" }}>Pricing Plan:</h2>
+              <h2 style={{ width: "32%"}}>Pricing Plan:</h2>
               <Select
                 defaultValue={planSelected}
                 onChange={(e) => handlePlanChange(e)}
@@ -2459,9 +2459,9 @@ const NewPricing = () => {
           </div>
 
           <div className={styles.FAQ}>
-            <h1 style={{ fontSize: "50px", color: "black" }}>
+            <h2 style={{color: "black" }}>
               Frequently Asked Questions
-            </h1>
+            </h2>
             <div className={styles.custom_collapse}>
               {items.map((item, index) => (
                 <div
