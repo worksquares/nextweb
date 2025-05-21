@@ -153,8 +153,11 @@
 .SubsFeature>p {
     margin: 0px 10px;
     color: #1d2b36;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
+
+
+
 
 .SubsGetStarted {
     padding: 10px 0px;
@@ -240,18 +243,18 @@
     top: 210px;
 }
 
-.FreeCol>h4,
+.FreeCol>h5,
 .StarterCol>h5,
-.ProfessionalCol>h4,
-.StandardCol>h4,
-.EnterpriseCol>h4,
-.FeaturesCol>h4 {
+.ProfessionalCol>h5,
+.StandardCol>h5,
+.EnterpriseCol>h5,
+.FeaturesCol>h5 {
     margin: 0px;
     /* font-size: 16px; */
 }
 
 .your-icon-class {
-    font-Size: 15px !important;
+    /* font-Size: 15px !important; */
     color: Black !important;
     font-Weight: 800
 }
@@ -279,7 +282,7 @@
 }
 
 .FeaturesH5>h5 {
-    /* font-size: 20px; */
+    font-size: 20px;
     color: white;
 }
 

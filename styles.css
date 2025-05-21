@@ -172,7 +172,7 @@ h1 {    /*accelerate page heading*/
 h1 span{
   font-size: 9rem;
   font-weight: 600;
-  line-height: 8rem;
+  line-height: 9rem;
 }
 h2{
   font-size: 3.1rem;
@@ -314,7 +314,7 @@ a span{
     line-height: .8;
     font-weight: 600; */
     font-size: 4rem;
-    line-height: 2rem;
+    line-height: 5rem;
     letter-spacing: -1px;
     font-family: ITC Avant Garde, sans-serif, arial;
 
@@ -322,7 +322,7 @@ a span{
 
   h1 span{
     font-size: 3rem;
-    line-height: 1;
+    line-height: 6rem;
     font-weight: 600;
   }
 
@@ -419,9 +419,9 @@ a span{
     /* font-size: 7.1rem;
     line-height: 5rem; */
     font-weight: 600;
-    margin: 20px 0;
+    margin: 0;
     font-size: 6.5rem;
-    line-height: 5rem;
+    line-height: 6.5rem;
     letter-spacing: -1px;
     font-family: ITC Avant Garde, sans-serif, arial;
 }
@@ -519,7 +519,7 @@ a span{
     /* font-size: 7.5rem;
     line-height: 7rem; */
     font-weight: 600;
-    margin: 5px 0;
+    margin: 0;
     font-size: 7rem;
     line-height: 7rem;
     letter-spacing: -1px;
@@ -601,7 +601,7 @@ a span{
 
   h1 {    /*accelerate page heading*/
     font-size: 9rem;
-    line-height: 8rem;
+    line-height: 9rem;
     letter-spacing: -1px;
     font-family: ITC Avant Garde, sans-serif, arial;
     font-weight: 600;

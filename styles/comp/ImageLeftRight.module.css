@@ -179,16 +179,16 @@
     text-align: center;
   } */
 
-  /* .cardtitle1{
-    font-size: 3rem;
-    margin-bottom: 10px;
-  } */
+  .cardtitle1{
+    /* font-size: 3rem; */
+    margin-top: 10px;
+  }
   .subtitle {
     /* font-size: 1rem; */
     color: #777;
     display: block;
     text-align: left;
-    margin-top: 5px;
+    margin: 0;
    }
 
   .textSection {

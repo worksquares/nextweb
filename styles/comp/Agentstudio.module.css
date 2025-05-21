@@ -91,7 +91,7 @@
 .heading {
   /* font-size: 2.5rem; */
   font-weight: 400;
-  margin-bottom: 10px;
+  margin: 10px 0 0 0;
 }
 
 .highlight {
@@ -140,7 +140,7 @@
 .agentHeading {
   /* font-size: 2.5rem; */
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .agentSubtext {
@@ -218,6 +218,7 @@
   /* font-size: 0.95rem; */
   color: #444;
   flex-grow: 1;
+  margin: 0;
 }
 
 .cardButton {

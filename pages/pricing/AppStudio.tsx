@@ -2342,47 +2342,47 @@ const NewPricing = () => {
                           style={FeatureColStyle}
                           className={styles.StarterCol}
                         >
-                          <h5>
+                          <p>
                             {fData.starter?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.starter?.value}
-                          </h5>
+                          </p>
                         </div>
 
                         <div
                           style={FeatureColStyle}
                           className={styles.StandardCol}
                         >
-                          <h5>
+                          <p>
                             {fData.standard?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.standard?.value}
-                          </h5>
+                          </p>
                         </div>
 
                         <div
                           style={FeatureColStyle}
                           className={styles.ProfessionalCol}
                         >
-                          <h5>
+                          <p>
                             {fData.Premium?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.Premium?.value}
-                          </h5>
+                          </p>
                         </div>
                         <div
                           style={FeatureColStyle}
                           className={styles.EnterpriseCol}
                         >
-                          <h5>
+                          <p>
                             {fData.enterprise?.hasStar && (
                               <span className="StarIcon">⭐</span>
                             )}
                             {fData.enterprise?.value}
-                          </h5>
+                          </p>
                         </div>
                       </div>
                     ))}

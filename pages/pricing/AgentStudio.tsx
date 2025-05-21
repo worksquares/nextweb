@@ -1224,7 +1224,7 @@ const CopilotPricing = () => {
               <div style={FeatureColStyle1}>
                 <h2
                   className={styles.H_tag}
-                  style={{ fontSize: "20px", color: "white" }}
+                  style={{color: "white" }}
                 >
                   Features
                 </h2>
