@@ -1,0 +1,402 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.header {
+  background-color: #F59E0B;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.headerSubtitle {
+  margin: 0;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.sectionLabel {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.modules,
+.interactionModes,
+.personas {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.moduleButton,
+.modeButton,
+.personaButton {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  background-color: #f3f4f6;
+  color: #374151;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.moduleButton:hover,
+.modeButton:hover
+{
+  background-color: #fde68a; /* lighter hover */
+  color: #000;
+}
+
+/* .personaButton:hover {
+  background-color: #9ca3af;
+} */
+
+/* Selected state */
+.selected {
+  background-color: #F59E0B !important;
+  color: white !important;
+  border-color: #4338ca !important;
+}
+
+/* Personas */
+
+.personas {
+  gap: 1rem;
+}
+
+.personaButton {
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  padding: 1rem;
+  position: relative;
+}
+
+.personaButton.selected {
+  background-color: #e0e7ff;
+  border-color: #4338ca;
+}
+
+.personaIcon {
+  border-radius: 9999px;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personaButton.selected .personaIcon {
+  border-color: #F59E0B;
+  background-color: #F59E0B;
+  color: white;
+}
+
+.personaDetails {
+  margin-left: 1rem;
+}
+
+.personaName {
+  font-weight: 600;
+  margin: 0;
+}
+
+.personaDesc {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+.personaVoice {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.checkmark {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #F59E0B;
+}
+
+.mobileNumberSection {
+  margin-top: 1.5rem;
+}
+
+.mobileNumberInputContainer {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.countryCodeSelect {
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.mobileNumberInput {
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  outline: none;
+}
+
+.mobileNumberInput::placeholder {
+  color: #9ca3af;
+}
+
+.sendOtpButton,
+.testCallButton {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.sendOtpButton {
+  background-color: #F56B44;
+}
+
+.sendOtpButton:hover {
+  background-color: #db7255;
+}
+
+.testCallButton {
+  background-color: #E32B22;
+}
+
+.testCallButton:hover {
+  background-color: rgb(175, 89, 89);
+}
+
+/* Icons inside buttons */
+.iconSmall {
+  width: 1rem;
+  height: 1rem;
+}
+
+.iconMedium {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Accessibility focus and active */
+.moduleButton:focus,
+.modeButton:focus,
+.personaButton:focus {
+  outline: 2px solid #F59E0B;
+  outline-offset: 2px;
+}
+
+.moduleButton:active,
+.modeButton:active,
+.personaButton:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+/* OTP Overlay */
+.otpOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* OTP Form */
+.otpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* OTP Titles */
+.otpTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* OTP Message */
+.otpMessage {
+  color: #a3a3a3;
+  font-size: 14px;
+  margin-top: 4px;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* OTP Inputs Container */
+.otpInputs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* OTP Input Boxes */
+.otpInput {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border: none;
+  border-bottom: 1.5px solid #d2d2d2;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.otpInput:focus {
+  border-bottom: 1.5px solid royalblue;
+  outline: none;
+}
+
+/* OTP Buttons Container */
+.otpButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+/* Cancel Button */
+.otpCancelButton {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Verify Button */
+.otpVerifyButton {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0
+     0.5rem;
+  }
+
+  .headerSubtitle {
+    text-align: center;
+  }
+
+
+  .modules,
+  .interactionModes,
+  .personas {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .moduleButton,
+  .modeButton,
+  .personaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .personaButton {
+    flex-grow: 0;
+  }
+
+  .mobileNumberInputContainer {
+    flex-direction: column;
+  }
+
+  .countryCodeSelect,
+  .mobileNumberInput,
+  .sendOtpButton,
+  .testCallButton {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .otpForm {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .otpInputs {
+    gap: 8px;
+  }
+
+  .otpInput {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .otpButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .otpCancelButton,
+  .otpVerifyButton {
+    width: 100%;
+    margin: 0;
+  }
+}

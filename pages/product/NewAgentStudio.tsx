@@ -5,9 +5,9 @@ import MainFooter from "../../components/MainFooter";
 import Menu from "../../components/Menu";
 import NewHomeSlider from "../../components/NewHomeSlider";
 import Screen from "../../components/Screen";
-import AiAgentRecruiter from "../../pages/product/AiAgentRecruiter";
 import styles from "../../styles/comp/Agentstudio.module.css";
 import Headseo from "../headseo";
+import AiAgentRecruiterDashboard from "./AiAgentRecruiterDashboard";
 
 
 
@@ -189,7 +189,8 @@ const AgentStudio = () => {
 
           </video>
         </div>
-        <AiAgentRecruiter />
+        {/* <AiAgentRecruiter /> */}
+        <AiAgentRecruiterDashboard />
       </div>
 
 

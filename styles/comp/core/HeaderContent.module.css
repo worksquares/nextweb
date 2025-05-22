@@ -351,8 +351,11 @@
   /* .Anothercontain > h3 {
     font-size: 1.5rem;
   } */
-  .HeaderContentOuter {
+  /* .HeaderContentOuter {
     background-position: left;
+  } */
+  .Anothercontain{
+    height: 280px;
   }
   .podcastHeaderText {
     /* font-size: 5rem; */
@@ -370,9 +373,9 @@
     font-size: 1.6rem;
   } */
 
-  .Anothercontain {
+  /* .Anothercontain {
     padding: 80px 20px 80px 40px;
-  }
+  } */
   /* .Anothercontain > h3 {
     font-size: 1.2rem;
   } */
