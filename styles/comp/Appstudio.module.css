@@ -216,7 +216,7 @@
 .appHeading {
   /* font-size: 2.5rem; */
   font-weight: 400;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .appSubtext {
@@ -597,7 +597,8 @@ cursor: pointer;
     width: 700px;
   }
   .appSubtext {
-    width: 700px;
+    /* width: 700px; */
+    /* line-height: 1.5rem; */
   }
 
   .agentSection {

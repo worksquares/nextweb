@@ -8,6 +8,7 @@ import Screen from "../../components/Screen";
 import styles from "../../styles/comp/Agentstudio.module.css";
 import Headseo from "../headseo";
 import AiAgentRecruiterDashboard from "./AiAgentRecruiterDashboard";
+import { FeaturesDescription } from "./DescriptionCard";
 
 
 
@@ -194,7 +195,7 @@ const AgentStudio = () => {
       </div>
 
 
-      <section className={styles.agentSections}>
+      {/* <section className={styles.agentSections}>
         <div className={styles.agentContent}>
           <div className={styles.line1}></div>
           <button className={styles.demoButton}>Book a Demo &gt;</button>
@@ -208,11 +209,11 @@ const AgentStudio = () => {
             across industries and functions.
           </p>
 
-          {/* <div className={styles.line2}></div> */}
+          <div className={styles.line2}></div>
           <div className={styles.cardGrid}>
             {agentCards.map((card, idx) => (
               <div key={idx} className={styles.card}>
-                {/* <div className={styles.cardIcon}>{card.icon}</div> */}
+                <div className={styles.cardIcon}>{card.icon}</div>
                 <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={styles.cardDescription}>{card.description}</p>
 
@@ -224,7 +225,19 @@ const AgentStudio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <FeaturesDescription
+      heading={
+      <><h2 className={styles.agentHeading}>
+      Pre-built <span className={styles.highlight}>Agent Hub</span>
+    </h2>
+    <p className={styles.agentSubtext}>
+      Explore our pre-built, high-accuracy AI agents that are trained to
+      optimize workflows, enhance efficiency, and deliver instant results
+      across industries and functions.
+    </p>
+    </>}
+      features={agentCards} />
 
       <section className={styles.integrationSection}>
         <h2 className={styles.integrationTitle}>

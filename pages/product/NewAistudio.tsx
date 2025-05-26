@@ -7,6 +7,7 @@ import NewHomeSlider from "../../components/NewHomeSlider";
 import Screen from "../../components/Screen";
 import styles from "../../styles/comp/Aistudio.module.css";
 import Headseo from "../headseo";
+import { FeaturesDescription } from "./DescriptionCard";
 
 
 // import {
@@ -18,7 +19,7 @@ import Headseo from "../headseo";
 //   FaMoneyCheckAlt,
 // } from "react-icons/fa";
 
-const agentCards = [
+const aiCards = [
   {
     // icon: <FaBan />,
     title: "Build Agents",
@@ -177,7 +178,7 @@ const AiStudio = () => {
         </div>
       </div>
 
-      <section className={styles.aiSection}>
+      {/* <section className={styles.aiSection}>
         <div className={styles.aiContent}>
           <div className={styles.line1}></div>
           <button className={styles.demoButton}>Book a Demo &gt;</button>
@@ -191,11 +192,11 @@ const AiStudio = () => {
             various industries and use cases.
           </p>
 
-          {/* <div className={styles.line2}></div> */}
+          <div className={styles.line2}></div>
           <div className={styles.cardGrid}>
             {agentCards.map((card, idx) => (
               <div key={idx} className={styles.card}>
-                {/* <div className={styles.cardIcon}>{card.icon}</div> */}
+                <div className={styles.cardIcon}>{card.icon}</div>
                 <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={styles.cardDescription}>{card.description}</p>
                 <Link href={card.link} className={styles.cardButton}>
@@ -205,7 +206,21 @@ const AiStudio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <FeaturesDescription
+      heading={
+        <>
+        <h2 className={styles.aiHeading}>
+        Pre-built <span className={styles.highlight}>Agent Hub</span>
+      </h2>
+      <p className={styles.aiSubtext}>
+        Explore our pre-built, high-accuracy AI models designed to optimize
+        workflows, enhance efficiency, and deliver instant insights across
+        various industries and use cases.
+      </p>
+      </>
+      }
+      features={aiCards} />
 
       <section className={styles.integrationSection}>
         <h2 className={styles.integrationTitle}>

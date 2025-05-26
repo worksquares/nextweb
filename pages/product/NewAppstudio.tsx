@@ -7,40 +7,48 @@ import NewHomeSlider from '../../components/NewHomeSlider';
 import Screen from "../../components/Screen";
 import styles from "../../styles/comp/Appstudio.module.css";
 import Headseo from "../headseo";
+import { FeaturesDescription } from './DescriptionCard';
 
 const appCards = [
   {
+    id:"Workflow",
     title: "Workflow",
     description:
       "Effortlessly create and automate workflows with AppStudio. Customize templates and use drag-and-drop tools to design processes and integrate services, no coding required.",
-    link: "https://docs.digisquares.com/docs/Workflow/WorkFlow%20Intro"
+    link: "https://docs.digisquares.com/docs/Workflow/WorkFlow%20Intro",
+    image: "/assets/Hero & cards/cards/As-card-1.webp"
 
   },
   {
+    id:"Pageflow",
     title: "Pageflow",
     description:
       "Page flows are typically created using a drag-and-drop interface, where users can select UI components, arrange them on the canvas, and define the transition logic between screens.",
     link: "https://docs.digisquares.com/docs/PageFlow/PageFlow%20Intro"
   },
   {
+    id:"Visual Query",
     title: "Visual Query",
     description:
       "Easily build visual queries without needing to write SQL using AppStudio's Visual Query Builder. Drag-and-drop data elements to create powerful queries and generate insights quickly.",
     link: "https://docs.digisquares.com/docs/Library/VisualQuery/visualquery%20Intro"
   },
   {
+    id:"Integrations",
     title: "Integrations",
     description:
       "Create and manage integrations effortlessly with AppStudio's API tools. Define endpoints, control data flow, and ensure secure communication with a user-friendly interface.",
     link: "https://docs.digisquares.com/docs/DataSource/Integration"
   },
   {
+    id:"Database",
     title: "Database",
     description:
       "Effortlessly manage and scale databases with AppStudio’s intuitive Database Manager, handling schemas, migrations, and performance without deep SQL knowledge.",
     link: "https://docs.digisquares.com/docs/DataSource/Database/Database%20Intro"
   },
   {
+    id:"SQL Query",
     title: "SQL Query",
     description:
       "The SQL Query feature in our low-code platform simplifies database management by enabling easy creation and execution of SELECT, INSERT, UPDATE, and DELETE queries with AI-assisted generation and parameter management.",
@@ -157,7 +165,7 @@ const AppStudio = () => {
           </div>
         </div>
 
-        <section className={styles.appSection}>
+        {/* <section className={styles.appSection}>
           <div className={styles.appContent}>
             <div className={styles.line1}></div>
             <button className={styles.demoButton}>Book a Demo &gt;</button>
@@ -181,7 +189,21 @@ const AppStudio = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <FeaturesDescription
+         heading={
+          <>
+            <h2 className={styles.appHeading}>
+              Pre-built <span className={styles.highlight}>App Hub</span>
+            </h2>
+            <p className={styles.appSubtext}>
+              Explore our pre-built, high-performance apps designed to streamline workflows,
+              boost efficiency, and deliver instant results across various industries and functions.
+            </p>
+          </>
+        }
+        features={appCards} />
 
 
 
@@ -226,30 +248,40 @@ const AppStudio = () => {
         <div className={styles.integrationGrid}>
           <div className={styles.integrationRow}>
             {[
-              { name: "Azure", file: "Azure.svg" },
-              { name: "Basecamp", file: "Basecamp.svg" },
-              { name: "BigID", file: "BigID.svg" },
-              { name: "CloudDatastore", file: "CloudDatastore.svg" },
-              { name: "ElasticSearch", file: "ElasticSearch.svg" },
-              { name: "Monday", file: "Monday.svg" },
-              { name: "Razorpay", file: "Razorpay.svg" },
-              { name: "Braintree", file: "Braintree.svg" },
-              { name: "Freshdesk", file: "Freshdesk.svg" },
-              { name: "Cassandra", file: "Cassandra.svg" },
-              { name: "CircleCI", file: "CircleCI.svg" },
-              { name: "Zoho Books API", file: "Zoho Books API.svg" },
-              { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
-              { name: "Intercom", file: "Intercom.svg" },
-              { name: "Zoho CRM", file: "ZohoCRM.svg" },
-              { name: "BigQuery", file: "BigQuery.svg" },
-              { name: "Dynatrace", file: "Dynatrace.svg" },
-              { name: "CosmosDB", file: "CosmosDB.svg" },
-              { name: "CouchDB", file: "CouchDB.svg" },
-              { name: "Denodo", file: "Denodo.svg" },
+              { name: "Oracle DB", file: "OracleDB.svg" },
+              { name: "Postgres", file: "Postgres.svg" },
+              { name: "MariaDB", file: "MariaDB.svg" },
+              { name: "Redis", file: "Redis.svg" },
+              { name: "Snowflake", file: "Snowflake.svg" },
               { name: "Salesforce", file: "Salesforce.svg" },
-              { name: "Stripe", file: "Stripe.svg" },
-              { name: "Docusign", file: "Docusign.svg" },
-              { name: "DynamoDB", file: "DynamoDB.svg" },
+              { name: "Asana", file: "Asana.svg" },
+              { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              { name: "Workday", file: "Workday.svg" },
+              { name: "Servicenow", file: "Servicenow.svg" },
+              { name: "Monday", file: "Monday.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
+              // { name: "Azure", file: "Azure.svg" },
+              // { name: "Basecamp", file: "Basecamp.svg" },
+              // { name: "BigID", file: "BigID.svg" },
+              // { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              // { name: "ElasticSearch", file: "ElasticSearch.svg" },
+              // { name: "Razorpay", file: "Razorpay.svg" },
+              // { name: "Braintree", file: "Braintree.svg" },
+              // { name: "Cassandra", file: "Cassandra.svg" },
+              // { name: "CircleCI", file: "CircleCI.svg" },
+              // { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              // { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
+              // { name: "Intercom", file: "Intercom.svg" },
+              // { name: "Zoho CRM", file: "ZohoCRM.svg" },
+              // { name: "BigQuery", file: "BigQuery.svg" },
+              // { name: "Dynatrace", file: "Dynatrace.svg" },
+              // { name: "CosmosDB", file: "CosmosDB.svg" },
+              // { name: "CouchDB", file: "CouchDB.svg" },
+              // { name: "Denodo", file: "Denodo.svg" },
+              // { name: "Salesforce", file: "Salesforce.svg" },
+              // { name: "Stripe", file: "Stripe.svg" },
+              // { name: "Docusign", file: "Docusign.svg" },
+              // { name: "DynamoDB", file: "DynamoDB.svg" },
               // { name: "Close", file: "Close.svg" },
               // { name: "Box", file: "Box.svg" },
 
