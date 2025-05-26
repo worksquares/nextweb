@@ -327,8 +327,8 @@ export default function AIAgentRecruiterDashboard() {
                 <div
                   className={styles.personaIcon}
                   style={{
-                    borderColor: selected ? "#4338ca" : undefined,
-                    backgroundColor: selected ? "#F59E0B" : undefined,
+                    // borderColor: selected ? "#F87153" : undefined,
+                    backgroundColor: selected ? "#FF7043" : undefined,
                     color: selected ? "white" : undefined,
                   }}
                 >

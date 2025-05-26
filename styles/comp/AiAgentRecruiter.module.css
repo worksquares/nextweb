@@ -21,8 +21,8 @@
   margin-top: 20px;
   height: 100vh;
   /* background: linear-gradient(to bottom, #8e72aa, #d570e2); */
-
-  border: 2px solid #00d9ff;
+/*
+  border: 2px solid #00d9ff; */
   background: linear-gradient(to bottom right, #ff7a6b, #ff3c00);
 
 
@@ -60,7 +60,7 @@
     font-size: 18px;
     color: #f4511e;
     background-color:#fff ;
-    border: 2px solid #00d9ff;
+    /* border: 2px solid #00d9ff; */
     height: 80px;
     align-items: center;
   }
@@ -83,7 +83,7 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
-    border:  2px solid #00d9ff;
+    /* border:  2px solid #00d9ff; */
     border-radius: 15px;
     align-items: center;
     margin: 50px;
@@ -243,7 +243,7 @@
   }
 
   .avatarCard {
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     padding: 12px;
     border-radius: 10px;
     text-align: center;
@@ -259,12 +259,12 @@
   }
 
   .activeAvatar {
-    border-color: #302c2c;
+    /* border-color: #302c2c; */
     box-shadow: 0 0 12px rgba(22, 21, 21, 0.5);
   }
-  .activeAvatar:hover{
+  /* .activeAvatar:hover{
     border-color: #0e0d0d;
-  }
+  } */
 
   .avatarImage {
     width: 100px;
@@ -286,7 +286,7 @@
     padding: 10px;
     /* font-size: 14px; */
     border-radius: 6px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     width: 100%;
   }
 
@@ -380,7 +380,7 @@
     height: 48px;
     font-size: 20px;
     text-align: center;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
   }
 

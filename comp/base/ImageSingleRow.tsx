@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/comp/core/ImageSingleRow.module.css";
 
 export interface SingleRowProps {
+  // heading: Key | null | undefined;
   image: string;
   category: string;
   title?: string;

@@ -8,7 +8,7 @@
 }
 
 .header {
-  background-color: #F59E0B;
+  background-color: #FF7043;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1.5rem;
   color: white;
@@ -54,20 +54,21 @@
   font-weight: 500;
   border-radius: 0.5rem;
   padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
+  border: none;
   background-color: #f3f4f6;
   color: #374151;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease;
+  /* border-color 0.2s ease, color 0.2s ease; */
 }
 
 .moduleButton:hover,
 .modeButton:hover
 {
-  background-color: #fde68a; /* lighter hover */
+  background-color: #FF7043; /* lighter hover */
   color: #000;
 }
 
@@ -76,10 +77,15 @@
 } */
 
 /* Selected state */
-.selected {
-  background-color: #F59E0B !important;
+.moduleButton.selected {
+  background-color: #059669 !important;
   color: white !important;
-  border-color: #4338ca !important;
+  border: none !important;
+}
+.modeButton.selected {
+  background-color: #6366F1 !important;
+  color: white !important;
+  border: none !important;
 }
 
 /* Personas */
@@ -92,7 +98,7 @@
   flex-direction: row;
   flex-grow: 1;
   background-color: white;
-  border: 1px solid #e5e7eb;
+  border: none;
   text-align: left;
   padding: 1rem;
   position: relative;
@@ -100,13 +106,13 @@
 
 .personaButton.selected {
   background-color: #e0e7ff;
-  border-color: #4338ca;
+  border:none;
 }
 
 .personaIcon {
   border-radius: 9999px;
   padding: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: none;
   background-color: #f3f4f6;
   color: #9ca3af;
   display: flex;
@@ -115,8 +121,8 @@
 }
 
 .personaButton.selected .personaIcon {
-  border-color: #F59E0B;
-  background-color: #F59E0B;
+  border:none;
+  background-color: #FF7043;
   color: white;
 }
 
@@ -146,7 +152,7 @@
   right: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #F59E0B;
+  color: #F87153;
 }
 
 .mobileNumberSection {
@@ -160,7 +166,7 @@
 
 .countryCodeSelect {
   border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: none;
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   color: #374151;
@@ -169,7 +175,7 @@
 .mobileNumberInput {
   flex-grow: 1;
   border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: none;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   color: #6b7280;
@@ -196,19 +202,19 @@
 }
 
 .sendOtpButton {
-  background-color: #F56B44;
+  background-color: #059669;
 }
 
 .sendOtpButton:hover {
-  background-color: #db7255;
+  background-color: #FF5722;
 }
 
 .testCallButton {
-  background-color: #E32B22;
+  background-color: #6366F1;
 }
 
 .testCallButton:hover {
-  background-color: rgb(175, 89, 89);
+  background-color: #E64A19;
 }
 
 /* Icons inside buttons */
@@ -223,12 +229,12 @@
 }
 
 /* Accessibility focus and active */
-.moduleButton:focus,
+/* .moduleButton:focus,
 .modeButton:focus,
 .personaButton:focus {
-  outline: 2px solid #F59E0B;
+  outline: 2px solid #FF7043;
   outline-offset: 2px;
-}
+} */
 
 .moduleButton:active,
 .modeButton:active,
@@ -288,13 +294,13 @@
   height: 32px;
   text-align: center;
   border: none;
-  border-bottom: 1.5px solid #d2d2d2;
+  /* border-bottom: 1.5px solid #d2d2d2; */
   margin: 0 10px;
   font-size: 18px;
 }
 
 .otpInput:focus {
-  border-bottom: 1.5px solid royalblue;
+  border: none;
   outline: none;
 }
 
@@ -333,8 +339,7 @@
   .container {
     max-width: 100%;
     padding: 1rem;
-    margin: 0
-     0.5rem;
+    margin: 0.5rem;
   }
 
   .headerSubtitle {
@@ -360,6 +365,10 @@
 
   .personaButton {
     flex-grow: 0;
+    border: none !important;
+  }
+  .personaButton:hover {
+    background-color: #f3f4f6;
   }
 
   .mobileNumberInputContainer {
