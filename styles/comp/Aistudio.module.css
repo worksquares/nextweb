@@ -556,10 +556,10 @@ cursor: pointer;
     text-align: left;
     padding: 60px 40px;
   }
-    .title {
+    /* .title {
       font-size: 4rem;
       line-height: 1.2;
-    }
+    } */
 
     .description {
       font-size: 1.1rem;

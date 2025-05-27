@@ -642,11 +642,11 @@ cursor: pointer;
   }
 }
 
-/* @media screen and (min-width: 1400px) and (max-width: 1440px) {
-  .title {
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
+  /* .title {
     font-size: 4rem;
     line-height: 1.2;
-  }
+  } */
 
   .description {
     font-size: 1.1rem;
@@ -670,7 +670,7 @@ cursor: pointer;
   .resourceGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
+}
 
 @media screen and (min-width: 1441px) {
   /* .title {
