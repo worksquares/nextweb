@@ -69,9 +69,9 @@ const Menu = () => {
                 {
                     title: 'Featured Products',
                     links: [
-                        { text: 'App Studio', href: '/product/NewAppstudio/' },
-                        { text: 'Agent Studio', href: '/product/NewAgentStudio/' },
-                        { text: 'AI Studio', href: '/product/NewAistudio/' }
+                        { text: 'App Studio', href: '/product/Appstudio/' },
+                        { text: 'Agent Studio', href: '/product/AgentStudio/' },
+                        { text: 'AI Studio', href: '/product/Aistudio/' }
                     ]
                 }
             ]

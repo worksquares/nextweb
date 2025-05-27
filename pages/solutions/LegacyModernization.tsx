@@ -5,7 +5,7 @@ import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
 import TabPanel from "../../comp/TabPanel";
-import NewHomeSlider from "../../components/NewHomeSlider";
+import HomeSlider from "../../components/HomeSlider";
 import styles from "../../styles/solutions/MainHub.module.css";
 
 const LegacyModernization = () => {
@@ -191,7 +191,7 @@ const LegacyModernization = () => {
 
           <div className={styles.MoreResources}>
             {/* <HomeSlider cards={ImageRowGridData} /> */}
-            <NewHomeSlider cards={ImageRowGridData} />
+            <HomeSlider cards={ImageRowGridData} />
           </div>
         </div>
       </BaseLayout>

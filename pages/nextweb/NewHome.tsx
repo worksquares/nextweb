@@ -184,7 +184,7 @@ let ImageCardListData: ImageContainProps[] = [
   },
 ];
 
-const HomeSlider = dynamic(() => import("../../comp/HomeSlider"), {
+const HomeSlider = dynamic(() => import("../../comp/OldHomeSlider"), {
   loading: () => <p>Loading...</p>,
   ssr: false,
 });
@@ -203,7 +203,7 @@ const NewHome = () => {
   useEffect(() => {
     posthog.capture("Page Viewed", { page: "Home" });
   }, []);
- 
+
 
   return (
     <div style={{ width: "100%", margin: "0 auto" }}>
@@ -238,7 +238,7 @@ const NewHome = () => {
         />
       </div>
       <HomeSlider cards={cards} />
-      <GetStarted /> 
+      <GetStarted />
       <NewFooter />
     </div>
   );

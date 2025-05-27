@@ -25,7 +25,6 @@ function chunkArray<T>(arr: T[] | undefined, chunkSize: number): T[][] {
 
 export function FeaturesDescription({ heading, features = [] }: FeaturesDescriptionProps) {
   const groupedFeatures = useMemo(() => chunkArray<Feature>(features, 3), [features]);
-
   const [activeIndices, setActiveIndices] = useState<number[]>([]);
 
   useEffect(() => {
@@ -46,51 +45,74 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
 
   return (
     <section className={styles.section}>
-      <div className={styles.container} style={{ flexDirection: "column", gap: "4rem" }}>
+      <div className={styles.container}>
         <div className={styles.title}>{heading}</div>
 
         {groupedFeatures.map((group, groupIdx) => {
           const activeIndex = activeIndices[groupIdx] ?? 0;
           const isEvenGroup = groupIdx % 2 === 0;
-
-          // Create subheadings+content block
           const subheadingsContent = (
-            <div
-              className={styles.subheadings}
-              style={{ flex: "0 0 300px", display: "flex", flexDirection: "column", gap: "1rem" }}
-            >
+            <div className={styles.subheadings}>
               {group.map((feature, idx) => (
-                <div key={idx} style={{ display: "flex", flexDirection: "column" }}>
-                  <button
-                    className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
-                    onClick={() => setActive(groupIdx, idx)}
-                    style={{ textAlign: "left" }}
-                    type="button"
-                  >
-                    {feature.title}
-                  </button>
+                // <div key={idx} style={{ display: "flex", flexDirection: "column" }}>
+                //   <button
+                //     className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
+                //     onClick={() => setActive(groupIdx, idx)}
+                //     style={{ textAlign: "left" }}
+                //     type="button"
+                //   >
+                //     {feature.title}
+                //   </button>
 
-                  {idx === activeIndex && (
-                    <div className={styles.content} style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}>
-                      <p>{feature.description}</p>
-                      <a
-                        href={feature.link}
-                        className={styles.button}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Explore All
-                      </a>
-                    </div>
-                  )}
-                </div>
+                //   {idx === activeIndex && (
+                //     <div className={styles.content}>
+                //       <p>{feature.description}</p>
+                //       <a
+                //         href={feature.link}
+                //         className={styles.button}
+                //         target="_blank"
+                //         rel="noreferrer"
+                //       >
+                //         Explore All
+                //       </a>
+                //     </div>
+                //   )}
+                // </div>
+                <div
+  key={idx}
+  className={`${styles.contentWrapper} ${idx === activeIndex ? styles.activeContentWrapper : ""}`}
+>
+  <button
+    // className={styles.heading}
+    className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
+    onClick={() => setActive(groupIdx, idx)}
+    style={{ textAlign: "left"}}
+    type="button"
+    >
+    {feature.title}
+  </button>
+
+  {idx === activeIndex && (
+    <div className={styles.content}>
+      <p>{feature.description}</p>
+      <a
+        href={feature.link}
+        className={styles.button}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Explore All
+      </a>
+    </div>
+  )}
+</div>
+
               ))}
             </div>
           );
 
-          // Create image block
           const imageBlock = (
-            <div style={{ flex: "1", display: "flex", justifyContent: "center" }}>
+            <div className={styles.imageBlock}>
               {group[activeIndex].image && (
                 <Image
                   src={group[activeIndex].image}
@@ -107,16 +129,9 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
           return (
             <div
               key={groupIdx}
-              style={{
-                display: "flex",
-                gap: "2rem",
-                width: "100%",
-                alignItems: "flex-start",
-                flexDirection: isEvenGroup ? "row" : "row-reverse",
-              }}
+              className={`${styles.group} ${isEvenGroup ? styles.row : styles.rowReverse}`}
+
             >
-              {/* On even groups: subheadings left, image right */}
-              {/* On odd groups: image left, subheadings right */}
               {isEvenGroup ? (
                 <>
                   {subheadingsContent}

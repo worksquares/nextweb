@@ -1,179 +1,393 @@
-import React, { useEffect, useRef } from "react";
-import VideoSection from "../../comp/NewImageLeftRight";
-import NewHeroSection from "../../comp/NewHeroSection";
-import DemoCard from "../../comp/DemoCard";
+import Image from 'next/image';
+import Link from 'next/link';
+import CustomImage from "../../components/CustomImage";
+import HomeSlider from '../../components/HomeSlider';
+import MainFooter from "../../components/MainFooter";
+import Menu from "../../components/Menu";
+import Screen from "../../components/Screen";
+import styles from "../../styles/comp/Appstudio.module.css";
 import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
-import FAQComponent from "../../comp/FAQComponent";
-import HomeTab from "../../comp/HomeTab";
-import HeroVideo from "../../comp/videoscreen";
-import { useRouter } from "next/router";
+import { FeaturesDescription } from './DescriptionCard';
 
-const customTabs = [
+const appCards = [
   {
-    key: "1",
-    tabTitle: "Workflow",
-    videoUrl: "/assets/Product/appstudio1.webp",
-    title: "App Studio Workflow Builder",
+    id:"Workflow",
+    title: "Workflow",
     description:
       "Effortlessly create and automate workflows with AppStudio. Customize templates and use drag-and-drop tools to design processes and integrate services, no coding required.",
     link: "https://docs.digisquares.com/docs/Workflow/WorkFlow%20Intro",
+    image: "/assets/description/appWorkflow.webp"
+
   },
   {
-    key: "2",
-    tabTitle: "Spark Agent",
-    videoUrl: "/assets/Product/appstudio2.webp",
-    title: "Spark Agent Management",
+    id:"Pageflow",
+    title: "Pageflow",
     description:
-      "SparkAgent offers intelligent chatbot management, enabling easy configuration and deployment to enhance customer support and automate tasks.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+      "Page flows are typically created using a drag-and-drop interface, where users can select UI components, arrange them on the canvas, and define the transition logic between screens.",
+    link: "https://docs.digisquares.com/docs/PageFlow/PageFlow%20Intro",
+    image: "/assets/description/appPageflow.webp"
+
   },
   {
-    key: "3",
-    tabTitle: "Visual Query",
-    videoUrl: "/assets/Product/appstudio4.webp",
-    title: "App Studio Query Builder",
+    id:"Visual Query",
+    title: "Visual Query",
     description:
       "Easily build visual queries without needing to write SQL using AppStudio's Visual Query Builder. Drag-and-drop data elements to create powerful queries and generate insights quickly.",
     link: "https://docs.digisquares.com/docs/Library/VisualQuery/visualquery%20Intro",
+    image: "/assets/description/appVisualQuery.webp"
   },
   {
-    key: "4",
-    tabTitle: "Integrations",
-    videoUrl: "/assets/Product/appstudio3.webp",
-    title: "AppStudio API Integration",
+    id:"Integrations",
+    title: "Integrations",
     description:
       "Create and manage integrations effortlessly with AppStudio's API tools. Define endpoints, control data flow, and ensure secure communication with a user-friendly interface.",
     link: "https://docs.digisquares.com/docs/DataSource/Integration",
+    image: "/assets/description/appIntegration.webp"
   },
   {
-    key: "5",
-    tabTitle: "Database",
-    videoUrl: "/assets/Product/appstudio5.webp",
-    title: "AppStudio Database Manager",
+    id:"Database",
+    title: "Database",
     description:
       "Effortlessly manage and scale databases with AppStudio’s intuitive Database Manager, handling schemas, migrations, and performance without deep SQL knowledge.",
     link: "https://docs.digisquares.com/docs/DataSource/Database/Database%20Intro",
+    image: "/assets/description/appDatabase.webp"
+  },
+  {
+    id:"SQL Query",
+    title: "SQL Query",
+    description:
+      "The SQL Query feature in our low-code platform simplifies database management by enabling easy creation and execution of SELECT, INSERT, UPDATE, and DELETE queries with AI-assisted generation and parameter management.",
+    link: "https://docs.digisquares.com/docs/Library/SQL%20Query",
+    image: "/assets/description/appSqlQuery.webp"
   },
 ];
 
-const faqData = [
-  {
-    key: "1",
-    question: "Who can use a App Studio platform?",
-    answer:
-      "A App Studio platform can be used by both technical and non-technical users. Developers can build complex applications faster by leveraging pre-built components, while business users with little to no coding experience can create simple apps through drag-and-drop interfaces. It's ideal for businesses looking to empower teams across various departments to contribute to app development without needing deep programming knowledge.",
-  },
-  {
-    key: "2",
-    question: "What is a  App Studio platform?",
-    answer:
-      "A  App Studio platform is a development environment that allows users to build applications with minimal hand-coding by using visual tools, drag-and-drop components, and pre-configured templates. It simplifies the app development process, enabling faster delivery of apps for web, mobile, and desktop environments, while still allowing custom coding when needed.",
-  },
-  {
-    key: "3",
-    question: "What types of apps can I build with a  App Studio platform?",
-    answer:
-      "With a  App Studio platform, you can build a wide range of applications, including internal business tools, customer-facing web and mobile apps, e-commerce solutions, CRM systems, process automation apps, and even AI-powered applications. The flexibility of  App Studio platforms allows for the creation of simple forms to more complex, enterprise-grade solutions.",
-  },
-  {
-    key: "4",
-    question: "How secure are applications built on a  App Studio platform?",
-    answer:
-      "Applications built on a  App Studio platform can be highly secure, depending on the platform's security features. Most platforms offer built-in security measures like authentication, encryption, role-based access control, and compliance with industry standards such as GDPR or HIPAA. Additionally, developers can implement custom security protocols to further enhance the safety of the applications.",
-  },
-  {
-    key: "5",
-    question: "What are the benefits of using a  App Studio platform?",
-    answer:
-      "The benefits of using a  App Studio platform include faster development times, lower costs, and reduced need for specialized programming skills. It enables rapid prototyping and iterations, improves collaboration between IT and business teams, and offers the flexibility to customize applications. Additionally, it allows businesses to respond quickly to market changes by deploying new apps faster and more efficiently.",
-  },
-];
-
-const myCustomCards = [
+// const resourceItems = [
+//   {
+//     title: "Healthcare for Smarter Care",
+//     image: "/assets/app/appimg1.webp"
+//   },
+//   {
+//     title: "Classroom Apps That Teach",
+//     image: "/assets/app/appimg2.webp"
+//   },
+//   {
+//     title: "Manufacturing Workflows",
+//     image: "/assets/app/appimg3.webp"
+//   }
+// ];
+const cards = [
   {
     title: "Healthcare for Smarter Care",
     description:
       "App Studio helps healthcare providers develop apps for patient management, telemedicine, and health records, enhancing care delivery.",
-    demoLink: "/demo/medical-apps",
     image: "/assets/Hero & cards/cards/As-card-1.webp",
-    learnMoreLink: "/industry/Medical/",
+    moreText: "Learn more",
+    moreLink: "/industry/Medical/",
+    // demoLink: "/demo/medical-apps",
   },
   {
     title: "Classroom Apps That Teach",
     description:
       "App Studio empowers educators to build e-learning platforms and student management apps, improving the learning experience.",
-    demoLink: "/demo/education-apps",
     image: "/assets/Hero & cards/cards/As-card-2.webp",
-    learnMoreLink: "/industry/Education/",
+    moreText: "Learn more",
+    moreLink: "/industry/Education/",
+    // demoLink: "/demo/manufacturing-apps",
   },
   {
     title: "Manufacturing Workflows",
     description:
       "App Studio enables manufacturers to create apps for workflow, inventory, and quality control, enhancing operational efficiency.",
-    demoLink: "/demo/manufacturing-apps",
     image: "/assets/Hero & cards/cards/As-card-3.webp",
-    learnMoreLink: "/industry/Manufacturing/",
+    moreText: "Learn more",
+    moreLink: "/industry/Manufacturing/",
+    // demoLink: "/demo/manufacturing-apps",
   },
+
 ];
 
-const Lowcode = () => {
-  const router = useRouter();
-  const { id } = router.query as { id?: string };
-  const heroVideoRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (id && heroVideoRef.current) {
-      heroVideoRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [id]);
-
+const AppStudio = () => {
   return (
-    <div style={{ width: "100%", margin: "0 auto" }}>
+    <>
+      <Menu />
+
       <Headseo
         title={` App Studio Development Platform | Digisquares`}
         heading={`Ideas to Apps`}
         description={`Digisquares is a low code platform that enables you to develop high quality apps 10X faster.`}
         url={`/nextweb/Home`}
-        img={`/assets/LowCode3D(1).webp`}
+        img={`/assets/Apphero.webp`}
       />
-      <BaseLayout>
-        <NewHeroSection
-          title="App Studio"
-          isVisible={true}
-          ImgSrc={"/assets/Hero & cards/hero/AppStudio_Hero.webp"}
-          subtitle=""
-          description="Create web and mobile apps fast with App Studio-drag, drop, deploy, no coding needed."
-          buttonText="Get started"
-          onButtonClick={"https://app.digisquares.com/register"}
-        />
-        <HeroVideo
-          videoRef={heroVideoRef}
-          title="Watch App Studio Transform Ideas"
-          dir="left"
-          video={true}
-          subtitle=""
-          description=""
-          buttonText="learn more"
-          onButtonClick={() => alert("learn more clicked!")}
-        />
-        <DemoCard showButtons={false} cardsData={myCustomCards} />
-        <VideoSection
-          title="AI TO WORK FOR PEOPLE"
-          dir="left"
-          video={false}
-          backgroundColor="#4C1565"
-          ImgSrc={"/assets/Hero & cards/as_banner.webp"}
-          subtitle=""
-          description="Discover how our intelligent platform streamlines your business with AI, freeing up your team to focus on what truly matters. "
-          buttonText="learn more"
-          onButtonClick={() => console.log("learn more clicked!")}
-        />
-        <HomeTab tabData={customTabs} />
-        <div id="faqComponent">
-          <FAQComponent faqData={faqData} />
+
+      <div className={styles.wrapper}>
+      <Screen>
+      <div className={styles.agentSection}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>App Studio</h1>
+          <h5 className={styles.description}>
+          Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h5>
+
+          <div className={styles.GetStartedBtn}>
+          <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.registerButton} rel="nofollow">Register</a>
+                   </Link>
+
+      </div>
+
+          {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+        Register
+      </Link> */}
         </div>
-      </BaseLayout>
-    </div>
+        <div className={styles.imageContainer}>
+          <CustomImage
+            type="hero"
+            src="/assets/Apphero.webp"
+            alt="AI Agents"
+            className={styles.mainImages}
+            priority={true}
+          />
+        </div>
+      </div>
+        </Screen>
+
+      </div>
+
+      <Screen>
+        <div className={styles.possibilitySection}>
+          <h2 className={styles.heading}>
+            One studio <span className={styles.highlight}>Infinite possibilities</span>
+          </h2>
+          <p className={styles.subtext}>
+            App Studio is the all-in-one platform you need to build, deploy, and manage custom apps for your business. Create smarter, faster, and scalable solutions with just a few clicks.
+          </p>
+          <div className={styles.videoPlaceholder}>
+            <video className={styles.videoPlayer}
+            muted
+            autoPlay
+            poster="/assets/App studio.webp">
+              <source src="/assets/video/App.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+
+        {/* <section className={styles.appSection}>
+          <div className={styles.appContent}>
+            <div className={styles.line1}></div>
+            <button className={styles.demoButton}>Book a Demo &gt;</button>
+
+            <h2 className={styles.appHeading}>
+              Pre-built <span className={styles.highlight}>App Hub</span>
+            </h2>
+            <p className={styles.appSubtext}>
+              Explore our pre-built, high-performance apps designed to streamline workflows, boost efficiency, and deliver instant results across various industries and functions.
+            </p>
+
+            <div className={styles.cardGrid}>
+              {appCards.map((card, idx) => (
+                <div key={idx} className={styles.card}>
+                  <h3 className={styles.cardTitle}>{card.title}</h3>
+                  <p className={styles.cardDescription}>{card.description}</p>
+                  <Link href={card.link} className={styles.cardButton}>
+                    Explore All
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section> */}
+
+        <FeaturesDescription
+         heading={
+          <>
+            <h2 className={styles.appHeading}>
+              Pre-built <span className={styles.highlight}>App Hub</span>
+            </h2>
+            {/* <p className={styles.appSubtext}>
+              Explore our pre-built, high-performance apps designed to streamline workflows,
+              boost efficiency, and deliver instant results across various industries and functions.
+            </p> */}
+          </>
+        }
+        features={appCards} />
+
+
+
+        {/* <section className={styles.resourceSection}>
+          <span className={styles.redUnderline}></span>
+          <div className={styles.resourceContent}>
+            <h2 className={styles.resourceTitle}>
+              <strong>Resources</strong> to keep you updated
+            </h2>
+            <div className={styles.resourceGrid}>
+              {resourceItems.map((item, index) => {
+
+
+                return (
+                  <div key={index} className={styles.resourceCard}>
+                    <div className={styles.resourceImage}>
+                      <Image
+                        src={item.image}
+                        alt={`Resource image for ${item.title}`}
+                        width={380}
+                        height={280}
+                        className={styles.resourceimg}
+                      />
+                    </div>
+                    <h3 className={styles.resourceText}>
+                      {item?.title}
+                    </h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section> */}
+
+
+        {/* <AppStudioSlider cards={cards} /> */}
+        <section className={styles.integrationSection}>
+        <h2 className={styles.integrationTitle}>
+          Enterprise – <strong>ready integrations</strong>
+        </h2>
+
+        <div className={styles.integrationGrid}>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Oracle DB", file: "OracleDB.svg" },
+              { name: "Postgres", file: "Postgres.svg" },
+              { name: "MariaDB", file: "MariaDB.svg" },
+              { name: "Redis", file: "Redis.svg" },
+              { name: "Snowflake", file: "Snowflake.svg" },
+              { name: "Salesforce", file: "Salesforce.svg" },
+              { name: "Asana", file: "Asana.svg" },
+              { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              { name: "Workday", file: "Workday.svg" },
+              { name: "Servicenow", file: "Servicenow.svg" },
+              { name: "Monday", file: "Monday.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
+              { name: "Slack", file: "Slack.svg" },
+              { name: "SMTP", file: "SMTP.svg" },
+              { name: "Stripe", file: "Stripe.svg" },
+              { name: "Razorpay", file: "Razorpay.svg" },
+              { name: "Paypal", file: "Paypal.svg" },
+              // { name: "Azure", file: "Azure.svg" },
+              // { name: "Basecamp", file: "Basecamp.svg" },
+              // { name: "BigID", file: "BigID.svg" },
+              // { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              // { name: "ElasticSearch", file: "ElasticSearch.svg" },
+              // { name: "Razorpay", file: "Razorpay.svg" },
+              // { name: "Braintree", file: "Braintree.svg" },
+              // { name: "Cassandra", file: "Cassandra.svg" },
+              // { name: "CircleCI", file: "CircleCI.svg" },
+              // { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              // { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
+              // { name: "Intercom", file: "Intercom.svg" },
+              // { name: "Zoho CRM", file: "ZohoCRM.svg" },
+              // { name: "BigQuery", file: "BigQuery.svg" },
+              // { name: "Dynatrace", file: "Dynatrace.svg" },
+              // { name: "CosmosDB", file: "CosmosDB.svg" },
+              // { name: "CouchDB", file: "CouchDB.svg" },
+              // { name: "Denodo", file: "Denodo.svg" },
+              // { name: "Salesforce", file: "Salesforce.svg" },
+              // { name: "Stripe", file: "Stripe.svg" },
+              // { name: "Docusign", file: "Docusign.svg" },
+              // { name: "DynamoDB", file: "DynamoDB.svg" },
+              // { name: "Close", file: "Close.svg" },
+              // { name: "Box", file: "Box.svg" },
+
+
+            ].map((integration, index) => (
+              <div key={`row1-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+{/*
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Braintree", file: "Braintree.svg" },
+              { name: "Freshdesk", file: "Freshdesk.svg" },
+              { name: "Cassandra", file: "Cassandra.svg" },
+              { name: "CircleCI", file: "CircleCI.svg" },
+              { name: "Intercom", file: "Intercom.svg" },
+              { name: "Zoho CRM", file: "ZohoCRM.svg" },
+            ].map((integration, index) => (
+              <div key={`row2-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Close", file: "Close.svg" },
+              { name: "Dynatrace", file: "Dynatrace.svg" },
+              { name: "CosmosDB", file: "CosmosDB.svg" },
+              { name: "CouchDB", file: "CouchDB.svg" },
+              { name: "Denodo", file: "Denodo.svg" },
+              { name: "Salesforce", file: "Salesforce.svg" },
+              { name: "Stripe", file: "Stripe.svg" },
+
+            ].map((integration, index) => (
+              <div key={`row3-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Docusign", file: "Docusign.svg" },
+              { name: "DynamoDB", file: "DynamoDB.svg" },
+              { name: "CloudDatastore", file: "CloudDatastore.svg" },
+              { name: "ElasticSearch", file: "ElasticSearch.svg" },
+              { name: "Zoho Books API", file: "Zoho Books API.svg" },
+              { name: "Zoho Invoice", file: "Zoho Invoice.svg" },
+            ].map((integration, index) => (
+              <div key={`row4-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div> */}
+          </div></section>
+      </Screen>
+      <HomeSlider cards={cards} />
+
+
+
+
+
+      <MainFooter />
+    </>
   );
 };
-export default Lowcode;
+
+export default AppStudio;

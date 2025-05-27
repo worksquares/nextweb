@@ -1,171 +1,420 @@
-import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
-import DemoCard from "../../comp/DemoCard";
-import FAQComponent from "../../comp/FAQComponent";
-import HomeTab from "../../comp/HomeTab";
-import NewFooter from "../../comp/newFooter";
-import NewHeroSection from "../../comp/NewHeroSection";
-import VideoSection from "../../comp/NewImageLeftRight";
-import NewMenu from "../../comp/newMenu";
-import HeroVideo from "../../comp/videoscreen";
+import Image from "next/image";
+import Link from 'next/link';
+import CustomImage from "../../components/CustomImage";
+import HomeSlider from "../../components/HomeSlider";
+import MainFooter from "../../components/MainFooter";
+import Menu from "../../components/Menu";
+import Screen from "../../components/Screen";
+import styles from "../../styles/comp/Agentstudio.module.css";
+import Headseo from "../headseo";
+import AiAgentRecruiterDashboard from "./AiAgentRecruiterDashboard";
+import { FeaturesDescription } from "./DescriptionCard";
 
-const customTabs = [
+
+
+
+const agentCards = [
   {
-    key: "1",
-    tabTitle: "Conversational AI",
-    videoUrl: "/assets/Product/agentstudio4.webp",
+
+    title: "Conversational AI",
+    description:
+      "Create AI chatbots and voice assistants effortlessly with Digisquares Agent Studio. Choose templates and customize using a simple drag-and-drop interface.",
+    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+    image: "/assets/description/agentConversationalAi.webp"
+    },
+  {
+
+    title: "Interactions",
+    description:
+      "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
+    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+      image: "/assets/description/agentInteraction.webp"
+    },
+  {
+
+    title: "Access Control",
+    description:
+      "Agent Studio allows role-based team management for secure agent design and deployment, while boosting marketing with AI-powered campaigns, SEO tools, and actionable analytics",
+    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+    image: "/assets/description/agentAccessControl.webp"
+    },
+  {
+
+    title: "Manage APIs",
+    description:
+      "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
+    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+    image: "/assets/description/agentManageApis.webp"
+},
+  {
+
+    title: "Data Management",
+    description:
+      "Agent Studio enables real-time data access and database management, optimizing conversational agents for 24/7 AI support, ticket handling, sentiment analysis, and instant issue resolution",
+    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+    image: "/assets/description/agentDataManagement.webp"
+    },
+  {
+
+    title: "Flowbuilder",
+    description:
+      "The Flow Builder automates workflows visually, helping users streamline tasks, integrate systems, and improve efficiency",
+    link:"https://docs.digisquares.com/docs/Agent%20studio/Flowbuilder/FlowbuilderIntro",
+    image: "/assets/description/agentFlowBuilder.webp"
+    },
+];
+
+// const resourceItems = [
+//   {
+//     title: "Empowering Healthcare Agents",
+//     image: "/assets/agent/agentimg1.webp"
+//   },
+//   {
+//     title: " Revolutionizing Banking Agents ",
+//     image: "/assets/agent/agentimg2.webp"
+//   },
+//   {
+//     title: "AI for Government Services",
+//     image: "/assets/agent/agentimg3.webp"
+//   }
+// ];
+
+const cards = [
+  {
+    // tabTitle:"Conversational AI",
     title: "Build Conversational AI Projects",
     description:
       "Effortlessly create AI-powered conversational projects with Digisquares Agent Studio. Select from chatbot and voice assistant templates, and customize with a drag-and-drop interface.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView"
+    image: "/assets/Product/agentstudio4.webp",
+    moreText: "Learn more",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    key: "2",
-    tabTitle: "Interactions",
-    videoUrl: "/assets/Product/agentstudio5.webp",
+    // tabTitle:"Interactions",
     title: "Manage User Access",
     description:
       "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView"
+    image: "/assets/Product/agentstudio5.webp",
+    moreText: "Learn more",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    key: "3",
-    tabTitle: "Access Control",
-    videoUrl: "/assets/Product/agentstudio6.webp",
+    // tabTitle:"Access Control",
     title: "Role-Based Access Control",
     description:
       "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView"
+    image: "/assets/Product/agentstudio6.webp",
+    moreText: "Learn more",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    key: "4",
-    tabTitle: "Manage APIs",
-    videoUrl: "/assets/Product/agentstudio7.webp",
+    // tabTitle:"Manage APIs",
     title: "Integrate and Manage APIs",
     description:
       "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView"
+    image: "/assets/Product/agentstudio7.webp",
+    moreText: "Learn more",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
   {
-    key: "5",
-    tabTitle: "Data Management",
-    videoUrl: "/assets/Product/agentStudio8.webp",
+    // tabTitle:"Data Management",
     title: "Manage Agent Data Efficiently",
     description:
       "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",
-    link: "https://docs.digisquares.com/docs/Apps/Copilot/OverView"
-  }
+    image: "/assets/Product/agentStudio8.webp",
+    moreText: "Learn more",
+    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+  },
+
 ];
 
-const faqData = [
-  {
-    key: "1",
-    question: "Who is the ideal user of an Agents Studio platform?",
-    answer:
-      "The ideal users of an Agents Studio platform include developers, customer support teams, marketing professionals, and even non-technical staff looking to create chatbots or voice assistants. With its intuitive drag-and-drop interface, the platform is accessible to both technical and non-technical users, allowing them to build conversational AI solutions without needing advanced coding skills."
-  },
-  {
-    key: "2",
-    question: "How would you describe an Agents Studio for conversation and voice?",
-    answer:
-      "An Agents Studio is a platform designed for creating AI-powered conversational agents like chatbots and voice assistants. It enables users to build, customize, and deploy intelligent agents that can handle customer interactions, automate tasks, and provide personalized responses. It typically includes tools like natural language processing (NLP) and support for multi-language and multi-speaker capabilities."
-  },
-  {
-    key: "3",
-    question: "What kinds of conversational agents can be developed with an Agents Studio?",
-    answer:
-      "You can develop a wide range of conversational agents with an Agents Studio, including customer service chatbots, virtual assistants for smart devices, voice-enabled shopping assistants, and support agents that manage appointments or answer FAQs. These agents can be deployed across multiple platforms such as websites, apps, and smart home devices."
-  },
-  {
-    key: "4",
-    question: "How does an Agents Studio ensure the security of conversational agents?",
-    answer:
-      "Agents Builders come equipped with advanced security features like encryption, user authentication, and role-based access control. These security measures ensure that customer interactions, personal data, and business workflows remain protected. The platform is designed to comply with industry standards, safeguarding your agents from security vulnerabilities."
-  },
-  {
-    key: "5",
-    question: "What are the key advantages of using an Agents Studio platform?",
-    answer:
-      "Using an Agents Studio offers several key advantages: it reduces the time needed to build intelligent agents, requires no coding expertise, and supports multi-language functionality. Businesses can automate customer support, provide personalized assistance around the clock, and integrate agents easily with existing systems, boosting operational efficiency and customer satisfaction."
-  }
-];
 
-const myCustomCards = [
-  {
-    title: "Empowering Healthcare Agents",
-    description:
-      "Agent Studio allows healthcare providers to create  agents for patient inquiries, appointment scheduling, and health dissemination, improving engagement.",
-    image: "/assets/Hero & cards/cards/Ag-card-1.webp",
-    demoLink: "/demo/medical-agent",
-    learnMoreLink: "/industry/Medical/"
-  },
-  {
-    title: "Revolutionizing Banking Agents",
-    description:
-      "Agent Studio helps banks deploy AI agents for customer support, loan inquiries, and transaction assistance, providing an efficient customer experience.",
-    image: "/assets/Hero & cards/cards/Ag-card-2.webp",
-    demoLink: "/demo/banking-agent",
-    learnMoreLink: "/industry/Banking/"
-  },
-  {
-    title: "AI for Government Services",
-    description:
-      "Agent Studio enables government agencies to deploy conversational agents for citizen services, information dissemination, and application processing.",
-    image: "/assets/Hero & cards/cards/Ag-card-3.webp",
-    demoLink: "/demo/government-agent",
-    learnMoreLink: "/industry/Government/"
-  }
-];
+const AgentStudio = () => {
 
-const Agentbuilder = () => {
-  const router = useRouter();
-  const { id } = router.query;
-  const heroVideoRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (id && heroVideoRef.current) {
-      heroVideoRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [id]);
 
   return (
-    <div style={{ width: "100%", margin: "0 auto" }}>
-      <NewMenu />
-      <NewHeroSection
-        title="Agent Studio"
-        isVisible={true}
-        ImgSrc="/assets/Hero & cards/hero/ag_hero.webp"
-        subtitle=""
-        description="Empower your business with Digisquares Agent Studio—deploy AI-driven, multi-language agents, no coding needed."
-        buttonText="Get started"
-        onButtonClick="https://app.digisquares.com/register"
-      />
-      <HeroVideo
-        videoRef={heroVideoRef}
-        title="Watch Agent Studio Transform Ideas"
-        dir="left"
-        video={true}
-        subtitle=""
-        description=""
-        buttonText="Learn More"
-        onButtonClick={() => alert("Learn more clicked!")}
-      />
-      <DemoCard showButtons={false} cardsData={myCustomCards} />
-      <VideoSection
-        title="Customer Engagement with AI"
-        dir="left"
-        video={false}
-        backgroundColor="#651535"
-        ImgSrc="/assets/Hero & cards/videosectionimg2.webp"
-        subtitle=""
-        description="With Digisquares Agent Studio, your business can provide intelligent, personalized conversations that feel natural, improving customer satisfaction and operational efficiency."
-        buttonText="Learn More"
-        onButtonClick={() => console.log("Learn more clicked!")}
-      />
-      <HomeTab tabData={customTabs} />
-      <FAQComponent faqData={faqData} />
-      <NewFooter />
-    </div>
+    <>
+      <Menu />
+      <Headseo
+  title={`Agent Studio Builder | Digisquares`}
+  heading={`Build Autonomous Agents`}
+  description={`Agent Studio empowers you to create and orchestrate powerful AI agents with no-code tools—integrate, automate, and deploy with ease.`}
+  url={`/nextweb/agent-studio`}
+  img={`/assets/AgentHero.webp`}
+/>
+
+      <div className={styles.wrapper}>
+      <Screen>
+      <div className={styles.agentSection}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Agent Studio</h1>
+          <h5 className={styles.description}>
+          Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h5>
+
+          <div className={styles.GetStartedBtn}>
+          <Link legacyBehavior href="https://app.digisquares.com/register">
+                  <a className={styles.registerButton} rel="nofollow">Register</a>
+                   </Link>
+
+      </div>
+          {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
+        Register
+      </Link> */}
+        </div>
+        <div className={styles.imageContainer}>
+          <CustomImage
+            type="hero"
+            src="/assets/AgentHero.webp"
+            alt="AI Agents"
+            className={styles.mainImages}
+            priority={true}
+          />
+        </div>
+      </div>
+        </Screen>
+      </div>
+      <Screen>
+
+      <div className={styles.possibilitySection}>
+
+        <h2 className={styles.heading}>
+          One studio{" "}
+          <span className={styles.highlight}>Infinite possibilities</span>
+        </h2>
+        <p className={styles.subtext}>
+        Agent Studio is the only platform you need to create, deploy, and
+    manage AI agents tailored for your business. Build smarter, faster,
+    and scalable AI solutions in just a few clicks.
+        </p>
+        <div className={styles.videoPlaceholder}>
+          <video
+            className={styles.videoPlayer}
+            autoPlay
+            muted
+          >
+            <source src="/assets/video/Agent.mp4" type="video/mp4" />
+
+          </video>
+        </div>
+        {/* <AiAgentRecruiter /> */}
+        <AiAgentRecruiterDashboard />
+      </div>
+
+
+      {/* <section className={styles.agentSections}>
+        <div className={styles.agentContent}>
+          <div className={styles.line1}></div>
+          <button className={styles.demoButton}>Book a Demo &gt;</button>
+
+          <h2 className={styles.agentHeading}>
+            Pre-built <span className={styles.highlight}>Agent Hub</span>
+          </h2>
+          <p className={styles.agentSubtext}>
+            Explore our pre-built, high-accuracy AI agents that are trained to
+            optimize workflows, enhance efficiency, and deliver instant results
+            across industries and functions.
+          </p>
+
+          <div className={styles.line2}></div>
+          <div className={styles.cardGrid}>
+            {agentCards.map((card, idx) => (
+              <div key={idx} className={styles.card}>
+                <div className={styles.cardIcon}>{card.icon}</div>
+                <h3 className={styles.cardTitle}>{card.title}</h3>
+                <p className={styles.cardDescription}>{card.description}</p>
+
+
+                <Link href={card.link} className={styles.cardButton}>
+                    Explore All
+                  </Link>
+                  </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+      <FeaturesDescription
+      heading={
+      <><h2 className={styles.agentHeading}>
+      Pre-built <span className={styles.highlight}>Agent Hub</span>
+    </h2>
+    {/* <p className={styles.agentSubtext}>
+      Explore our pre-built, high-accuracy AI agents that are trained to
+      optimize workflows, enhance efficiency, and deliver instant results
+      across industries and functions.
+    </p> */}
+    </>}
+      features={agentCards} />
+
+      <section className={styles.integrationSection}>
+        <h2 className={styles.integrationTitle}>
+          Enterprise – <strong>ready integrations</strong>
+        </h2>
+
+        <div className={styles.integrationGrid}>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "ZohoCRM", file: "ZohoCRM.svg" },
+              { name: "GmailAPI", file: "GmailAPI.svg" },
+              { name: "Servicenow", file: "Servicenow.svg" },
+              { name: "ZohoMail", file: "ZohoMail.svg" },
+              { name: "Facebook", file: "Facebook.svg" },
+              { name: "Youtube", file: "Youtube.svg" },
+              { name: "WhatsApp", file: "WhatsApp.svg" },
+              { name: "Instagram", file: "Instagram.svg" },
+              { name: "WhatTelegramsApp", file: "Telegram.svg" },
+              { name: "Azure", file: "Azure.svg" },
+              { name: "GoogleCloudStorage", file: "GoogleCloudStorage.svg" },
+              { name: "AmazonS3", file: "AmazonS3.svg" },
+              { name: "Onedrive", file: "Onedrive.svg" },
+              { name: "GoogleSheets", file: "GoogleSheets.svg" },
+              { name: "Box", file: "Box.svg" },
+              // { name: "Facebook", file: "Facebook.svg" },
+              // { name: "GmailAPI", file: "GmailAPI.svg" },
+              // { name: "Pinecone", file: "pinecone.svg" },
+              // { name: "Google", file: "Google.svg" },
+              // { name: "Telegram", file: "Telegram.svg" },
+              // { name: "Microsoft SQL", file: "MicrosoftSQL.svg" },
+              // { name: "SAP Hana", file: "SAPHana.svg" },
+              // { name: "OracleDB", file: "OracleDB.svg" },
+              // { name: "Jira", file: "Jira.svg" },
+              // { name: "Twilio", file: "Twilio.svg" },
+              // { name: "SMTP", file: "SMTP.svg" },
+              // { name: "Netsuite", file: "Netsuite.svg" },
+              // { name: "Presto", file: "Presto.svg" },
+              // { name: "Slack", file: "Slack.svg" },
+              // { name: "ZohoMail", file: "ZohoMail.svg" },
+              // { name: "Tableau", file: "Tableau.svg" },
+              // { name: "Datadog", file: "Datadog.svg" },
+              // { name: "MongoDBAtlas", file: "MongoDB Atlas.svg" },
+              // { name: "Vertica", file: "Vertica.svg" },
+              // { name: "Vimeo", file: "Vimeo.svg" },
+              // { name: "Adyen", file: "Adyen.svg" },
+              // { name: "Amazon Athena", file: "AmazonAthena.svg" },
+              // { name: "Amazon Redshift", file: "AmazonRedshift.svg" },
+              // { name: "Amazon S3", file: "AmazonS3.svg" },
+              // { name: "Eventbrite", file: "Eventbrite.svg" },
+              // { name: "Evernote", file: "Evernote.svg" },
+            ].map((integration, index) => (
+              <div key={`row1-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* <div className={styles.integrationRow}>
+            {[
+              { name: "OracleDB", file: "OracleDB.svg" },
+              { name: "Jira", file: "Jira.svg" },
+              { name: "Twilio", file: "Twilio.svg" },
+              { name: "SMTP", file: "SMTP.svg" },
+              { name: "Netsuite", file: "Netsuite.svg" },
+              { name: "Presto", file: "Presto.svg" },
+            ].map((integration, index) => (
+              <div key={`row2-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Slack", file: "Slack.svg" },
+              { name: "ZohoMail", file: "ZohoMail.svg" },
+              { name: "Tableau", file: "Tableau.svg" },
+              { name: "Datadog", file: "Datadog.svg" },
+              { name: "MongoDBAtlas", file: "MongoDB Atlas.svg" },
+              { name: "Vertica", file: "Vertica.svg" },
+              { name: "Vimeo", file: "Vimeo.svg" },
+            ].map((integration, index) => (
+              <div key={`row3-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className={styles.integrationRow}>
+            {[
+              { name: "Adyen", file: "Adyen.svg" },
+              { name: "Amazon Athena", file: "AmazonAthena.svg" },
+              { name: "Amazon Redshift", file: "AmazonRedshift.svg" },
+              { name: "Amazon S3", file: "AmazonS3.svg" },
+              { name: "Eventbrite", file: "Eventbrite.svg" },
+              { name: "Evernote", file: "Evernote.svg" },
+            ].map((integration, index) => (
+              <div key={`row4-${index}`} className={styles.integrationCard}>
+                <Image
+                  src={`/assets/Appstudio/${integration.file}`}
+                  alt={`${integration.name} logo`}
+                  className={styles.integrationIcon}
+                  width={20}
+                  height={20}
+                />
+                <span>{integration.name}</span>
+              </div>
+            ))}
+          </div> */}
+
+        </div>
+      </section>
+
+      {/* <section className={styles.resourceSection}>
+          <span className={styles.redUnderline}></span>
+          <div className={styles.resourceContent}>
+            <h2 className={styles.resourceTitle}>
+              <strong>Resources</strong> to keep you updated
+            </h2>
+            <div className={styles.resourceGrid}>
+              {resourceItems.map((item, index) => {
+                const words = item.title.trim().split(" ");
+
+                return (
+                  <div key={index} className={styles.resourceCard}>
+                    <div className={styles.resourceImage}>
+                      <Image
+                        src={item.image}
+                        alt={`Resource image for ${item.title}`}
+                        width={380}
+                        height={280}
+                        className={styles.resourceimg}
+                      />
+                    </div>
+                    <h3 className={styles.resourceText}>
+                      {item.title}
+                    </h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section> */}
+        {/* <AgentStudioSlider cards={cards} /> */}
+
+      </Screen>
+      <HomeSlider cards={cards} />
+
+      <MainFooter />
+    </>
   );
 };
-export default Agentbuilder;
+
+export default AgentStudio;

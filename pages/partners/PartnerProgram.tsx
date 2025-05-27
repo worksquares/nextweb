@@ -4,7 +4,7 @@ import CardsandBlog from "../../comp/CardsandBlog";
 import ImageContentCard from "../../comp/ImageLeftRight";
 import NewHeroSection from "../../comp/NewHeroSection";
 import TabPanel from "../../comp/TabPanel";
-import NewHomeSlider from "../../components/NewHomeSlider";
+import HomeSlider from "../../components/HomeSlider";
 import Headseo from "../headseo";
 
 const PartnerProgram = () => {
@@ -223,7 +223,7 @@ const PartnerProgram = () => {
           CardInformation={CardInformationData}
           // myCustomCards={myCustomCardsData}
         />
-        <NewHomeSlider cards={myCustomCardsData} />
+        <HomeSlider cards={myCustomCardsData} />
         <div style={{ margin: "65px 0px" }}>
           <ImageContentCard ImageCardPropsList={ImageCardListData} />
         </div>

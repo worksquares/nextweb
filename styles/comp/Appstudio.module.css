@@ -596,10 +596,10 @@ cursor: pointer;
   .subtext{
     width: 700px;
   }
-  .appSubtext {
-    /* width: 700px; */
-    /* line-height: 1.5rem; */
-  }
+  /* .appSubtext {
+    width: 700px;
+    line-height: 1.5rem;
+  } */
 
   .agentSection {
     flex-direction: row;

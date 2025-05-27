@@ -60,7 +60,7 @@
   background-color: #ff0000;
   color: #fff;
   font-weight: 700;
-  padding: 12px 32px;
+  /* padding: 15px 30px; */
   border-radius: 50px;
   /* font-size: 18px; */
   text-align: center;
@@ -422,6 +422,9 @@ cursor: pointer;
       height: 200px;
 
     }
+    .registerButton{
+      padding: 15px 30px;
+    }
     .videoPlayer {
       height: 100%;
       width:100%;
@@ -499,6 +502,9 @@ cursor: pointer;
   .agentSection {
     flex-direction: row;
   }
+  .registerButton{
+    padding: 15px 30px;
+  }
   .redUnderline{
     top:20px;
   }
@@ -524,6 +530,9 @@ cursor: pointer;
     max-width: 95%;
     margin: 30px 0;
   }
+  .registerButton{
+    padding: 15px 30px;
+  }
   .subtext{
     width: 700px;
   }
@@ -539,7 +548,7 @@ cursor: pointer;
 }
 
 
-/* @media screen and (min-width: 1401px) and (max-width: 1440px) {
+@media screen and (min-width: 1401px) and (max-width: 1440px) {
 
   .wrapper {
     flex-direction: column;
@@ -566,8 +575,9 @@ cursor: pointer;
 
 
     .registerButton {
-      width: 33%;
+      /* width: 33%; */
       text-align: center;
+      padding: 15px 30px;
     }
     .imageContainer{
       width: 100%;
@@ -587,9 +597,9 @@ cursor: pointer;
     .resourceGrid {
       grid-template-columns: repeat(2, 1fr);
     }
-  } */
+  }
 
-@media screen and (min-width: 1431px) {
+@media screen and (min-width: 1920px) {
   /* .title {
     font-size: 8.7rem;
     line-height: 7rem;
@@ -600,9 +610,9 @@ cursor: pointer;
     max-width: 95%;
     margin: 30px 0;
   }
-  .registerButton{
+  /* .registerButton{
     padding: 30px 50px;
-  }
+  } */
 
   .redUnderline{
     top:20px;
@@ -615,6 +625,7 @@ cursor: pointer;
 
   .registerButton{
     /* width:23%; */
+    padding: 30px 50px !important;
     text-align: center;
   }
   .mainImages {

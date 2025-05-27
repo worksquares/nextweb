@@ -5,7 +5,7 @@ import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
 import HomePanel from "../../comp/HomePanel";
 import TabPanel from "../../comp/TabPanel";
-import NewHomeSlider from "../../components/NewHomeSlider";
+import HomeSlider from "../../components/HomeSlider";
 import styles from "../../styles/industries/Industry.module.css";
 
 const FinancialServices = () => {
@@ -181,7 +181,7 @@ const FinancialServices = () => {
           {/* <Screen> */}
             <div className={styles.MoreResources}>
               {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <NewHomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={ImageRowGridData} />
             </div>
           {/* </Screen> */}
         </div>

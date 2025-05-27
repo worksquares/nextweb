@@ -1,10 +1,10 @@
 import Screen from "../../comp/Screen";
 import AccelerateSection from "../../components/AccelerateSection";
+import HomeSlider from "../../components/HomeSlider";
 import ImageLeftRight, { ImageContainProps } from "../../components/ImageLeftRight";
 import MainFooter from "../../components/MainFooter";
 import Menu from "../../components/Menu";
 import MultiAgentSection from "../../components/MultiAgentSection";
-import NewHomeSlider from "../../components/NewHomeSlider";
 import StudioSection from "../../components/StudioSection";
 
 const studioCardsData = [
@@ -13,21 +13,21 @@ const studioCardsData = [
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
     backgroundColor: "#7C5F00",
-    link: "product/NewAppstudio/",
+    link: "product/Appstudio/",
   },
   {
     title: "Agent Studio",
     description:
       "Build intelligent chatbots and voice agents that engage customers 24/7. Seamlessly integrate natural language processing for personalized conversations.",
     backgroundColor: "#F4511E",
-    link: "product/NewAgentStudio/",
+    link: "product/AgentStudio/",
   },
   {
     title: "AI Studio",
     description:
       "Customize, fine-tune, and deploy AI models while generating synthetic data from one platform. Achieve powerful AI solutions without coding expertise.",
     backgroundColor: "#00796B",
-    link: "/product/NewAistudio/",
+    link: "/product/Aistudio/",
   },
 ];
 
@@ -43,7 +43,7 @@ let newcards: ImageContainProps[] = [
       "Leverage AI-assisted features to accelerate your development. From generating forms to setting up workflows, AppStudio makes automation simple and intuitive for teams of all sizes.",
       img320: require("../../public/assets/App_Studio.webp"),
       button:"Learn more →",
-      link:"product/NewAppstudio/",
+      link:"product/Appstudio/",
   },
   {
     title: "Build Voice & Chat Agents Instantly",
@@ -56,7 +56,7 @@ let newcards: ImageContainProps[] = [
       "Design conversational flows without writing code. Deploy your agents across platforms like websites, mobile apps, and WhatsApp—instantly turning conversations into actions.",
       img320: require("../../public/assets/imgagentstudio.webp"),
       button:"Learn more →",
-      link:"product/NewAppstudio/",
+      link:"product/Appstudio/",
 
 
   },
@@ -71,7 +71,7 @@ let newcards: ImageContainProps[] = [
       "Test and evaluate AI models in real-time with our intuitive playground. Fine-tune models easily and ensure optimal performance across multiple use cases.",
       img320:  require("../../public/assets/AI_Studio.webp"),
       button:"Learn more →",
-      link:"product/NewAppstudio/",
+      link:"product/Appstudio/",
   },
 ];
 
@@ -154,9 +154,9 @@ const Home = () => {
       </Screen>
       <MultiAgentSection />
 
-      {/* <HomeSlider cards={cards} /> */}
+      <HomeSlider cards={cards} />
 
-      <NewHomeSlider cards={cards} />
+      {/* <NewHomeSlider cards={cards} /> */}
       <MainFooter />
     </>
 
