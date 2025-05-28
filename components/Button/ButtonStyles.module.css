@@ -66,3 +66,35 @@
   border: none !important;          /* Remove border */
   /* box-shadow: none !important; */
 }
+
+
+@media screen and (min-width: 1900px) {
+  .smallButton {
+    height: 60px !important;
+    font-size: 1.25rem !important;
+    padding: 8px 16px !important;
+  }
+
+  .smallButton:hover {
+    /* Optional: larger underline or different hover style */
+    text-decoration-thickness: 2px;
+  }
+
+  .mediumButton {
+    height: 60px !important;
+    width: 220px !important;
+    font-size: 26px !important;
+    padding: 1px 25px !important;
+  }
+
+
+
+  .largeButton {
+    height: 80px !important;
+    width: 180px !important;
+    font-size: 24px !important;
+    padding: 16px 40px !important;
+  }
+
+
+}
