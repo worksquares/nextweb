@@ -1,8 +1,3 @@
-/* stylelint-disable at-rule-no-unknown */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* stylelint-enable at-rule-no-unknown */
 
 @layer base {
   :root {
@@ -133,9 +128,9 @@
 .ant-tabs-card >.ant-tabs-nav .ant-tabs-tab-active{
   background-color: #193D6A;
 }
-.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+/* .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: white;
-}
+} */
 
 .ant-tabs-nav-list {
   width: 90%;
@@ -151,10 +146,10 @@
 .ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
   justify-content: center;
 }
-.ant-tabs .ant-tabs-tab-btn{
+/* .ant-tabs .ant-tabs-tab-btn{
   font-size: 16px;
   font-weight: 500;
-}
+} */
 .ant-tabs-top >.ant-tabs-nav::before{
   border-bottom: 0px solid #f0f0f0 !important;
 }
@@ -262,29 +257,26 @@ p span{
   letter-spacing: -0.0012em;
   line-height: 2rem;
 }
-span{
-  /* font-size: 2rem; */
+/* span{
+
   font-family: var(--pbc-g-font-sans);
   font-size: 1.5rem;
   letter-spacing: -0.0012em;
   line-height: 2rem;
-}
-button {
+} */
+/* button {
   padding: 10px 20px;
-  /* background-color: white;
-  color: black; */
+
   font-weight: bold;
   border: none;
-  /* border-radius: 20px; */
+
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
-  /* margin: 15px 0; */
-  /* width: 130px; */
-  /* align-items: right; */
- }
 
-a {
+ } */
+
+/* a {
   font-size: 1.125rem;
   line-height: 1.688;
 }
@@ -292,13 +284,13 @@ a span{
   font-size: 1.125rem;
   line-height: 1.688;
 
-}
+} */
 
 
 @media (max-width: 442px) {
-  .ant-tabs .ant-tabs-tab-btn{
+  /* .ant-tabs .ant-tabs-tab-btn{
     font-size: .6em;
-  }
+  } */
   .ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text{
     font-size: 1rem;
   }
@@ -404,13 +396,13 @@ a span{
     letter-spacing: -0.0012em;
     line-height: 1.5rem;
   }
-  a{
+  /* a{
     font-size: 1rem;
   }
   button {
      font-size: 1rem;
      line-height: .8rem;
-   }
+   } */
 
 }
 @media screen and (min-width: 769px) and (max-width: 1400px) {
@@ -482,10 +474,7 @@ a span{
     font-weight: bold;
   }
 
-  h7 {
-    font-size: 4rem;      /* ~64px */
-    line-height: 1.2;
-  }
+
 
   p {
     /* font-size: 1.125rem; */
@@ -502,15 +491,15 @@ a span{
     line-height: 1.875rem;
   }
 
-  span{
+  /* span{
     font-size: 1.125rem;
-  }
-  a{
+  } */
+  /* a{
     font-size: 1rem;
   }
   button {
     font-size: 1rem;
-  }
+  } */
 
 
 @media screen and (min-width: 1430px) and (max-width: 1600px){
@@ -584,15 +573,15 @@ a span{
     line-height: 1.875rem;
   }
 
-  span{
+  /* span{
     font-size: 1.1rem;
-  }
-  a{
+  } */
+  /* a{
     font-size: 1rem;
   }
   button {
     font-size: 1rem;
-  }
+  } */
 
 }
 
@@ -671,16 +660,16 @@ a span{
     letter-spacing: -0.0012em;
     line-height: 2rem;
   }
-  a{
-    /* font-size: 1rem; */
+  /* a{
+
     font-size: 1.3rem;
     line-height: 1rem;
   }
   button {
-    /* font-size:  1rem; */
+
     font-size: 1.3rem;
     line-height: 1rem;
-  }
+  } */
 
 
 

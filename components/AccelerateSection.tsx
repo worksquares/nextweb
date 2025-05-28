@@ -1,8 +1,8 @@
-import Link from "next/link";
 import Headseo from "../pages/headseo";
 import styles from '../styles/comp/Accelerate.module.css';
 // import Image from "next/image";
 import Screen from "../comp/Screen";
+import { LargeButton } from "./Button/Button";
 
 
 
@@ -27,17 +27,13 @@ const AccelerateSection = () => {
               <h5 className={styles.description_accelerate}>
                 Build apps, create chatbots, and deploy AI models effortlessly - no code required.
               </h5>
-
-              <div className={styles.GetStartedBtn}>
-                {/* <Link legacyBehavior href="https://app.digisquares.com/register">
-                  <a rel="nofollow">
-                    <div className={styles.buttonText}>Register</div>
-                  </a> */}
-                {/* </Link> */}
-                  <Link legacyBehavior href="https://app.digisquares.com/register">
-                  <a className={styles.buttonText} rel="nofollow">Register</a>
-                   </Link>
-              </div>
+              <LargeButton
+                  text="Register"
+                  bgColor="#F9CB2E"
+                  color="#000000"
+                  onClick={() => window.location.href = "https://app.digisquares.com/register"}
+                  className="MediumButton"
+                />
             </div>
 
             <div className={styles.imageContainer}>

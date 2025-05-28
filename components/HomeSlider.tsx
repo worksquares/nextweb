@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
 import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
+import { SmallButton } from "./Button/Button";
 
 interface Card {
     // tabTitle?: string;
@@ -122,7 +123,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                     <h4>{card.title}</h4>
                     <p>{card.description}</p>
                     <div className={styles.footer}>
-                      {card.links && (
+                      {/* {card.links && (
                         <div className={styles.links}>
                           {card.links.map((link, i) => (
                             <a key={i} href={link.href} className={styles.link}>
@@ -133,7 +134,17 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                       )}
                       <a href={card.moreLink} className={styles.moreLink}>
                         {card.moreText || "Learn More"} &rarr;
-                      </a>
+                      </a> */}
+                      <SmallButton
+                        text={card.moreText ? card.moreText : "Learn More"}
+                        color="#1d4965"
+                        onClick={() => {
+                          if (card.moreLink) {
+                            window.location.href = card.moreLink;
+                          }
+                        }}
+                      />
+
                       {/* {card.demoLink && (
 
                         <a href={card.demoLink} className={styles.demoLink}

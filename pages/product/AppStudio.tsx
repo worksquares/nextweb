@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { LargeButton } from '../../components/Button/Button';
 import CustomImage from "../../components/CustomImage";
 import HomeSlider from '../../components/HomeSlider';
 import MainFooter from "../../components/MainFooter";
@@ -128,12 +128,19 @@ const AppStudio = () => {
           <h5 className={styles.description}>
           Turn your innovative ideas into powerful applications effortlessly. Build scalable, high-performance solutions quickly and efficiently          </h5>
 
-          <div className={styles.GetStartedBtn}>
+          {/* <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
                   <a className={styles.registerButton} rel="nofollow">Register</a>
                    </Link>
 
-      </div>
+      </div> */}
+       <LargeButton
+            text="Register"
+            bgColor="#ff0000"
+            color="#fff"
+            onClick={() => window.location.href = "https://app.digisquares.com/register"}
+            className="MediumButton"
+        />
 
           {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register

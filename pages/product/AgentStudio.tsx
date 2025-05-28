@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from 'next/link';
+import { LargeButton } from "../../components/Button/Button";
 import CustomImage from "../../components/CustomImage";
 import HomeSlider from "../../components/HomeSlider";
 import MainFooter from "../../components/MainFooter";
@@ -151,12 +151,23 @@ const AgentStudio = () => {
           <h5 className={styles.description}>
           Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h5>
 
-          <div className={styles.GetStartedBtn}>
+          {/* <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
                   <a className={styles.registerButton} rel="nofollow">Register</a>
                    </Link>
 
-      </div>
+      </div> */}
+         <LargeButton
+                  text="Register"
+                  bgColor="#ff0000"
+                  color="#fff"
+                  onClick={() => window.location.href = "https://app.digisquares.com/register"}
+                  className="MediumButton"
+                  hoverBgColor="#ffffff"
+                  hoverTextColor="#000"
+              />
+
+
           {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register
       </Link> */}

@@ -1,8 +1,7 @@
 
-import Link from 'next/link';
 import React from 'react';
-import RoundedButton from '../components/RoundedButton';
 import VerticalDivider from '../components/VerticalDivider';
+import { MediumButton } from './Button/Button';
 
 const MultiAgentSection: React.FC = () => {
   return (
@@ -43,21 +42,45 @@ const MultiAgentSection: React.FC = () => {
           gap: '20px',
         }}
       >
-         <Link href="https://app.digisquares.com/register" passHref>
+         {/* <Link href="https://app.digisquares.com/register" passHref>
         <RoundedButton
           text="Register"
           bgColor="#FF0707"
           hoverColor="#e74c3c"
         />
-        </Link>
+        </Link> */}
+
+        <MediumButton
+        text="Register"
+        bgColor="#FF0707"
+        color='#fff'
+        hoverBgColor="#e74c3c"
+        hoverTextColor="#000000"
+        onClick={() => window.location.href = "https://app.digisquares.com/register"}
+        />
+
         <VerticalDivider />
-        <Link href="https://app.digisquares.com/login" passHref>
+
+
+        {/* <Link href="https://app.digisquares.com/login" passHref>
         <RoundedButton
           text="Login"
           bgColor="#000000"
           hoverColor="#333333"
         />
-        </Link>
+        </Link> */}
+
+<MediumButton
+  text="Login"
+  bgColor="#000000"
+  hoverBgColor="#e74c3c"  // Dynamic hover background color
+  hoverTextColor="#ffffff"  // Dynamic hover text color
+  color="#fff"
+  onClick={() => window.location.href = "https://app.digisquares.com/login"}
+/>
+
+
+
       </div>
     </div>
   );

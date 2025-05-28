@@ -2,6 +2,7 @@ import { CodeSandboxSquareFilled, RobotFilled } from "@ant-design/icons";
 import React, { JSX } from "react";
 import CustomImage from "../components/CustomImage";
 import Styles from "../styles/comp/ImageLeftRight.module.css";
+import { MediumButton } from "./Button/Button";
 
 interface Props {
   title: string;
@@ -164,13 +165,21 @@ const ImageLeftRightCard: React.FC<Props> = ({
               marginTop: "auto", // Push button to the bottom if needed
             }}
           >
-          {link && (
+          {/* {link && (
             <a href={link} className={Styles.learnMoreLink}>
              {button && (
             <button className={Styles.learnMoreButton}>{button}</button>
           )}
             </a>
-          )}
+          )} */}
+           <MediumButton
+                      text={button}
+                      bgColor="#ff0000"
+                      color="#fff"
+                      onClick={() => {
+                        if (link) window.location.href = link;}}
+                      className={Styles.learnMoreButton}
+                  />
         </div>
           {/* {button && (
             <button className={Styles.learnMoreButton}>{button}</button>

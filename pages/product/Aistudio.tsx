@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from 'next/link';
+import { LargeButton } from "../../components/Button/Button";
 import CustomImage from "../../components/CustomImage";
 import HomeSlider from "../../components/HomeSlider";
 import MainFooter from "../../components/MainFooter";
@@ -135,14 +135,20 @@ const AiStudio = () => {
           <h5 className={styles.description}>
           Seamlessly create, train, and deploy AI models with ease. Scale your solutions quickly while maintaining high performance </h5>
 
-          <div className={styles.GetStartedBtn}>
+          {/* <div className={styles.GetStartedBtn}>
           <Link legacyBehavior href="https://app.digisquares.com/register">
                   <a className={styles.registerButton} rel="nofollow">Register</a>
-                   </Link>
-                   {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
-        Register
-      </Link> */}
-      </div>
+          </Link>
+          </div> */}
+             <LargeButton
+                      text="Register"
+                      bgColor="#ff0000"
+                      color="#fff"
+                      onClick={() => window.location.href = "https://app.digisquares.com/register"}
+                      className="MediumButton"
+                      hoverBgColor="#f4f4f4"
+                      hoverTextColor="#000000"
+                  />
         </div>
         <div className={styles.imageContainer}>
           <CustomImage
