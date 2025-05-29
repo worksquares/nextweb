@@ -223,7 +223,7 @@ const CopilotPricing = () => {
   const [currency, setCurrency] = useState("USD");
 
   const handleCurrency = (val) => {
-    setCurrency(val.target.value);
+    setCurrency(val);
   };
   const handleDivClick = (planName) => {
     setSelectedPlan(planName);
@@ -949,7 +949,7 @@ const CopilotPricing = () => {
                         position:
                           selectedPlan === "Premium" ? "relative" : "relative",
                         color: "#000000",
-                        bottom: selectedPlan === "Premium" ? "10px" : "15px",
+                        bottom: selectedPlan === "Premium" ? "15px" : "15px",
                       }}
                     >
                       Most Popular
@@ -1257,7 +1257,7 @@ const CopilotPricing = () => {
               {Data.map((sData, i) => (
                 <div key={i}>
                   <div className={styles.CopilotFeaturesTitle}>
-                    <h3 className={styles.H_tag}>{sData.name}</h3>
+                    <h3>{sData.name}</h3>
                   </div>
                   {sData.features.map((fData, index) => (
                     <div
@@ -1277,7 +1277,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.FeaturesColumn}
                       >
-                        <h4 className={styles.H_tag}>{fData.feature}</h4>
+                        <h6 className={styles.H_tag}>{fData.feature}</h6>
                       </div>
                       <div
                         style={
@@ -1289,7 +1289,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.FreeCol}
                       >
-                        <h5 className={styles.H_tag}>{fData.basic}</h5>
+                        <p className={styles.H_tag}>{fData.basic}</p>
                       </div>
                       <div
                         style={
@@ -1301,7 +1301,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.StarterCol}
                       >
-                        <h5 className={styles.H_tag}>{fData.standard}</h5>
+                        <p className={styles.H_tag}>{fData.standard}</p>
                       </div>
                       <div
                         style={
@@ -1313,7 +1313,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.ProfessionalCol}
                       >
-                        <h5 className={styles.H_tag}>{fData.premium}</h5>
+                        <p className={styles.H_tag}>{fData.premium}</p>
                       </div>
                       <div
                         style={
@@ -1325,7 +1325,7 @@ const CopilotPricing = () => {
                         }
                         className={styles.Enterprise}
                       >
-                        <h5 className={styles.H_tag}>{fData.enterprise}</h5>
+                        <p className={styles.H_tag}>{fData.enterprise}</p>
                       </div>
                     </div>
                   ))}

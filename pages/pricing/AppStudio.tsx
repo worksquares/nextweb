@@ -1935,7 +1935,7 @@ const NewPricing = () => {
                           style={{
                             padding: "5px",
                             color: "#000000",
-                            margin: "0px",
+                            margin: "-5px",
                           }}
                         >
                           Most Popular
@@ -2336,7 +2336,7 @@ const NewPricing = () => {
                           style={FeatureColStyle}
                           className={styles.FeaturesCol}
                         >
-                          <h6>{fData.feature}</h6>
+                          <h6 className={styles.H_tag}>{fData.feature}</h6>
                         </div>
                         <div
                           style={FeatureColStyle}

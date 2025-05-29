@@ -1,3 +1,8 @@
+/* .H_tag{
+    margin: 0px;
+    font-size: 1rem;
+} */
+
 .SubsComp {
     padding: 20px 0px;
     max-width: 1200px;
@@ -242,6 +247,13 @@
     z-index: 1;
     top: 210px;
 }
+.FeaturesTitle>h3 {
+    /* font-size: 16px; */
+    /* font-weight: 900; */
+    margin: 0px;
+    color: #000;
+}
+
 
 .FreeCol>h5,
 .StarterCol>h5,
@@ -259,12 +271,6 @@
     font-Weight: 800
 }
 
-.FeaturesTitle>h3 {
-    font-size: 16px;
-    font-weight: 900;
-    margin: 0px;
-    color: #000;
-}
 
 .FeaturesComp {
     display: flex !important;
