@@ -580,7 +580,7 @@ cursor: pointer;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1400px) {
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -643,22 +643,68 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1440px) {
-  /* .title {
-    font-size: 4rem;
-    line-height: 1.2;
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    /* text-align: left; */
+    /* padding: 60px 40px; */
+  }
+  .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .subtext{
+    width: 700px;
+  }
+  /* .appSubtext {
+    width: 700px;
+    line-height: 1.5rem;
   } */
 
-  .description {
-    font-size: 1.1rem;
-    max-width: 85%;
+  .agentSection {
+    flex-direction: row;
+  }
+  .redUnderline{
+    top:20px;
   }
 
-  .registerButton {
-    width: 25%;
+
+
+
+  .imageContainer{
+    width: 50%;
   }
 
   .mainImages {
-    max-width: 80%;
+    /* margin-left: 40px; */
+    /* width: 60%; */
+    /* max-width: 380px; */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .description {
+    /* max-width: 500px; */
+    /* font-size: 18px; */
+    max-width: 95%;
+    margin: 30px 0;
+  }
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resourceGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .highlight{
+    /* font-size: 2.8rem;
+    line-height: 3rem; */
+    font-weight: 700;
+  }
+
+  .mainImages {
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
   }

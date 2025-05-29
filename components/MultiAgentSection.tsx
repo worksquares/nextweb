@@ -1,7 +1,6 @@
-
 import React from 'react';
 import VerticalDivider from '../components/VerticalDivider';
-import { MediumButton } from './Button/Button';
+import { LearnMoreButton } from './Button/Button';
 
 const MultiAgentSection: React.FC = () => {
   return (
@@ -12,75 +11,69 @@ const MultiAgentSection: React.FC = () => {
         alignItems: 'center',
         textAlign: 'center',
         flexDirection: 'column',
-        marginLeft:'20px',
-        marginBottom:'100px'
+        marginLeft: '20px',
+        marginBottom: '100px',
+        padding: '1rem',
       }}
     >
-    <h3 style={{
-      // fontSize: '45px',
-      fontWeight: 300,
-      marginBottom: '0px', marginRight: "10px" }}>
-  Build{' '}
-  <span style={{
-    // fontSize: '45px',
-    fontWeight: 900 }}>
-    Apps, Chatbots, and AI Models
-  </span>{' '}
-  Effortlessly with No Code Required
-</h3>
-<p style={{
-  // fontSize: '16px',
-  color: '#606060', marginTop:'0px', marginBottom: '20px' }}>
-  Leverage Digisquares’ all-in-one platform for quick app development, chatbot creation, and AI model deployment.
-</p>
+      <h3
+        style={{
+          fontWeight: 300,
+          marginBottom: '0px',
+          marginRight: '10px',
+          fontSize: '2rem',
+        }}
+      >
+        Build{' '}
+        <span style={{ fontWeight: 900 }}>
+          Apps, Chatbots, and AI Models
+        </span>{' '}
+        Effortlessly with No Code Required
+      </h3>
 
+      <p
+        style={{
+          color: '#606060',
+          marginTop: '0px',
+          marginBottom: '20px',
+          fontSize: '1rem',
+        }}
+      >
+        Leverage Digisquares’ all-in-one platform for quick app development, chatbot creation, and AI model deployment.
+      </p>
 
       <div
         style={{
           display: 'flex',
           justifyContent: 'center',
-          gap: '20px',
+          alignItems: 'stretch',
+          gap: '10px',
+          flexWrap: 'nowrap',
+          width: '100%',
+          maxWidth: '340px', // Keep buttons and divider aligned on mobile
         }}
       >
-         {/* <Link href="https://app.digisquares.com/register" passHref>
-        <RoundedButton
+        <LearnMoreButton
           text="Register"
           bgColor="#FF0707"
-          hoverColor="#e74c3c"
-        />
-        </Link> */}
-
-        <MediumButton
-        text="Register"
-        bgColor="#FF0707"
-        color='#fff'
-        hoverBgColor="#e74c3c"
-        hoverTextColor="#000000"
-        onClick={() => window.location.href = "https://app.digisquares.com/register"}
+          color="#fff"
+          hoverBgColor="#E74C3C"
+          hoverTextColor="#fff"
+          onClick={() => window.location.href = "https://app.digisquares.com/register"}
+          style={{ flex: 1 }}
         />
 
         <VerticalDivider />
 
-
-        {/* <Link href="https://app.digisquares.com/login" passHref>
-        <RoundedButton
+        <LearnMoreButton
           text="Login"
           bgColor="#000000"
-          hoverColor="#333333"
+          hoverBgColor="#e74c3c"
+          hoverTextColor="#ffffff"
+          color="#fff"
+          onClick={() => window.location.href = "https://app.digisquares.com/login"}
+          style={{ flex: 1 }}
         />
-        </Link> */}
-
-<MediumButton
-  text="Login"
-  bgColor="#000000"
-  hoverBgColor="#e74c3c"  // Dynamic hover background color
-  hoverTextColor="#ffffff"  // Dynamic hover text color
-  color="#fff"
-  onClick={() => window.location.href = "https://app.digisquares.com/login"}
-/>
-
-
-
       </div>
     </div>
   );

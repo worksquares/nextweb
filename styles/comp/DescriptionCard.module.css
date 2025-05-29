@@ -92,6 +92,7 @@
   padding-right: 1rem;
   /* border-left: #003f91; */
 }
+
 .subheadings.active{
   border-left: 4px solid #0050b3;
 }
@@ -103,8 +104,6 @@
   align-items: flex-start;
   object-fit: contain;
 }
-
-
 
 .heading {
   background: none;
@@ -123,7 +122,6 @@
   /* border-left: 4px solid #0050b3; */
 }
 
-
 .heading:hover {
   color: #0050b3;
 }
@@ -134,8 +132,9 @@
 }
 
 .content p {
-  margin: 0;
+  margin: 10px 0;
   color: #333;
+
 }
 
 .button {
@@ -160,6 +159,7 @@
   height: 400px;
   width: 600px;
 }
+
 .image{
   height: 100%;
   width: 100%;
@@ -210,5 +210,53 @@
   .image{
     height: 500px;
     width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  .group {
+    flex-direction: column;
+  }
+  .row {
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+  }
+
+  .rowReverse {
+    /* flex-direction: row-reverse; */
+    /* align-items: flex-start; */
+  }
+
+  .mobileImageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .imageBlock {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .subheadings {
+    width: 100%;
+    padding-right: 0;
+    max-height: none;
   }
 }

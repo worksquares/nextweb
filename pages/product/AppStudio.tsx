@@ -135,12 +135,11 @@ const AppStudio = () => {
 
       </div> */}
        <LargeButton
-            text="Register"
-            bgColor="#ff0000"
-            color="#fff"
-            onClick={() => window.location.href = "https://app.digisquares.com/register"}
-            className="MediumButton"
-        />
+                text="Register"
+                bgColor="#ff0000"
+                color="#fff"
+                onClick={() => window.location.href = "https://app.digisquares.com/register"}
+                className="MediumButton"   />
 
           {/* <Link href="https://app.digisquares.com/register" className={styles.registerButton}>
         Register

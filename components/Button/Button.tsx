@@ -2,92 +2,159 @@ import { Button } from "antd";
 import React from "react";
 import styles from "./ButtonStyles.module.css";
 
-interface ButtonProps {
+export interface ButtonProps {
   htmlType?: "button" | "submit" | "reset";
   onClick?: () => void;
   style?: React.CSSProperties;
-  text?: string;
+  text?: React.ReactNode;
+  icon?: React.ReactNode;
   bgColor?: string;
   color?: string;
+  padding?: string;
   className?: string;
-  hoverBgColor?: string;  // Prop for hover background color
-  hoverTextColor?: string;  // Prop for hover text color
-  linkColor?: string; // Prop for link text color
-  underline?: boolean;  // Prop to enable or disable underline
+  borderRadius?: string;
+  height?: string;
+  hoverBgColor?: string;
+  hoverTextColor?: string;
+  linkColor?: string;
+  underline?: boolean;
 }
 
 export const SmallButton: React.FC<ButtonProps> = (props) => {
   return (
-    <Button
-      htmlType={props.htmlType}
-      onClick={props.onClick}
-      className={`${styles.smallButton} ${props.className ?? ""}`}
+    <div
       style={{
-        backgroundColor: props.bgColor,
-        color: props.color,
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",  // Set dynamic hover background color
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",  // Set dynamic hover text color
-        ...props.style,
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
       } as React.CSSProperties}
     >
-      {props.text}
-    </Button>
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.smallButton} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          borderRadius: props.borderRadius,
+          height: props.height,
+          ...props.style,
+        }}
+      >
+        {props.text}
+      </Button>
+    </div>
   );
 };
 
 export const MediumButton: React.FC<ButtonProps> = (props) => {
   return (
-    <Button
-      htmlType={props.htmlType}
-      onClick={props.onClick}
-      className={`${styles.mediumButton} ${props.className ?? ""}`}
+    <div
       style={{
-        backgroundColor: props.bgColor,
-        color: props.color,
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",  // Set dynamic hover background color
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",  // Set dynamic hover text color
-        ...props.style,
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
       } as React.CSSProperties}
     >
-      {props.text}
-    </Button>
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.mediumButton} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          height: props.height,
+          borderRadius: props.borderRadius,
+          ...props.style,
+        }}
+      >
+        {props.text}
+      </Button>
+    </div>
   );
 };
 
 export const LargeButton: React.FC<ButtonProps> = (props) => {
   return (
-    <Button
-      htmlType={props.htmlType}
-      onClick={props.onClick}
-      className={`${styles.largeButton} ${props.className ?? ""}`}
+    <div
       style={{
-        backgroundColor: props.bgColor,
-        color: props.color,
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",  // Set dynamic hover background color
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",  // Set dynamic hover text color
-        ...props.style,
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
       } as React.CSSProperties}
     >
-      {props.text}
-    </Button>
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.largeButton} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          height: props.height,
+          borderRadius: props.borderRadius,
+          ...props.style,
+        }}
+      >
+        {props.text}
+      </Button>
+    </div>
   );
 };
 
-// export const LinkButton:React.FC<ButtonProps> = (props) =>{
-//   return{
-//     <a
-//     <Button
-//     htmlType={props.htmlType}
-//     onClick={props.onClick}
-//     className={`${styles.largeButton} ${props.className ?? ""}`}
-//     style={{
+export const SignButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <div
+      style={{
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
+      } as React.CSSProperties}
+    >
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.SignButton} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          borderRadius: props.borderRadius,
+          ...props.style,
+        }}
+      >
+        {props.text}
+      </Button>
+    </div>
+  );
+};
 
-//       color: props.color,
-//       "--hoverTextColor": props.hoverTextColor || "#000105e0",  // Set dynamic hover text color
-//       ...props.style,
-//     } as React.CSSProperties}
-//   >
-//     {props.text}
-//   </a>
-//   }
-// }
+export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <div
+      style={{
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
+      } as React.CSSProperties}
+    >
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.LearnMoreButton} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          height: props.height,
+          borderRadius: props.borderRadius,
+          ...props.style,
+        }}
+      >
+        {props.text}
+        {props.icon && (
+          <span style={{ marginLeft: 0, display: "inline-flex", alignItems: "center" }}>
+            {props.icon}
+          </span>
+        )}
+      </Button>
+    </div>
+  );
+};

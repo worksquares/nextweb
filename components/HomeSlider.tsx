@@ -1,3 +1,5 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -7,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
 import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
-import { SmallButton } from "./Button/Button";
+import { LearnMoreButton } from "./Button/Button";
 
 interface Card {
     // tabTitle?: string;
@@ -87,79 +89,90 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
         {/* <Screen> */}
         <h3 className={styles.title}>Know more about us</h3>
         <Slider {...settings} className={styles.carousel}>
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`${styles.cardWrapper} ${
-                currentSlide === index ? styles.active : ""
-              }`}
-            >
-              <div className={styles.card}>
-                {/* <div className={styles.tabTitle}>
-                <h4>{card.tabTitle}</h4>
-                </div> */}
+          {cards.map((card, index) => {
+            return (
+              <div
+                key={index}
+                className={`${styles.cardWrapper} ${currentSlide === index ? styles.active : ""}`}
+              >
+                <div className={styles.card}>
+                  {/* <div className={styles.tabTitle}>
+            <h4>{card.tabTitle}</h4>
+            </div> */}
 
-              {showRibbon && (
-                <div className={styles.vectorContainer}>
-                  <Image
-                    src={redVector.src}
-                    alt="Decoration"
-                    className={styles.redVector}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-              )}
-                <div className={styles.cardContentWrapper}>
-                  <div className={styles.imageContainer}>
-                    <CustomImage
-                      type="slider"
-                      src={card.image}
-                      alt={card.title || "Card image"}
-                      className={styles.cardImage}
-                    />
-                  </div>
-                  <div className={styles.textContent}>
-                    <h4>{card.title}</h4>
-                    <p>{card.description}</p>
-                    <div className={styles.footer}>
-                      {/* {card.links && (
-                        <div className={styles.links}>
-                          {card.links.map((link, i) => (
-                            <a key={i} href={link.href} className={styles.link}>
-                              {link.text}
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                      <a href={card.moreLink} className={styles.moreLink}>
-                        {card.moreText || "Learn More"} &rarr;
-                      </a> */}
-                      <SmallButton
-                        text={card.moreText ? card.moreText : "Learn More"}
-                        color="#1d4965"
-                        onClick={() => {
-                          if (card.moreLink) {
-                            window.location.href = card.moreLink;
-                          }
-                        }}
-                      />
+                  {showRibbon && (
+                    <div className={styles.vectorContainer}>
+                      <Image
+                        src={redVector.src}
+                        alt="Decoration"
+                        className={styles.redVector}
+                        width={20}
+                        height={20} />
+                    </div>
+                  )}
+                  <div className={styles.cardContentWrapper}>
+                    <div className={styles.imageContainer}>
+                      <CustomImage
+                        type="slider"
+                        src={card.image}
+                        alt={card.title || "Card image"}
+                        className={styles.cardImage} />
+                    </div>
+                    <div className={styles.textContent}>
+                      <h4>{card.title}</h4>
+                      <p>{card.description}</p>
+                      <div className={styles.footer}>
+                        {/* {card.links && (
+              <div className={styles.links}>
+                {card.links.map((link, i) => (
+                  <a key={i} href={link.href} className={styles.link}>
+                    {link.text}
+                  </a>
+                ))}
+              </div>
+            )}
+            <a href={card.moreLink} className={styles.moreLink}>
+              {card.moreText || "Learn More"} &rarr;
+            </a> */}
+                        <LearnMoreButton
+                          text={<>
+                            <span style={{ fontWeight: 700 }}>Learn more</span>
+                            <FontAwesomeIcon
+                              icon={faArrowRight}
+                              style={{
+                                fontSize: '15px',
+                                marginLeft: '10px',
+                                verticalAlign: 'middle',
+                                color: '#fff', // match text color
+                                width: '15px',
+                                height: '15px',
+                              }} />
+                          </>}
+                          color="#fff"
+                          bgColor="#1d4965"
+                          onClick={() => {
+                            if (card.moreLink) {
+                              window.location.href = card.moreLink;
+                            }
+                          } } />
 
-                      {/* {card.demoLink && (
 
-                        <a href={card.demoLink} className={styles.demoLink}
-                        // target="_blank" rel="noopener noreferrer"
-                        >
-                          Book a Demo
-                        </a>
-                      )} */}
+                        {/* {card.demoLink && (
 
+              <a href={card.demoLink} className={styles.demoLink}
+              // target="_blank" rel="noopener noreferrer"
+              >
+                Book a Demo
+              </a>
+            )} */}
+
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </Slider>
         {/* </Screen> */}
       </div>

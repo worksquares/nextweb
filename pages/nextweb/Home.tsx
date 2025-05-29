@@ -42,7 +42,7 @@ let newcards: ImageContainProps[] = [
     paragraph3:
       "Leverage AI-assisted features to accelerate your development. From generating forms to setting up workflows, AppStudio makes automation simple and intuitive for teams of all sizes.",
       img320: require("../../public/assets/App_Studio.webp"),
-      button:"Learn more →",
+      button:"Learn more ",
       link:"product/Appstudio/",
   },
   {
@@ -55,7 +55,7 @@ let newcards: ImageContainProps[] = [
     paragraph3:
       "Design conversational flows without writing code. Deploy your agents across platforms like websites, mobile apps, and WhatsApp—instantly turning conversations into actions.",
       img320: require("../../public/assets/imgagentstudio.webp"),
-      button:"Learn more →",
+      button:"Learn more ",
       link:"product/Appstudio/",
 
 
@@ -70,7 +70,7 @@ let newcards: ImageContainProps[] = [
     paragraph3:
       "Test and evaluate AI models in real-time with our intuitive playground. Fine-tune models easily and ensure optimal performance across multiple use cases.",
       img320:  require("../../public/assets/AI_Studio.webp"),
-      button:"Learn more →",
+      button:"Learn more ",
       link:"product/Appstudio/",
   },
 ];

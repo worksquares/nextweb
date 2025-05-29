@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import styles from "../styles/comp/Menu.module.css";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from 'react';
 import Screen from '../comp/Screen';
+import styles from "../styles/comp/Menu.module.css";
+import { SignButton } from "./Button/Button";
 
 const Menu = () => {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -275,12 +276,29 @@ const Menu = () => {
                             height={30}
                         />
                     </button>
-                    <Link href="https://app.digisquares.com/login" className={styles.signInBtn}>
+                    {/* <Link href="https://app.digisquares.com/login" className={styles.signInBtn}>
                         Sign in
-                    </Link>
-                    <Link href="https://app.digisquares.com/register" className={styles.signUpBtn}>
+                    </Link> */}
+                    {/* <MediumButton
+                    text="Sign in"
+                    bgColor="#FF0707"
+                    color="#fff"
+                    padding="8px 20px"
+                    /> */}
+                    <SignButton
+                    text="Sign in"
+                    bgColor="#FF0707"
+                    color="#fff"
+                    />
+                    {/* <Link href="https://app.digisquares.com/register" className={styles.signUpBtn}>
+
                         Sign up
-                    </Link>
+                    </Link> */}
+                      <SignButton
+                    text="Sign up"
+                    bgColor="#000"
+                    color="#fff"
+                    />
                 </div>
             </div>
         </header>

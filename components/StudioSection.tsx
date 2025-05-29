@@ -1,7 +1,9 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Screen from '../comp/Screen';
 import styles from '../styles/comp/StudioSection.module.css';
-import { MediumButton } from './Button/Button';
+import { LearnMoreButton } from './Button/Button';
 
 interface StudioCardProps {
   title: string;
@@ -23,13 +25,27 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
         <button className={styles.learnMoreButton}>Learn more →</button>
       </a> */}
        <div className={styles.buttonWrapper}>
-      <MediumButton
-      text="Learn more →"
-      bgColor="#ffffff"
-      color="#000000"
-      onClick={() => window.location.href = link}
-      className={styles.learnMoreButton}
-      />
+      <LearnMoreButton
+         text={<>
+            <span style={{ fontWeight: 700 }}>Learn more</span>
+            <FontAwesomeIcon
+            icon={faArrowRight}
+            style={{
+              fontSize: '15px',
+              marginLeft: '10px',
+              verticalAlign: 'middle',
+              color: '#000000',
+              width: '15px',
+              height: '15px',
+            }} />
+                                   </>}
+          bgColor="#ffffff"
+          color="#000000"
+          onClick={() => window.location.href = link}
+          className={styles.learnMoreButton}
+           />
+
+
       </div>
     </div>
   );

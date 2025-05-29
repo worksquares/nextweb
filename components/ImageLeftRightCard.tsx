@@ -1,8 +1,10 @@
 import { CodeSandboxSquareFilled, RobotFilled } from "@ant-design/icons";
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { JSX } from "react";
 import CustomImage from "../components/CustomImage";
 import Styles from "../styles/comp/ImageLeftRight.module.css";
-import { MediumButton } from "./Button/Button";
+import { LearnMoreButton } from "./Button/Button";
 
 interface Props {
   title: string;
@@ -172,14 +174,26 @@ const ImageLeftRightCard: React.FC<Props> = ({
           )}
             </a>
           )} */}
-           <MediumButton
-                      text={button}
+           <LearnMoreButton
+                   text={<>
+                               <span style={{ fontWeight: 700 }}>Learn more</span>
+                               <FontAwesomeIcon
+                               icon={faArrowRight}
+                               style={{
+                                 fontSize: '15px',
+                                 marginLeft: '10px',
+                                 verticalAlign: 'middle',
+                                 color: '#fff',
+                                 width: '15px',
+                                 height: '15px',
+                               }} />
+                        </>}
                       bgColor="#ff0000"
                       color="#fff"
                       onClick={() => {
                         if (link) window.location.href = link;}}
                       className={Styles.learnMoreButton}
-                  />
+                    />
         </div>
           {/* {button && (
             <button className={Styles.learnMoreButton}>{button}</button>

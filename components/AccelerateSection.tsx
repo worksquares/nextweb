@@ -33,7 +33,12 @@ const AccelerateSection = () => {
                   color="#000000"
                   onClick={() => window.location.href = "https://app.digisquares.com/register"}
                   className="MediumButton"
+                  hoverBgColor="#ffffff"
+                  hoverTextColor="#000000"
                 />
+
+
+
             </div>
 
             <div className={styles.imageContainer}>

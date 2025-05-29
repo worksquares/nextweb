@@ -1,5 +1,8 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { LearnMoreButton, SmallButton } from "../../components/Button/Button";
 import styles from "../../styles/comp/DescriptionCard.module.css";
 
 interface Feature {
@@ -82,27 +85,58 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
   key={idx}
   className={`${styles.contentWrapper} ${idx === activeIndex ? styles.activeContentWrapper : ""}`}
 >
-  <button
-    // className={styles.heading}
+  {/* <button
     className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
     onClick={() => setActive(groupIdx, idx)}
     style={{ textAlign: "left"}}
     type="button"
     >
     {feature.title}
-  </button>
+  </button> */}
+  <SmallButton
+   className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
+   onClick={() => setActive(groupIdx, idx)}
+   style={{ textAlign: "left"}}
+   text={feature.title}
+   />
+
 
   {idx === activeIndex && (
     <div className={styles.content}>
       <p>{feature.description}</p>
-      <a
+      {/* <a
         href={feature.link}
         className={styles.button}
         target="_blank"
         rel="noreferrer"
       >
         Explore All
-      </a>
+      </a> */}
+      <LearnMoreButton
+       onClick={() => {
+        if (feature.link) {
+          window.location.href = feature.link;
+        }
+      }}
+      text={<>
+                  <span style={{ fontWeight: 700 }}>Learn more</span>
+                  <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{
+                    fontSize: '15px',
+                    marginLeft: '10px',
+                    verticalAlign: 'middle',
+                    color: '#fff',
+                    width: '15px',
+                    height: '15px',
+                  }} />
+                                         </>}
+       bgColor="#0050b3"
+       color="#fff"
+      //  borderRadius="5px"
+       padding="20px"
+       height="35px"
+       />
     </div>
   )}
 </div>
