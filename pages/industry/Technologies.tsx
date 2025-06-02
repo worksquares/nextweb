@@ -121,7 +121,7 @@ const Technologies = () => {
 
   let ImageRowGridData: SingleRowProps[] = [
     {
-      image: "/assets/Blogs/blogheaders/ResponsibleAIModels_Header.webp",
+      image: "/assets/slider/ResponsibleAIModels_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Creating Responsible AI Models",
       description:
@@ -129,7 +129,7 @@ const Technologies = () => {
       link: "/blog/ResponsibleAIModels",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIPoweredAutomation_Header.webp",
+      image: "/assets/slider/AIPoweredAutomation_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI-Powered Automation",
       description:
@@ -137,7 +137,7 @@ const Technologies = () => {
       link: "/blog/AIPoweredAutomation",
     },
     {
-      image: "/assets/Blogs/blogheaders/ImprovingSAASCybersecurity_Header.webp",
+      image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "Building a Secure SaaS Ecosystem",
       description:
@@ -145,7 +145,7 @@ const Technologies = () => {
       link: "/blog/ImprovingSAASCybersecurity",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIinServiceManagement_Header.webp",
+      image: "/assets/slider/AIinServiceManagement_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI in Service Management Platforms",
       description:
@@ -153,7 +153,7 @@ const Technologies = () => {
       link: "/blog/AIinServiceManagement",
     },
     {
-      image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:

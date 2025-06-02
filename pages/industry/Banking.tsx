@@ -121,7 +121,7 @@ const Banking = () => {
 
   let ImageRowGridData: SingleRowProps[] = [
     {
-      image: "/assets/Blogs/blogheaders/ResponsibleAIModels_Header.webp",
+      image: "/assets/slider/ResponsibleAIModels_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Creating Responsible AI Models",
       description:
@@ -129,7 +129,7 @@ const Banking = () => {
       link: "/blog/ResponsibleAIModels",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIPoweredAutomation_Header.webp",
+      image: "/assets/slider/AIPoweredAutomation_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI-Powered Automation",
       description:
@@ -137,7 +137,7 @@ const Banking = () => {
       link: "/blog/AIPoweredAutomation",
     },
     {
-      image: "/assets/Blogs/blogheaders/ImprovingSAASCybersecurity_Header.webp",
+      image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "Building a Secure SaaS Ecosystem",
       description:
@@ -145,7 +145,7 @@ const Banking = () => {
       link: "/blog/ImprovingSAASCybersecurity",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIStudioData_Header.webp",
+      image: "/assets/slider/AIStudioData_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI Studio’s Synthetic Data",
       description:
@@ -153,7 +153,7 @@ const Banking = () => {
       link: "/blog/AIStudioSyntheticData",
     },
     {
-      image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:

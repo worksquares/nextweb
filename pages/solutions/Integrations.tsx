@@ -90,7 +90,7 @@ const Integrations = () => {
 
   let ImageRowGridData: SingleRowProps[] = [
     {
-      image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
+      image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:
@@ -98,7 +98,7 @@ const Integrations = () => {
       link: "/blog/WorkflowswithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -106,7 +106,7 @@ const Integrations = () => {
       link: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Small1.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
@@ -114,7 +114,7 @@ const Integrations = () => {
       link: "/blog/PersonalizeAIModels",
     },
     {
-      image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:
@@ -122,7 +122,7 @@ const Integrations = () => {
       link: "/blog/FromIdeatoApp",
     },
     {
-      image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -130,7 +130,7 @@ const Integrations = () => {
       link: "/blog/AppStudioSecurityFeatures",
     },
     {
-      image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:

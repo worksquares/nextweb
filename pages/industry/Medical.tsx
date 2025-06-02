@@ -121,7 +121,7 @@ const MedicalHeader = () => {
 
   const ImageRowGridData = [
     {
-      image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
+      image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:
@@ -129,7 +129,7 @@ const MedicalHeader = () => {
       link: "/blog/WorkflowswithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIinAgentStudio_Header.webp",
+      image: "/assets/slider/AIinAgentStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI in Agent Studio",
       description:
@@ -138,7 +138,7 @@ const MedicalHeader = () => {
     },
     {
       image:
-        "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
+        "/assets/slider/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
       title: "Customer Satisfaction",
       description:
@@ -146,7 +146,7 @@ const MedicalHeader = () => {
       link: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -154,7 +154,7 @@ const MedicalHeader = () => {
       link: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:

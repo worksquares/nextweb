@@ -91,7 +91,7 @@ const LegacyModernization = () => {
   let ImageRowGridData: SingleRowProps[] = [
     {
       image:
-        "/assets/Blogs/blogheaders/MachineLearningBasicswithAI_Header.webp",
+        "/assets/slider/LowCodeAutomation1.webp",
       category: "AI AND AUTOMATION",
       title: "Machine Learning with AI Studio",
       description:
@@ -99,7 +99,7 @@ const LegacyModernization = () => {
       link: "/blog/MachineLearningBasicswithAI",
     },
     {
-      image: "/assets/Blogs/blogheaders/ResponsibleAIModels_Header.webp",
+      image: "/assets/slider/ResponsibleAIModels_Small1.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Creating Responsible AI Models",
       description:
@@ -107,7 +107,7 @@ const LegacyModernization = () => {
       link: "/blog/ResponsibleAIModels",
     },
     {
-      image: "/assets/Blogs/blogheaders/WorkflowswithAppStudio_Header.webp",
+      image: "/assets/slider/WorkflowImg3.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:
@@ -115,7 +115,7 @@ const LegacyModernization = () => {
       link: "/blog/WorkflowswithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/Workflow2.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:
@@ -123,7 +123,7 @@ const LegacyModernization = () => {
       link: "/blog/BusinesswithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -131,7 +131,7 @@ const LegacyModernization = () => {
       link: "/blog/AppStudioSecurityFeatures",
     },
     {
-      image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:

@@ -122,7 +122,7 @@ const Government = () => {
   let ImageRowGridData: SingleRowProps[] = [
     {
       image:
-        "/assets/Blogs/blogheaders/TeamCollaborationwithAppStudio_Header.webp",
+        "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Team Collaboration with AppStudio",
       description:
@@ -130,7 +130,7 @@ const Government = () => {
       link: "/blog/TeamCollaborationwithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -138,7 +138,7 @@ const Government = () => {
       link: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/FromIdeatoApp_Header.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:
@@ -146,7 +146,7 @@ const Government = () => {
       link: "/blog/FromIdeatoApp",
     },
     {
-      image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -155,7 +155,7 @@ const Government = () => {
     },
     {
       image:
-        "/assets/Blogs/blogheaders/InnovationTrendsforBusiness_Header.webp",
+        "/assets/slider/InnovationTrendsforBusiness_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Innovation Trends for Business",
       description:

@@ -90,7 +90,7 @@ const cards = [
       {
       title: 'AI-Driven Healthcare Solutions',
       description: 'AI Studio enables healthcare providers to fine-tune AI models for diagnostics, patient monitoring, and predictive analytics, enhancing healthcare services.',
-      image: '/assets/Hero & cards/cards/Ai-card-1.webp',
+      image: '/assets/slider/Ai-card-1.webp',
       demoLink: '/demo/medical-ai',
       MoreLink: '/industry/Medical/',
       moreText: "Learn more",
@@ -98,7 +98,7 @@ const cards = [
     {
       title: 'Revolutionizing Tech with AI',
       description: 'AI Studio helps tech companies fine-tune AI models for software automation, data processing, and predictive maintenance, driving technological innovation.',
-      image: '/assets/Hero & cards/cards/Ai-card-2.webp',
+      image: '/assets/slider/Ai-card-2.webp',
       demoLink: '/demo/technology-ai',
       MoreLink: '/industry/Technologies/',
       moreText: "Learn more",
@@ -106,7 +106,7 @@ const cards = [
     {
       title: 'Telecom Innovations through AI',
       description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',
-      image: '/assets/Hero & cards/cards/Ai-card-3.webp',
+      image: '/assets/slider/Ai-card-3.webp',
       demoLink: '/demo/telecom-ai',
       MoreLink: '/industry/TeleCommunication/',
       moreText: "Learn more",
@@ -222,7 +222,8 @@ const AiStudio = () => {
       heading={
         <>
         <h2 className={styles.aiHeading}>
-        Pre-built <span className={styles.highlight}>Agent Hub</span>
+        {/* Pre-built <span className={styles.highlight}>Agent Hub</span> */}
+        <span className={styles.highlight}>AI</span> Building Blocks
       </h2>
       {/* <p className={styles.aiSubtext}>
         Explore our pre-built, high-accuracy AI models designed to optimize

@@ -85,7 +85,7 @@ const cards = [
     title: "Build Conversational AI Projects",
     description:
       "Effortlessly create AI-powered conversational projects with Digisquares Agent Studio. Select from chatbot and voice assistant templates, and customize with a drag-and-drop interface.",
-    image: "/assets/Product/agentstudio4.webp",
+    image: "/assets/slider/agentstudio4.webp",
     moreText: "Learn more",
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
@@ -94,7 +94,7 @@ const cards = [
     title: "Manage User Access",
     description:
       "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
-    image: "/assets/Product/agentstudio5.webp",
+    image: "/assets/slider/agentstudio5.webp",
     moreText: "Learn more",
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
@@ -103,7 +103,7 @@ const cards = [
     title: "Role-Based Access Control",
     description:
       "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
-    image: "/assets/Product/agentstudio6.webp",
+    image: "/assets/slider/agentstudio6.webp",
     moreText: "Learn more",
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
@@ -112,7 +112,7 @@ const cards = [
     title: "Integrate and Manage APIs",
     description:
       "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
-    image: "/assets/Product/agentstudio7.webp",
+    image: "/assets/slider/agentstudio7.webp",
     moreText: "Learn more",
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
@@ -121,7 +121,7 @@ const cards = [
     title: "Manage Agent Data Efficiently",
     description:
       "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",
-    image: "/assets/Product/agentStudio8.webp",
+    image: "/assets/slider/agentStudio8.webp",
     moreText: "Learn more",
     moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
   },
@@ -246,7 +246,8 @@ const AgentStudio = () => {
       <FeaturesDescription
       heading={
       <><h2 className={styles.agentHeading}>
-      Pre-built <span className={styles.highlight}>Agent Hub</span>
+      {/* Pre-built <span className={styles.highlight}>Agent Hub</span> */}
+      Smart Tools for <span className={styles.highlight}>Smarter Agents</span>
     </h2>
     {/* <p className={styles.agentSubtext}>
       Explore our pre-built, high-accuracy AI agents that are trained to

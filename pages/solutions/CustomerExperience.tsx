@@ -90,7 +90,7 @@ const CustomerExperience = () => {
 
   let ImageRowGridData: SingleRowProps[] = [
     {
-      image: "/assets/Blogs/blogheaders/FutureofAppDevelopment_Header.webp",
+      image: "/assets/slider/FutureofAppDevelopment_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Future of App Development",
       description:
@@ -98,7 +98,7 @@ const CustomerExperience = () => {
       link: "/blog/FutureofAppDevelopment",
     },
     {
-      image: "/assets/Blogs/blogheaders/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/WorkflowImg3.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:
@@ -106,7 +106,7 @@ const CustomerExperience = () => {
       link: "/blog/FromIdeatoApp",
     },
     {
-      image: "/assets/Blogs/blogheaders/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/SecurityThreats6.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -114,7 +114,7 @@ const CustomerExperience = () => {
       link: "/blog/AppStudioSecurityFeatures",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIAgentsinAppStudio_Header.webp",
+      image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
@@ -123,7 +123,7 @@ const CustomerExperience = () => {
     },
     {
       image:
-        "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
+        "/assets/slider/MobDevImg2.webp",
       category: "IT MANAGEMENT",
       title: "Customer Satisfaction",
       description:
@@ -131,7 +131,7 @@ const CustomerExperience = () => {
       link: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIinServiceManagement_Header.webp",
+      image: "/assets/slider/AIinServiceManagement_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI in Service Management Platforms",
       description:

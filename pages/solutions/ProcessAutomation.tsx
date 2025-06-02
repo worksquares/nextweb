@@ -59,7 +59,7 @@ const ProcessAutomation = () => {
   let ImageRowGridData: SingleRowProps[] = [
     {
       image:
-        "/assets/Blogs/blogheaders/TeamCollaborationwithAppStudio_Header.webp",
+        "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Team Collaboration with AppStudio",
       description:
@@ -67,7 +67,7 @@ const ProcessAutomation = () => {
       link: "/blog/TeamCollaborationwithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/FutureofAppDevelopment_Header.webp",
+      image: "/assets/slider/FutureofAppDevelopment_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Future of App Development",
       description:
@@ -75,7 +75,7 @@ const ProcessAutomation = () => {
       link: "/blog/FutureofAppDevelopment",
     },
     {
-      image: "/assets/Blogs/blogheaders/AIAgentsinAppStudio_Header.webp",
+      image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
@@ -83,7 +83,7 @@ const ProcessAutomation = () => {
       link: "/blog/AIAgentsinAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:
@@ -91,7 +91,7 @@ const ProcessAutomation = () => {
       link: "/blog/BusinesswithAppStudio",
     },
     {
-      image: "/assets/Blogs/blogheaders/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
@@ -100,7 +100,7 @@ const ProcessAutomation = () => {
     },
     {
       image:
-        "/assets/Blogs/blogheaders/MachineLearningBasicswithAI_Header.webp",
+        "/assets/slider/MachineLearningBasicswithAI_Header.webp",
       category: "AI AND AUTOMATION",
       title: "Machine Learning with AI Studio",
       description:

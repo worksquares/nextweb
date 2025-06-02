@@ -81,7 +81,7 @@ const cards = [
     title: "Healthcare for Smarter Care",
     description:
       "App Studio helps healthcare providers develop apps for patient management, telemedicine, and health records, enhancing care delivery.",
-    image: "/assets/Hero & cards/cards/As-card-1.webp",
+    image: "/assets/slider/As-card-1.webp",
     moreText: "Learn more",
     moreLink: "/industry/Medical/",
     // demoLink: "/demo/medical-apps",
@@ -90,7 +90,7 @@ const cards = [
     title: "Classroom Apps That Teach",
     description:
       "App Studio empowers educators to build e-learning platforms and student management apps, improving the learning experience.",
-    image: "/assets/Hero & cards/cards/As-card-2.webp",
+    image: "/assets/slider/As-card-2.webp",
     moreText: "Learn more",
     moreLink: "/industry/Education/",
     // demoLink: "/demo/manufacturing-apps",
@@ -99,7 +99,7 @@ const cards = [
     title: "Manufacturing Workflows",
     description:
       "App Studio enables manufacturers to create apps for workflow, inventory, and quality control, enhancing operational efficiency.",
-    image: "/assets/Hero & cards/cards/As-card-3.webp",
+    image: "/assets/slider/As-card-3.webp",
     moreText: "Learn more",
     moreLink: "/industry/Manufacturing/",
     // demoLink: "/demo/manufacturing-apps",
@@ -207,7 +207,8 @@ const AppStudio = () => {
          heading={
           <>
             <h2 className={styles.appHeading}>
-              Pre-built <span className={styles.highlight}>App Hub</span>
+              {/* Pre-built <span className={styles.highlight}>App Hub</span> */}
+              <span className={styles.highlight}> AppStudio's</span> Core Capabilities
             </h2>
             {/* <p className={styles.appSubtext}>
               Explore our pre-built, high-performance apps designed to streamline workflows,
