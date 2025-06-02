@@ -75,7 +75,7 @@ const CopilotPricing = () => {
   };
 
   const divStyle = {
-    width: "23%",
+    width: "300px",
     padding: "20px",
     border: "2px solid #DDDDDD",
     transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
@@ -1056,7 +1056,7 @@ const CopilotPricing = () => {
                       </button>
                     )}
                   </div>
-                  <div
+                  {/* <div
                     style={{
                       border:
                         content.button1 === "Free" ||
@@ -1097,7 +1097,52 @@ const CopilotPricing = () => {
                             ? "20% SAVING"
                             : "20% SAVING"}
                     </p>
-                  </div>
+                  </div> */}
+                   <div
+                      style={{
+                        border:
+                          content.button1 === "Free" ||
+                          content.button1 === "Enterprise"
+                            ? ""
+                            : content.isSwitchOn
+                            ? "2px solid #1D4965"
+                            : "1px solid grey",
+                        borderRadius:
+                          content.button1 === "Free" ||
+                          content.button1 === "Enterprise"
+                            ? ""
+                            : "30px",
+                        width:
+                          content.button1 === "Free" ||
+                          content.button1 === "Enterprise"
+                            ? ""
+                            : "110px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <p
+                        onClick={() => handleSwitchToggle(content.id)}
+                        style={{
+                          color:
+                            content.isSwitchOn === false ? "grey" : "#1D4965",
+                          margin: "0px",
+                          textDecorationLine:
+                            content.isSwitchOn === false ? "line-through" : "",
+                          padding: "3px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        {content.button1 === "Free"
+                          ? " "
+                          : content.button1 === "Enterprise"
+                          ? " "
+                          : content.isSwitchOn === true
+                          ? "20% SAVING"
+                          : "20% SAVING"}
+                      </p>
+                    </div>
+
+
                 </div>
                 <div
                   className={styles.CopilotAmount}

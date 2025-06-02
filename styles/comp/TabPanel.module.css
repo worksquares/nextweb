@@ -6,26 +6,26 @@
   border-bottom: 2px solid #f0f0f0;
 }
 
-.navButton {
+/* .navButton {
   padding: 10px 20px;
   cursor: pointer;
   border: none;
   background: none;
-  /* color: rgb(59, 57, 57); */
+
   color: #767676;
-  /* font-size: 16px;
-  font-weight: bold; */
+  font-size: 16px;
+  font-weight: bold;
   outline: none;
   position: relative;
 }
 
 .navButton:hover,
 .navButton:focus {
-  color: #333; /* Darker text on hover/focus */
+  color: #333;
 }
 
 .navButton.active {
-  color: #154965; /* Blue color for active state */
+  color: #154965;
 }
 
 .navButton.active::after {
@@ -35,9 +35,48 @@
   right: 0;
   bottom: -2px;
   height: 2px;
-  background-color: #154965; /* Blue underline for active state */
+  background-color: #154965;
+  border-radius: 2px;
+} */
+
+.tabButton {
+  /* padding: 10px 20px;        Keep spacing */
+  /* cursor: pointer; */
+  background: none;
+  border: none;
+  /* font-size: 16px; */
+  /* font-weight: 600; */
+  color: #6b6b6b;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabButton span {
+  position: relative;
+  display: inline-block;
+}
+
+.tabButtonActive {
+  color: #003c57;
+  font-weight: 700;
+}
+
+.tabButtonActive span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;               /* Matches only text */
+  height: 2.5px;
+  background-color: #003c57;
   border-radius: 2px;
 }
+
+
+
 
 @media (min-width: 768px) {
   .tabcontianermobile {
@@ -45,37 +84,7 @@
   }
 }
 
-.navButton {
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  background: none;
-  color: rgb(59, 57, 57); /* Dark gray color for text */
-  /* font-size: 16px;
-  font-weight: bold; */
-  outline: none;
-  position: relative;
-}
 
-.navButton:hover,
-.navButton:focus {
-  color: #333; /* Darker text on hover/focus */
-}
-
-.navButton.active {
-  color: #154965; /* Blue color for active state */
-}
-
-.navButton.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  height: 3px;
-  background-color: #154965; /* Blue underline for active state */
-  /* border-radius: 2px; */
-}
 
 @media (min-width: 768px) {
   .tabcontianermobile {

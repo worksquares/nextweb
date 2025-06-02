@@ -167,6 +167,7 @@
     margin: 0px 10px;
     color: #1d2b36;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .GetStarted{
@@ -210,6 +211,7 @@
     padding: 16px 17px;
     display: flex;
     align-items: center;
+
 }
 .SubsFeature2{
     padding: 16px 10px;
@@ -431,9 +433,9 @@
         padding: 15px !important;
         height: 130px !important;
     }
-    .H_tag{
+    /* .H_tag{
         font-size: 1rem;
-    }
+    } */
     .CopilotHeadings > h2 ,.CopilotCompareFeatures > div > h2,.FAQ > h2{
         /* font-size: 3rem; */
         margin-bottom: 0px;
@@ -441,23 +443,25 @@
   }
 
   @media (min-width:565px) and (max-width: 768px) {
-    .H_tag{
+    /* .H_tag{
         font-size: 1rem;
-    }
+    } */
     .FeaturesColumn,.FreeCol,.StarterCol,.ProfessionalCol,.Enterprise{
         padding: 10px !important;
         height: 130px !important;
     }
+
     .CopilotPricingCard{
         width: 45% !important;
         margin-bottom: 30px;
     }
+
     .CopilotPricingCardComp{
         justify-content: center;
         flex-wrap: wrap;
         justify-content: space-evenly !important;
-
     }
+
     .CopilotPricingPara{
         height: 80px;
     }
@@ -507,6 +511,9 @@
   @media (min-width :1920px){
     .FeaturesList{
         height: 270px;
+    }
+    .CopilotPricingPara{
+        font-size: 1rem;
     }
 
   }

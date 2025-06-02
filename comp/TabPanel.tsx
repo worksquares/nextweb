@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { LearnMoreButton } from '../components/Button/Button';
+import styles from "../styles/comp/TabPanel.module.css";
 import ImageLeftRight from './ImageLeftRight';
 import Screen from "./Screen";
-import styles from "../styles/comp/TabPanel.module.css";
-import HomePanel from './HomePanel';
 
 const TabPanel = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(1);
@@ -15,13 +15,23 @@ const TabPanel = ({ tabs }) => {
       </div>
         <div className={styles.navContainer}>
           {tabs.map((tab, index) => (
-            <button
-              key={index}
-              className={`${styles.navButton} ${activeTab === index ? styles.active : ''}`}
-              onClick={() => setActiveTab(index)}
-            >
-              {tab.title}
-            </button>
+            // <button
+            //   key={index}
+            //   className={`${styles.navButton} ${activeTab === index ? styles.active : ''}`}
+            //   onClick={() => setActiveTab(index)}
+            // >
+            //   {tab.title}
+            // </button>
+
+            <LearnMoreButton
+            text={<span>{tab.title}</span>}
+            onClick={() => setActiveTab(index)}
+            className={`${styles.tabButton} ${activeTab === index ? styles.tabButtonActive : ""}`}
+          />
+
+
+
+
           ))}
         </div>
 

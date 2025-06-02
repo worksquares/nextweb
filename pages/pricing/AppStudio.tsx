@@ -1961,7 +1961,7 @@ const NewPricing = () => {
                     <div
                       style={{
                         color: "white",
-                        fontSize: "20px",
+                        // fontSize: "20px",
                         padding: "10px",
                         textAlign: "center",
                         margin: "0px",
@@ -1970,7 +1970,7 @@ const NewPricing = () => {
                       {content.button1}
                     </div>
                   </div>
-                  <p
+                  <p className={styles.tabparagraph}
                     style={{
                       padding: "10px",
                       color: "#3f4245",
