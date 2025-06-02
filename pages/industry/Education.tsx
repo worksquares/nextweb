@@ -132,7 +132,7 @@ const Education = () => {
       image:
         "/assets/Blogs/blogheaders/CustomerSatisfactionwithAgentStudio_Header.webp",
       category: "IT MANAGEMENT",
-      title: "Customer Satisfaction with Agent Studio",
+      title: "Customer Satisfaction",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
       link: "/blog/CustomerSatisfactionwithAgentStudio",

@@ -93,7 +93,7 @@ const LegacyModernization = () => {
       image:
         "/assets/Blogs/blogheaders/MachineLearningBasicswithAI_Header.webp",
       category: "AI AND AUTOMATION",
-      title: "Machine Learning Basics with AI Studio",
+      title: "Machine Learning with AI Studio",
       description:
         "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
       link: "/blog/MachineLearningBasicswithAI",
