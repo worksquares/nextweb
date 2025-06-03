@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -119,7 +118,7 @@ const Government = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image:
         "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
@@ -127,7 +126,7 @@ const Government = () => {
       title: "Team Collaboration with AppStudio",
       description:
         "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
-      link: "/blog/TeamCollaborationwithAppStudio",
+      moreLink: "/blog/TeamCollaborationwithAppStudio",
     },
     {
       image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
@@ -135,7 +134,7 @@ const Government = () => {
       title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
-      link: "/blog/FineTuningwithAIStudio",
+        moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
       image: "/assets/slider/FromIdeatoApp_Header.webp",
@@ -143,7 +142,7 @@ const Government = () => {
       title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-      link: "/blog/FromIdeatoApp",
+        moreLink: "/blog/FromIdeatoApp",
     },
     {
       image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
@@ -151,7 +150,7 @@ const Government = () => {
       title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      link: "/blog/AppStudioSecurityFeatures",
+        moreLink: "/blog/AppStudioSecurityFeatures",
     },
     {
       image:
@@ -160,7 +159,7 @@ const Government = () => {
       title: "Innovation Trends for Business",
       description:
         "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
-      link: "/blog/InnovationTrendsforBusiness",
+        moreLink: "/blog/InnovationTrendsforBusiness",
     },
   ];
 
@@ -184,7 +183,7 @@ const Government = () => {
 
           {/* <Screen> */}
             <div className={styles.MoreResources}>
-              <HomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={cards} />
             </div>
           {/* </Screen> */}
         </div>

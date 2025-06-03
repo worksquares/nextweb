@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -88,47 +87,47 @@ const CustomerExperience = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image: "/assets/slider/FutureofAppDevelopment_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Future of App Development",
       description:
         "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
-      link: "/blog/FutureofAppDevelopment",
+      moreLink: "/blog/FutureofAppDevelopment",
     },
-    {
-      image: "/assets/slider/WorkflowImg3.webp",
-      category: "IT MANAGEMENT",
-      title: "From Idea to App",
-      description:
-        "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-      link: "/blog/FromIdeatoApp",
-    },
-    {
-      image: "/assets/slider/SecurityThreats6.webp",
-      category: "CYBERSECURITY AND RISK",
-      title: "AppStudio’s Security Features",
-      description:
-        "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      link: "/blog/AppStudioSecurityFeatures",
-    },
+    // {
+    //   image: "/assets/slider/FromIdeatoApp_Header.webp",
+    //   category: "IT MANAGEMENT",
+    //   title: "From Idea to App",
+    //   description:
+    //     "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
+    //   moreLink: "/blog/FromIdeatoApp",
+    // },
+    // {
+    //   image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
+    //   category: "CYBERSECURITY AND RISK",
+    //   title: "AppStudio’s Security Features",
+    //   description:
+    //     "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
+    //   moreLink: "/blog/AppStudioSecurityFeatures",
+    // },
     {
       image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
         "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
-      link: "/blog/AIAgentsinAppStudio",
+      moreLink: "/blog/AIAgentsinAppStudio",
     },
     {
       image:
-        "/assets/slider/MobDevImg2.webp",
+        "/assets/slider/CustomerSatisfactionwithAgentStudio_Slider.webp",
       category: "IT MANAGEMENT",
       title: "Customer Satisfaction",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-      link: "/blog/CustomerSatisfactionwithAgentStudio",
+      moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
       image: "/assets/slider/AIinServiceManagement_Header.webp",
@@ -136,7 +135,7 @@ const CustomerExperience = () => {
       title: "AI in Service Management Platforms",
       description:
         "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, deliver personalized responses and automate routine tasks.",
-      link: "/blog/AIinServiceManagement",
+      moreLink: "/blog/AIinServiceManagement",
     },
   ];
 
@@ -193,7 +192,7 @@ const CustomerExperience = () => {
 
           <div className={styles.MoreResources}>
             {/* <HomeSlider cards={ImageRowGridData} /> */}
-            <HomeSlider cards={ImageRowGridData} />
+            <HomeSlider cards={cards} />
           </div>
         </div>
       </BaseLayout>

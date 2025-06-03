@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -88,54 +87,54 @@ const Integrations = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
-    {
-      image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
-      category: "DIGISQUARES PLATFORM",
-      title: "Workflows with AppStudio",
-      description:
-        "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-      link: "/blog/WorkflowswithAppStudio",
-    },
+  const cards = [
+    // {
+    //   image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
+    //   category: "DIGISQUARES PLATFORM",
+    //   title: "Workflows with AppStudio",
+    //   description:
+    //     "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
+    //   moreLink: "/blog/WorkflowswithAppStudio",
+    // },
     {
       image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
-      link: "/blog/FineTuningwithAIStudio",
+        moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Small1.webp",
+      image: "/assets/slider/PersonalizeAIModels_Header.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      link: "/blog/PersonalizeAIModels",
+        moreLink: "/blog/PersonalizeAIModels",
     },
-    {
-      image: "/assets/slider/FromIdeatoApp_Header.webp",
-      category: "IT MANAGEMENT",
-      title: "From Idea to App",
-      description:
-        "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-      link: "/blog/FromIdeatoApp",
-    },
-    {
-      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
-      category: "CYBERSECURITY AND RISK",
-      title: "AppStudio’s Security Features",
-      description:
-        "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      link: "/blog/AppStudioSecurityFeatures",
-    },
+    // {
+    //   image: "/assets/slider/FromIdeatoApp_Header.webp",
+    //   category: "IT MANAGEMENT",
+    //   title: "From Idea to App",
+    //   description:
+    //     "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
+    //     moreLink: "/blog/FromIdeatoApp",
+    // },
+    // {
+    //   image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
+    //   category: "CYBERSECURITY AND RISK",
+    //   title: "AppStudio’s Security Features",
+    //   description:
+    //     "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
+    //     moreLink: "/blog/AppStudioSecurityFeatures",
+    // },
     {
       image: "/assets/slider/BusinesswithAppStudio_Header.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-      link: "/blog/BusinesswithAppStudio",
+        moreLink: "/blog/BusinesswithAppStudio",
     },
   ];
 
@@ -190,7 +189,7 @@ const Integrations = () => {
 
           <div className={styles.MoreResources}>
             {/* <HomeSlider cards={ImageRowGridData} /> */}
-            <HomeSlider cards={ImageRowGridData} />
+            <HomeSlider cards={cards} />
           </div>
         </div>
       </BaseLayout>

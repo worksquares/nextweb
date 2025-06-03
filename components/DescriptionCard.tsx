@@ -1,9 +1,12 @@
+// components/product/DescriptionCard.tsx
+
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
-import { LearnMoreButton, SmallButton } from "../../components/Button/Button";
-import styles from "../../styles/comp/DescriptionCard.module.css";
+import styles from "../styles/comp/DescriptionCard.module.css";
+// import styles from "../styles/comp/HomeSlider.module.css";
+import { LearnMoreButton, SmallButton } from "./Button/Button";
 
 interface Feature {
   title?: string;
@@ -54,93 +57,53 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
         {groupedFeatures.map((group, groupIdx) => {
           const activeIndex = activeIndices[groupIdx] ?? 0;
           const isEvenGroup = groupIdx % 2 === 0;
+
           const subheadingsContent = (
             <div className={styles.subheadings}>
               {group.map((feature, idx) => (
-                // <div key={idx} style={{ display: "flex", flexDirection: "column" }}>
-                //   <button
-                //     className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
-                //     onClick={() => setActive(groupIdx, idx)}
-                //     style={{ textAlign: "left" }}
-                //     type="button"
-                //   >
-                //     {feature.title}
-                //   </button>
-
-                //   {idx === activeIndex && (
-                //     <div className={styles.content}>
-                //       <p>{feature.description}</p>
-                //       <a
-                //         href={feature.link}
-                //         className={styles.button}
-                //         target="_blank"
-                //         rel="noreferrer"
-                //       >
-                //         Explore All
-                //       </a>
-                //     </div>
-                //   )}
-                // </div>
                 <div
-  key={idx}
-  className={`${styles.contentWrapper} ${idx === activeIndex ? styles.activeContentWrapper : ""}`}
->
-  {/* <button
-    className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
-    onClick={() => setActive(groupIdx, idx)}
-    style={{ textAlign: "left"}}
-    type="button"
-    >
-    {feature.title}
-  </button> */}
-  <SmallButton
-   className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
-   onClick={() => setActive(groupIdx, idx)}
-   style={{ textAlign: "left"}}
-   text={feature.title}
-   />
-
-
-  {idx === activeIndex && (
-    <div className={styles.content}>
-      <p>{feature.description}</p>
-      {/* <a
-        href={feature.link}
-        className={styles.button}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Explore All
-      </a> */}
-      <LearnMoreButton
-       onClick={() => {
-        if (feature.link) {
-          window.location.href = feature.link;
-        }
-      }}
-      text={<>
-                  <span style={{ fontWeight: 700 }}>Learn more</span>
-                  <FontAwesomeIcon
-                  icon={faArrowRight}
-                  style={{
-                    fontSize: '15px',
-                    marginLeft: '10px',
-                    verticalAlign: 'middle',
-                    color: '#fff',
-                    width: '15px',
-                    height: '15px',
-                  }} />
-                                         </>}
-       bgColor="#0050b3"
-       color="#fff"
-      //  borderRadius="5px"
-       padding="20px"
-       height="35px"
-       />
-    </div>
-  )}
-</div>
-
+                  key={idx}
+                  className={`${styles.contentWrapper} ${idx === activeIndex ? styles.activeContentWrapper : ""}`}
+                >
+                  <SmallButton
+                    className={`${styles.heading} ${idx === activeIndex ? styles.active : ""}`}
+                    onClick={() => setActive(groupIdx, idx)}
+                    style={{ textAlign: "left" }}
+                    text={feature.title}
+                  />
+                  {idx === activeIndex && (
+                    <div className={styles.content}>
+                      <p>{feature.description}</p>
+                      <LearnMoreButton
+                        onClick={() => {
+                          if (feature.link) {
+                            window.location.href = feature.link;
+                          }
+                        }}
+                        text={
+                          <>
+                            <span style={{ fontWeight: 700 }}>Learn more</span>
+                            <FontAwesomeIcon
+                              icon={faArrowRight}
+                              style={{
+                                fontSize: '15px',
+                                marginLeft: '10px',
+                                verticalAlign: 'middle',
+                                color: '#fff',
+                                width: '15px',
+                                height: '15px',
+                              }}
+                            />
+                          </>
+                        }
+                        bgColor="#0050b3"
+                        color="#fff"
+                        padding="20px"
+                        height="35px"
+                      />
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           );
@@ -164,7 +127,6 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
             <div
               key={groupIdx}
               className={`${styles.group} ${isEvenGroup ? styles.row : styles.rowReverse}`}
-
             >
               {isEvenGroup ? (
                 <>

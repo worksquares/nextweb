@@ -3,7 +3,7 @@ import { Collapse, Select } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import router from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import BaseLayout from "../../comp/BaseLayout";
 import styles from "../../styles/pricing/newPricing.module.css";
 const { Option } = Select;
@@ -82,7 +82,8 @@ const FeatureCol2Style = {
   backgroundColor: "white",
 };
 const NewPricing = () => {
-  const contents = [
+
+  const contents = useMemo(() => [
     {
       id: "1",
       button1: "Starter",
@@ -98,7 +99,6 @@ const NewPricing = () => {
       Y_amount_aed: "د.إ6,480",
       M_amount_pnd: "£120",
       Y_amount_pnd: "£1,300",
-
       M_amount_aud: "AU$230",
       Y_amount_aud: "AU$2,479",
       M_amount_cad: "CA$205",
@@ -129,7 +129,6 @@ const NewPricing = () => {
       Y_amount_php: "₱91,692",
       M_amount_rub: "₽13,950",
       Y_amount_rub: "₽1,50,660",
-
       month: "/month",
       yearly: "/yearly",
       icon: <CheckOutlined style={{ fontSize: "12px" }} />,
@@ -156,7 +155,6 @@ const NewPricing = () => {
       Y_amount_aed: "د.إ12,960",
       M_amount_pnd: "£240",
       Y_amount_pnd: "£2,600",
-
       M_amount_aud: "AU$459",
       Y_amount_aud: "AU$5,008",
       M_amount_cad: "CA$411",
@@ -187,7 +185,6 @@ const NewPricing = () => {
       Y_amount_php: "₱1,83,384",
       M_amount_rub: "₽27,900",
       Y_amount_rub: "₽3,01,320",
-
       month: "/month",
       yearly: "/yearly",
       icon: <CheckOutlined style={{ fontSize: "12px" }} />,
@@ -214,7 +211,6 @@ const NewPricing = () => {
       Y_amount_aed: "د.إ25,920",
       M_amount_pnd: "£480",
       Y_amount_pnd: "£5,200",
-
       M_amount_aud: "AU$918",
       Y_amount_aud: "AU$10,016",
       M_amount_cad: "CA$822",
@@ -245,7 +241,6 @@ const NewPricing = () => {
       Y_amount_php: "₱3,66,768",
       M_amount_rub: "₽55,800",
       Y_amount_rub: "₽6,02,640",
-
       month: "/month",
       yearly: "/yearly",
       icon: <CheckOutlined style={{ fontSize: "12px" }} />,
@@ -302,7 +297,6 @@ const NewPricing = () => {
       Y_amount_php: "let's Talk!",
       M_amount_rub: "let's Talk!",
       Y_amount_rub: "let's Talk!",
-
       month: "",
       yearly: "",
       icon: <CheckOutlined style={{ fontSize: "12px" }} />,
@@ -314,7 +308,8 @@ const NewPricing = () => {
       button2: "Book a Call",
       isSwitchOn: false,
     },
-  ];
+  ], []); // no dependencies so it only creates once
+
   const [currency, setCurrency] = useState("USD");
   const [cloudOrSelf, setCloudOrSelf] = useState("Cloud");
   const symbols = {
@@ -1614,7 +1609,7 @@ const NewPricing = () => {
     } else {
       setContents1(contents);
     }
-  }, [cloudOrSelf]);
+  }, [cloudOrSelf,contents]);
 
   const [selectedPlan, setSelectedPlan] = useState("Premium");
 
@@ -1828,7 +1823,7 @@ const NewPricing = () => {
     marginRight: "10px",
   }}
 >
-<p
+<div
             style={{
               // fontSize: "18px",
               // lineHeight: "30px",
@@ -1867,7 +1862,7 @@ const NewPricing = () => {
     <Option value="PHP">PHP</Option>
     <Option value="RUB">RUB</Option>
   </Select>
-  </p>
+  </div>
 </div>
             </div>
           </div>

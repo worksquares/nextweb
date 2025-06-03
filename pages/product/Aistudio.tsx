@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { LargeButton } from "../../components/Button/Button";
 import CustomImage from "../../components/CustomImage";
+import { FeaturesDescription } from "../../components/DescriptionCard";
 import HomeSlider from "../../components/HomeSlider";
 import MainFooter from "../../components/MainFooter";
 import Menu from "../../components/Menu";
 import Screen from "../../components/Screen";
 import styles from "../../styles/comp/Aistudio.module.css";
 import Headseo from "../headseo";
-import { FeaturesDescription } from "./DescriptionCard";
 
 
 // import {
@@ -70,6 +70,28 @@ const aiCards = [
     link:"https://docs.digisquares.com/docs/AI%20studio/Finetune/FinetuneIntro",
     image: "/assets/description/aiFineTune.webp"
     },
+
+    {
+      title: "Model Deployment",
+      description:
+        "Easily deploy your trained AI models using AI Studio’s intuitive deployment wizard. Configure environments, monitor status, and manage versions seamlessly.",
+      link: "https://docs.digisquares.com/docs/AI%20studio/ModaldeployCreate",
+      image: "/assets/description/aiModelDeployment.webp",
+    },
+    {
+      title: "Model Gallery",
+      description:
+        "Explore and manage a comprehensive gallery of AI models within AI Studio. Easily browse, select, and utilize pre-built or custom models to accelerate your AI projects.",
+      link: "https://docs.digisquares.com/docs/AI%20studio/Modalgallery/ModalgalleryCreate",
+      image: "/assets/description/aiModelGallery.webp",
+    },
+    {
+      title: "Multi-Channel Deployment",
+      description:
+        "Deploy AI agents seamlessly across multiple platforms such as websites, mobile apps, social media, and messaging apps to reach users wherever they are.",
+      link: "https://docs.digisquares.com/docs/AI%20studio/Deployment/DeploymentIntro",
+      image: "/assets/description/aiMultiChannel.webp",
+    },
 ];
 
 // const resourceItems = [
@@ -91,8 +113,8 @@ const cards = [
       title: 'AI-Driven Healthcare Solutions',
       description: 'AI Studio enables healthcare providers to fine-tune AI models for diagnostics, patient monitoring, and predictive analytics, enhancing healthcare services.',
       image: '/assets/slider/Ai-card-1.webp',
-      demoLink: '/demo/medical-ai',
-      MoreLink: '/industry/Medical/',
+      // demoLink: '/demo/medical-ai',
+      moreLink: '/industry/Medical/',
       moreText: "Learn more",
     },
     {
@@ -100,7 +122,7 @@ const cards = [
       description: 'AI Studio helps tech companies fine-tune AI models for software automation, data processing, and predictive maintenance, driving technological innovation.',
       image: '/assets/slider/Ai-card-2.webp',
       demoLink: '/demo/technology-ai',
-      MoreLink: '/industry/Technologies/',
+      moreLink: '/industry/Technologies/',
       moreText: "Learn more",
     },
     {
@@ -108,7 +130,7 @@ const cards = [
       description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',
       image: '/assets/slider/Ai-card-3.webp',
       demoLink: '/demo/telecom-ai',
-      MoreLink: '/industry/TeleCommunication/',
+      moreLink: '/industry/TeleCommunication/',
       moreText: "Learn more",
     },
   ];

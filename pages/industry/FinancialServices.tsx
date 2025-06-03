@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -119,14 +118,14 @@ const FinancialServices = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image: "/assets/slider/AIinAgentStudio_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI in Agent Studio",
       description:
         "They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-      link: "/blog/AIinAgentStudio",
+      moreLink: "/blog/AIinAgentStudio",
     },
     {
       image: "/assets/slider/AgentStudioAISolutions_Header.webp",
@@ -134,7 +133,7 @@ const FinancialServices = () => {
       title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-      link: "/blog/AgentStudioAISolutions",
+        moreLink: "/blog/AgentStudioAISolutions",
     },
     {
       image:
@@ -143,7 +142,7 @@ const FinancialServices = () => {
       title: "Customer Satisfaction",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-      link: "/blog/CustomerSatisfactionwithAgentStudio",
+        moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
       image: "/assets/slider/AIStudioData_Header.webp",
@@ -151,7 +150,7 @@ const FinancialServices = () => {
       title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-      link: "/blog/AIStudioSyntheticData",
+        moreLink: "/blog/AIStudioSyntheticData",
     },
     {
       image: "/assets/slider/PersonalizeAIModels_Header.webp",
@@ -159,7 +158,7 @@ const FinancialServices = () => {
       title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      link: "/blog/PersonalizeAIModels",
+        moreLink: "/blog/PersonalizeAIModels",
     },
   ];
 
@@ -181,7 +180,7 @@ const FinancialServices = () => {
           {/* <Screen> */}
             <div className={styles.MoreResources}>
               {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={cards} />
             </div>
           {/* </Screen> */}
         </div>

@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import BlogPostContent from "../../comp/BlogPostContent";
+import Link from "next/link";
+import { useState } from "react";
 import { BlogPostContainProps } from "../../comp/base/BlogPostCard";
 import { BlogRightContainProps } from "../../comp/base/BlogRightImgCard";
-import BlogRightImg from "../../comp/BlogRight";
 import { BlogTopicsContainProps } from "../../comp/base/BlogTopicsCard";
+import BaseLayout from "../../comp/BaseLayout";
+import { BlogLists } from "../../comp/BlogData";
+import BlogPostContent from "../../comp/BlogPostContent";
+import BlogRightImg from "../../comp/BlogRight";
 import BlogTopicContent from "../../comp/BlogTopicsContent";
+import Screen from "../../comp/Screen";
 import styles from "../../styles/Blog.module.css";
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Link from "next/link";
-import { BlogLists } from "../../comp/BlogData";
 import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
-import BaseLayout from "../../comp/BaseLayout";
 
 const TransformingYourBusiness = () => {
   let BlogTopicCardListData: BlogTopicsContainProps[] = [
@@ -52,10 +52,10 @@ const TransformingYourBusiness = () => {
     {
       title:
         "How Digital-First Businesses Can Drive Growth with AI and Automation",
-      img1700: "/assets/Manageddatabase_3.webp",
-      img1024: "/assets/Manageddatabase_3.webp",
-      img768: "/assets/Manageddatabase_3.webp",
-      img320: "/assets/Manageddatabase_3.webp",
+      img1700: "/assets/ManagedDatabases 1.webp",
+      img1024: "/assets/ManagedDatabases 1.webp",
+      img768: "/assets/ManagedDatabases 1.webp",
+      img320: "/assets/ManagedDatabases 1.webp",
 
       paragraph: [
         {

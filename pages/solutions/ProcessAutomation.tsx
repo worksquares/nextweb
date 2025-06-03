@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -56,7 +55,7 @@ const ProcessAutomation = () => {
     setBenefits5(true);
   };
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image:
         "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
@@ -64,7 +63,8 @@ const ProcessAutomation = () => {
       title: "Team Collaboration with AppStudio",
       description:
         "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
-      link: "/blog/TeamCollaborationwithAppStudio",
+      moreLink: "/blog/TeamCollaborationwithAppStudio",
+
     },
     {
       image: "/assets/slider/FutureofAppDevelopment_Header.webp",
@@ -72,7 +72,7 @@ const ProcessAutomation = () => {
       title: "Future of App Development",
       description:
         "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
-      link: "/blog/FutureofAppDevelopment",
+      moreLink: "/blog/FutureofAppDevelopment",
     },
     {
       image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
@@ -80,7 +80,7 @@ const ProcessAutomation = () => {
       title: "AI Agents in AppStudio",
       description:
         "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
-      link: "/blog/AIAgentsinAppStudio",
+      moreLink: "/blog/AIAgentsinAppStudio",
     },
     {
       image: "/assets/slider/BusinesswithAppStudio_Header.webp",
@@ -88,7 +88,7 @@ const ProcessAutomation = () => {
       title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-      link: "/blog/BusinesswithAppStudio",
+      moreLink: "/blog/BusinesswithAppStudio",
     },
     {
       image: "/assets/slider/PersonalizeAIModels_Header.webp",
@@ -96,7 +96,7 @@ const ProcessAutomation = () => {
       title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      link: "/blog/PersonalizeAIModels",
+      moreLink: "/blog/PersonalizeAIModels",
     },
     {
       image:
@@ -105,7 +105,7 @@ const ProcessAutomation = () => {
       title: "Machine Learning with AI Studio",
       description:
         "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
-      link: "/blog/MachineLearningBasicswithAI",
+      moreLink: "/blog/MachineLearningBasicswithAI",
     },
   ];
 
@@ -257,7 +257,7 @@ const ProcessAutomation = () => {
           {/* <Screen> */}
             <div className={styles.MoreResources}>
               {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={cards} />
             </div>
           {/* </Screen> */}
         </div>

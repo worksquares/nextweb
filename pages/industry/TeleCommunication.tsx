@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -119,14 +118,14 @@ const TeleCommunication = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image: "/assets/slider/AIPoweredAutomation_Header.webp",
       category: "AI AND AUTOMATION",
       title: "AI-Powered Automation",
       description:
         "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-      link: "/blog/AIPoweredAutomation",
+      moreLink: "/blog/AIPoweredAutomation",
     },
     {
       image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
@@ -134,7 +133,7 @@ const TeleCommunication = () => {
       title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-      link: "/blog/ImprovingSAASCybersecurity",
+        moreLink: "/blog/ImprovingSAASCybersecurity",
     },
     {
       image: "/assets/slider/AIStudioData_Header.webp",
@@ -142,7 +141,7 @@ const TeleCommunication = () => {
       title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-      link: "/blog/AIStudioSyntheticData",
+        moreLink: "/blog/AIStudioSyntheticData",
     },
     {
       image: "/assets/slider/PersonalizeAIModels_Header.webp",
@@ -150,7 +149,7 @@ const TeleCommunication = () => {
       title: "Personalize AI Models",
       description:
         "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      link: "/blog/PersonalizeAIModels",
+        moreLink: "/blog/PersonalizeAIModels",
     },
     {
       image: "/assets/slider/AgentStudioAISolutions_Header.webp",
@@ -158,7 +157,7 @@ const TeleCommunication = () => {
       title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-      link: "/blog/AgentStudioAISolutions",
+        moreLink: "/blog/AgentStudioAISolutions",
     },
   ];
 
@@ -180,7 +179,7 @@ const TeleCommunication = () => {
 
           {/* <Screen> */}
             <div className={styles.MoreResources}>
-              <HomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={cards} />
             </div>
           {/* </Screen> */}
         </div>

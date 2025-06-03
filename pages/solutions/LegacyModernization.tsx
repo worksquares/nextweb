@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -88,47 +87,47 @@ const LegacyModernization = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
+    // {
+    //   image:
+    //     "/assets/slider/MachineLearningBasicswithAI_Header.webp",
+    //   category: "AI AND AUTOMATION",
+    //   title: "Machine Learning with AI Studio",
+    //   description:
+    //     "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
+    //   moreLink: "/blog/MachineLearningBasicswithAI",
+    // },
     {
-      image:
-        "/assets/slider/LowCodeAutomation1.webp",
-      category: "AI AND AUTOMATION",
-      title: "Machine Learning with AI Studio",
-      description:
-        "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
-      link: "/blog/MachineLearningBasicswithAI",
-    },
-    {
-      image: "/assets/slider/ResponsibleAIModels_Small1.webp",
+      image: "/assets/slider/ResponsibleAIModels_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Creating Responsible AI Models",
       description:
         "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency, and compliance continues to grow.",
-      link: "/blog/ResponsibleAIModels",
+      moreLink: "/blog/ResponsibleAIModels",
     },
     {
-      image: "/assets/slider/WorkflowImg3.webp",
+      image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-      link: "/blog/WorkflowswithAppStudio",
+      moreLink: "/blog/WorkflowswithAppStudio",
     },
-    {
-      image: "/assets/slider/Workflow2.webp",
-      category: "DATABASE MANAGEMENT",
-      title: "Security Privacy of Blockchain",
-      description:
-        "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-      link: "/blog/BusinesswithAppStudio",
-    },
+    // {
+    //   image: "/assets/slider/Workflow2.webp",
+    //   category: "DATABASE MANAGEMENT",
+    //   title: "Security Privacy of Blockchain",
+    //   description:
+    //     "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
+    //   moreLink: "/blog/BusinesswithAppStudio",
+    // },
     {
       image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      link: "/blog/AppStudioSecurityFeatures",
+      moreLink: "/blog/AppStudioSecurityFeatures",
     },
     {
       image: "/assets/slider/FromIdeatoApp_Header.webp",
@@ -136,7 +135,7 @@ const LegacyModernization = () => {
       title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-      link: "/blog/FromIdeatoApp",
+      moreLink: "/blog/FromIdeatoApp",
     },
   ];
 
@@ -191,7 +190,7 @@ const LegacyModernization = () => {
 
           <div className={styles.MoreResources}>
             {/* <HomeSlider cards={ImageRowGridData} /> */}
-            <HomeSlider cards={ImageRowGridData} />
+            <HomeSlider cards={cards} />
           </div>
         </div>
       </BaseLayout>

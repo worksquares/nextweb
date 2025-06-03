@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { LargeButton } from "../../components/Button/Button";
 import CustomImage from "../../components/CustomImage";
+import { FeaturesDescription } from "../../components/DescriptionCard";
 import HomeSlider from "../../components/HomeSlider";
 import MainFooter from "../../components/MainFooter";
 import Menu from "../../components/Menu";
 import Screen from "../../components/Screen";
 import styles from "../../styles/comp/Agentstudio.module.css";
 import Headseo from "../headseo";
-import AiAgentRecruiterDashboard from "./AiAgentRecruiterDashboard";
-import { FeaturesDescription } from "./DescriptionCard";
+import AiAgentRecruiter from "./AiAgentRecruiter";
 
 
 
@@ -61,6 +61,27 @@ const agentCards = [
       "The Flow Builder automates workflows visually, helping users streamline tasks, integrate systems, and improve efficiency",
     link:"https://docs.digisquares.com/docs/Agent%20studio/Flowbuilder/FlowbuilderIntro",
     image: "/assets/description/agentFlowBuilder.webp"
+    },
+    {
+      title: "Multilingual Support",
+      description:
+        "Agent Studio supports multiple languages enabling you to create AI agents that interact naturally with global audiences, breaking language barriers effortlessly.",
+        link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+        image: "/assets/description/agentMultilingual.webp",
+    },
+    {
+      title: "Analytics & Reporting",
+      description:
+        "Track AI agent performance in real-time with built-in analytics dashboards. Gain insights on user engagement, conversation trends, and agent efficiency to drive improvements.",
+        link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+        image: "/assets/description/agentAnalytics.webp",
+    },
+    {
+      title: "Custom Skill Builder",
+      description:
+        "Create custom AI skills tailored to your business needs using Agent Studio’s intuitive Skill Builder, enhancing your chatbot's capabilities beyond standard templates.",
+        link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+        image: "/assets/description/agentSkillBuilder.webp",
     },
 ];
 
@@ -208,7 +229,7 @@ const AgentStudio = () => {
           </video>
         </div>
         {/* <AiAgentRecruiter /> */}
-        <AiAgentRecruiterDashboard />
+        <AiAgentRecruiter />
       </div>
 
 

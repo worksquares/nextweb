@@ -1,5 +1,4 @@
 import { HeaderContentProps } from "../../comp/base/HeaderContent";
-import { SingleRowProps } from "../../comp/base/ImageSingleRow";
 import BaseLayout from "../../comp/BaseLayout";
 import CardComponent from "../../comp/CardPage";
 import HeaderCard from "../../comp/HeaderChange";
@@ -119,14 +118,14 @@ const Education = () => {
     },
   ];
 
-  let ImageRowGridData: SingleRowProps[] = [
+  const cards = [
     {
       image: "/assets/slider/AgentStudioAISolutions_Header.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-      link: "/blog/AgentStudioAISolutions",
+      moreLink: "/blog/AgentStudioAISolutions",
     },
     {
       image:
@@ -135,7 +134,7 @@ const Education = () => {
       title: "Customer Satisfaction",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-      link: "/blog/CustomerSatisfactionwithAgentStudio",
+        moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
       image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
@@ -143,7 +142,7 @@ const Education = () => {
       title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
-      link: "/blog/FineTuningwithAIStudio",
+        moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
       image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
@@ -151,7 +150,7 @@ const Education = () => {
       title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-      link: "/blog/WorkflowswithAppStudio",
+        moreLink: "/blog/WorkflowswithAppStudio",
     },
     {
       image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
@@ -159,7 +158,7 @@ const Education = () => {
       title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-      link: "/blog/ImprovingSAASCybersecurity",
+        moreLink: "/blog/ImprovingSAASCybersecurity",
     },
   ];
 
@@ -184,7 +183,7 @@ const Education = () => {
           {/* <Screen> */}
             <div className={styles.MoreResources}>
               {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={ImageRowGridData} />
+              <HomeSlider cards={cards} />
             </div>
           {/* </Screen> */}
         </div>
