@@ -64,21 +64,21 @@ const appCards = [
     description:
       "Easily configure and manage your APIs within App Studio. Define endpoints, set request parameters, handle authentication, and monitor API calls — all through a simple visual interface designed for both beginners and advanced users.",
     link: "https://docs.digisquares.com/docs/Library/API%20Config",
-    image: "/assets/description/appPageflow.webp"
+    image: "/assets/description/appApiConfiguration.webp"
   },
   {
     id: "UICreation",
     title: "UI Creation",
     description: "Build intuitive and responsive user interfaces effortlessly using App Studio’s powerful UI Builder. Create pixel-perfect screens with drag-and-drop components and customizable layouts, without writing complex code.",
     link: "https://docs.digisquares.com/docs/UI/UI%20Intro",
-    image: "/assets/description/appSqlQuery.webp"
+    image: "/assets/description/appUiCreation.webp"
   },
   {
     id: "Templates",
     title: "Templates",
     description: "Create and customize professional Email and Document templates, including dynamic PDFs, to automate your communications and reporting within App Studio.",
     link: "https://docs.digisquares.com/docs/Template/Email",
-    image: "/assets/description/appPageflow.webp"
+    image: "/assets/description/appTemplate.webp"
 
   },
 

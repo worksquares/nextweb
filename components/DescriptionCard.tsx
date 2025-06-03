@@ -2,11 +2,11 @@
 
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import styles from "../styles/comp/DescriptionCard.module.css";
 // import styles from "../styles/comp/HomeSlider.module.css";
 import { LearnMoreButton, SmallButton } from "./Button/Button";
+import CustomImage from './CustomImage';
 
 interface Feature {
   title?: string;
@@ -111,14 +111,15 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
           const imageBlock = (
             <div className={styles.imageBlock}>
               {group[activeIndex].image && (
-                <Image
-                  src={group[activeIndex].image}
-                  alt={group[activeIndex].title ?? ""}
-                  width={400}
-                  height={300}
-                  className={styles.image}
-                  style={{ objectFit: "contain", borderRadius: 8 }}
-                />
+                // <Image
+                //   src={group[activeIndex].image}
+                //   alt={group[activeIndex].title ?? ""}
+                //   width={400}
+                //   height={300}
+                //   className={styles.image}
+                //   style={{ objectFit: "contain", borderRadius: 8 }}
+                // />
+                <CustomImage type={"description"} src={group[activeIndex].image} alt={group[activeIndex].title ?? ""} />
               )}
             </div>
           );
