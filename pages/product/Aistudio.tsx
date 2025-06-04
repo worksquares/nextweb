@@ -38,18 +38,18 @@ const aiCards = [
     },
   {
     // icon: <FaBullhorn />,
-    title: "Access Role",
+    title: "Playground",
     description:
-      "Maintain secure workflows with AI Studio’s role-based access management, allowing teams to control who designs, customizes, and deploys AI agents for collaborative development.",
+      "Playground allows for the customization of models, adjusting parameters, and comparing outputs side-by-side to fine-tune performance. Ideal for developers, it helps in refining AI configurations for optimal results.",
     link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-    image: "/assets/description/aiAccessRole.webp"
+    image: "/assets/description/aiPlayground.webp"
   },
   {
     // icon: <FaUserTie />,
     title: "Integration",
     description:
       "Connect conversational agents to external systems with AI Studio's API management. Integrate with CRMs, databases, and apps like Slack and Microsoft Teams to expand capabilities.",
-    link:"https://docs.digisquares.com/docs/AI%20studio/DataSource/Integration",
+    link:"https://docs.digisquares.com/docs/AI%20studio/Playground/PlaygroundIntro",
     image: "/assets/description/agentInteraction.webp"
 
     },

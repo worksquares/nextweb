@@ -32,11 +32,11 @@ const agentCards = [
     },
   {
 
-    title: "Access Control",
+    title: "Agent Builder",
     description:
-      "Agent Studio allows role-based team management for secure agent design and deployment, while boosting marketing with AI-powered campaigns, SEO tools, and actionable analytics",
-    link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-    image: "/assets/description/agentAccessControl1.webp"
+      "Create and customize AI-driven agents using an intuitive drag-and-drop interface. Automate tasks and deploy across multiple channels to enhance customer interactions and user engagement without the need for coding.",
+    link:"https://docs.digisquares.com/docs/Agent%20studio/Agentbuilder/AgentbuilderIntro",
+    image: "/assets/description/agentAgentBuilder.webp"
     },
   {
 
@@ -70,11 +70,11 @@ const agentCards = [
         image: "/assets/description/agentMultilingualSupport.webp",
     },
     {
-      title: "Analytics & Reporting",
+      title: "Prompt Builder",
       description:
-        "Track AI agent performance in real-time with built-in analytics dashboards. Gain insights on user engagement, conversation trends, and agent efficiency to drive improvements.",
+        "The Prompt Builder enables you to customize AI responses, manage variables, and optimize dialogue flow. It enhances user experience by integrating external data and ensuring seamless interactions across channels.",
         link:"https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-        image: "/assets/description/agentAnalytics&Report.webp",
+        image: "/assets/description/agentPromptBuilder.webp",
     },
     {
       title: "Custom Skill Builder",

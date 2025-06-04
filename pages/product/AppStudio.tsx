@@ -67,15 +67,15 @@ const appCards = [
     image: "/assets/description/appApiConfiguration.webp"
   },
   {
-    id: "UICreation",
-    title: "UI Creation",
+    id: "UI",
+    title: "UI",
     description: "Build intuitive and responsive user interfaces effortlessly using App Studio’s powerful UI Builder. Create pixel-perfect screens with drag-and-drop components and customizable layouts, without writing complex code.",
     link: "https://docs.digisquares.com/docs/UI/UI%20Intro",
     image: "/assets/description/appUiCreation.webp"
   },
   {
-    id: "Templates",
-    title: "Templates",
+    id: "Documents",
+    title: "Documents",
     description: "Create and customize professional Email and Document templates, including dynamic PDFs, to automate your communications and reporting within App Studio.",
     link: "https://docs.digisquares.com/docs/Template/Email",
     image: "/assets/description/appTemplate.webp"
