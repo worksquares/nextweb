@@ -481,7 +481,7 @@ a span{
     font-family: var(--pbc-g-font-sans);
     font-size: 1.1rem;
     letter-spacing: -0.0012em;
-    line-height: 1.875rem;
+    line-height: 1.75rem;
   }
 
   p span{
@@ -645,7 +645,7 @@ a span{
     font-family: var(--pbc-g-font-sans);
     font-size: 1.3rem;
     letter-spacing: -0.0012em;
-    /* line-height: 2.2rem; */
+    line-height: 2.2rem;
   }
 
   span{
@@ -653,7 +653,7 @@ a span{
     font-family: var(--pbc-g-font-sans);
     font-size: 1.5rem;
     letter-spacing: -0.0012em;
-    line-height: 2rem;
+    /* line-height: 2rem; */
   }
   /* a{
 

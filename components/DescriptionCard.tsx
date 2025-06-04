@@ -119,7 +119,11 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                 //   className={styles.image}
                 //   style={{ objectFit: "contain", borderRadius: 8 }}
                 // />
-                <CustomImage type={"description"} src={group[activeIndex].image} alt={group[activeIndex].title ?? ""} />
+                <CustomImage
+                type={"description"}
+                src={group[activeIndex].image}
+                alt={group[activeIndex].title ?? ""}
+                className={styles.image}/>
               )}
             </div>
           );

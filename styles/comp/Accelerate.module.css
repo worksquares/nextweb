@@ -164,7 +164,7 @@
     } */
 
     .mainImage {
-      height: 580px;
+      height: 550px;
       width: 580px;
     }
   }
@@ -180,8 +180,8 @@
     }
 
     .mainImage {
-      height: 580px;
-      width: 580px;
+      height: 500px;
+      width: 560px;
     }
     .content {
       width: 50%;
@@ -198,26 +198,7 @@
   }
 
 
-  @media screen and (min-width: 1440px) and (max-width: 1600px) {
-    /* .title_accelerate {
-      font-size: 8em;
-      line-height: 7rem;
-    } */
-    .content {
-      width: 50%;
-    }
 
-    .imageContainer {
-      max-width: 720px;
-      height: auto;
-    }
-
-    .mainImage {
-      height: 640px;
-      width: 640px;
-    }
-
-  }
 
    @media screen and (min-width: 1920px)  {
     /* .title_accelerate {

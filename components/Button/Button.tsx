@@ -158,3 +158,35 @@ export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
     </div>
   );
 };
+
+export const LearnMoreButtonLink: React.FC<ButtonProps> = (props) => {
+  return (
+    <div
+      style={{
+        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
+        "--hoverTextColor": props.hoverTextColor || "#000105e0",
+      } as React.CSSProperties}
+    >
+      <Button
+        htmlType={props.htmlType}
+        onClick={props.onClick}
+        className={`${styles.LearnMoreButtonLink} ${props.className ?? ""}`}
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.color,
+          padding: props.padding,
+          height: props.height,
+          borderRadius: props.borderRadius,
+          ...props.style,
+        }}
+      >
+        {props.text}
+        {props.icon && (
+          <span style={{ marginLeft: 0, display: "inline-flex", alignItems: "center" }}>
+            {props.icon}
+          </span>
+        )}
+      </Button>
+    </div>
+  );
+};

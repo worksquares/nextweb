@@ -548,7 +548,7 @@ cursor: pointer;
 }
 
 
-@media screen and (min-width: 1401px) and (max-width: 1440px) {
+@media screen and (min-width: 1431px) and (max-width: 1440px) {
 
   .wrapper {
     flex-direction: column;

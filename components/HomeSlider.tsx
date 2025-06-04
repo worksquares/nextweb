@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
 import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
-import { LearnMoreButton } from "./Button/Button";
+import { LearnMoreButtonLink } from "./Button/Button";
 
 interface Card {
     // tabTitle?: string;
@@ -134,7 +134,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
             <a href={card.moreLink} className={styles.moreLink}>
               {card.moreText || "Learn More"} &rarr;
             </a> */}
-                        <LearnMoreButton
+                        <LearnMoreButtonLink
                           text={<>
                             <span style={{ fontWeight: 700 }}>Learn more</span>
                             <FontAwesomeIcon
@@ -148,6 +148,7 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                                 height: '15px',
                               }} />
                           </>}
+                          className={styles.LearnMoreButtonLink}
                           color="#fff"
                           bgColor="#1d4965"
                           onClick={() => {

@@ -37,7 +37,7 @@ const imageSizes: Record<ImageType, { width: number| "auto" ; height: number }> 
   blogRight: { width: 360, height: 200 },
   header: { width: "auto", height: 290 },
   herosection: { width: 500, height: 500 },
-  description:{width: 600, height: 450}
+  description:{width: 600, height: 400}
 };
 
 const CustomImage: React.FC<CustomImageProps> = ({

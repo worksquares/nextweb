@@ -59,7 +59,7 @@ const aiCards = [
     description:
       "Use AI Studio's robust database tools to store, access, and analyze data for your conversational agents, ensuring scalability, performance, and data integrity.",
     link:"https://docs.digisquares.com/docs/AI%20studio/Library/Library%20Intro",
-    image: "/assets/description/agentDataManagement.webp"
+    image: "/assets/description/aiDatabaseManagement.webp"
 
     },
   {
@@ -90,7 +90,7 @@ const aiCards = [
       description:
         "Deploy AI agents seamlessly across multiple platforms such as websites, mobile apps, social media, and messaging apps to reach users wherever they are.",
       link: "https://docs.digisquares.com/docs/AI%20studio/Deployment/DeploymentIntro",
-      image: "/assets/description/aiMultiChannel.webp",
+      image: "/assets/description/aiMultiChannelDeployment.webp",
     },
 ];
 

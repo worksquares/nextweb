@@ -21,31 +21,26 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
     <div className={styles.studioCard} style={{ backgroundColor }}>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-      {/* <a href={link} style={{ textDecoration: 'none' }} className={styles.learnMoreLink}>
-        <button className={styles.learnMoreButton}>Learn more →</button>
-      </a> */}
-       <div className={styles.buttonWrapper}>
-      <LearnMoreButton
-         text={<>
+      <div className={styles.buttonWrapper}>
+        <LearnMoreButton
+          text={<>
             <span style={{ fontWeight: 700 }}>Learn more</span>
             <FontAwesomeIcon
-            icon={faArrowRight}
-            style={{
-              fontSize: '15px',
-              marginLeft: '10px',
-              verticalAlign: 'middle',
-              color: '#000000',
-              width: '15px',
-              height: '15px',
-            }} />
-                                   </>}
+              icon={faArrowRight}
+              style={{
+                fontSize: '15px',
+                marginLeft: '10px',
+                verticalAlign: 'middle',
+                color: '#000000',
+                width: '15px',
+                height: '15px',
+              }} />
+          </>}
           bgColor="#ffffff"
           color="#000000"
           onClick={() => window.location.href = link}
           className={styles.learnMoreButton}
-           />
-
-
+        />
       </div>
     </div>
   );
@@ -53,13 +48,16 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
 
 const StudioSection: React.FC<StudioSectionProps> = ({ cardsData }) => {
   return (
-      <Screen>
-    <div className={styles.studioSection}>
-      {cardsData.map((card, index) => (
-        <StudioCard key={index} {...card} />
-      ))}
-    </div>
-      </Screen>
+    <Screen>
+      <div className={styles.studioSection}>
+        <h2 className={styles.sectionHeading}>Products</h2> {/* Added heading */}
+        <div className={styles.cardWrapper}>
+          {cardsData.map((card, index) => (
+            <StudioCard key={index} {...card} />
+          ))}
+        </div>
+      </div>
+    </Screen>
   );
 };
 
