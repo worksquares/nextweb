@@ -122,8 +122,8 @@
 @media only screen and (min-width: 1915px) {
   .studioCard {
     /* width: 100%; */
-    max-width: 430px;
-    height: 480px;
+    max-width: 400px;
+    height: 400px;
     /* margin: 20px; */
     margin-top: 70px;
   }

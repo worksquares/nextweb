@@ -137,7 +137,7 @@ const SmallMenu = () => {
                 <ul className={styles.submenu}>
                   <li>
                     <a
-                      href="/product/AppStudio/"
+                      href="/product/Appstudio/"
                       style={{ display: "flex", alignItems: "center" }}
                     >
                       App Studio

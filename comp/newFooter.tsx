@@ -81,7 +81,7 @@ const NewFooter = () => {
                   <h3>Product</h3>
                   <ul className={styles.footersolul}>
                     <li>
-                      <Link legacyBehavior href="/product/AppStudio/">
+                      <Link legacyBehavior href="/product/Appstudio/">
                         <a>App Studio</a>
                       </Link>
                     </li>
