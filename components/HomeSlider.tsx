@@ -143,14 +143,14 @@ const HomeSlider = ({ cards, autoplay = true, speed = 2000 }: HomeSliderProps) =
                                 fontSize: '15px',
                                 marginLeft: '10px',
                                 verticalAlign: 'middle',
-                                color: '#fff', // match text color
+                                color: '#36399C', // match text color
                                 width: '15px',
                                 height: '15px',
                               }} />
                           </>}
                           className={styles.LearnMoreButtonLink}
-                          color="#fff"
-                          bgColor="#1d4965"
+                          color="#36399C"
+                          // bgColor="#1d4965"
                           onClick={() => {
                             if (card.moreLink) {
                               window.location.href = card.moreLink;

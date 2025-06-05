@@ -78,7 +78,7 @@ const appCards = [
     title: "Documents",
     description: "Create and customize professional Email and Document templates, including dynamic PDFs, to automate your communications and reporting within App Studio.",
     link: "https://docs.digisquares.com/docs/Template/Email",
-    image: "/assets/description/appTemplate.webp"
+    image: "/assets/description/appDocument.webp"
 
   },
 

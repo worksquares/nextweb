@@ -48,7 +48,7 @@
   height: 200px;
 }
 
-.learnMoreButton {
+.learnMoreButtonLink {
   align-items: right;
 }
 
@@ -71,8 +71,8 @@
     gap: 10px;
   }
 
-  .learnMoreButton {
-    background-color: white;
+  .learnMoreButtonLink {
+    /* background-color: white; */
     color: black;
     /* font-weight: bold; */
     border: none;
@@ -117,7 +117,7 @@
     margin: 40px 5px;
   }
 
-  .learnMoreButton {
+  .learnMoreButtonLink {
     padding: 20px 30px;
   }
 

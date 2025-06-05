@@ -88,14 +88,14 @@ const CustomerExperience = () => {
   ];
 
   const cards = [
-    {
-      image: "/assets/slider/FutureofAppDevelopment_Header.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Future of App Development",
-      description:
-        "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
-      moreLink: "/blog/FutureofAppDevelopment",
-    },
+    // {
+    //   image: "/assets/slider/FutureofAppDevelopment_Header.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Future of App Development",
+    //   description:
+    //     "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
+    //   moreLink: "/blog/FutureofAppDevelopment",
+    // },
     // {
     //   image: "/assets/slider/FromIdeatoApp_Header.webp",
     //   category: "IT MANAGEMENT",

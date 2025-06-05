@@ -31,15 +31,18 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
                 fontSize: '15px',
                 marginLeft: '10px',
                 verticalAlign: 'middle',
-                color: '#000000',
+                color: '#000',
                 width: '15px',
                 height: '15px',
               }} />
           </>}
           bgColor="#ffffff"
-          color="#000000"
+          // bgColor="transparent"
+          height="40px"
+          width="175"
+          color="#000"
           onClick={() => window.location.href = link}
-          className={styles.learnMoreButton}
+          className={styles.learnMoreButtonLink}
         />
       </div>
     </div>

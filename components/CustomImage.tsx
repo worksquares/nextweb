@@ -22,6 +22,7 @@ interface CustomImageProps {
   alt: string;
   className?: string;
   priority?: boolean;
+
 }
 
 const imageSizes: Record<ImageType, { width: number| "auto" ; height: number }> = {

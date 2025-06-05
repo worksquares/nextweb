@@ -59,6 +59,7 @@ const MultiAgentSection: React.FC = () => {
           color="#fff"
           hoverBgColor="#E74C3C"
           hoverTextColor="#fff"
+          width="120px"
           onClick={() => window.location.href = "https://app.digisquares.com/register"}
           style={{ flex: 1 }}
         />
@@ -68,9 +69,10 @@ const MultiAgentSection: React.FC = () => {
         <LearnMoreButton
           text="Login"
           bgColor="#000000"
-          hoverBgColor="#e74c3c"
+          hoverBgColor="#606060"
           hoverTextColor="#ffffff"
           color="#fff"
+           width="120px"
           onClick={() => window.location.href = "https://app.digisquares.com/login"}
           style={{ flex: 1 }}
         />

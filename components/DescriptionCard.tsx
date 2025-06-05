@@ -100,6 +100,8 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                         color="#fff"
                         padding="20px"
                         height="35px"
+                        hoverBgColor="#009EEB"
+                        hoverTextColor="#fff"
                       />
                     </div>
                   )}
@@ -123,7 +125,10 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                 type={"description"}
                 src={group[activeIndex].image}
                 alt={group[activeIndex].title ?? ""}
-                className={styles.image}/>
+                // className={styles.image}
+                className={`${styles.image} ${styles.imageCover}`}
+
+                />
               )}
             </div>
           );

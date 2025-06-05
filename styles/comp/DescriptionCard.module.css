@@ -112,6 +112,12 @@
 .imageBlock img{
 width: 100%;
 }
+.imageCover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 .heading {
   background: none;
@@ -258,5 +264,10 @@ width: 100%;
   }
   .image {
     max-height: 500px;
+  }
+  .imageCover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
  }

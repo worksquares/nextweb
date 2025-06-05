@@ -190,6 +190,8 @@ const ImageLeftRightCard: React.FC<Props> = ({
                         </>}
                       bgColor="#ff0000"
                       color="#fff"
+                      hoverBgColor="#E74C3C"
+                      hoverTextColor="#fff"
                       onClick={() => {
                         if (link) window.location.href = link;}}
                       className={Styles.learnMoreButton}

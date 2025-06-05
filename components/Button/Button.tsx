@@ -14,10 +14,12 @@ export interface ButtonProps {
   className?: string;
   borderRadius?: string;
   height?: string;
+  width?:string;
   hoverBgColor?: string;
   hoverTextColor?: string;
   linkColor?: string;
   underline?: boolean;
+  fontsize?:string;
 }
 
 export const SmallButton: React.FC<ButtonProps> = (props) => {
@@ -144,6 +146,8 @@ export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
           color: props.color,
           padding: props.padding,
           height: props.height,
+          width:props.width,
+          fontSize:props.fontsize,
           borderRadius: props.borderRadius,
           ...props.style,
         }}
@@ -176,6 +180,7 @@ export const LearnMoreButtonLink: React.FC<ButtonProps> = (props) => {
           color: props.color,
           padding: props.padding,
           height: props.height,
+
           borderRadius: props.borderRadius,
           ...props.style,
         }}
