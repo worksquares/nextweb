@@ -1,0 +1,221 @@
+/* .smallButton styles */
+.smallButton {
+  color: var(--color, inherit);
+  transition: all 0.3s ease;
+  padding: 10px 20px;           /* Adjusted for better padding */
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  background-color: var(--bgColor, transparent);
+}
+
+.smallButton:hover,
+.smallButton:focus {
+  background-color: var(--hoverBgColor, #e0e0e0);
+  color: var(--hoverTextColor, #000105e0);
+  border: none !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);        /* Subtle shadow on hover */
+  text-decoration: underline;                      /* Underline on hover for LearnMoreButton */
+}
+
+/* .mediumButton styles */
+.mediumButton {
+  background-color: var(--bgColor, #ffffff);
+  color: var(--color, rgb(250, 5, 5));
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.mediumButton:hover,
+.mediumButton:focus {
+  background-color: var(--hoverBgColor, #f4f4f4);
+  color: var(--hoverTextColor, #333);
+  border: none !important;
+}
+
+/* .largeButton styles */
+.largeButton {
+  background-color: var(--bgColor, #ffffff);
+  color: var(--color, rgb(250, 5, 5));
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 12px 32px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.largeButton:hover,
+.largeButton:focus {
+  background-color: var(--hoverBgColor, #f4f4f4);
+  color: var(--hoverTextColor, #333);
+  border: none;
+}
+
+/* .SignButton styles */
+.SignButton {
+  background-color: var(--bgColor, #ffffff);
+  color: var(--color, rgb(250, 5, 5));
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  padding: 12px 32px;
+  height: 40px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.SignButton:hover,
+.SignButton:focus {
+  background-color: var(--hoverBgColor, #f70505);
+  color: var(--hoverTextColor, #f8f8fae0);
+}
+
+/* .LearnMoreButton styles */
+.LearnMoreButton {
+  color: var(--color, rgb(250, 5, 5));
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 6px 15px;
+  height: 35px;
+  font-size: 16px ;
+  font-weight: 700;
+  width: 140px;
+  cursor: pointer;
+  border: none !important;
+}
+
+.LearnMoreButton:hover,
+.LearnMoreButton:focus {
+  background-color: var(--hoverBgColor, #e0e0e0);
+  color: var(--hoverTextColor, rgba(5, 53, 245, 0.88));
+  border: none !important;
+}
+
+/* .LearnMoreButtonLink styles */
+.LearnMoreButtonLink {
+  color: #36399C;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 6px 10px;
+  height: 30px;
+  font-size: 15px !important;
+  font-weight: 700;
+  width: 150px;
+  cursor: pointer;
+  border: none !important;
+}
+
+.LearnMoreButtonLink:hover,
+.LearnMoreButtonLink:focus {
+  text-decoration: underline;
+}
+
+/* Responsive overrides for 1900px+ screens */
+@media screen and (min-width: 1900px) {
+  .smallButton {
+    height: 60px;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+  }
+
+  .mediumButton {
+    height: 60px;
+    width: 220px;
+    font-size: 1.6rem;
+    padding: 12px 25px;
+  }
+
+  .largeButton {
+    height: 65px;
+    width: 180px;
+    font-size: 1.8rem;
+    padding: 16px 40px;
+  }
+
+  .SignButton {
+    height: 55px;
+    width: 120px;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .LearnMoreButton {
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+
+  .LearnMoreButtonLink {
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 1024px) {
+  .mediumButton {
+    width: 180px;
+    font-size: 1.4rem;
+  }
+
+  .largeButton {
+    width: 160px;
+    font-size: 1.6rem;
+  }
+}
+
+/* For Smaller Screens */
+@media screen and (max-width: 768px) {
+  .smallButton {
+    padding: 8px 16px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .mediumButton {
+    width: 140px;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  .largeButton {
+    width: 200px;
+    font-size: 1.3rem;
+    padding: 12px 25px;
+  }
+
+  .SignButton {
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .LearnMoreButton {
+    height: 45px;
+    width: 180px;
+    font-size: 16px;
+  }
+
+  .LearnMoreButtonLink {
+    height: 40px;
+    width: 180px;
+    font-size: 14px;
+  }
+}

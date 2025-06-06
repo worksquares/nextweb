@@ -1,8 +1,7 @@
 import { Button } from "antd";
-import React from "react";
-import Screen from "./Screen";
-import style from "../styles/podcast/PodcastHomePlayer.module.css";
 import { useRouter } from "next/router";
+import style from "../styles/podcast/PodcastHomePlayer.module.css";
+import Screen from "./Screen";
 
 const PodcastPlayer = ({ podcasts }) => {
   const router = useRouter();
@@ -24,9 +23,9 @@ const PodcastPlayer = ({ podcasts }) => {
         </div>
         <div className={style.HomePodcastPlayer}>
           <Button onClick={() => router.push(`/resources/Podcast`)} className={style.learnMore}>
-            <span className={style.circle} aria-hidden="true">
+            {/* <span className={style.circle} aria-hidden="true"> */}
               <span className={`${style.icon} ${style.arrow}`}></span>
-            </span>
+            {/* </span> */}
             <span className={style.buttonText}>Learn More</span>
           </Button>
         </div>

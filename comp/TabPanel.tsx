@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LearnMoreButton } from '../components/Button/Button';
+import { LearnMoreButton } from '../components/Button';
 import styles from "../styles/comp/TabPanel.module.css";
 import ImageLeftRight from './ImageLeftRight';
 import Screen from "./Screen";

@@ -1,6 +1,6 @@
 import React from 'react';
 import VerticalDivider from '../components/VerticalDivider';
-import { LearnMoreButton } from './Button/Button';
+import { LearnMoreButton } from './Button';
 
 const MultiAgentSection: React.FC = () => {
   return (

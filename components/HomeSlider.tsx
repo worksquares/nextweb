@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import CustomImage from "../@/components/customImage";
 import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
-import { LearnMoreButtonLink } from "./Button/Button";
+import { LearnMoreButtonLink } from "./Button";
 
 interface Card {
     // tabTitle?: string;

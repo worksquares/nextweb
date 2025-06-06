@@ -18,7 +18,7 @@ const defaultCards = [
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
     image: "/assets/Hero & cards/cards/H-card-1.webp",
-    learnMoreLink: "/product/AppStudio/",
+    learnMoreLink: "/product/Appstudio/",
     demoLink: "/learn-more/ai-agents",
   },
   {

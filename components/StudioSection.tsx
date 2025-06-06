@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Screen from '../comp/Screen';
 import styles from '../styles/comp/StudioSection.module.css';
-import { LearnMoreButton } from './Button/Button';
+import { LearnMoreButton } from './Button';
 
 interface StudioCardProps {
   title: string;

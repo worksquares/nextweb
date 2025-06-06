@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { LargeButton } from '../../components/Button/Button';
+import { LargeButton } from '../../components/Button';
 import CustomImage from "../../components/CustomImage";
 import { FeaturesDescription } from '../../components/DescriptionCard';
 import HomeSlider from '../../components/HomeSlider';

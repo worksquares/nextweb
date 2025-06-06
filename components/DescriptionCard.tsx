@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useMemo, useState } from "react";
 import styles from "../styles/comp/DescriptionCard.module.css";
 // import styles from "../styles/comp/HomeSlider.module.css";
-import { LearnMoreButton, SmallButton } from "./Button/Button";
+import { LearnMoreButton, SmallButton } from "./Button";
 import CustomImage from './CustomImage';
 
 interface Feature {

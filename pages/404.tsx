@@ -1,14 +1,11 @@
-import React from "react";
-import styles from "../styles/404.module.css";
-import ImageCardsGrid from "../comp/ImageCardsGrid";
-import { CardProps } from "../comp/base/ImageCard";
-import Footer from "../comp/Footer";
-import Head from "next/head";
 import Image from "next/image";
-import Headseo from "./headseo";
+import ImageCardsGrid from "../comp/ImageCardsGrid";
 import Screen from "../comp/Screen";
-import NewMenu from "../comp/newMenu";
+import { CardProps } from "../comp/base/ImageCard";
 import NewFooter from "../comp/newFooter";
+import NewMenu from "../comp/newMenu";
+import styles from "../styles/404.module.css";
+import Headseo from "./headseo";
 
 const Custom404 = () => {
   let ImageCardGridData: CardProps[] = [

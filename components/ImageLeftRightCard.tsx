@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { JSX } from "react";
 import CustomImage from "../components/CustomImage";
 import Styles from "../styles/comp/ImageLeftRight.module.css";
-import { LearnMoreButton } from "./Button/Button";
+import { LearnMoreButton } from "./Button";
 
 interface Props {
   title: string;

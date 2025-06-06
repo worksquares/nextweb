@@ -2,7 +2,7 @@ import Headseo from "../pages/headseo";
 import styles from '../styles/comp/Accelerate.module.css';
 // import Image from "next/image";
 import Screen from "../comp/Screen";
-import { LargeButton } from "./Button/Button";
+import { LargeButton } from "./Button";
 
 
 

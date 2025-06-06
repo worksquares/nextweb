@@ -1,6 +1,6 @@
 import { Button } from "antd";
 import React from "react";
-import styles from "./ButtonStyles.module.css";
+import styles from "../styles/comp/ButtonStyles.module.css";
 
 export interface ButtonProps {
   htmlType?: "button" | "submit" | "reset";
@@ -14,12 +14,13 @@ export interface ButtonProps {
   className?: string;
   borderRadius?: string;
   height?: string;
-  width?:string;
+  width?: string;
   hoverBgColor?: string;
   hoverTextColor?: string;
   linkColor?: string;
   underline?: boolean;
-  fontsize?:string;
+  fontsize?: string;
+  "aria-label"?: string; // Added aria-label prop
 }
 
 export const SmallButton: React.FC<ButtonProps> = (props) => {
@@ -42,6 +43,7 @@ export const SmallButton: React.FC<ButtonProps> = (props) => {
           height: props.height,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
       </Button>
@@ -69,6 +71,7 @@ export const MediumButton: React.FC<ButtonProps> = (props) => {
           borderRadius: props.borderRadius,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
       </Button>
@@ -96,6 +99,7 @@ export const LargeButton: React.FC<ButtonProps> = (props) => {
           borderRadius: props.borderRadius,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
       </Button>
@@ -122,6 +126,7 @@ export const SignButton: React.FC<ButtonProps> = (props) => {
           borderRadius: props.borderRadius,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
       </Button>
@@ -146,11 +151,12 @@ export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
           color: props.color,
           padding: props.padding,
           height: props.height,
-          width:props.width,
-          fontSize:props.fontsize,
+          width: props.width,
+          fontSize: props.fontsize,
           borderRadius: props.borderRadius,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Learn more")}
       >
         {props.text}
         {props.icon && (
@@ -180,10 +186,10 @@ export const LearnMoreButtonLink: React.FC<ButtonProps> = (props) => {
           color: props.color,
           padding: props.padding,
           height: props.height,
-
           borderRadius: props.borderRadius,
           ...props.style,
         }}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Learn more link")}
       >
         {props.text}
         {props.icon && (

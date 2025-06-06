@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Screen from '../comp/Screen';
 import styles from "../styles/comp/Menu.module.css";
-import { SignButton } from "./Button/Button";
+import { SignButton } from "./Button";
 
 const Menu = () => {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
