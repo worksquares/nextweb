@@ -1,7 +1,7 @@
-import { Button } from "antd";
 import React from "react";
-import styles from "../styles/comp/ButtonStyles.module.css";
+import styles from "../styles/comp/ButtonStyles.module.css"; // Import your CSS file
 
+// ButtonProps interface remains the same
 export interface ButtonProps {
   htmlType?: "button" | "submit" | "reset";
   onClick?: () => void;
@@ -23,181 +23,99 @@ export interface ButtonProps {
   "aria-label"?: string; // Added aria-label prop
 }
 
-export const SmallButton: React.FC<ButtonProps> = (props) => {
+// Custom Button component (without Ant Design)
+const CustomButton: React.FC<ButtonProps> = (props) => {
   return (
     <div
+      className={styles.buttonWrapper} // Use a wrapper class to apply hover effects and styles
       style={{
         "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
         "--hoverTextColor": props.hoverTextColor || "#000105e0",
       } as React.CSSProperties}
     >
-      <Button
-        htmlType={props.htmlType}
+      <button
+        type={props.htmlType || "button"}
         onClick={props.onClick}
-        className={`${styles.smallButton} ${props.className ?? ""}`}
+        className={`${styles.customButton} ${props.className ?? ""}`}
         style={{
           backgroundColor: props.bgColor,
           color: props.color,
           padding: props.padding,
           borderRadius: props.borderRadius,
-          height: props.height,
-          ...props.style,
-        }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
-      >
-        {props.text}
-      </Button>
-    </div>
-  );
-};
-
-export const MediumButton: React.FC<ButtonProps> = (props) => {
-  return (
-    <div
-      style={{
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",
-      } as React.CSSProperties}
-    >
-      <Button
-        htmlType={props.htmlType}
-        onClick={props.onClick}
-        className={`${styles.mediumButton} ${props.className ?? ""}`}
-        style={{
-          backgroundColor: props.bgColor,
-          color: props.color,
-          padding: props.padding,
-          height: props.height,
-          borderRadius: props.borderRadius,
-          ...props.style,
-        }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
-      >
-        {props.text}
-      </Button>
-    </div>
-  );
-};
-
-export const LargeButton: React.FC<ButtonProps> = (props) => {
-  return (
-    <div
-      style={{
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",
-      } as React.CSSProperties}
-    >
-      <Button
-        htmlType={props.htmlType}
-        onClick={props.onClick}
-        className={`${styles.largeButton} ${props.className ?? ""}`}
-        style={{
-          backgroundColor: props.bgColor,
-          color: props.color,
-          padding: props.padding,
-          height: props.height,
-          borderRadius: props.borderRadius,
-          ...props.style,
-        }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
-      >
-        {props.text}
-      </Button>
-    </div>
-  );
-};
-
-export const SignButton: React.FC<ButtonProps> = (props) => {
-  return (
-    <div
-      style={{
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",
-      } as React.CSSProperties}
-    >
-      <Button
-        htmlType={props.htmlType}
-        onClick={props.onClick}
-        className={`${styles.SignButton} ${props.className ?? ""}`}
-        style={{
-          backgroundColor: props.bgColor,
-          color: props.color,
-          padding: props.padding,
-          borderRadius: props.borderRadius,
-          ...props.style,
-        }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
-      >
-        {props.text}
-      </Button>
-    </div>
-  );
-};
-
-export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
-  return (
-    <div
-      style={{
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",
-      } as React.CSSProperties}
-    >
-      <Button
-        htmlType={props.htmlType}
-        onClick={props.onClick}
-        className={`${styles.LearnMoreButton} ${props.className ?? ""}`}
-        style={{
-          backgroundColor: props.bgColor,
-          color: props.color,
-          padding: props.padding,
           height: props.height,
           width: props.width,
           fontSize: props.fontsize,
-          borderRadius: props.borderRadius,
           ...props.style,
         }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Learn more")}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
-        {props.icon && (
+        {/* {props.icon && (
           <span style={{ marginLeft: 0, display: "inline-flex", alignItems: "center" }}>
             {props.icon}
           </span>
-        )}
-      </Button>
+        )} */}
+      </button>
     </div>
   );
 };
 
+// SmallButton component using CustomButton
+export const SmallButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <CustomButton
+      {...props}
+      className={`${styles.smallButton} ${props.className ?? ""}`}
+    />
+  );
+};
+
+// MediumButton component using CustomButton
+export const MediumButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <CustomButton
+      {...props}
+      className={`${styles.mediumButton} ${props.className ?? ""}`}
+    />
+  );
+};
+
+// LargeButton component using CustomButton
+export const LargeButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <CustomButton
+      {...props}
+      className={`${styles.largeButton} ${props.className ?? ""}`}
+    />
+  );
+};
+
+// SignButton component using CustomButton
+export const SignButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <CustomButton
+      {...props}
+      className={`${styles.SignButton} ${props.className ?? ""}`}
+    />
+  );
+};
+
+// LearnMoreButton component using CustomButton
+export const LearnMoreButton: React.FC<ButtonProps> = (props) => {
+  return (
+    <CustomButton
+      {...props}
+      className={`${styles.LearnMoreButton} ${props.className ?? ""}`}
+    />
+  );
+};
+
+// LearnMoreButtonLink component using CustomButton
 export const LearnMoreButtonLink: React.FC<ButtonProps> = (props) => {
   return (
-    <div
-      style={{
-        "--hoverBgColor": props.hoverBgColor || "#e0e0e0",
-        "--hoverTextColor": props.hoverTextColor || "#000105e0",
-      } as React.CSSProperties}
-    >
-      <Button
-        htmlType={props.htmlType}
-        onClick={props.onClick}
-        className={`${styles.LearnMoreButtonLink} ${props.className ?? ""}`}
-        style={{
-          backgroundColor: props.bgColor,
-          color: props.color,
-          padding: props.padding,
-          height: props.height,
-          borderRadius: props.borderRadius,
-          ...props.style,
-        }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Learn more link")}
-      >
-        {props.text}
-        {props.icon && (
-          <span style={{ marginLeft: 0, display: "inline-flex", alignItems: "center" }}>
-            {props.icon}
-          </span>
-        )}
-      </Button>
-    </div>
+    <CustomButton
+      {...props}
+      className={`${styles.LearnMoreButtonLink} ${props.className ?? ""}`}
+    />
   );
 };

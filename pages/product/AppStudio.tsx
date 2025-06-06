@@ -185,7 +185,7 @@ const AppStudio = () => {
           <div className={styles.integrationGrid}>
             <div className={styles.integrationRow}>
               {[
-                "Oracle DB", "Postgres", "MariaDB", "Redis", "Snowflake", "Salesforce", "Asana", "Zoho Books API",
+                "Oracle DB", "Postgres", "MariaDB", "Redis", "Snowflake", "Salesforce", "Asana", "ZohoBooksAPI",
                 "Workday", "Servicenow", "Monday", "Freshdesk", "Slack", "SMTP", "Stripe", "Razorpay", "Paypal"
               ].map((name, idx) => {
                 const file = name.replace(/\s/g, '') + ".svg";

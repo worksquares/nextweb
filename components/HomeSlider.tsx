@@ -1,25 +1,21 @@
-import Image from "next/image";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import CustomImage from "../@/components/customImage";
+import CustomImage from "../components/CustomImage";
 import redVector from "../public/svg/redvector.svg";
 import styles from "../styles/comp/HomeSlider.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { LearnMoreButtonLink } from "./Button";
 
 interface Card {
-  // tabTitle?: string;
   image: string;
   title?: string;
   description: string;
-  links?: { text: string; href: string }[];
   moreText?: string;
   moreLink?: string;
-  // demoLink?: string;
 }
 
 interface HomeSliderProps {
@@ -27,6 +23,7 @@ interface HomeSliderProps {
   autoplay?: boolean;
   speed?: number;
 }
+
 // Custom Previous Arrow
 const PrevArrow = (props: any) => (
   <div className={styles.prevArrow} onClick={props.onClick}>
@@ -56,15 +53,12 @@ const HomeSlider = ({
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // arrows: false,
     arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     centerMode: true,
     centerPadding: "0px",
     pauseOnHover: true,
-    // autoplay: autoplay,
-    // autoplaySpeed: speed,
     beforeChange: (current: number, next: number) => setCurrentSlide(next),
     responsive: [
       {
@@ -90,7 +84,6 @@ const HomeSlider = ({
 
   return (
     <div className={styles.container}>
-      {/* <Screen> */}
       <h3 className={styles.title}>Know more about us</h3>
       <Slider {...settings} className={styles.carousel}>
         {cards.map((card, index) => {
@@ -102,10 +95,6 @@ const HomeSlider = ({
               }`}
             >
               <div className={styles.card}>
-                {/* <div className={styles.tabTitle}>
-            <h4>{card.tabTitle}</h4>
-            </div> */}
-
                 {showRibbon && (
                   <div className={styles.vectorContainer}>
                     <CustomImage
@@ -113,6 +102,7 @@ const HomeSlider = ({
                       alt="Decoration"
                       className={styles.redVector}
                       type="slider"
+                      priority={true}
                     />
                   </div>
                 )}
@@ -122,25 +112,16 @@ const HomeSlider = ({
                       type="slider"
                       src={card.image}
                       alt={card.title || "Card image"}
+                      priority={true}
                       className={styles.cardImage}
+
                     />
+
                   </div>
                   <div className={styles.textContent}>
                     <h4>{card.title}</h4>
                     <p>{card.description}</p>
                     <div className={styles.footer}>
-                      {/* {card.links && (
-              <div className={styles.links}>
-                {card.links.map((link, i) => (
-                  <a key={i} href={link.href} className={styles.link}>
-                    {link.text}
-                  </a>
-                ))}
-              </div>
-            )}
-            <a href={card.moreLink} className={styles.moreLink}>
-              {card.moreText || "Learn More"} &rarr;
-            </a> */}
                       <LearnMoreButtonLink
                         text={
                           <>
@@ -152,30 +133,18 @@ const HomeSlider = ({
                                 marginLeft: "10px",
                                 verticalAlign: "middle",
                                 color: "#36399C", // match text color
-                                width: "15px",
-                                height: "15px",
                               }}
                             />
                           </>
                         }
                         className={styles.LearnMoreButtonLink}
                         color="#36399C"
-                        // bgColor="#1d4965"
                         onClick={() => {
                           if (card.moreLink) {
                             window.location.href = card.moreLink;
                           }
                         }}
                       />
-
-                      {/* {card.demoLink && (
-
-              <a href={card.demoLink} className={styles.demoLink}
-              // target="_blank" rel="noopener noreferrer"
-              >
-                Book a Demo
-              </a>
-            )} */}
                     </div>
                   </div>
                 </div>
@@ -184,7 +153,6 @@ const HomeSlider = ({
           );
         })}
       </Slider>
-      {/* </Screen> */}
     </div>
   );
 };

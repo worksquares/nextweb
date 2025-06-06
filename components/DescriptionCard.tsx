@@ -98,8 +98,9 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                         }
                         bgColor="#0050b3"
                         color="#fff"
-                        padding="20px"
-                        height="35px"
+                        // padding="20px"
+                        // height="35px"
+                        // width="150px"
                         hoverBgColor="#009EEB"
                         hoverTextColor="#fff"
                       />
@@ -122,11 +123,12 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                 //   style={{ objectFit: "contain", borderRadius: 8 }}
                 // />
                 <CustomImage
-                type={"description"}
+                type="rightLeft"
                 src={group[activeIndex].image}
                 alt={group[activeIndex].title ?? ""}
                 // className={styles.image}
                 className={`${styles.image} ${styles.imageCover}`}
+                priority={true}
 
                 />
               )}

@@ -83,25 +83,39 @@
 
 }
 
-.imageContainer {
+/* .imageContainer {
 
   max-width: 320px;
   width: 100%;
   overflow: hidden;
-  /* max-height: 175px; */
+  max-height: 175px;
   height: 175px;
   margin: 0;
+} */
+/*
+.imageContainer {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  overflow: hidden;
+  margin: 0;
+} */
 
-}
-
-.cardImage {
+/* .cardImage {
   display: block;
   margin: 0 auto;
   height: 180px;
   object-fit: cover;
   width: 300px;
+} */
 
-}
+/* .cardImage {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
 
 .textContent {
   padding: 0 10px 20px;
@@ -358,26 +372,31 @@
     height: 500px;
     height: auto;
   } */
-  .imageContainer {
-
+  /* .imageContainer {
     max-width: 500px;
     height: 230px ;
-    /* width: 100%; */
-    /* overflow: hidden; */
-    /* max-height: 300px;
-    height: 230px; */
-    /* margin: 0; */
+  } */
 
-  }
+  /* .imageContainer {
+    max-width: 500px;
+    height: 230px;
+  } */
 
-  .cardImage {
+  /* .cardImage {
     display: block;
     margin: 0 auto;
     height: 200px;
     object-fit: cover;
     width: 480px;
-
+  } */
+  .cardImage {
+    display: block;
+    margin: 0;
+    height: 230px;
+    object-fit: contain;
+    width: 480px;
   }
+
   .textContent h4{
     margin-top: 10px;
   }
@@ -424,11 +443,18 @@
     width: 100%;
     height: 180px;
   }
+  .cardImage {
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    object-fit: cover;
+    width: 325px;
+  }
+
   .carousel {
     max-width: 83%;
     margin: 0 auto;
     height: 500px !important;
-
   }
   .cardWrapper{
     height: 450px;
@@ -460,6 +486,13 @@
   .imageContainer {
     width: 100%;
     height: 180px;
+  }
+  .cardImage {
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    object-fit: cover;
+    width: 345px;
   }
   .carousel {
     max-width: 83%;
@@ -498,11 +531,9 @@
   .card {
     height: 100%;
   }
-  .imageContainer {
-    /* padding: 15px; */
+  /* .imageContainer {
     width: 100%;
-    /* height: 100%; */
-  }
+  } */
 
   .textContent p {
     height: 110px;
@@ -532,10 +563,9 @@
     max-width: 95%;
     height: 100%;
   }
-  .imageContainer {
-    /* height: 100%; */
+  /* .imageContainer {
     width: 100%;
-  }
+  } */
   .textContent h3{
     height: 50px;
   }
@@ -559,10 +589,21 @@
     height: 440px;
     max-width: 100%;
   }
-  .imageContainer {
-    /* padding: 15px; */
+  /* .imageContainer {
     width: 100%;
-  }
+  } */
+
+  /* .imageContainer {
+    width: 100%;
+    height: auto;
+  } */
+  /* .cardImage {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    object-fit: cover;
+    width: 250px;
+  } */
 
   .textContent p {
     height: 90px;
@@ -598,7 +639,11 @@
   }
 
   .cardImage {
-    max-height: 160px;
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    object-fit: cover;
+    width: 255px;
   }
 
   .textContent {

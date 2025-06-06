@@ -41,6 +41,7 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
           height="40px"
           width="175"
           color="#000"
+
           onClick={() => window.location.href = link}
           className={styles.learnMoreButtonLink}
         />

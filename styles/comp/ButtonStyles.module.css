@@ -2,7 +2,7 @@
 .smallButton {
   color: var(--color, inherit);
   transition: all 0.3s ease;
-  padding: 10px 20px;           /* Adjusted for better padding */
+  padding: 10px 20px;
   height: 50px;
   font-size: 1rem;
   font-weight: 700;
@@ -17,8 +17,8 @@
   background-color: var(--hoverBgColor, #e0e0e0);
   color: var(--hoverTextColor, #000105e0);
   border: none !important;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);        /* Subtle shadow on hover */
-  text-decoration: underline;                      /* Underline on hover for LearnMoreButton */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+  text-decoration: underline; /* Underline on hover for LearnMoreButton */
 }
 
 /* .mediumButton styles */
@@ -69,7 +69,7 @@
   color: var(--color, rgb(250, 5, 5));
   transition: all 0.3s ease;
   border-radius: 30px;
-  padding: 12px 32px;
+  padding: 6px 20px;
   height: 40px;
   line-height: 24px;
   font-size: 16px;
@@ -91,9 +91,9 @@
   border-radius: 50px;
   padding: 6px 15px;
   height: 35px;
-  font-size: 16px ;
+  font-size: 16px;
   font-weight: 700;
-  width: 140px;
+  width: 150px;
   cursor: pointer;
   border: none !important;
 }
@@ -124,98 +124,51 @@
   text-decoration: underline;
 }
 
-/* Responsive overrides for 1900px+ screens */
-@media screen and (min-width: 1900px) {
+
+/* For Screens with a Minimum Width of 1920px */
+@media screen and (min-width: 1920px) {
+
+  /* .smallButton adjustments for large screens */
   .smallButton {
-    height: 60px;
-    font-size: 1.25rem;
-    padding: 10px 20px;
+    padding: 12px 24px;               /* Increase padding */
+    height: 60px;                      /* Increase height */
+    font-size: 1.25rem;                /* Increase font size */
   }
 
+  /* .mediumButton adjustments for large screens */
   .mediumButton {
-    height: 60px;
-    width: 220px;
-    font-size: 1.6rem;
-    padding: 12px 25px;
+    padding: 12px 24px;               /* Increase padding */
+    height: 60px;                      /* Increase height */
+    font-size: 1.4rem;                /* Increase font size */
   }
 
+  /* .largeButton adjustments for large screens */
   .largeButton {
-    height: 65px;
-    width: 180px;
-    font-size: 1.8rem;
-    padding: 16px 40px;
+    padding: 14px 36px;               /* Increase padding */
+    height: 65px;                      /* Increase height */
+    font-size: 1.5rem;                /* Increase font size */
   }
 
+  /* .SignButton adjustments for large screens */
   .SignButton {
-    height: 55px;
-    width: 120px;
-    font-size: 12px;
-    font-weight: 600;
-    align-items: center;
+    padding: 8px 24px;               /* Increase padding */
+    height: 50px;                     /* Increase height */
+    font-size: 18px;                  /* Increase font size */
   }
 
+  /* .LearnMoreButton adjustments for large screens */
   .LearnMoreButton {
-    height: 50px;
-    width: 200px;
-    font-size: 18px;
-    padding: 8px 20px;
+    padding: 8px 20px;               /* Increase padding */
+    height: 45px;                     /* Increase height */
+    font-size: 16px;                  /* Increase font size */
+    width: 200px;                     /* Increase width */
   }
 
+  /* .LearnMoreButtonLink adjustments for large screens */
   .LearnMoreButtonLink {
-    height: 50px;
-    width: 200px;
-    font-size: 16px;
-  }
-}
-
-/* For Medium Devices */
-@media screen and (max-width: 1024px) {
-  .mediumButton {
-    width: 180px;
-    font-size: 1.4rem;
-  }
-
-  .largeButton {
-    width: 160px;
-    font-size: 1.6rem;
-  }
-}
-
-/* For Smaller Screens */
-@media screen and (max-width: 768px) {
-  .smallButton {
-    padding: 8px 16px;
-    height: 40px;
-    font-size: 0.9rem;
-  }
-
-  .mediumButton {
-    width: 140px;
-    font-size: 1.2rem;
-    padding: 8px 16px;
-  }
-
-  .largeButton {
-    width: 200px;
-    font-size: 1.3rem;
-    padding: 12px 25px;
-  }
-
-  .SignButton {
-    height: 40px;
-    width: 120px;
-    font-size: 14px;
-  }
-
-  .LearnMoreButton {
-    height: 45px;
-    width: 180px;
-    font-size: 16px;
-  }
-
-  .LearnMoreButtonLink {
-    height: 40px;
-    width: 180px;
-    font-size: 14px;
+    padding: 8px 15px;               /* Increase padding */
+    height: 35px;                     /* Increase height */
+    font-size: 16px;                  /* Increase font size */
+    width: 180px;                     /* Increase width */
   }
 }
