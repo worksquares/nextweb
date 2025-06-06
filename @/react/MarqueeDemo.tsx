@@ -1,6 +1,7 @@
 import { memo } from "react";
 import Marquee from "../components/magicui/marquee";
 import styles from "./MarqueeDemo.module.css";
+import Image from "next/image";
 
 const reviews = [
   {
@@ -32,11 +33,27 @@ const reviews = [
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }: { img: string; name: string; username: string; body: string }) => {
+const ReviewCard = ({
+  img,
+  name,
+  username,
+  body,
+}: {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+}) => {
   return (
     <figure className={`${styles.reviewCard}`}>
       <div className="flex flex-row items-center gap-2">
-        <img className={styles.userImage} width="20" height="20" alt="" src={img} />
+        <Image
+          className={styles.userImage}
+          width="20"
+          height="20"
+          alt=""
+          src={img}
+        />
         <div className={styles.userDetails}>
           <figcaption className={styles.caption}>{name}</figcaption>
           <p className={styles.username}>{username}</p>
@@ -47,7 +64,7 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
   );
 };
 
- const MarqueeDemo = ()=> {
+const MarqueeDemo = () => {
   return (
     <div className={styles.container}>
       <Marquee pauseOnHover className={styles.marquee}>
@@ -56,8 +73,10 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
         ))}
       </Marquee>
 
-      <div className={`${styles.gradientLeft} ${styles.gradientDarkLeft}`}></div>
+      <div
+        className={`${styles.gradientLeft} ${styles.gradientDarkLeft}`}
+      ></div>
     </div>
   );
-}
+};
 export default memo(MarqueeDemo);
