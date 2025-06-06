@@ -213,12 +213,16 @@ const NewMenu = () => {
                     </div>
 
                     <div className={styles.relative}>
-                      <a style={{
-                        color: "#5A6072",
-                        fontWeight:600
-                      }}  href="/contact/ContactUs/">Contact Us</a>
+                      <a
+                        style={{
+                          color: "#5A6072",
+                          fontWeight: 600,
+                        }}
+                        href="/contact/ContactUs/"
+                      >
+                        Contact Us
+                      </a>
                     </div>
-
                   </nav>
                   <div className={styles.signinsignup}>
                     <button onClick={ChangeGlobal} type="button">
@@ -352,7 +356,7 @@ const NewMenu = () => {
                             textDecoration: "none",
                           }}
                         >
-                          <img
+                          <Image
                             alt="Low Code Platform"
                             src="/assets/Hero & cards/AppStudio_Hero.webp"
                             style={
@@ -398,7 +402,7 @@ const NewMenu = () => {
                             textDecoration: "none",
                           }}
                         >
-                          <img
+                          <Image
                             alt="AI Agent"
                             src="/assets/Hero & cards/menu_agentstudio.webp"
                           />
@@ -441,7 +445,7 @@ const NewMenu = () => {
                             textDecoration: "none",
                           }}
                         >
-                          <img
+                          <Image
                             alt="AI Studio"
                             src="/assets/Hero & cards/menu_aistudio.webp"
                           />
@@ -646,8 +650,8 @@ const NewMenu = () => {
                           <h3
                             className={styles.solutionTitle}
                             onClick={() =>
-                            (window.location.href =
-                              "/partners/PartnerProgram/")
+                              (window.location.href =
+                                "/partners/PartnerProgram/")
                             }
                           >
                             Partner program
@@ -657,8 +661,8 @@ const NewMenu = () => {
                           <h3
                             className={styles.solutionTitle}
                             onClick={() =>
-                            (window.location.href =
-                              "/partners/BecomePartner/")
+                              (window.location.href =
+                                "/partners/BecomePartner/")
                             }
                           >
                             Become a partner
@@ -681,7 +685,7 @@ const NewMenu = () => {
                             position: "relative",
                           }}
                         >
-                          <img
+                          <Image
                             src="/assets/PartnerFinder.webp"
                             alt="Partner Finder"
                             style={{
@@ -772,7 +776,7 @@ const NewMenu = () => {
                           position: "relative",
                         }}
                       >
-                        <img
+                        <Image
                           src="/assets/Pricingimg.webp"
                           alt="Resourcesimg"
                           style={{

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 type ImageType =
@@ -22,10 +21,12 @@ interface CustomImageProps {
   alt: string;
   className?: string;
   priority?: boolean;
-
 }
 
-const imageSizes: Record<ImageType, { width: number| "auto" ; height: number }> = {
+const imageSizes: Record<
+  ImageType,
+  { width: number | "auto"; height: number }
+> = {
   hero: { width: 670, height: 560 },
   hero_alt: { width: 770, height: 435 },
   card: { width: 360, height: 200 },
@@ -38,7 +39,7 @@ const imageSizes: Record<ImageType, { width: number| "auto" ; height: number }> 
   blogRight: { width: 360, height: 200 },
   header: { width: "auto", height: 290 },
   herosection: { width: 500, height: 500 },
-  description:{width: 700, height: 400}
+  description: { width: 700, height: 400 },
 };
 
 const CustomImage: React.FC<CustomImageProps> = ({
@@ -48,28 +49,19 @@ const CustomImage: React.FC<CustomImageProps> = ({
   className,
   priority,
 }) => {
-  console.log('type: ', type);
-
   const imageSize = imageSizes[type] || { width: 0, height: 0 };
 
   const { width, height } = imageSize;
-  console.log('height: ', height);
-  console.log('width: ', width);
-
 
   return (
     <Image
       src={src}
       alt={alt}
-      // priority={priority}
       width={width === "auto" ? undefined : width}
       height={height}
-      style={{ objectFit:"contain" }}
-      // layout="responsive"
-      // style={{width:"400px",height:"200px"}}
+      style={{ objectFit: "contain" }}
       className={className}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
-
     />
   );
 };

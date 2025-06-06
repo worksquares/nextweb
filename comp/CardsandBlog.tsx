@@ -1,5 +1,6 @@
 import styles from "../styles/comp/CardsandBlog.module.css";
 import Screen from "./Screen";
+import Image from "next/image";
 
 const CardsandBlog = ({
   CardHeader,
@@ -21,7 +22,7 @@ const CardsandBlog = ({
                 return (
                   <div className={styles.CardComp}>
                     {data.Icon && (
-                      <img
+                      <Image
                         src={data.Icon}
                         alt="check"
                         className={styles.CardIcons}
@@ -31,7 +32,7 @@ const CardsandBlog = ({
                     <p className={styles.CardDesc}>{data.description}</p>
                     <a href={data.linkUrl} className={styles.learnMoreButton}>
                       {data.linkName}
-                      <img
+                      <Image
                         src="/svg/arrow.svg"
                         alt="Arrow Icon"
                         className={styles.arrowIcon}

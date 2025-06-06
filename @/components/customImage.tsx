@@ -53,7 +53,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
       priority={priority}
       width={width === "auto" ? undefined : width}
       height={height}
-      layout="responsive"
+      // layout="responsive"
       className={className}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
     />
