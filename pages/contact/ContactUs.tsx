@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "../../styles/contact/contactus.module.css";
-import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
-import Images from "../../comp/base/Images";
-import BaseLayout from "../../comp/BaseLayout";
 import { Button, Form, Input } from "antd";
 import TextArea from "antd/es/input/TextArea";
+import Images from "../../comp/base/Images";
+import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import styles from "../../styles/contact/contactus.module.css";
+import Headseo from "../headseo";
 
-const ContactUs = () => {  
+const ContactUs = () => {
   const [form] = Form.useForm();
   return (
     <>
@@ -37,7 +36,7 @@ const ContactUs = () => {
                   height="30"
                   src="/assets/globeimg.webp"
                 />
-                <h1>Location</h1>
+                <h3>Location</h3>
               </div>
               <p>
                 Digisquares Technologies Private Limited is headquartered in
@@ -58,7 +57,7 @@ const ContactUs = () => {
                       width="30"
                       height="30"
                     />
-                    <h2>India</h2>
+                    <h3>India</h3>
                   </div>
                   <h4>Coimbatore</h4>
                   <p>Villankurichi Rd,</p>
@@ -104,7 +103,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div style={{ width: "100%" }} className={styles.contactusform}>
-              <h1>Contact Us</h1>
+              <h2>Contact Us</h2>
                 <Form
                   layout="vertical"
                   name="basic"
@@ -148,13 +147,13 @@ const ContactUs = () => {
                     name="additionalcomments"
                   >
                     <TextArea
-                   
+
                       autoSize={{
                         minRows: 5,
                         maxRows: 7,
                       }}
                     />
-                  
+
                   </Form.Item>
 
 
@@ -168,7 +167,7 @@ const ContactUs = () => {
                 </Form>
             </div>
           </div>
-         
+
         </Screen>
       </BaseLayout>
     </>

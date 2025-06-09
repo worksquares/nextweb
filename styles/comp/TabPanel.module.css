@@ -67,13 +67,16 @@
 .tabButtonActive span::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom:  0px;
   left: 0;
   width: 100%;               /* Matches only text */
   height: 2.5px;
   background-color: #003c57;
   border-radius: 2px;
 }
+
+
+
 
 
 

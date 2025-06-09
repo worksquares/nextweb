@@ -27,6 +27,9 @@ const TabPanel = ({ tabs }) => {
             text={<span>{tab.title}</span>}
             onClick={() => setActiveTab(index)}
             className={`${styles.tabButton} ${activeTab === index ? styles.tabButtonActive : ""}`}
+            hoverBgColor="transparent"
+            hoverTextColor="#003c57"
+
           />
 
 

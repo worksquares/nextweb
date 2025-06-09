@@ -22,16 +22,16 @@
   }
   .contactBackground h1 {
     color:white;
-    font-weight: 600;
-    font-size: 50px;
+    /* font-weight: 600;
+    font-size: 50px; */
   }
   .map{
     object-fit: contain;
     mix-blend-mode: darken;
-   
+
   }
   .img{
- 
+
     object-fit: contain;
     mix-blend-mode: darken;
   }
@@ -44,20 +44,28 @@
   }
   .contactusform h1{
     margin-bottom: 20px;
-    font-weight: 700;
-    
+    /* font-weight: 700; */
+
   }
+  .contactuscontainer h1,
+.contactuscontainer h2,
+.contactuscontainer h3,
+.contactuscontainer h4,
+.contactuscontainer p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  /* padding: 0;
+  line-height: 1.4; */
+}
 @media (max-width: 470px) {
   .contactuscontainer{
     flex-direction: column;
     margin-top: 20px;
 }
-.contactusform h1{
+/* .contactusform h1{
    margin-left: 0;
-  }
+  } */
 .ant-input{
   width: 100%;
 }
 }
-
-
