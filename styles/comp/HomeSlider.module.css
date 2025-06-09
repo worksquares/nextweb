@@ -17,11 +17,11 @@
 
 .carousel {
   width: 90%;
-  max-width: 2000px;
-  margin: 0;
+  max-width: 1420px;
+  margin: 0 auto;
   /* max-height: 1500px; */
   box-sizing: border-box;
-  height: 100% !important;
+  height: 100%;
 
 }
 
@@ -364,7 +364,7 @@
     width: 83%;
     margin: 0 auto;
     max-height: 1000px;
-    height: 550px !important;
+    height: 600px;
 
   }
   /* .card {
@@ -392,9 +392,9 @@
   .cardImage {
     display: block;
     margin: 0;
-    height: 230px;
+    height: 240px;
     object-fit: contain;
-    width: 480px;
+    width: auto;
   }
 
   .textContent h4{
@@ -406,12 +406,8 @@
   }
 
   .cardWrapper {
-    padding: 20px;
-    /* box-sizing: border-box; */
-    display: flex !important;
-    justify-content: center;
-    width: 100px;
-    height: 550px;
+
+    height: 600px;
   }
   .LearnMoreButtonLink{
     padding: 1px;
@@ -441,20 +437,20 @@
 @media (max-width: 1360px) {
   .imageContainer {
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
   }
   .cardImage {
     display: block;
     margin: 0 auto;
     height: 180px;
     object-fit: cover;
-    width: 325px;
+    width: auto;
   }
 
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 500px !important;
+    height: 500px;
   }
   .cardWrapper{
     height: 450px;
@@ -485,19 +481,19 @@
 @media (min-width: 1361px) and (max-width: 1440px) {
   .imageContainer {
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
   }
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 180px;
+    height: 192px;
     object-fit: cover;
-    width: 345px;
+    width: auto;
   }
   .carousel {
     max-width: 83%;
     margin: 0 auto;
-    height: 490px !important;
+    height: 490px;
 
   }
   .cardWrapper{
@@ -602,7 +598,7 @@
     margin: 0 auto;
     height: 200px;
     object-fit: cover;
-    width: 250px;
+    width: auto;
   } */
 
   .textContent p {
@@ -625,7 +621,9 @@
     /* font-size: 1.5rem; */
     margin-bottom: 15px;
   }
-
+  .imageContainer{
+    height: 140px;
+  }
   .card {
     /* height: 100px; */
     max-width: 100%;
@@ -641,9 +639,9 @@
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 180px;
+    height: 135px;
     object-fit: cover;
-    width: 255px;
+    width: auto;
   }
 
   .textContent {
@@ -653,7 +651,11 @@
     height: 70px;
   } */
   .textContent p {
-  height: 90px;
+  height: 103px;
+  }
+  .textContent h4{
+    /* margin-top: 10px; */
+    height: 60px;
   }
 
   .moreLink,

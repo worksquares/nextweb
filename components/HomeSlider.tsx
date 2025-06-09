@@ -114,7 +114,6 @@ const HomeSlider = ({
                       alt={card.title || "Card image"}
                       priority={true}
                       className={styles.cardImage}
-
                     />
 
                   </div>

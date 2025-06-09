@@ -70,7 +70,8 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                     onClick={() => setActive(groupIdx, idx)}
                     style={{ textAlign: "left" }}
                     text={feature.title}
-                  />
+                    // hoverBgColor="transparent"
+                                      />
                   {idx === activeIndex && (
                     <div className={styles.content}>
                       <p>{feature.description}</p>

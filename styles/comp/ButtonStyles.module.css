@@ -14,11 +14,11 @@
 
 .smallButton:hover,
 .smallButton:focus {
-  background-color: var(--hoverBgColor, #e0e0e0);
+  /* background-color: var(--hoverBgColor, #e0e0e0);
   color: var(--hoverTextColor, #000105e0);
   border: none !important;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
-  text-decoration: underline; /* Underline on hover for LearnMoreButton */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); */
+  text-decoration: underline;
 }
 
 /* .mediumButton styles */

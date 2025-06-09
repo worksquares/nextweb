@@ -21,6 +21,7 @@ interface CustomImageProps {
   alt: string;
   className?: string;
   priority?: boolean;
+
 }
 
 const imageSizes: Record<
@@ -30,7 +31,7 @@ const imageSizes: Record<
   hero: { width: 670, height: 560 },
   hero_alt: { width: 770, height: 435 },
   card: { width: 360, height: 200 },
-  slider: { width: 325, height: 185 },
+  slider: { width: 340, height: 185 },
   banner: { width: 770, height: 435 },
   tab: { width: 650, height: 440 },
   rightLeft: { width: 700, height: 500 },
@@ -48,6 +49,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
   alt,
   className,
   priority = false,
+
 }) => {
   const imageSize = imageSizes[type] || { width: 0, height: 0 };
 
