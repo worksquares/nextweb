@@ -347,7 +347,7 @@ const NewMenu = () => {
                         style={{ justifyContent: "space-around" }}
                       >
                         <a
-                          href="/product/Appstudio/"
+                          href="/product/AppStudio/"
                           style={{
                             display: "block",
                             width: "250px",

@@ -70,7 +70,7 @@ const Menu = () => {
                 {
                     title: 'Featured Products',
                     links: [
-                        { text: 'App Studio', href: "/product/Appstudio/" },
+                        { text: 'App Studio', href: "/product/AppStudio/" },
                         { text: 'Agent Studio', href: "/product/AgentStudio/" },
                         { text: 'AI Studio', href: "/product/Aistudio/" }
                     ]

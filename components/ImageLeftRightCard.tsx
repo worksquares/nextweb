@@ -153,7 +153,11 @@ const ImageLeftRightCard: React.FC<Props> = ({
         </div>
 
         <div className={Styles.imageSection}>
-          <CustomImage type="rightLeft" src={img320} alt="Card Visual" />
+          <CustomImage type="rightLeft"
+          src={img320}
+          alt="Card Visual"
+          priority={true}
+          />
 
           {/* Learn More Button and Link */}
           <div

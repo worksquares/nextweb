@@ -2,8 +2,8 @@ import Image from "next/image";
 import ImageCardsGrid from "../comp/ImageCardsGrid";
 import Screen from "../comp/Screen";
 import { CardProps } from "../comp/base/ImageCard";
-import NewFooter from "../comp/newFooter";
 import NewMenu from "../comp/newMenu";
+import MainFooter from "../components/MainFooter";
 import styles from "../styles/404.module.css";
 import Headseo from "./headseo";
 
@@ -124,7 +124,8 @@ const Custom404 = () => {
         </div>
       </Screen>
       <div>
-        <NewFooter />
+        {/* <NewFooter /> */}
+        <MainFooter />
       </div>
     </div>
   );

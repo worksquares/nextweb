@@ -44,7 +44,7 @@ const MainFooter = () => {
                         <div className={styles.linkColumn}>
                             <h4>Product</h4>
                             <ul className={styles.footerLinksList}>
-                                <li><Link href="/product/Appstudio/">App Studio</Link></li>
+                                <li><Link href="/product/AppStudio/">App Studio</Link></li>
                                 <li><Link href="/product/AgentStudio/">Agent Studio</Link></li>
                                 <li><Link href="/product/Aistudio/">AI Studio</Link></li>
                             </ul>

@@ -68,7 +68,7 @@ const SmallMenu = () => {
             {product && (
               <ul className={styles.submenu} id="product-menu">
                 <li>
-                  <a href="/product/Appstudio/">App Studio</a>
+                  <a href="/product/AppStudio/">App Studio</a>
                 </li>
                 <li>
                   <a href="/product/AgentStudio/">Agent Studio</a>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Screen from '../comp/Screen';
 import styles from '../styles/comp/StudioSection.module.css';
-import { LearnMoreButton } from './Button';
+import { LearnMoreButtonLink } from './Button';
 
 interface StudioCardProps {
   title: string;
@@ -22,25 +22,26 @@ const StudioCard: React.FC<StudioCardProps> = ({ title, description, backgroundC
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <div className={styles.buttonWrapper}>
-        <LearnMoreButton
+        <LearnMoreButtonLink
           text={<>
             <span style={{ fontWeight: 700 }}>Learn more</span>
             <FontAwesomeIcon
               icon={faArrowRight}
               style={{
-                fontSize: '15px',
+                fontSize: '18px',
                 marginLeft: '10px',
                 verticalAlign: 'middle',
-                color: '#000',
+                color: '#fff',
                 width: '15px',
                 height: '15px',
               }} />
           </>}
-          bgColor="#ffffff"
-          // bgColor="transparent"
+          // bgColor="#ffffff"
+          bgColor="transparent"
           height="40px"
           width="175"
-          color="#000"
+          color="#fff"
+          fontsize="18px"
 
           onClick={() => window.location.href = link}
           className={styles.learnMoreButtonLink}

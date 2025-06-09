@@ -7,13 +7,14 @@ import Menu from "../../components/Menu";
 import MultiAgentSection from "../../components/MultiAgentSection";
 import StudioSection from "../../components/StudioSection";
 
+
 const studioCardsData = [
   {
     title: "App Studio",
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
     backgroundColor: "#7C5F00",
-    link: "product/Appstudio/",
+    link: "product/AppStudio/",
   },
   {
     title: "Agent Studio",
@@ -43,7 +44,7 @@ let newcards: ImageContainProps[] = [
       "Leverage AI-assisted features to accelerate your development. From generating forms to setting up workflows, AppStudio makes automation simple and intuitive for teams of all sizes.",
       img320: require("../../public/assets/App_Studio.webp"),
       button:"Learn more ",
-      link:"product/Appstudio/",
+      link:"product/AppStudio/",
   },
   {
     title: "Build Voice & Chat Agents Instantly",
@@ -56,7 +57,7 @@ let newcards: ImageContainProps[] = [
       "Design conversational flows without writing code. Deploy your agents across platforms like websites, mobile apps, and WhatsApp—instantly turning conversations into actions.",
       img320: require("../../public/assets/imgagentstudio.webp"),
       button:"Learn more ",
-      link:"product/Appstudio/",
+      link:"product/AppStudio/",
 
 
   },

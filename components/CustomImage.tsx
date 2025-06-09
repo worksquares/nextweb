@@ -30,7 +30,7 @@ const imageSizes: Record<
   hero: { width: 670, height: 560 },
   hero_alt: { width: 770, height: 435 },
   card: { width: 360, height: 200 },
-  slider: { width: 330, height: 180 },
+  slider: { width: 325, height: 185 },
   banner: { width: 770, height: 435 },
   tab: { width: 650, height: 440 },
   rightLeft: { width: 700, height: 500 },
@@ -47,6 +47,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
   src,
   alt,
   className,
+  priority = false,
 }) => {
   const imageSize = imageSizes[type] || { width: 0, height: 0 };
 
@@ -61,6 +62,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
       style={{ objectFit: "cover" }}
       className={className}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
+      priority={priority}
     />
   );
 };

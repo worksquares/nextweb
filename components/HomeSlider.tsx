@@ -139,6 +139,7 @@ const HomeSlider = ({
                         }
                         className={styles.LearnMoreButtonLink}
                         color="#36399C"
+                        bgColor="transparent "
                         onClick={() => {
                           if (card.moreLink) {
                             window.location.href = card.moreLink;

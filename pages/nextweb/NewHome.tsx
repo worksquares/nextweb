@@ -1,16 +1,15 @@
-import React from "react";
-import Headseo from "../headseo";
+import dynamic from "next/dynamic";
+import Script from "next/script";
+import posthog from "posthog-js";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { ImageContainProps } from "../../comp/base/ImageLeftRightCard";
+import DemoCard from "../../comp/DemoCard";
+import ImageContentCard from "../../comp/ImageLeftRight";
 import NewHeroSection from "../../comp/NewHeroSection";
 import NewMenu from "../../comp/newMenu";
 import TransformAI from "../../comp/TransformAI";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-import posthog from "posthog-js";
-import ImageContentCard from "../../comp/ImageLeftRight";
-import { ImageContainProps } from "../../comp/base/ImageLeftRightCard";
-import DemoCard from "../../comp/DemoCard";
-import dynamic from "next/dynamic";
-import Script from "next/script";
+import Headseo from "../headseo";
 
 const defaultCards = [
   {
@@ -18,7 +17,7 @@ const defaultCards = [
     description:
       "Create fully-functional web and mobile applications with our intuitive low-code platform. Drag, drop, and deploy apps in record time no coding skills required.",
     image: "/assets/Hero & cards/cards/H-card-1.webp",
-    learnMoreLink: "/product/Appstudio/",
+    learnMoreLink: "/product/AppStudio/",
     demoLink: "/learn-more/ai-agents",
   },
   {
