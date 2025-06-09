@@ -61,9 +61,9 @@
 .vectorContainer {
   position: absolute;
   top: -6px;
-  right: -5px;
-  width: 40px;
-  height: 80px;
+  right: 10px;
+  width: 20px;
+  height: 90px;
   z-index: 5;
   /* margin-top: -8px; */
 }
