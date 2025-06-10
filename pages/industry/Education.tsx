@@ -120,7 +120,7 @@ const Education = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AgentStudioAISolutions_Header.webp",
+      image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Agent Studio’s AI Solutions",
       description:
@@ -129,7 +129,7 @@ const Education = () => {
     },
     {
       image:
-        "/assets/slider/CustomerSatisfactionwithAgentStudio_Header.webp",
+        "/assets/slider/CustomerSatisfactionwithAgentStudio_Slider.webp",
       category: "IT MANAGEMENT",
       title: "Customer Satisfaction",
       description:
@@ -137,7 +137,7 @@ const Education = () => {
         moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
-      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -145,7 +145,7 @@ const Education = () => {
         moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
+      image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:
@@ -153,7 +153,7 @@ const Education = () => {
         moreLink: "/blog/WorkflowswithAppStudio",
     },
     {
-      image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
+      image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
       category: "CYBERSECURITY AND RISK",
       title: "Building a Secure SaaS Ecosystem",
       description:

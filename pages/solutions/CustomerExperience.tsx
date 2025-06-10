@@ -89,7 +89,7 @@ const CustomerExperience = () => {
 
   const cards = [
     // {
-    //   image: "/assets/slider/FutureofAppDevelopment_Header.webp",
+    //   image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
     //   category: "DIGITAL TRANSFORMATION",
     //   title: "Future of App Development",
     //   description:
@@ -97,7 +97,7 @@ const CustomerExperience = () => {
     //   moreLink: "/blog/FutureofAppDevelopment",
     // },
     // {
-    //   image: "/assets/slider/FromIdeatoApp_Header.webp",
+    //   image: "/assets/slider/FromIdeatoApp_Slider.webp",
     //   category: "IT MANAGEMENT",
     //   title: "From Idea to App",
     //   description:
@@ -113,7 +113,7 @@ const CustomerExperience = () => {
     //   moreLink: "/blog/AppStudioSecurityFeatures",
     // },
     {
-      image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
+      image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
@@ -130,7 +130,7 @@ const CustomerExperience = () => {
       moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
-      image: "/assets/slider/AIinServiceManagement_Header.webp",
+      image: "/assets/slider/AIinServiceManagement_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI in Service Management Platforms",
       description:

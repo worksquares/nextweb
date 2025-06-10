@@ -58,7 +58,7 @@ const ProcessAutomation = () => {
   const cards = [
     {
       image:
-        "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
+        "/assets/slider/TeamCollaborationwithAppStudio_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Team Collaboration with AppStudio",
       description:
@@ -67,7 +67,7 @@ const ProcessAutomation = () => {
 
     },
     {
-      image: "/assets/slider/FutureofAppDevelopment_Header.webp",
+      image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Future of App Development",
       description:
@@ -75,7 +75,7 @@ const ProcessAutomation = () => {
       moreLink: "/blog/FutureofAppDevelopment",
     },
     {
-      image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
+      image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
@@ -83,7 +83,7 @@ const ProcessAutomation = () => {
       moreLink: "/blog/AIAgentsinAppStudio",
     },
     {
-      image: "/assets/slider/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:
@@ -91,7 +91,7 @@ const ProcessAutomation = () => {
       moreLink: "/blog/BusinesswithAppStudio",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
@@ -100,7 +100,7 @@ const ProcessAutomation = () => {
     },
     {
       image:
-        "/assets/slider/MachineLearningBasicswithAI_Header.webp",
+        "/assets/slider/MachineLearningBasicswithAI_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "Machine Learning with AI Studio",
       description:

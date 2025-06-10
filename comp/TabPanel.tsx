@@ -29,12 +29,8 @@ const TabPanel = ({ tabs }) => {
             className={`${styles.tabButton} ${activeTab === index ? styles.tabButtonActive : ""}`}
             hoverBgColor="transparent"
             hoverTextColor="#003c57"
-
+            height="80px"
           />
-
-
-
-
           ))}
         </div>
 

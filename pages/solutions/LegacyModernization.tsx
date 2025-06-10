@@ -122,7 +122,7 @@ const LegacyModernization = () => {
     //   moreLink: "/blog/BusinesswithAppStudio",
     // },
     {
-      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -130,7 +130,7 @@ const LegacyModernization = () => {
       moreLink: "/blog/AppStudioSecurityFeatures",
     },
     {
-      image: "/assets/slider/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/FromIdeatoApp_Slider.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:

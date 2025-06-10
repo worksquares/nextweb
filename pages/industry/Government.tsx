@@ -121,7 +121,7 @@ const Government = () => {
   const cards = [
     {
       image:
-        "/assets/slider/TeamCollaborationwithAppStudio_Header.webp",
+        "/assets/slider/TeamCollaborationwithAppStudio_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Team Collaboration with AppStudio",
       description:
@@ -129,7 +129,7 @@ const Government = () => {
       moreLink: "/blog/TeamCollaborationwithAppStudio",
     },
     {
-      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -137,7 +137,7 @@ const Government = () => {
         moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/slider/FromIdeatoApp_Header.webp",
+      image: "/assets/slider/FromIdeatoApp_Slider.webp",
       category: "IT MANAGEMENT",
       title: "From Idea to App",
       description:
@@ -145,7 +145,7 @@ const Government = () => {
         moreLink: "/blog/FromIdeatoApp",
     },
     {
-      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -154,7 +154,7 @@ const Government = () => {
     },
     {
       image:
-        "/assets/slider/InnovationTrendsforBusiness_Header.webp",
+        "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Innovation Trends for Business",
       description:

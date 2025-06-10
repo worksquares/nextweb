@@ -120,7 +120,7 @@ const TeleCommunication = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AIPoweredAutomation_Header.webp",
+      image: "/assets/slider/AIPoweredAutomation_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "AI-Powered Automation",
       description:
@@ -128,7 +128,7 @@ const TeleCommunication = () => {
       moreLink: "/blog/AIPoweredAutomation",
     },
     {
-      image: "/assets/slider/ImprovingSAASCybersecurity_Header.webp",
+      image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
       category: "CYBERSECURITY AND RISK",
       title: "Building a Secure SaaS Ecosystem",
       description:
@@ -136,7 +136,7 @@ const TeleCommunication = () => {
         moreLink: "/blog/ImprovingSAASCybersecurity",
     },
     {
-      image: "/assets/slider/AIStudioData_Header.webp",
+      image: "/assets/slider/AIStudioData_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI Studio’s Synthetic Data",
       description:
@@ -144,7 +144,7 @@ const TeleCommunication = () => {
         moreLink: "/blog/AIStudioSyntheticData",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
@@ -152,7 +152,7 @@ const TeleCommunication = () => {
         moreLink: "/blog/PersonalizeAIModels",
     },
     {
-      image: "/assets/slider/AgentStudioAISolutions_Header.webp",
+      image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Agent Studio’s AI Solutions",
       description:

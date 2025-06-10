@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import BlogPostContent from "../../comp/BlogPostContent";
+import Link from "next/link";
+import { useState } from "react";
 import { BlogPostContainProps } from "../../comp/base/BlogPostCard";
 import { BlogRightContainProps } from "../../comp/base/BlogRightImgCard";
-import BlogRightImg from "../../comp/BlogRight";
 import { BlogTopicsContainProps } from "../../comp/base/BlogTopicsCard";
+import BaseLayout from "../../comp/BaseLayout";
+import { BlogLists } from "../../comp/BlogData";
+import BlogPostContent from "../../comp/BlogPostContent";
+import BlogRightImg from "../../comp/BlogRight";
 import BlogTopicContent from "../../comp/BlogTopicsContent";
+import Screen from "../../comp/Screen";
 import styles from "../../styles/Blog.module.css";
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Link from "next/link";
-import { BlogLists } from "../../comp/BlogData";
 import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
-import BaseLayout from "../../comp/BaseLayout";
 
 const AIinServiceManagement = () => {
   let BlogTopicCardListData: BlogTopicsContainProps[] = [
@@ -264,7 +264,10 @@ const AIinServiceManagement = () => {
               </div>
             </div>
             <div className={Styles.BlogPostRight}>
-              <BlogRightImg BlogRightCardPropsList={BlogRightCardListData} />
+              <BlogRightImg
+              BlogRightCardPropsList={BlogRightCardListData}
+              />
+
               <BlogTopicContent
                 BlogTopicCardPropsList={BlogTopicCardListData}
               />

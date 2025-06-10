@@ -132,7 +132,7 @@ const PartnerProgram = () => {
       description:
         "Promote and resell Digisquares products, expanding your offerings and boosting customer satisfaction.",
       demoLink: "/demo/medical-apps",
-      image: "/assets/ResellerOppertunities_Final.webp",
+      image: "/assets/slider/ResellerOppertunities_Slider.webp",
       moreLink: "/industry/Manufacturing/",
     },
     {
@@ -140,7 +140,7 @@ const PartnerProgram = () => {
       description:
         "Deliver scalable, managed services on the Digisquares Platform to ensure client satisfaction and growth.",
       demoLink: "/demo/education-apps",
-      image: "/assets/ServiceProvider.webp",
+      image: "/assets/slider/ServiceProvider_Slider.webp",
       moreLink: "/industry/FinancialServices/",
     },
     {
@@ -148,7 +148,7 @@ const PartnerProgram = () => {
       description:
         "Create custom apps on Digisquares Platform for streamlined workflows and operational improvements.",
       demoLink: "/demo/manufacturing-apps",
-      image: "/assets/CustomApps.webp",
+      image: "/assets/slider/CustomApps_Slider.webp",
       moreLink: "/industry/Technologies/",
     },
     {
@@ -156,7 +156,7 @@ const PartnerProgram = () => {
       description:
         "Deliver industry-specific solutions with Digisquares, from healthcare to retail, driving customer success.",
       demoLink: "/demo/manufacturing-apps",
-      image: "/assets/TechnologySolutions.webp",
+      image: "/assets/slider/TechnologySolutions_Slider.webp",
       moreLink: "/industry/Technologies/",
     },
   ];

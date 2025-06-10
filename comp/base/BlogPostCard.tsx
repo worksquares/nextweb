@@ -1,7 +1,5 @@
-import React from "react";
-import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Images from "./Images";
 import CustomImage from "../../@/components/customImage";
+import Styles from "../../styles/comp/core/BlogPostCard.module.css";
 
 export interface BlogPostContainProps {
   title: string;
@@ -40,16 +38,19 @@ const BlogPostCard = ({
           <source
             media="(min-width: 1700px)"
             srcSet={img1700 != null ? img1700 : img320}
+            width={1050}
           />
           <source
             media="(min-width: 1024px)"
             srcSet={img1024 != null ? img1024 : img320}
+            width={800}
           />
           <source
             media="(min-width: 768px)"
             srcSet={img768 != null ? img768 : img320}
+            width={700}
           />
-          <source media="(min-width: 320px)" srcSet={img320} />
+          <source media="(min-width: 320px)" srcSet={img320} width={340} />
           {/* <Images
             src={img320}
             layout="intrinsic"
@@ -91,6 +92,7 @@ const BlogPostCard = ({
                       type="blogSmall"
                       src={paras.subimages}
                       alt={"BlogSubImage"}
+                      className={Styles.blogSmall}
                     />
                   </>
                 ) : (

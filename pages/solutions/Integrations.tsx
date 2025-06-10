@@ -97,7 +97,7 @@ const Integrations = () => {
     //   moreLink: "/blog/WorkflowswithAppStudio",
     // },
     {
-      image: "/assets/slider/FineTuningwithAIStudio_Header.webp",
+      image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "Fine-Tuning with AI Studio",
       description:
@@ -105,7 +105,7 @@ const Integrations = () => {
         moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
@@ -129,7 +129,7 @@ const Integrations = () => {
     //     moreLink: "/blog/AppStudioSecurityFeatures",
     // },
     {
-      image: "/assets/slider/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:

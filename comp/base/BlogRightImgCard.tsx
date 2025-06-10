@@ -1,8 +1,5 @@
-import React from "react";
-import Styles from "../../styles/comp/core/BlogRightImgCard.module.css";
 import Link from "next/link";
-import Images from "./Images";
-import CustomImage from "../../@/components/customImage";
+import Styles from "../../styles/comp/core/BlogRightImgCard.module.css";
 
 export interface BlogRightContainProps {
   title2?: string | null;
@@ -31,7 +28,7 @@ const BlogNewsCardGrid = ({
           <h2>
             <span>{title2}</span>
           </h2>
-          {/* <picture>
+          <picture>
             <source
               media="(min-width: 1700px)"
               srcSet={image1700 != null ? image1700 : image320}
@@ -51,14 +48,14 @@ const BlogNewsCardGrid = ({
               height="150px"
               alt="BlogImage"
               className={Styles.BlogRightImage}
-            /> */}
-          <CustomImage
+            />
+          {/* <CustomImage
             type="blogSmall"
             src={image320}
             alt={title2 || "Image"}
             className={Styles.BlogSmallImage}
-          />
-          {/* </picture> */}
+          /> */}
+          </picture>
           <p>{paragraph}</p>
         </div>
       </Link>

@@ -120,7 +120,7 @@ const Manufacturing = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AppStudioSecurityFeatures_Header.webp",
+      image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
       category: "CYBERSECURITY AND RISK",
       title: "AppStudio’s Security Features",
       description:
@@ -129,7 +129,7 @@ const Manufacturing = () => {
     },
     {
       image:
-        "/assets/slider/InnovationTrendsforBusiness_Header.webp",
+        "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Innovation Trends for Business",
       description:
@@ -137,7 +137,7 @@ const Manufacturing = () => {
         moreLink: "/blog/InnovationTrendsforBusiness",
     },
     {
-      image: "/assets/slider/BusinesswithAppStudio_Header.webp",
+      image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
       category: "DATABASE MANAGEMENT",
       title: "Security Privacy of Blockchain",
       description:
@@ -145,7 +145,7 @@ const Manufacturing = () => {
         moreLink: "/blog/BusinesswithAppStudio",
     },
     {
-      image: "/assets/slider/AIAgentsinAppStudio_Header.webp",
+      image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "AI Agents in AppStudio",
       description:
@@ -153,7 +153,7 @@ const Manufacturing = () => {
         moreLink: "/blog/AIAgentsinAppStudio",
     },
     {
-      image: "/assets/slider/WorkflowswithAppStudio_Header.webp",
+      image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "Workflows with AppStudio",
       description:

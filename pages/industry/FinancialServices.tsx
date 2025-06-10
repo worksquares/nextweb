@@ -120,7 +120,7 @@ const FinancialServices = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AIinAgentStudio_Header.webp",
+      image: "/assets/slider/AIinAgentStudio_Slider.webp",
       category: "AI AND AUTOMATION",
       title: "AI in Agent Studio",
       description:
@@ -128,7 +128,7 @@ const FinancialServices = () => {
       moreLink: "/blog/AIinAgentStudio",
     },
     {
-      image: "/assets/slider/AgentStudioAISolutions_Header.webp",
+      image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
       category: "DIGITAL TRANSFORMATION",
       title: "Agent Studio’s AI Solutions",
       description:
@@ -137,7 +137,7 @@ const FinancialServices = () => {
     },
     {
       image:
-        "/assets/slider/CustomerSatisfactionwithAgentStudio_Header.webp",
+        "/assets/slider/CustomerSatisfactionwithAgentStudio_Slider.webp",
       category: "IT MANAGEMENT",
       title: "Customer Satisfaction",
       description:
@@ -145,7 +145,7 @@ const FinancialServices = () => {
         moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
-      image: "/assets/slider/AIStudioData_Header.webp",
+      image: "/assets/slider/AIStudioData_Slider.webp",
       category: "DIGISQUARES PLATFORM",
       title: "AI Studio’s Synthetic Data",
       description:
@@ -153,7 +153,7 @@ const FinancialServices = () => {
         moreLink: "/blog/AIStudioSyntheticData",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Header.webp",
+      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
       category: "GOVERNANCE",
       title: "Personalize AI Models",
       description:
