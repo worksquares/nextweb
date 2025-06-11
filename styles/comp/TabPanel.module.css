@@ -67,7 +67,7 @@
 .tabButtonActive span::after {
   content: "";
   position: absolute;
-  bottom:  -10px;
+  bottom:  -15px;
   left: 0;
   width: 100%;               /* Matches only text */
   height: 2.5px;
