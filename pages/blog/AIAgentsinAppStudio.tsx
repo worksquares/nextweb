@@ -10,7 +10,6 @@ import Styles from "../../styles/comp/core/BlogPostCard.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import { BlogLists } from "../../comp/BlogData";
-import Footer from "../../comp/Footer";
 import Headseo from "../headseo";
 import Screen from "../../comp/Screen";
 import BaseLayout from "../../comp/BaseLayout";

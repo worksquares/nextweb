@@ -3,13 +3,13 @@ import Menu from "../components/Menu";
 import MainFooter from "../components/MainFooter";
 
 const BaseLayout = ({ children }) => {
- 
+
   return (
-        <>
-          <Menu />
-          {children}
-          <MainFooter />
-        </>
+    <>
+      <Menu />
+      {children}
+      <MainFooter />
+    </>
   );
 };
 

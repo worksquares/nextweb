@@ -5,7 +5,7 @@ import styles from "../../styles/comp/FAQComponent.module.css";
 import Screen from "../../comp/Screen";
 // import NewMenu from "../../comp/newMenu";
 import NewHeroSection from "../../comp/NewHeroSection";
-// import NewFooter from "../../comp/newFooter";
+
 import Image from "next/image";
 
 
@@ -75,44 +75,44 @@ const FAQComponent = () => {
     <div>
       {/* <NewMenu/> */}
       <BaseLayout>
-      <div className={styles.faq}>
-      <Screen>
-        <h2 className={styles.faqHeader}>Need a hand? We have got you.</h2>
-        <div className={styles.faqContainer}>
-          {faqData.map((item) => (
-            <div key={item.key} className={styles.faqItem}>
-              <Collapse
-                expandIconPosition="end"
-                bordered={false}
-                activeKey={activeKeys}
-                onChange={(key) => onChange(key)}
-                expandIcon={({ isActive }) => (
-                  <Image
-                    src="/svg/ArrowDown.svg"
-                    alt="arrow icon"
-                    width ={25}
-                    height={25}
-                    style={{
-                      transform: isActive ? "rotate(180deg)" : "rotate(0deg)", 
-                    }}
-                  />
-                )}
-                className={styles.siteCollapseCustomCollapse}
-              >
-                <Panel
-                  header={item.question}
-                  key={item.key}
-                  className={styles.siteCollapseCustomPanel}
-                >
-                  <p>{item.answer}</p>
-                </Panel>
-              </Collapse>
+        <div className={styles.faq}>
+          <Screen>
+            <h2 className={styles.faqHeader}>Need a hand? We have got you.</h2>
+            <div className={styles.faqContainer}>
+              {faqData.map((item) => (
+                <div key={item.key} className={styles.faqItem}>
+                  <Collapse
+                    expandIconPosition="end"
+                    bordered={false}
+                    activeKey={activeKeys}
+                    onChange={(key) => onChange(key)}
+                    expandIcon={({ isActive }) => (
+                      <Image
+                        src="/svg/ArrowDown.svg"
+                        alt="arrow icon"
+                        width={25}
+                        height={25}
+                        style={{
+                          transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
+                        }}
+                      />
+                    )}
+                    className={styles.siteCollapseCustomCollapse}
+                  >
+                    <Panel
+                      header={item.question}
+                      key={item.key}
+                      className={styles.siteCollapseCustomPanel}
+                    >
+                      <p>{item.answer}</p>
+                    </Panel>
+                  </Collapse>
+                </div>
+              ))}
             </div>
-          ))}
+          </Screen>
         </div>
-      </Screen>
-      </div>
-      {/* <NewFooter /> */}
+
       </BaseLayout>
     </div>
   );

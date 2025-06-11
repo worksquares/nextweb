@@ -1,6 +1,6 @@
 import React from "react";
-import CustomImage from "../../@/components/customImage";
 import Screen from "../../comp/Screen";
+import CustomImage from "../../components/CustomImage";
 import Styles from "../../styles/comp/core/HeaderContent.module.css";
 export interface HeaderContentProps {
   title: string;
@@ -85,12 +85,14 @@ const HeaderContent: React.FC<HeaderContentProps> = ({
             <source media="(min-width: 320px)" srcSet={img320} />
             <img src={img320} alt={`${title} Banner Image`} title={title} style={{ width: "100%", height: "auto", objectFit: "contain", borderRadius:"10px" }} />
           </picture> */}
-            <CustomImage
-              type="hero_alt"
-              src={img320}
-              alt={title || "Image"}
-              className={Styles.IndustryHeroImg}
-            />
+            {img320 && (
+              <CustomImage
+                type="hero_alt"
+                src={img320}
+                alt={title || "Image"}
+                className={Styles.IndustryHeroImg}
+              />
+            )}
           </div>
         </div>
       </Screen>

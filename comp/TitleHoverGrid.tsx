@@ -1,4 +1,3 @@
-import React from "react";
 import TitleHover, { TitleHoverProps } from "./base/TitleHover";
 
 interface TitleHoverGridProps {

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/career/JobSelection.module.css";
-import Footer from "../../comp/Footer";
+
 import Link from "next/link";
 import Head from "next/head";
 import Headseo from "../headseo";

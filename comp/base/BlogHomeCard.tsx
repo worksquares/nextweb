@@ -1,8 +1,7 @@
-import React from "react";
-import Styles from "../../styles/comp/core/BlogHomeCard.module.css";
 import Link from "next/link";
-import Images from "./Images";
-import CustomImage from "../../@/components/customImage";
+import Styles from "../../styles/comp/core/BlogHomeCard.module.css";
+// import CustomImage from "../../@/components/customImage";
+import CustomImage from '../../components/CustomImage';
 
 export interface BlogHomeheaderProps {
   title?: string | null;
@@ -61,12 +60,14 @@ const BlogHomeCard = ({
                   // border: "1px solid red",
                 }}
               ></Images> */}
+              {img320 && (
             <CustomImage
               type="blogsMain"
               src={img320}
               alt={title || "Blog Image"}
               className={Styles.cardImage}
             />
+          )}
             {/* </picture> */}
             <></>
             <p className={Styles.BigImageDesc}>{para}</p>

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import { Collapse } from "antd";
+import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/comp/FAQComponent.module.css";
 import Screen from "./Screen";
-import Image from "next/image";
-import CustomImage from "../@/components/customImage";
+
 
 const { Panel } = Collapse;
 

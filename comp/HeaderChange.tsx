@@ -9,6 +9,7 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
   return (
     <div>
       {HeaderBannerPropsList.map((Anotherprop, i) => (
+        console.log("vcdx",Anotherprop),
         <HeaderContent
           key={Anotherprop.title}
           title={Anotherprop.title}
@@ -17,7 +18,7 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
           dir={Anotherprop.dir === null ? (i % 2 === 0 ? "left" : "right") : Anotherprop.dir}
           img320={Anotherprop.img320}
           btnLink={Anotherprop.btnLink}
-          backgroundColor={Anotherprop.backgroundColor} 
+          backgroundColor={Anotherprop.backgroundColor}
           isPodCast={Anotherprop.isPodCast}
           backgroundImg={Anotherprop.backgroundImg}
         />
@@ -27,4 +28,3 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
 };
 
 export default HeaderChange;
-

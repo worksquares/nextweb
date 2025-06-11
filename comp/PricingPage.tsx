@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "../../styles/pricing/PricingPage.module.css";
-import Footer from "./Footer";
+import MainFooter from "../components/MainFooter";
 import Headseo from "../pages/headseo";
-import PricingPageYearly from "./PricingPageYearly";
 import PricingPageMonthly from "./PricingPageMonthly";
+import PricingPageYearly from "./PricingPageYearly";
+;
 
 const PricingPage = () => {
   const [checkedd, setCheckedd] = useState(false);
@@ -36,7 +37,7 @@ const PricingPage = () => {
         </div>
         <div className="pricing-main-content">{checkedd ? <PricingPageYearly /> : <PricingPageMonthly />}</div>
       </div>
-      <Footer />
+      <MainFooter />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import Headseo from "../pages/headseo";
 import styles from '../styles/comp/Accelerate.module.css';
-// import Image from "next/image";
 import Screen from "../comp/Screen";
 import { LargeButton } from "./Button";
 
@@ -28,14 +27,14 @@ const AccelerateSection = () => {
                 Build apps, create chatbots, and deploy AI models effortlessly - no code required.
               </h5>
               <LargeButton
-                  text="Register"
-                  bgColor="#F9CB2E"
-                  color="#000000"
-                  onClick={() => window.location.href = "https://app.digisquares.com/register"}
-                  className="MediumButton"
-                  hoverBgColor="#ffffff"
-                  hoverTextColor="#000000"
-                />
+                text="Register"
+                bgColor="#F9CB2E"
+                color="#000000"
+                onClick={() => window.location.href = "https://app.digisquares.com/register"}
+                className="MediumButton"
+                hoverBgColor="#ffffff"
+                hoverTextColor="#000000"
+              />
 
 
 

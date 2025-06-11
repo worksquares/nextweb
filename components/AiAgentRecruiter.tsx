@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
-import styles from "../../styles/comp/AiAgentRecruiter.module.css";
+// import styles from "../../styles/comp/AiAgentRecruiter.module.css";
+import styles from "../styles/comp/AiAgentRecruiter.module.css";
+
 
 const modules = [
   { id: "ai-agent", label: "AI Agent Recruiter", icon: "user" },
@@ -269,7 +271,7 @@ export default function AIAgentRecruiterDashboard() {
         <div>
           <h3 className={styles.headerTitle}>Agent Studio: The Ultimate Bot Builder</h3>
           <p className={styles.headerSubtitle}>
-          Craft Personalized AI Agents for Automated Recruiting
+            Craft Personalized AI Agents for Automated Recruiting
           </p>
         </div>
       </header>
@@ -282,9 +284,8 @@ export default function AIAgentRecruiterDashboard() {
             <button
               key={id}
               onClick={() => setSelectedModule(id)}
-              className={`${styles.moduleButton} ${
-                selectedModule === id ? styles.selected : ""
-              }`}
+              className={`${styles.moduleButton} ${selectedModule === id ? styles.selected : ""
+                }`}
             >
               {Icons[icon]} {label}
             </button>
@@ -300,9 +301,8 @@ export default function AIAgentRecruiterDashboard() {
             <button
               key={id}
               onClick={() => setInteractionMode(id)}
-              className={`${styles.modeButton} ${
-                interactionMode === id ? styles.selected : ""
-              }`}
+              className={`${styles.modeButton} ${interactionMode === id ? styles.selected : ""
+                }`}
             >
               {Icons[icon]} {label}
             </button>
@@ -320,9 +320,8 @@ export default function AIAgentRecruiterDashboard() {
               <button
                 key={id}
                 onClick={() => setSelectedPersona(id)}
-                className={`${styles.personaButton} ${
-                  selected ? styles.personaButton_selected : ""
-                }`}
+                className={`${styles.personaButton} ${selected ? styles.personaButton_selected : ""
+                  }`}
               >
                 <div
                   className={styles.personaIcon}
@@ -370,7 +369,7 @@ export default function AIAgentRecruiterDashboard() {
             {Icons.send} Send OTP
           </button>
           <button type="button" className={styles.testCallButton}
-          onClick={() => alert("Test AI Call triggered for " + selectedModule)}>
+            onClick={() => alert("Test AI Call triggered for " + selectedModule)}>
             {Icons.phone} Test AI Call
           </button>
         </div>

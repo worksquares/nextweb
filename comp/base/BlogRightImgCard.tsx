@@ -49,7 +49,7 @@ const BlogNewsCardGrid = ({
               alt="BlogImage"
               className={Styles.BlogRightImage}
             />
-          {/* <CustomImage
+            {/* <CustomImage
             type="blogSmall"
             src={image320}
             alt={title2 || "Image"}

@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../../styles/comp/core/ImageLeftRightCard.module.css";
 import Images from "./Images";
 import Screen from "../Screen";
-import CustomImage from "../../@/components/customImage";
+import CustomImage from "../../components/CustomImage";
 
 export interface ImageContainProps {
   title: string;
@@ -54,7 +54,7 @@ const ImageLeftRightCard = ({
               <a href={link} className={Styles.learnMoreButton}>
                 Learn More
               </a>
-            )}   
+            )}
           </div>
           <div className={Styles.Rightcontain}>
             {/* <picture style={{ border: "1px solid red", display: "none" }}>

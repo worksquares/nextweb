@@ -1,9 +1,8 @@
-import React from "react";
+import Link from "next/link";
 import styles from "../styles/comp/NewHeroSection.module.css";
 import Screen from "./Screen";
-import Link from "next/link";
-import CustomImage from "../@/components/customImage";
-import Image from "next/image";
+
+import CustomImage from "../components/CustomImage";
 
 const AgentSection = ({
   title,
@@ -38,18 +37,18 @@ const AgentSection = ({
         sub: "عملك باستخدام الذكاء الاصطناعي",
       },
     };
-  
+
     if (contentMap[title]) {
       return (
         <>
           <h2 className={styles.title_new}>{contentMap[title].main}</h2>
-          <h3 className={styles.title_new}style={{color:"unset"}}>
+          <h3 className={styles.title_new} style={{ color: "unset" }}>
             {contentMap[title].sub}
           </h3>
         </>
       );
     }
-  
+
     return (
       <>
         <h2 className={styles.title}>{title}</h2>
@@ -58,13 +57,13 @@ const AgentSection = ({
       </>
     );
   };
-    return (
+  return (
     <div className={isVisible ? styles.sectionhero : styles.centeredContent}>
       {isVisible ? (
         <Screen>
           <div className={styles.agentSection}>
             <div className={styles.content}>
-            {renderContent(title,subtitle,description,styles)}
+              {renderContent(title, subtitle, description, styles)}
               <div className={styles.GetStartedBtn}>
                 <Link legacyBehavior href={onButtonClick}>
                   <a rel="nofollow">
@@ -75,7 +74,7 @@ const AgentSection = ({
             </div>
             <div className={styles.imageContainer}>
               {ImgSrc && (
-                <CustomImage 
+                <CustomImage
                   type="hero"
                   src={ImgSrc}
                   alt="AI Agents"

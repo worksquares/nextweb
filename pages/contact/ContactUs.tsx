@@ -27,7 +27,7 @@ const ContactUs = () => {
           <div className={styles.contactuscontainer}>
             <div style={{ width: "100%" }}>
               <div
-                style={{ display: "flex", gap: "15px", alignItems: "center", marginBottom:"5px" }}
+                style={{ display: "flex", gap: "15px", alignItems: "center", marginBottom: "5px" }}
               >
                 <Images
                   alt="ImageContent"
@@ -104,67 +104,67 @@ const ContactUs = () => {
             </div>
             <div style={{ width: "100%" }} className={styles.contactusform}>
               <h2>Contact Us</h2>
-                <Form
-                  layout="vertical"
-                  name="basic"
-                  form={form}
-                  initialValues={{ remember: true }}
-                // onFinish={onFinish}
-                // onFinishFailed={onFinishFailed}
+              <Form
+                layout="vertical"
+                name="basic"
+                form={form}
+                initialValues={{ remember: true }}
+              // onFinish={onFinish}
+              // onFinishFailed={onFinishFailed}
+              >
+                {/* <h1>Contact Us</h1> */}
+                <Form.Item
+                  label="Full Name"
+                  name="businessemail"
+                  style={{ fontFamily: "sans-serif" }}
+                // rules={[
+                //   {
+                //     required: true,
+                //     message: "Please Enter your Full Name ",
+                //   },
+                // ]}
                 >
-                  {/* <h1>Contact Us</h1> */}
-                  <Form.Item
-                    label="Full Name"
-                    name="businessemail"
-                    style={{fontFamily:"sans-serif"}}
-                    // rules={[
-                    //   {
-                    //     required: true,
-                    //     message: "Please Enter your Full Name ",
-                    //   },
-                    // ]}
-                  >
                   <Input />
-                  </Form.Item>
+                </Form.Item>
 
-                  <Form.Item
-                    label="Email Address"
-                    name="firstname"
-                    // rules={[
-                    //   {
-                    //     required: true,
-                    //     message: "Please Enter your Email Address!",
-                    //   },
-                    // ]}
+                <Form.Item
+                  label="Email Address"
+                  name="firstname"
+                // rules={[
+                //   {
+                //     required: true,
+                //     message: "Please Enter your Email Address!",
+                //   },
+                // ]}
+                >
+                  <Input />
+                </Form.Item>
+
+
+
+                <Form.Item
+                  label="Message(Optional)"
+                  name="additionalcomments"
+                >
+                  <TextArea
+
+                    autoSize={{
+                      minRows: 5,
+                      maxRows: 7,
+                    }}
+                  />
+
+                </Form.Item>
+
+
+                <Form.Item>
+                  <Button
+                    htmlType="submit"
                   >
-                    <Input />
-                  </Form.Item>
-
-
-
-                  <Form.Item
-                    label="Message(Optional)"
-                    name="additionalcomments"
-                  >
-                    <TextArea
-
-                      autoSize={{
-                        minRows: 5,
-                        maxRows: 7,
-                      }}
-                    />
-
-                  </Form.Item>
-
-
-                  <Form.Item>
-                    <Button
-                      htmlType="submit"
-                    >
-                      Submit
-                    </Button>
-                  </Form.Item>
-                </Form>
+                    Submit
+                  </Button>
+                </Form.Item>
+              </Form>
             </div>
           </div>
 

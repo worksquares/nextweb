@@ -1,4 +1,5 @@
-import CustomImage from "../../@/components/customImage";
+// import CustomImage from "../../@/components/customImage";
+import CustomImage from '../../components/CustomImage';
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
 
 export interface BlogPostContainProps {
