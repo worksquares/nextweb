@@ -15,7 +15,7 @@ export interface HeaderContentProps {
   backgroundColor?: string;
   backgroundImg?: string;
   isPodCast?: 1 | 0;
-  priority?: { priority }
+  priority?: true
 }
 
 const HeaderContent: React.FC<HeaderContentProps> = ({
