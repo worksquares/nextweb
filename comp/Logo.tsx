@@ -1,7 +1,5 @@
-import React from "react";
-import styles from "../styles/comp/Logo.module.css";
-import Images from "./base/Images";
 import Image from "next/image";
+import styles from "../styles/comp/Logo.module.css";
 
 const Logo = () => {
   return (
@@ -9,11 +7,11 @@ const Logo = () => {
       <div className={styles.itemcenter3}>
         <h2>Trusted by enterprise customers</h2>
         <div className={styles.item3}>
-          <Image src="/assets/CiscoLogo.webp" width="900" height="500" alt="BookImage" unoptimized={true} layout="intrinsic" />
-          <Image src="/assets/logo-flowserve.webp" width="900" height="500" alt="BookImage" unoptimized={true} layout="intrinsic" />
-          <Image src="/assets/eleven.webp" width="900" height="500" alt="BookImage" unoptimized={true} layout="intrinsic" />
-          <Image src="/assets/deloitte.webp" width="900" height="500" alt="BookImage" unoptimized={true} layout="intrinsic" />
-          <Image src="/assets/ricoh.webp" width="900" height="500" alt="BookImage" unoptimized={true} layout="intrinsic" />
+          <Image src="/assets/CiscoLogo.webp" width="900" height="500" alt="BookImage" unoptimized={true} priority={true} />
+          <Image src="/assets/logo-flowserve.webp" width="900" height="500" alt="BookImage" unoptimized={true} priority={true} />
+          <Image src="/assets/eleven.webp" width="900" height="500" alt="BookImage" unoptimized={true} priority={true} />
+          <Image src="/assets/deloitte.webp" width="900" height="500" alt="BookImage" unoptimized={true} priority={true} />
+          <Image src="/assets/ricoh.webp" width="900" height="500" alt="BookImage" unoptimized={true} priority={true} />
         </div>
       </div>
     </div>

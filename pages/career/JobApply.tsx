@@ -16,7 +16,7 @@ const JobApply = () => {
     return (
       <div className={styles.ExperienceInfoFields}>
         <div className={styles.ExImgInfo}>
-          <Images className={styles.BenefitsInfoImg} alt="Icon" layout="intrinsic" width="50%" height="40px" src="/assets/Experience Icon.webp"></Images>
+          <Images className={styles.BenefitsInfoImg} alt="Icon" width="50%" height="40px" src="/assets/Experience Icon.webp" priority={true}></Images>
         </div>
         <div className={styles.ExInputFields}>
           <form>
@@ -75,7 +75,7 @@ const JobApply = () => {
     return (
       <div className={styles.ExperienceInfoFields}>
         <div className={styles.ExImgInfo}>
-          <Images className={styles.BenefitsInfoImg} alt="jnd" src="/assets/.webp" layout="intrinsic" width="40%" height="40px"></Images>
+          <Images className={styles.BenefitsInfoImg} alt="jnd" src="/assets/.webp" width="40%" height="40px" priority={true}></Images>
         </div>
         <div className={styles.ExInputFields}>
           <form>
@@ -138,7 +138,7 @@ const JobApply = () => {
   return (
     <>
       <Headseo title={`Digisquares | Job Apply`} heading={`JobApply`} description={`Let the company know about your interest working there`} url={`/career/JobApply`} keywords={`JobApply`} />
-      
+
       <div className={styles.JobApplyMainContainer}>
         <div className={styles.JobApplyHeader}>
           <div className={styles.JobApplyLogo}>

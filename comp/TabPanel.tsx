@@ -40,6 +40,7 @@ const TabPanel = ({ tabs }) => {
           <ImageLeftRight
             key={tabs[activeTab].title || `active-${activeTab}`} // optional but safe
             ImageCardPropsList={tabs[activeTab].ImageCardPropsList}
+
           />
         </div>
       </Screen>

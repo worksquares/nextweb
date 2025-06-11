@@ -150,73 +150,73 @@ const PodcastSearch = () => {
         <div className={styles.podcastContainer}>
           <div style={{ width: "100%", height: "100%" }}>
             <div className={styles.podcastBox}>
-              <div className={styles.podCastHeading}>                
-                  <div className={styles.player}>
-                    <div className={styles.searchBar} style={{ gap: "1%" }}>
-                      <Input
-                        prefix={
-                          <SearchOutlined className={styles.searchIcon} />
-                        }
-                        type="text"
-                        placeholder="What do you want to listen to?"
-                        className={styles.searchInput}
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        required
-                      />
-                      <Button
-                        type="primary"
-                        className={styles.searchButton}
-                        onClick={handleSearch}
-                      >
-                        Search
-                      </Button>
-                      <Dropdown overlay={menu} trigger={["click"]}>
-                        <a onClick={(e) => e.preventDefault()}>
-                          <Space>
-                            <Button
-                              className={styles.FilterButton}
-                              style={{ backgroundColor: "#50B1ED" }}
+              <div className={styles.podCastHeading}>
+                <div className={styles.player}>
+                  <div className={styles.searchBar} style={{ gap: "1%" }}>
+                    <Input
+                      prefix={
+                        <SearchOutlined className={styles.searchIcon} />
+                      }
+                      type="text"
+                      placeholder="What do you want to listen to?"
+                      className={styles.searchInput}
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      required
+                    />
+                    <Button
+                      type="primary"
+                      className={styles.searchButton}
+                      onClick={handleSearch}
+                    >
+                      Search
+                    </Button>
+                    <Dropdown overlay={menu} trigger={["click"]}>
+                      <a onClick={(e) => e.preventDefault()}>
+                        <Space>
+                          <Button
+                            className={styles.FilterButton}
+                            style={{ backgroundColor: "#50B1ED" }}
+                          >
+                            filter
+                            <span
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                fontSize: "8px",
+                              }}
                             >
-                              filter
-                              <span
-                                style={{
-                                  display: "flex",
-                                  justifyContent: "center",
-                                  fontSize: "8px",
-                                }}
-                              >
-                                ▼
-                              </span>
-                            </Button>
-                          </Space>
-                        </a>
-                      </Dropdown>
-                    </div>                    
-                  {selectedEpisode && (  <div
+                              ▼
+                            </span>
+                          </Button>
+                        </Space>
+                      </a>
+                    </Dropdown>
+                  </div>
+                  {selectedEpisode && (<div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "352px",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <iframe
+                      src={`${selectedEpisode.embedUrl}?autoplay=true`}
+                      width="100%"
+                      height="500"
+                      frameBorder="0"
+                      className={styles.PlayerIframe}
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                      loading="lazy"
                       style={{
                         position: "relative",
-                        width: "100%",
-                        height: "352px",
-                        overflow: "hidden",
+                        opacity: 0.8,
+                        color: "white",
                       }}
-                    >
-                      <iframe
-                        src={`${selectedEpisode.embedUrl}?autoplay=true`}
-                        width="100%"
-                        height="500"
-                        frameBorder="0"
-                        className={styles.PlayerIframe}
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                        style={{
-                          position: "relative",
-                          opacity: 0.8,
-                          color: "white",
-                        }}
-                      ></iframe>
-                    </div>)}
-                  </div>                
+                    ></iframe>
+                  </div>)}
+                </div>
               </div>
             </div>
           </div>
@@ -247,9 +247,10 @@ const PodcastSearch = () => {
                       <Image
                         src={episode.image}
                         className={styles.podcastImage}
-                        alt={episode.name}   
+                        alt={episode.name}
                         width={175}
-                        height={100}                     
+                        height={100}
+                        priority={true}
                       />
                     </div>
                     <div className={styles.HorizontalCardContent}>
@@ -330,7 +331,8 @@ const PodcastSearch = () => {
                       className={styles.podcastImage}
                       alt={episode.name}
                       width={175}
-                      height={100}                     
+                      height={100}
+                      priority={true}
                     />
                   </div>
                   <div className={styles.HorizontalCardContent}>

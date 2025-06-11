@@ -9,6 +9,7 @@ export interface CardProps {
   description: string;
   link: string;
   linktext: string;
+  priority?: boolean;
 }
 
 const ImageCardsGrid = ({ image, category, heading, description, link, linktext }: CardProps) => {
@@ -26,6 +27,7 @@ const ImageCardsGrid = ({ image, category, heading, description, link, linktext 
                 height="200"
                 alt="BookImage"
                 unoptimized={true}
+                priority={true}
               />
             </div>
             <div className={styles.CardInfo}>

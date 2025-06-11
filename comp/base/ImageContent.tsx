@@ -32,7 +32,7 @@ const ImageContent = ({ title, paragraph, link, dir, img1700, img1024, img768, i
             <source media="(min-width: 1024px)" srcSet={img1024 != null ? img1024 : img320} />
             <source media="(min-width: 768px)" srcSet={img768 != null ? img768 : img320} />
             <source media="(min-width: 320px)" srcSet={img320} />
-            <Images alt="sds" layout="intrinsic" width="1500" height="800" src={img320}></Images>
+            <Images alt="sds" width="1500" height="800" src={img320} priority={true}></Images>
           </picture>
         </div>
       </div>

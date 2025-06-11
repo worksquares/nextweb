@@ -1,7 +1,6 @@
-import React from "react";
 import Images from "next/image";
-import styles from "../styles/comp/CardComponent.module.css";
 import Screen from "../comp/Screen";
+import styles from "../styles/comp/CardComponent.module.css";
 
 
 const CardComponent = ({ cards }) => {
@@ -13,7 +12,7 @@ const CardComponent = ({ cards }) => {
             <div className={styles.CardBox} key={index}>
               <span className={styles.CardImgBox}>
                 <Images
-                  layout="intrinsic"
+                  priority={true}
                   src={card.imageSrc}
                   width="60"
                   height="60"

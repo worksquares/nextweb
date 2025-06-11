@@ -4,7 +4,6 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useMemo, useState } from "react";
 import styles from "../styles/comp/DescriptionCard.module.css";
-// import styles from "../styles/comp/HomeSlider.module.css";
 import { LearnMoreButton, SmallButton } from "./Button";
 import CustomImage from './CustomImage';
 
@@ -70,8 +69,8 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                     onClick={() => setActive(groupIdx, idx)}
                     style={{ textAlign: "left" }}
                     text={feature.title}
-                    // hoverBgColor="transparent"
-                                      />
+                  // hoverBgColor="transparent"
+                  />
                   {idx === activeIndex && (
                     <div className={styles.content}>
                       <p>{feature.description}</p>
@@ -123,15 +122,15 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                 //   className={styles.image}
                 //   style={{ objectFit: "contain", borderRadius: 8 }}
                 // />
-                <CustomImage
-                type="rightLeft"
-                src={group[activeIndex].image}
-                alt={group[activeIndex].title ?? ""}
-                // className={styles.image}
-                className={`${styles.image} ${styles.imageCover}`}
-                priority={true}
+                (<CustomImage
+                  type="rightLeft"
+                  src={group[activeIndex].image}
+                  alt={group[activeIndex].title ?? ""}
+                  // className={styles.image}
+                  className={`${styles.image} ${styles.imageCover}`}
+                  priority={true}
 
-                />
+                />)
               )}
             </div>
           );

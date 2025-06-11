@@ -95,6 +95,7 @@ const FAQComponent = () => {
                         style={{
                           transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
                         }}
+                        priority={true}
                       />
                     )}
                     className={styles.siteCollapseCustomCollapse}

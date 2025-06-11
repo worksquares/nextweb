@@ -46,7 +46,7 @@ const BlogNewsCardGrid = ({
                 <source media="(min-width: 320px)" srcSet={fallbackImage} />
                 <Images
                   alt={title || "Blog Image"}
-                  layout="intrinsic"
+                  priority={true}
                   width={1400}
                   height={800}
                   src={fallbackImage}

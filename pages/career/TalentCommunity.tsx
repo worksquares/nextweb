@@ -114,7 +114,7 @@ const TalentCommunity = () => {
       />
 
       <div className={style.TalentImg}>
-        <Image src="/assets/Logo_notag (1).webp" width="240" height="32" alt="Picture of the author" layout="intrinsic" unoptimized={true} />
+        <Image src="/assets/Logo_notag (1).webp" width="240" height="32" alt="Picture of the author" unoptimized={true} priority={true} />
       </div>
       <div className={style.JoinTalent}>
         <h1>Join Our Talent Community!</h1>

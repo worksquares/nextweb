@@ -1,4 +1,3 @@
-import React from "react";
 import BlogPostCardGrid, { BlogPostContainProps } from "./base/BlogPostCard";
 
 interface BlogPostContentProps {
@@ -16,6 +15,8 @@ const BlogPostContent = (BlogPostCardListData: BlogPostContentProps) => {
           link={BlogPostprop.link}
           img320={BlogPostprop.img320}
           btnLink={BlogPostprop.btnLink}
+          priority={true}
+
         />
       ))}
     </>

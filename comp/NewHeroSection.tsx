@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/comp/NewHeroSection.module.css";
 import Screen from "./Screen";
-
 import CustomImage from "../components/CustomImage";
 
 const AgentSection = ({
@@ -12,6 +11,7 @@ const AgentSection = ({
   ImgSrc,
   onButtonClick,
   isVisible,
+
 }) => {
 
   const renderContent = (title, subtitle, description, styles) => {

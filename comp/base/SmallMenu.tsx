@@ -32,7 +32,6 @@ const SmallMenu = () => {
             <Image
               src="/assets/DigisLogo.svg"
               alt="Digi-Logo-white"
-              layout="intrinsic"
               width="200"
               height="200"
             />

@@ -30,11 +30,11 @@ const ContactUs = () => {
                 style={{ display: "flex", gap: "15px", alignItems: "center", marginBottom: "5px" }}
               >
                 <Images
-                  alt="ImageContent"
-                  layout="intrinsic"
+                  alt="Globe Icon indicating location"
                   width="30"
                   height="30"
                   src="/assets/globeimg.webp"
+                  priority={true}
                 />
                 <h3>Location</h3>
               </div>
@@ -53,9 +53,11 @@ const ContactUs = () => {
                     }}
                   >
                     <Images
+                      alt="Location Icon for India"
                       src="/assets/icons8-location-24.webp"
                       width="30"
                       height="30"
+                      priority={true}
                     />
                     <h3>India</h3>
                   </div>
@@ -74,9 +76,11 @@ const ContactUs = () => {
                     }}
                   >
                     <Images
+                      alt="Phone Icon for contact number"
                       src="/assets/icons8-phone-50.webp"
                       width="30"
                       height="30"
+                      priority={true}
                     />
                     <h3>Phone</h3>
                   </div>
@@ -92,9 +96,11 @@ const ContactUs = () => {
                     }}
                   >
                     <Images
+                      alt="Email Icon for contact email"
                       src="/assets/icons8-email-100.webp"
                       width="30"
                       height="30"
+                      priority={true}
                     />
                     <h3>Email</h3>
                   </div>
@@ -109,20 +115,11 @@ const ContactUs = () => {
                 name="basic"
                 form={form}
                 initialValues={{ remember: true }}
-              // onFinish={onFinish}
-              // onFinishFailed={onFinishFailed}
               >
-                {/* <h1>Contact Us</h1> */}
                 <Form.Item
                   label="Full Name"
                   name="businessemail"
                   style={{ fontFamily: "sans-serif" }}
-                // rules={[
-                //   {
-                //     required: true,
-                //     message: "Please Enter your Full Name ",
-                //   },
-                // ]}
                 >
                   <Input />
                 </Form.Item>
@@ -130,32 +127,21 @@ const ContactUs = () => {
                 <Form.Item
                   label="Email Address"
                   name="firstname"
-                // rules={[
-                //   {
-                //     required: true,
-                //     message: "Please Enter your Email Address!",
-                //   },
-                // ]}
                 >
                   <Input />
                 </Form.Item>
-
-
 
                 <Form.Item
                   label="Message(Optional)"
                   name="additionalcomments"
                 >
                   <TextArea
-
                     autoSize={{
                       minRows: 5,
                       maxRows: 7,
                     }}
                   />
-
                 </Form.Item>
-
 
                 <Form.Item>
                   <Button
@@ -167,7 +153,6 @@ const ContactUs = () => {
               </Form>
             </div>
           </div>
-
         </Screen>
       </BaseLayout>
     </>

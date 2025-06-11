@@ -151,7 +151,6 @@ const AppStudio = () => {
           </div>
         </Screen>
       </div>
-
       <Screen>
         <div className={styles.possibilitySection}>
           <h2 className={styles.heading}>
@@ -197,6 +196,7 @@ const AppStudio = () => {
                       className={styles.integrationIcon}
                       width={20}
                       height={20}
+                      priority={true}
                     />
                     <span>{name}</span>
                   </div>
@@ -206,7 +206,6 @@ const AppStudio = () => {
           </div>
         </section>
       </Screen>
-
       <HomeSlider cards={cards} />
       <MainFooter />
     </>

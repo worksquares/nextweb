@@ -18,6 +18,7 @@ const ImageCardsGrid = (InfoCardListData: ImageCardsGridProps) => {
           description={Imageprop.description}
           link={Imageprop.link}
           linktext={Imageprop.linktext}
+          priority={true}
         />
       ))}
     </div>

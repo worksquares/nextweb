@@ -19,13 +19,14 @@ const Tcv = () => {
         {videoShow && (
           <div className={styles.PopupVideoBox}>
             <iframe width="750" height="380" src="https://www.youtube.com/embed/fdbln7j6XNw" frameBorder="0" allow="autoplay encrypted-media" />
-                        <Image
-                            src="/assets/IconClose.webp"
-                            alt="asas"
-                            style={{ width: "88px" }}
-                            onClick={VideoClose}
-                            className={styles.CloseVideo}
-                          />
+            <Image
+              src="/assets/IconClose.webp"
+              alt="asas"
+              style={{ width: "88px" }}
+              onClick={VideoClose}
+              className={styles.CloseVideo}
+              priority={true}
+            />
           </div>
         )}
       </div>

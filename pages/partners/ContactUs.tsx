@@ -492,6 +492,7 @@ const ContactUs = () => {
                             className={styles.CardIcons}
                             width={30}
                             height={30}
+                            priority={true}
                           />
                         )}
                         <h3>{data.heading}</h3>
@@ -507,6 +508,7 @@ const ContactUs = () => {
                             className={styles.arrowIcon}
                             width={13}
                             height={13}
+                            priority={true}
                           />
                         </a>
                       </div>
@@ -536,6 +538,7 @@ const ContactUs = () => {
                         className={styles.ContactUsArrowIcon}
                         width={13}
                         height={13}
+                        priority={true}
                       />
                     </a>
                   </div>

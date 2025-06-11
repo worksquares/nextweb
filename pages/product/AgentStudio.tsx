@@ -336,6 +336,7 @@ const AgentStudio = () => {
                     className={styles.integrationIcon}
                     width={20}
                     height={20}
+                    priority={true}
                   />
                   <span>{integration.name}</span>
                 </div>

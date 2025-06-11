@@ -24,7 +24,7 @@ const SearchJobsCareer = () => {
           </div>
         </div>
         <div className={styles.SearchBar}>
-          <Images src="/assets/search-icon.webp" layout="intrinsic" width="30%" height="30px" alt="HeaderJob" />
+          <Images src="/assets/search-icon.webp" width="30%" height="30px" alt="HeaderJob" priority={true} />
           <input placeholder="Search Job openings" className={styles.InputBox} />
         </div>
 
@@ -43,7 +43,7 @@ const SearchJobsCareer = () => {
             </p>
           </div>
           <div className={styles.Video}>
-            <Images src="/assets/gallery1.webp" layout="intrinsic" width="1000" height="550" alt="DescriptionImage" />
+            <Images src="/assets/gallery1.webp" width="1000" height="550" alt="DescriptionImage" priority={true} />
           </div>
         </div>
 

@@ -15,10 +15,11 @@ export interface sublink {
 const LinkHover = ({ icon, title, links }: LinkHoverProps) => {
   return (
     // <div>
+    //  </div>
     <div className={styles.ResourcesCards}>
       <div className={styles.Carditems}>
         <div className={styles.CardimgHeading}>
-          <Images alt="sds" layout="intrinsic" width="50" height="50" className={styles.imgresponsiveChange} src={icon}></Images>
+          <Images alt="sds" width="50" height="50" className={styles.imgresponsiveChange} src={icon}></Images>
           <h5>{title}</h5>
         </div>
         <div className={styles.CardBoxHighlight}>
@@ -36,12 +37,11 @@ const LinkHover = ({ icon, title, links }: LinkHoverProps) => {
           ))}
         </div>
       </div>
-
       <div className={styles.ReResourcesCards}>
         <div className={styles.ReDropdownContainer}>
           <details>
             <summary className={styles.SummaryHeading}>
-              <Images alt="sds" layout="intrinsic" width="50" height="50" className={styles.imgReresponsiveChange} src={icon}></Images>
+              <Images alt="sds" width="50" height="50" className={styles.imgReresponsiveChange} src={icon}></Images>
               {title}
             </summary>
             <span className={styles.SelectOptionsFlex}>
@@ -55,7 +55,6 @@ const LinkHover = ({ icon, title, links }: LinkHoverProps) => {
         </div>
       </div>
     </div>
-    //  </div>
   );
 };
 

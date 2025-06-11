@@ -13,7 +13,7 @@ const ImageTitle = ({ image, title, sentence }: ImgTitleProps) => {
     <div className={styles.ImageTitleMainContainer}>
       <div className={styles.FeaturesUIImageContainer}>
         <div className={styles.ImgContainer}>
-          <Images layout="intrinsic" width="600px" height="300px" alt="ProcessImage" className={styles.imgresponsive} src={image}></Images>
+          <Images width="600px" height="300px" alt="ProcessImage" className={styles.imgresponsive} src={image}></Images>
           <h2>{title}</h2>
           <p>{sentence}</p>
         </div>
@@ -21,7 +21,7 @@ const ImageTitle = ({ image, title, sentence }: ImgTitleProps) => {
       {/* ---------------------------------------------------- */}
       <div className={styles.FeaturesUIReImageContainer}>
         <div className={styles.ReImgContainer}>
-          <Images className={styles.imgresponsive} src={image} layout="intrinsic" width="600px" height="300px" alt="ProcessImage"></Images>
+          <Images className={styles.imgresponsive} src={image} width="600px" height="300px" alt="ProcessImage"></Images>
           <h2>{title}</h2>
           <p>{sentence}</p>
         </div>

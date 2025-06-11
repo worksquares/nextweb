@@ -34,7 +34,7 @@ const FAQComponent = ({ faqData }) => {
                   //     transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
                   //   }}
                   // />
-                  <Image
+                  (<Image
                     src="/svg/ArrowDown.svg"
                     alt="arrow icon"
                     priority={true}
@@ -46,7 +46,7 @@ const FAQComponent = ({ faqData }) => {
                       transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
                     }}
                     className={styles.ArrowRotate}
-                  />
+                  />)
                 )}
                 className={styles.siteCollapseCustomCollapse}
               >

@@ -10,6 +10,7 @@ export interface SingleRowProps {
   // heading? : string;
   description: string;
   link: string;
+  priority?: boolean;
 }
 
 const ImageSingleRow = ({ image, category, title, description, link }: SingleRowProps) => {
@@ -19,7 +20,7 @@ const ImageSingleRow = ({ image, category, title, description, link }: SingleRow
         <Link href={link}>
           <div className={`${styles.Card1} ${styles.cardNew}`}>
             <div className={styles.ImageHoverContainer}>
-              <Image className={styles.Imagehoverzoom} src={image} width="900" height="200" alt="ResourcesBlogImage" unoptimized={true} />
+              <Image className={styles.Imagehoverzoom} src={image} width="900" height="200" alt="ResourcesBlogImage" unoptimized={true} priority={true} />
             </div>
             <div className={styles.CardInfo}>
               <p className={styles.CardInfoPara}>{category}</p>

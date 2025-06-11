@@ -8,6 +8,7 @@
   /* Ensure the image is responsive */
   /* max-width: 100%; */
   height: 490px !important;
+  width: auto;
   /* width: 650px; */
   /* border: 1px solid red; */
 }
@@ -154,6 +155,7 @@
   }
   .mainImage{
      height: 218px !important;
+     width: auto;
   }
 }
 

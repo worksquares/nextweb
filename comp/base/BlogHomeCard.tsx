@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Styles from "../../styles/comp/core/BlogHomeCard.module.css";
-// import CustomImage from "../../@/components/customImage";
 import CustomImage from '../../components/CustomImage';
 
 export interface BlogHomeheaderProps {

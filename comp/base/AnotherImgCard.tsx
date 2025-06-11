@@ -42,7 +42,7 @@ const AnotherimgContent = ({ title, paragraph, link, dir, img1700, img1024, img7
             <source media="(min-width: 1024px)" srcSet={img1024 != null ? img1024 : img320} />
             <source media="(min-width: 768px)" srcSet={img768 != null ? img768 : img320} />
             <source media="(min-width: 320px)" srcSet={img320} />
-            <Images alt="sds" layout="intrinsic" width="1500" height="1750" src={img320}></Images>
+            <Images alt="sds" width="1500" height="1750" src={img320}></Images>
           </picture>
         </div>
       </div>

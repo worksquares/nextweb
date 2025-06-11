@@ -9,11 +9,12 @@ const HomePanel = ({ imageUrl, title, description }) => {
         <div style={{ width: "100%" }}>
           <Image
             src={imageUrl}
-            layout="intrinsic"
-            width="2000"
-            height="3500"
+            priority={true}
+            width="700"
+            height="500"
             alt="Banner Image"
             className={styles.image}
+
           />
         </div>
         <div className={styles.textContainer}>

@@ -15,6 +15,7 @@ export interface HeaderContentProps {
   backgroundColor?: string;
   backgroundImg?: string;
   isPodCast?: 1 | 0;
+  priority?: { priority }
 }
 
 const HeaderContent: React.FC<HeaderContentProps> = ({
@@ -29,6 +30,7 @@ const HeaderContent: React.FC<HeaderContentProps> = ({
   backgroundColor = "transparent",
   isPodCast,
   backgroundImg,
+  priority,
 }) => {
   const podcastBackgroundStyle: React.CSSProperties = {
     backgroundColor,
@@ -91,6 +93,7 @@ const HeaderContent: React.FC<HeaderContentProps> = ({
                 src={img320}
                 alt={title || "Image"}
                 className={Styles.IndustryHeroImg}
+                priority={true}
               />
             )}
           </div>

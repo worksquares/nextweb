@@ -18,19 +18,19 @@ const MainFooter = () => {
                         <div className={styles.socialIcons}>
                             <Link href="https://www.facebook.com/digisquares/" passHref target="_blank" rel="noopener noreferrer">
 
-                                <Image src="/svg/footer/facebook.svg" alt="Facebook" width={20} height={20} />
+                                <Image src="/svg/footer/facebook.svg" alt="Facebook" width={20} height={20} priority={true} />
 
                             </Link>
                             <Link href="https://www.youtube.com/channel/UC10Kqzxy547k75Kbnz-12hA/featured" passHref target="_blank" rel="noopener noreferrer">
-                                <Image src="/svg/footer/youtube.svg" alt="Youtube" width={25} height={25} />
+                                <Image src="/svg/footer/youtube.svg" alt="Youtube" width={25} height={25} priority={true} />
 
                             </Link>
                             <Link href="https://twitter.com/digisquares" passHref target="_blank" rel="noopener noreferrer">
-                                <Image src="/svg/footer/twitter.svg" alt="Twitter" width={20} height={20} />
+                                <Image src="/svg/footer/twitter.svg" alt="Twitter" width={20} height={20} priority={true} />
 
                             </Link>
                             <Link href="https://in.linkedin.com/company/digisquares" passHref target="_blank" rel="noopener noreferrer">
-                                <Image src="/svg/footer/linkedin.svg" alt="Linkedin" width={20} height={20} />
+                                <Image src="/svg/footer/linkedin.svg" alt="Linkedin" width={20} height={20} priority={true} />
 
                             </Link>
                         </div>

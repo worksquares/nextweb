@@ -9,7 +9,7 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
   return (
     <div>
       {HeaderBannerPropsList.map((Anotherprop, i) => (
-        console.log("vcdx",Anotherprop),
+        console.log("vcdx", Anotherprop),
         <HeaderContent
           key={Anotherprop.title}
           title={Anotherprop.title}
@@ -21,6 +21,8 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
           backgroundColor={Anotherprop.backgroundColor}
           isPodCast={Anotherprop.isPodCast}
           backgroundImg={Anotherprop.backgroundImg}
+          priority={true}
+
         />
       ))}
     </div>

@@ -18,6 +18,7 @@ export interface ImageContainProps {
   img320: string;
   subtitle?: string;
   button?: string;
+  priority?: boolean;
 }
 
 const ImageLeftRightCard = ({

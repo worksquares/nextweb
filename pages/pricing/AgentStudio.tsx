@@ -654,6 +654,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -661,6 +662,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -682,6 +684,7 @@ const CopilotPricing = () => {
           width={30}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -689,6 +692,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -710,6 +714,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -717,6 +722,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -737,6 +743,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -744,6 +751,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -764,6 +772,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -771,6 +780,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -793,6 +803,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -800,6 +811,7 @@ const CopilotPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1098,49 +1110,49 @@ const CopilotPricing = () => {
                             : "20% SAVING"}
                     </p>
                   </div> */}
-                   <div
-                      style={{
-                        border:
-                          content.button1 === "Free" ||
+                  <div
+                    style={{
+                      border:
+                        content.button1 === "Free" ||
                           content.button1 === "Enterprise"
-                            ? ""
-                            : content.isSwitchOn
+                          ? ""
+                          : content.isSwitchOn
                             ? "2px solid #1D4965"
                             : "1px solid grey",
-                        borderRadius:
-                          content.button1 === "Free" ||
+                      borderRadius:
+                        content.button1 === "Free" ||
                           content.button1 === "Enterprise"
-                            ? ""
-                            : "30px",
-                        width:
-                          content.button1 === "Free" ||
+                          ? ""
+                          : "30px",
+                      width:
+                        content.button1 === "Free" ||
                           content.button1 === "Enterprise"
-                            ? ""
-                            : "110px",
-                        textAlign: "center",
+                          ? ""
+                          : "110px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <p
+                      onClick={() => handleSwitchToggle(content.id)}
+                      style={{
+                        color:
+                          content.isSwitchOn === false ? "grey" : "#1D4965",
+                        margin: "0px",
+                        textDecorationLine:
+                          content.isSwitchOn === false ? "line-through" : "",
+                        padding: "3px",
+                        fontSize: "14px",
                       }}
                     >
-                      <p
-                        onClick={() => handleSwitchToggle(content.id)}
-                        style={{
-                          color:
-                            content.isSwitchOn === false ? "grey" : "#1D4965",
-                          margin: "0px",
-                          textDecorationLine:
-                            content.isSwitchOn === false ? "line-through" : "",
-                          padding: "3px",
-                          fontSize: "14px",
-                        }}
-                      >
-                        {content.button1 === "Free"
-                          ? " "
-                          : content.button1 === "Enterprise"
+                      {content.button1 === "Free"
+                        ? " "
+                        : content.button1 === "Enterprise"
                           ? " "
                           : content.isSwitchOn === true
-                          ? "20% SAVING"
-                          : "20% SAVING"}
-                      </p>
-                    </div>
+                            ? "20% SAVING"
+                            : "20% SAVING"}
+                    </p>
+                  </div>
 
 
                 </div>
@@ -1269,7 +1281,7 @@ const CopilotPricing = () => {
               <div style={FeatureColStyle1}>
                 <h2
                   className={styles.H_tag}
-                  style={{color: "white" }}
+                  style={{ color: "white" }}
                 >
                   Features
                 </h2>

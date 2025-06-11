@@ -21,13 +21,13 @@ interface ImageContainProps {
 
 interface ImageContentCardProps {
   ImageCardPropsList: ImageContainProps[];
-  Homepage?:boolean;
+  Homepage?: boolean;
 }
 
-const ImageLeftRight = ({ ImageCardPropsList ,Homepage}: ImageContentCardProps) => {
+const ImageLeftRight = ({ ImageCardPropsList, Homepage }: ImageContentCardProps) => {
   return (
     <>
-    { Homepage ? <Screen>
+      {Homepage ? <Screen>
         <h2 className={styles.HomePageCardHeader}>
           Maximize Efficiency and Innovation with AI-Driven Solutions
         </h2>
@@ -37,6 +37,7 @@ const ImageLeftRight = ({ ImageCardPropsList ,Homepage}: ImageContentCardProps) 
           dir={i % 2 === 0 ? "left" : "right"}
           key={Imageprop.title}
           {...Imageprop}
+          priority={true}
         />
       ))}
     </>

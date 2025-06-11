@@ -1227,6 +1227,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1234,6 +1235,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1255,6 +1257,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1262,6 +1265,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1283,6 +1287,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1290,6 +1295,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1310,6 +1316,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1317,6 +1324,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1337,6 +1345,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1344,6 +1353,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },
@@ -1366,6 +1376,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ) : (
         <Image
@@ -1373,6 +1384,7 @@ const NewPricing = () => {
           width={20}
           height={30}
           alt="MinusIcon"
+          priority={true}
         />
       ),
     },

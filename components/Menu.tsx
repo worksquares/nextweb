@@ -157,95 +157,45 @@ const Menu = () => {
 
     return (
         <Screen>
-        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
-            <div className={styles.container}>
-                {/* Logo */}
-                <div className={styles.logoContainer}>
-                    <Link href="/" className={styles.logoLink}>
-                        <Image
-                            src="/assets/logo/Logo.svg"
-                            width={30}
-                            height={30}
-                            alt="DIGISQUARES Logo"
-                        />
-                        <span className={styles.logoText}>DIGISQUARES</span>
-                    </Link>
-                </div>
+            <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+                <div className={styles.container}>
+                    {/* Logo */}
+                    <div className={styles.logoContainer}>
+                        <Link href="/" className={styles.logoLink}>
+                            <Image
+                                src="/assets/logo/Logo.svg"
+                                width={30}
+                                height={30}
+                                alt="DIGISQUARES Logo"
+                                priority={true}
+                            />
+                            <span className={styles.logoText}>DIGISQUARES</span>
+                        </Link>
+                    </div>
 
-                {/* Desktop Navigation */}
-                <nav className={styles.desktopNav}>
-                    {menuItems.map((item) => (
-                        <div key={item.id} className={styles.navItem}>
-                            <button
-                                onMouseEnter={() => handleMouseEnter(item.id)}
-                                onMouseLeave={handleMouseLeave}
-                                className={styles.navButton}
-                            >
-                                {item.title}
-                            </button>
-                            {activeMenu === item.id && (
-                                <div className={styles.dropdownMenu}
-                                    onMouseEnter={() => handleMouseEnter(item.id)}
-                                    onMouseLeave={handleMouseLeave}>
-                                    {item.columns.map((column, colIndex) => (
-                                        <div key={colIndex} className={styles.dropdownColumn}>
-                                            <h3 className={styles.dropdownTitle}>{column.title}</h3>
-                                            {column.links.map((link, linkIndex) => (
-                                                <Link
-                                                    key={linkIndex}
-                                                    href={link.href}
-                                                    className={styles.dropdownLink}
-                                                >
-                                                    {link.text}
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    ))}
-                    <Link href="/contact/ContactUs/" className={styles.contactLink}>
-                        Contact Us
-                    </Link>
-                </nav>
-
-                {/* Mobile Hamburger - Only shows on mobile */}
-                <button
-                    className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ''}`}
-                    onClick={toggleMobileMenu}
-                    aria-label="Menu"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                {/* Mobile Navigation - Only shows when menu is open */}
-                {isMobileMenuOpen && (
-                    <div className={styles.mobileMenu}>
+                    {/* Desktop Navigation */}
+                    <nav className={styles.desktopNav}>
                         {menuItems.map((item) => (
-                            <div key={item.id} className={styles.mobileNavItem}>
+                            <div key={item.id} className={styles.navItem}>
                                 <button
-                                    onClick={() => handleMenuInteraction(item.id)}
-                                    className={styles.mobileNavButton}
+                                    onMouseEnter={() => handleMouseEnter(item.id)}
+                                    onMouseLeave={handleMouseLeave}
+                                    className={styles.navButton}
                                 >
                                     {item.title}
-                                    <span className={styles.dropdownArrow}>
-                                        {activeMenu === item.id ? '−' : '+'}
-                                    </span>
                                 </button>
                                 {activeMenu === item.id && (
-                                    <div className={styles.mobileDropdown}>
+                                    <div className={styles.dropdownMenu}
+                                        onMouseEnter={() => handleMouseEnter(item.id)}
+                                        onMouseLeave={handleMouseLeave}>
                                         {item.columns.map((column, colIndex) => (
-                                            <div key={colIndex} className={styles.mobileDropdownColumn}>
-                                                <h3 className={styles.mobileDropdownTitle}>{column.title}</h3>
+                                            <div key={colIndex} className={styles.dropdownColumn}>
+                                                <h3 className={styles.dropdownTitle}>{column.title}</h3>
                                                 {column.links.map((link, linkIndex) => (
                                                     <Link
                                                         key={linkIndex}
                                                         href={link.href}
-                                                        className={styles.mobileDropdownLink}
-                                                        onClick={closeMobileMenu}
+                                                        className={styles.dropdownLink}
                                                     >
                                                         {link.text}
                                                     </Link>
@@ -256,52 +206,104 @@ const Menu = () => {
                                 )}
                             </div>
                         ))}
-                        <Link
-                            href="/contact/ContactUs/"
-                            className={styles.mobileContactLink}
-                            onClick={closeMobileMenu}
-                        >
+                        <Link href="/contact/ContactUs/" className={styles.contactLink}>
                             Contact Us
                         </Link>
-                    </div>
-                )}
+                    </nav>
 
-                {/* Auth Buttons - Desktop Only */}
-                <div className={styles.authButtons}>
-                    <button type="button" className={styles.globalButton}>
-                        <Image
-                            src="/svg/global-svg.svg"
-                            alt="Global"
-                            width={30}
-                            height={30}
-                        />
+                    {/* Mobile Hamburger - Only shows on mobile */}
+                    <button
+                        className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ''}`}
+                        onClick={toggleMobileMenu}
+                        aria-label="Menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
-                    {/* <Link href="https://app.digisquares.com/login" className={styles.signInBtn}>
+
+                    {/* Mobile Navigation - Only shows when menu is open */}
+                    {isMobileMenuOpen && (
+                        <div className={styles.mobileMenu}>
+                            {menuItems.map((item) => (
+                                <div key={item.id} className={styles.mobileNavItem}>
+                                    <button
+                                        onClick={() => handleMenuInteraction(item.id)}
+                                        className={styles.mobileNavButton}
+                                    >
+                                        {item.title}
+                                        <span className={styles.dropdownArrow}>
+                                            {activeMenu === item.id ? '−' : '+'}
+                                        </span>
+                                    </button>
+                                    {activeMenu === item.id && (
+                                        <div className={styles.mobileDropdown}>
+                                            {item.columns.map((column, colIndex) => (
+                                                <div key={colIndex} className={styles.mobileDropdownColumn}>
+                                                    <h3 className={styles.mobileDropdownTitle}>{column.title}</h3>
+                                                    {column.links.map((link, linkIndex) => (
+                                                        <Link
+                                                            key={linkIndex}
+                                                            href={link.href}
+                                                            className={styles.mobileDropdownLink}
+                                                            onClick={closeMobileMenu}
+                                                        >
+                                                            {link.text}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                            <Link
+                                href="/contact/ContactUs/"
+                                className={styles.mobileContactLink}
+                                onClick={closeMobileMenu}
+                            >
+                                Contact Us
+                            </Link>
+                        </div>
+                    )}
+
+                    {/* Auth Buttons - Desktop Only */}
+                    <div className={styles.authButtons}>
+                        <button type="button" className={styles.globalButton}>
+                            <Image
+                                src="/svg/global-svg.svg"
+                                alt="Global"
+                                width={30}
+                                height={30}
+                                priority={true}
+                            />
+                        </button>
+                        {/* <Link href="https://app.digisquares.com/login" className={styles.signInBtn}>
                         Sign in
                     </Link> */}
-                    {/* <MediumButton
+                        {/* <MediumButton
                     text="Sign in"
                     bgColor="#FF0707"
                     color="#fff"
                     padding="8px 20px"
                     /> */}
-                    <SignButton
-                    text="Sign in"
-                    bgColor="#FF0707"
-                    color="#fff"
-                    />
-                    {/* <Link href="https://app.digisquares.com/register" className={styles.signUpBtn}>
+                        <SignButton
+                            text="Sign in"
+                            bgColor="#FF0707"
+                            color="#fff"
+                        />
+                        {/* <Link href="https://app.digisquares.com/register" className={styles.signUpBtn}>
 
                         Sign up
                     </Link> */}
-                      <SignButton
-                    text="Sign up"
-                    bgColor="#000"
-                    color="#fff"
-                    />
+                        <SignButton
+                            text="Sign up"
+                            bgColor="#000"
+                            color="#fff"
+                        />
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
         </Screen>
     );
 };

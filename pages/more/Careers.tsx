@@ -99,10 +99,10 @@ const Careers = () => {
                   <Images
                     className={styles.OVCImg}
                     src="/assets/CareersOurValuesImg.webp"
-                    layout="intrinsic"
                     width="1500"
                     height="1300"
                     alt="CareerheaderImage"
+                    priority={true}
                   />
                 </div>
                 <div className={styles.OurValuesCareerInfoContainer}>
@@ -153,6 +153,7 @@ const Careers = () => {
                           width="100"
                           height="100"
                           alt="EmployeeImage"
+                          priority={true}
                         />
                         <p
                           className={styles.LinkAnimate}
@@ -171,6 +172,7 @@ const Careers = () => {
                           width="100"
                           height="100"
                           alt="EmployeeImage"
+                          priority={true}
                         />
                         <p
                           className={styles.LinkAnimate}
@@ -189,6 +191,7 @@ const Careers = () => {
                           width="100"
                           height="100"
                           alt="EmployeeImage"
+                          priority={true}
                         />
                         <p
                           className={styles.LinkAnimate}
@@ -207,6 +210,7 @@ const Careers = () => {
                           width="100"
                           height="100"
                           alt="EmployeeImage"
+                          priority={true}
                         />
                         <p
                           className={styles.LinkAnimate}
@@ -225,6 +229,7 @@ const Careers = () => {
                           width="100"
                           height="100"
                           alt="EmployeeImage"
+                          priority={true}
                         />
                         <p
                           className={styles.LinkAnimate}
@@ -259,10 +264,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList1.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>
@@ -274,10 +279,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList2.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>
@@ -289,10 +294,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList3.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>
@@ -304,10 +309,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList4.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>
@@ -319,10 +324,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList5.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>
@@ -334,10 +339,10 @@ const Careers = () => {
                       <Images
                         className={styles.BenefitsInfoImg}
                         src="/assets/benefitsIconList6.webp"
-                        layout="intrinsic"
                         width="50"
                         height="50"
                         alt="Icon"
+                        priority={true}
                       />
                     </div>
                     <div className={styles.BenefitsIconInfo}>

@@ -110,7 +110,7 @@ const Custom404 = () => {
             <p>Sorry, the page you requested was not found. Easily explore our products using the links below.</p>
           </div>
           <div className={styles.PageErrorImage}>
-            <Image src="/assets/pagenotfound404.webp" alt="Page not found" layout="intrinsic" width="1300" height="800" unoptimized={true} className={styles.PageHeaderPartImg} />
+            <Image src="/assets/pagenotfound404.webp" alt="Page not found" width="1300" height="800" unoptimized={true} className={styles.PageHeaderPartImg} priority={true} />
           </div>
         </div>
       </Screen>
