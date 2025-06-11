@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "../../styles/legal/Terms.module.css";
-import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
-import WebHeadergrid from "../../comp/WebHeadergrid";
 import Link from "next/link";
-import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
+import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
 import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import WebHeadergrid from "../../comp/WebHeadergrid";
+import styles from "../../styles/legal/Terms.module.css";
+import Headseo from "../headseo";
 
 const Terms = () => {
   let WebHeaderListData: WebsiteHeaderProps[] = [
@@ -121,13 +120,13 @@ const Terms = () => {
                   <p>
                     Personally identifiable information collected about you by
                     this Website is treated in accordance with the&nbsp;
-                    <Link legacyBehavior href="/statements/PrivacyStatement/">
+                    <Link href="/statements/PrivacyStatement/">
                       Privacy Policy
                     </Link>
                     , which is hereby incorporated into these Terms of Use by
                     reference. If you do not agree to these Terms of Use or
                     the&nbsp;
-                    <Link legacyBehavior href="/statements/PrivacyStatement/">
+                    <Link href="/statements/PrivacyStatement/">
                       Privacy Policy
                     </Link>
                     , you must exit the Website.
@@ -1886,7 +1885,7 @@ const Terms = () => {
               </div>
             </div>
           </Screen>
-          <Link legacyBehavior href={"/contact/ContactUs/"}>
+          <Link href={"/contact/ContactUs/"}>
             <div className={styles.FixedContainer}>
               <p className={styles.FixedOption}>Contact</p>
             </div>

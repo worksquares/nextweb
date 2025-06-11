@@ -368,44 +368,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹12,000/month ₹1,29,600/year"
                 : currency === "USD"
-                ? "$150/month $1,620/year"
-                : currency === "EUR"
-                ? "€150/month €1,620/year"
-                : currency === "GBP"
-                ? "£120/month £1,300/year"
-                : currency === "AED"
-                ? "د.إ600/month د.إ6,480/year"
-                : currency === "AUD"
-                ? "AU$230/month AU$2,479/year"
-                : currency === "CAD"
-                ? "CA$205/month CA$2,219/year"
-                : currency === "SGD"
-                ? "S$203/month S$2,187/year"
-                : currency === "HKD"
-                ? "HK$1,163/month HK$12,555/year"
-                : currency === "CHF"
-                ? "CHF135/month CHF1,458/year"
-                : currency === "CNY"
-                ? "¥1,050/month ¥11,340/year"
-                : currency === "JPY"
-                ? "¥22,050/month ¥2,38,140/year"
-                : currency === "NZD"
-                ? "NZ$250/month NZ$2,705/year"
-                : currency === "SEK"
-                ? "Skr1,575/month Skr17,010/year"
-                : currency === "NOK"
-                ? "Nkr1,560/month Nkr16,850/year"
-                : currency === "DKK"
-                ? "Dkr1,028/month Dkr11,097/year"
-                : currency === "THB"
-                ? "฿5,325/month ฿57,510/year"
-                : currency === "MYR"
-                ? "RM701/month RM7,569/year"
-                : currency === "PHP"
-                ? "₱8,490/month ₱91,692/year"
-                : currency === "RUB"
-                ? "₽13,950/month ₽1,50,660/year"
-                : "$49/month",
+                  ? "$150/month $1,620/year"
+                  : currency === "EUR"
+                    ? "€150/month €1,620/year"
+                    : currency === "GBP"
+                      ? "£120/month £1,300/year"
+                      : currency === "AED"
+                        ? "د.إ600/month د.إ6,480/year"
+                        : currency === "AUD"
+                          ? "AU$230/month AU$2,479/year"
+                          : currency === "CAD"
+                            ? "CA$205/month CA$2,219/year"
+                            : currency === "SGD"
+                              ? "S$203/month S$2,187/year"
+                              : currency === "HKD"
+                                ? "HK$1,163/month HK$12,555/year"
+                                : currency === "CHF"
+                                  ? "CHF135/month CHF1,458/year"
+                                  : currency === "CNY"
+                                    ? "¥1,050/month ¥11,340/year"
+                                    : currency === "JPY"
+                                      ? "¥22,050/month ¥2,38,140/year"
+                                      : currency === "NZD"
+                                        ? "NZ$250/month NZ$2,705/year"
+                                        : currency === "SEK"
+                                          ? "Skr1,575/month Skr17,010/year"
+                                          : currency === "NOK"
+                                            ? "Nkr1,560/month Nkr16,850/year"
+                                            : currency === "DKK"
+                                              ? "Dkr1,028/month Dkr11,097/year"
+                                              : currency === "THB"
+                                                ? "฿5,325/month ฿57,510/year"
+                                                : currency === "MYR"
+                                                  ? "RM701/month RM7,569/year"
+                                                  : currency === "PHP"
+                                                    ? "₱8,490/month ₱91,692/year"
+                                                    : currency === "RUB"
+                                                      ? "₽13,950/month ₽1,50,660/year"
+                                                      : "$49/month",
             hasStar: false,
           },
           standard: {
@@ -413,44 +413,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹24,000/month ₹2,59,200/year (10% Off)"
                 : currency === "USD"
-                ? "$300/month $3,240/year (10% Off)"
-                : currency === "EUR"
-                ? "€300/month €3,240/year (10% Off)"
-                : currency === "GBP"
-                ? "£240/month £2,600/year (10% Off)"
-                : currency === "AED"
-                ? "د.إ1,200/month د.إ12,960/year (10% Off)"
-                : currency === "AUD"
-                ? "AU$459/month AU$5,008/year (10% Off)"
-                : currency === "CAD"
-                ? "CA$411/month CA$4,438/year (10% Off)"
-                : currency === "SGD"
-                ? "S$406/month S$4,374/year (10% Off)"
-                : currency === "HKD"
-                ? "HK$2,325/month HK$25,110/year (10% Off)"
-                : currency === "CHF"
-                ? "CHF270/month CHF2,916/year (10% Off)"
-                : currency === "CNY"
-                ? "¥2,100/month ¥23,688/year (10% Off)"
-                : currency === "JPY"
-                ? "¥44,100/month ¥4,76,280/year (10% Off)"
-                : currency === "NZD"
-                ? "NZ$500/month NZ$5,410/year (10% Off)"
-                : currency === "SEK"
-                ? "Skr3,150/month Skr35,020/year (10% Off)"
-                : currency === "NOK"
-                ? "Nkr3,120/month Nkr33,700/year (10% Off)"
-                : currency === "DKK"
-                ? "Dkr2,056/month Dkr22,194/year (10% Off)"
-                : currency === "THB"
-                ? "฿10,650/month ฿1,15,020/year (10% Off)"
-                : currency === "MYR"
-                ? "RM1,402/month RM15,138/year (10% Off)"
-                : currency === "PHP"
-                ? "₱16,980/month ₱1,83,384/year (10% Off)"
-                : currency === "RUB"
-                ? "₽27,900/month ₽3,01,320/year (10% Off)"
-                : "$99/month",
+                  ? "$300/month $3,240/year (10% Off)"
+                  : currency === "EUR"
+                    ? "€300/month €3,240/year (10% Off)"
+                    : currency === "GBP"
+                      ? "£240/month £2,600/year (10% Off)"
+                      : currency === "AED"
+                        ? "د.إ1,200/month د.إ12,960/year (10% Off)"
+                        : currency === "AUD"
+                          ? "AU$459/month AU$5,008/year (10% Off)"
+                          : currency === "CAD"
+                            ? "CA$411/month CA$4,438/year (10% Off)"
+                            : currency === "SGD"
+                              ? "S$406/month S$4,374/year (10% Off)"
+                              : currency === "HKD"
+                                ? "HK$2,325/month HK$25,110/year (10% Off)"
+                                : currency === "CHF"
+                                  ? "CHF270/month CHF2,916/year (10% Off)"
+                                  : currency === "CNY"
+                                    ? "¥2,100/month ¥23,688/year (10% Off)"
+                                    : currency === "JPY"
+                                      ? "¥44,100/month ¥4,76,280/year (10% Off)"
+                                      : currency === "NZD"
+                                        ? "NZ$500/month NZ$5,410/year (10% Off)"
+                                        : currency === "SEK"
+                                          ? "Skr3,150/month Skr35,020/year (10% Off)"
+                                          : currency === "NOK"
+                                            ? "Nkr3,120/month Nkr33,700/year (10% Off)"
+                                            : currency === "DKK"
+                                              ? "Dkr2,056/month Dkr22,194/year (10% Off)"
+                                              : currency === "THB"
+                                                ? "฿10,650/month ฿1,15,020/year (10% Off)"
+                                                : currency === "MYR"
+                                                  ? "RM1,402/month RM15,138/year (10% Off)"
+                                                  : currency === "PHP"
+                                                    ? "₱16,980/month ₱1,83,384/year (10% Off)"
+                                                    : currency === "RUB"
+                                                      ? "₽27,900/month ₽3,01,320/year (10% Off)"
+                                                      : "$99/month",
             hasStar: false,
           },
           Premium: {
@@ -458,44 +458,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹48,000/month ₹5,18,400/year (10% Off)"
                 : currency === "USD"
-                ? "$600/month $6,480/year (10% Off)"
-                : currency === "EUR"
-                ? "€600/month €6,480/year (10% Off)"
-                : currency === "GBP"
-                ? "£480/month £5,200/year (10% Off)"
-                : currency === "AED"
-                ? "د.إ2,400/month د.إ25,920/year (10% Off)"
-                : currency === "AUD"
-                ? "AU$918/month AU$10,016/year (10% Off)"
-                : currency === "CAD"
-                ? "CA$822/month CA$8,876/year (10% Off)"
-                : currency === "SGD"
-                ? "S$812/month S$8,748/year (10% Off)"
-                : currency === "HKD"
-                ? "HK$4,650/month HK$50,220/year (10% Off)"
-                : currency === "CHF"
-                ? "CHF540/month CHF5,832/year (10% Off)"
-                : currency === "CNY"
-                ? "¥4,200/month ¥47,376/year (10% Off)"
-                : currency === "JPY"
-                ? "¥88,200/month ¥9,52,560/year (10% Off)"
-                : currency === "NZD"
-                ? "NZ$1,000/month NZ$10,820/year (10% Off)"
-                : currency === "SEK"
-                ? "Skr6,300/month Skr70,040/year (10% Off)"
-                : currency === "NOK"
-                ? "Nkr6,240/month Nkr67,400/year (10% Off)"
-                : currency === "DKK"
-                ? "Dkr4,112/month Dkr44,388/year (10% Off)"
-                : currency === "THB"
-                ? "฿21,300/month ฿2,30,040/year (10% Off)"
-                : currency === "MYR"
-                ? "RM2,804/month RM30,276/year (10% Off)"
-                : currency === "PHP"
-                ? "₱33,960/month ₱3,66,768/year (10% Off)"
-                : currency === "RUB"
-                ? "₽55,800/month ₽6,02,640/year (10% Off)"
-                : "$199/month",
+                  ? "$600/month $6,480/year (10% Off)"
+                  : currency === "EUR"
+                    ? "€600/month €6,480/year (10% Off)"
+                    : currency === "GBP"
+                      ? "£480/month £5,200/year (10% Off)"
+                      : currency === "AED"
+                        ? "د.إ2,400/month د.إ25,920/year (10% Off)"
+                        : currency === "AUD"
+                          ? "AU$918/month AU$10,016/year (10% Off)"
+                          : currency === "CAD"
+                            ? "CA$822/month CA$8,876/year (10% Off)"
+                            : currency === "SGD"
+                              ? "S$812/month S$8,748/year (10% Off)"
+                              : currency === "HKD"
+                                ? "HK$4,650/month HK$50,220/year (10% Off)"
+                                : currency === "CHF"
+                                  ? "CHF540/month CHF5,832/year (10% Off)"
+                                  : currency === "CNY"
+                                    ? "¥4,200/month ¥47,376/year (10% Off)"
+                                    : currency === "JPY"
+                                      ? "¥88,200/month ¥9,52,560/year (10% Off)"
+                                      : currency === "NZD"
+                                        ? "NZ$1,000/month NZ$10,820/year (10% Off)"
+                                        : currency === "SEK"
+                                          ? "Skr6,300/month Skr70,040/year (10% Off)"
+                                          : currency === "NOK"
+                                            ? "Nkr6,240/month Nkr67,400/year (10% Off)"
+                                            : currency === "DKK"
+                                              ? "Dkr4,112/month Dkr44,388/year (10% Off)"
+                                              : currency === "THB"
+                                                ? "฿21,300/month ฿2,30,040/year (10% Off)"
+                                                : currency === "MYR"
+                                                  ? "RM2,804/month RM30,276/year (10% Off)"
+                                                  : currency === "PHP"
+                                                    ? "₱33,960/month ₱3,66,768/year (10% Off)"
+                                                    : currency === "RUB"
+                                                      ? "₽55,800/month ₽6,02,640/year (10% Off)"
+                                                      : "$199/month",
             hasStar: false,
           },
           enterprise: {
@@ -679,44 +679,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹8,000/month ₹86,400/year (10% Off)"
                 : currency === "USD"
-                ? "$100/month $1,080/year (10% Off)"
-                : currency === "EUR"
-                ? "€100/month €1,080/year (10% Off)"
-                : currency === "GBP"
-                ? "£80/month £860/year (10% Off)"
-                : currency === "AED"
-                ? "د.إ400/month د.إ4,320/year (10% Off)"
-                : currency === "AUD"
-                ? "AU$153/month AU$1,652/year (10% Off)"
-                : currency === "CAD"
-                ? "CA$137/month CA$1,478/year (10% Off)"
-                : currency === "SGD"
-                ? "S$135/month S$1,458/year (10% Off)"
-                : currency === "HKD"
-                ? "HK$775/month HK$8,370/year (10% Off)"
-                : currency === "CHF"
-                ? "CHF90/month CHF972/year (10% Off)"
-                : currency === "CNY"
-                ? "¥700/month ¥7,560/year (10% Off)"
-                : currency === "JPY"
-                ? "¥14,700/month ¥1,58,760/year (10% Off)"
-                : currency === "NZD"
-                ? "NZ$167/month NZ$1,803/year (10% Off)"
-                : currency === "SEK"
-                ? "Skr1,050/month Skr11,340/year (10% Off)"
-                : currency === "NOK"
-                ? "Nkr1,040/month Nkr11,232/year (10% Off)"
-                : currency === "DKK"
-                ? "Dkr685/month Dkr7,398/year (10% Off)"
-                : currency === "THB"
-                ? "฿3,550/month ฿38,340/year (10% Off)"
-                : currency === "MYR"
-                ? "RM467/month RM5,042/year (10% Off)"
-                : currency === "PHP"
-                ? "₱5,660/month ₱61,560/year (10% Off)"
-                : currency === "RUB"
-                ? "₽9,300/month ₽1,01,160/year (10% Off)"
-                : "$50/month $600/year",
+                  ? "$100/month $1,080/year (10% Off)"
+                  : currency === "EUR"
+                    ? "€100/month €1,080/year (10% Off)"
+                    : currency === "GBP"
+                      ? "£80/month £860/year (10% Off)"
+                      : currency === "AED"
+                        ? "د.إ400/month د.إ4,320/year (10% Off)"
+                        : currency === "AUD"
+                          ? "AU$153/month AU$1,652/year (10% Off)"
+                          : currency === "CAD"
+                            ? "CA$137/month CA$1,478/year (10% Off)"
+                            : currency === "SGD"
+                              ? "S$135/month S$1,458/year (10% Off)"
+                              : currency === "HKD"
+                                ? "HK$775/month HK$8,370/year (10% Off)"
+                                : currency === "CHF"
+                                  ? "CHF90/month CHF972/year (10% Off)"
+                                  : currency === "CNY"
+                                    ? "¥700/month ¥7,560/year (10% Off)"
+                                    : currency === "JPY"
+                                      ? "¥14,700/month ¥1,58,760/year (10% Off)"
+                                      : currency === "NZD"
+                                        ? "NZ$167/month NZ$1,803/year (10% Off)"
+                                        : currency === "SEK"
+                                          ? "Skr1,050/month Skr11,340/year (10% Off)"
+                                          : currency === "NOK"
+                                            ? "Nkr1,040/month Nkr11,232/year (10% Off)"
+                                            : currency === "DKK"
+                                              ? "Dkr685/month Dkr7,398/year (10% Off)"
+                                              : currency === "THB"
+                                                ? "฿3,550/month ฿38,340/year (10% Off)"
+                                                : currency === "MYR"
+                                                  ? "RM467/month RM5,042/year (10% Off)"
+                                                  : currency === "PHP"
+                                                    ? "₱5,660/month ₱61,560/year (10% Off)"
+                                                    : currency === "RUB"
+                                                      ? "₽9,300/month ₽1,01,160/year (10% Off)"
+                                                      : "$50/month $600/year",
             hasStar: false,
           },
           standard: {
@@ -724,44 +724,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹20,000/month ₹2,16,000/year (10% Off)"
                 : currency === "USD"
-                ? "$250/month $2,700/year (10% Off)"
-                : currency === "EUR"
-                ? "€250/month €2,700/year (10% Off)"
-                : currency === "GBP"
-                ? "£200/month £2,160/year (10% Off)"
-                : currency === "AED"
-                ? "د.إ1,000/month د.إ10,800/year (10% Off)"
-                : currency === "AUD"
-                ? "AU$383/month AU$4,130/year (10% Off)"
-                : currency === "CAD"
-                ? "CA$342/month CA$3,696/year (10% Off)"
-                : currency === "SGD"
-                ? "S$338/month S$3,645/year (10% Off)"
-                : currency === "HKD"
-                ? "HK$1,938/month HK$20,088/year (10% Off)"
-                : currency === "CHF"
-                ? "CHF225/month CHF2,430/year (10% Off)"
-                : currency === "CNY"
-                ? "¥1,750/month ¥18,900/year (10% Off)"
-                : currency === "JPY"
-                ? "¥36,750/month ¥3,96,900/year (10% Off)"
-                : currency === "NZD"
-                ? "NZ$417/month NZ$4,508/year (10% Off)"
-                : currency === "SEK"
-                ? "Skr2,625/month Skr28,350/year (10% Off)"
-                : currency === "NOK"
-                ? "Nkr2,600/month Nkr28,080/year (10% Off)"
-                : currency === "DKK"
-                ? "Dkr1,712/month Dkr18,480/year (10% Off)"
-                : currency === "THB"
-                ? "฿8,875/month ฿95,850/year (10% Off)"
-                : currency === "MYR"
-                ? "RM1,168/month RM12,636/year (10% Off)"
-                : currency === "PHP"
-                ? "₱14,150/month ₱1,52,880/year (10% Off)"
-                : currency === "RUB"
-                ? "₽23,250/month ₽2,51,400/year (10% Off)"
-                : "$100/month $1,200/year",
+                  ? "$250/month $2,700/year (10% Off)"
+                  : currency === "EUR"
+                    ? "€250/month €2,700/year (10% Off)"
+                    : currency === "GBP"
+                      ? "£200/month £2,160/year (10% Off)"
+                      : currency === "AED"
+                        ? "د.إ1,000/month د.إ10,800/year (10% Off)"
+                        : currency === "AUD"
+                          ? "AU$383/month AU$4,130/year (10% Off)"
+                          : currency === "CAD"
+                            ? "CA$342/month CA$3,696/year (10% Off)"
+                            : currency === "SGD"
+                              ? "S$338/month S$3,645/year (10% Off)"
+                              : currency === "HKD"
+                                ? "HK$1,938/month HK$20,088/year (10% Off)"
+                                : currency === "CHF"
+                                  ? "CHF225/month CHF2,430/year (10% Off)"
+                                  : currency === "CNY"
+                                    ? "¥1,750/month ¥18,900/year (10% Off)"
+                                    : currency === "JPY"
+                                      ? "¥36,750/month ¥3,96,900/year (10% Off)"
+                                      : currency === "NZD"
+                                        ? "NZ$417/month NZ$4,508/year (10% Off)"
+                                        : currency === "SEK"
+                                          ? "Skr2,625/month Skr28,350/year (10% Off)"
+                                          : currency === "NOK"
+                                            ? "Nkr2,600/month Nkr28,080/year (10% Off)"
+                                            : currency === "DKK"
+                                              ? "Dkr1,712/month Dkr18,480/year (10% Off)"
+                                              : currency === "THB"
+                                                ? "฿8,875/month ฿95,850/year (10% Off)"
+                                                : currency === "MYR"
+                                                  ? "RM1,168/month RM12,636/year (10% Off)"
+                                                  : currency === "PHP"
+                                                    ? "₱14,150/month ₱1,52,880/year (10% Off)"
+                                                    : currency === "RUB"
+                                                      ? "₽23,250/month ₽2,51,400/year (10% Off)"
+                                                      : "$100/month $1,200/year",
             hasStar: false,
           },
           Premium: {
@@ -769,44 +769,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹40,000/month ₹4,32,000/year (10% Off)"
                 : currency === "USD"
-                ? "$500/month $5,400/year (10% Off)"
-                : currency === "EUR"
-                ? "€500/month €5,400/year (10% Off)"
-                : currency === "GBP"
-                ? "£400/month £4,320/year (10% Off)"
-                : currency === "AED"
-                ? "د.إ2,000/month د.إ21,600/year (10% Off)"
-                : currency === "AUD"
-                ? "AU$765/month AU$8,260/year (10% Off)"
-                : currency === "CAD"
-                ? "CA$684/month CA$7,392/year (10% Off)"
-                : currency === "SGD"
-                ? "S$676/month S$7,290/year (10% Off)"
-                : currency === "HKD"
-                ? "HK$3,875/month HK$40,176/year (10% Off)"
-                : currency === "CHF"
-                ? "CHF450/month CHF4,860/year (10% Off)"
-                : currency === "CNY"
-                ? "¥3,500/month ¥37,800/year (10% Off)"
-                : currency === "JPY"
-                ? "¥73,500/month ¥7,93,800/year (10% Off)"
-                : currency === "NZD"
-                ? "NZ$833/month NZ$9,016/year (10% Off)"
-                : currency === "SEK"
-                ? "Skr5,250/month Skr56,700/year (10% Off)"
-                : currency === "NOK"
-                ? "Nkr5,200/month Nkr56,160/year (10% Off)"
-                : currency === "DKK"
-                ? "Dkr3,424/month Dkr36,960/year (10% Off)"
-                : currency === "THB"
-                ? "฿17,750/month ฿1,91,700/year (10% Off)"
-                : currency === "MYR"
-                ? "RM2,336/month RM24,972/year (10% Off)"
-                : currency === "PHP"
-                ? "₱28,300/month ₱3,05,760/year (10% Off)"
-                : currency === "RUB"
-                ? "₽46,500/month ₽5,02,800/year (10% Off)"
-                : "$200/month $2,400/year",
+                  ? "$500/month $5,400/year (10% Off)"
+                  : currency === "EUR"
+                    ? "€500/month €5,400/year (10% Off)"
+                    : currency === "GBP"
+                      ? "£400/month £4,320/year (10% Off)"
+                      : currency === "AED"
+                        ? "د.إ2,000/month د.إ21,600/year (10% Off)"
+                        : currency === "AUD"
+                          ? "AU$765/month AU$8,260/year (10% Off)"
+                          : currency === "CAD"
+                            ? "CA$684/month CA$7,392/year (10% Off)"
+                            : currency === "SGD"
+                              ? "S$676/month S$7,290/year (10% Off)"
+                              : currency === "HKD"
+                                ? "HK$3,875/month HK$40,176/year (10% Off)"
+                                : currency === "CHF"
+                                  ? "CHF450/month CHF4,860/year (10% Off)"
+                                  : currency === "CNY"
+                                    ? "¥3,500/month ¥37,800/year (10% Off)"
+                                    : currency === "JPY"
+                                      ? "¥73,500/month ¥7,93,800/year (10% Off)"
+                                      : currency === "NZD"
+                                        ? "NZ$833/month NZ$9,016/year (10% Off)"
+                                        : currency === "SEK"
+                                          ? "Skr5,250/month Skr56,700/year (10% Off)"
+                                          : currency === "NOK"
+                                            ? "Nkr5,200/month Nkr56,160/year (10% Off)"
+                                            : currency === "DKK"
+                                              ? "Dkr3,424/month Dkr36,960/year (10% Off)"
+                                              : currency === "THB"
+                                                ? "฿17,750/month ฿1,91,700/year (10% Off)"
+                                                : currency === "MYR"
+                                                  ? "RM2,336/month RM24,972/year (10% Off)"
+                                                  : currency === "PHP"
+                                                    ? "₱28,300/month ₱3,05,760/year (10% Off)"
+                                                    : currency === "RUB"
+                                                      ? "₽46,500/month ₽5,02,800/year (10% Off)"
+                                                      : "$200/month $2,400/year",
             hasStar: false,
           },
           enterprise: {
@@ -830,44 +830,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹850/user/month"
                 : currency === "USD"
-                ? "$10/user/month"
-                : currency === "EUR"
-                ? "€10/user/month"
-                : currency === "GBP"
-                ? "£8/user/month"
-                : currency === "AED"
-                ? "د.إ36.7/user/month"
-                : currency === "AUD"
-                ? "AU$15.3/user/month"
-                : currency === "CAD"
-                ? "CA$13.7/user/month"
-                : currency === "SGD"
-                ? "S$13.5/user/month"
-                : currency === "HKD"
-                ? "HK$77.5/user/month"
-                : currency === "CHF"
-                ? "CHF9/user/month"
-                : currency === "CNY"
-                ? "¥70/user/month"
-                : currency === "JPY"
-                ? "¥1,470/user/month"
-                : currency === "NZD"
-                ? "NZ$16.7/user/month"
-                : currency === "SEK"
-                ? "Skr105/user/month"
-                : currency === "NOK"
-                ? "Nkr104/user/month"
-                : currency === "DKK"
-                ? "Dkr68.5/user/month"
-                : currency === "THB"
-                ? "฿355/user/month"
-                : currency === "MYR"
-                ? "RM46.7/user/month"
-                : currency === "PHP"
-                ? "₱566/user/month"
-                : currency === "RUB"
-                ? "₽930/user/month"
-                : "$50/month",
+                  ? "$10/user/month"
+                  : currency === "EUR"
+                    ? "€10/user/month"
+                    : currency === "GBP"
+                      ? "£8/user/month"
+                      : currency === "AED"
+                        ? "د.إ36.7/user/month"
+                        : currency === "AUD"
+                          ? "AU$15.3/user/month"
+                          : currency === "CAD"
+                            ? "CA$13.7/user/month"
+                            : currency === "SGD"
+                              ? "S$13.5/user/month"
+                              : currency === "HKD"
+                                ? "HK$77.5/user/month"
+                                : currency === "CHF"
+                                  ? "CHF9/user/month"
+                                  : currency === "CNY"
+                                    ? "¥70/user/month"
+                                    : currency === "JPY"
+                                      ? "¥1,470/user/month"
+                                      : currency === "NZD"
+                                        ? "NZ$16.7/user/month"
+                                        : currency === "SEK"
+                                          ? "Skr105/user/month"
+                                          : currency === "NOK"
+                                            ? "Nkr104/user/month"
+                                            : currency === "DKK"
+                                              ? "Dkr68.5/user/month"
+                                              : currency === "THB"
+                                                ? "฿355/user/month"
+                                                : currency === "MYR"
+                                                  ? "RM46.7/user/month"
+                                                  : currency === "PHP"
+                                                    ? "₱566/user/month"
+                                                    : currency === "RUB"
+                                                      ? "₽930/user/month"
+                                                      : "$50/month",
             hasStar: false,
           },
           standard: {
@@ -875,44 +875,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹1275/user/month"
                 : currency === "USD"
-                ? "$15/user/month"
-                : currency === "EUR"
-                ? "€15/user/month"
-                : currency === "GBP"
-                ? "£12/user/month"
-                : currency === "AED"
-                ? "د.إ55.05/user/month"
-                : currency === "AUD"
-                ? "AU$23/user/month"
-                : currency === "CAD"
-                ? "CA$20.55/user/month"
-                : currency === "SGD"
-                ? "S$20.25/user/month"
-                : currency === "HKD"
-                ? "HK$116.25/user/month"
-                : currency === "CHF"
-                ? "CHF13.5/user/month"
-                : currency === "CNY"
-                ? "¥105/user/month"
-                : currency === "JPY"
-                ? "¥2,205/user/month"
-                : currency === "NZD"
-                ? "NZ$25/user/month"
-                : currency === "SEK"
-                ? "Skr157.5/user/month"
-                : currency === "NOK"
-                ? "Nkr156/user/month"
-                : currency === "DKK"
-                ? "Dkr102.75/user/month"
-                : currency === "THB"
-                ? "฿532.5/user/month"
-                : currency === "MYR"
-                ? "RM70.1/user/month"
-                : currency === "PHP"
-                ? "₱849/user/month"
-                : currency === "RUB"
-                ? "₽1,395/user/month"
-                : "$75/month",
+                  ? "$15/user/month"
+                  : currency === "EUR"
+                    ? "€15/user/month"
+                    : currency === "GBP"
+                      ? "£12/user/month"
+                      : currency === "AED"
+                        ? "د.إ55.05/user/month"
+                        : currency === "AUD"
+                          ? "AU$23/user/month"
+                          : currency === "CAD"
+                            ? "CA$20.55/user/month"
+                            : currency === "SGD"
+                              ? "S$20.25/user/month"
+                              : currency === "HKD"
+                                ? "HK$116.25/user/month"
+                                : currency === "CHF"
+                                  ? "CHF13.5/user/month"
+                                  : currency === "CNY"
+                                    ? "¥105/user/month"
+                                    : currency === "JPY"
+                                      ? "¥2,205/user/month"
+                                      : currency === "NZD"
+                                        ? "NZ$25/user/month"
+                                        : currency === "SEK"
+                                          ? "Skr157.5/user/month"
+                                          : currency === "NOK"
+                                            ? "Nkr156/user/month"
+                                            : currency === "DKK"
+                                              ? "Dkr102.75/user/month"
+                                              : currency === "THB"
+                                                ? "฿532.5/user/month"
+                                                : currency === "MYR"
+                                                  ? "RM70.1/user/month"
+                                                  : currency === "PHP"
+                                                    ? "₱849/user/month"
+                                                    : currency === "RUB"
+                                                      ? "₽1,395/user/month"
+                                                      : "$75/month",
             hasStar: false,
           },
           Premium: {
@@ -920,44 +920,44 @@ const NewPricing = () => {
               currency === "INR"
                 ? "₹2125/user/month"
                 : currency === "USD"
-                ? "$25/user/month"
-                : currency === "EUR"
-                ? "€25/user/month"
-                : currency === "GBP"
-                ? "£20/user/month"
-                : currency === "AED"
-                ? "د.إ91.75/user/month"
-                : currency === "AUD"
-                ? "AU$38.25/user/month"
-                : currency === "CAD"
-                ? "CA$34.25/user/month"
-                : currency === "SGD"
-                ? "S$33.75/user/month"
-                : currency === "HKD"
-                ? "HK$193.75/user/month"
-                : currency === "CHF"
-                ? "CHF22.5/user/month"
-                : currency === "CNY"
-                ? "¥175/user/month"
-                : currency === "JPY"
-                ? "¥3,675/user/month"
-                : currency === "NZD"
-                ? "NZ$41.75/user/month"
-                : currency === "SEK"
-                ? "Skr262.5/user/month"
-                : currency === "NOK"
-                ? "Nkr260/user/month"
-                : currency === "DKK"
-                ? "Dkr171.25/user/month"
-                : currency === "THB"
-                ? "฿887.5/user/month"
-                : currency === "MYR"
-                ? "RM116.75/user/month"
-                : currency === "PHP"
-                ? "₱1,415/user/month"
-                : currency === "RUB"
-                ? "₽2,325/user/month"
-                : "$100/month",
+                  ? "$25/user/month"
+                  : currency === "EUR"
+                    ? "€25/user/month"
+                    : currency === "GBP"
+                      ? "£20/user/month"
+                      : currency === "AED"
+                        ? "د.إ91.75/user/month"
+                        : currency === "AUD"
+                          ? "AU$38.25/user/month"
+                          : currency === "CAD"
+                            ? "CA$34.25/user/month"
+                            : currency === "SGD"
+                              ? "S$33.75/user/month"
+                              : currency === "HKD"
+                                ? "HK$193.75/user/month"
+                                : currency === "CHF"
+                                  ? "CHF22.5/user/month"
+                                  : currency === "CNY"
+                                    ? "¥175/user/month"
+                                    : currency === "JPY"
+                                      ? "¥3,675/user/month"
+                                      : currency === "NZD"
+                                        ? "NZ$41.75/user/month"
+                                        : currency === "SEK"
+                                          ? "Skr262.5/user/month"
+                                          : currency === "NOK"
+                                            ? "Nkr260/user/month"
+                                            : currency === "DKK"
+                                              ? "Dkr171.25/user/month"
+                                              : currency === "THB"
+                                                ? "฿887.5/user/month"
+                                                : currency === "MYR"
+                                                  ? "RM116.75/user/month"
+                                                  : currency === "PHP"
+                                                    ? "₱1,415/user/month"
+                                                    : currency === "RUB"
+                                                      ? "₽2,325/user/month"
+                                                      : "$100/month",
             hasStar: false,
           },
           enterprise: {
@@ -1609,7 +1609,7 @@ const NewPricing = () => {
     } else {
       setContents1(contents);
     }
-  }, [cloudOrSelf,contents]);
+  }, [cloudOrSelf, contents]);
 
   const [selectedPlan, setSelectedPlan] = useState("Premium");
 
@@ -1815,55 +1815,55 @@ const NewPricing = () => {
                 </div>
               </div>
               <div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-    marginRight: "10px",
-  }}
->
-<div
-            style={{
-              // fontSize: "18px",
-              // lineHeight: "30px",
-              display: "flex",
-              alignItems: "center",
-              width: "100%",
-              gap: "20px",
-              justifyContent: "center",
-              margin: 0,
-            }}
-          >
-            <h4>Pick your currency</h4>
-  <Select
-    defaultValue={currency}
-    style={{ width: "100px", position: "relative" }}
-    onChange={handleCurrency}
-  >
-    <Option value="INR">INR</Option>
-    <Option value="USD">USD</Option>
-    <Option value="EUR">EUR</Option>
-    <Option value="GBP">GBP</Option>
-    <Option value="AED">AED</Option>
-    <Option value="AUD">AUD</Option>
-    <Option value="CAD">CAD</Option>
-    <Option value="SGD">SGD</Option>
-    <Option value="HKD">HKD</Option>
-    <Option value="CHF">CHF</Option>
-    <Option value="CNY">CNY</Option>
-    <Option value="JPY">JPY</Option>
-    <Option value="NZD">NZD</Option>
-    <Option value="SEK">SEK</Option>
-    <Option value="NOK">NOK</Option>
-    <Option value="DKK">DKK</Option>
-    <Option value="THB">THB</Option>
-    <Option value="MYR">MYR</Option>
-    <Option value="PHP">PHP</Option>
-    <Option value="RUB">RUB</Option>
-  </Select>
-  </div>
-</div>
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                  marginRight: "10px",
+                }}
+              >
+                <div
+                  style={{
+                    // fontSize: "18px",
+                    // lineHeight: "30px",
+                    display: "flex",
+                    alignItems: "center",
+                    width: "100%",
+                    gap: "20px",
+                    justifyContent: "center",
+                    margin: 0,
+                  }}
+                >
+                  <h4>Pick your currency</h4>
+                  <Select
+                    defaultValue={currency}
+                    style={{ width: "100px", position: "relative" }}
+                    onChange={handleCurrency}
+                  >
+                    <Option value="INR">INR</Option>
+                    <Option value="USD">USD</Option>
+                    <Option value="EUR">EUR</Option>
+                    <Option value="GBP">GBP</Option>
+                    <Option value="AED">AED</Option>
+                    <Option value="AUD">AUD</Option>
+                    <Option value="CAD">CAD</Option>
+                    <Option value="SGD">SGD</Option>
+                    <Option value="HKD">HKD</Option>
+                    <Option value="CHF">CHF</Option>
+                    <Option value="CNY">CNY</Option>
+                    <Option value="JPY">JPY</Option>
+                    <Option value="NZD">NZD</Option>
+                    <Option value="SEK">SEK</Option>
+                    <Option value="NOK">NOK</Option>
+                    <Option value="DKK">DKK</Option>
+                    <Option value="THB">THB</Option>
+                    <Option value="MYR">MYR</Option>
+                    <Option value="PHP">PHP</Option>
+                    <Option value="RUB">RUB</Option>
+                  </Select>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1948,8 +1948,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
@@ -1974,8 +1974,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
@@ -1993,8 +1993,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
@@ -2044,19 +2044,19 @@ const NewPricing = () => {
                       style={{
                         border:
                           content.button1 === "Free" ||
-                          content.button1 === "Enterprise"
+                            content.button1 === "Enterprise"
                             ? ""
                             : content.isSwitchOn
-                            ? "2px solid #1D4965"
-                            : "1px solid grey",
+                              ? "2px solid #1D4965"
+                              : "1px solid grey",
                         borderRadius:
                           content.button1 === "Free" ||
-                          content.button1 === "Enterprise"
+                            content.button1 === "Enterprise"
                             ? ""
                             : "30px",
                         width:
                           content.button1 === "Free" ||
-                          content.button1 === "Enterprise"
+                            content.button1 === "Enterprise"
                             ? ""
                             : "110px",
                         textAlign: "center",
@@ -2077,10 +2077,10 @@ const NewPricing = () => {
                         {content.button1 === "Free"
                           ? " "
                           : content.button1 === "Enterprise"
-                          ? " "
-                          : content.isSwitchOn === true
-                          ? "10% SAVING"
-                          : "10% SAVING"}
+                            ? " "
+                            : content.isSwitchOn === true
+                              ? "10% SAVING"
+                              : "10% SAVING"}
                       </p>
                     </div>
                   </div>
@@ -2091,8 +2091,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
@@ -2106,8 +2106,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                       height: content.id === "5" ? "230px" : "220px",
                     }}
@@ -2140,8 +2140,8 @@ const NewPricing = () => {
                         selectedPlan === "Premium"
                           ? "static"
                           : content.id === "4"
-                          ? "relative"
-                          : "static",
+                            ? "relative"
+                            : "static",
                       top: selectedPlan === "Premium" ? "" : "-20px",
                     }}
                   >
@@ -2215,7 +2215,7 @@ const NewPricing = () => {
                 className={styles.Featurehead}
               >
                 <div style={FeatureColStyle1}>
-                  <h5 style={{color: "white" }}>Features</h5>
+                  <h5 style={{ color: "white" }}>Features</h5>
                 </div>
                 {/* {cloudOrSelf === "Cloud" && (
                   <div style={FreeColStyle}>
@@ -2265,45 +2265,43 @@ const NewPricing = () => {
                 <div className={styles.ColStyle}>
                   <div className={styles.signUpbtn}>
                     <Link
-                      legacyBehavior
-                      href={`https://app.digisquares.com/register?scheme=Starter&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`}
+
+                      href={`https://app.digisquares.com/register?scheme=Starter&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`} rel="nofollow"
                     >
-                      <a rel="nofollow">Start a Trial </a>
+                      Start a Trial
                     </Link>
                   </div>
                 </div>
                 <div className={styles.ColStyle}>
                   <div className={styles.signUpbtn}>
                     <Link
-                      legacyBehavior
-                      href={`https://app.digisquares.com/register?scheme=Standard&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`}
+
+                      href={`https://app.digisquares.com/register?scheme=Standard&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`} rel="nofollow"
                     >
-                      <a rel="nofollow">Start a Trial </a>
+                      Start a Trial
                     </Link>
                   </div>
                 </div>
                 <div className={styles.ColStyle}>
                   <div className={styles.signUpbtn}>
                     <Link
-                      legacyBehavior
-                      href={`https://app.digisquares.com/register?scheme=Premium&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`}
+
+                      href={`https://app.digisquares.com/register?scheme=Premium&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`} rel="nofollow"
                     >
-                      <a rel="nofollow">Start a Trial </a>
+                      Start a Trial
                     </Link>
                   </div>
                 </div>
                 <div className={styles.ColStyle}>
                   <div className={styles.signInBtn}>
                     <Link
-                      legacyBehavior
-                      href={`https://app.digisquares.com/register?scheme=Enterprise&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`}
+
+                      href={`https://app.digisquares.com/register?scheme=Enterprise&plan=Monthly&currency=${currency}&host=${cloudOrSelf}&isactive=1`} className={styles.CompareFeaturesDivStyle}
+                      rel="nofollow"
                     >
-                      <a
-                        className={styles.CompareFeaturesDivStyle}
-                        rel="nofollow"
-                      >
-                        Book a demo
-                      </a>
+
+                      Book a demo
+
                     </Link>
                   </div>
                 </div>
@@ -2404,7 +2402,7 @@ const NewPricing = () => {
                 display: "flex",
               }}
             >
-              <h2 style={{ width: "32%"}}>Pricing Plan:</h2>
+              <h2 style={{ width: "32%" }}>Pricing Plan:</h2>
               <Select
                 defaultValue={planSelected}
                 onChange={(e) => handlePlanChange(e)}
@@ -2454,7 +2452,7 @@ const NewPricing = () => {
           </div>
 
           <div className={styles.FAQ}>
-            <h2 style={{color: "black" }}>
+            <h2 style={{ color: "black" }}>
               Frequently Asked Questions
             </h2>
             <div className={styles.custom_collapse}>

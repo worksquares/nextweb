@@ -145,7 +145,7 @@ export const BlogLists: IBlogData[] = [
   {
     Title: "Effective Ways for Business Growth",
     URL: "/WaysforBusinessGrowth",
-    Img: "/assets/CloudEnabledAI Main.webp",
+    Img: "/assets/CloudEnabledAI%20Main.webp",
     Desc: "4 Effective Ways to Harness Digitalization for Business Growth",
     Tagname: ["Cloud Management", "AI and Automation"],
     Latest: false,

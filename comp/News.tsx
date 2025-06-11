@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import styles from "../styles/comp/News.module.css";
 
 const News = () => {
@@ -9,7 +8,7 @@ const News = () => {
         <div className={styles.item5}>
           <h2>What’s new at Digisquares</h2>
           <span>
-            <Link legacyBehavior href="/more/Blog">See All News</Link>
+            <Link href="/more/Blog">See All News</Link>
           </span>
         </div>
       </div>

@@ -27,16 +27,16 @@ const SmallMenu = () => {
           <span className={styles.navicon}></span>
         </label>
         <div>
-          <Link href="/" legacyBehavior>
-            <a className={styles.newlogocontiner}>
-              <Image
-                src="/assets/DigisLogo.svg"
-                alt="Digi-Logo-white"
-                layout="intrinsic"
-                width="200"
-                height="200"
-              />
-            </a>
+          <Link href="/"
+            className={styles.newlogocontiner}>
+            <Image
+              src="/assets/DigisLogo.svg"
+              alt="Digi-Logo-white"
+              layout="intrinsic"
+              width="200"
+              height="200"
+            />
+
           </Link>
         </div>
 

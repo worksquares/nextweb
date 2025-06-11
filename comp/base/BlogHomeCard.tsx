@@ -24,15 +24,15 @@ const BlogHomeCard = ({
 }: BlogHomeheaderProps) => {
   return (
     <div className={Styles.LeftHome}>
-      <Link legacyBehavior href={`/blog${links}`}>
-        <a>
-          {/* {title && (
+      <Link href={`/blog${links}`}>
+
+        {/* {title && (
             <h2>
               <span>{title}</span>
             </h2>
           )} */}
-          <div className={Styles.BigImageComp}>
-            {/* <picture>
+        <div className={Styles.BigImageComp}>
+          {/* <picture>
               <source
                 media="(min-width: 1700px)"
                 srcSet={img1700 != null ? img1700 : img320}
@@ -46,7 +46,7 @@ const BlogHomeCard = ({
                 srcSet={img768 != null ? img768 : img320}
               />
               <source media="(min-width: 320px)" srcSet={img320} /> */}
-            {/* <Images
+          {/* <Images
                 alt="sds"
                 layout="intrinsic"
                 width="1500"
@@ -60,7 +60,7 @@ const BlogHomeCard = ({
                   // border: "1px solid red",
                 }}
               ></Images> */}
-              {img320 && (
+          {img320 && (
             <CustomImage
               type="blogsMain"
               src={img320}
@@ -68,11 +68,11 @@ const BlogHomeCard = ({
               className={Styles.cardImage}
             />
           )}
-            {/* </picture> */}
-            <></>
-            <p className={Styles.BigImageDesc}>{para}</p>
-          </div>
-        </a>
+          {/* </picture> */}
+          <></>
+          <p className={Styles.BigImageDesc}>{para}</p>
+        </div>
+
       </Link>
     </div>
   );

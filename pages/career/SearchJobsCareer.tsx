@@ -1,8 +1,6 @@
-import React from "react";
-import styles from "../../styles/career/SearchJobs.module.css";
 import Link from "next/link";
+import styles from "../../styles/career/SearchJobs.module.css";
 
-import Head from "next/head";
 import Images from "../../comp/base/Images";
 import Headseo from "../headseo";
 
@@ -69,64 +67,64 @@ const SearchJobsCareer = () => {
             <div className={styles.JobsLinksContainer}>
               <div className={styles.LinksBox1}>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Dir, Head Of Corporate Strategy (North Asia)</a>
+                  <Link href="/Careers/JobSelection">
+                    Dir, Head Of Corporate Strategy (North Asia)
                   </Link>
                   <p>Singapore, Singapore</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Senior Manager, Customer Contract Enablement</a>
+                  <Link href="/Careers/JobSelection">
+                    Senior Manager, Customer Contract Enablement
                   </Link>
                   <p>Dublin, Ireland</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Senior Partner Maturity Specialist</a>
+                  <Link href="/Careers/JobSelection">
+                    Senior Partner Maturity Specialist
                   </Link>
                   <p>Hyderabad, India</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Senior Manager, Business Strategy & Operations - SECURITY/ITOM</a>
+                  <Link href="/Careers/JobSelection">
+                    Senior Manager, Business Strategy & Operations - SECURITY/ITOM
                   </Link>
                   <p>San Francisco, California</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Sr Associate, Corporate Development</a>
+                  <Link href="/Careers/JobSelection">
+                    Sr Associate, Corporate Development
                   </Link>
                   <p>Santa Clara, California</p>
                 </div>
               </div>
               <div className={styles.LinksBox2}>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Manager, Corporate Development</a>
+                  <Link href="/Careers/JobSelection">
+                    Manager, Corporate Development
                   </Link>
                   <p>Santa Clara, California</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Senior Business Analyst – GTM Programs & Excellence</a>
+                  <Link href="/Careers/JobSelection">
+                    Senior Business Analyst – GTM Programs & Excellence
                   </Link>
                   <p>Dublin, Ireland</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Director, Product Platform Strategy & Business Operations</a>
+                  <Link href="/Careers/JobSelection">
+                    Director, Product Platform Strategy & Business Operations
                   </Link>
                   <p>Santa Clara, California</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="/Careers/JobSelection">
-                    <a>Senior Business Analyst</a>
+                  <Link href="/Careers/JobSelection">
+                    Senior Business Analyst
                   </Link>
                   <p>Santa Clara, California</p>
                 </div>
                 <div className={styles.Links}>
-                  <Link legacyBehavior href="#">
-                    <a className={styles.showMoreJobs}>Show more jobs</a>
+                  <Link href="#"
+                    className={styles.showMoreJobs}>Show more jobs
                   </Link>
                 </div>
               </div>

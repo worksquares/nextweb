@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import BlogPostContent from "../../comp/BlogPostContent";
+import Link from "next/link";
+import { useState } from "react";
 import { BlogPostContainProps } from "../../comp/base/BlogPostCard";
 import { BlogRightContainProps } from "../../comp/base/BlogRightImgCard";
-import BlogRightImg from "../../comp/BlogRight";
 import { BlogTopicsContainProps } from "../../comp/base/BlogTopicsCard";
+import BaseLayout from "../../comp/BaseLayout";
+import { BlogLists } from "../../comp/BlogData";
+import BlogPostContent from "../../comp/BlogPostContent";
+import BlogRightImg from "../../comp/BlogRight";
 import BlogTopicContent from "../../comp/BlogTopicsContent";
+import Screen from "../../comp/Screen";
 import styles from "../../styles/Blog.module.css";
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Link from "next/link";
-import Screen from "../../comp/Screen";
-import { BlogLists } from "../../comp/BlogData";
 import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
 
 const CloudSecurityRisks = () => {
   let BlogTopicCardListData: BlogTopicsContainProps[] = [
@@ -172,8 +172,8 @@ const CloudSecurityRisks = () => {
             <input type="checkbox" className={styles.ddinput} id="test" />
             <ul className={styles.ddmenu}>
               <li>
-                <Link legacyBehavior href="/more/Blog">
-                  <a onClick={ChangeHome}>Home</a>
+                <Link href="/more/Blog" onClick={ChangeHome}>
+                  Home
                 </Link>
               </li>
             </ul>
@@ -184,8 +184,8 @@ const CloudSecurityRisks = () => {
             <Screen>
               <div className={styles.Blogs}>
                 <div className={styles.Blogsitems}>
-                  <Link legacyBehavior href="/more/Blog">
-                    <a className={styles.items}> Home </a>
+                  <Link href="/more/Blog" className={styles.items}>
+                    Home
                   </Link>
                 </div>
                 <form action="" className={styles.searchbar}>
@@ -209,10 +209,10 @@ const CloudSecurityRisks = () => {
               <BlogPostContent BlogPostCardPropsList={BlogPostListData} />
               <div className={Styles.AnotherLink}>
                 Also Read:
-                <Link legacyBehavior href="/assets/Books/hybridcloud.pdf">
-                  <a href="/assets/Books/hybridcloud.pdf" target="_blank">
-                    &nbsp;Things The Pandemic Taught Us About Cloud Computing
-                  </a>
+                <Link href="/assets/Books/hybridcloud.pdf" target="_blank">
+
+                  &nbsp;Things The Pandemic Taught Us About Cloud Computing
+
                 </Link>
               </div>
             </div>

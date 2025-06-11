@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "../../styles/legal/Sitemap.module.css";
+import Link from "next/link";
+import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
 import WebHeadergrid from "../../comp/WebHeadergrid";
 import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
-import Link from "next/link";
+import styles from "../../styles/legal/Sitemap.module.css";
 import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
-import BaseLayout from "../../comp/BaseLayout";
 
 const Sitemap = () => {
   let WebHeaderListData: WebsiteHeaderProps[] = [
@@ -308,35 +307,35 @@ const Sitemap = () => {
                   <li
                     className={`${styles.listitem} ${styles.CookiePolicylist1}`}
                   >
-                    <Link legacyBehavior href="/industry/FinancialServices/">
+                    <Link href="/industry/FinancialServices/">
                       Financial Services
                     </Link>
                   </li>
                   <li
                     className={`${styles.listitem} ${styles.CookiePolicylist1}`}
                   >
-                    <Link legacyBehavior href="/industry/Government/">
+                    <Link href="/industry/Government/">
                       Government
                     </Link>
                   </li>
                   <li
                     className={`${styles.listitem} ${styles.CookiePolicylist1}`}
                   >
-                    <Link legacyBehavior href="/industry/Medical/">
+                    <Link href="/industry/Medical/">
                       Healthcare
                     </Link>
                   </li>
                   <li
                     className={`${styles.listitem} ${styles.CookiePolicylist1}`}
                   >
-                    <Link legacyBehavior href="/industry/Education/">
+                    <Link href="/industry/Education/">
                       Higher Education
                     </Link>
                   </li>
                   <li
                     className={`${styles.listitem} ${styles.CookiePolicylist1}`}
                   >
-                    <Link legacyBehavior href="/industry/Manufacturing/">
+                    <Link href="/industry/Manufacturing/">
                       Manufacturing
                     </Link>
                   </li>
@@ -660,7 +659,7 @@ const Sitemap = () => {
               </div>
             </div>
           </Screen>
-          <Link legacyBehavior href={"/contact/ContactUs/"}>
+          <Link href={"/contact/ContactUs/"}>
             <div className={styles.FixedContainer}>
               <p className={styles.FixedOption}>Contact</p>
               {/* <p className={styles.FixedOption}>Demo</p> */}

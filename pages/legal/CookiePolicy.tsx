@@ -1,11 +1,10 @@
-import React from "react";
-import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
-import styles from "../../styles/legal/CookiePolicy.module.css";
-import WebHeadergrid from "../../comp/WebHeadergrid";
-import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
 import Link from "next/link";
+import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
 import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import WebHeadergrid from "../../comp/WebHeadergrid";
+import styles from "../../styles/legal/CookiePolicy.module.css";
+import Headseo from "../headseo";
 
 const PrivacyStatement = () => {
   let WebHeaderListData: WebsiteHeaderProps[] = [
@@ -223,7 +222,7 @@ const PrivacyStatement = () => {
                  <a href="#" target="_blank" className={`${styles.Carditem} ${styles.listalign}`}>Trademarks</a>
                </div>
              </div> */}
-          <Link legacyBehavior href={"/contact/ContactUs/"}>
+          <Link href={"/contact/ContactUs/"}>
             <div className={styles.FixedContainer}>
               <p className={styles.FixedOption}>Contact</p>
               {/* <p className={styles.FixedOption}>Demo</p> */}

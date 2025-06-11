@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import styles from "../../styles/comp/core/ImageCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../../styles/comp/core/ImageCard.module.css";
 
 export interface CardProps {
   image: string;
@@ -16,28 +15,28 @@ const ImageCardsGrid = ({ image, category, heading, description, link, linktext 
   return (
     <div>
       <div className={styles.CardContainerNew}>
-        <Link legacyBehavior href={link}>
-          <a target="_blank">
-            <div className={`${styles.Card1} ${styles.cardNew}`}>
-              <div className={styles.ImageHoverContainer}>
-                <Image
-                  className={styles.Imagehoverzoom}
-                  src={image}
-                  width="900"
-                  height="200"
-                  alt="BookImage"
-                  unoptimized={true}
-                />
-              </div>
-              <div className={styles.CardInfo}>
-                <p className={styles.CardInfoCategory}>{category}</p>
-                <h3>{heading}</h3>
-                <p className={styles.CardInfodescription}>{description}</p>
-                {/* <p className={styles.DownloadInfo}>Download the book</p> */}
-                <p className={styles.DownloadInfo}>{linktext}</p>
-              </div>
+        <Link href={link}>
+
+          <div className={`${styles.Card1} ${styles.cardNew}`}>
+            <div className={styles.ImageHoverContainer}>
+              <Image
+                className={styles.Imagehoverzoom}
+                src={image}
+                width="900"
+                height="200"
+                alt="BookImage"
+                unoptimized={true}
+              />
             </div>
-          </a>
+            <div className={styles.CardInfo}>
+              <p className={styles.CardInfoCategory}>{category}</p>
+              <h3>{heading}</h3>
+              <p className={styles.CardInfodescription}>{description}</p>
+              {/* <p className={styles.DownloadInfo}>Download the book</p> */}
+              <p className={styles.DownloadInfo}>{linktext}</p>
+            </div>
+          </div>
+
         </Link>
       </div>
       {/* ------------------------------------------------ */}

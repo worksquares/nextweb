@@ -1,6 +1,6 @@
+import Screen from "../comp/Screen";
 import Headseo from "../pages/headseo";
 import styles from '../styles/comp/Accelerate.module.css';
-import Screen from "../comp/Screen";
 import { LargeButton } from "./Button";
 
 
@@ -92,7 +92,7 @@ export default AccelerateSection;
 //           </h4>
 
 //           <div className={styles.GetStartedBtn}>
-//             <Link legacyBehavior href="https://app.digisquares.com/register">
+//             <Link  href="https://app.digisquares.com/register">
 //               <a rel="nofollow">
 //                 <div className={styles.buttonText}>Register</div>
 //               </a>

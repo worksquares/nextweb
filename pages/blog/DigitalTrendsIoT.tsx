@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import BlogPostContent from "../../comp/BlogPostContent";
+import Link from "next/link";
+import { useState } from "react";
 import { BlogPostContainProps } from "../../comp/base/BlogPostCard";
 import { BlogRightContainProps } from "../../comp/base/BlogRightImgCard";
-import BlogRightImg from "../../comp/BlogRight";
 import { BlogTopicsContainProps } from "../../comp/base/BlogTopicsCard";
+import BaseLayout from "../../comp/BaseLayout";
+import { BlogLists } from "../../comp/BlogData";
+import BlogPostContent from "../../comp/BlogPostContent";
+import BlogRightImg from "../../comp/BlogRight";
 import BlogTopicContent from "../../comp/BlogTopicsContent";
+import Screen from "../../comp/Screen";
 import styles from "../../styles/Blog.module.css";
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Link from "next/link";
-import Screen from "../../comp/Screen";
-import { BlogLists } from "../../comp/BlogData";
 import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
 
 const DigitalTrendsIoT = () => {
   let BlogTopicCardListData: BlogTopicsContainProps[] = [
@@ -141,8 +141,8 @@ const DigitalTrendsIoT = () => {
             <input type="checkbox" className={styles.ddinput} id="test" />
             <ul className={styles.ddmenu}>
               <li>
-                <Link legacyBehavior href="/more/Blog">
-                  <a onClick={ChangeHome}>Home</a>
+                <Link href="/more/Blog" onClick={ChangeHome}>
+                  Home
                 </Link>
               </li>
             </ul>
@@ -153,8 +153,8 @@ const DigitalTrendsIoT = () => {
             <Screen>
               <div className={styles.Blogs}>
                 <div className={styles.Blogsitems}>
-                  <Link legacyBehavior href="/more/Blog">
-                    <a className={styles.items}> Home </a>
+                  <Link href="/more/Blog" className={styles.items}>
+                    Home
                   </Link>
                 </div>
                 <form action="" className={styles.searchbar}>
@@ -179,16 +179,13 @@ const DigitalTrendsIoT = () => {
               <div className={Styles.AnotherLink}>
                 Also Read:
                 <Link
-                  legacyBehavior
-                  href="/assets/Books/Digital Transformation of Procurement.pdf"
+
+                  href="/assets/Books/Digital Transformation of Procurement.pdf" target="_blank"
                 >
-                  <a
-                    href="/assets/Books/Digital Transformation of Procurement.pdf"
-                    target="_blank"
-                  >
-                    &nbsp;Learn more about the digital complexity paradigm and
-                    to experience a smooth digital transformation.
-                  </a>
+
+                  &nbsp;Learn more about the digital complexity paradigm and
+                  to experience a smooth digital transformation.
+
                 </Link>
               </div>
             </div>

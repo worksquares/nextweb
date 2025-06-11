@@ -217,8 +217,8 @@ const AIinServiceManagement = () => {
             <input type="checkbox" className={styles.ddinput} id="test" />
             <ul className={styles.ddmenu}>
               <li>
-                <Link legacyBehavior href="/more/Blog">
-                  <a onClick={ChangeHome}>Home</a>
+                <Link href="/more/Blog" onClick={ChangeHome}>
+                  Home
                 </Link>
               </li>
             </ul>
@@ -229,8 +229,8 @@ const AIinServiceManagement = () => {
             <Screen>
               <div className={styles.Blogs}>
                 <div className={styles.Blogsitems}>
-                  <Link legacyBehavior href="/more/Blog">
-                    <a className={styles.items}> Home </a>
+                  <Link href="/more/Blog" className={styles.items}>
+                    Home
                   </Link>
                 </div>
 
@@ -265,7 +265,7 @@ const AIinServiceManagement = () => {
             </div>
             <div className={Styles.BlogPostRight}>
               <BlogRightImg
-              BlogRightCardPropsList={BlogRightCardListData}
+                BlogRightCardPropsList={BlogRightCardListData}
               />
 
               <BlogTopicContent

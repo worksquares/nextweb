@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import BlogPostContent from "../../comp/BlogPostContent";
+import Link from "next/link";
+import { useState } from "react";
 import { BlogPostContainProps } from "../../comp/base/BlogPostCard";
 import { BlogRightContainProps } from "../../comp/base/BlogRightImgCard";
-import BlogRightImg from "../../comp/BlogRight";
 import { BlogTopicsContainProps } from "../../comp/base/BlogTopicsCard";
+import BaseLayout from "../../comp/BaseLayout";
+import { BlogLists } from "../../comp/BlogData";
+import BlogPostContent from "../../comp/BlogPostContent";
+import BlogRightImg from "../../comp/BlogRight";
 import BlogTopicContent from "../../comp/BlogTopicsContent";
+import Screen from "../../comp/Screen";
 import styles from "../../styles/Blog.module.css";
 import Styles from "../../styles/comp/core/BlogPostCard.module.css";
-import Link from "next/link";
-import Screen from "../../comp/Screen";
-import { BlogLists } from "../../comp/BlogData";
 import Headseo from "../headseo";
-import BaseLayout from "../../comp/BaseLayout";
 
 const CloudEnabledAI = () => {
   let BlogTopicCardListData: BlogTopicsContainProps[] = [
@@ -53,10 +53,10 @@ const CloudEnabledAI = () => {
       title: "How Cloud-Enabled AI will Drive Business Value in the Future",
       subtitle: "August 12, 2021",
       link: "#",
-      img1700: "/assets/CloudEnabledAI Main.webp",
-      img1024: "/assets/CloudEnabledAI Main.webp",
-      img768: "/assets/CloudEnabledAI Main.webp",
-      img320: "/assets/CloudEnabledAI Main.webp",
+      img1700: "/assets/CloudEnabledAI%20Main.webp",
+      img1024: "/assets/CloudEnabledAI%20Main.webp",
+      img768: "/assets/CloudEnabledAI%20Main.webp",
+      img320: "/assets/CloudEnabledAI%20Main.webp",
       paragraph: [
         {
           paragraphs:
@@ -68,7 +68,7 @@ const CloudEnabledAI = () => {
         },
         { subheading: "How AI is Driving Business Value Today" },
         {
-          subimages: "/assets/CloudEnabledAI 1.webp",
+          subimages: "/assets/CloudEnabledAI%201.webp",
         },
         {
           paragraphs:
@@ -82,7 +82,7 @@ const CloudEnabledAI = () => {
           subheading: "Choosing the Right Problems to Solve with AI",
         },
         {
-          subimages: "/assets/CloudEnabledAI 2.webp",
+          subimages: "/assets/CloudEnabledAI%201.webp",
         },
         {
           paragraphs:
@@ -113,7 +113,7 @@ const CloudEnabledAI = () => {
         blogheading={`How Cloud-Enabled AI will Drive Business Value in the Future`}
         blogdescription={`There are three major landmarks on the road to AI maturity.`}
         blogurl={`/blog/CloudEnabledAI`}
-        blogimg={`/assets/CloudEnabledAI Main.webp`}
+        blogimg={`/assets/CloudEnabledAI%20Main.webp`}
       />
       <BaseLayout>
         <div>
@@ -122,8 +122,8 @@ const CloudEnabledAI = () => {
             <input type="checkbox" className={styles.ddinput} id="test" />
             <ul className={styles.ddmenu}>
               <li>
-                <Link legacyBehavior href="/more/Blog">
-                  <a onClick={ChangeHome}>Home</a>
+                <Link href="/more/Blog" onClick={ChangeHome}>
+                  Home
                 </Link>
               </li>
             </ul>
@@ -134,8 +134,8 @@ const CloudEnabledAI = () => {
             <Screen>
               <div className={styles.Blogs}>
                 <div className={styles.Blogsitems}>
-                  <Link legacyBehavior href="/more/Blog">
-                    <a className={styles.items}>Home</a>
+                  <Link href="/more/Blog" className={styles.items}>
+                    Home
                   </Link>
                 </div>
                 <form action="" className={styles.searchbar}>

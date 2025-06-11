@@ -1,6 +1,4 @@
-import React from "react";
 import Styles from "../../styles/comp/core/BlogTopicsCard.module.css";
-import Link from "next/link";
 
 export interface BlogTopicsContainProps {
   title?: string;
@@ -36,14 +34,14 @@ const BlogTopicsCard = ({
               className={Styles.TopicLinks}
             >
               <li>
-                {/* <Link legacyBehavior href={`/blog${listcontent.links}`} passHref>
+                {/* <Link  href={`/blog${listcontent.links}`} passHref>
                   <a>{listcontent.lists}</a>
                 </Link> */}
                 <p>{listcontent.lists}</p>
               </li>
               {/* <ul className={styles.TopicLinks}>
                     <li>
-                      <Link legacyBehavior href="/solutions/ProcessAutomation/">
+                      <Link  href="/solutions/ProcessAutomation/">
                         <a>Process Automation</a>
                       </Link>
                     </li>

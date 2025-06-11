@@ -16,25 +16,22 @@ const MainFooter = () => {
                             Digisquares empowers businesses to thrive in the AI age by enabling them to create applications, deploy AI agents, and train custom AI models tailored to their specific use cases.
                         </p>
                         <div className={styles.socialIcons}>
-                            <Link href="https://www.facebook.com/digisquares/" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <Image src="/svg/footer/facebook.svg" alt="Facebook" width={20} height={20} />
-                                </a>
+                            <Link href="https://www.facebook.com/digisquares/" passHref target="_blank" rel="noopener noreferrer">
+
+                                <Image src="/svg/footer/facebook.svg" alt="Facebook" width={20} height={20} />
+
                             </Link>
-                            <Link href="https://www.youtube.com/channel/UC10Kqzxy547k75Kbnz-12hA/featured" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <Image src="/svg/footer/youtube.svg" alt="Youtube" width={25} height={25} />
-                                </a>
+                            <Link href="https://www.youtube.com/channel/UC10Kqzxy547k75Kbnz-12hA/featured" passHref target="_blank" rel="noopener noreferrer">
+                                <Image src="/svg/footer/youtube.svg" alt="Youtube" width={25} height={25} />
+
                             </Link>
-                            <Link href="https://twitter.com/digisquares" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <Image src="/svg/footer/twitter.svg" alt="Twitter" width={20} height={20} />
-                                </a>
+                            <Link href="https://twitter.com/digisquares" passHref target="_blank" rel="noopener noreferrer">
+                                <Image src="/svg/footer/twitter.svg" alt="Twitter" width={20} height={20} />
+
                             </Link>
-                            <Link href="https://in.linkedin.com/company/digisquares" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <Image src="/svg/footer/linkedin.svg" alt="Linkedin" width={20} height={20} />
-                                </a>
+                            <Link href="https://in.linkedin.com/company/digisquares" passHref target="_blank" rel="noopener noreferrer">
+                                <Image src="/svg/footer/linkedin.svg" alt="Linkedin" width={20} height={20} />
+
                             </Link>
                         </div>
                     </div>
@@ -100,7 +97,7 @@ const MainFooter = () => {
             <div className={styles.footerBottom}>
                 <div className={styles.footerBottomContent}>
                     {/* <div className={styles.footerLogo}>
-                        <Link href="/" passHref legacyBehavior>
+                        <Link href="/" passHref >
                             <a>
                                 <Image
                                     src="/assets/logo/Logo.svg"
@@ -113,8 +110,8 @@ const MainFooter = () => {
                         </Link>
                     </div> */}
                     {/* <div className={styles.linkPrivacy}> */}
-                            {/* <h3>Legal</h3> */}
-                            {/* <ul className={styles.footerLinksPrivacyList}>
+                    {/* <h3>Legal</h3> */}
+                    {/* <ul className={styles.footerLinksPrivacyList}>
                                 <li><Link href="/legal/Privacy">Privacy</Link></li>
                                 <li><Link href="/legal/Terms">Terms</Link></li>
                                 <li><Link href="/legal/CookiePolicy">Cookie policy</Link></li>

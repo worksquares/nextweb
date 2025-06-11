@@ -174,7 +174,7 @@ const AgentStudio = () => {
                 Design, personalize, and deploy AI-powered chatbots and voice agents with ease to enhance user interactions          </h5>
 
               {/* <div className={styles.GetStartedBtn}>
-          <Link legacyBehavior href="https://app.digisquares.com/register">
+          <Link  href="https://app.digisquares.com/register">
                   <a className={styles.registerButton} rel="nofollow">Register</a>
                    </Link>
 

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import React from "react";
 import styles from "../../styles/comp/core/LinkHover.module.css";
 import Images from "./Images";
 
@@ -25,7 +23,7 @@ const LinkHover = ({ icon, title, links }: LinkHoverProps) => {
         </div>
         <div className={styles.CardBoxHighlight}>
           {/* {links.map((alink) => (
-            <Link legacyBehavior href={alink.pagelink || "#"} key="a2">
+            <Link  href={alink.pagelink || "#"} key="a2">
               <a className={styles.LineAnimate} target="_blank">
                 {alink.link}
               </a>

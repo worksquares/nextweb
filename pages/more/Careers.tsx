@@ -1,14 +1,13 @@
-import React from "react";
-import styles from "../../styles/more/Career.module.css";
-import { TitleHoverProps } from "../../comp/base/TitleHover";
-import TitleHoverGrid from "../../comp/TitleHoverGrid";
-import { AnotherContainProps } from "../../comp/base/AnotherImgCard";
-import AnotherImgCardGrid from "../../comp/AnotherImg";
 import Link from "next/link";
+import AnotherImgCardGrid from "../../comp/AnotherImg";
+import { AnotherContainProps } from "../../comp/base/AnotherImgCard";
 import Images from "../../comp/base/Images";
-import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
+import { TitleHoverProps } from "../../comp/base/TitleHover";
 import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import TitleHoverGrid from "../../comp/TitleHoverGrid";
+import styles from "../../styles/more/Career.module.css";
+import Headseo from "../headseo";
 
 const Careers = () => {
   let TitleHoverGridData: TitleHoverProps[] = [
@@ -86,7 +85,7 @@ const Careers = () => {
                   </ul>
                 </nav>
                 <div className={styles.NavbarSideHeading}>
-                  <Link legacyBehavior href="/career/SearchJobsCareer">
+                  <Link href="/career/SearchJobsCareer">
                     <a>Search Jobs</a>
                   </Link>
                 </div>
@@ -378,25 +377,25 @@ const Careers = () => {
                 <div className={styles.FeaturedRolesLinkContainer}>
                   <h4>FEATURED ROLES</h4>
                   <div className={styles.LinkContainer}>
-                    <Link legacyBehavior href="/career/JuniorDeveloper/">
+                    <Link href="/career/JuniorDeveloper/">
                       Junior Software Developer
                     </Link>
-                    <Link legacyBehavior href="/career/WebDeveloper/">
+                    <Link href="/career/WebDeveloper/">
                       Web Development Internship
                     </Link>
-                    <Link legacyBehavior href="/career/JobSelect/">
+                    <Link href="/career/JobSelect/">
                       Front End Developer
                     </Link>
-                    <Link legacyBehavior href="/career/JobSelect/">
+                    <Link href="/career/JobSelect/">
                       Content Creator
                     </Link>
-                    <Link legacyBehavior href="/career/JobSelect/">
+                    <Link href="/career/JobSelect/">
                       Testing
                     </Link>
-                    <Link legacyBehavior href="/career/JobSelect/">
+                    <Link href="/career/JobSelect/">
                       Back End Developer
                     </Link>
-                    <Link legacyBehavior href="/career/JobSelect/">
+                    <Link href="/career/JobSelect/">
                       IT Services
                     </Link>
                   </div>
@@ -435,7 +434,7 @@ const Careers = () => {
               </Screen>
             </div>
           </span>
-     
+
         </div>
       </BaseLayout>
     </>

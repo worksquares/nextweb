@@ -4,7 +4,7 @@
   /* border: 1px solid green; */
   width: 100% !important;
   font-size: 20px;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
 }
 
 .BlogPostleft {
@@ -13,12 +13,12 @@
   width: 70%;
 }
 
-.BlogHeading > h1 {
+.BlogHeading > h2 {
   color: var(--badge-color);
   /* border: 1px solid red; */
-  margin: 10px;
+  margin: 30px;
   margin-left: 0px;
-  font-size: 33px;
+  font-size: 45px;
   font-weight: 600;
 }
 
@@ -89,6 +89,15 @@
   /* padding: 0px 60px; */
   margin: 20px 0px 80px 0px !important;
 }
+@media screen and (min-width: 1900px) {
+  .BlogHeading > h2 {
+    color: var(--badge-color);
+    /* border: 1px solid red; */
+    /* margin: 10px; */
+    margin-left: 0px;
+    font-size: 60px;
+  }
+}
 
 @media screen and (min-width: 1400px) {
   .BlogHeading > h1 {
@@ -96,7 +105,7 @@
     /* border: 1px solid red; */
     margin: 10px;
     margin-left: 0px;
-    font-size: 40px;
+    /* font-size: 40px; */
   }
 }
 .BlogsImg img{
@@ -127,7 +136,7 @@
 }
 
 .BlogPostHead h1 {
-  font-size: x-large;
+  /* font-size: x-large; */
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.3;
   letter-spacing: normal;
@@ -165,9 +174,9 @@
     margin-left: 0px;
     width: 100% !important;
   }
-  .BlogHeading > h1 {
+  /* .BlogHeading > h1 {
     font-size: 30px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -216,12 +225,12 @@
     width: auto;
     height: 260px !important;
   }
-  .BlogHeading > h1 {
+  /* .BlogHeading > h1 {
     font-size: 25px;
-  }
-  .Blogparas p {
+  } */
+  /* .Blogparas p {
     font-size: 15px;
-  }
+  } */
 }
 
 @media screen and (max-width: 550px) {
@@ -233,9 +242,9 @@
     height: 200px !important;
     /* border: 1px solid green; */
   }
-  .BlogsSubheading {
+  /* .BlogsSubheading {
     font-size: 20px;
-  }
+  } */
 }
 
 @media screen and (max-width: 430px) {
@@ -247,9 +256,9 @@
     height: 180px !important;
     /* border: 1px solid green; */
   }
-  .Blogparas p {
+  /* .Blogparas p {
     font-size: 14px;
-  }
+  } */
 }
 
 @media screen and (max-width: 360px) {
@@ -261,12 +270,12 @@
     height: 180px !important;
     /* border: 1px solid green; */
   }
-  .BlogHeading > h1 {
+  /* .BlogHeading > h1 {
     font-size: 20px;
-  }
-  .BlogsSubheading {
+  } */
+  /* .BlogsSubheading {
     font-size: 18px;
-  }
+  } */
 }
 
 @media screen and (max-width: 414px) {
@@ -281,7 +290,7 @@
     width: 130% !important;
   }
   .BlogPostHead h1 {
-    font-size: medium;
+    /* font-size: medium; */
     width: 100%;
     margin-top: 100px;
   }

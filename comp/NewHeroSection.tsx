@@ -65,10 +65,10 @@ const AgentSection = ({
             <div className={styles.content}>
               {renderContent(title, subtitle, description, styles)}
               <div className={styles.GetStartedBtn}>
-                <Link legacyBehavior href={onButtonClick}>
-                  <a rel="nofollow">
-                    <div className={styles.buttonText}>{buttonText}</div>
-                  </a>
+                <Link href={onButtonClick}>
+
+                  <div className={styles.buttonText}>{buttonText}</div>
+
                 </Link>
               </div>
             </div>

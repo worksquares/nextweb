@@ -66,7 +66,7 @@ const Custom404 = () => {
       linktext: "View the article",
     },
     {
-      image: "/assets/CloudEnabledAI Main.webp",
+      image: "/assets/CloudEnabledAI%20Main.webp",
       category: "CLOUD MANAGEMENT",
       heading: "Cloud Enabled AI",
       description: "How Cloud-Enabled AI will Drive Business Value in the Future.",

@@ -16,7 +16,7 @@ const ImageSingleRow = ({ image, category, title, description, link }: SingleRow
   return (
     <div>
       <div className={styles.CardContainerNew}>
-        <Link legacyBehavior href={link}>
+        <Link href={link}>
           <div className={`${styles.Card1} ${styles.cardNew}`}>
             <div className={styles.ImageHoverContainer}>
               <Image className={styles.Imagehoverzoom} src={image} width="900" height="200" alt="ResourcesBlogImage" unoptimized={true} />

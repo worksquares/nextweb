@@ -20,44 +20,40 @@ const BlogNewsCardGrid = ({
   image320,
   links,
 }: BlogRightContainProps) => {
-  let i = 0;
+  // Ensure fallback to a valid image
+  const fallbackImg = image320 || "/assets/fallback-image.webp";
+
   return (
     <div className={Styles.BlogRightImg}>
-      <Link legacyBehavior href={`/blog${links}`} passHref>
-        <div className={Styles.BlogRightContent}>
-          <h2>
-            <span>{title2}</span>
-          </h2>
-          <picture>
-            <source
-              media="(min-width: 1700px)"
-              srcSet={image1700 != null ? image1700 : image320}
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcSet={image1024 != null ? image1024 : image320}
-            />
-            <source
-              media="(min-width: 768px)"
-              srcSet={image768 != null ? image768 : image320}
-            />
-            <source media="(min-width: 320px)" srcSet={image320} />
-            <img
-              src={image320}
-              width="270px"
-              height="150px"
-              alt="BlogImage"
-              className={Styles.BlogRightImage}
-            />
-            {/* <CustomImage
-            type="blogSmall"
-            src={image320}
-            alt={title2 || "Image"}
-            className={Styles.BlogSmallImage}
-          /> */}
-          </picture>
-          <p>{paragraph}</p>
-        </div>
+      <Link href={`/blog${links || ""}`} passHref className={Styles.BlogRightContent}>
+        <h2>
+          <span>{title2 ?? ""}</span>
+        </h2>
+
+        <picture>
+          {image1700 && (
+            <source media="(min-width: 1700px)" srcSet={`${image1700}`} />
+          )}
+          {image1024 && (
+            <source media="(min-width: 1024px)" srcSet={`${image1024}`} />
+          )}
+          {image768 && (
+            <source media="(min-width: 768px)" srcSet={`${image768}`} />
+          )}
+          <source media="(min-width: 320px)" srcSet={fallbackImg} />
+          <img
+            src={fallbackImg}
+            width="270"
+            height="150"
+            alt="Blog Image"
+            className={Styles.BlogRightImage}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+
+        <p>{paragraph ?? ""}</p>
+
       </Link>
     </div>
   );

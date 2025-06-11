@@ -1,11 +1,10 @@
-import React from "react";
-import Headseo from "../headseo";
-import styles from "../../styles/legal/Terms.module.css";
-import WebHeadergrid from "../../comp/WebHeadergrid";
-import Screen from "../../comp/Screen";
-import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
 import Link from "next/link";
 import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import WebHeadergrid from "../../comp/WebHeadergrid";
+import { WebsiteHeaderProps } from "../../comp/base/WebsiteHeaderContent";
+import styles from "../../styles/legal/Terms.module.css";
+import Headseo from "../headseo";
 
 const RefundPolicy = () => {
   let WebHeaderListData: WebsiteHeaderProps[] = [
@@ -104,7 +103,7 @@ const RefundPolicy = () => {
               </div>
             </div>
           </Screen>
-          <Link legacyBehavior href={"/contact/ContactUs/"}>
+          <Link href={"/contact/ContactUs/"}>
             <div className={styles.FixedContainer}>
               <p className={styles.FixedOption}>Contact</p>
             </div>

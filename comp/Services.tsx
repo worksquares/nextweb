@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/nextweb/Services.module.css";
 import ImageCardsGrid from "./ImageCardsGrid";
 import { CardProps } from "./base/ImageCard";
@@ -62,7 +61,7 @@ const Services = () => {
       linktext: "View the article",
     },
     {
-      image: "/assets/CloudEnabledAI Main.webp",
+      image: "/assets/CloudEnabledAI%20Main.webp",
       category: "CLOUD MANAGEMENT",
       heading: "",
       description: "How Cloud-Enabled AI will Drive Business Value in the Future.",

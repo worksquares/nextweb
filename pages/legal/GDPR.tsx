@@ -1,9 +1,8 @@
-import React from "react";
-import styles from "../../styles/legal/GDPR.module.css";
-import Headseo from "../headseo";
-import Screen from "../../comp/Screen";
 import Link from "next/link";
 import BaseLayout from "../../comp/BaseLayout";
+import Screen from "../../comp/Screen";
+import styles from "../../styles/legal/GDPR.module.css";
+import Headseo from "../headseo";
 
 const GDPR = () => {
 
@@ -139,7 +138,7 @@ const GDPR = () => {
               </div>
             </div>
           </Screen>
-          <Link legacyBehavior href={"/contact/ContactUs/"}>
+          <Link href={"/contact/ContactUs/"}>
             <div className={styles.FixedContainer}>
               <p className={styles.FixedOption}>Contact</p>
               {/* <p className={styles.FixedOption}>Demo</p> */}

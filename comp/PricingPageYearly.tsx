@@ -1,7 +1,4 @@
-import React from "react";
 import styles from "../../styles/pricing/PricingPage.module.css";
-import Link from "next/link";
-import Head from "next/head";
 import Headseo from "../pages/headseo";
 
 const PricingPageYearly = () => {
@@ -39,7 +36,7 @@ const PricingPageYearly = () => {
               <span>&#10004;</span> <li> 1 user test result per project</li>
             </div>
           </ul>
-          {/* <Link legacyBehavior href="/">
+          {/* <Link  href="/">
             <a className={styles.PricingLink}>See all features</a>
           </Link> */}
         </div>
@@ -72,7 +69,7 @@ const PricingPageYearly = () => {
               <span>&#10004;</span> <li> Download code</li>
             </div>
           </ul>
-          {/* <Link legacyBehavior href="/">
+          {/* <Link  href="/">
             <a className={styles.PricingLink}>See all features</a>
           </Link> */}
         </div>
@@ -103,7 +100,7 @@ const PricingPageYearly = () => {
               <span>&#10004;</span> <li> Download prototypes and designs</li>
             </div>
           </ul>
-          {/* <Link legacyBehavior href="/">
+          {/* <Link  href="/">
             <a className={styles.PricingLink}>See all features</a>
           </Link> */}
         </div>
@@ -146,7 +143,7 @@ const PricingPageYearly = () => {
               <li> Pay by bank transfer/invoice</li>
             </div>
           </ul>
-          {/* <Link legacyBehavior href="/">
+          {/* <Link  href="/">
             <a className={styles.PricingLink}>See all features</a>
           </Link> */}
         </div>
