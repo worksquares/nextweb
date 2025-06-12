@@ -291,6 +291,7 @@ const Menu = () => {
                             text="Sign in"
                             bgColor="#FF0707"
                             color="#fff"
+                            onClick={() => window.location.href = "https://app.digisquares.com/login"}
                         />
                         {/* <Link href="https://app.digisquares.com/register" className={styles.signUpBtn}>
 
@@ -300,6 +301,8 @@ const Menu = () => {
                             text="Sign up"
                             bgColor="#000"
                             color="#fff"
+                            onClick={() => window.location.href = "https://app.digisquares.com/register"}
+
                         />
                     </div>
                 </div>
