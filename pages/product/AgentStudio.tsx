@@ -102,51 +102,68 @@ const agentCards = [
 // ];
 
 const cards = [
+
+  {
+    image: "/assets/slider/AIinAgentStudio_Slider.webp",
+    category: "AI AND AUTOMATION",
+    title: "AI in Agent Studio",
+    description:
+      "They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
+    moreLink: "/blog/AIinAgentStudio",
+  },
+  {
+    image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
+    category: "DIGITAL TRANSFORMATION",
+    title: "Agent Studio’s AI Solutions",
+    description:
+      "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
+    moreLink: "/blog/AgentStudioAISolutions",
+  },
   {
     // tabTitle:"Conversational AI",
-    title: "Build Conversational AI Projects",
+    title: " ITSM with Automation and AI",
     description:
-      "Effortlessly create AI-powered conversational projects with Digisquares Agent Studio. Select from chatbot and voice assistant templates, and customize with a drag-and-drop interface.",
-    image: "/assets/slider/agentstudio4.webp",
+      "Automation and AI-powered tools are transforming IT service management and customer service by streamlining processes, optimizing workflows, and improving user satisfaction.",
+    image: "/assets/slider/agentAutomation.webp",
     moreText: "Learn more",
-    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+    moreLink: "/blog/AutomationInITSMandCustomerService",
   },
-  {
-    // tabTitle:"Interactions",
-    title: "Manage User Access",
-    description:
-      "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
-    image: "/assets/slider/agentstudio5.webp",
-    moreText: "Learn more",
-    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-  },
-  {
-    // tabTitle:"Access Control",
-    title: "Role-Based Access Control",
-    description:
-      "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
-    image: "/assets/slider/agentstudio6.webp",
-    moreText: "Learn more",
-    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-  },
-  {
-    // tabTitle:"Manage APIs",
-    title: "Integrate and Manage APIs",
-    description:
-      "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
-    image: "/assets/slider/agentstudio7.webp",
-    moreText: "Learn more",
-    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-  },
-  {
-    // tabTitle:"Data Management",
-    title: "Manage Agent Data Efficiently",
-    description:
-      "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",
-    image: "/assets/slider/agentStudio8.webp",
-    moreText: "Learn more",
-    moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
-  },
+  // {
+  //   // tabTitle:"Interactions",
+  //   title: "Manage User Access",
+  //   description:
+  //     "Manage user interactions in Agent Studio with ease. Assign roles, set permissions, and track engagement metrics to secure access and optimize AI agents.",
+  //   image: "/assets/slider/agentstudio5.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+  // },
+  // {
+  //   // tabTitle:"Access Control",
+  //   title: "Role-Based Access Control",
+  //   description:
+  //     "Designate team roles in Agent Studio to control who can design, customize, and deploy conversational agents. Assign access based on responsibility for a secure, streamlined workflow.",
+  //   image: "/assets/slider/agentstudio6.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+  // },
+  // {
+  //   // tabTitle:"Manage APIs",
+  //   title: "Integrate and Manage APIs",
+  //   description:
+  //     "Use Agent Studio's API management tools to connect conversational agents to external systems. Integrate seamlessly with third-party apps, CRMs, or databases to expand agent capabilities.",
+  //   image: "/assets/slider/agentstudio7.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+  // },
+  // {
+  //   // tabTitle:"Data Management",
+  //   title: "Manage Agent Data Efficiently",
+  //   description:
+  //     "Optimize conversational agents with powerful data tools in Agent Studio. Configure, query, and manage databases to ensure agents have timely information for effective user interactions.",
+  //   image: "/assets/slider/agentStudio8.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "https://docs.digisquares.com/docs/Apps/Copilot/OverView",
+  // },
 
 ];
 

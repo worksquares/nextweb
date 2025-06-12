@@ -72,7 +72,7 @@ let newcards: ImageContainProps[] = [
       "Test and evaluate AI models in real-time with our intuitive playground. Fine-tune models easily and ensure optimal performance across multiple use cases.",
     img320: require("../../public/assets/AI_Studio.webp"),
     button: "Learn more ",
-    link: "product/Appstudio/",
+    link: "product/AppStudio/",
   },
 ];
 
@@ -101,22 +101,15 @@ const cards = [
     moreText: "Learn more",
     moreLink: "/blog/WorkflowswithAppStudio",
   },
-  {
-    title: "AI in Agent Studio",
-    description:
-      "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-    image: "/assets/slider/AIinAgentStudio_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AIinAgentStudio",
-  },
-  {
-    title: "AppStudio’s Security Features",
-    description:
-      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-    image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/AppStudioSecurityFeatures",
-  },
+  // {
+  //   title: "AI in Agent Studio",
+  //   description:
+  //     "In today’s digital-first world, customer expectations are higher than ever. They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
+  //   image: "/assets/slider/AIinAgentStudio_Slider.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "/blog/AIinAgentStudio",
+  // },
+
   {
     title: "AI-Powered Automation",
     description:

@@ -74,22 +74,8 @@ const ProcessAutomation = () => {
         "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
       moreLink: "/blog/FutureofAppDevelopment",
     },
-    {
-      image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
-      category: "AI AND AUTOMATION",
-      title: "AI Agents in AppStudio",
-      description:
-        "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
-      moreLink: "/blog/AIAgentsinAppStudio",
-    },
-    {
-      image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
-      category: "DATABASE MANAGEMENT",
-      title: "Security Privacy of Blockchain",
-      description:
-        "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-      moreLink: "/blog/BusinesswithAppStudio",
-    },
+
+
     {
       image: "/assets/slider/PersonalizeAIModels_Slider.webp",
       category: "GOVERNANCE",
@@ -255,10 +241,10 @@ const ProcessAutomation = () => {
           <TabPanel tabs={tabData} />
           <CardComponent cards={cardData} />
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            {/* <HomeSlider cards={ImageRowGridData} /> */}
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

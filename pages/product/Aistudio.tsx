@@ -109,22 +109,71 @@ const aiCards = [
 //   }
 // ];
 const cards = [
+  // {
+  //   title: 'AI-Driven Healthcare Solutions',
+  //   description: 'AI Studio enables healthcare providers to fine-tune AI models for diagnostics, patient monitoring, and predictive analytics, enhancing healthcare services.',
+  //   image: '/assets/slider/Ai-card-1.webp',
+  //   // demoLink: '/demo/medical-ai',
+  //   moreLink: '/industry/Medical/',
+  //   moreText: "Learn more",
+  // },
   {
-    title: 'AI-Driven Healthcare Solutions',
-    description: 'AI Studio enables healthcare providers to fine-tune AI models for diagnostics, patient monitoring, and predictive analytics, enhancing healthcare services.',
-    image: '/assets/slider/Ai-card-1.webp',
-    // demoLink: '/demo/medical-ai',
-    moreLink: '/industry/Medical/',
-    moreText: "Learn more",
+    image:
+      "/assets/slider/MachineLearningBasicswithAI_Slider.webp",
+    category: "AI AND AUTOMATION",
+    title: "Machine Learning with AI Studio",
+    description:
+      "Machine learning (ML) is at the heart of modern AI, transforming industries by enabling smarter insights, automation, and innovation. However, for beginners, the technical jargon and complex concepts can make ML seem intimidating.",
+    moreLink: "/blog/MachineLearningBasicswithAI",
+  },
+  // {
+  //   image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
+  //   category: "DIGITAL TRANSFORMATION",
+  //   title: "Future of App Development",
+  //   description:
+  //     "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
+  //   moreLink: "/blog/FutureofAppDevelopment",
+  // },
+  {
+    image: "/assets/slider/PersonalizeAIModels_Slider.webp",
+    category: "GOVERNANCE",
+    title: "Personalize AI Models",
+    description:
+      "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
+    moreLink: "/blog/PersonalizeAIModels",
   },
   {
-    title: 'Revolutionizing Tech with AI',
-    description: 'AI Studio helps tech companies fine-tune AI models for software automation, data processing, and predictive maintenance, driving technological innovation.',
-    image: '/assets/slider/Ai-card-2.webp',
-    demoLink: '/demo/technology-ai',
-    moreLink: '/industry/Technologies/',
-    moreText: "Learn more",
+    image: "/assets/slider/AIinServiceManagement_Slider.webp",
+    category: "DIGISQUARES PLATFORM",
+    title: "AI in Service Management Platforms",
+    description:
+      "The rapid advancement of AI-powered chatbots is reshaping the way businesses interact with both customers and internal systems. These intelligent chatbots, deliver personalized responses and automate routine tasks.",
+    moreLink: "/blog/AIinServiceManagement",
   },
+  {
+    image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
+    category: "AI AND AUTOMATION",
+    title: "Fine-Tuning with AI Studio",
+    description:
+      "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
+    moreLink: "/blog/FineTuningwithAIStudio",
+  },
+  {
+    image: "/assets/slider/AIStudioData_Slider.webp",
+    category: "DIGISQUARES PLATFORM",
+    title: "AI Studio’s Synthetic Data",
+    description:
+      "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
+    moreLink: "/blog/AIStudioSyntheticData",
+  },
+  // {
+  //   title: 'Revolutionizing Tech with AI',
+  //   description: 'AI Studio helps tech companies fine-tune AI models for software automation, data processing, and predictive maintenance, driving technological innovation.',
+  //   image: '/assets/slider/Ai-card-2.webp',
+  //   demoLink: '/demo/technology-ai',
+  //   moreLink: '/industry/Technologies/',
+  //   moreText: "Learn more",
+  // },
   {
     title: 'Telecom Innovations through AI',
     description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',

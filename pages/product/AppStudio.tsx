@@ -86,30 +86,62 @@ const appCards = [
 ];
 
 const cards = [
+  // {
+  //   title: "Healthcare for Smarter Care",
+  //   description:
+  //     "App Studio helps healthcare providers develop apps for patient management, telemedicine, and health records, enhancing care delivery.",
+  //   image: "/assets/slider/As-card-1.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "/industry/Medical/",
+  // },
   {
-    title: "Healthcare for Smarter Care",
+    image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
+    category: "AI AND AUTOMATION",
+    title: "AI Agents in AppStudio",
     description:
-      "App Studio helps healthcare providers develop apps for patient management, telemedicine, and health records, enhancing care delivery.",
-    image: "/assets/slider/As-card-1.webp",
-    moreText: "Learn more",
-    moreLink: "/industry/Medical/",
+      "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
+    moreLink: "/blog/AIAgentsinAppStudio",
   },
   {
-    title: "Classroom Apps That Teach",
+    image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
+    category: "Accelerate Growth with AppStudio",
+    title: "Accelerate Growth with AppStudio",
     description:
-      "App Studio empowers educators to build e-learning platforms and student management apps, improving the learning experience.",
-    image: "/assets/slider/As-card-2.webp",
-    moreText: "Learn more",
-    moreLink: "/industry/Education/",
+      "AppStudio's low-code platform boosts scalability and agility, helping businesses develop apps faster, reduce technical overhead, and stay ahead in a rapidly evolving market.",
+    moreLink: "/blog/BusinesswithAppStudio",
   },
   {
-    title: "Manufacturing Workflows",
+    image: "/assets/slider/FromIdeatoApp_Slider.webp",
+    category: "IT MANAGEMENT",
+    title: "From Idea to App",
     description:
-      "App Studio enables manufacturers to create apps for workflow, inventory, and quality control, enhancing operational efficiency.",
-    image: "/assets/slider/As-card-3.webp",
-    moreText: "Learn more",
-    moreLink: "/industry/Manufacturing/",
+      "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
+    moreLink: "/blog/FromIdeatoApp",
   },
+  // {
+  //   title: "Classroom Apps That Teach",
+  //   description:
+  //     "App Studio empowers educators to build e-learning platforms and student management apps, improving the learning experience.",
+  //   image: "/assets/slider/As-card-2.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "/industry/Education/",
+  // },
+  {
+    title: "AppStudio’s Security Features",
+    description:
+      "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
+    image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/AppStudioSecurityFeatures",
+  },
+  // {
+  //   title: "Manufacturing Workflows",
+  //   description:
+  //     "App Studio enables manufacturers to create apps for workflow, inventory, and quality control, enhancing operational efficiency.",
+  //   image: "/assets/slider/As-card-3.webp",
+  //   moreText: "Learn more",
+  //   moreLink: "/industry/Manufacturing/",
+  // },
 ];
 
 const AppStudio = () => {
