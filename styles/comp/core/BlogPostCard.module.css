@@ -23,7 +23,7 @@
 }
 
 .BlogHeading picture {
-  width: 100% !important;
+  width: 60% !important;
   /* border: 1px solid red; */
 }
 
@@ -51,7 +51,7 @@
 
 .BlogsImg img {
   width: auto;
-  height: 320px !important;
+  height: 320px;
   object-fit: cover !important;
   /* border: 1px solid red; */
 }
@@ -97,9 +97,13 @@
     margin-left: 0px;
     font-size: 60px;
   }
+  .BlogHeading img{
+    width: 1050px;
+    height: auto;
+  }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .BlogHeading > h1 {
     color: var(--badge-color);
     /* border: 1px solid red; */
@@ -107,6 +111,10 @@
     margin-left: 0px;
     /* font-size: 40px; */
   }
+  .BlogHeading img{
+    width: 800px;
+  }
+
 }
 .BlogsImg img{
   width: 350px !important;
@@ -158,25 +166,10 @@
   font-family: "Nunito Sans", sans-serif;
   margin-left: 20px;
 }
-@media screen and (max-width: 1024px) {
-  .BlogPost {
-    display: grid;
-    grid-auto-flow: row;
-  }
-  .BlogHeading {
-    padding-left: 0px;
-    width: 140% !important;
-  }
-  .BlogPostHead {
-    padding-left: 20px;
-  }
-  .Blogparas p {
-    margin-left: 0px;
-    width: 100% !important;
-  }
-  /* .BlogHeading > h1 {
-    font-size: 30px;
-  } */
+@media screen and (max-width: 1400px) {
+.BlogHeading img{
+  width: 800px;
+}
 }
 
 @media screen and (max-width: 1024px) {
