@@ -54,10 +54,10 @@ const CloudSecurityRisks = () => {
       title: "Minimize the Cloud security risks and threads",
       // subtitle: "August 12, 2021",
       link: "#",
-      img1700: "/assets/CloudSecurity1.webp",
-      img1024: "/assets/CloudSecurity1.webp",
-      img768: "/assets/CloudSecurity1.webp",
-      img320: "/assets/CloudSecurity1.webp",
+      img1700: "/assets/CloudSecurityRisk_Main.webp",
+      img1024: "/assets/CloudSecurityRisk_Main.webp",
+      img768: "/assets/CloudSecurityRisk_Main.webp",
+      img320: "/assets/CloudSecurityRisk_Main.webp",
 
       paragraph: [
         {

@@ -133,7 +133,7 @@ const FinancialServices = () => {
       title: "Agent Studio’s AI Solutions",
       description:
         "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-        moreLink: "/blog/AgentStudioAISolutions",
+      moreLink: "/blog/AgentStudioAISolutions",
     },
     {
       image:
@@ -142,7 +142,7 @@ const FinancialServices = () => {
       title: "Customer Satisfaction",
       description:
         "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-        moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
+      moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
     },
     {
       image: "/assets/slider/AIStudioData_Slider.webp",
@@ -150,15 +150,15 @@ const FinancialServices = () => {
       title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-        moreLink: "/blog/AIStudioSyntheticData",
+      moreLink: "/blog/AIStudioSyntheticData",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
+      image: "/assets/slider/BoostingCybersecurity_Slider.webp",
       category: "GOVERNANCE",
-      title: "Personalize AI Models",
+      title: "Automating Data Breach Prevention",
       description:
-        "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-        moreLink: "/blog/PersonalizeAIModels",
+        "Automation through data anonymization helps protect sensitive information, prevent breaches, and ensure compliance with privacy regulations.",
+      moreLink: "/blog/BoostingCybersecurity",
     },
   ];
 
@@ -178,10 +178,10 @@ const FinancialServices = () => {
           <TabPanel tabs={tabData} />
           <CardComponent cards={cardData} />
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            {/* <HomeSlider cards={ImageRowGridData} /> */}
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

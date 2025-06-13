@@ -128,12 +128,12 @@ const TeleCommunication = () => {
       moreLink: "/blog/SolvingBusinessProblems",
     },
     {
-      image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
+      image: "/assets/slider/AIToolsforRealWorld_Slider.webp",
       category: "CYBERSECURITY AND RISK",
-      title: "Building a Secure SaaS Ecosystem",
+      title: "Human-AI Collaboration for Real-World Impact",
       description:
-        "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-      moreLink: "/blog/ImprovingSAASCybersecurity",
+        "Generative AI is reshaping industries, but its true value emerges when human expertise is integrated. By combining human involvement with AI tools, businesses achieve greater accuracy, precision, and meaningful results, driving productivity and workflow improvements.",
+      moreLink: "/blog/AIToolsforRealWorld",
     },
     {
       image: "/assets/slider/AIStudioData_Slider.webp",

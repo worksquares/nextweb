@@ -54,10 +54,10 @@ const Buildingblocks = () => {
       title: "Six building blocks for successfully implementing AI",
       // subtitle: "August 12, 2021",
       link: "#",
-      img1700: "/assets/AI-carriere.webp",
-      img1024: "/assets/AI-carriere.webp",
-      img768: "/assets/AI-carriere.webp",
-      img320: "/assets/AI-carriere.webp",
+      img1700: "/assets/AiBuildingBlock_Main.webp",
+      img1024: "/assets/AiBuildingBlock_Main.webp",
+      img768: "/assets/AiBuildingBlock_Main.webp",
+      img320: "/assets/AiBuildingBlock_Main.webp",
 
       paragraph: [
         {
@@ -97,7 +97,7 @@ const Buildingblocks = () => {
           subheading: "3. Technology",
         },
         {
-          subimages: "/assets/8bEfxy8skS6fUVZnfaLWxj-1200-80.webp",
+          subimages: "/assets/TechnologyBuildingBlocks.webp",
         },
         {
           paragraphs:

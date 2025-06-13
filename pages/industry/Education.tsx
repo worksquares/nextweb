@@ -129,12 +129,12 @@ const Education = () => {
     },
     {
       image:
-        "/assets/slider/CustomerSatisfactionwithAgentStudio_Slider.webp",
+        "/assets/slider/AIinKnowledgeManagement_Slider.webp",
       category: "IT MANAGEMENT",
-      title: "Customer Satisfaction",
+      title: "AI Revolutionizing Knowledge Management",
       description:
-        "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-        moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
+        "AI is transforming how businesses manage and access knowledge, making it more dynamic and intuitive. By reshaping traditional methods, AI is streamlining knowledge creation, organization, and utilization for more effective solutions.",
+      moreLink: "/blog/AIinKnowledgeManagement",
     },
     {
       image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
@@ -142,7 +142,7 @@ const Education = () => {
       title: "Fine-Tuning with AI Studio",
       description:
         "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
-        moreLink: "/blog/FineTuningwithAIStudio",
+      moreLink: "/blog/FineTuningwithAIStudio",
     },
     {
       image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
@@ -150,7 +150,7 @@ const Education = () => {
       title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-        moreLink: "/blog/WorkflowswithAppStudio",
+      moreLink: "/blog/WorkflowswithAppStudio",
     },
     {
       image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
@@ -158,7 +158,7 @@ const Education = () => {
       title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-        moreLink: "/blog/ImprovingSAASCybersecurity",
+      moreLink: "/blog/ImprovingSAASCybersecurity",
     },
   ];
 
@@ -181,10 +181,10 @@ const Education = () => {
           <CardComponent cards={cardData} />
 
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              {/* <HomeSlider cards={ImageRowGridData} /> */}
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            {/* <HomeSlider cards={ImageRowGridData} /> */}
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

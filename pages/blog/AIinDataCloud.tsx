@@ -51,10 +51,10 @@ const AIinDataCloud = () => {
   let BlogPostListData: BlogPostContainProps[] = [
     {
       title: "Many Enterprises Fast-Tracked Their Cloud Migrations in 2020",
-      img1700: "/assets/AI in DataCloud Main.webp",
-      img1024: "/assets/AI in DataCloud Main.webp",
-      img768: "/assets/AI in DataCloud Main.webp",
-      img320: "/assets/AI in DataCloud Main.webp",
+      img1700: "/assets/AIinDataCloud_Main.webp",
+      img1024: "/assets/AIinDataCloud_Main.webp",
+      img768: "/assets/AIinDataCloud_Main.webp",
+      img320: "/assets/AIinDataCloud_Main.webp",
 
       paragraph: [
         {

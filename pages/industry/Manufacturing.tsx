@@ -134,7 +134,7 @@ const Manufacturing = () => {
       title: "Innovation Trends for Business",
       description:
         "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
-        moreLink: "/blog/InnovationTrendsforBusiness",
+      moreLink: "/blog/InnovationTrendsforBusiness",
     },
     {
       image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
@@ -142,15 +142,15 @@ const Manufacturing = () => {
       title: "Security Privacy of Blockchain",
       description:
         "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-        moreLink: "/blog/BusinesswithAppStudio",
+      moreLink: "/blog/BusinesswithAppStudio",
     },
     {
-      image: "/assets/slider/AIAgentsinAppStudio_Slider.webp",
+      image: "/assets/slider/CloudSecurityRisk_Slider.webp",
       category: "AI AND AUTOMATION",
-      title: "AI Agents in AppStudio",
+      title: "Mitigating Cloud Security Risks",
       description:
-        "In today’s digital landscape, businesses are constantly looking for ways to increase efficiency, reduce costs, and drive innovation. Enter AI agents intelligent, automated tools that can handle routine tasks, support decision-making, and streamline operations.",
-        moreLink: "/blog/AIAgentsinAppStudio",
+        "As cloud adoption rises, so do security threats. Implementing practices like CSPM and CWP helps organizations safeguard data, reduce breaches, and cut potential costs.",
+      moreLink: "/blog/CloudSecurityRisks",
     },
     {
       image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
@@ -158,7 +158,7 @@ const Manufacturing = () => {
       title: "Workflows with AppStudio",
       description:
         "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-        moreLink: "/blog/WorkflowswithAppStudio",
+      moreLink: "/blog/WorkflowswithAppStudio",
     },
   ];
 
@@ -181,9 +181,9 @@ const Manufacturing = () => {
           <CardComponent cards={cardData} />
 
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

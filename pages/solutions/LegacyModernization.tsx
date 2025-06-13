@@ -106,12 +106,12 @@ const LegacyModernization = () => {
       moreLink: "/blog/ResponsibleAIModels",
     },
     {
-      image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
+      image: "/assets/slider/AIinDataCloud_Slider.webp",
       category: "DIGISQUARES PLATFORM",
-      title: "Workflows with AppStudio",
+      title: "Cloud-Powered Enterprise Innovation",
       description:
-        "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-      moreLink: "/blog/WorkflowswithAppStudio",
+        "Enterprises are embracing cloud technology to accelerate digital transformation, streamline operations, and enhance data-driven decision-making. Cloud adoption is helping businesses stay agile, improve cost efficiency, and meet customer expectations in a rapidly evolving market.",
+      moreLink: "/blog/AIinDataCloud",
     },
     // {
     //   image: "/assets/slider/Workflow2.webp",

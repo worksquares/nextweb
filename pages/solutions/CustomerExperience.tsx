@@ -88,14 +88,14 @@ const CustomerExperience = () => {
   ];
 
   const cards = [
-    // {
-    //   image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
-    //   category: "DIGITAL TRANSFORMATION",
-    //   title: "Future of App Development",
-    //   description:
-    //     "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
-    //   moreLink: "/blog/FutureofAppDevelopment",
-    // },
+    {
+      image: "/assets/slider/AIonCustomerExperience_Slider.webp",
+      category: "DIGITAL TRANSFORMATION",
+      title: "AI’s Impact on Customer Experience",
+      description:
+        "Artificial Intelligence is revolutionizing customer interactions with chatbots, predictive analytics, and real-time engagement, offering businesses new ways to enhance service and anticipate customer needs.",
+      moreLink: "/blog/AIonCustomerExperience",
+    },
     // {
     //   image: "/assets/slider/FromIdeatoApp_Slider.webp",
     //   category: "IT MANAGEMENT",
@@ -174,29 +174,29 @@ const CustomerExperience = () => {
   return (
     <>
 
-    <div>
-      <BaseLayout>
-        <div className={styles.MainContainer}>
-          <div className={styles.MainContainer1}>
-            <HeaderCard HeaderBannerPropsList={AnotherimgListData} />
+      <div>
+        <BaseLayout>
+          <div className={styles.MainContainer}>
+            <div className={styles.MainContainer1}>
+              <HeaderCard HeaderBannerPropsList={AnotherimgListData} />
+            </div>
+
+            <HomePanel
+              imageUrl="/assets/Hero & cards/ce_img1.webp"
+              title="Enhance Customer Interactions with AI-Powered Automation"
+              description="Boost customer satisfaction by leveraging Digisquares Agent Studio to build intelligent AI agents that deliver personalized, responsive interactions. Whether through text, voice, or chatbots, our AI agents can provide 24/7 support, answer queries, and guide customers through processes like purchasing or troubleshooting."
+            />
+            <TabPanel tabs={tabData} />
+
+            <CardComponent cards={cardData} />
+
+            <div className={styles.MoreResources}>
+              {/* <HomeSlider cards={ImageRowGridData} /> */}
+              <HomeSlider cards={cards} />
+            </div>
           </div>
-
-          <HomePanel
-            imageUrl="/assets/Hero & cards/ce_img1.webp"
-            title="Enhance Customer Interactions with AI-Powered Automation"
-            description="Boost customer satisfaction by leveraging Digisquares Agent Studio to build intelligent AI agents that deliver personalized, responsive interactions. Whether through text, voice, or chatbots, our AI agents can provide 24/7 support, answer queries, and guide customers through processes like purchasing or troubleshooting."
-          />
-          <TabPanel tabs={tabData} />
-
-          <CardComponent cards={cardData} />
-
-          <div className={styles.MoreResources}>
-            {/* <HomeSlider cards={ImageRowGridData} /> */}
-            <HomeSlider cards={cards} />
-          </div>
-        </div>
-      </BaseLayout>
-    </div>
+        </BaseLayout>
+      </div>
     </>
   );
 };

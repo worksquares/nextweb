@@ -77,14 +77,7 @@ let newcards: ImageContainProps[] = [
 ];
 
 const cards = [
-  {
-    title: "Creating Responsible AI Models",
-    description:
-      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
-    image: "/assets/slider/ResponsibleAIModels_Slider.webp",
-    moreText: "Learn more",
-    moreLink: "/blog/ResponsibleAIModels",
-  },
+
   {
     title: "Satisfaction with Agent Studio",
     description:
@@ -119,6 +112,14 @@ const cards = [
     moreLink: "/blog/AIPoweredAutomation",
   },
   {
+    title: "Creating Responsible AI Models",
+    description:
+      "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency and compliance continues to grow. Building ethical AI models means minimizing bias, ensuring accountability and adhering to industry standards.",
+    image: "/assets/slider/ResponsibleAIModels_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/ResponsibleAIModels",
+  },
+  {
     title: "Building a Secure SaaS ",
     description:
       "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
@@ -133,6 +134,15 @@ const cards = [
     image: "/assets/slider/AIinServiceManagement_Slider.webp",
     moreText: "Learn more",
     moreLink: "/blog/AIinServiceManagement",
+  },
+
+  {
+    title: "Building Blocks for AI Success",
+    description:
+      "Successful AI implementation requires strategic investments and organizational changes. This includes six critical areas: business, technical, and organizational adjustments that enable scalable AI solutions.",
+    image: "/assets/slider/AiBuildingBlock_Slider.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/Buildingblocks",
   },
 ];
 
