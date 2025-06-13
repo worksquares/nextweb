@@ -188,52 +188,87 @@ width: 100%;
   color: #111;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .group {
+    display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
+  .contentWrapper {
+    width: 100%;
+    border-left: none;
+    padding: 0.5rem;
+  }
 
-  .mobileImageContent {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .mobileBlock {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
     width: 100%;
+    padding-left: 0.5rem;
   }
 
   .imageBlock {
     width: 100%;
-    height: auto;
     justify-content: center;
     align-items: center;
   }
 
-  /* .image {
+  .imageCover {
     width: 100%;
     height: auto;
     max-height: 300px;
     object-fit: contain;
-  } */
+  }
 
   .content {
     width: 100%;
     font-size: 1rem;
     padding: 0 0.5rem;
   }
-  .imageCover {
-    /* object-fit: cover !important; */
-    width: auto;
-    height: 280px;
-  }
-
-  .subheadings {
-    width: 100%;
-    padding-right: 0;
-    max-height: none;
-  }
+  /* Accordion styles for mobile */
+.accordionItem {
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
 }
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0050b3;
+  cursor: pointer;
+  padding: 0.75rem 0;
+  text-align: left;
+}
+
+.accordionHeader:hover {
+  color: #007bff;
+}
+
+.accordionHeader span:last-child {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.accordionContent {
+  padding: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+}
+
 @media (min-width: 1920px) {
   .group {
     gap: 4rem; /* increase spacing between text and image */

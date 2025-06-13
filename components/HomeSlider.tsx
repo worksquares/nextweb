@@ -90,9 +90,8 @@ const HomeSlider = ({
           return (
             <div
               key={index}
-              className={`${styles.cardWrapper} ${
-                currentSlide === index ? styles.active : ""
-              }`}
+              className={`${styles.cardWrapper} ${currentSlide === index ? styles.active : ""
+                }`}
             >
               <div className={styles.card}>
                 {showRibbon && (
@@ -109,9 +108,9 @@ const HomeSlider = ({
                 <div className={styles.cardContentWrapper}>
                   <div className={styles.imageContainer}>
                     <CustomImage
+                      alt={card.title || "Card image"}
                       type="slider"
                       src={card.image}
-                      alt={card.title || "Card image"}
                       priority={true}
                       className={styles.cardImage}
                     />

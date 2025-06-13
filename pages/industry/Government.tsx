@@ -121,20 +121,20 @@ const Government = () => {
   const cards = [
     {
       image:
-        "/assets/slider/TeamCollaborationwithAppStudio_Slider.webp",
+        "/assets/slider/DataSecureMainImg_Slider.webp",
       category: "DIGISQUARES PLATFORM",
-      title: "Team Collaboration with AppStudio",
+      title: "AI for Greater Nonprofit Impact",
       description:
-        "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
-      moreLink: "/blog/TeamCollaborationwithAppStudio",
+        "AI helps nonprofits do more with less—boosting efficiency, improving decisions, and increasing engagement. Early adopters show how AI can amplify mission-driven work.",
+      moreLink: "/blog/NonprofitsUsingAI",
     },
     {
-      image: "/assets/slider/FineTuningwithAIStudio_Slider.webp",
+      image: "/assets/slider/SaasGovtMain_Slider.webp",
       category: "AI AND AUTOMATION",
-      title: "Fine-Tuning with AI Studio",
+      title: "Modern Security for Government",
       description:
-        "As AI becomes a crucial part of business strategies, the need for custom AI models that cater to specific needs is on the rise. However, building and fine-tuning AI models often requires specialized knowledge and significant resources.",
-        moreLink: "/blog/FineTuningwithAIStudio",
+        "State and local governments are moving to unified Security-as-a-Service models to reduce costs, eliminate silos, and securely modernize their IT infrastructure.",
+      moreLink: "/blog/SaasforGovt",
     },
     {
       image: "/assets/slider/FromIdeatoApp_Slider.webp",
@@ -142,7 +142,7 @@ const Government = () => {
       title: "From Idea to App",
       description:
         "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-        moreLink: "/blog/FromIdeatoApp",
+      moreLink: "/blog/FromIdeatoApp",
     },
     {
       image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
@@ -150,7 +150,7 @@ const Government = () => {
       title: "AppStudio’s Security Features",
       description:
         "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-        moreLink: "/blog/AppStudioSecurityFeatures",
+      moreLink: "/blog/AppStudioSecurityFeatures",
     },
     {
       image:
@@ -159,7 +159,7 @@ const Government = () => {
       title: "Innovation Trends for Business",
       description:
         "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
-        moreLink: "/blog/InnovationTrendsforBusiness",
+      moreLink: "/blog/InnovationTrendsforBusiness",
     },
   ];
 
@@ -182,9 +182,9 @@ const Government = () => {
           <CardComponent cards={cardData} />
 
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

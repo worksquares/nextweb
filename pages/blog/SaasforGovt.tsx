@@ -89,7 +89,7 @@ const SaasforGovt = () => {
           subheading: "Zero trust access is based on key tenets",
         },
         {
-          subimages: "/assets/VPNImg.webp",
+          subimages: "/assets/TenetsSecurity.webp",
         },
         {
           paragraphs:

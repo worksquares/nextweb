@@ -56,23 +56,42 @@ const ProcessAutomation = () => {
   };
 
   const cards = [
+    // {
+    //   image:
+    //     "/assets/slider/TeamCollaborationwithAppStudio_Slider.webp",
+    //   category: "DIGISQUARES PLATFORM",
+    //   title: "Team Collaboration with AppStudio",
+    //   description:
+    //     "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
+    //   moreLink: "/blog/TeamCollaborationwithAppStudio",
+
+    // },
     {
       image:
-        "/assets/slider/TeamCollaborationwithAppStudio_Slider.webp",
+        "/assets/slider/LowCodeMain.webp",
       category: "DIGISQUARES PLATFORM",
-      title: "Team Collaboration with AppStudio",
+      title: "Low-Code Unlocks AI for All",
       description:
-        "In today’s fast-paced business environment, effective collaboration is essential for success. Teams need to communicate seamlessly, share ideas, and work together in real-time to achieve common goals.",
-      moreLink: "/blog/TeamCollaborationwithAppStudio",
+        "Low-code platforms simplify AI adoption through visual tools, pre-built integrations, and intuitive design. They also offer AI-powered co-pilots that guide development and boost efficiency.",
+      moreLink: "/blog/LowcodeatAI",
 
     },
+    // {
+    //   image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Future of App Development",
+    //   description:
+    //     "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
+    //   moreLink: "/blog/FutureofAppDevelopment",
+    // },
+
     {
-      image: "/assets/slider/FutureofAppDevelopment_Slider.webp",
+      image: "/assets/slider/LowCodeAutomation1 1.webp",
       category: "DIGITAL TRANSFORMATION",
-      title: "Future of App Development",
+      title: "Simplifying Automation for Everyone",
       description:
-        "As businesses increasingly rely on software to drive growth and innovation, the need for efficient, flexible app development has never been more pressing.",
-      moreLink: "/blog/FutureofAppDevelopment",
+        "Low-code and no-code tools let non-developers automate tasks easily with drag-and-drop interfaces, accelerating RPA development and boosting adoption.",
+      moreLink: "/blog/LowcodeAutomation",
     },
 
 

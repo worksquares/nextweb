@@ -2,7 +2,9 @@ import { ImageContainProps } from "../../comp/base/ImageLeftRightCard";
 import BaseLayout from "../../comp/BaseLayout";
 import CardsandBlog from "../../comp/CardsandBlog";
 import ImageContentCard from "../../comp/ImageLeftRight";
+import NewHeroSection from "../../comp/NewHeroSection";
 import Screen from "../../comp/Screen";
+import { LearnMoreButton } from "../../components/Button";
 import styles from "../../styles/partners/BecomePartner.module.css";
 import Headseo from "../headseo";
 
@@ -90,10 +92,22 @@ const BecomePartner = () => {
                 delivers increased flexibility, new benefits, and an enhanced
                 experience for our valued partners.`}
         url={`/partners/BecomePartner`}
-        img={`/assets/LowCode3D(1).webp`}
+        img={`/assets/LowCode3D.webp`}
       />
       <BaseLayout>
-        <div className={styles.PartnerHeaderMain}>
+        <NewHeroSection
+          title="It’s both a partnership and a relationship"
+          isVisible={true}
+          ImgSrc={"/assets/Hero & cards/hero/BecomeaPartner.webp"}
+          subtitle=""
+          description="Digisquares’ redesigned partner program is built on mutual
+                trust, offering both a partnership and a relationship. It
+                delivers increased flexibility, new benefits, and an enhanced
+                experience for our valued partners."
+          buttonText="Get started"
+          onButtonClick={"/partners/ContactUs/"}
+        />
+        {/* <div className={styles.PartnerHeaderMain}>
           <Screen>
             <div className={styles.PartnerHeaderComp}>
               <h2>It’s both a partnership and a relationship</h2>
@@ -105,7 +119,7 @@ const BecomePartner = () => {
               </p>
             </div>
           </Screen>
-        </div>
+        </div> */}
         <CardsandBlog
           CardHeader={CardHeaderInfo}
           CardInformation={CardInformationData}
@@ -123,7 +137,15 @@ const BecomePartner = () => {
                 success. Join us, work together, and be part of something truly
                 special.
               </p>
-              <button>Get Insights</button>
+              {/* <button>Get Insights</button> */}
+              <LearnMoreButton
+                text="Get Insights"
+                borderRadius="10px"
+                color="#154965"
+                bgColor="#F7F7F7"
+                border="2px solid #154965"
+
+              />
             </div>
           </Screen>
         </div>

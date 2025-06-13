@@ -53,10 +53,10 @@ const TechnologyLeaders = () => {
       title: "What are the New Expectations from Technology Leaders?",
       // subtitle: "August 12, 2021",
       link: "#",
-      img1700: "/assets/shutterstock_430052296-897x500.webp",
-      img1024: "/assets/shutterstock_430052296-897x500.webp",
-      img768: "/assets/shutterstock_430052296-897x500.webp",
-      img320: "/assets/shutterstock_430052296-897x500.webp",
+      img1700: "/assets/TecLeader.webp",
+      img1024: "/assets/TecLeader.webp",
+      img768: "/assets/TecLeader.webp",
+      img320: "/assets/TecLeader.webp",
 
       paragraph: [
         {
@@ -88,7 +88,7 @@ const TechnologyLeaders = () => {
         },
         { paragraphs: "7. Updating HR practices as per new values" },
         {
-          subimages: "/assets/getty_493578018_154441.webp",
+          subimages: "/assets/VbTecLeader.webp",
         },
         { subheading: "Strength-Based Technology Leadership" },
 
@@ -137,7 +137,7 @@ const TechnologyLeaders = () => {
         {
           subheading: "Re-engineered decision making is all about:",
           subimages:
-            "/assets/decision-intelligence-gartner- E2 80 93-reengineering-the-decision-with-peak.webp",
+            "/assets/DecisionIntelligence.webp",
         },
         {
           paragraphs:
@@ -164,7 +164,7 @@ const TechnologyLeaders = () => {
             "Being more flexible with re-engineered decisions that respond to changing contexts.",
         },
         { subheading: "Influence and motivation" },
-        { subimages: "/assets/960x0.webp" },
+        { subimages: "/assets/InfluenceandMotivation.webp" },
         {
           paragraphs:
             "The most important skill for technology leaders that work with Gen Z is motivation skills. Millennials are constantly seeking excitement. They are easily bored, have high energy levels. and constantly look for change. They don't relate with the 'secutity' culture which motivated their previous generations.",

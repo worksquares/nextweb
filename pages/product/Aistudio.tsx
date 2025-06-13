@@ -174,14 +174,14 @@ const cards = [
   //   moreLink: '/industry/Technologies/',
   //   moreText: "Learn more",
   // },
-  {
-    title: 'Telecom Innovations through AI',
-    description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',
-    image: '/assets/slider/Ai-card-3.webp',
-    demoLink: '/demo/telecom-ai',
-    moreLink: '/industry/TeleCommunication/',
-    moreText: "Learn more",
-  },
+  // {
+  //   title: 'Telecom Innovations through AI',
+  //   description: 'AI Studio supports telecom providers in optimizing network operations, enhancing customer service, and implementing AI-driven predictive maintenance solutions.',
+  //   image: '/assets/slider/Ai-card-3.webp',
+  //   demoLink: '/demo/telecom-ai',
+  //   moreLink: '/industry/TeleCommunication/',
+  //   moreText: "Learn more",
+  // },
 ];
 
 

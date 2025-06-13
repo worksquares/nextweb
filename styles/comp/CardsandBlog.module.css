@@ -7,7 +7,7 @@
 
 .CardsTitleComp {
   /* border: 1px solid red; */
-  width: 60%;
+  /* width: 0%; */
   margin-bottom: 20px;
 }
 
@@ -72,11 +72,12 @@
 }
 
 .learnMoreButton {
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex; */
+  /* align-items: center; */
   /* color: #1d4965; */
   /* font-size: 1rem; */
   text-decoration: none;
+  text-align: right;
 }
 
 .arrowIcon {
@@ -85,9 +86,9 @@
   transition: margin-left 0.3s ease;
 }
 
-.learnMoreButton:hover .arrowIcon {
+/* .learnMoreButton:hover .arrowIcon {
   margin-left: 12px;
-}
+} */
 
 .CardsBlogComp {
   /* border: 1px solid red; */

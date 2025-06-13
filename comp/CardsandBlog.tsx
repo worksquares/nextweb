@@ -1,3 +1,6 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LearnMoreButtonLink } from "../components/Button";
 import styles from "../styles/comp/CardsandBlog.module.css";
 import Screen from "./Screen";
 
@@ -31,7 +34,7 @@ const CardsandBlog = ({
                   )}
                   <h6>{data.heading}</h6>
                   <p className={styles.CardDesc}>{data.description}</p>
-                  {data.linkName && (
+                  {/* {data.linkName && (
                     <a
                       href={data.linkUrl || "#"}
                       className={styles.learnMoreButton}
@@ -45,7 +48,31 @@ const CardsandBlog = ({
                         height={12}
                       />
                     </a>
-                  )}
+                  )} */}
+                  <LearnMoreButtonLink
+                    text={
+                      <>
+                        <span style={{ fontWeight: 700 }}>Learn more</span>
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          style={{
+                            fontSize: "15px",
+                            marginLeft: "10px",
+                            verticalAlign: "middle",
+                            color: "#36399C", // match text color
+                          }}
+                        />
+                      </>
+                    }
+                    className={styles.learnMoreButton}
+                    color="#36399C"
+                    bgColor="transparent "
+                    onClick={() => {
+                      if (data.linkUrl) {
+                        window.location.href = data.linkUrl;
+                      }
+                    }}
+                  />
                 </div>
               ))}
             </div>

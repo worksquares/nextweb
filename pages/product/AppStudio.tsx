@@ -134,6 +134,14 @@ const cards = [
     moreText: "Learn more",
     moreLink: "/blog/AppStudioSecurityFeatures",
   },
+  {
+    title: "Speed Up with Low-Code",
+    description:
+      "Low-code tools enable rapid solution delivery without heavy coding. They empower teams to respond faster, cut development time, and adapt to evolving customer needs—all critical for staying competitive in a digital-first world.",
+    image: "/assets/slider/LowCode-1 1.webp",
+    moreText: "Learn more",
+    moreLink: "/blog/Lowcode",
+  },
   // {
   //   title: "Manufacturing Workflows",
   //   description:

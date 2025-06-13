@@ -20,7 +20,8 @@ export interface ButtonProps {
   linkColor?: string;
   underline?: boolean;
   fontsize?: string;
-  "aria-label"?: string; // Added aria-label prop
+  "aria-label"?: string;
+  border?: string;
 }
 
 // Custom Button component (without Ant Design)
@@ -45,6 +46,7 @@ const CustomButton: React.FC<ButtonProps> = (props) => {
           height: props.height,
           width: props.width,
           fontSize: props.fontsize,
+          border: props.border || "none",
           ...props.style,
         }}
         aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
@@ -56,7 +58,7 @@ const CustomButton: React.FC<ButtonProps> = (props) => {
           </span>
         )} */}
       </button>
-    </div>
+    </div >
   );
 };
 

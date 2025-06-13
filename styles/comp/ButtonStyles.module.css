@@ -95,14 +95,14 @@
   font-weight: 700;
   width: 150px;
   cursor: pointer;
-  border: none !important;
+  border: none;
 }
 
 .LearnMoreButton:hover,
 .LearnMoreButton:focus {
   background-color: var(--hoverBgColor, #e0e0e0);
   color: var(--hoverTextColor, rgba(5, 53, 245, 0.88));
-  border: none !important;
+  border: none ;
 }
 
 /* .LearnMoreButtonLink styles */

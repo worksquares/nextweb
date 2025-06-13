@@ -133,7 +133,7 @@ const Banking = () => {
       title: "AI-Powered Automation",
       description:
         "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-        moreLink: "/blog/AIPoweredAutomation",
+      moreLink: "/blog/AIPoweredAutomation",
     },
     {
       image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
@@ -141,7 +141,7 @@ const Banking = () => {
       title: "Building a Secure SaaS Ecosystem",
       description:
         "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-        moreLink: "/blog/ImprovingSAASCybersecurity",
+      moreLink: "/blog/ImprovingSAASCybersecurity",
     },
     {
       image: "/assets/slider/AIStudioData_Slider.webp",
@@ -149,15 +149,15 @@ const Banking = () => {
       title: "AI Studio’s Synthetic Data",
       description:
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-        moreLink: "/blog/AIStudioSyntheticData",
+      moreLink: "/blog/AIStudioSyntheticData",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
+      image: "/assets/slider/LowcodeBanking.webp",
       category: "GOVERNANCE",
-      title: "Personalize AI Models",
+      title: "Low-Code for Connected Banking",
       description:
-        "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-        moreLink: "/blog/PersonalizeAIModels",
+        "A low-code digital platform streamlines banking operations with automation, content services, and omnichannel engagement—enabling faster transformation and future-ready processes.",
+      moreLink: "/blog/LowcodeinBanking",
     },
   ];
 
@@ -180,9 +180,9 @@ const Banking = () => {
           <CardComponent cards={cardData} />
 
           {/* <Screen> */}
-            <div className={styles.MoreResources}>
-              <HomeSlider cards={cards} />
-            </div>
+          <div className={styles.MoreResources}>
+            <HomeSlider cards={cards} />
+          </div>
           {/* </Screen> */}
         </div>
       </BaseLayout>

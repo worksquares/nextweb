@@ -1,8 +1,7 @@
-import React from "react";
-import Styles from "../../styles/comp/core/ImageLeftRightCard.module.css";
-import Images from "./Images";
-import Screen from "../Screen";
+import { LearnMoreButton } from "../../components/Button";
 import CustomImage from "../../components/CustomImage";
+import Styles from "../../styles/comp/core/ImageLeftRightCard.module.css";
+import Screen from "../Screen";
 
 export interface ImageContainProps {
   title: string;
@@ -50,11 +49,21 @@ const ImageLeftRightCard = ({
             <p>{paragraph1}</p>
             <p>{paragraph2}</p>
             <p>{paragraph3}</p>
-            {button == null ? "" : <button>{button}</button>}
+            {/* {button == null ? "" : <button>{button}</button>}
             {link && (
               <a href={link} className={Styles.learnMoreButton}>
                 Learn More
               </a>
+            )} */}
+            {button == null ? "" : (
+              <LearnMoreButton
+                text={<span>{button}</span>}
+                onClick={() => { }}
+                className={`${Styles.tabButton}`}
+                hoverBgColor="transparent"
+                hoverTextColor="#003c57"
+                height="60px"
+              />
             )}
           </div>
           <div className={Styles.Rightcontain}>
@@ -70,6 +79,7 @@ const ImageLeftRightCard = ({
               alt="ImageContent"
               className={Styles.imgcontain}
               priority={false}
+
             />
             {/* <Images
               alt="ImageContent"
