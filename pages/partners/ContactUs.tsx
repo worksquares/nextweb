@@ -11,7 +11,6 @@ import Image from "next/image";
 const ContactUs = () => {
   const [form] = Form.useForm();
   const onFinish = async (values: string) => {
-    console.log("values: ", values);
     try {
       const response = await fetch(
         "https://api.digisquares.com/partnercontactform",
@@ -23,10 +22,8 @@ const ContactUs = () => {
           body: JSON.stringify(values),
         }
       );
-      console.log("response: ", response);
 
       if (response.ok) {
-        console.log("Form data sent successfully!");
         message.success("Submit success!");
         form.resetFields();
       } else {

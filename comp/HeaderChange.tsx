@@ -9,7 +9,6 @@ const HeaderChange: React.FC<AnotherContentProps> = ({ HeaderBannerPropsList }) 
   return (
     <div>
       {HeaderBannerPropsList.map((Anotherprop, i) => (
-        console.log("vcdx", Anotherprop),
         <HeaderContent
           key={Anotherprop.title}
           title={Anotherprop.title}

@@ -32,7 +32,6 @@ const PodcastSearch = () => {
   useEffect(() => {
     let filteredPodcasts;
     if (selectedCategory || (category && !(selectedTags || tag))) {
-      // console.log('(selectedCategory || category: ')
       if (selectedCategory) {
         filteredPodcasts = podcast.filter(
           (p) => p.category === selectedCategory
@@ -42,11 +41,9 @@ const PodcastSearch = () => {
       }
     }
     if (selectedTags || (tag && !(selectedCategory || category))) {
-      // console.log('selectedTags || tag: ');
       if (selectedTags) {
         filteredPodcasts = podcast.filter((p) => p.tags.includes(selectedTags));
       } else if (tag) {
-        console.log("tag: ", tag);
         filteredPodcasts = podcast.filter((p) => p.tags.includes(tag));
       }
     }

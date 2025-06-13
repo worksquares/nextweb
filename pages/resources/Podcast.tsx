@@ -7,12 +7,12 @@ import Screen from "../../comp/Screen";
 import Title from "antd/es/typography/Title";
 import { Tag } from "antd";
 import { useRouter } from "next/router";
-import  {podcast} from  "../../comp/PodcastData"
+import { podcast } from "../../comp/PodcastData"
 
 let AnotherimgListData: HeaderContentProps[] = [
   {
     title: "Tech Talks",
-    paragraph:"",
+    paragraph: "",
     btnLink: "#",
     img1700: "/assets/PodcastHeroimg.webp",
     img1024: "/assets/PodcastHeroimg.webp",
@@ -20,7 +20,7 @@ let AnotherimgListData: HeaderContentProps[] = [
     img320: "/assets/PodcastHeroimg.webp",
     backgroundColor: "#154965",
     isPodCast: 1,
-    backgroundImg:'/assets/Podcast/podcast_bg.webp'
+    backgroundImg: '/assets/Podcast/podcast_bg.webp'
   },
 ];
 
@@ -46,7 +46,7 @@ const Tags = ({ podcast }) => {
           fontSize: "30px",
           lineHeight: "68.2px",
           color: "#1D4965",
-          textAlign:"center"
+          textAlign: "center"
         }}
       >
         Tags
@@ -66,7 +66,7 @@ const Tags = ({ podcast }) => {
               justifyContent: "center",
               border: "1px solid #91CAFF",
               cursor: "pointer",
-              minWidth:100,
+              minWidth: 100,
             }}
             onClick={() => handleClick(tag)}
           >
@@ -79,12 +79,11 @@ const Tags = ({ podcast }) => {
 };
 
 const CategoryCard = ({ podcast }) => {
- let url= podcast?.map(item=>item?.embedUrl)
+  let url = podcast?.map(item => item?.embedUrl)
   const router = useRouter();
 
   const handleClick = (category) => {
     const SelectedCategory = category;
-    console.log('SelectedCategory: ', SelectedCategory);
     router.push(`/resources/PodcastSearch?category=${encodeURIComponent(SelectedCategory)}`);
   };
 
@@ -114,7 +113,7 @@ const CategoryCard = ({ podcast }) => {
           fontSize: "30px",
           lineHeight: "68.2px",
           color: "#154965",
-          textAlign:"center"
+          textAlign: "center"
         }}
       >
         Categories
