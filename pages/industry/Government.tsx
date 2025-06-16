@@ -122,7 +122,7 @@ const Government = () => {
     {
       image:
         "/assets/slider/DataSecureMainImg_Slider.webp",
-      category: "DIGISQUARES PLATFORM",
+      // category: "DIGISQUARES PLATFORM",
       title: "AI for Greater Nonprofit Impact",
       description:
         "AI helps nonprofits do more with less—boosting efficiency, improving decisions, and increasing engagement. Early adopters show how AI can amplify mission-driven work.",
@@ -130,7 +130,7 @@ const Government = () => {
     },
     {
       image: "/assets/slider/SaasGovtMain_Slider.webp",
-      category: "AI AND AUTOMATION",
+      // category: "AI AND AUTOMATION",
       title: "Modern Security for Government",
       description:
         "State and local governments are moving to unified Security-as-a-Service models to reduce costs, eliminate silos, and securely modernize their IT infrastructure.",
@@ -144,23 +144,23 @@ const Government = () => {
         "As the speed of business continues to rapidly evolve, so do the technologies that help manufacturers digitize their factories, drive financial and operational impact, and improve productivity and customer satisfaction.",
       moreLink: "/blog/DrivingDigitalTransformation",
     },
-    {
-      image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
-      category: "CYBERSECURITY AND RISK",
-      title: "AppStudio’s Security Features",
-      description:
-        "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      moreLink: "/blog/AppStudioSecurityFeatures",
-    },
-    {
-      image:
-        "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Innovation Trends for Business",
-      description:
-        "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
-      moreLink: "/blog/InnovationTrendsforBusiness",
-    },
+    // {
+    //   image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
+    //   category: "CYBERSECURITY AND RISK",
+    //   title: "AppStudio’s Security Features",
+    //   description:
+    //     "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
+    //   moreLink: "/blog/AppStudioSecurityFeatures",
+    // },
+    // {
+    //   image:
+    //     "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Innovation Trends for Business",
+    //   description:
+    //     "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
+    //   moreLink: "/blog/InnovationTrendsforBusiness",
+    // },
   ];
 
   return (

@@ -121,20 +121,20 @@ const FinancialServices = () => {
   const cards = [
     {
       image: "/assets/slider/DataSecure_Slider.webp",
-      category: "AI AND AUTOMATION",
+      // category: "AI AND AUTOMATION",
       title: "Take Control with GDPR",
       description:
         "As technology grows, many feel they’ve lost control of their personal data. GDPR helps people take back that control. To stay compliant, businesses must know what data they collect and store it in an organized way.",
       moreLink: "/blog/GDPRCompliance",
     },
-    {
-      image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Agent Studio’s AI Solutions",
-      description:
-        "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-      moreLink: "/blog/AgentStudioAISolutions",
-    },
+    // {
+    //   image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Agent Studio’s AI Solutions",
+    //   description:
+    //     "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
+    //   moreLink: "/blog/AgentStudioAISolutions",
+    // },
     {
       image:
         "/assets/slider/Digitalization-Slider.webp",
@@ -144,14 +144,14 @@ const FinancialServices = () => {
         " Discover how data and Industry 4.0 are transforming efficiency and scale in global supply chains.",
       moreLink: "/blog/Digitalizationchains",
     },
-    {
-      image: "/assets/slider/AIStudioData_Slider.webp",
-      category: "DIGISQUARES PLATFORM",
-      title: "AI Studio’s Synthetic Data",
-      description:
-        "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-      moreLink: "/blog/AIStudioSyntheticData",
-    },
+    // {
+    //   image: "/assets/slider/AIStudioData_Slider.webp",
+    //   category: "DIGISQUARES PLATFORM",
+    //   title: "AI Studio’s Synthetic Data",
+    //   description:
+    //     "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
+    //   moreLink: "/blog/AIStudioSyntheticData",
+    // },
     {
       image: "/assets/slider/BoostingCybersecurity_Slider.webp",
       category: "GOVERNANCE",

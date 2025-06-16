@@ -120,37 +120,37 @@ const Banking = () => {
 
   const cards = [
     {
-      image: "/assets/slider/ResponsibleAIModels_Slider.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Creating Responsible AI Models",
+      image: "/assets/slider/AI-foto-generale_Slider.webp",
+      // category: "DIGITAL TRANSFORMATION",
+      title: "Transforming ITSM with ITIL 4 and Automation",
       description:
-        "As AI technology becomes more integrated into our daily lives, the importance of ethical AI focused on fairness, transparency, and compliance continues to grow.",
-      moreLink: "/blog/ResponsibleAIModels",
+        "ITIL 4 embraces AI, machine learning, and intelligent automation to modernize IT service management—driving efficiency, innovation, and smarter operations.",
+      moreLink: "/blog/IntelligentAutomationInITSM",
     },
     {
       image: "/assets/slider/AIPoweredAutomation_Slider.webp",
-      category: "AI AND AUTOMATION",
+      // category: "AI AND AUTOMATION",
       title: "AI-Powered Automation",
       description:
         "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
       moreLink: "/blog/AIPoweredAutomation",
     },
-    {
-      image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
-      category: "CYBERSECURITY AND RISK",
-      title: "Building a Secure SaaS Ecosystem",
-      description:
-        "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-      moreLink: "/blog/ImprovingSAASCybersecurity",
-    },
-    {
-      image: "/assets/slider/AIStudioData_Slider.webp",
-      category: "DIGISQUARES PLATFORM",
-      title: "AI Studio’s Synthetic Data",
-      description:
-        "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
-      moreLink: "/blog/AIStudioSyntheticData",
-    },
+    // {
+    //   image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
+    //   // category: "CYBERSECURITY AND RISK",
+    //   title: "Building a Secure SaaS Ecosystem",
+    //   description:
+    //     "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
+    //   moreLink: "/blog/ImprovingSAASCybersecurity",
+    // },
+    // {
+    //   image: "/assets/slider/AIStudioData_Slider.webp",
+    //   category: "DIGISQUARES PLATFORM",
+    //   title: "AI Studio’s Synthetic Data",
+    //   description:
+    //     "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
+    //   moreLink: "/blog/AIStudioSyntheticData",
+    // },
     {
       image: "/assets/slider/LowcodeBanking.webp",
       category: "GOVERNANCE",

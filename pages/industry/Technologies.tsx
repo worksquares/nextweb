@@ -127,22 +127,22 @@ const Technologies = () => {
         "Today’s tech leaders are expected to lead with purpose—aligning technology decisions with organizational values to drive impact, trust, and innovation.",
       moreLink: "/blog/TechnologyLeaders",
     },
-    {
-      image: "/assets/slider/AIPoweredAutomation_Slider.webp",
-      category: "AI AND AUTOMATION",
-      title: "AI-Powered Automation",
-      description:
-        "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
-      moreLink: "/blog/AIPoweredAutomation",
-    },
-    {
-      image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
-      category: "CYBERSECURITY AND RISK",
-      title: "Building a Secure SaaS Ecosystem",
-      description:
-        "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
-      moreLink: "/blog/ImprovingSAASCybersecurity",
-    },
+    // {
+    //   image: "/assets/slider/AIPoweredAutomation_Slider.webp",
+    //   category: "AI AND AUTOMATION",
+    //   title: "AI-Powered Automation",
+    //   description:
+    //     "In the fast-paced world of IT, reducing Mean Time to Repair (MTTR) is critical for maintaining operational efficiency and minimizing the impact of incidents and outages.",
+    //   moreLink: "/blog/AIPoweredAutomation",
+    // },
+    // {
+    //   image: "/assets/slider/ImprovingSAASCybersecurity_Slider.webp",
+    //   category: "CYBERSECURITY AND RISK",
+    //   title: "Building a Secure SaaS Ecosystem",
+    //   description:
+    //     "In today’s interconnected digital landscape, no organization is immune to cyberattacks. From ransomware to data breaches, cybersecurity threats are evolving rapidly, putting immense pressure on businesses to safeguard their critical systems and data.",
+    //   moreLink: "/blog/ImprovingSAASCybersecurity",
+    // },
     {
       image: "/assets/slider/AIinServiceManagement_Slider.webp",
       category: "DIGISQUARES PLATFORM",

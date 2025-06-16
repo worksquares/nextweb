@@ -121,7 +121,7 @@ const TeleCommunication = () => {
   const cards = [
     {
       image: "/assets/slider/CloudSecurity1_Slider.webp",
-      category: "AI AND AUTOMATION",
+      // category: "AI AND AUTOMATION",
       title: "Telecom with ServiceNow",
       description:
         "The ServiceNow Platform evolves with every release, offering automation, flexibility, and integration to help businesses solve challenges and stay ahead in a fast-changing world.",
@@ -129,7 +129,7 @@ const TeleCommunication = () => {
     },
     {
       image: "/assets/slider/AIToolsforRealWorld_Slider.webp",
-      category: "CYBERSECURITY AND RISK",
+      // category: "CYBERSECURITY AND RISK",
       title: "Human-AI Collaboration for Real-World Impact",
       description:
         "Generative AI is reshaping industries, but its true value emerges when human expertise is integrated. By combining human involvement with AI tools, businesses achieve greater accuracy, precision, and meaningful results, driving productivity and workflow improvements.",
@@ -143,22 +143,22 @@ const TeleCommunication = () => {
         "Training AI models requires vast amounts of high-quality data, but gathering enough relevant data can be challenging, time-consuming, and costly. Digisquares AI Studio addresses this issue by offering synthetic data generation capabilities.",
       moreLink: "/blog/AIStudioSyntheticData",
     },
-    {
-      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
-      category: "GOVERNANCE",
-      title: "Personalize AI Models",
-      description:
-        "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      moreLink: "/blog/PersonalizeAIModels",
-    },
-    {
-      image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Agent Studio’s AI Solutions",
-      description:
-        "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
-      moreLink: "/blog/AgentStudioAISolutions",
-    },
+    // {
+    //   image: "/assets/slider/PersonalizeAIModels_Slider.webp",
+    //   category: "GOVERNANCE",
+    //   title: "Personalize AI Models",
+    //   description:
+    //     "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
+    //   moreLink: "/blog/PersonalizeAIModels",
+    // },
+    // {
+    //   image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Agent Studio’s AI Solutions",
+    //   description:
+    //     "As businesses grow, so does the demand for efficient, responsive customer support. Scaling support operations can be a challenge, especially when dealing with high volumes of inquiries that require timely responses.",
+    //   moreLink: "/blog/AgentStudioAISolutions",
+    // },
   ];
 
   return (

@@ -127,18 +127,18 @@ const Manufacturing = () => {
         "Digital Twins use real-time data and IoT sensors to create virtual replicas of physical systems, enabling smarter monitoring, prediction, and optimization.They enhance decision-making by simulating scenarios, reducing downtime, and improving operational efficiency across industries.",
       moreLink: "/blog/DigitalTrendsIoT",
     },
-    {
-      image:
-        "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
-      category: "DIGITAL TRANSFORMATION",
-      title: "Innovation Trends for Business",
-      description:
-        "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
-      moreLink: "/blog/InnovationTrendsforBusiness",
-    },
+    // {
+    //   image:
+    //     "/assets/slider/InnovationTrendsforBusiness_Slider.webp",
+    //   category: "DIGITAL TRANSFORMATION",
+    //   title: "Innovation Trends for Business",
+    //   description:
+    //     "The rapid digital transformation happening across industries has unlocked numerous opportunities, but also introduced new complexities.",
+    //   moreLink: "/blog/InnovationTrendsforBusiness",
+    // },
     {
       image: "/assets/slider/HyperAutomation1_Slider.webp",
-      category: "DATABASE MANAGEMENT",
+      // category: "DATABASE MANAGEMENT",
       title: "Enterprise Low-code and Hyper-automation",
       description:
         "Enterprise low-code development makes it easier to build enterprise grade applications and operational systems that run critical business processes and serve thousands of users across organizations. ",
