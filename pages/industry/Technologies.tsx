@@ -152,12 +152,12 @@ const Technologies = () => {
       moreLink: "/blog/AIinServiceManagement",
     },
     {
-      image: "/assets/slider/PersonalizeAIModels_Slider.webp",
+      image: "/assets/slider/DigisquaresAIplatform_Slider.webp",
       category: "GOVERNANCE",
-      title: "Personalize AI Models",
+      title: "Your AI Strategy Starts Here",
       description:
-        "In today’s dynamic business environment, industries from healthcare to finance are increasingly relying on artificial intelligence to gain insights, streamline processes, and deliver exceptional experiences.",
-      moreLink: "/blog/PersonalizeAIModels",
+        "Discover whether building your own LLM or leveraging Digisquares' AI platforms is the smarter move for scaling automation, engagement, and development—without the heavy investment.",
+      moreLink: "/blog/DigisquaresAIplatform",
     },
   ];
 

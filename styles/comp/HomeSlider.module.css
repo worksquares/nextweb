@@ -213,8 +213,11 @@
     margin-bottom: 15px;
   }
   .cardWrapper {
-    width:310px !important;
-  }
+    /* width:310px !important; */
+      height: 490px;
+      width: 350px;
+    }
+
 
   .vectorContainer {
     width: 25px;
@@ -223,6 +226,9 @@
   .card {
     max-width: 100%;
   }
+    .cardImage{
+    width: 237px;
+    }
   .textContent p {
     height: 105px;
   }

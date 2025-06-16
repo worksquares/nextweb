@@ -137,12 +137,12 @@ const Government = () => {
       moreLink: "/blog/SaasforGovt",
     },
     {
-      image: "/assets/slider/FromIdeatoApp_Slider.webp",
-      category: "IT MANAGEMENT",
-      title: "From Idea to App",
+      image: "/assets/slider/Driving_Digital_Transformation_Slider.webp",
+      // category: "IT MANAGEMENT",
+      title: "Driving Digital Transformation",
       description:
-        "In the fast-paced world of modern business, turning ideas into reality quickly can be the difference between success and missed opportunities. App development has been a lengthy, requiring extensive coding and specialized expertise.",
-      moreLink: "/blog/FromIdeatoApp",
+        "As the speed of business continues to rapidly evolve, so do the technologies that help manufacturers digitize their factories, drive financial and operational impact, and improve productivity and customer satisfaction.",
+      moreLink: "/blog/DrivingDigitalTransformation",
     },
     {
       image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",

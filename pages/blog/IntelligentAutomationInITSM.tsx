@@ -52,10 +52,10 @@ const IntelligentAutomationInITSM = () => {
     {
       title:
         "Explore how ITIL 4 and intelligent automation transform IT service management",
-      img1700: "/assets/AI-foto-generale.webp",
-      img1024: "/assets/AI-foto-generale.webp",
-      img768: "/assets/AI-foto-generale.webp",
-      img320: "/assets/AI-foto-generale.webp",
+      img1700: "/assets/AI-foto-generale_Main.webp",
+      img1024: "/assets/AI-foto-generale_Main.webp",
+      img768: "/assets/AI-foto-generale_Main.webp",
+      img320: "/assets/AI-foto-generale_Main.webp",
 
       paragraph: [
         {

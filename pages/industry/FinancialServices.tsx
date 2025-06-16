@@ -120,12 +120,12 @@ const FinancialServices = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AIinAgentStudio_Slider.webp",
+      image: "/assets/slider/DataSecure_Slider.webp",
       category: "AI AND AUTOMATION",
-      title: "AI in Agent Studio",
+      title: "Take Control with GDPR",
       description:
-        "They demand fast, personalized service that is available 24/7, across a range of channels. Meeting these demands can be a challenge, especially for companies that rely on traditional customer service models.",
-      moreLink: "/blog/AIinAgentStudio",
+        "As technology grows, many feel they’ve lost control of their personal data. GDPR helps people take back that control. To stay compliant, businesses must know what data they collect and store it in an organized way.",
+      moreLink: "/blog/GDPRCompliance",
     },
     {
       image: "/assets/slider/AgentStudioAISolutions_Slider.webp",
@@ -137,12 +137,12 @@ const FinancialServices = () => {
     },
     {
       image:
-        "/assets/slider/CustomerSatisfactionwithAgentStudio_Slider.webp",
-      category: "IT MANAGEMENT",
-      title: "Customer Satisfaction",
+        "/assets/slider/Digitalization-Slider.webp",
+      // category: "IT MANAGEMENT",
+      title: "The Digitalization",
       description:
-        "In an era where customers expect personalized businesses must go beyond one-size-fits-all solutions to build lasting relationships. Companies can create tailored experiences that resonate with individual customers.",
-      moreLink: "/blog/CustomerSatisfactionwithAgentStudio",
+        " Discover how data and Industry 4.0 are transforming efficiency and scale in global supply chains.",
+      moreLink: "/blog/Digitalizationchains",
     },
     {
       image: "/assets/slider/AIStudioData_Slider.webp",

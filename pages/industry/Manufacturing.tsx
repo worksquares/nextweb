@@ -120,12 +120,12 @@ const Manufacturing = () => {
 
   const cards = [
     {
-      image: "/assets/slider/AppStudioSecurityFeatures_Slider.webp",
+      image: "/assets/slider/IoT-Slider-Img.webp",
       category: "CYBERSECURITY AND RISK",
-      title: "AppStudio’s Security Features",
+      title: "Key Digital Trends Shaping the Future",
       description:
-        "In an increasingly digital world, application security is paramount. With cyber threats on the rise, businesses must ensure that the apps they develop are secure and resilient against potential attacks.",
-      moreLink: "/blog/AppStudioSecurityFeatures",
+        "Digital Twins use real-time data and IoT sensors to create virtual replicas of physical systems, enabling smarter monitoring, prediction, and optimization.They enhance decision-making by simulating scenarios, reducing downtime, and improving operational efficiency across industries.",
+      moreLink: "/blog/DigitalTrendsIoT",
     },
     {
       image:
@@ -137,12 +137,12 @@ const Manufacturing = () => {
       moreLink: "/blog/InnovationTrendsforBusiness",
     },
     {
-      image: "/assets/slider/BusinesswithAppStudio_Slider.webp",
+      image: "/assets/slider/HyperAutomation1_Slider.webp",
       category: "DATABASE MANAGEMENT",
-      title: "Security Privacy of Blockchain",
+      title: "Enterprise Low-code and Hyper-automation",
       description:
-        "As businesses grow, so do their technical needs. From expanding operational capabilities to addressing new customer demands, scaling requires robust, adaptable solutions that can keep pace with rapid change.",
-      moreLink: "/blog/BusinesswithAppStudio",
+        "Enterprise low-code development makes it easier to build enterprise grade applications and operational systems that run critical business processes and serve thousands of users across organizations. ",
+      moreLink: "/blog/EnterpriseLowcode",
     },
     {
       image: "/assets/slider/CloudSecurityRisk_Slider.webp",
@@ -153,12 +153,12 @@ const Manufacturing = () => {
       moreLink: "/blog/CloudSecurityRisks",
     },
     {
-      image: "/assets/slider/WorkflowswithAppStudio_Slider.webp",
-      category: "DIGISQUARES PLATFORM",
-      title: "Workflows with AppStudio",
+      image: "/assets/slider/GovernanceComp_Slider.webp",
+      // category: "DIGISQUARES PLATFORM",
+      title: "Drag-and-Drop: The Future of Fast Innovation",
       description:
-        "As businesses continue to evolve in a digital-first world, the pressure to improve efficiency and reduce costs has never been greater. Manual processes and repetitive tasks can slow down operations and limit a company’s ability to focus on high-impact initiatives.",
-      moreLink: "/blog/WorkflowswithAppStudio",
+        "Visual development tools are breaking coding barriers, helping teams build and launch apps faster—with less technical overhead.",
+      moreLink: "/blog/DragandDropPlatforms",
     },
   ];
 

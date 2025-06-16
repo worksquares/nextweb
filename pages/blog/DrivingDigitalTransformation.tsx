@@ -53,10 +53,10 @@ const DrivingDigitalTransformation = () => {
       title: "Driving Digital Transformation",
       // subtitle: "August 12, 2021",
       link: "#",
-      img1700: "/assets/Driving Digital Transformation.webp",
-      img1024: "/assets/Driving Digital Transformation.webp",
-      img768: "/assets/Driving Digital Transformation.webp",
-      img320: "/assets/Driving Digital Transformation.webp",
+      img1700: "/assets/Driving_Digital_Transformation_Main.webp",
+      img1024: "/assets/Driving_Digital_Transformation_Main.webp",
+      img768: "/assets/Driving_Digital_Transformation_Main.webp",
+      img320: "/assets/Driving_Digital_Transformation_Main.webp",
 
       paragraph: [
         {

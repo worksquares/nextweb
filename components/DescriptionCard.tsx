@@ -69,7 +69,9 @@ export function FeaturesDescription({ heading, features = [] }: FeaturesDescript
                     onClick={() => setActiveIndices([isActive ? -1 : idx])}
                   >
                     <span>{feature.title}</span>
-                    <span className={styles.icon}>{isActive ? "−" : "+"}</span>
+                    <span className={styles.icon}>
+                      {isActive ? "−" : "+"}
+                    </span>
                   </button>
 
                   {isActive && (
