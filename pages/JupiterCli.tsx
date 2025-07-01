@@ -1,4 +1,4 @@
-import JupiterLanding from './Jupiter';
+import JupiterLanding from './jupiter';
 
 
 export default function JupiterCli() {
