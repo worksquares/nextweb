@@ -1,7 +1,7 @@
-import Image from "next/image";
 import ImageCardsGrid from "../comp/ImageCardsGrid";
 import Screen from "../comp/Screen";
 import { CardProps } from "../comp/base/ImageCard";
+import CustomImage from "../components/CustomImage";
 import MainFooter from "../components/MainFooter";
 import Menu from "../components/Menu";
 import styles from "../styles/404.module.css";
@@ -10,13 +10,15 @@ import Headseo from "./headseo";
 const Custom404 = () => {
   let ImageCardGridData: CardProps[] = [
     {
-      image: "/assets/APIEnabledEcosystemMain.webp",
+      // image: "/assets/APIEnabledEcosystemMain.webp",
+      image: "/assests/DigitalManagement.webp",
       category: "DIGITAL TRANSFORMATION",
       heading: "API Enabled Ecosystem",
       description: "Role of analytics in unlocking the power of API enabled ecosystems.",
       link: "/blog/APIEnabledEcosystem",
       linktext: "View the article",
     },
+
     {
       image: "/assets/CloudMigration.webp",
       category: "CLOUD MANAGEMENT",
@@ -26,7 +28,7 @@ const Custom404 = () => {
       linktext: "View the article",
     },
     {
-      image: "/assets/Saas-Main.webp",
+      image: "/assets/Security.webp",
       category: "SECURITY",
       heading: "Surveyed enterprises most used software as a service for automation",
       description: "Applications running in the cloud and data stored there are not protected by a traditional corporatesecurity perimeter of firewalls and the like.",
@@ -34,7 +36,7 @@ const Custom404 = () => {
       linktext: "View the article",
     },
     {
-      image: "/assets/DatabaseSoftwareMain.webp",
+      image: "/assets/Database.webp",
       category: "DATABASE",
       heading: "Database Software",
       description: "Price Indexes for PC Database Software and the Value of Code Compatibility",
@@ -42,7 +44,7 @@ const Custom404 = () => {
       linktext: "View the article",
     },
     {
-      image: "/assets/ezgif.com-gif-maker (2).webp",
+      image: "/assets/NewITManagement.webp",
       category: "IT MANAGEMENT",
       heading: "Deploying AI at scale",
       description: "A glimpse into the future of manufacturing can be found at FANUC’s plant in Oshino, Japan.",
@@ -110,7 +112,9 @@ const Custom404 = () => {
             <p>Sorry, the page you requested was not found. Easily explore our products using the links below.</p>
           </div>
           <div className={styles.PageErrorImage}>
-            <Image src="/assets/pagenotfound404.webp" alt="Page not found" width="1300" height="800" unoptimized={true} className={styles.PageHeaderPartImg} priority={true} />
+            {/* <Image src="/assets/pagenotfound404.webp" alt="Page not found" width="1300" height="800" unoptimized={true} className={styles.PageHeaderPartImg} priority={true} /> */}
+            <CustomImage
+              type="rightLeft" src={"/assets/pagenotfound404.webp"} alt={"Page not found"} priority={true} className={styles.PageHeaderPartImg} />
           </div>
         </div>
       </Screen>

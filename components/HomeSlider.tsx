@@ -24,6 +24,7 @@ interface HomeSliderProps {
   speed?: number;
 }
 
+
 // Custom Previous Arrow
 const PrevArrow = (props: any) => (
   <div className={styles.prevArrow} onClick={props.onClick}>
@@ -87,6 +88,7 @@ const HomeSlider = ({
       <h3 className={styles.title}>Know more about us</h3>
       <Slider {...settings} className={styles.carousel}>
         {cards.map((card, index) => {
+          const isSlideActive = currentSlide === index;
           return (
             <div
               key={index}
@@ -113,6 +115,7 @@ const HomeSlider = ({
                       src={card.image}
                       priority={true}
                       className={styles.cardImage}
+                      ariaHidden={true}
                     />
 
                   </div>
@@ -135,6 +138,8 @@ const HomeSlider = ({
                             />
                           </>
                         }
+                        ariaHidden={true}
+                        tabIndex={-1}
                         className={styles.LearnMoreButtonLink}
                         color="#36399C"
                         bgColor="transparent "

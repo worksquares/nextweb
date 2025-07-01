@@ -62,6 +62,8 @@ const MultiAgentSection: React.FC = () => {
           width="120px"
           onClick={() => window.location.href = "https://app.digisquares.com/register"}
           style={{ flex: 1 }}
+          ariaHidden={true}
+          tabIndex={-1}
         />
 
         <VerticalDivider />
@@ -72,9 +74,11 @@ const MultiAgentSection: React.FC = () => {
           hoverBgColor="#606060"
           hoverTextColor="#ffffff"
           color="#fff"
-           width="120px"
+          width="120px"
           onClick={() => window.location.href = "https://app.digisquares.com/login"}
           style={{ flex: 1 }}
+          ariaHidden={true}
+          tabIndex={-1}
         />
       </div>
     </div>

@@ -22,6 +22,9 @@ export interface ButtonProps {
   fontsize?: string;
   "aria-label"?: string;
   border?: string;
+  ariaHidden?: boolean;
+  tabIndex?: number;
+
 }
 
 // Custom Button component (without Ant Design)
@@ -38,6 +41,10 @@ const CustomButton: React.FC<ButtonProps> = (props) => {
         type={props.htmlType || "button"}
         onClick={props.onClick}
         className={`${styles.customButton} ${props.className ?? ""}`}
+        // aria-Hidden:{props.ariaHidden}
+        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
+        aria-hidden={props.ariaHidden}
+        tabIndex={props.tabIndex}
         style={{
           backgroundColor: props.bgColor,
           color: props.color,
@@ -47,9 +54,9 @@ const CustomButton: React.FC<ButtonProps> = (props) => {
           width: props.width,
           fontSize: props.fontsize,
           border: props.border || "none",
+
           ...props.style,
         }}
-        aria-label={props["aria-label"] || (props.text ? String(props.text) : "Button")}
       >
         {props.text}
         {/* {props.icon && (

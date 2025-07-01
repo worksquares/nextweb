@@ -34,6 +34,8 @@ const AccelerateSection = () => {
                 className="MediumButton"
                 hoverBgColor="#ffffff"
                 hoverTextColor="#000000"
+                ariaHidden={true}
+                tabIndex={-1}
               />
 
 

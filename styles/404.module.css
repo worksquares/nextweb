@@ -230,7 +230,7 @@
     font-size: 14px;
   }
   .PageHeaderPartImg {
-    height: 250px;
+    height: 100%;
     object-fit: cover;
     float: right;
     /* position: relative; */

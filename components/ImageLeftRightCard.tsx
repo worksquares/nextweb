@@ -120,14 +120,14 @@ const ImageLeftRightCard: React.FC<Props> = ({
 
         <div className={Styles.textSection}>
 
-        <h2>
-          {normalFirst}{" "}
-          <span className={Styles.emphasized}>{emphasized}</span> {normalRest}
-        </h2>
-        {subtitle && (
-          <span
-            className={Styles.subtitle}
-          >
+          <h2>
+            {normalFirst}{" "}
+            <span className={Styles.emphasized}>{emphasized}</span> {normalRest}
+          </h2>
+          {subtitle && (
+            <span
+              className={Styles.subtitle}
+            >
               {subtitle}
             </span>
           )}
@@ -154,16 +154,17 @@ const ImageLeftRightCard: React.FC<Props> = ({
 
         <div className={Styles.imageSection}>
           <CustomImage type="rightLeft"
-          src={img320}
-          alt="Card Visual"
-          priority={true}
+            src={img320}
+            alt="Card Visual"
+            priority={true}
+            ariaHidden={true}
           />
 
           {/* Learn More Button and Link */}
           <div
             className={Styles.buttonLinkContainer}
             style={{
-               justifyContent: dir === "right" ? "flex-end" : "flex-end", // Align button to the left or right based on image direction
+              justifyContent: dir === "right" ? "flex-end" : "flex-end", // Align button to the left or right based on image direction
               display: "flex", // Ensure the div behaves like a flex container
               flexDirection: "column", // Stack the button on top if needed
               alignItems: dir === "right" ? "flex-end" : "flex-end", // Align items (button) to the start or end of the container
@@ -171,36 +172,39 @@ const ImageLeftRightCard: React.FC<Props> = ({
               marginTop: "auto", // Push button to the bottom if needed
             }}
           >
-          {/* {link && (
+            {/* {link && (
             <a href={link} className={Styles.learnMoreLink}>
              {button && (
             <button className={Styles.learnMoreButton}>{button}</button>
           )}
             </a>
           )} */}
-           <LearnMoreButton
-                   text={<>
-                               <span style={{ fontWeight: 700 }}>Learn more</span>
-                               <FontAwesomeIcon
-                               icon={faArrowRight}
-                               style={{
-                                 fontSize: '15px',
-                                 marginLeft: '10px',
-                                 verticalAlign: 'middle',
-                                 color: '#fff',
-                                 width: '15px',
-                                 height: '15px',
-                               }} />
-                        </>}
-                      bgColor="#ff0000"
-                      color="#fff"
-                      hoverBgColor="#E74C3C"
-                      hoverTextColor="#fff"
-                      onClick={() => {
-                        if (link) window.location.href = link;}}
-                      className={Styles.learnMoreButton}
-                    />
-        </div>
+            <LearnMoreButton
+              text={<>
+                <span style={{ fontWeight: 700 }}>Learn more</span>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{
+                    fontSize: '15px',
+                    marginLeft: '10px',
+                    verticalAlign: 'middle',
+                    color: '#fff',
+                    width: '15px',
+                    height: '15px',
+                  }} />
+              </>}
+              ariaHidden={true}
+              tabIndex={-1}
+              bgColor="#ff0000"
+              color="#fff"
+              hoverBgColor="#E74C3C"
+              hoverTextColor="#fff"
+              onClick={() => {
+                if (link) window.location.href = link;
+              }}
+              className={Styles.learnMoreButton}
+            />
+          </div>
           {/* {button && (
             <button className={Styles.learnMoreButton}>{button}</button>
             )} */}
@@ -214,7 +218,7 @@ const ImageLeftRightCard: React.FC<Props> = ({
             </a>
           )} */}
 
-            {/* {link && (
+          {/* {link && (
             <a href={link} className={Styles.learnMoreLink}>
               {button && (
             <button className={Styles.learnMoreButton}>{button}</button>
@@ -230,9 +234,9 @@ const ImageLeftRightCard: React.FC<Props> = ({
             }}
           />
 
-          </div>
         </div>
       </div>
+    </div>
 
   );
 };

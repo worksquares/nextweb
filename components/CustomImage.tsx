@@ -20,6 +20,7 @@ interface CustomImageProps {
   src: string;
   alt: string;
   className?: string;
+  ariaHidden?: boolean;
   priority?: boolean;
 
 }
@@ -49,6 +50,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
   alt,
   className,
   priority = false,
+  ariaHidden,
 
 }) => {
   const imageSize = imageSizes[type] || { width: 0, height: 0 };
@@ -65,6 +67,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
       className={className}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 670px"
       priority={priority}
+      aria-hidden={ariaHidden}
     />
   );
 };
