@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:azure": "npm run build && cp ../staticwebapp.config.json out/ && npx @azure/static-web-apps-cli@latest deploy out --deployment-token \"53af29a2562916e9160bfdc394a784d40b3748135411639f4eb4ed151db7003101-ce9cee41-5b0e-4822-9d91-7fa3f2ceab4101013250b1a55410\" --env production"
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
