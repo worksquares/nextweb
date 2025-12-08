@@ -1,6 +1,46 @@
 {
   "navigationFallback": {
-    "rewrite": "index.html",
-    "exclude": ["*.{png,jpg,gif,svg}", "*.css"]
+    "rewrite": "/index.html",
+    "exclude": [
+      "/_next/static/*",
+      "/_next/image/*",
+      "/assets/*",
+      "/svg/*",
+      "/fonts/*",
+      "*.{png,jpg,jpeg,gif,svg,ico,webp}",
+      "*.{css,js,json,xml,txt}",
+      "/sitemap.xml",
+      "/robots.txt",
+      "/favicon.ico"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2",
+    ".ttf": "font/ttf",
+    ".webp": "image/webp"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html",
+      "statusCode": 404
+    }
+  },
+  "platform": {
+    "apiRuntime": "node:20"
   }
 }
