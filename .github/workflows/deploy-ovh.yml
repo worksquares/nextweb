@@ -1,0 +1,81 @@
+name: Deploy Website to OVH
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci || npm install --legacy-peer-deps
+      - run: npm run build
+
+  deploy:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.OVH_HOST }}
+          username: ubuntu
+          key: ${{ secrets.OVH_SSH_KEY }}
+          command_timeout: 10m
+          script: |
+            set -e
+            echo "=== DigiSquares Website Deploy Started ==="
+
+            sudo mkdir -p /opt/digisquares-web
+            sudo chown ubuntu:ubuntu /opt/digisquares-web
+
+            if [ ! -d "/opt/digisquares-web/site/.git" ]; then
+              git clone https://${{ secrets.GH_PAT }}@github.com/worksquares/nextweb.git /opt/digisquares-web/site
+            else
+              cd /opt/digisquares-web/site
+              git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/worksquares/nextweb.git
+              git fetch origin main
+              BEFORE=$(git rev-parse HEAD)
+              git reset --hard origin/main
+              AFTER=$(git rev-parse HEAD)
+              echo "Updated: $BEFORE -> $AFTER"
+            fi
+
+            # Ensure docker-compose
+            cat > /opt/digisquares-web/docker-compose.yml << 'DCEOF'
+            services:
+              web:
+                build:
+                  context: ./site
+                  dockerfile: Dockerfile
+                container_name: digisquares-web
+                ports:
+                  - "127.0.0.1:4200:80"
+                restart: unless-stopped
+            DCEOF
+
+            cd /opt/digisquares-web
+            sudo docker rm -f digisquares-web 2>/dev/null || true
+            sudo docker compose up -d --build
+            sudo docker image prune -f
+
+            echo "=== Health Check ==="
+            for i in $(seq 1 6); do
+              sleep 5
+              STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:4200 2>/dev/null || echo "000")
+              echo "  Attempt $i: HTTP $STATUS"
+              if [ "$STATUS" = "200" ]; then
+                echo "=== Website Healthy ==="
+                exit 0
+              fi
+            done
+
+            echo "=== WARNING: Health check failed ==="
+            sudo docker compose logs web --tail 20
+            exit 1
