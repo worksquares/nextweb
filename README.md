@@ -57,17 +57,14 @@ fronted by the host nginx vhost for `digisquares.com` / `www.digisquares.com`.
 
 - `Dockerfile` — multi-stage: `npm run build` in a Node stage, then copies
   `out/` into an `nginx:alpine` image (`nginx.conf` is the container config).
-- Build/run the image via the host's compose stack for this site.
+- GitHub Actions performs build validation only. Deployment is run directly by
+  an operator on the OVH host through [`deploy/deploy-ovh.sh`](./deploy/deploy-ovh.sh).
+- The complete server contract, credential cutover, verification and rollback
+  procedure is in [`deploy/DEPLOY.md`](./deploy/DEPLOY.md).
 
-### Legacy Azure deploy — do not use
-
-`deploy.bat` and the `deploy:azure` npm script target the old Azure Static Web
-Apps setup and hard-code a machine path (`E:\code\nextweb\nextweb`).
-
-> ⚠️ **Security:** the `deploy:azure` script in `package.json` contains a
-> hard-coded Azure SWA **deployment token**, and this repo is **public**. That
-> token should be **rotated in Azure and removed from source** (moved to a CI
-> secret). Until then, treat it as compromised.
+The legacy Azure deployment files and current-tree token literal have been
+removed. The old Azure token and the OVH workflow's GitHub PAT must still be
+rotated because removal does not erase them from Git history or server config.
 
 ## Related sites in this org
 
