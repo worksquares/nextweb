@@ -57,8 +57,11 @@ fronted by the host nginx vhost for `digisquares.com` / `www.digisquares.com`.
 
 - `Dockerfile` — multi-stage: `npm run build` in a Node stage, then copies
   `out/` into an `nginx:alpine` image (`nginx.conf` is the container config).
-- GitHub Actions performs build validation only. Deployment is run directly by
-  an operator on the OVH host through [`deploy/deploy-ovh.sh`](./deploy/deploy-ovh.sh).
+- GitHub stores source and tags only (owner ruling 2026-10-17): nothing runs
+  there, and `.github/workflows/ci.yml` is inert. Validate locally on the exact
+  candidate (`npm ci --legacy-peer-deps && npm run build && test -f out/index.html`),
+  then an operator deploys directly on the OVH host through
+  [`deploy/deploy-ovh.sh`](./deploy/deploy-ovh.sh).
 - The complete server contract, credential cutover, verification and rollback
   procedure is in [`deploy/DEPLOY.md`](./deploy/DEPLOY.md).
 

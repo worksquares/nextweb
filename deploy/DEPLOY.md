@@ -1,6 +1,6 @@
 # DigiSquares website — direct OVH deployment
 
-GitHub Actions is validation-only. It does not publish an image, create a release, or deploy this site. Production deployment is an operator action on the OVH host.
+GitHub stores source and tags only (owner ruling 2026-10-17): nothing runs there, so nothing on GitHub validates, publishes an image, creates a release or deploys this site. Validate locally on the exact candidate (`npm ci --legacy-peer-deps && npm run build && test -f out/index.html`). Production deployment is an operator action on the OVH host.
 
 ## Live contract
 
