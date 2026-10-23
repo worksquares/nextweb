@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextweb — DigiSquares corporate website
 
-## Getting Started.
+This repository is the **DigiSquares marketing/corporate website** served at
+**https://digisquares.com** (and `www.digisquares.com`). It is a
+[Next.js](https://nextjs.org/) app exported as a fully static site.
 
-First, run the development server:
+> Despite living in the `worksquares` GitHub org, the content and branding here
+> are **DigiSquares**, not WorkSquares. (The WorkSquares suite apps — CRM, CPQ,
+> Accounts — live in their own repos: `crm`/`crmui`, `cpq`/`cpqui`,
+> `accounts`/`accountsui`.)
+
+## Stack
+
+- **Next.js 16** (Pages Router, `pages/`) with `output: 'export'` — the build
+  emits a static site to `out/`; there is no Node server at runtime.
+- **UI:** Ant Design (`antd`) + Tailwind CSS.
+- **i18n:** client-side `react-i18next`, 5 locales in `locales/`
+  (en, zh, hi, es, ar); default `en`. Language is switched in-page, not by URL
+  prefix.
+- **Node:** `>=18.18.0`.
+
+## Routing
+
+- The landing page is `pages/index.js` (`/`).
+- Every other page is a **named page inside a section folder**, not a section
+  index — e.g. `/blog/CloudComputing`, `/product/…`, `/solutions/…`,
+  `/pricing/AppStudio`. Section roots like `/pricing/` or `/solutions/` have no
+  `index` page and will 404; navigate to them through the homepage nav/links.
+- Sections: `blog/`, `product/`, `solutions/`, `pricing/`, `industry/`,
+  `partners/`, `resources/`, `career/`, `contact/`, `legal/`, `more/`.
+
+> `pages/api/*` files exist but **do not run** — `output: 'export'` cannot host
+> API routes (Next.js logs a warning about this in `dev`). Treat the site as
+> static-only.
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-...
-x
+npm install
+npm run dev          # webpack dev server on http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.chchccbcvbcc.
+Open http://localhost:3000. Edit `pages/index.js` (or any page) and it
+hot-reloads.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Production build
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build        # static export -> ./out
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Deployment (current: OVH, Docker + nginx)
 
-## Learn More
+The site was migrated off Azure Static Web Apps onto the OVH host, where it runs
+as the **`digisquares-web`** container (nginx serving the exported `out/`),
+fronted by the host nginx vhost for `digisquares.com` / `www.digisquares.com`.
 
-To learn more about Next.js, take a look at the following resources:
+- `Dockerfile` — multi-stage: `npm run build` in a Node stage, then copies
+  `out/` into an `nginx:alpine` image (`nginx.conf` is the container config).
+- GitHub stores source and tags only (owner ruling 2026-10-17): nothing runs
+  there, and `.github/workflows/ci.yml` is inert. Validate locally on the exact
+  candidate (`npm ci --legacy-peer-deps && npm run build && test -f out/index.html`),
+  then an operator deploys directly on the OVH host through
+  [`deploy/deploy-ovh.sh`](./deploy/deploy-ovh.sh).
+- The complete server contract, credential cutover, verification and rollback
+  procedure is in [`deploy/DEPLOY.md`](./deploy/DEPLOY.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The legacy Azure deployment files and current-tree token literal have been
+removed. The old Azure token and the OVH workflow's GitHub PAT must still be
+rotated because removal does not erase them from Git history or server config.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Related sites in this org
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Repo | Site | Stack |
+|------|------|-------|
+| `nextweb` (this) | digisquares.com | Next.js (static export) |
+| `datasquares-web` | datasquares.ai | Next.js |
+| `datasquares-docs-site` | docs.datasquares.ai | Astro / Starlight |
+| `shipsquares-website` | shipsquares.com | Astro |
+| `wrkweb` | *(unbuilt skeleton — no site yet)* | Next.js |
